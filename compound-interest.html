@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="color-scheme" content="light"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Compound Interest Calculator South Africa 2026 | CalcMyPay</title>
+<meta name="description" content="See how your savings and investments grow with compound interest in South Africa. Free compound growth calculator with monthly contributions.">
+<meta name="google-adsense-account" content="ca-pub-6108324382808705">
+<link rel="canonical" href="https://calcmypay.co.za/compound-interest">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/icon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/icon-16.png">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does compound interest work?","acceptedAnswer":{"@type":"Answer","text":"Compound interest earns returns on both your original money and previously earned interest. Over time this creates exponential growth, especially with regular monthly contributions."}},{"@type":"Question","name":"What is a realistic investment return in South Africa?","acceptedAnswer":{"@type":"Answer","text":"Historically, a diversified South African equity portfolio has returned around 8–12% per year before inflation. Conservative estimates use 8–10% for long-term planning."}}]}</script>
+<style>/* CalcMyPay — Editorial "Ink & Marigold" =================================== */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap');
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --paper:#FFFFFF;--ink:#16201C;--forest:#1B4332;--marigold:#F6B53D;
+  --mist:#6B756F;--line:#DEDBD0;--sand:#FFFFFF;--berry:#B23A2E;
+  --disp:'Fraunces',Georgia,serif;--body:'Inter',system-ui,sans-serif;
+  /* legacy var aliases so inline styles still resolve */
+  --black:#16201C;--navy:#1B4332;--navy-mid:#1B4332;--accent:#1B4332;--accent-dark:#143026;
+  --white:#fff;--off-white:#FFFFFF;--green:#1B4332;--green-light:#EDF3EE;--accent-light:#EDF3EE;
+  --g100:#FFFFFF;--g200:#E4E2D8;--g400:#AEB3AC;--g600:#6B756F;--g800:#C9CcC4;--red:#B23A2E;
+  --fs:'Fraunces',Georgia,serif;--fn:'Inter',system-ui,sans-serif;
+}
+html{color-scheme:light;scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--body);background:var(--paper);color:var(--ink);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--forest);text-decoration:none}
+
+/* SA stripe — keep but slimmer & muted */
+.sa-stripe{height:3px;background:linear-gradient(90deg,#1B4332 0 16%,#F6B53D 16% 33%,#FCFBF7 33% 50%,#1B4332 50% 66%,#B23A2E 66% 83%,#16201C 83% 100%);opacity:.9}
+
+/* TOP BAR — editorial dateline */
+.top-bar{background:var(--paper);border-bottom:1px solid var(--line);padding:.5rem 2rem;display:flex;align-items:center;justify-content:space-between}
+.tb-l{font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--mist)}
+.tb-r{font-size:.7rem;color:var(--mist);letter-spacing:.04em}
+.tb-r span{color:var(--forest);font-weight:600}
+
+/* MASTHEAD NAV */
+nav{background:var(--paper);border-bottom:2px solid var(--ink);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:74px;position:sticky;top:0;z-index:100}
+.logo{display:flex;align-items:center;gap:.5rem;text-decoration:none}
+.logo-text{font-family:var(--disp);font-size:1.7rem;font-weight:900;letter-spacing:-.02em;color:var(--ink)}
+.logo-text span{color:var(--forest);font-style:italic;font-weight:600}
+.nav-links{display:flex;align-items:center;gap:.1rem}
+.nav-links a{font-family:var(--body);font-size:.82rem;font-weight:500;color:var(--ink);padding:.5rem .8rem;letter-spacing:.01em;position:relative;transition:color .15s}
+.nav-links a::after{content:'';position:absolute;left:.8rem;right:.8rem;bottom:.35rem;height:2px;background:var(--marigold);transform:scaleX(0);transform-origin:left;transition:transform .2s}
+.nav-links a:hover{color:var(--forest)}
+.nav-links a:hover::after{transform:scaleX(1)}
+.nav-links a.active{color:var(--forest);font-weight:600}
+.nav-links a.active::after{transform:scaleX(1)}
+.nav-cta{background:var(--ink)!important;color:var(--paper)!important;font-weight:600!important;border-radius:0;margin-left:.5rem}
+.nav-cta::after{display:none}
+.nav-cta:hover{background:var(--forest)!important;color:#fff!important}
+@media(max-width:860px){.nav-links{gap:0;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;max-width:60vw}.nav-links::-webkit-scrollbar{display:none}.nav-links a{white-space:nowrap;padding:.5rem .6rem;font-size:.76rem}.logo-text{font-size:1.4rem}nav{padding:0 1rem}}
+
+/* AD SLOTS — quiet */
+.ad-strip{background:var(--paper);border-bottom:1px solid var(--line);text-align:center;padding:.6rem}
+.ad-ph{display:inline-flex;align-items:center;justify-content:center;background:var(--sand);border:1px solid var(--line);color:var(--g400);font-size:.62rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
+.ad-ph.lb{width:728px;height:90px;max-width:100%}.ad-ph.rect{width:300px;height:250px}
+.ad-lbl{font-size:.6rem;color:var(--g400);text-transform:uppercase;letter-spacing:.12em;margin-bottom:.3rem}
+
+/* PAGE HEADER — kicker / headline / standfirst */
+.ph{background:var(--paper);border-bottom:1px solid var(--line);padding:4rem 2rem 3rem}
+.ph-inner{max-width:1080px;margin:0 auto}
+.bc{font-size:.72rem;color:var(--mist);font-weight:500;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1.4rem}
+.bc a{color:var(--mist)}.bc a:hover{color:var(--forest)}.bc span{margin:0 .5rem;color:var(--line)}
+.ph-cat{font-family:var(--body);font-size:.72rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--forest);margin-bottom:1rem;display:flex;align-items:center;gap:.6rem}
+.ph-cat::before{content:'';width:24px;height:2px;background:var(--marigold)}
+.ph h1{font-family:var(--disp);font-size:clamp(2.2rem,5vw,3.6rem);font-weight:600;color:var(--ink);line-height:1.05;letter-spacing:-.02em;margin-bottom:1rem;max-width:18ch}
+.ph p{font-family:var(--body);color:var(--mist);font-size:1.1rem;line-height:1.6;max-width:60ch}
+.ph-meta{display:flex;gap:1.4rem;font-size:.72rem;color:var(--mist);font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-top:1.2rem}
+
+/* SECTIONS */
+.section{max-width:1080px;margin:0 auto;padding:3.5rem 2rem}
+.section-header{margin-bottom:2rem;padding-bottom:1rem;border-bottom:1px solid var(--line);display:flex;align-items:baseline;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.section-title{font-family:var(--disp);font-size:1.6rem;font-weight:600;letter-spacing:-.01em;color:var(--ink)}
+.section-title span{color:var(--marigold);font-weight:400;margin:0 .3rem}
+.section-more{font-family:var(--body);font-size:.8rem;font-weight:600;color:var(--forest);letter-spacing:.02em}
+.section-more::after{content:' →'}
+
+/* TICKER — editorial stat strip */
+.ticker{background:var(--sand);border-bottom:1px solid var(--line);padding:.7rem 2rem;display:flex;gap:2.5rem;overflow-x:auto;scrollbar-width:none}
+.ticker::-webkit-scrollbar{display:none}
+.tick-item{display:flex;align-items:baseline;gap:.5rem;white-space:nowrap}
+.tick-label{font-size:.68rem;color:var(--mist);font-weight:600;text-transform:uppercase;letter-spacing:.1em}
+.tick-val{font-family:var(--disp);color:var(--forest);font-weight:600;font-size:1rem}
+
+/* TOOLS GRID + CARDS */
+.tools-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.25rem}
+.tool-card{background:var(--paper);border:1px solid var(--line);padding:1.6rem;transition:.2s;display:flex;flex-direction:column;gap:.7rem;text-decoration:none;color:var(--ink);position:relative}
+.tool-card:hover{border-color:var(--ink);transform:translateY(-2px)}
+.tool-card.featured{border-top:3px solid var(--forest)}
+.tc-cat{font-family:var(--body);font-size:.68rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--mist)}
+.tool-card h3{font-family:var(--disp);font-size:1.25rem;font-weight:600;letter-spacing:-.01em;line-height:1.15;color:var(--ink)}
+.tool-card p{font-family:var(--body);font-size:.88rem;color:var(--mist);line-height:1.55;flex:1}
+.tc-link{font-family:var(--body);font-size:.8rem;font-weight:600;color:var(--forest)}
+.tc-badge{font-family:var(--body);font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.25rem .6rem;background:var(--sand);color:var(--forest);border:1px solid var(--line)}
+
+/* BLOG GRID */
+.blog-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:1.25rem}
+.blog-card{background:var(--paper);border:1px solid var(--line);padding:1.6rem;text-decoration:none;color:var(--ink);transition:.2s}
+.blog-card:hover{border-color:var(--ink);transform:translateY(-2px)}
+.blog-card.lead{border-top:3px solid var(--marigold)}
+.bc-cat{font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);margin-bottom:.6rem;display:block}
+.blog-card h3{font-family:var(--disp);font-size:1.2rem;font-weight:600;line-height:1.2;letter-spacing:-.01em;margin-bottom:.5rem}
+.blog-card.lead h3{font-size:1.6rem}
+.blog-card p{font-size:.86rem;color:var(--mist);line-height:1.55;margin-bottom:.6rem}
+.bc-more{font-size:.78rem;font-weight:600;color:var(--forest)}
+.bc-meta{font-size:.7rem;color:var(--g400);font-weight:600;letter-spacing:.04em;text-transform:uppercase}
+
+/* DATA CELLS (homepage figures) */
+.data-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem;margin-bottom:1rem}
+.dc{background:var(--sand);border:1px solid var(--line);padding:1.5rem}
+.dc-label{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--mist);margin-bottom:.5rem}
+.dc-val{font-family:var(--disp);font-size:2rem;font-weight:600;color:var(--ink);letter-spacing:-.02em;line-height:1}
+.dc-val.acc{color:var(--forest)}
+.dc-sub{font-size:.74rem;color:var(--mist);margin-top:.3rem}
+
+/* WHY CARDS */
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.why-card{background:var(--paper);border:1px solid var(--line);padding:1.8rem;border-top:3px solid var(--forest)}
+.why-num{font-family:var(--disp);font-size:2.4rem;font-weight:900;color:var(--marigold);line-height:1;margin-bottom:1rem}
+.why-card h3{font-family:var(--disp);font-size:1.2rem;font-weight:600;margin-bottom:.5rem}
+.why-card p{font-size:.88rem;color:var(--mist);line-height:1.6}
+
+/* CTA BLOCK */
+.cta-block{background:var(--ink);color:var(--paper);padding:3rem 2rem;text-align:center}
+.cta-block h2,.cta-block h3{font-family:var(--disp);font-weight:600;color:var(--paper);letter-spacing:-.01em;margin-bottom:.6rem}
+.cta-block h2{font-size:clamp(1.5rem,3vw,2.2rem)}
+.cta-block h3{font-size:1.4rem}
+.cta-block p{color:rgba(255,255,255,.7);margin-bottom:1.5rem;font-size:1rem}
+
+/* BUTTONS */
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 1.6rem;font-family:var(--body);font-weight:600;font-size:.9rem;cursor:pointer;border:none;transition:.18s;text-decoration:none;letter-spacing:.01em}
+.btn-accent{background:var(--marigold);color:var(--ink)}
+.btn-accent:hover{background:#eaa523}
+.btn-full{width:100%;justify-content:center}
+.btn:not(.btn-accent){background:var(--ink);color:var(--paper)}
+.btn:not(.btn-accent):hover{background:var(--forest);color:#fff}
+
+/* LAYOUT (tool + article) */
+.layout{max-width:1140px;margin:0 auto;padding:2.5rem 2rem;display:grid;grid-template-columns:1fr 320px;gap:2.5rem;align-items:start}
+@media(max-width:920px){.layout{grid-template-columns:1fr;gap:1.5rem}.sidebar{display:none}}
+
+/* CARD (tool input) */
+.card{background:var(--paper);border:1px solid var(--line)}
+.card-head{padding:1.4rem 1.6rem;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:.9rem}
+.card-cat{font-family:var(--body);font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);border-right:1px solid var(--line);padding-right:.9rem}
+.card-head h2{font-family:var(--disp);font-size:1.4rem;font-weight:600;letter-spacing:-.01em}
+.card-head p{font-size:.84rem;color:var(--mist);margin-top:.15rem}
+.card-body{padding:1.6rem}
+
+/* FORM */
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem 1.3rem;margin-bottom:1.4rem}
+@media(max-width:500px){.form-grid{grid-template-columns:1fr}}
+.fg{display:flex;flex-direction:column;gap:.4rem}
+label{font-family:var(--body);font-size:.78rem;font-weight:600;color:var(--ink);letter-spacing:.01em}
+label .hint{font-weight:400;color:var(--mist)}
+.iw{position:relative}
+.ipre,.isuf{position:absolute;top:50%;transform:translateY(-50%);font-size:.95rem;color:var(--mist);font-weight:500;pointer-events:none}
+.ipre{left:1rem}.isuf{right:1rem}
+input,select{width:100%;padding:.8rem 1rem;border:1px solid var(--line);font-family:var(--body);font-size:1rem;font-weight:500;color:var(--ink);background:var(--paper);transition:.15s;appearance:none;border-radius:0}
+input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 0 3px rgba(27,67,50,.1)}
+.has-pre input{padding-left:2rem}.has-suf input{padding-right:2.4rem}
+.sw{position:relative}.sw::after{content:'';position:absolute;right:1.1rem;top:50%;width:7px;height:7px;border-right:2px solid var(--mist);border-bottom:2px solid var(--mist);transform:translateY(-65%) rotate(45deg);pointer-events:none}
+
+/* RESULT PANELS — the editorial figure signature */
+.results{margin-top:1.6rem;display:none}
+.results.show{display:block;animation:fadeUp .4s ease}
+@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.th-panel{background:var(--ink);color:var(--paper);padding:2rem;display:flex;justify-content:space-between;align-items:flex-end;gap:1.5rem;margin-bottom:1.4rem}
+.th-label{font-family:var(--body);font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:rgba(255,255,255,.6);margin-bottom:.6rem}
+.th-amount{font-family:var(--disp);font-size:3.4rem;font-weight:600;line-height:.95;letter-spacing:-.03em;color:#fff;border-bottom:3px solid var(--marigold);padding-bottom:.3rem;display:inline-block}
+.th-period{font-size:.82rem;color:rgba(255,255,255,.6);margin-top:.6rem}
+.eff-block{text-align:right;flex-shrink:0}
+.eff-val{font-family:var(--disp);font-size:2rem;font-weight:600;color:var(--marigold);display:block;letter-spacing:-.02em;line-height:1}
+.eff-lbl{font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:rgba(255,255,255,.6)}
+
+/* breakdown blocks */
+.bb{border:1px solid var(--line);margin-bottom:1rem}
+.bb-title{padding:.7rem 1.1rem;font-family:var(--body);font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.14em;background:var(--sand);border-bottom:1px solid var(--line);color:var(--mist)}
+.br{display:flex;justify-content:space-between;align-items:center;padding:.7rem 1.1rem;font-size:.92rem;border-bottom:1px solid var(--line)}
+.br:last-child{border-bottom:none}
+.br .lbl{color:var(--mist)}
+.br .val{font-weight:600;font-variant-numeric:tabular-nums;font-family:var(--body)}
+.val.neg{color:var(--berry)}.val.pos{color:var(--forest)}.val.neu{color:var(--ink)}.val.acc{color:var(--forest)}
+.total-bar{display:flex;justify-content:space-between;align-items:center;padding:1.1rem 1.3rem;background:var(--sand);border:1px solid var(--forest);margin-bottom:1rem}
+.total-bar .lbl{font-family:var(--disp);font-size:1.05rem;font-weight:600;color:var(--forest)}
+.total-bar .val{font-family:var(--disp);font-size:1.3rem;font-weight:700;color:var(--forest);font-variant-numeric:tabular-nums}
+
+/* notes */
+.note{padding:.85rem 1.1rem;font-size:.84rem;line-height:1.6;margin-bottom:.7rem;display:flex;gap:.7rem;border:1px solid var(--line);background:var(--sand)}
+.note.warn{background:#FBF3E0;border-color:#E6D08A;color:#6B5414}
+.note a{color:var(--forest);font-weight:600}
+
+/* tabs */
+.type-tabs,.period-tabs{display:flex;gap:.4rem;margin-bottom:1.4rem;background:var(--sand);padding:.3rem;border:1px solid var(--line)}
+.type-tab,.ptab{flex:1;padding:.6rem;border:none;background:transparent;font-family:var(--body);font-weight:600;font-size:.8rem;color:var(--mist);cursor:pointer;transition:.15s;text-align:center}
+.type-tab.active,.ptab.active{background:var(--ink);color:var(--paper)}
+
+/* SIDEBAR */
+.sidebar{display:flex;flex-direction:column;gap:1.5rem}
+.sc{background:var(--paper);border:1px solid var(--line)}
+.sc-head{padding:.8rem 1.1rem;font-family:var(--body);font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.14em;border-bottom:1px solid var(--line);background:var(--sand);color:var(--mist)}
+.sc-body{padding:1.1rem}
+.tip{display:flex;gap:.7rem;margin-bottom:.85rem;font-size:.84rem;color:var(--mist);line-height:1.55}
+.tip:last-child{margin-bottom:0}
+.tip a{color:var(--forest);font-weight:600}
+.qr{display:flex;justify-content:space-between;font-size:.84rem;padding:.45rem 0;border-bottom:1px solid var(--line);color:var(--mist)}
+.qr:last-child{border-bottom:none}
+.qr strong{color:var(--ink);font-weight:600;font-family:var(--disp)}
+.toc-link{display:block;font-size:.84rem;font-weight:500;color:var(--mist);padding:.4rem 0;border-bottom:1px solid var(--line);transition:color .15s}
+.toc-link:last-child{border-bottom:none}
+.toc-link:hover{color:var(--forest)}
+.related-post{display:block;padding:.75rem 0;border-bottom:1px solid var(--line)}
+.related-post:last-child{border-bottom:none}
+.rp-cat{font-size:.62rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--forest);margin-bottom:.25rem}
+.rp-title{font-family:var(--disp);font-size:.92rem;font-weight:500;color:var(--ink);line-height:1.3}
+.related-post:hover .rp-title{color:var(--forest)}
+
+/* DATA TABLE */
+.data-table{width:100%;border-collapse:collapse;margin:1.2rem 0 1.6rem;font-size:.9rem;border:1px solid var(--line)}
+.data-table thead tr{background:var(--ink)}
+.data-table th{padding:.75rem 1rem;text-align:left;font-family:var(--body);font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--paper)}
+.data-table td{padding:.7rem 1rem;border-bottom:1px solid var(--line);color:var(--ink);font-variant-numeric:tabular-nums}
+.data-table tr:last-child td{border-bottom:none}
+.data-table tr:nth-child(even) td{background:var(--sand)}
+.data-table td.td-green{color:var(--forest);font-weight:600}
+.data-table td.td-red{color:var(--berry);font-weight:600}
+.data-table td.td-acc{color:var(--forest);font-weight:600}
+
+/* ARTICLE BODY — magazine measure */
+.article-body{padding:2.5rem}
+@media(max-width:600px){.article-body{padding:1.5rem}}
+.article-body h2{font-family:var(--disp);font-size:1.7rem;font-weight:600;color:var(--ink);margin:2.4rem 0 .8rem;letter-spacing:-.01em;line-height:1.15;max-width:30ch}
+.article-body h2::before{content:'';display:block;width:36px;height:3px;background:var(--marigold);margin-bottom:1rem}
+.article-body h2:first-child{margin-top:0}
+.article-body h3{font-family:var(--disp);font-size:1.25rem;font-weight:600;margin:1.6rem 0 .5rem}
+.article-body p{font-family:var(--body);font-size:1.06rem;color:#2C352F;line-height:1.75;margin-bottom:1.1rem;max-width:68ch}
+.article-body ul{margin:.6rem 0 1.3rem 1.3rem;max-width:66ch}
+.article-body li{font-family:var(--body);font-size:1.04rem;color:#2C352F;line-height:1.7;margin-bottom:.5rem}
+.article-body a{color:var(--forest);font-weight:500;border-bottom:1px solid var(--marigold)}
+.article-body strong{font-weight:600;color:var(--ink)}
+.callout,.callout.navy,.callout.grey,.callout.green{border:none;border-left:3px solid var(--marigold);background:var(--sand);padding:1.2rem 1.4rem;margin:1.6rem 0;font-family:var(--disp);font-size:1.15rem;font-weight:500;line-height:1.5;color:var(--ink);max-width:64ch}
+.callout strong{color:var(--forest)}
+
+/* FOOTER */
+footer{background:var(--ink);color:var(--paper);margin-top:2rem}
+.footer-inner{max-width:1080px;margin:0 auto;padding:2.5rem 2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.footer-logo{font-family:var(--disp);font-size:1.5rem;font-weight:900;color:var(--paper)}
+.footer-logo span{color:var(--marigold);font-style:italic;font-weight:600}
+.footer-links{display:flex;gap:1.4rem;flex-wrap:wrap}
+.footer-links a{color:rgba(255,255,255,.7);font-size:.82rem;font-weight:500;transition:color .15s}
+.footer-links a:hover{color:var(--marigold)}
+.footer-copy{color:rgba(255,255,255,.5);font-size:.74rem;width:100%;margin-top:.8rem;padding-top:.9rem;border-top:1px solid rgba(255,255,255,.12)}
+
+/* MISC legacy */
+.scenario-result{background:var(--sand);border:1px solid var(--forest);padding:1.2rem}
+.disclaim,.disclaim-box{font-size:.82rem;color:var(--mist);background:var(--sand);border:1px solid var(--line);padding:.9rem 1.1rem;line-height:1.6}
+.eyebrow{font-family:var(--body);font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);margin-bottom:.5rem}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  [style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr!important}
+  [style*="grid-template-columns:repeat(3,1fr)"]{grid-template-columns:1fr!important}
+  [style*="grid-template-columns:repeat(4,1fr)"]{grid-template-columns:1fr 1fr!important}
+  [style*="grid-template-columns:2fr 1fr 1fr"]{grid-template-columns:1fr!important}
+  [style*="grid-template-columns:1.1fr 1fr"]{grid-template-columns:1fr!important}
+  [style*="grid-template-columns:1fr 1fr;gap:4rem"]{grid-template-columns:1fr!important;gap:2rem!important}
+  .blog-grid,.data-row,.why-grid{grid-template-columns:1fr!important}
+  .ph{padding:2.5rem 1.25rem 2rem}.section{padding:2.5rem 1.25rem}.layout{padding:1.5rem 1.25rem}
+  .th-panel{flex-direction:column;align-items:flex-start;gap:1rem}.eff-block{text-align:left}
+  .th-amount{font-size:2.6rem}
+  .footer-inner{flex-direction:column;text-align:center}.footer-links{justify-content:center}
+  .top-bar{padding:.4rem 1rem}.tb-r{display:none}
+  .data-table{display:block;overflow-x:auto}
+}
+.story-section{margin-top:1.8rem;border-top:2px solid var(--ink);padding-top:1.8rem}
+.story-kicker{font-family:var(--body);font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);margin-bottom:.4rem;display:flex;align-items:center;gap:.6rem}
+.story-kicker::before{content:'';width:24px;height:2px;background:var(--marigold)}
+.story-title{font-family:var(--disp);font-size:1.6rem;font-weight:600;color:var(--ink);letter-spacing:-.01em;margin-bottom:.4rem}
+.story-sub{font-size:.88rem;color:var(--mist);margin-bottom:1.5rem;max-width:60ch}
+.story-age-row{display:flex;align-items:center;gap:.8rem;margin-bottom:1.6rem;padding:.9rem 1.1rem;background:var(--sand);border:1px solid var(--line)}
+.story-age-row label{font-size:.82rem;font-weight:600;color:var(--ink);white-space:nowrap}
+.story-age-row input{max-width:90px;padding:.5rem .7rem}
+.story-age-row .story-age-note{font-size:.78rem;color:var(--mist)}
+.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+@media(max-width:600px){.story-grid{grid-template-columns:1fr}}
+.story-card{background:#fff;border:1px solid var(--line);padding:0;text-decoration:none;color:var(--ink);display:flex;overflow:hidden;transition:.18s;position:relative}
+.story-card:hover{border-color:var(--ink);box-shadow:0 4px 18px rgba(0,0,0,.07);transform:translateY(-2px)}
+.story-stripe{width:6px;flex-shrink:0}
+.story-stripe.c-housing{background:var(--forest)}
+.story-stripe.c-car{background:var(--marigold)}
+.story-stripe.c-safety{background:#3d7a9e}
+.story-stripe.c-retire{background:#8a5cb8}
+.story-stripe.c-compare{background:var(--berry)}
+.story-body{padding:1.3rem 1.4rem;flex:1;min-width:0}
+.story-label{font-family:var(--body);font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:var(--mist);margin-bottom:.5rem}
+.story-val{font-family:var(--disp);font-size:1.9rem;font-weight:600;color:var(--ink);letter-spacing:-.02em;line-height:1;margin-bottom:.5rem}
+.story-desc{font-size:.8rem;color:var(--mist);line-height:1.5;margin-bottom:.7rem}
+.story-arrow{font-size:.78rem;font-weight:600;color:var(--forest)}
+.story-compare-card{grid-column:1/-1;background:#fff;border:1px solid var(--line);padding:1.4rem 1.5rem}
+.compare-toggle{display:flex;gap:.4rem;margin-bottom:1.1rem}
+.compare-toggle button{padding:.4rem .9rem;border:1px solid var(--line);background:var(--paper);font-family:var(--body);font-size:.78rem;font-weight:600;color:var(--mist);cursor:pointer;transition:.15s}
+.compare-toggle button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.compare-body{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap}
+.compare-vs{display:flex;align-items:center;gap:1rem;flex:1;min-width:240px}
+.compare-side{text-align:center}
+.compare-side .who{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--mist);margin-bottom:.3rem}
+.compare-side .amt{font-family:var(--disp);font-size:1.4rem;font-weight:600;color:var(--ink)}
+.compare-side.you .amt{color:var(--forest)}
+.compare-vsdivider{font-family:var(--disp);font-size:.9rem;color:var(--g400);font-style:italic}
+.compare-result{flex-shrink:0;text-align:right}
+.compare-pct{font-family:var(--disp);font-size:1.6rem;font-weight:600;line-height:1}
+.compare-pct.up{color:var(--forest)}
+.compare-pct.down{color:var(--berry)}
+.compare-select{margin-top:1rem}
+.compare-select select{max-width:280px}
+.journey{margin-top:1.5rem;padding:1.2rem 1.4rem;background:var(--sand);border:1px solid var(--line)}
+.journey-title{font-family:var(--body);font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--mist);margin-bottom:.8rem}
+.journey-path{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;font-size:.85rem}
+.journey-path a{color:var(--forest);font-weight:600;padding:.35rem .7rem;background:#fff;border:1px solid var(--line);transition:.15s}
+.journey-path a:hover{border-color:var(--forest);background:var(--sand)}
+.journey-sep{color:var(--g400)}.whatif-section{margin-top:1.8rem;border-top:2px solid var(--ink);padding-top:1.8rem}
+.whatif-kicker{font-family:var(--body);font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);margin-bottom:.4rem;display:flex;align-items:center;gap:.6rem}
+.whatif-kicker::before{content:'';width:24px;height:2px;background:var(--marigold)}
+.whatif-title{font-family:var(--disp);font-size:1.6rem;font-weight:600;color:var(--ink);letter-spacing:-.01em;margin-bottom:.4rem}
+.whatif-sub{font-size:.88rem;color:var(--mist);margin-bottom:1.5rem;max-width:60ch}
+.whatif-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;margin-bottom:1.5rem}
+@media(max-width:700px){.whatif-grid{grid-template-columns:1fr}}
+.whatif-control{background:#fff;border:1px solid var(--line);padding:1.2rem 1.3rem}
+.whatif-control-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:.7rem}
+.whatif-control-head label{font-family:var(--body);font-size:.82rem;font-weight:600;color:var(--ink)}
+.whatif-control-head output{font-family:var(--disp);font-size:1.1rem;font-weight:600;color:var(--forest)}
+.whatif-control input[type=range]{width:100%;accent-color:var(--forest);height:6px;cursor:pointer}
+.whatif-result{background:var(--ink);color:#fff;padding:1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1.5rem;flex-wrap:wrap}
+.whatif-result-label{font-family:var(--body);font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:rgba(255,255,255,.6);margin-bottom:.5rem}
+.whatif-result-val{font-family:var(--disp);font-size:2.6rem;font-weight:600;line-height:1;letter-spacing:-.03em}
+.whatif-delta{text-align:right}
+.whatif-delta-val{font-family:var(--disp);font-size:1.6rem;font-weight:600;line-height:1}
+.whatif-delta-val.up{color:var(--marigold)}
+.whatif-delta-val.down{color:#e88a8a}
+.whatif-delta-lbl{font-size:.72rem;color:rgba(255,255,255,.6);margin-top:.3rem}
+.whatif-reset{margin-top:1rem;text-align:center}
+.whatif-reset button{background:none;border:1px solid var(--line);padding:.5rem 1.1rem;font-family:var(--body);font-size:.78rem;font-weight:600;color:var(--mist);cursor:pointer;transition:.15s}
+.whatif-reset button:hover{border-color:var(--ink);color:var(--ink)}</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6108324382808705" crossorigin="anonymous"></script>
+</head>
+<body><div class="sa-stripe"></div><div class="top-bar"><div class="tb-l">🇿🇦 South Africa · Wealth Building</div><div class="tb-r">Plan your money · <span>Build your future</span></div></div><nav>
+  <a href="/" class="logo"><div class="logo-text">CalcMy<span>Pay</span></div></a>
+  <div class="nav-links">
+    <a href="/salary-income">Salary</a><a href="/affordability">Affordability</a><a href="/wealth-building" class="active">Wealth</a><a href="/career-intelligence">Careers</a><a href="/money-tools">Tools</a><a href="/financial-coach">Coach</a><a href="/blog-salary-guide">Guides</a><a href="/salary-calculator" class="nav-cta">Calculate →</a>
+  </div>
+</nav><div class="ph"><div class="ph-inner"><div class="bc"><a href="/">Home</a><span>/</span><a href="/wealth-building">Wealth Building</a><span>/</span>Compound Interest Calculator</div><div class="ph-cat">Wealth Building</div><h1>Compound Interest Calculator</h1><p>See how your money grows over time with compounding</p></div></div><div class="layout"><div><div class="card"><div class="card-head"><div class="card-cat">Compound</div><div><h2>Compound interest</h2><p>Watch your money grow over time</p></div></div>
+<div class="card-body">
+<div class="form-grid">
+<div class="fg"><label>Starting Amount</label><div class="iw has-pre"><span class="ipre">R</span><input type="number" id="start" placeholder="10 000" min="0"></div></div>
+<div class="fg"><label>Monthly Contribution</label><div class="iw has-pre"><span class="ipre">R</span><input type="number" id="monthly" placeholder="2 000" min="0"></div></div>
+<div class="fg"><label>Annual Return</label><div class="iw has-suf"><input type="number" id="rate" value="10" step="0.5" min="0"><span class="isuf">%</span></div></div>
+<div class="fg"><label>Years</label><div class="iw"><input type="number" id="years" placeholder="20" min="1" value="20"></div></div>
+</div>
+<button class="btn btn-full btn-accent" onclick="calc()">Calculate growth →</button>
+<div class="results" id="res">
+<div class="th-panel"><div><div class="th-label">Future value</div><div class="th-amount" id="big">R0</div><div class="th-period" id="period">after 20 years</div></div><div class="eff-block"><span class="eff-val" id="growth">R0</span><span class="eff-lbl">Interest earned</span></div></div>
+<div class="bb"><div class="bb-title">Your investment breakdown</div>
+<div class="br"><span class="lbl">Starting amount</span><span class="val neu" id="r-start">R0</span></div>
+<div class="br"><span class="lbl">Total contributions</span><span class="val neu" id="r-contrib">R0</span></div>
+<div class="br"><span class="lbl">Total invested</span><span class="val neu" id="r-invested">R0</span></div>
+<div class="br"><span class="lbl">Interest / growth earned</span><span class="val pos" id="r-interest">R0</span></div>
+</div>
+<div class="total-bar"><span class="lbl">✓ Future value</span><span class="val" id="r-final">R0</span></div>
+<div id="chart" style="margin-top:1rem"></div>
+<div class="note warn"><span>⚠</span><span>Returns are not guaranteed and vary with markets. This assumes a constant return for illustration. Inflation will reduce real buying power over time.</span></div>
+<div class="story-section" id="money-story" style="display:none">
+  <div class="story-kicker">Your money story</div>
+  <div class="story-title">What this future value could actually fund</div>
+  <p class="story-sub">Turning a projected number into real financial milestones.</p>
+
+  <div class="story-grid">
+    <a href="/retirement-calculator" class="story-card"><div class="story-stripe c-retire"></div><div class="story-body">
+      <div class="story-label">💵 Monthly income this could provide</div>
+      <div class="story-val" id="ms-income">R0</div>
+      <div class="story-desc">Using the 4% safe withdrawal rule, for life</div>
+      <span class="story-arrow">Plan your retirement in detail →</span>
+    </div></a>
+
+    <a href="/fire-calculator" class="story-card"><div class="story-stripe c-car"></div><div class="story-body">
+      <div class="story-label">🔥 Progress toward financial independence</div>
+      <div class="story-val" id="ms-fire-fund">—</div>
+      <div class="story-desc">Compared to a R6m reference FIRE number (R20k/month expenses)</div>
+      <span class="story-arrow">Find your FIRE number →</span>
+    </div></a>
+
+    <a href="/home-affordability" class="story-card"><div class="story-stripe c-housing"></div><div class="story-body">
+      <div class="story-label">🏠 As a 10% deposit, it supports a</div>
+      <div class="story-val" id="ms-deposit">—</div>
+      <div class="story-desc">Home price this deposit could unlock</div>
+      <span class="story-arrow">Check home affordability →</span>
+    </div></a>
+
+    <a href="/savings-goal" class="story-card"><div class="story-stripe c-safety"></div><div class="story-body">
+      <div class="story-label">🎯 Set this as a savings goal</div>
+      <div class="story-val">Plan it</div>
+      <div class="story-desc">Turn this projection into a concrete monthly plan</div>
+      <span class="story-arrow">Build your savings plan →</span>
+    </div></a>
+  </div>
+
+  <div class="journey">
+    <div class="journey-title">Continue your financial plan</div>
+    <div class="journey-path">
+      <a href="/retirement-calculator">Retirement calculator</a><span class="journey-sep">→</span>
+      <a href="/fire-calculator">FIRE calculator</a><span class="journey-sep">→</span>
+      <a href="/net-worth">Net worth</a><span class="journey-sep">→</span>
+      <a href="/blog-compound-interest-explained-sa">Compounding explained</a>
+    </div>
+  </div>
+</div>
+
+<div class="whatif-section" id="whatif-section" style="display:none">
+  <div class="whatif-kicker">What if?</div>
+  <div class="whatif-title">Test a scenario</div>
+  <p class="whatif-sub">Drag the sliders to see how changes affect your future value.</p>
+
+  <div class="whatif-grid">
+    <div class="whatif-control">
+      <div class="whatif-control-head"><label>Extra monthly contribution</label><output id="wi-contrib-out">R0</output></div>
+      <input type="range" id="wi-contrib" min="0" max="10000" value="0" step="250" oninput="renderWhatIf()">
+    </div>
+    <div class="whatif-control">
+      <div class="whatif-control-head"><label>Extra years invested</label><output id="wi-years-out">+0 yrs</output></div>
+      <input type="range" id="wi-years" min="0" max="20" value="0" step="1" oninput="renderWhatIf()">
+    </div>
+  </div>
+
+  <div class="whatif-result">
+    <div>
+      <div class="whatif-result-label">New future value</div>
+      <div class="whatif-result-val" id="wi-newfv">R0</div>
+    </div>
+    <div class="whatif-delta">
+      <div class="whatif-delta-val" id="wi-delta">—</div>
+      <div class="whatif-delta-lbl">vs your current projection</div>
+    </div>
+  </div>
+  <div class="whatif-reset"><button onclick="resetWhatIf()">Reset scenario</button></div>
+  <div class="note warn" style="margin-top:1rem"><span>⚠</span><span>Assumes the same rate of return continues. Real returns vary year to year and are never guaranteed.</span></div>
+</div>
+
+</div></div></div></div><div class="sidebar"><div class="sc"><div class="sc-head">The power of compounding</div><div class="sc-body">
+<div class="tip"><span>→</span><span>Time is your biggest advantage — start as early as you can.</span></div>
+<div class="tip"><span>→</span><span>Regular monthly contributions massively boost the end result.</span></div>
+<div class="tip"><span>→</span><span>A TFSA lets your growth compound tax-free.</span></div>
+<div class="tip"><span>→</span><span>Even small amounts grow large over decades.</span></div>
+</div></div></div></div><div class="section" style="padding-top:0"><div class="section-header"><div class="section-title">Related <span>/</span> Wealth Tools</div></div><div class="tools-grid"><a href="/net-worth" class="tool-card featured"><div class="tc-cat">Wealth Building</div><h3>Net Worth Calculator</h3><p>Track what you own minus what you owe.</p><span class="tc-link">Open →</span></a><a href="/retirement-calculator" class="tool-card featured"><div class="tc-cat">Wealth Building</div><h3>Retirement Calculator</h3><p>Are you saving enough to retire well?</p><span class="tc-link">Open →</span></a><a href="/savings-goal" class="tool-card featured"><div class="tc-cat">Wealth Building</div><h3>Savings Goal Calculator</h3><p>Plan how to reach a savings target.</p><span class="tc-link">Open →</span></a><a href="/fire-calculator" class="tool-card featured"><div class="tc-cat">Wealth Building</div><h3>FIRE Calculator</h3><p>Find your financial independence number.</p><span class="tc-link">Open →</span></a></div></div><div class="section" style="padding-top:0" data-articles="1"><div class="section-header"><div class="section-title">Learn more <span>/</span> Guides</div></div><div class="tools-grid"><a href="/blog-compound-interest-explained-sa" class="tool-card featured" style="border-top-color:var(--navy)"><div class="tc-cat">Guide</div><h3>Compound Interest Explained for South Africans</h3><span class="tc-link">Read guide →</span></a><a href="/blog-how-to-become-a-millionaire-sa" class="tool-card featured" style="border-top-color:var(--navy)"><div class="tc-cat">Guide</div><h3>How to Save Your First R1 Million</h3><span class="tc-link">Read guide →</span></a><a href="/blog-best-investments-south-africa-2026" class="tool-card featured" style="border-top-color:var(--navy)"><div class="tc-cat">Guide</div><h3>Best Ways to Invest Money in South Africa</h3><span class="tc-link">Read guide →</span></a></div></div>
+<div class="sa-stripe"></div>
+<div class="section"><div style="background:var(--white);border:1px solid var(--line);border-top:3px solid var(--forest)"><div class="article-body"><h2>The mechanics behind compounding, explained simply</h2><p>Compound interest is often described as "interest on interest" — a phrase that is accurate but abstract. In practical terms, it means every rand you invest starts earning its own returns, and those returns then earn returns too. The effect is small in year one and dramatic by year twenty, which is exactly why time in the market matters more than almost any other single factor in building wealth.</p><h2>A concrete illustration of the acceleration</h2><p>Consider R100,000 invested at a steady 10% annual return, with no further contributions. In year one, you earn R10,000. But by year ten, you are earning roughly R23,600 in that single year alone — more than double the original annual gain — simply because the base you are earning on has grown.</p><table class="data-table"><thead><tr><th>Year</th><th>Balance</th><th>That year's growth</th></tr></thead><tbody><tr><td>1</td><td>R110,000</td><td>R10,000</td></tr><tr><td>5</td><td>R161,051</td><td>R14,641</td></tr><tr><td>10</td><td>R259,374</td><td>R23,579</td></tr><tr><td>20</td><td>R672,750</td><td>R61,159</td></tr></tbody></table><h2>Why monthly contributions change the outcome so dramatically</h2><p>A lump sum compounds on itself, but regular monthly contributions add fresh capital that then also has years to compound. This is why the calculator above weights consistent monthly investing so heavily — someone contributing R2,000/month for 20 years typically ends up with a meaningfully larger balance than someone who invests a much larger lump sum once and stops.</p><h2>The real-world variables this calculator simplifies</h2><ul><li><strong>Returns are never constant</strong> — markets move up and down year to year; this tool assumes a smoothed average for clarity, not a guarantee</li><li><strong>Inflation erodes real value</strong> — a rand in 20 years buys less than a rand today, so your real (inflation-adjusted) growth is lower than the nominal figure shown</li><li><strong>Fees matter more than people expect</strong> — a 2% annual fee versus a 0.5% fee compounds into a very large difference over decades</li><li><strong>Tax treatment varies</strong> — growth inside a tax-free savings account compounds untaxed, while growth in a regular account is taxed along the way</li></ul><h2>Where compounding works hardest for South Africans</h2><p>A tax-free savings account is one of the most direct ways to let compounding work without the drag of tax on your growth. Combined with a retirement annuity — which adds an upfront tax deduction on top of tax-free growth — these two vehicles are the backbone of most disciplined long-term investing strategies in South Africa.</p><h2>Turning this projection into an actual plan</h2><p>A future value on a screen is only useful once it becomes a plan you act on. If this projection reveals a gap between where you're headed and where you want to be, the <a href="/savings-goal">savings goal calculator</a> can help you work out exactly how much more to contribute, and the <a href="/retirement-calculator">retirement calculator</a> shows what this kind of growth means specifically for your retirement timeline.</p></div></div></div>
+
+<footer><div class="footer-inner">
+  <div class="footer-logo">CalcMy<span>Pay</span></div>
+  <div class="footer-links"><a href="/salary-income">Salary</a><a href="/affordability">Affordability</a><a href="/wealth-building">Wealth</a><a href="/money-tools">Tools</a><a href="/financial-coach">Coach</a><a href="/blog-salary-guide">Guides</a><a href="/about">About</a><a href="/privacy-policy">Privacy</a><a href="/contact">Contact</a></div>
+  <div class="footer-copy">© 2026 CalcMyPay · Understand your salary. Plan your money. Build your future. · For informational purposes only · Not affiliated with SARS · SARS 2027 tax year</div>
+</div></footer>
+<script>const fmt=n=>'R\u00a0'+Math.round(Math.abs(n)).toLocaleString('en-ZA');
+function fmtK(n){n=Math.round(n);if(Math.abs(n)>=1e6)return 'R\u00a0'+(n/1e6).toFixed(2)+'m';if(Math.abs(n)>=1e3)return 'R\u00a0'+Math.round(n/1e3).toLocaleString('en-ZA')+'k';return fmt(n);}
+
+function calc(){
+ const start=parseFloat(document.getElementById('start').value)||0;
+ const monthly=parseFloat(document.getElementById('monthly').value)||0;
+ const rate=parseFloat(document.getElementById('rate').value)||10;
+ const years=parseInt(document.getElementById('years').value)||20;
+ if(start<=0&&monthly<=0){alert('Enter a starting amount or monthly contribution.');return;}
+ const r=rate/100/12, n=years*12;
+ let fvStart=start*Math.pow(1+r,n);
+ let fvMonthly= r===0? monthly*n : monthly*((Math.pow(1+r,n)-1)/r);
+ const fv=fvStart+fvMonthly;
+ const contrib=monthly*n;
+ const invested=start+contrib;
+ const interest=fv-invested;
+ document.getElementById('big').textContent=fmt(fv);
+ document.getElementById('period').textContent='after '+years+' years';
+ document.getElementById('growth').textContent=fmtK(interest);
+ document.getElementById('r-start').textContent=fmt(start);
+ document.getElementById('r-contrib').textContent=fmt(contrib);
+ document.getElementById('r-invested').textContent=fmt(invested);
+ document.getElementById('r-interest').textContent=fmt(interest);
+ document.getElementById('r-final').textContent=fmt(fv);
+ // simple bar chart by year
+ let bars='';
+ const step=Math.max(1,Math.round(years/10));
+ let maxv=fv;
+ for(let y=step;y<=years;y+=step){
+   const nn=y*12;
+   const v=start*Math.pow(1+r,nn)+(r===0?monthly*nn:monthly*((Math.pow(1+r,nn)-1)/r));
+   const h=Math.round(v/maxv*100);
+   bars+=`<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:.3rem"><div style="width:100%;background:var(--accent);height:${h}px;border-radius:3px 3px 0 0;min-height:2px"></div><span style="font-size:.6rem;color:var(--g600)">${y}y</span></div>`;
+ }
+ document.getElementById('chart').innerHTML='<div class="bb-title" style="border:1px solid var(--g200);border-bottom:none">Growth over time</div><div style="display:flex;align-items:flex-end;gap:3px;height:120px;padding:1rem;border:1px solid var(--g200);background:var(--white)">'+bars+'</div>';
+ renderMoneyStory(fv);
+ baseInputs = {start, monthly, rate, years, fv};
+ document.getElementById('whatif-section').style.display = 'block';
+ resetWhatIf();
+ document.getElementById('res').classList.add('show');
+ document.getElementById('res').scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+document.addEventListener('keydown',e=>{if(e.key=='Enter')calc()});
+
+function renderMoneyStory(fv){
+  const drawMonthly = fv*0.04/12;
+  document.getElementById('ms-income').textContent = fmtK(drawMonthly)+'/month';
+
+  const fireEl = document.getElementById('ms-fire-fund');
+  // Assume a modest SA monthly expense benchmark of R20,000 -> FIRE number R6m, for a relatable comparison
+  const referenceFireNum = 6000000;
+  const pct = (fv/referenceFireNum*100);
+  fireEl.textContent = pct.toFixed(0)+'% of a R6m FIRE number';
+
+  const depositEl = document.getElementById('ms-deposit');
+  // Compare to a 10% deposit on a range of home prices
+  const homePriceSupported = fv/0.10;
+  depositEl.textContent = fmtK(homePriceSupported)+' home';
+}
+
+let baseInputs = null;
+
+function renderWhatIf(){
+  if(!baseInputs) return;
+  const extraContrib = parseFloat(document.getElementById('wi-contrib').value);
+  const extraYears = parseFloat(document.getElementById('wi-years').value);
+
+  document.getElementById('wi-contrib-out').textContent = fmt(extraContrib);
+  document.getElementById('wi-years-out').textContent = '+'+extraYears+' yrs';
+
+  const newMonthly = baseInputs.monthly + extraContrib;
+  const newYears = baseInputs.years + extraYears;
+  const r = baseInputs.rate/100/12, n = newYears*12;
+  const fvStart = baseInputs.start * Math.pow(1+r, n);
+  const fvMonthly = r===0 ? newMonthly*n : newMonthly*((Math.pow(1+r,n)-1)/r);
+  const newFv = fvStart + fvMonthly;
+
+  document.getElementById('wi-newfv').textContent = fmtK(newFv);
+  const delta = newFv - baseInputs.fv;
+  const deltaEl = document.getElementById('wi-delta');
+  if(Math.abs(delta) < 1){ deltaEl.textContent = 'No change'; deltaEl.className = 'whatif-delta-val'; }
+  else { deltaEl.textContent = '+'+fmtK(delta); deltaEl.className = 'whatif-delta-val up'; }
+}
+
+function resetWhatIf(){
+  document.getElementById('wi-contrib').value = 0;
+  document.getElementById('wi-years').value = 0;
+  renderWhatIf();
+}
+</script></body></html>
