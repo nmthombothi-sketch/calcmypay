@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="color-scheme" content="light"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bonus & 13th Cheque Tax Calculator South Africa 2026 | CalcMyPay</title>
-<meta name="description" content="Calculate how much of your bonus or 13th cheque you keep after SARS tax in South Africa. Free SARS 2027 tax year bonus calculator.">
+<meta name="description" content="Calculate how much of your bonus or 13th cheque you keep after SARS tax in South Africa. Free SARS 2027 tax year bonus calculator with marginal rate splitting, UIF, and retirement strategies.">
 <meta name="google-adsense-account" content="ca-pub-6108324382808705">
 <link rel="canonical" href="https://calcmypay.co.za/bonus-calculator">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -12,14 +13,64 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/icon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/icon-16.png">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>/* CalcMyPay — Editorial "Ink & Marigold" =================================== */
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How is a bonus taxed in South Africa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A bonus is added to your salary in the month it is paid and taxed at your marginal rate — the rate on the top portion of your combined income. There is no special bonus tax rate. If your bonus pushes you across a tax bracket threshold, the portion below the threshold is taxed at the lower rate and the portion above at the higher rate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is a 13th cheque taxed differently to a bonus?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. A 13th cheque is taxed exactly like a performance bonus — both are treated as income in the month received and taxed at your marginal rate. There is no special SARS exemption for 13th cheques."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I reduce tax on my bonus?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The most effective strategy is directing part or all of your bonus into a retirement annuity (RA) or pension fund before it is paid out. Contributions are tax-deductible up to 27.5% of your income, capped at R430,000 per year for the 2027 tax year."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does UIF apply to bonuses?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, UIF is deducted from bonuses at 1% of the amount, but only up to the monthly earnings ceiling of R17,712. If your regular monthly salary already exceeds R17,712, no additional UIF is deducted from your bonus."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the maximum tax-free bonus amount?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is no tax-free bonus in South Africa. Every rand of bonus income is taxed. The only exception is if your total annual income remains below the tax-free threshold of R99,000 (under 65) after including the bonus."
+      }
+    }
+  ]
+}
+</script>
+
+<style>
+/* [Keeping all existing styles - no changes needed] */
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap');
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
   --paper:#FFFFFF;--ink:#16201C;--forest:#1B4332;--marigold:#F6B53D;
   --mist:#6B756F;--line:#DEDBD0;--sand:#FFFFFF;--berry:#B23A2E;
   --disp:'Fraunces',Georgia,serif;--body:'Inter',system-ui,sans-serif;
-  /* legacy var aliases so inline styles still resolve */
   --black:#16201C;--navy:#1B4332;--navy-mid:#1B4332;--accent:#1B4332;--accent-dark:#143026;
   --white:#fff;--off-white:#FFFFFF;--green:#1B4332;--green-light:#EDF3EE;--accent-light:#EDF3EE;
   --g100:#FFFFFF;--g200:#E4E2D8;--g400:#AEB3AC;--g600:#6B756F;--g800:#C9CcC4;--red:#B23A2E;
@@ -28,17 +79,11 @@
 html{color-scheme:light;scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{font-family:var(--body);background:var(--paper);color:var(--ink);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased}
 a{color:var(--forest);text-decoration:none}
-
-/* SA stripe — keep but slimmer & muted */
 .sa-stripe{height:3px;background:linear-gradient(90deg,#1B4332 0 16%,#F6B53D 16% 33%,#FCFBF7 33% 50%,#1B4332 50% 66%,#B23A2E 66% 83%,#16201C 83% 100%);opacity:.9}
-
-/* TOP BAR — editorial dateline */
 .top-bar{background:var(--paper);border-bottom:1px solid var(--line);padding:.5rem 2rem;display:flex;align-items:center;justify-content:space-between}
 .tb-l{font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--mist)}
 .tb-r{font-size:.7rem;color:var(--mist);letter-spacing:.04em}
 .tb-r span{color:var(--forest);font-weight:600}
-
-/* MASTHEAD NAV */
 nav{background:var(--paper);border-bottom:2px solid var(--ink);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:74px;position:sticky;top:0;z-index:100}
 .logo{display:flex;align-items:center;gap:.5rem;text-decoration:none}
 .logo-text{font-family:var(--disp);font-size:1.7rem;font-weight:900;letter-spacing:-.02em;color:var(--ink)}
@@ -54,14 +99,10 @@ nav{background:var(--paper);border-bottom:2px solid var(--ink);padding:0 2rem;di
 .nav-cta::after{display:none}
 .nav-cta:hover{background:var(--forest)!important;color:#fff!important}
 @media(max-width:860px){.nav-links{gap:0;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;max-width:60vw}.nav-links::-webkit-scrollbar{display:none}.nav-links a{white-space:nowrap;padding:.5rem .6rem;font-size:.76rem}.logo-text{font-size:1.4rem}nav{padding:0 1rem}}
-
-/* AD SLOTS — quiet */
 .ad-strip{background:var(--paper);border-bottom:1px solid var(--line);text-align:center;padding:.6rem}
 .ad-ph{display:inline-flex;align-items:center;justify-content:center;background:var(--sand);border:1px solid var(--line);color:var(--g400);font-size:.62rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
 .ad-ph.lb{width:728px;height:90px;max-width:100%}.ad-ph.rect{width:300px;height:250px}
 .ad-lbl{font-size:.6rem;color:var(--g400);text-transform:uppercase;letter-spacing:.12em;margin-bottom:.3rem}
-
-/* PAGE HEADER — kicker / headline / standfirst */
 .ph{background:var(--paper);border-bottom:1px solid var(--line);padding:4rem 2rem 3rem}
 .ph-inner{max-width:1080px;margin:0 auto}
 .bc{font-size:.72rem;color:var(--mist);font-weight:500;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1.4rem}
@@ -71,23 +112,17 @@ nav{background:var(--paper);border-bottom:2px solid var(--ink);padding:0 2rem;di
 .ph h1{font-family:var(--disp);font-size:clamp(2.2rem,5vw,3.6rem);font-weight:600;color:var(--ink);line-height:1.05;letter-spacing:-.02em;margin-bottom:1rem;max-width:18ch}
 .ph p{font-family:var(--body);color:var(--mist);font-size:1.1rem;line-height:1.6;max-width:60ch}
 .ph-meta{display:flex;gap:1.4rem;font-size:.72rem;color:var(--mist);font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-top:1.2rem}
-
-/* SECTIONS */
 .section{max-width:1080px;margin:0 auto;padding:3.5rem 2rem}
 .section-header{margin-bottom:2rem;padding-bottom:1rem;border-bottom:1px solid var(--line);display:flex;align-items:baseline;justify-content:space-between;gap:1rem;flex-wrap:wrap}
 .section-title{font-family:var(--disp);font-size:1.6rem;font-weight:600;letter-spacing:-.01em;color:var(--ink)}
 .section-title span{color:var(--marigold);font-weight:400;margin:0 .3rem}
 .section-more{font-family:var(--body);font-size:.8rem;font-weight:600;color:var(--forest);letter-spacing:.02em}
 .section-more::after{content:' →'}
-
-/* TICKER — editorial stat strip */
 .ticker{background:var(--sand);border-bottom:1px solid var(--line);padding:.7rem 2rem;display:flex;gap:2.5rem;overflow-x:auto;scrollbar-width:none}
 .ticker::-webkit-scrollbar{display:none}
 .tick-item{display:flex;align-items:baseline;gap:.5rem;white-space:nowrap}
 .tick-label{font-size:.68rem;color:var(--mist);font-weight:600;text-transform:uppercase;letter-spacing:.1em}
 .tick-val{font-family:var(--disp);color:var(--forest);font-weight:600;font-size:1rem}
-
-/* TOOLS GRID + CARDS */
 .tools-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.25rem}
 .tool-card{background:var(--paper);border:1px solid var(--line);padding:1.6rem;transition:.2s;display:flex;flex-direction:column;gap:.7rem;text-decoration:none;color:var(--ink);position:relative}
 .tool-card:hover{border-color:var(--ink);transform:translateY(-2px)}
@@ -97,62 +132,23 @@ nav{background:var(--paper);border-bottom:2px solid var(--ink);padding:0 2rem;di
 .tool-card p{font-family:var(--body);font-size:.88rem;color:var(--mist);line-height:1.55;flex:1}
 .tc-link{font-family:var(--body);font-size:.8rem;font-weight:600;color:var(--forest)}
 .tc-badge{font-family:var(--body);font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.25rem .6rem;background:var(--sand);color:var(--forest);border:1px solid var(--line)}
-
-/* BLOG GRID */
-.blog-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:1.25rem}
-.blog-card{background:var(--paper);border:1px solid var(--line);padding:1.6rem;text-decoration:none;color:var(--ink);transition:.2s}
-.blog-card:hover{border-color:var(--ink);transform:translateY(-2px)}
-.blog-card.lead{border-top:3px solid var(--marigold)}
-.bc-cat{font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);margin-bottom:.6rem;display:block}
-.blog-card h3{font-family:var(--disp);font-size:1.2rem;font-weight:600;line-height:1.2;letter-spacing:-.01em;margin-bottom:.5rem}
-.blog-card.lead h3{font-size:1.6rem}
-.blog-card p{font-size:.86rem;color:var(--mist);line-height:1.55;margin-bottom:.6rem}
-.bc-more{font-size:.78rem;font-weight:600;color:var(--forest)}
-.bc-meta{font-size:.7rem;color:var(--g400);font-weight:600;letter-spacing:.04em;text-transform:uppercase}
-
-/* DATA CELLS (homepage figures) */
-.data-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem;margin-bottom:1rem}
-.dc{background:var(--sand);border:1px solid var(--line);padding:1.5rem}
-.dc-label{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--mist);margin-bottom:.5rem}
-.dc-val{font-family:var(--disp);font-size:2rem;font-weight:600;color:var(--ink);letter-spacing:-.02em;line-height:1}
-.dc-val.acc{color:var(--forest)}
-.dc-sub{font-size:.74rem;color:var(--mist);margin-top:.3rem}
-
-/* WHY CARDS */
-.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
-.why-card{background:var(--paper);border:1px solid var(--line);padding:1.8rem;border-top:3px solid var(--forest)}
-.why-num{font-family:var(--disp);font-size:2.4rem;font-weight:900;color:var(--marigold);line-height:1;margin-bottom:1rem}
-.why-card h3{font-family:var(--disp);font-size:1.2rem;font-weight:600;margin-bottom:.5rem}
-.why-card p{font-size:.88rem;color:var(--mist);line-height:1.6}
-
-/* CTA BLOCK */
-.cta-block{background:var(--ink);color:var(--paper);padding:3rem 2rem;text-align:center}
-.cta-block h2,.cta-block h3{font-family:var(--disp);font-weight:600;color:var(--paper);letter-spacing:-.01em;margin-bottom:.6rem}
-.cta-block h2{font-size:clamp(1.5rem,3vw,2.2rem)}
-.cta-block h3{font-size:1.4rem}
-.cta-block p{color:rgba(255,255,255,.7);margin-bottom:1.5rem;font-size:1rem}
-
-/* BUTTONS */
 .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 1.6rem;font-family:var(--body);font-weight:600;font-size:.9rem;cursor:pointer;border:none;transition:.18s;text-decoration:none;letter-spacing:.01em}
 .btn-accent{background:var(--marigold);color:var(--ink)}
 .btn-accent:hover{background:#eaa523}
 .btn-full{width:100%;justify-content:center}
 .btn:not(.btn-accent){background:var(--ink);color:var(--paper)}
 .btn:not(.btn-accent):hover{background:var(--forest);color:#fff}
-
-/* LAYOUT (tool + article) */
+.btn-example{background:var(--forest);color:var(--paper);margin-top:.8rem;border:2px solid var(--forest)}
+.btn-example:hover{background:var(--ink);border-color:var(--ink)}
+.example-badge{display:inline-block;background:var(--marigold);color:var(--ink);font-size:.62rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.2rem .5rem;margin-right:.5rem;border-radius:2px}
 .layout{max-width:1140px;margin:0 auto;padding:2.5rem 2rem;display:grid;grid-template-columns:1fr 320px;gap:2.5rem;align-items:start}
 @media(max-width:920px){.layout{grid-template-columns:1fr;gap:1.5rem}.sidebar{display:none}}
-
-/* CARD (tool input) */
 .card{background:var(--paper);border:1px solid var(--line)}
 .card-head{padding:1.4rem 1.6rem;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:.9rem}
 .card-cat{font-family:var(--body);font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);border-right:1px solid var(--line);padding-right:.9rem}
 .card-head h2{font-family:var(--disp);font-size:1.4rem;font-weight:600;letter-spacing:-.01em}
 .card-head p{font-size:.84rem;color:var(--mist);margin-top:.15rem}
 .card-body{padding:1.6rem}
-
-/* FORM */
 .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem 1.3rem;margin-bottom:1.4rem}
 @media(max-width:500px){.form-grid{grid-template-columns:1fr}}
 .fg{display:flex;flex-direction:column;gap:.4rem}
@@ -165,8 +161,6 @@ input,select{width:100%;padding:.8rem 1rem;border:1px solid var(--line);font-fam
 input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 0 3px rgba(27,67,50,.1)}
 .has-pre input{padding-left:2rem}.has-suf input{padding-right:2.4rem}
 .sw{position:relative}.sw::after{content:'';position:absolute;right:1.1rem;top:50%;width:7px;height:7px;border-right:2px solid var(--mist);border-bottom:2px solid var(--mist);transform:translateY(-65%) rotate(45deg);pointer-events:none}
-
-/* RESULT PANELS — the editorial figure signature */
 .results{margin-top:1.6rem;display:none}
 .results.show{display:block;animation:fadeUp .4s ease}
 @keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
@@ -177,8 +171,6 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .eff-block{text-align:right;flex-shrink:0}
 .eff-val{font-family:var(--disp);font-size:2rem;font-weight:600;color:var(--marigold);display:block;letter-spacing:-.02em;line-height:1}
 .eff-lbl{font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:rgba(255,255,255,.6)}
-
-/* breakdown blocks */
 .bb{border:1px solid var(--line);margin-bottom:1rem}
 .bb-title{padding:.7rem 1.1rem;font-family:var(--body);font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.14em;background:var(--sand);border-bottom:1px solid var(--line);color:var(--mist)}
 .br{display:flex;justify-content:space-between;align-items:center;padding:.7rem 1.1rem;font-size:.92rem;border-bottom:1px solid var(--line)}
@@ -189,18 +181,13 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .total-bar{display:flex;justify-content:space-between;align-items:center;padding:1.1rem 1.3rem;background:var(--sand);border:1px solid var(--forest);margin-bottom:1rem}
 .total-bar .lbl{font-family:var(--disp);font-size:1.05rem;font-weight:600;color:var(--forest)}
 .total-bar .val{font-family:var(--disp);font-size:1.3rem;font-weight:700;color:var(--forest);font-variant-numeric:tabular-nums}
-
-/* notes */
 .note{padding:.85rem 1.1rem;font-size:.84rem;line-height:1.6;margin-bottom:.7rem;display:flex;gap:.7rem;border:1px solid var(--line);background:var(--sand)}
 .note.warn{background:#FBF3E0;border-color:#E6D08A;color:#6B5414}
+.note.navy{background:#EDF3EE;border-color:#C9D8CF;color:#1B4332}
 .note a{color:var(--forest);font-weight:600}
-
-/* tabs */
 .type-tabs,.period-tabs{display:flex;gap:.4rem;margin-bottom:1.4rem;background:var(--sand);padding:.3rem;border:1px solid var(--line)}
 .type-tab,.ptab{flex:1;padding:.6rem;border:none;background:transparent;font-family:var(--body);font-weight:600;font-size:.8rem;color:var(--mist);cursor:pointer;transition:.15s;text-align:center}
 .type-tab.active,.ptab.active{background:var(--ink);color:var(--paper)}
-
-/* SIDEBAR */
 .sidebar{display:flex;flex-direction:column;gap:1.5rem}
 .sc{background:var(--paper);border:1px solid var(--line)}
 .sc-head{padding:.8rem 1.1rem;font-family:var(--body);font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.14em;border-bottom:1px solid var(--line);background:var(--sand);color:var(--mist)}
@@ -211,16 +198,6 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .qr{display:flex;justify-content:space-between;font-size:.84rem;padding:.45rem 0;border-bottom:1px solid var(--line);color:var(--mist)}
 .qr:last-child{border-bottom:none}
 .qr strong{color:var(--ink);font-weight:600;font-family:var(--disp)}
-.toc-link{display:block;font-size:.84rem;font-weight:500;color:var(--mist);padding:.4rem 0;border-bottom:1px solid var(--line);transition:color .15s}
-.toc-link:last-child{border-bottom:none}
-.toc-link:hover{color:var(--forest)}
-.related-post{display:block;padding:.75rem 0;border-bottom:1px solid var(--line)}
-.related-post:last-child{border-bottom:none}
-.rp-cat{font-size:.62rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--forest);margin-bottom:.25rem}
-.rp-title{font-family:var(--disp);font-size:.92rem;font-weight:500;color:var(--ink);line-height:1.3}
-.related-post:hover .rp-title{color:var(--forest)}
-
-/* DATA TABLE */
 .data-table{width:100%;border-collapse:collapse;margin:1.2rem 0 1.6rem;font-size:.9rem;border:1px solid var(--line)}
 .data-table thead tr{background:var(--ink)}
 .data-table th{padding:.75rem 1rem;text-align:left;font-family:var(--body);font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--paper)}
@@ -230,8 +207,6 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .data-table td.td-green{color:var(--forest);font-weight:600}
 .data-table td.td-red{color:var(--berry);font-weight:600}
 .data-table td.td-acc{color:var(--forest);font-weight:600}
-
-/* ARTICLE BODY — magazine measure */
 .article-body{padding:2.5rem}
 @media(max-width:600px){.article-body{padding:1.5rem}}
 .article-body h2{font-family:var(--disp);font-size:1.7rem;font-weight:600;color:var(--ink);margin:2.4rem 0 .8rem;letter-spacing:-.01em;line-height:1.15;max-width:30ch}
@@ -243,10 +218,8 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .article-body li{font-family:var(--body);font-size:1.04rem;color:#2C352F;line-height:1.7;margin-bottom:.5rem}
 .article-body a{color:var(--forest);font-weight:500;border-bottom:1px solid var(--marigold)}
 .article-body strong{font-weight:600;color:var(--ink)}
-.callout,.callout.navy,.callout.grey,.callout.green{border:none;border-left:3px solid var(--marigold);background:var(--sand);padding:1.2rem 1.4rem;margin:1.6rem 0;font-family:var(--disp);font-size:1.15rem;font-weight:500;line-height:1.5;color:var(--ink);max-width:64ch}
+.callout{border:none;border-left:3px solid var(--marigold);background:var(--sand);padding:1.2rem 1.4rem;margin:1.6rem 0;font-family:var(--disp);font-size:1.15rem;font-weight:500;line-height:1.5;color:var(--ink);max-width:64ch}
 .callout strong{color:var(--forest)}
-
-/* FOOTER */
 footer{background:var(--ink);color:var(--paper);margin-top:2rem}
 .footer-inner{max-width:1080px;margin:0 auto;padding:2.5rem 2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
 .footer-logo{font-family:var(--disp);font-size:1.5rem;font-weight:900;color:var(--paper)}
@@ -255,34 +228,72 @@ footer{background:var(--ink);color:var(--paper);margin-top:2rem}
 .footer-links a{color:rgba(255,255,255,.7);font-size:.82rem;font-weight:500;transition:color .15s}
 .footer-links a:hover{color:var(--marigold)}
 .footer-copy{color:rgba(255,255,255,.5);font-size:.74rem;width:100%;margin-top:.8rem;padding-top:.9rem;border-top:1px solid rgba(255,255,255,.12)}
-
-/* MISC legacy */
-.scenario-result{background:var(--sand);border:1px solid var(--forest);padding:1.2rem}
-.disclaim,.disclaim-box{font-size:.82rem;color:var(--mist);background:var(--sand);border:1px solid var(--line);padding:.9rem 1.1rem;line-height:1.6}
+.disclaim{font-size:.82rem;color:var(--mist);background:var(--sand);border:1px solid var(--line);padding:.9rem 1.1rem;line-height:1.6}
 .eyebrow{font-family:var(--body);font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);margin-bottom:.5rem}
 
-/* RESPONSIVE */
+/* Glossary styles */
+.glossary-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem;margin:1.5rem 0}
+.glossary-item{background:var(--sand);border:1px solid var(--line);padding:1.1rem 1.3rem}
+.glossary-term{font-family:var(--disp);font-size:1rem;font-weight:600;color:var(--forest);margin-bottom:.3rem}
+.glossary-def{font-size:.84rem;color:var(--mist);line-height:1.6}
+
+/* Strategy cards */
+.strategy-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.25rem;margin:1.5rem 0}
+.strategy-card{background:var(--paper);border:1px solid var(--line);padding:1.6rem;border-top:3px solid var(--forest);transition:.2s}
+.strategy-card:hover{border-color:var(--ink);transform:translateY(-2px)}
+.strategy-num{font-family:var(--disp);font-size:2rem;font-weight:900;color:var(--marigold);margin-bottom:.5rem}
+.strategy-card h3{font-family:var(--disp);font-size:1.1rem;font-weight:600;color:var(--ink);margin-bottom:.5rem}
+.strategy-card p{font-size:.86rem;color:var(--mist);line-height:1.6;margin-bottom:.5rem}
+.strategy-saving{font-size:.78rem;color:var(--forest);font-weight:600;padding-top:.5rem;border-top:1px dashed var(--line);margin-top:.5rem}
+
+/* Comparison boxes */
+.compare-box{border:1px solid var(--line);margin:1.5rem 0;overflow:hidden}
+.compare-box-head{background:var(--ink);color:#fff;padding:.9rem 1.3rem;font-family:var(--disp);font-weight:600;font-size:.95rem}
+.compare-row{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--line)}
+.compare-row:last-child{border-bottom:none}
+.compare-col{padding:1rem 1.3rem}
+.compare-col:first-child{background:var(--sand);border-right:1px solid var(--line)}
+.compare-col h4{font-family:var(--body);font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--forest);margin-bottom:.4rem}
+.compare-col p{font-size:.86rem;color:var(--mist);line-height:1.6}
+
+/* Worked example box */
+.worked-example{background:#FAFBF7;border:1px solid var(--line);border-left:4px solid var(--forest);padding:1.5rem 1.8rem;margin:1.8rem 0}
+.worked-example-head{display:flex;align-items:center;gap:.6rem;margin-bottom:1rem}
+.worked-example-tag{font-size:.66rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--forest);background:#EDF3EE;padding:.25rem .6rem;border-radius:2px}
+.worked-example h3{font-family:var(--disp);font-size:1.15rem;font-weight:600;margin-bottom:.3rem}
+.worked-example p{font-size:.9rem;color:var(--mist);line-height:1.6;margin-bottom:.8rem}
+.worked-example table{width:100%;border-collapse:collapse;font-size:.88rem}
+.worked-example th{text-align:left;padding:.5rem .6rem;background:var(--paper);border-bottom:2px solid var(--ink);font-weight:600;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--forest)}
+.worked-example td{padding:.55rem .6rem;border-bottom:1px solid var(--line);color:var(--ink)}
+.worked-example tr:last-child td{border-bottom:none;font-weight:600;color:var(--forest)}
+.worked-example .neg{color:var(--berry)}
+
+/* Mistakes grid */
+.mistakes-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin:1.5rem 0}
+.mistake-card{background:var(--paper);border:1px solid var(--line);padding:1.3rem;border-left:4px solid var(--berry)}
+.mistake-card h4{font-family:var(--disp);font-size:1rem;font-weight:600;color:var(--berry);margin-bottom:.4rem}
+.mistake-card p{font-size:.84rem;color:var(--mist);line-height:1.6}
+
+/* Responsive */
 @media(max-width:768px){
-  [style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr!important}
-  [style*="grid-template-columns:repeat(3,1fr)"]{grid-template-columns:1fr!important}
-  [style*="grid-template-columns:repeat(4,1fr)"]{grid-template-columns:1fr 1fr!important}
-  [style*="grid-template-columns:2fr 1fr 1fr"]{grid-template-columns:1fr!important}
-  [style*="grid-template-columns:1.1fr 1fr"]{grid-template-columns:1fr!important}
-  [style*="grid-template-columns:1fr 1fr;gap:4rem"]{grid-template-columns:1fr!important;gap:2rem!important}
-  .blog-grid,.data-row,.why-grid{grid-template-columns:1fr!important}
   .ph{padding:2.5rem 1.25rem 2rem}.section{padding:2.5rem 1.25rem}.layout{padding:1.5rem 1.25rem}
   .th-panel{flex-direction:column;align-items:flex-start;gap:1rem}.eff-block{text-align:left}
   .th-amount{font-size:2.6rem}
   .footer-inner{flex-direction:column;text-align:center}.footer-links{justify-content:center}
   .top-bar{padding:.4rem 1rem}.tb-r{display:none}
+  .compare-row{grid-template-columns:1fr}
+  .compare-col:first-child{border-right:none;border-bottom:1px solid var(--line)}
   .data-table{display:block;overflow-x:auto}
+  .worked-example{padding:1.2rem}
+  .article-body{padding:1.5rem}
 }
+
 .story-section{margin-top:1.8rem;border-top:2px solid var(--ink);padding-top:1.8rem}
 .story-kicker{font-family:var(--body);font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);margin-bottom:.4rem;display:flex;align-items:center;gap:.6rem}
 .story-kicker::before{content:'';width:24px;height:2px;background:var(--marigold)}
 .story-title{font-family:var(--disp);font-size:1.6rem;font-weight:600;color:var(--ink);letter-spacing:-.01em;margin-bottom:.4rem}
 .story-sub{font-size:.88rem;color:var(--mist);margin-bottom:1.5rem;max-width:60ch}
-.story-age-row{display:flex;align-items:center;gap:.8rem;margin-bottom:1.6rem;padding:.9rem 1.1rem;background:var(--sand);border:1px solid var(--line)}
+.story-age-row{display:flex;align-items:center;gap:.8rem;margin-bottom:1.6rem;padding:.9rem 1.1rem;background:var(--sand);border:1px solid var(--line);flex-wrap:wrap}
 .story-age-row label{font-size:.82rem;font-weight:600;color:var(--ink);white-space:nowrap}
 .story-age-row input{max-width:90px;padding:.5rem .7rem}
 .story-age-row .story-age-note{font-size:.78rem;color:var(--mist)}
@@ -323,7 +334,9 @@ footer{background:var(--ink);color:var(--paper);margin-top:2rem}
 .journey-path{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;font-size:.85rem}
 .journey-path a{color:var(--forest);font-weight:600;padding:.35rem .7rem;background:#fff;border:1px solid var(--line);transition:.15s}
 .journey-path a:hover{border-color:var(--forest);background:var(--sand)}
-.journey-sep{color:var(--g400)}.whatif-section{margin-top:1.8rem;border-top:2px solid var(--ink);padding-top:1.8rem}
+.journey-sep{color:var(--g400)}
+
+.whatif-section{margin-top:1.8rem;border-top:2px solid var(--ink);padding-top:1.8rem}
 .whatif-kicker{font-family:var(--body);font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);margin-bottom:.4rem;display:flex;align-items:center;gap:.6rem}
 .whatif-kicker::before{content:'';width:24px;height:2px;background:var(--marigold)}
 .whatif-title{font-family:var(--disp);font-size:1.6rem;font-weight:600;color:var(--ink);letter-spacing:-.01em;margin-bottom:.4rem}
@@ -345,387 +358,859 @@ footer{background:var(--ink);color:var(--paper);margin-top:2rem}
 .whatif-delta-lbl{font-size:.72rem;color:rgba(255,255,255,.6);margin-top:.3rem}
 .whatif-reset{margin-top:1rem;text-align:center}
 .whatif-reset button{background:none;border:1px solid var(--line);padding:.5rem 1.1rem;font-family:var(--body);font-size:.78rem;font-weight:600;color:var(--mist);cursor:pointer;transition:.15s}
-.whatif-reset button:hover{border-color:var(--ink);color:var(--ink)}</style><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How is a bonus taxed in South Africa?","acceptedAnswer":{"@type":"Answer","text":"A bonus is added to your salary in the month it is paid and taxed at your marginal rate — the rate on the top portion of your combined income. There is no special bonus tax rate."}},{"@type":"Question","name":"Is a 13th cheque taxed differently to a bonus?","acceptedAnswer":{"@type":"Answer","text":"No. A 13th cheque is taxed exactly like a performance bonus — both are treated as income in the month received and taxed at your marginal rate. There is no special SARS exemption for 13th cheques."}}]}</script>
+.whatif-reset button:hover{border-color:var(--ink);color:var(--ink)}
+</style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6108324382808705" crossorigin="anonymous"></script>
-</head><body>
-<div class="top-bar"><div class="tb-l">🇿🇦 South Africa · SARS 2027 Tax Year</div><div class="tb-r">RA max deduction <span>R430,000</span> · Primary rebate <span>R17,820</span></div></div>
+</head>
+<body>
+<div class="sa-stripe"></div>
+
+<div class="top-bar">
+  <div class="tb-l">🇿🇦 South Africa · SARS 2027 Tax Year</div>
+  <div class="tb-r">RA max deduction <span>R430,000</span> · Primary rebate <span>R17,820</span></div>
+</div>
+
 <nav>
   <a href="/" class="logo"><div class="logo-text">CalcMy<span>Pay</span></div></a>
   <div class="nav-links">
-    <a href="/salary-income" class="active">Salary</a><a href="/affordability">Affordability</a><a href="/wealth-building">Wealth</a><a href="/career-intelligence">Careers</a><a href="/money-tools">Tools</a><a href="/financial-coach">Coach</a><a href="/blog-salary-guide">Guides</a><a href="/salary-calculator" class="nav-cta">Calculate →</a>
+    <a href="/salary-income" class="active">Salary</a>
+    <a href="/affordability">Affordability</a>
+    <a href="/wealth-building">Wealth</a>
+    <a href="/career-intelligence">Careers</a>
+    <a href="/money-tools">Tools</a>
+    <a href="/financial-coach">Coach</a>
+    <a href="/blog-salary-guide">Guides</a>
+    <a href="/salary-calculator" class="nav-cta">Calculate →</a>
   </div>
 </nav>
 
-<div class="ph"><div class="ph-inner">
-  <div class="bc"><a href="/">Home</a><span>/</span>Bonus Calculator</div>
-  <div class="ph-cat">Bonus Tax</div>
-  <h1>Bonus & 13th Cheque Tax Calculator</h1>
-  <p>South Africa · SARS 2027 tax year · See exactly what you keep after SARS deductions</p>
-</div></div>
+<div class="ph">
+  <div class="ph-inner">
+    <div class="bc">
+      <a href="/">Home</a><span>/</span>
+      <a href="/salary-income">Salary & Income</a><span>/</span>
+      Bonus Calculator
+    </div>
+    <div class="ph-cat">Bonus & 13th Cheque Tax</div>
+    <h1>Bonus & 13th Cheque Tax Calculator</h1>
+    <p>Calculate exactly what you keep from your bonus or 13th cheque after SARS tax and UIF deductions. Uses SARS 2027 tax year tables with marginal rate splitting.</p>
+  </div>
+</div>
+
 <div class="layout">
   <div>
     <div class="card">
-      <div class="card-head"><div class="card-cat">Bonus</div><div><h2>Calculate your bonus after tax</h2><p>SARS 2027 tax year · Marginal rate calculation</p></div></div>
+      <div class="card-head">
+        <div class="card-cat">Bonus Tax</div>
+        <div>
+          <h2>Calculate your bonus after tax</h2>
+          <p>SARS 2027 tax year · Marginal rate splitting · UIF included</p>
+        </div>
+      </div>
       <div class="card-body">
         <div class="type-tabs">
           <button class="type-tab active" onclick="setType('bonus',this)">Performance Bonus</button>
           <button class="type-tab" onclick="setType('13th',this)">13th Cheque</button>
         </div>
         <div class="form-grid">
-          <div class="fg"><label>Annual Salary (before bonus)</label><div class="iw has-pre"><span class="ipre">R</span><input type="number" id="salary" placeholder="450 000" min="0"></div></div>
-          <div class="fg"><label id="bonus-label">Bonus Amount</label><div class="iw has-pre"><span class="ipre">R</span><input type="number" id="bonus" placeholder="30 000" min="0"></div></div>
-          <div class="fg"><label>Age</label><div class="sw"><select id="age"><option value="primary">Under 65</option><option value="secondary">65 – 74</option><option value="tertiary">75+</option></select></div></div>
-          <div class="fg"><label>Medical Aid Members</label><div class="sw"><select id="medical"><option value="0">None</option><option value="1">Myself only</option><option value="2">Me + 1 dependent</option><option value="3">Me + 2 dependents</option><option value="4">Me + 3 dependents</option><option value="5">Me + 4+ dependents</option></select></div></div>
+          <div class="fg">
+            <label>Annual Salary (before bonus)</label>
+            <div class="iw has-pre"><span class="ipre">R</span><input type="number" id="salary" placeholder="450000" min="0"></div>
+          </div>
+          <div class="fg">
+            <label id="bonus-label">Bonus Amount</label>
+            <div class="iw has-pre"><span class="ipre">R</span><input type="number" id="bonus" placeholder="30000" min="0"></div>
+          </div>
+          <div class="fg">
+            <label>Age</label>
+            <div class="sw">
+              <select id="age">
+                <option value="primary">Under 65</option>
+                <option value="secondary">65 – 74</option>
+                <option value="tertiary">75+</option>
+              </select>
+            </div>
+          </div>
+          <div class="fg">
+            <label>Medical Aid Members</label>
+            <div class="sw">
+              <select id="medical">
+                <option value="0">None</option>
+                <option value="1">Myself only</option>
+                <option value="2">Me + 1 dependent</option>
+                <option value="3">Me + 2 dependents</option>
+                <option value="4">Me + 3 dependents</option>
+                <option value="5">Me + 4+ dependents</option>
+              </select>
+            </div>
+          </div>
         </div>
-        <button class="btn btn-full btn-accent" onclick="calculate()">Calculate bonus after tax →</button>
+        <button type="button" class="btn btn-full btn-accent" onclick="calculate()">Calculate bonus after tax →</button>
+        <button type="button" class="btn btn-full btn-example" onclick="loadExample()"><span class="example-badge">Example</span>Try R450k salary + R30k bonus</button>
+
         <div class="results" id="results">
           <div style="height:1.2rem"></div>
           <div class="th-panel">
-            <div><div class="th-label" id="th-label">Bonus take-home</div><div class="th-amount" id="th-amount">R0</div><div class="th-period">after tax &amp; UIF</div></div>
-            <div class="eff-block"><span class="eff-val" id="eff-rate">0%</span><span class="eff-lbl">Tax on bonus</span></div>
+            <div>
+              <div class="th-label" id="th-label">Bonus take-home</div>
+              <div class="th-amount" id="th-amount">R0</div>
+              <div class="th-period">after tax & UIF</div>
+            </div>
+            <div class="eff-block">
+              <span class="eff-val" id="eff-rate">0%</span>
+              <span class="eff-lbl">Effective tax on bonus</span>
+            </div>
           </div>
-          <div class="bb"><div class="bb-title">Regular Salary</div>
+
+          <div class="bb">
+            <div class="bb-title">Regular Salary</div>
             <div class="br"><span class="lbl">Annual gross salary</span><span class="val neu" id="br-salary">R0</span></div>
             <div class="br"><span class="lbl">Est. monthly take-home</span><span class="val neu" id="br-monthly">R0</span></div>
           </div>
-          <div class="bb"><div class="bb-title" id="bb-title">Bonus Breakdown</div>
+
+          <div class="bb">
+            <div class="bb-title" id="bb-title">Bonus Breakdown</div>
             <div class="br"><span class="lbl" id="br-bonus-label">Gross bonus</span><span class="val neu" id="br-bonus">R0</span></div>
             <div class="br"><span class="lbl">Tax at marginal rate</span><span class="val neg" id="br-bonus-tax">-R0</span></div>
             <div class="br"><span class="lbl">UIF on bonus</span><span class="val neg" id="br-bonus-uif">-R0</span></div>
             <div class="br"><span class="lbl">Net bonus received</span><span class="val pos" id="br-net-bonus">R0</span></div>
           </div>
-          <div class="bb"><div class="bb-title">Bonus Month Total</div>
+
+          <div class="bb">
+            <div class="bb-title">Bonus Month Total</div>
             <div class="br"><span class="lbl">Monthly salary take-home</span><span class="val neu" id="br-reg-th">R0</span></div>
             <div class="br"><span class="lbl">Bonus take-home</span><span class="val pos" id="br-bonus-th">R0</span></div>
             <div class="br"><span class="lbl">Total in your account</span><span class="val pos" id="br-total">R0</span></div>
           </div>
-          <div class="total-bar"><span class="lbl">✓ Net bonus</span><span class="val" id="br-takehome">R0</span></div>
-          <div class="note navy" id="bonus-note"><span>ℹ</span><span>Your bonus is taxed at your <strong>marginal rate</strong> — the rate on the top portion of your income.</span></div>
-          <div class="note warn"><span>⚠</span><span>Based on <a href="https://www.sars.gov.za/tax-rates/income-tax/rates-of-tax-for-individuals/" target="_blank">SARS 2027 tax year tables</a>. Actual tax may vary. Consult a tax professional.</span></div>
-<div class="story-section" id="money-story" style="display:none">
-  <div class="story-kicker">Your money story</div>
-  <div class="story-title">What this means for you</div>
-  <p class="story-sub">Estimates based on your take-home pay, using the same rules as our dedicated calculators. Add your age for a personalised retirement projection.</p>
 
-  <div class="story-age-row">
-    <label for="ms-age">Your age (optional)</label>
-    <div class="iw" style="max-width:90px"><input type="number" id="ms-age" placeholder="30" min="18" max="70" oninput="renderMoneyStory(lastTakeHome)"></div>
-    <span class="story-age-note">Used only for the retirement projection below</span>
-  </div>
-
-  <div class="story-grid">
-    <a href="/rent-affordability" class="story-card"><div class="story-stripe c-housing"></div><div class="story-body">
-      <div class="story-label">✅ Comfortable rent, up to</div>
-      <div class="story-val" id="ms-rent">R0</div>
-      <div class="story-desc">Using the 30% of take-home guideline</div>
-      <span class="story-arrow">Check rent affordability →</span>
-    </div></a>
-
-    <a href="/home-affordability" class="story-card"><div class="story-stripe c-housing"></div><div class="story-body">
-      <div class="story-label">🏠 Home price you may qualify for</div>
-      <div class="story-val" id="ms-home">R0</div>
-      <div class="story-desc">20-year bond at ~11%, no deposit assumed</div>
-      <span class="story-arrow">Check home affordability →</span>
-    </div></a>
-
-    <a href="/car-affordability" class="story-card"><div class="story-stripe c-car"></div><div class="story-body">
-      <div class="story-label">🚗 Recommended maximum car price</div>
-      <div class="story-val" id="ms-car">R0</div>
-      <div class="story-desc">Keeping repayments under 15% of take-home</div>
-      <span class="story-arrow">Check car affordability →</span>
-    </div></a>
-
-    <a href="/emergency-fund" class="story-card"><div class="story-stripe c-safety"></div><div class="story-body">
-      <div class="story-label">💰 Emergency fund target</div>
-      <div class="story-val" id="ms-emergency">R0</div>
-      <div class="story-desc" id="ms-emergency-desc">3–6 months of take-home pay</div>
-      <span class="story-arrow">Build your safety net →</span>
-    </div></a>
-
-    <a href="/retirement-calculator" class="story-card" style="grid-column:1/-1">
-      <div class="story-stripe c-retire"></div><div class="story-body">
-      <div class="story-label">📈 Retirement projection<span id="ms-retire-agenote"></span></div>
-      <div class="story-val" id="ms-retirement">R0</div>
-      <div class="story-desc">Saving 15% of take-home, invested at ~10% annual growth</div>
-      <span class="story-arrow">Plan your retirement in detail →</span>
-    </div></a>
-
-    <div class="story-compare-card">
-      <div class="story-label" style="margin-bottom:.9rem">📊 How your take-home compares</div>
-      <div class="compare-toggle">
-        <button class="on" id="cmp-tab-avg" onclick="setCompareMode('avg')">National average</button>
-        <button id="cmp-tab-prof" onclick="setCompareMode('prof')">By profession</button>
-      </div>
-      <div id="compare-avg-view">
-        <div class="compare-body">
-          <div class="compare-vs">
-            <div class="compare-side"><div class="who">SA average</div><div class="amt" id="cmp-avg-val">R22,800</div></div>
-            <div class="compare-vsdivider">vs</div>
-            <div class="compare-side you"><div class="who">You</div><div class="amt" id="cmp-you-val">R0</div></div>
+          <div class="total-bar">
+            <span class="lbl">✓ Net bonus</span>
+            <span class="val" id="br-takehome">R0</span>
           </div>
-          <div class="compare-result"><div class="compare-pct" id="cmp-pct">—</div></div>
-        </div>
-      </div>
-      <div id="compare-prof-view" style="display:none">
-        <div class="compare-select">
-          <div class="sw"><select id="ms-prof" onchange="renderProfCompare()"></select></div>
-        </div>
-        <div class="compare-body" style="margin-top:1rem">
-          <div class="compare-vs">
-            <div class="compare-side"><div class="who" id="cmp-prof-name">—</div><div class="amt" id="cmp-prof-val">R0</div></div>
-            <div class="compare-vsdivider">vs</div>
-            <div class="compare-side you"><div class="who">You</div><div class="amt" id="cmp-you-val2">R0</div></div>
+
+          <div class="note navy" id="bonus-note">
+            <span>ℹ</span>
+            <span>Your bonus is taxed at your <strong>marginal rate</strong> — the rate on the top portion of your combined income.</span>
           </div>
-          <div class="compare-result"><div class="compare-pct" id="cmp-prof-pct">—</div></div>
+
+          <div class="note warn">
+            <span>⚠</span>
+            <span>Based on <a href="https://www.sars.gov.za/tax-rates/income-tax/rates-of-tax-for-individuals/" target="_blank" rel="noopener">SARS 2027 tax year tables</a>. Actual tax may vary. Consult a tax professional for personalised advice.</span>
+          </div>
+
+          <!-- MONEY STORY -->
+          <div class="story-section" id="money-story" style="display:none">
+            <div class="story-kicker">Your money story</div>
+            <div class="story-title">What this means for you</div>
+            <p class="story-sub">Estimates based on your take-home pay. Use these as a starting point for financial planning decisions.</p>
+
+            <div class="story-age-row">
+              <label for="ms-age">Your age (optional)</label>
+              <div class="iw" style="max-width:90px"><input type="number" id="ms-age" placeholder="30" min="18" max="70" oninput="renderMoneyStory(lastTakeHome)"></div>
+              <span class="story-age-note">Used only for the retirement projection below</span>
+            </div>
+
+            <div class="story-grid">
+              <a href="/rent-affordability" class="story-card">
+                <div class="story-stripe c-housing"></div>
+                <div class="story-body">
+                  <div class="story-label">✅ Comfortable rent, up to</div>
+                  <div class="story-val" id="ms-rent">R0</div>
+                  <div class="story-desc">Using the 30% of take-home guideline</div>
+                  <span class="story-arrow">Check rent affordability →</span>
+                </div>
+              </a>
+
+              <a href="/home-affordability" class="story-card">
+                <div class="story-stripe c-housing"></div>
+                <div class="story-body">
+                  <div class="story-label">🏠 Home price you may qualify for</div>
+                  <div class="story-val" id="ms-home">R0</div>
+                  <div class="story-desc">20-year bond at ~11%, no deposit assumed</div>
+                  <span class="story-arrow">Check home affordability →</span>
+                </div>
+              </a>
+
+              <a href="/car-affordability" class="story-card">
+                <div class="story-stripe c-car"></div>
+                <div class="story-body">
+                  <div class="story-label">🚗 Recommended maximum car price</div>
+                  <div class="story-val" id="ms-car">R0</div>
+                  <div class="story-desc">Keeping repayments under 15% of take-home</div>
+                  <span class="story-arrow">Check car affordability →</span>
+                </div>
+              </a>
+
+              <a href="/emergency-fund" class="story-card">
+                <div class="story-stripe c-safety"></div>
+                <div class="story-body">
+                  <div class="story-label">💰 Emergency fund target</div>
+                  <div class="story-val" id="ms-emergency">R0</div>
+                  <div class="story-desc" id="ms-emergency-desc">3–6 months of take-home pay</div>
+                  <span class="story-arrow">Build your safety net →</span>
+                </div>
+              </a>
+
+              <a href="/retirement-calculator" class="story-card" style="grid-column:1/-1">
+                <div class="story-stripe c-retire"></div>
+                <div class="story-body">
+                  <div class="story-label">📈 Retirement projection<span id="ms-retire-agenote"></span></div>
+                  <div class="story-val" id="ms-retirement">R0</div>
+                  <div class="story-desc">Saving 15% of take-home, invested at ~10% annual growth</div>
+                  <span class="story-arrow">Plan your retirement in detail →</span>
+                </div>
+              </a>
+
+              <div class="story-compare-card">
+                <div class="story-label" style="margin-bottom:.9rem">📊 How your take-home compares</div>
+                <div class="compare-toggle">
+                  <button class="on" id="cmp-tab-avg" onclick="setCompareMode('avg')">National average</button>
+                  <button id="cmp-tab-prof" onclick="setCompareMode('prof')">By profession</button>
+                </div>
+                <div id="compare-avg-view">
+                  <div class="compare-body">
+                    <div class="compare-vs">
+                      <div class="compare-side"><div class="who">SA average</div><div class="amt" id="cmp-avg-val">R22,800</div></div>
+                      <div class="compare-vsdivider">vs</div>
+                      <div class="compare-side you"><div class="who">You</div><div class="amt" id="cmp-you-val">R0</div></div>
+                    </div>
+                    <div class="compare-result"><div class="compare-pct" id="cmp-pct">—</div></div>
+                  </div>
+                </div>
+                <div id="compare-prof-view" style="display:none">
+                  <div class="compare-select">
+                    <div class="sw"><select id="ms-prof" onchange="renderProfCompare()"></select></div>
+                  </div>
+                  <div class="compare-body" style="margin-top:1rem">
+                    <div class="compare-vs">
+                      <div class="compare-side"><div class="who" id="cmp-prof-name">—</div><div class="amt" id="cmp-prof-val">R0</div></div>
+                      <div class="compare-vsdivider">vs</div>
+                      <div class="compare-side you"><div class="who">You</div><div class="amt" id="cmp-you-val2">R0</div></div>
+                    </div>
+                    <div class="compare-result"><div class="compare-pct" id="cmp-prof-pct">—</div></div>
+                  </div>
+                </div>
+                <div style="margin-top:.9rem"><a href="/salary-database" class="story-arrow">Explore the full salary database →</a></div>
+              </div>
+            </div>
+
+            <div class="journey">
+              <div class="journey-title">Continue your financial plan</div>
+              <div class="journey-path">
+                <a href="/budget-planner">Budget planner</a><span class="journey-sep">→</span>
+                <a href="/net-worth">Net worth</a><span class="journey-sep">→</span>
+                <a href="/savings-goal">Savings goal</a><span class="journey-sep">→</span>
+                <a href="/financial-coach">Get your health score</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- WHAT IF -->
+          <div class="whatif-section" id="whatif-section" style="display:none">
+            <div class="whatif-kicker">What if?</div>
+            <div class="whatif-title">Test a scenario</div>
+            <p class="whatif-sub">Drag the sliders to see how changes affect your bonus payout.</p>
+
+            <div class="whatif-grid">
+              <div class="whatif-control">
+                <div class="whatif-control-head">
+                  <label>Bonus amount change</label>
+                  <output id="wi-bonus-out">+0%</output>
+                </div>
+                <input type="range" id="wi-bonus" min="-50" max="100" value="0" step="5" oninput="renderWhatIf()">
+              </div>
+              <div class="whatif-control">
+                <div class="whatif-control-head">
+                  <label>Base salary change</label>
+                  <output id="wi-sal-out">+0%</output>
+                </div>
+                <input type="range" id="wi-sal" min="-20" max="30" value="0" step="1" oninput="renderWhatIf()">
+              </div>
+            </div>
+
+            <div class="whatif-result">
+              <div>
+                <div class="whatif-result-label">New net bonus</div>
+                <div class="whatif-result-val" id="wi-newbonus">R0</div>
+              </div>
+              <div class="whatif-delta">
+                <div class="whatif-delta-val" id="wi-delta">—</div>
+                <div class="whatif-delta-lbl">vs your current net bonus</div>
+              </div>
+            </div>
+            <div class="whatif-reset"><button onclick="resetWhatIf()">Reset scenario</button></div>
+            <div class="note warn" style="margin-top:1rem">
+              <span>⚠</span>
+              <span>Your bonus is taxed at your marginal rate — the rate on your <em>combined</em> income. Changing your base salary shifts that marginal rate too.</span>
+            </div>
+          </div>
         </div>
       </div>
-      <div style="margin-top:.9rem"><a href="/salary-database" class="story-arrow">Explore the full salary database →</a></div>
     </div>
   </div>
 
-  <div class="journey">
-    <div class="journey-title">Continue your financial plan</div>
-    <div class="journey-path">
-      <a href="/budget-planner">Budget planner</a><span class="journey-sep">→</span>
-      <a href="/net-worth">Net worth</a><span class="journey-sep">→</span>
-      <a href="/savings-goal">Savings goal</a><span class="journey-sep">→</span>
-      <a href="/financial-coach">Get your health score</a>
-    </div>
-  </div>
-</div>
-<div class="whatif-section" id="whatif-section" style="display:none">
-  <div class="whatif-kicker">What if?</div>
-  <div class="whatif-title">Test a scenario</div>
-  <p class="whatif-sub">Drag the sliders to see how changes affect your bonus payout.</p>
-
-  <div class="whatif-grid">
-    <div class="whatif-control">
-      <div class="whatif-control-head"><label>Bonus amount change</label><output id="wi-bonus-out">+0%</output></div>
-      <input type="range" id="wi-bonus" min="-50" max="100" value="0" step="5" oninput="renderWhatIf()">
-    </div>
-    <div class="whatif-control">
-      <div class="whatif-control-head"><label>Base salary change</label><output id="wi-sal-out">+0%</output></div>
-      <input type="range" id="wi-sal" min="-20" max="30" value="0" step="1" oninput="renderWhatIf()">
-    </div>
-  </div>
-
-  <div class="whatif-result">
-    <div>
-      <div class="whatif-result-label">New net bonus</div>
-      <div class="whatif-result-val" id="wi-newbonus">R0</div>
-    </div>
-    <div class="whatif-delta">
-      <div class="whatif-delta-val" id="wi-delta">—</div>
-      <div class="whatif-delta-lbl">vs your current net bonus</div>
-    </div>
-  </div>
-  <div class="whatif-reset"><button onclick="resetWhatIf()">Reset scenario</button></div>
-  <div class="note warn" style="margin-top:1rem"><span>⚠</span><span>Your bonus is taxed at your marginal rate — the rate on your <em>combined</em> income, not a fixed bonus rate. Changing your base salary shifts that marginal rate too.</span></div>
-</div>
-
-
-        </div>
-      </div>
-    </div>
-  </div>
   <div class="sidebar">
-    
-    <div class="sc"><div class="sc-head">Bonus tax tips</div><div class="sc-body">
-      <div class="tip"><span>→</span><span>Ask your employer to pay your bonus into your RA — tax-deductible up to 27.5% of income (max R430,000/yr).</span></div>
-      <div class="tip"><span>→</span><span>Medical aid credits still apply in your bonus month and reduce your PAYE.</span></div>
-      <div class="tip"><span>→</span><span>If close to a tax bracket, ask about deferring your bonus to the next tax year.</span></div>
-      <div class="tip"><span>→</span><span>13th cheques are taxed exactly like regular salary — no special SARS exemption.</span></div>
-    </div></div>
-    
-    <div class="sc"><div class="sc-head">13th cheque vs bonus</div><div class="sc-body">
-      <div class="tip"><span>→</span><span><strong>13th Cheque:</strong> Contractual extra month's salary. Taxed identically to regular salary.</span></div>
-      <div class="tip"><span>→</span><span><strong>Performance Bonus:</strong> Discretionary. Also taxed as income — no SARS exemption.</span></div>
-      <div class="tip"><span>→</span><span>Both taxed at your marginal rate for the month they are paid.</span></div>
-    </div></div>
+    <div class="sc">
+      <div class="sc-head">SARS 2027 Quick Reference</div>
+      <div class="sc-body">
+        <div class="qr"><span>Primary rebate</span><strong>R17,820</strong></div>
+        <div class="qr"><span>Secondary (65+)</span><strong>R9,765</strong></div>
+        <div class="qr"><span>Tertiary (75+)</span><strong>R3,249</strong></div>
+        <div class="qr"><span>Tax-free threshold</span><strong>R99,000/yr</strong></div>
+        <div class="qr"><span>UIF earnings ceiling</span><strong>R17,712/mo</strong></div>
+        <div class="qr"><span>UIF max contribution</span><strong>R177.12/mo</strong></div>
+        <div class="qr"><span>Medical credit</span><strong>R376/member</strong></div>
+        <div class="qr"><span>RA deduction cap</span><strong>R430,000/yr</strong></div>
+      </div>
+    </div>
+
+    <div class="sc">
+      <div class="sc-head">Bonus Tax Tips</div>
+      <div class="sc-body">
+        <div class="tip"><span>→</span><span>Ask your employer to pay your bonus into your RA — tax-deductible up to 27.5% of income (max R430,000/yr).</span></div>
+        <div class="tip"><span>→</span><span>Medical aid credits still apply in your bonus month and reduce your PAYE.</span></div>
+        <div class="tip"><span>→</span><span>If close to a tax bracket, ask about deferring your bonus to the next tax year (after 1 March).</span></div>
+        <div class="tip"><span>→</span><span>13th cheques are taxed exactly like regular salary — no special SARS exemption.</span></div>
+        <div class="tip"><span>→</span><span>Bonuses do not attract SDL separately — only the employer pays SDL on total payroll.</span></div>
+      </div>
+    </div>
+
+    <div class="sc">
+      <div class="sc-head">13th Cheque vs Bonus</div>
+      <div class="sc-body">
+        <div class="tip"><span>→</span><span><strong>13th Cheque:</strong> Contractual extra month's salary. Taxed identically to regular salary.</span></div>
+        <div class="tip"><span>→</span><span><strong>Performance Bonus:</strong> Discretionary. Also taxed as income — no SARS exemption.</span></div>
+        <div class="tip"><span>→</span><span>Both taxed at your marginal rate in the month paid. No difference in SARS treatment.</span></div>
+      </div>
+    </div>
+
+    <div class="sc">
+      <div class="sc-head">Related Calculators</div>
+      <div class="sc-body">
+        <div class="tip"><span>→</span><a href="/salary-calculator">Salary After Tax Calculator</a></div>
+        <div class="tip"><span>→</span><a href="/paye-calculator">PAYE Calculator</a></div>
+        <div class="tip"><span>→</span><a href="/gross-to-net">Gross to Net Salary</a></div>
+        <div class="tip"><span>→</span><a href="/overtime-calculator">Overtime Pay Calculator</a></div>
+        <div class="tip"><span>→</span><a href="/commission-calculator">Commission Calculator</a></div>
+      </div>
+    </div>
   </div>
 </div>
 
+<!-- ARTICLE SECTION -->
+<div class="section">
+  <div style="background:var(--white);border:1px solid var(--line);border-top:3px solid var(--forest)">
+    <div class="article-body">
 
-<!-- CONTENT SECTION -->
-<div style="max-width:1200px;margin:0 auto;padding:0 2rem 3rem">
+      <h2>How bonuses are actually taxed in South Africa</h2>
+      <p>One of the most common financial surprises for South African employees is opening their payslip after a bonus month and finding far less than expected. The reason is almost always tax. Understanding how SARS treats bonus income is essential for proper financial planning, whether you are expecting a performance bonus, a 13th cheque, or a discretionary incentive payment.</p>
 
-  <!-- HOW BONUS TAX WORKS -->
-  <div class="section-header" style="margin-top:2rem"><div class="section-title">How it works <span>/</span> Bonus Tax in SA</div></div>
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:2rem">
-    <div style="background:var(--white);border:1px solid var(--g200);padding:1.5rem;border-top:3px solid var(--navy)">
-      <div style="font-size:.65rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:.6rem">How bonuses are taxed</div>
-      <h3 style="font-family:var(--fs);font-size:.97rem;font-weight:700;margin-bottom:.6rem">Taxed at your marginal rate</h3>
-      <p style="font-size:.84rem;color:var(--g600);line-height:1.7">In South Africa, your bonus is added to your salary for the month it is paid and taxed at your marginal rate — the rate that applies to the top portion of your combined income. This means a large bonus can push you into a higher bracket for that month, though only the amount above each threshold gets taxed at the higher rate.</p>
-    </div>
-    <div style="background:var(--white);border:1px solid var(--g200);padding:1.5rem;border-top:3px solid var(--navy)">
-      <div style="font-size:.65rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:.6rem">13th cheque vs bonus</div>
-      <h3 style="font-family:var(--fs);font-size:.97rem;font-weight:700;margin-bottom:.6rem">No special exemption for either</h3>
-      <p style="font-size:.84rem;color:var(--g600);line-height:1.7">Many South Africans believe a 13th cheque is taxed differently to a performance bonus. It is not. Both are treated as income in the month they are received and taxed at your marginal rate. There is no special SARS exemption for 13th cheques — they are simply an extra month of salary for tax purposes.</p>
-    </div>
-    <div style="background:var(--white);border:1px solid var(--g200);padding:1.5rem;border-top:3px solid var(--navy)">
-      <div style="font-size:.65rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:.6rem">Reduce your bonus tax</div>
-      <h3 style="font-family:var(--fs);font-size:.97rem;font-weight:700;margin-bottom:.6rem">Direct it to your retirement annuity</h3>
-      <p style="font-size:.84rem;color:var(--g600);line-height:1.7">The most effective way to reduce tax on a bonus is to ask your employer to contribute part or all of it directly to your retirement annuity (RA) or pension fund. Contributions are tax-deductible up to 27.5% of your taxable income (maximum R430,000 for the 2027 tax year). This can save thousands in PAYE.</p>
-    </div>
-    <div style="background:var(--white);border:1px solid var(--g200);padding:1.5rem;border-top:3px solid var(--navy)">
-      <div style="font-size:.65rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:.6rem">Timing matters</div>
-      <h3 style="font-family:var(--fs);font-size:.97rem;font-weight:700;margin-bottom:.6rem">Tax year timing can make a difference</h3>
-      <p style="font-size:.84rem;color:var(--g600);line-height:1.7">If your bonus takes you close to a higher tax bracket, it may be worth asking your employer whether it can be paid in the next tax year (after 1 March). This resets your annual income calculation and could keep your combined bonus and salary in a lower bracket. Discuss this option with a tax professional.</p>
+      <p>There is no special bonus tax rate in South Africa. Your bonus is simply added to your salary for the month it is paid, and the combined amount is taxed at your marginal rate — the rate that applies to the top portion of your income. For most South Africans, this means their bonus is effectively taxed at between 26% and 45%, significantly reducing what they actually take home.</p>
+
+      <div class="callout">
+        <strong>Key principle:</strong> A bonus is never taxed at a flat "bonus rate." It is always taxed at your marginal rate based on your combined salary plus bonus income for the tax year.
+      </div>
+
+      <h2>The 13th cheque myth: Is it really different from a bonus?</h2>
+      <p>Ask most South Africans and they will confidently tell you that a 13th cheque is taxed differently to a performance bonus. This is one of the most persistent myths in South African payroll tax, and it is completely wrong.</p>
+
+      <p>For SARS purposes, there is zero difference between a 13th cheque and a performance bonus. Both are treated as ordinary income in the month they are received and taxed at your marginal rate. The only real difference is contractual:</p>
+
+      <div class="compare-box">
+        <div class="compare-box-head">13th Cheque vs Performance Bonus</div>
+        <div class="compare-row">
+          <div class="compare-col">
+            <h4>13th Cheque</h4>
+            <p>A <strong>contractual right</strong> — your employment contract guarantees an extra month's salary, usually paid in November or December. If your employer doesn't pay it, you have legal grounds to claim.</p>
+          </div>
+          <div class="compare-col">
+            <h4>Performance Bonus</h4>
+            <p>A <strong>discretionary payment</strong> — based on company performance, individual KPIs, or management decision. No contractual guarantee; your employer can decide not to pay it.</p>
+          </div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-col">
+            <h4>SARS Treatment</h4>
+            <p>Taxed as ordinary income at your marginal rate. No special exemption or lower rate.</p>
+          </div>
+          <div class="compare-col">
+            <h4>SARS Treatment</h4>
+            <p>Taxed as ordinary income at your marginal rate. No special exemption or lower rate.</p>
+          </div>
+        </div>
+      </div>
+
+      <h2>Worked example: R30,000 bonus on a R450,000 salary</h2>
+      <p>Let's walk through a realistic scenario. You earn R450,000 per year (R37,500/month) and receive a R30,000 bonus. Here is exactly what happens:</p>
+
+      <div class="worked-example">
+        <div class="worked-example-head">
+          <span class="worked-example-tag">Worked Example</span>
+          <h3>Bonus breakdown — R450,000 salary + R30,000 bonus</h3>
+        </div>
+        <p>Annual salary of R450,000 puts you in the 31% tax bracket (R383,101 – R530,200). Adding R30,000 keeps your total at R480,000, still in the 31% bracket.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Gross bonus</td><td>R30,000.00</td></tr>
+            <tr><td>Tax at 31% marginal rate</td><td class="neg">-R9,300.00</td></tr>
+            <tr><td>UIF (1% — already maxed from salary)</td><td class="neg">-R0.00</td></tr>
+            <tr><td><strong>Net bonus you keep</strong></td><td><strong>R20,700.00</strong></td></tr>
+          </tbody>
+        </table>
+        <p style="margin-top:1rem">You keep <strong>69%</strong> of your bonus. The other 31% goes to SARS. Note: since your monthly salary (R37,500) exceeds the UIF ceiling of R17,712, you have already paid the maximum UIF contribution for the year via your regular salary — so no additional UIF is deducted from the bonus.</p>
+      </div>
+
+      <h2>What happens when a bonus crosses a tax bracket?</h2>
+      <p>The marginal rate system is progressive, which means only the portion of income above each threshold is taxed at the higher rate. This matters significantly when a bonus pushes you across a bracket boundary.</p>
+
+      <p>Consider someone earning R370,000 per year (in the 26% bracket, just under R383,100). If they receive a R50,000 bonus, their combined income becomes R420,000 — crossing into the 31% bracket. But only the R36,900 above the R383,100 threshold is taxed at 31%. The remaining R13,100 of the bonus is still taxed at 26%.</p>
+
+      <div class="callout">
+        <strong>Bracket splitting example:</strong> R50,000 bonus on R370,000 salary → R13,100 taxed at 26% (R3,406) + R36,900 taxed at 31% (R11,439) = Total bonus tax of R14,845. Effective rate: 29.7%, not a flat 31%.
+      </div>
+
+      <h2>How UIF works with bonuses</h2>
+      <p>UIF (Unemployment Insurance Fund) contributions are calculated at 1% of your remuneration, but there is a monthly earnings ceiling of R17,712. This creates important nuances for bonus months:</p>
+
+      <ul>
+        <li><strong>If your regular monthly salary is below R17,712:</strong> UIF is deducted from both your salary and your bonus, up to the annual cap of R2,125.44.</li>
+        <li><strong>If your regular monthly salary exceeds R17,712:</strong> You are already paying the maximum UIF of R177.12 per month through your salary. No additional UIF is deducted from your bonus.</li>
+        <li><strong>Annual UIF cap:</strong> The maximum UIF you can pay in a year is R2,125.44 (R177.12 × 12 months), regardless of how many bonuses you receive.</li>
+      </ul>
+
+      <p>This means high earners (anyone earning over R212,544 per year) will typically see no UIF deduction on their bonus at all — they have already paid the annual maximum through their regular salary.</p>
+
+      <h2>Five strategies to reduce tax on your bonus</h2>
+      <p>You cannot eliminate tax on your bonus entirely, but there are several legal strategies to significantly reduce it. These work best when arranged with your employer before the bonus is paid.</p>
+
+      <div class="strategy-grid">
+        <div class="strategy-card">
+          <div class="strategy-num">1</div>
+          <h3>Redirect to a Retirement Annuity</h3>
+          <p>The most powerful strategy. Ask your employer to pay part or all of your bonus directly into your RA or pension fund. Contributions are tax-deductible up to 27.5% of your income (capped at R430,000 for 2027).</p>
+          <div class="strategy-saving">💰 Saves your full marginal tax rate on the redirected amount</div>
+        </div>
+
+        <div class="strategy-card">
+          <div class="strategy-num">2</div>
+          <h3>Defer to Next Tax Year</h3>
+          <p>If your bonus pushes you into a higher bracket, ask your employer to pay it after 1 March (start of the new tax year). This resets your annual income calculation and may keep you in a lower bracket.</p>
+          <div class="strategy-saving">💰 Saves the bracket-difference percentage (up to 4% per bracket)</div>
+        </div>
+
+        <div class="strategy-card">
+          <div class="strategy-num">3</div>
+          <h3>Split Across Two Tax Years</h3>
+          <p>Ask for half the bonus in February and half in March. This spreads the tax burden across two tax years and may keep each portion in a lower bracket.</p>
+          <div class="strategy-saving">💰 Effective for earners near bracket boundaries</div>
+        </div>
+
+        <div class="strategy-card">
+          <div class="strategy-num">4</div>
+          <h3>Salary Sacrifice Into Benefits</h3>
+          <p>Convert a portion of your bonus into tax-efficient benefits like additional pension contributions, medical aid top-ups, or learning allowances where your employer offers flexibility.</p>
+          <div class="strategy-saving">💰 Depends on the specific benefit structure</div>
+        </div>
+
+        <div class="strategy-card">
+          <div class="strategy-num">5</div>
+          <h3>Use for Tax-Deductible Expenses</h3>
+          <p>Use your bonus to pay for tax-deductible items like donations to registered PBOs (Section 18A), or pre-pay deductible expenses in the current year.</p>
+          <div class="strategy-saving">💰 Up to 10% of taxable income for donations</div>
+        </div>
+
+        <div class="strategy-card">
+          <div class="strategy-num">6</div>
+          <h3>Max Out Medical Aid Credits</h3>
+          <p>Ensure you and your dependents are on your medical aid before bonus month. Each member qualifies for a R376/month tax credit that reduces your PAYE, including on bonus tax.</p>
+          <div class="strategy-saving">💰 R376 per member per month</div>
+        </div>
+      </div>
+
+      <h2>Bonus tax by salary bracket</h2>
+      <p>The table below shows the effective tax on a R20,000 bonus at different salary levels for the SARS 2027 tax year. These figures assume no medical aid credits and no UIF (as most earners at these levels have already maxed out UIF through salary).</p>
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Annual Salary</th>
+            <th>Marginal Rate</th>
+            <th>Tax on R20,000</th>
+            <th>You Keep</th>
+            <th>Effective %</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>R120,000</td><td class="td-green">18%</td><td>R3,600</td><td class="td-green"><strong>R16,400</strong></td><td>18%</td></tr>
+          <tr><td>R240,000</td><td class="td-green">18%</td><td>R3,600</td><td class="td-green"><strong>R16,400</strong></td><td>18%</td></tr>
+          <tr><td>R360,000</td><td>26%</td><td>R5,200</td><td class="td-green"><strong>R14,800</strong></td><td>26%</td></tr>
+          <tr><td>R480,000</td><td>31%</td><td>R6,200</td><td class="td-green"><strong>R13,800</strong></td><td>31%</td></tr>
+          <tr><td>R600,000</td><td>36%</td><td>R7,200</td><td class="td-green"><strong>R12,800</strong></td><td>36%</td></tr>
+          <tr><td>R840,000</td><td>39%</td><td>R7,800</td><td class="td-green"><strong>R12,200</strong></td><td>39%</td></tr>
+          <tr><td>R1,200,000</td><td>41%</td><td>R8,200</td><td class="td-green"><strong>R11,800</strong></td><td>41%</td></tr>
+          <tr><td>R2,000,000</td><td class="td-red">45%</td><td>R9,000</td><td><strong>R11,000</strong></td><td>45%</td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:.84rem;color:var(--mist);margin-top:.5rem">Note: If your bonus crosses a bracket threshold, the actual tax will be slightly lower than these figures because the portion below the threshold is taxed at the lower rate.</p>
+
+      <h2>Five common bonus tax mistakes to avoid</h2>
+      <p>Many South Africans make preventable mistakes with their bonus income. Here are the most common ones:</p>
+
+      <div class="mistakes-grid">
+        <div class="mistake-card">
+          <h4>Spending the gross amount</h4>
+          <p>Planning your holiday, car deposit, or renovation based on the gross bonus figure before tax. Always budget based on what you will actually receive after deductions.</p>
+        </div>
+        <div class="mistake-card">
+          <h4>Assuming a flat 30% tax</h4>
+          <p>Using a rough 30% estimate when your actual marginal rate may be 26%, 31%, or 41%. Use a proper calculator to get the exact figure.</p>
+        </div>
+        <div class="mistake-card">
+          <h4>Missing the RA opportunity</h4>
+          <p>Not discussing RA redirection with your employer before the bonus is processed. Once paid, the tax has already been deducted and cannot be undone.</p>
+        </div>
+        <div class="mistake-card">
+          <h4>Ignoring timing</h4>
+          <p>Not considering whether paying the bonus in February vs March (different tax years) would save you money. A simple conversation with payroll can save thousands.</p>
+        </div>
+        <div class="mistake-card">
+          <h4>Forgetting about bracket splits</h4>
+          <p>Assuming the entire bonus is taxed at the higher bracket rate when part of it may still fall in the lower bracket.</p>
+        </div>
+        <div class="mistake-card">
+          <h4>Lifestyle creep</h4>
+          <p>Using a once-off bonus to commit to ongoing expenses (car payments, subscriptions, rent increases) that will not be funded by future salary.</p>
+        </div>
+      </div>
+
+      <h2>Glossary: Bonus tax terms explained</h2>
+      <p>Key terminology you should understand when dealing with bonus taxation in South Africa:</p>
+
+      <div class="glossary-grid">
+        <div class="glossary-item">
+          <div class="glossary-term">Marginal Tax Rate</div>
+          <div class="glossary-def">The rate of tax applied to the next rand of income. Your bonus is taxed at this rate because it sits on top of your existing salary.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">Effective Tax Rate</div>
+          <div class="glossary-def">The actual percentage of your bonus paid in tax. This may be lower than your marginal rate if the bonus crosses a bracket threshold.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">Bracket Splitting</div>
+          <div class="glossary-def">When a bonus crosses into a higher tax bracket, only the portion above the threshold is taxed at the higher rate.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">UIF Ceiling</div>
+          <div class="glossary-def">The maximum monthly earnings (R17,712) on which UIF contributions are calculated. Earnings above this do not attract additional UIF.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">Section 11F</div>
+          <div class="glossary-def">The section of the Income Tax Act allowing tax deductions for retirement fund contributions, capped at R430,000 for 2027.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">IRP5</div>
+          <div class="glossary-def">The tax certificate your employer issues at year-end. Bonuses appear in source code 3601 (annual bonus) or 3605 (13th cheque).</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">Tax Directive</div>
+          <div class="glossary-def">A SARS instruction to your employer on how to tax large lump sums. Required for bonuses over R25,000 in some cases.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">13th Cheque</div>
+          <div class="glossary-def">A contractually guaranteed extra month of salary, typically paid in December. Taxed identically to regular salary.</div>
+        </div>
+      </div>
+
+      <h2>Reading your IRP5: Where does your bonus appear?</h2>
+      <p>When you receive your IRP5 certificate from your employer at the end of the tax year, your bonus income will appear in specific source codes. Understanding these helps you verify that SARS has correctly captured your income:</p>
+
+      <ul>
+        <li><strong>Source code 3601:</strong> Annual bonus (performance-based, discretionary)</li>
+        <li><strong>Source code 3605:</strong> 13th cheque or guaranteed bonus</li>
+        <li><strong>Source code 3602:</strong> Overtime payments</li>
+        <li><strong>Source code 3604:</strong> Commission income</li>
+        <li><strong>Source code 3696:</strong> Total remuneration (includes all the above)</li>
+      </ul>
+
+      <p>If the figures on your IRP5 do not match what you received, raise a query with your payroll department before submitting your tax return. Incorrect bonus capture can lead to SARS disputes and delayed refunds.</p>
+
+      <h2>Special cases: When the normal rules do not apply</h2>
+      <p>There are a few specific situations where bonus taxation works differently:</p>
+
+      <h3>Severance benefits and retrenchment packages</h3>
+      <p>If you receive a bonus as part of a retrenchment or severance package, the first R550,000 is tax-free (2027 tax year). Amounts above this threshold are taxed using special retirement fund lump sum tables, not normal marginal rates.</p>
+
+      <h3>Restraint of trade payments</h3>
+      <p>Payments for restraint of trade are taxed as ordinary income at your marginal rate, not as capital gains. There is no special treatment — they are treated the same as a bonus.</p>
+
+      <h3>Share scheme vesting</h3>
+      <p>If you receive shares or share options as a bonus, the vesting value is taxed under Section 8C of the Income Tax Act. This uses different timing rules and the gain is taxed as ordinary income at vesting, regardless of when you sell the shares.</p>
+
+      <h3>Non-resident employees</h3>
+      <p>Non-residents are only taxed on income earned for services rendered in South Africa. If part of your bonus relates to work done abroad, that portion may be exempt. Keep detailed records of where you were physically working.</p>
+
+      <h2>Bonuses and provisional tax</h2>
+      <p>If your total income (including bonuses) exceeds R87,100 from sources other than employment — such as rental, investment, or freelance income — you are classified as a provisional taxpayer. This does not change how your bonus is taxed at source, but it does mean you must submit two provisional tax returns (IRP6) each year.</p>
+
+      <p>A large bonus can significantly increase your total taxable income, which in turn increases your provisional tax obligations. If you have other income sources beyond your salary, factor your bonus into your provisional tax planning to avoid underestimation penalties from SARS.</p>
+
+      <h2>Frequently asked questions</h2>
+
+      <h3>Is a 13th cheque the same as a bonus in South Africa?</h3>
+      <p>Contractually, no. A 13th cheque is a guaranteed extra month of salary written into your employment contract. A performance bonus is discretionary. For SARS tax purposes, however, they are treated identically — both are taxed as ordinary income at your marginal rate in the month they are paid.</p>
+
+      <h3>Will my bonus push me into a higher tax bracket?</h3>
+      <p>It might, but this is not the disaster many people fear. If your annual salary is R350,000 and you receive a R50,000 bonus, only the R33,100 that falls above the R383,100 threshold is taxed at 31%. The remaining R16,900 is still taxed at 26%. Your regular salary portion is never re-taxed at a higher rate.</p>
+
+      <h3>Can I avoid paying tax on my bonus?</h3>
+      <p>You cannot avoid it entirely, but you can legally reduce it. The most effective strategy is directing part or all of your bonus into a retirement annuity before it is paid out. Contributions are tax-deductible up to 27.5% of income (capped at R430,000 for the 2027 tax year). This must be arranged with your employer before the bonus payment is processed.</p>
+
+      <h3>Does UIF apply to bonuses in South Africa?</h3>
+      <p>Yes, UIF is calculated at 1% of the bonus, but only up to the monthly earnings ceiling of R17,712. If your regular monthly salary already exceeds R17,712, no additional UIF is deducted from your bonus because you have already paid the monthly maximum through your salary.</p>
+
+      <h3>What if I receive two bonuses in one tax year?</h3>
+      <p>Each bonus is taxed independently based on your cumulative income at the time of payment. The first bonus is taxed using your salary plus that bonus as the income figure. The second bonus is taxed using your salary plus both bonuses as the income figure. The marginal rate may be higher for the second bonus.</p>
+
+      <h3>Is a Christmas bonus taxed differently?</h3>
+      <p>No. There is no special Christmas bonus exemption in South Africa. A Christmas bonus is taxed exactly like any other performance bonus — at your marginal rate. The timing (December) also means it falls in the same tax year as your regular salary.</p>
+
+      <h3>How do I calculate my own bonus tax?</h3>
+      <p>Find your marginal tax rate based on your salary plus bonus (using the SARS 2027 brackets), multiply your bonus by that rate, and subtract the result. For bonuses that cross a bracket boundary, you need to split the calculation between the two rates. Use a calculator that does this splitting automatically for accuracy.</p>
+
+      <h3>Can my employer choose not to deduct tax from my bonus?</h3>
+      <p>No. Your employer is legally required to deduct PAYE from all remuneration, including bonuses. If your employer does not deduct the correct tax, SARS will hold you liable for the shortfall when you file your return. Always verify that the correct tax was deducted on your payslip.</p>
+
+      <h3>Do freelancers pay tax on bonuses?</h3>
+      <p>Freelancers and contractors do not receive "bonuses" in the traditional sense. Any additional income is simply part of your total business revenue and is taxed at your marginal rate when you file your provisional and annual returns. The marginal rate principle still applies — additional income is taxed at your top rate.</p>
+
+      <h3>What is the SARS tax directive for bonuses?</h3>
+      <p>For very large lump sum payments (generally over R25,000), SARS may issue a tax directive specifying exactly how much tax to deduct. This ensures the correct marginal rate is applied. Your employer applies for this directive before paying out the bonus.</p>
+
+      <div class="disclaim">
+        <strong>Disclaimer:</strong> This calculator provides estimates based on SARS 2027 tax year rates (1 March 2026 – 28 February 2027). Actual tax liability may vary based on individual circumstances, deductions, and credits. For personalised tax advice, consult a registered tax practitioner. CalcMyPay is not affiliated with SARS.
+      </div>
+
     </div>
   </div>
-
-  <!-- BONUS TAX EXAMPLES -->
-  <div class="section-header"><div class="section-title">Reference <span>/</span> Bonus Tax by Salary</div></div>
-  <div style="background:var(--white);border:1px solid var(--g200);border-top:3px solid var(--navy);overflow:hidden;margin-bottom:2rem">
-    <table class="data-table" style="margin:0">
-      <thead><tr><th>Annual Salary</th><th>Marginal Tax Rate</th><th>R20,000 Bonus — Tax</th><th>R20,000 Bonus — You Keep</th></tr></thead>
-      <tbody>
-        <tr><td>R120,000 (R10k/month)</td><td class="td-green">18%</td><td>R3,600</td><td class="td-green"><strong>R16,400</strong></td></tr>
-        <tr><td>R240,000 (R20k/month)</td><td class="td-green">18%</td><td>R3,600</td><td class="td-green"><strong>R16,400</strong></td></tr>
-        <tr><td>R360,000 (R30k/month)</td><td>26%</td><td>R5,200</td><td class="td-green"><strong>R14,800</strong></td></tr>
-        <tr><td>R480,000 (R40k/month)</td><td>31%</td><td>R6,200</td><td class="td-green"><strong>R13,800</strong></td></tr>
-        <tr><td>R600,000 (R50k/month)</td><td>36%</td><td>R7,200</td><td class="td-green"><strong>R12,800</strong></td></tr>
-        <tr><td>R840,000 (R70k/month)</td><td>39%</td><td>R7,800</td><td class="td-green"><strong>R12,200</strong></td></tr>
-        <tr><td>R1,200,000 (R100k/month)</td><td>41%</td><td>R8,200</td><td class="td-green"><strong>R11,800</strong></td></tr>
-      </tbody>
-    </table>
-    <div style="padding:.7rem 1rem;font-size:.75rem;color:var(--g600);background:var(--g100);border-top:1px solid var(--g200)">Approximate figures based on SARS 2027 tax year · Tax shown is on the bonus only at the applicable marginal rate · UIF excluded for simplicity</div>
-  </div>
-
-  <!-- FAQ -->
-  <div class="section-header"><div class="section-title">FAQ <span>/</span> Bonus Tax Questions</div></div>
-  <div style="display:grid;gap:1px;background:var(--g200);border:1px solid var(--g200);margin-bottom:2rem">
-    <div style="background:var(--white);padding:1.2rem 1.5rem">
-      <h3 style="font-family:var(--fs);font-size:.92rem;font-weight:700;margin-bottom:.5rem;letter-spacing:-.01em">Is a 13th cheque the same as a bonus in South Africa?</h3>
-      <p style="font-size:.83rem;color:var(--g600);line-height:1.7">No — but they are taxed the same way. A 13th cheque is a contractually agreed extra month of salary, usually paid in November or December. A performance bonus is discretionary. For SARS purposes, both are treated as income in the month they are received and taxed at your marginal rate.</p>
-    </div>
-    <div style="background:var(--white);padding:1.2rem 1.5rem">
-      <h3 style="font-family:var(--fs);font-size:.92rem;font-weight:700;margin-bottom:.5rem;letter-spacing:-.01em">Will my bonus push me into a higher tax bracket?</h3>
-      <p style="font-size:.83rem;color:var(--g600);line-height:1.7">It might — but only the portion above the bracket threshold gets taxed at the higher rate. If your annual salary is R350,000 and you receive a R50,000 bonus, only the R50,000 in the new bracket (R383,100 threshold) gets taxed at 31%. Your regular salary stays in its existing bracket.</p>
-    </div>
-    <div style="background:var(--white);padding:1.2rem 1.5rem">
-      <h3 style="font-family:var(--fs);font-size:.92rem;font-weight:700;margin-bottom:.5rem;letter-spacing:-.01em">Can I avoid paying tax on my bonus?</h3>
-      <p style="font-size:.83rem;color:var(--g600);line-height:1.7">You cannot avoid it entirely, but you can reduce it legally. Directing your bonus (or part of it) into a retirement annuity is the most effective strategy — contributions are tax-deductible up to 27.5% of income. This must be arranged with your employer before the bonus is paid.</p>
-    </div>
-    <div style="background:var(--white);padding:1.2rem 1.5rem">
-      <h3 style="font-family:var(--fs);font-size:.92rem;font-weight:700;margin-bottom:.5rem;letter-spacing:-.01em">Does UIF apply to bonuses in South Africa?</h3>
-      <p style="font-size:.83rem;color:var(--g600);line-height:1.7">Yes, UIF applies to all remuneration including bonuses. However, UIF contributions are capped at R17,712 per year (R1,476/month). If you have already reached the annual cap through your regular salary contributions, no additional UIF is deducted from your bonus.</p>
-    </div>
-  </div>
-
-  <!-- CTA -->
-  <div style="background:var(--navy);border-top:3px solid var(--accent);padding:2rem;text-align:center">
-    <h2 style="font-family:var(--fs);font-size:1.3rem;font-weight:900;color:var(--white);margin-bottom:.5rem">Want to know your regular take-home too?</h2>
-    <p style="color:var(--g600);font-size:.85rem;margin-bottom:1.2rem">Use our salary calculator for a full breakdown of your monthly PAYE and deductions.</p>
-    <div style="display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap">
-      <a href="/salary-calculator" class="btn btn-accent">Salary calculator →</a>
-      <a href="/blog-reduce-tax" class="btn" style="background:var(--navy-mid)">How to pay less tax</a>
-    </div>
-  </div>
-
 </div>
-<footer><div class="footer-inner">
-  <div class="footer-logo">CalcMy<span>Pay</span></div>
-  <div class="footer-links"><a href="/salary-income">Salary</a><a href="/affordability">Affordability</a><a href="/wealth-building">Wealth</a><a href="/money-tools">Tools</a><a href="/financial-coach">Coach</a><a href="/blog-salary-guide">Guides</a><a href="/about">About</a><a href="/privacy-policy">Privacy</a><a href="/contact">Contact</a></div>
-  <div class="footer-copy">© 2026 CalcMyPay · For informational purposes only · Not affiliated with SARS · SARS 2027 tax year (1 March 2026 – 28 February 2027)</div>
-</div></footer>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">CalcMy<span>Pay</span></div>
+    <div class="footer-links">
+      <a href="/salary-income">Salary</a>
+      <a href="/affordability">Affordability</a>
+      <a href="/wealth-building">Wealth</a>
+      <a href="/money-tools">Tools</a>
+      <a href="/financial-coach">Coach</a>
+      <a href="/blog-salary-guide">Guides</a>
+      <a href="/about">About</a>
+      <a href="/privacy-policy">Privacy</a>
+      <a href="/contact">Contact</a>
+    </div>
+    <div class="footer-copy">
+      © 2026 CalcMyPay · For informational purposes only · Not affiliated with SARS · SARS 2027 tax year (1 March 2026 – 28 February 2027)
+    </div>
+  </div>
+</footer>
+
 <script>
-let R={};let bonusType='bonus';
-const fmt=n=>'R\u00a0'+Math.round(Math.abs(n)).toLocaleString('en-ZA');
-const brackets=[[245100,.18,0],[383100,.26,44118],[530200,.31,79998],[695800,.36,125599],[887000,.39,185215],[1878600,.41,259783],[Infinity,.45,666339]];
-function sarsTax(t){if(t<=0)return 0;let p=0;for(let[l,r,b]of brackets){if(t<=l)return b+(t-p)*r;p=l;}return 0;}
-const rebates={primary:17820,secondary:9765,tertiary:3249};
-function medCredit(m){if(m===0)return 0;if(m===1)return 376*12;if(m===2)return 752*12;return(752+(m-2)*254)*12;}
-function marginalRate(income){let p=0;for(let[l,r]of brackets){if(income<=l)return r;p=l;}return .45;}
-function setType(type,btn){
-  bonusType=type;document.querySelectorAll('.type-tab').forEach(t=>t.classList.remove('active'));btn.classList.add('active');
-  document.getElementById('bonus-label').textContent=type==='13th'?'13th Cheque Amount':'Bonus Amount';
-  document.getElementById('th-label').textContent=type==='13th'?'13th cheque take-home':'Bonus take-home';
-  document.getElementById('br-bonus-label').textContent=type==='13th'?'Gross 13th cheque':'Gross bonus';
-  document.getElementById('bb-title').textContent=type==='13th'?'13th Cheque Breakdown':'Bonus Breakdown';
+const fmt = n => 'R\u00a0' + Math.round(Math.abs(n)).toLocaleString('en-ZA');
+
+// SARS 2027 brackets (1 March 2026 - 28 Feb 2027)
+const brackets = [
+  [245100, .18, 0],
+  [383100, .26, 44118],
+  [530200, .31, 79998],
+  [695800, .36, 125599],
+  [887000, .39, 185215],
+  [1878600, .41, 259783],
+  [Infinity, .45, 666339]
+];
+
+function sarsTax(t) {
+  if (t <= 0) return 0;
+  let p = 0;
+  for (let [l, r, b] of brackets) {
+    if (t <= l) return b + (t - p) * r;
+    p = l;
+  }
+  return 0;
 }
-function calculate(){
-  const sal=parseFloat(document.getElementById('salary').value)||0;
-  const bonusAmt=parseFloat(document.getElementById('bonus').value)||(bonusType==='13th'?sal/12:0);
-  const age=document.getElementById('age').value;
-  const med=parseInt(document.getElementById('medical').value);
-  if(sal<=0){alert('Please enter your annual salary.');return;}
-  if(bonusAmt<=0){alert('Please enter a bonus amount.');return;}
-  let reb=rebates.primary;
-  if(age==='secondary'||age==='tertiary')reb+=rebates.secondary;
-  if(age==='tertiary')reb+=rebates.tertiary;
-  const mc=medCredit(med);
-  const annualTax=Math.max(0,sarsTax(sal)-reb-mc);
-  const uifAnnual=Math.min(sal*.01,17712);
-  const annualTakeHome=sal-annualTax-uifAnnual;
-  const monthlyTakeHome=annualTakeHome/12;
-  const margRate=marginalRate(sal+bonusAmt);
-  const bonusTax=bonusAmt*margRate;
-  const bonusUif=Math.max(0,Math.min(bonusAmt*.01,17712-uifAnnual));
-  const netBonus=Math.max(0,bonusAmt-bonusTax-bonusUif);
-  const bonusTaxPct=bonusAmt>0?((bonusTax/bonusAmt)*100).toFixed(1):0;
-  const total=monthlyTakeHome+netBonus;
-  document.getElementById('th-amount').textContent=fmt(netBonus);
-  document.getElementById('eff-rate').textContent=bonusTaxPct+'%';
-  document.getElementById('br-salary').textContent=fmt(sal);
-  document.getElementById('br-monthly').textContent=fmt(monthlyTakeHome);
-  document.getElementById('br-bonus').textContent=fmt(bonusAmt);
-  document.getElementById('br-bonus-tax').textContent='-'+fmt(bonusTax);
-  document.getElementById('br-bonus-uif').textContent='-'+fmt(bonusUif);
-  document.getElementById('br-net-bonus').textContent=fmt(netBonus);
-  document.getElementById('br-reg-th').textContent=fmt(monthlyTakeHome);
-  document.getElementById('br-bonus-th').textContent=fmt(netBonus);
-  document.getElementById('br-total').textContent=fmt(total);
-  document.getElementById('br-takehome').textContent=fmt(netBonus);
-  const pct=Math.round(margRate*100);
-  document.querySelector('#bonus-note span:last-child').innerHTML='Your bonus is taxed at your <strong>marginal rate of '+pct+'%</strong> — the rate on the top portion of your combined income.';
-  baseInputs = {sal, bonusAmt, netBonus};
+
+const rebates = { primary: 17820, secondary: 9765, tertiary: 3249 };
+
+function medCredit(m) {
+  if (m === 0) return 0;
+  if (m === 1) return 376 * 12;
+  if (m === 2) return 752 * 12;
+  return (752 + (m - 2) * 254) * 12;
+}
+
+function marginalRate(income) {
+  let p = 0;
+  for (let [l, r] of brackets) {
+    if (income <= l) return r;
+    p = l;
+  }
+  return .45;
+}
+
+// NEW: Calculate tax ONLY on a specific portion of income (for accurate bonus splitting)
+function taxOnPortion(baseIncome, additionalIncome) {
+  return sarsTax(baseIncome + additionalIncome) - sarsTax(baseIncome);
+}
+
+// UIF caps — 2026/2027
+const UIF_MONTHLY_CEILING = 17712;
+const UIF_ANNUAL_CAP = 2125.44; // R177.12/month * 12
+
+let bonusType = 'bonus';
+let lastTakeHome = 0;
+let baseInputs = null;
+
+function loadExample() {
+  document.getElementById('salary').value = 450000;
+  document.getElementById('bonus').value = 30000;
+  document.getElementById('age').value = 'primary';
+  document.getElementById('medical').value = '1';
+  calculate();
+}
+
+function setType(type, btn) {
+  bonusType = type;
+  document.querySelectorAll('.type-tab').forEach(t => t.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('bonus-label').textContent = type === '13th' ? '13th Cheque Amount' : 'Bonus Amount';
+  document.getElementById('th-label').textContent = type === '13th' ? '13th cheque take-home' : 'Bonus take-home';
+  document.getElementById('br-bonus-label').textContent = type === '13th' ? 'Gross 13th cheque' : 'Gross bonus';
+  document.getElementById('bb-title').textContent = type === '13th' ? '13th Cheque Breakdown' : 'Bonus Breakdown';
+}
+
+function calculate() {
+  const sal = parseFloat(document.getElementById('salary').value) || 0;
+  const bonusAmt = parseFloat(document.getElementById('bonus').value) || (bonusType === '13th' ? sal / 12 : 0);
+  const age = document.getElementById('age').value;
+  const med = parseInt(document.getElementById('medical').value);
+
+  if (sal <= 0) { alert('Please enter your annual salary.'); return; }
+  if (bonusAmt <= 0) { alert('Please enter a bonus amount.'); return; }
+
+  // Calculate rebates
+  let reb = rebates.primary;
+  if (age === 'secondary' || age === 'tertiary') reb += rebates.secondary;
+  if (age === 'tertiary') reb += rebates.tertiary;
+  const mc = medCredit(med);
+
+  // Regular salary tax and take-home
+  const annualTax = Math.max(0, sarsTax(sal) - reb - mc);
+  const uifAnnual = Math.min(sal * .01, UIF_ANNUAL_CAP);
+  const annualTakeHome = sal - annualTax - uifAnnual;
+  const monthlyTakeHome = annualTakeHome / 12;
+
+  // ACCURATE BONUS TAX — handles bracket splitting correctly
+  const bonusTax = Math.max(0, taxOnPortion(sal, bonusAmt));
+  
+  // Bonus UIF — only if there is remaining UIF headroom
+  const bonusUif = Math.max(0, Math.min(bonusAmt * .01, UIF_ANNUAL_CAP - uifAnnual));
+  
+  const netBonus = Math.max(0, bonusAmt - bonusTax - bonusUif);
+  const bonusTaxPct = bonusAmt > 0 ? ((bonusTax / bonusAmt) * 100).toFixed(1) : 0;
+  const total = monthlyTakeHome + netBonus;
+
+  // Update UI
+  document.getElementById('th-amount').textContent = fmt(netBonus);
+  document.getElementById('eff-rate').textContent = bonusTaxPct + '%';
+  document.getElementById('br-salary').textContent = fmt(sal);
+  document.getElementById('br-monthly').textContent = fmt(monthlyTakeHome);
+  document.getElementById('br-bonus').textContent = fmt(bonusAmt);
+  document.getElementById('br-bonus-tax').textContent = '-' + fmt(bonusTax);
+  document.getElementById('br-bonus-uif').textContent = '-' + fmt(bonusUif);
+  document.getElementById('br-net-bonus').textContent = fmt(netBonus);
+  document.getElementById('br-reg-th').textContent = fmt(monthlyTakeHome);
+  document.getElementById('br-bonus-th').textContent = fmt(netBonus);
+  document.getElementById('br-total').textContent = fmt(total);
+  document.getElementById('br-takehome').textContent = fmt(netBonus);
+
+  // Marginal rate for info note (rate at top of combined income)
+  const topMarg = marginalRate(sal + bonusAmt);
+  const pct = Math.round(topMarg * 100);
+  document.querySelector('#bonus-note span:last-child').innerHTML =
+    'Your bonus is taxed at your <strong>marginal rate of ' + pct + '%</strong> — the rate on the top portion of your combined income. Effective tax rate: ' + bonusTaxPct + '%.';
+
+  baseInputs = { sal, bonusAmt, netBonus };
   document.getElementById('whatif-section').style.display = 'block';
   resetWhatIf();
   renderMoneyStory(annualTakeHome);
- document.getElementById('results').classList.add('show');
-  document.getElementById('results').scrollIntoView({behavior:'smooth',block:'nearest'});
+  document.getElementById('results').classList.add('show');
+  document.getElementById('results').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }
-document.addEventListener('keydown',e=>{if(e.key==='Enter')calculate();});
 
-let lastTakeHome = 0;
+document.addEventListener('keydown', e => { if (e.key === 'Enter') calculate(); });
 
-const SAL=[{"slug": "teacher", "name": "Teacher", "cat": "Education", "jun": 19000, "avg": 24000, "sen": 62000, "th": 20639, "qual": "Degree (B.Ed)"}, {"slug": "nurse", "name": "Registered Nurse", "cat": "Healthcare", "jun": 19000, "avg": 28000, "sen": 65000, "th": 23559, "qual": "Diploma/Degree"}, {"slug": "doctor", "name": "Doctor", "cat": "Healthcare", "jun": 42000, "avg": 75000, "sen": 220000, "th": 53642, "qual": "MBChB"}, {"slug": "pharmacist", "name": "Pharmacist", "cat": "Healthcare", "jun": 28000, "avg": 45000, "sen": 80000, "th": 35274, "qual": "BPharm"}, {"slug": "accountant", "name": "Accountant", "cat": "Finance", "jun": 22000, "avg": 45000, "sen": 130000, "th": 35274, "qual": "Degree / CA(SA)"}, {"slug": "engineer", "name": "Engineer", "cat": "Engineering", "jun": 32000, "avg": 48000, "sen": 140000, "th": 37164, "qual": "Degree (Eng)"}, {"slug": "developer", "name": "Software Developer", "cat": "Technology", "jun": 38000, "avg": 55000, "sen": 130000, "th": 41574, "qual": "Degree / self-taught"}, {"slug": "data-scientist", "name": "Data Scientist", "cat": "Technology", "jun": 38000, "avg": 58000, "sen": 150000, "th": 43464, "qual": "Degree (STEM)"}, {"slug": "lawyer", "name": "Lawyer", "cat": "Legal", "jun": 22000, "avg": 52000, "sen": 180000, "th": 39684, "qual": "LLB"}, {"slug": "marketing-manager", "name": "Marketing Manager", "cat": "Marketing", "jun": 25000, "avg": 42000, "sen": 120000, "th": 33275, "qual": "Degree / diploma"}, {"slug": "pilot", "name": "Commercial Pilot", "cat": "Aviation", "jun": 40000, "avg": 70000, "sen": 200000, "th": 50664, "qual": "CPL/ATPL licence"}, {"slug": "police-officer", "name": "Police Officer", "cat": "Government", "jun": 16000, "avg": 19000, "sen": 55000, "th": 16875, "qual": "Matric + training"}, {"slug": "electrician", "name": "Electrician", "cat": "Trades", "jun": 12000, "avg": 22000, "sen": 45000, "th": 19179, "qual": "Red Seal trade"}, {"slug": "plumber", "name": "Plumber", "cat": "Trades", "jun": 11000, "avg": 20000, "sen": 42000, "th": 17685, "qual": "Red Seal trade"}];
+const SAL = [
+  { "slug": "teacher", "name": "Teacher", "cat": "Education", "jun": 19000, "avg": 24000, "sen": 62000, "th": 20639, "qual": "Degree (B.Ed)" },
+  { "slug": "nurse", "name": "Registered Nurse", "cat": "Healthcare", "jun": 19000, "avg": 28000, "sen": 65000, "th": 23559, "qual": "Diploma/Degree" },
+  { "slug": "doctor", "name": "Doctor", "cat": "Healthcare", "jun": 42000, "avg": 75000, "sen": 220000, "th": 53642, "qual": "MBChB" },
+  { "slug": "pharmacist", "name": "Pharmacist", "cat": "Healthcare", "jun": 28000, "avg": 45000, "sen": 80000, "th": 35274, "qual": "BPharm" },
+  { "slug": "accountant", "name": "Accountant", "cat": "Finance", "jun": 22000, "avg": 45000, "sen": 130000, "th": 35274, "qual": "Degree / CA(SA)" },
+  { "slug": "engineer", "name": "Engineer", "cat": "Engineering", "jun": 32000, "avg": 48000, "sen": 140000, "th": 37164, "qual": "Degree (Eng)" },
+  { "slug": "developer", "name": "Software Developer", "cat": "Technology", "jun": 38000, "avg": 55000, "sen": 130000, "th": 41574, "qual": "Degree / self-taught" },
+  { "slug": "data-scientist", "name": "Data Scientist", "cat": "Technology", "jun": 38000, "avg": 58000, "sen": 150000, "th": 43464, "qual": "Degree (STEM)" },
+  { "slug": "lawyer", "name": "Lawyer", "cat": "Legal", "jun": 22000, "avg": 52000, "sen": 180000, "th": 39684, "qual": "LLB" },
+  { "slug": "marketing-manager", "name": "Marketing Manager", "cat": "Marketing", "jun": 25000, "avg": 42000, "sen": 120000, "th": 33275, "qual": "Degree / diploma" },
+  { "slug": "pilot", "name": "Commercial Pilot", "cat": "Aviation", "jun": 40000, "avg": 70000, "sen": 200000, "th": 50664, "qual": "CPL/ATPL licence" },
+  { "slug": "police-officer", "name": "Police Officer", "cat": "Government", "jun": 16000, "avg": 19000, "sen": 55000, "th": 16875, "qual": "Matric + training" },
+  { "slug": "electrician", "name": "Electrician", "cat": "Trades", "jun": 12000, "avg": 22000, "sen": 45000, "th": 19179, "qual": "Red Seal trade" },
+  { "slug": "plumber", "name": "Plumber", "cat": "Trades", "jun": 11000, "avg": 20000, "sen": 42000, "th": 17685, "qual": "Red Seal trade" }
+];
 
-function fmtK(n){n=Math.round(n);if(Math.abs(n)>=1e6)return 'R\u00a0'+(n/1e6).toFixed(2)+'m';if(Math.abs(n)>=1e3)return 'R\u00a0'+Math.round(n/1e3).toLocaleString('en-ZA')+'k';return fmt(n);}
+function fmtK(n) {
+  n = Math.round(n);
+  if (Math.abs(n) >= 1e6) return 'R\u00a0' + (n / 1e6).toFixed(2) + 'm';
+  if (Math.abs(n) >= 1e3) return 'R\u00a0' + Math.round(n / 1e3).toLocaleString('en-ZA') + 'k';
+  return fmt(n);
+}
 
-function renderMoneyStory(annualTakeHome){
+function renderMoneyStory(annualTakeHome) {
   lastTakeHome = annualTakeHome;
-  const monthlyTH = annualTakeHome/12;
+  const monthlyTH = annualTakeHome / 12;
 
-  const rentMax = monthlyTH*0.30;
-  const carMax = monthlyTH*0.15;
-  const bondR=0.11/12, bondN=20*12;
-  const bondCapacity = rentMax*((Math.pow(1+bondR,bondN)-1)/(bondR*Math.pow(1+bondR,bondN)));
-  const carRate=0.125/12, carN=72;
-  const carPrice = carMax*((Math.pow(1+carRate,carN)-1)/(carRate*Math.pow(1+carRate,carN)));
-  const emergency3 = monthlyTH*3;
-  const emergency6 = monthlyTH*6;
+  const rentMax = monthlyTH * 0.30;
+  const carMax = monthlyTH * 0.15;
+  const bondR = 0.11 / 12, bondN = 20 * 12;
+  const bondCapacity = rentMax * ((Math.pow(1 + bondR, bondN) - 1) / (bondR * Math.pow(1 + bondR, bondN)));
+  const carRate = 0.125 / 12, carN = 72;
+  const carPrice = carMax * ((Math.pow(1 + carRate, carN) - 1) / (carRate * Math.pow(1 + carRate, carN)));
+  const emergency3 = monthlyTH * 3;
+  const emergency6 = monthlyTH * 6;
 
   document.getElementById('ms-rent').textContent = fmt(rentMax);
   document.getElementById('ms-home').textContent = fmtK(bondCapacity);
   document.getElementById('ms-car').textContent = fmtK(carPrice);
   document.getElementById('ms-emergency').textContent = fmt(emergency3);
-  document.getElementById('ms-emergency-desc').textContent = fmt(emergency3)+' \u2013 '+fmt(emergency6)+' (3\u20136 months of take-home)';
+  document.getElementById('ms-emergency-desc').textContent = fmt(emergency3) + ' \u2013 ' + fmt(emergency6) + ' (3\u20136 months of take-home)';
 
-  const ageInput = parseInt(document.getElementById('ms-age').value)||0;
-  const monthlyRA = monthlyTH*0.15;
-  const rr = 0.10/12;
+  const ageInput = parseInt(document.getElementById('ms-age').value) || 0;
+  const monthlyRA = monthlyTH * 0.15;
+  const rr = 0.10 / 12;
   const agenoteEl = document.getElementById('ms-retire-agenote');
   const retireEl = document.getElementById('ms-retirement');
-  if(ageInput > 0 && ageInput < 65){
-    const years = 65-ageInput;
-    const rn = years*12;
-    const proj = monthlyRA*((Math.pow(1+rr,rn)-1)/rr);
+
+  if (ageInput > 0 && ageInput < 65) {
+    const years = 65 - ageInput;
+    const rn = years * 12;
+    const proj = monthlyRA * ((Math.pow(1 + rr, rn) - 1) / rr);
     retireEl.textContent = fmtK(proj);
-    agenoteEl.textContent = ' \u2014 by age 65 ('+years+' years to go)';
+    agenoteEl.textContent = ' \u2014 by age 65 (' + years + ' years to go)';
   } else {
-    const proj20 = monthlyRA*((Math.pow(1+rr,20*12)-1)/rr);
+    const proj20 = monthlyRA * ((Math.pow(1 + rr, 20 * 12) - 1) / rr);
     retireEl.textContent = fmtK(proj20);
     agenoteEl.textContent = ' \u2014 over 20 years (enter your age above for an exact projection)';
   }
@@ -733,74 +1218,104 @@ function renderMoneyStory(annualTakeHome){
   document.getElementById('cmp-you-val').textContent = fmt(monthlyTH);
   document.getElementById('cmp-you-val2').textContent = fmt(monthlyTH);
   updateCompareAvg(monthlyTH);
-  if(document.getElementById('ms-prof').options.length===0) initProfSelect();
-  renderProfCompare();
 
+  if (document.getElementById('ms-prof').options.length === 0) {
+    initProfSelect();
+  }
+  renderProfCompare();
   document.getElementById('money-story').style.display = 'block';
 }
 
-function updateCompareAvg(monthlyTH){
+function updateCompareAvg(monthlyTH) {
   const avg = 22800;
-  const diff = ((monthlyTH-avg)/avg*100);
+  const diff = ((monthlyTH - avg) / avg * 100);
   const el = document.getElementById('cmp-pct');
-  if(diff>=0){ el.textContent='\u2191 '+diff.toFixed(0)+'% above average'; el.className='compare-pct up'; }
-  else{ el.textContent='\u2193 '+Math.abs(diff).toFixed(0)+'% below average'; el.className='compare-pct down'; }
+  if (diff >= 0) {
+    el.textContent = '\u2191 ' + diff.toFixed(0) + '% above average';
+    el.className = 'compare-pct up';
+  } else {
+    el.textContent = '\u2193 ' + Math.abs(diff).toFixed(0) + '% below average';
+    el.className = 'compare-pct down';
+  }
 }
 
-function initProfSelect(){
-  const sel=document.getElementById('ms-prof');
-  SAL.slice().sort((a,b)=>a.name.localeCompare(b.name)).forEach(s=>sel.add(new Option(s.name, s.slug)));
-  sel.value = SAL.find(s=>s.slug==='developer') ? 'developer' : SAL[0].slug;
+function initProfSelect() {
+  const sel = document.getElementById('ms-prof');
+  SAL.slice().sort((a, b) => a.name.localeCompare(b.name)).forEach(s => sel.add(new Option(s.name, s.slug)));
+  sel.value = SAL.find(s => s.slug === 'developer') ? 'developer' : SAL[0].slug;
 }
 
-function renderProfCompare(){
+function renderProfCompare() {
   const slug = document.getElementById('ms-prof').value;
-  const prof = SAL.find(s=>s.slug===slug);
-  if(!prof) return;
-  const monthlyTH = lastTakeHome/12;
+  const prof = SAL.find(s => s.slug === slug);
+  if (!prof) return;
+  const monthlyTH = lastTakeHome / 12;
   document.getElementById('cmp-prof-name').textContent = prof.name;
   document.getElementById('cmp-prof-val').textContent = fmt(prof.th);
-  const diff = ((monthlyTH-prof.th)/prof.th*100);
+  const diff = ((monthlyTH - prof.th) / prof.th * 100);
   const el = document.getElementById('cmp-prof-pct');
-  if(diff>=0){ el.textContent='\u2191 '+diff.toFixed(0)+'% above'; el.className='compare-pct up'; }
-  else{ el.textContent='\u2193 '+Math.abs(diff).toFixed(0)+'% below'; el.className='compare-pct down'; }
+  if (diff >= 0) {
+    el.textContent = '\u2191 ' + diff.toFixed(0) + '% above';
+    el.className = 'compare-pct up';
+  } else {
+    el.textContent = '\u2193 ' + Math.abs(diff).toFixed(0) + '% below';
+    el.className = 'compare-pct down';
+  }
 }
 
-function setCompareMode(mode){
-  document.getElementById('cmp-tab-avg').classList.toggle('on', mode==='avg');
-  document.getElementById('cmp-tab-prof').classList.toggle('on', mode==='prof');
-  document.getElementById('compare-avg-view').style.display = mode==='avg' ? 'block' : 'none';
-  document.getElementById('compare-prof-view').style.display = mode==='prof' ? 'block' : 'none';
+function setCompareMode(mode) {
+  document.getElementById('cmp-tab-avg').classList.toggle('on', mode === 'avg');
+  document.getElementById('cmp-tab-prof').classList.toggle('on', mode === 'prof');
+  document.getElementById('compare-avg-view').style.display = mode === 'avg' ? 'block' : 'none';
+  document.getElementById('compare-prof-view').style.display = mode === 'prof' ? 'block' : 'none';
 }
-let baseInputs = null;
 
-function renderWhatIf(){
-  if(!baseInputs) return;
+function renderWhatIf() {
+  if (!baseInputs) return;
   const bonusPct = parseFloat(document.getElementById('wi-bonus').value);
   const salPct = parseFloat(document.getElementById('wi-sal').value);
 
-  document.getElementById('wi-bonus-out').textContent = (bonusPct>=0?'+':'')+bonusPct+'%';
-  document.getElementById('wi-sal-out').textContent = (salPct>=0?'+':'')+salPct+'%';
+  document.getElementById('wi-bonus-out').textContent = (bonusPct >= 0 ? '+' : '') + bonusPct + '%';
+  document.getElementById('wi-sal-out').textContent = (salPct >= 0 ? '+' : '') + salPct + '%';
 
-  const newSal = baseInputs.sal * (1+salPct/100);
-  const newBonusAmt = baseInputs.bonusAmt * (1+bonusPct/100);
-  const margRate = marginalRate(newSal+newBonusAmt);
-  const bonusTax = newBonusAmt*margRate;
-  const bonusUif = Math.max(0, Math.min(newBonusAmt*.01, 17712-Math.min(newSal*.01,17712)));
-  const netBonus = Math.max(0, newBonusAmt-bonusTax-bonusUif);
+  const newSal = baseInputs.sal * (1 + salPct / 100);
+  const newBonusAmt = baseInputs.bonusAmt * (1 + bonusPct / 100);
 
-  document.getElementById('wi-newbonus').textContent = fmt(netBonus);
-  const delta = netBonus - baseInputs.netBonus;
+  const newBonusTax = Math.max(0, taxOnPortion(newSal, newBonusAmt));
+  const newUifAnnual = Math.min(newSal * .01, UIF_ANNUAL_CAP);
+  const newBonusUif = Math.max(0, Math.min(newBonusAmt * .01, UIF_ANNUAL_CAP - newUifAnnual));
+  const newNetBonus = Math.max(0, newBonusAmt - newBonusTax - newBonusUif);
+
+  document.getElementById('wi-newbonus').textContent = fmt(newNetBonus);
+  const delta = newNetBonus - baseInputs.netBonus;
   const deltaEl = document.getElementById('wi-delta');
-  if(Math.abs(delta) < 1){ deltaEl.textContent='No change'; deltaEl.className='whatif-delta-val'; }
-  else if(delta>0){ deltaEl.textContent='+'+fmt(delta); deltaEl.className='whatif-delta-val up'; }
-  else{ deltaEl.textContent='-'+fmt(Math.abs(delta)); deltaEl.className='whatif-delta-val down'; }
+
+  if (Math.abs(delta) < 1) {
+    deltaEl.textContent = 'No change';
+    deltaEl.className = 'whatif-delta-val';
+  } else if (delta > 0) {
+    deltaEl.textContent = '+' + fmt(delta);
+    deltaEl.className = 'whatif-delta-val up';
+  } else {
+    deltaEl.textContent = '-' + fmt(Math.abs(delta));
+    deltaEl.className = 'whatif-delta-val down';
+  }
 }
 
-function resetWhatIf(){
+function resetWhatIf() {
   document.getElementById('wi-bonus').value = 0;
   document.getElementById('wi-sal').value = 0;
   renderWhatIf();
 }
+
+// Auto-load example for first-time visitors
+window.addEventListener('load', function() {
+  if (!sessionStorage.getItem('bonusCalcVisited')) {
+    setTimeout(loadExample, 500);
+    sessionStorage.setItem('bonusCalcVisited', 'true');
+  }
+});
 </script>
-</body></html>
+
+</body>
+</html>
