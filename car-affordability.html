@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="color-scheme" content="light"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Car Affordability Calculator South Africa 2026 | CalcMyPay</title>
-<meta name="description" content="How much car can you afford in South Africa? Calculate the vehicle price and monthly repayment that fits your salary and budget.">
+<meta name="description" content="How much car can you afford in South Africa? Calculate the vehicle price and monthly repayment that fits your salary and budget. Free 2026 car affordability calculator.">
 <meta name="google-adsense-account" content="ca-pub-6108324382808705">
 <link rel="canonical" href="https://calcmypay.co.za/car-affordability">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -12,15 +13,103 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/icon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/icon-16.png">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much should I spend on a car in South Africa?","acceptedAnswer":{"@type":"Answer","text":"A common rule is to keep your car repayment under 15% of your gross monthly income, and ideally limit total vehicle costs (repayment, insurance, fuel) to 25%."}},{"@type":"Question","name":"How is car finance calculated in South Africa?","acceptedAnswer":{"@type":"Answer","text":"Car finance uses the loan amount, interest rate (often prime plus 2–3%), term (usually 60–72 months), and any balloon payment to calculate your monthly instalment."}}]}</script>
-<style>/* CalcMyPay — Editorial "Ink & Marigold" =================================== */
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much should I spend on a car in South Africa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A common rule is to keep your car repayment under 15% of your gross monthly income, and ideally limit total vehicle costs (repayment, insurance, fuel, maintenance) to 25% of gross income. For a R30,000/month salary, that's R4,500 for the repayment and R7,500 total car costs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is car finance calculated in South Africa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Car finance uses the loan amount (car price minus deposit), interest rate (typically prime plus 1-3%, so around 11.75-13.75% currently), term (usually 60-72 months), and any balloon payment to calculate your monthly instalment using standard loan amortisation formulas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a balloon payment on a car?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A balloon (or residual) payment is a lump sum (typically 20-35% of car value) deferred to the end of the loan term. It reduces your monthly repayment but leaves you owing a large amount at the end, which you must pay, refinance, or trade in the car to settle."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it better to finance a car for 60 or 72 months?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "60 months is generally better because you pay less total interest and avoid being 'upside down' (owing more than the car is worth). A 72-month term lowers your monthly payment but costs significantly more in interest over the loan's life — on a R300,000 car at 12.5%, you'd pay R46,800 more in interest over 72 vs 60 months."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the total cost of owning a car in South Africa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Beyond the loan repayment, expect to pay R900-R1,800 for insurance, R1,800-R3,000 for fuel, R500-R900 for maintenance, and R50-R100 for licensing monthly. The total running cost is typically 1.7x to 2.3x your loan repayment alone."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I buy a new or used car?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Used cars (2-3 years old) offer better value because they've already absorbed the steepest depreciation (20-30% in first 2-3 years). New cars offer warranty peace of mind and latest features but lose value fastest. Consider certified pre-owned for a middle ground."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much deposit should I put down on a car?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Aim for at least 10-20% of the car's value as a deposit. A larger deposit reduces your loan amount, monthly payment, and total interest paid. It also helps you avoid being 'upside down' on the loan where you owe more than the car is worth."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What interest rate will I get on car finance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "South African car finance rates typically range from prime (currently 10.75%) to prime plus 3-4%, depending on your credit score. Excellent credit might get prime or prime minus 0.5%, while poor credit could face prime plus 5% or higher."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I afford a car on a R20,000 salary?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "On R20,000/month gross, using the 15% rule, you can afford a R3,000 monthly repayment. At 12.5% interest over 60 months with no deposit, this supports a car loan of approximately R133,000. With a deposit, you could afford a car worth R150,000-R170,000 total."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if I can't afford my car repayment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Missing payments damages your credit score and can lead to repossession. If struggling, contact your lender immediately to discuss options: payment holiday, term extension, or voluntary surrender. Never ignore the problem — early communication gives you more options."
+      }
+    }
+  ]
+}
+</script>
+
+<style>
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap');
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
   --paper:#FFFFFF;--ink:#16201C;--forest:#1B4332;--marigold:#F6B53D;
   --mist:#6B756F;--line:#DEDBD0;--sand:#FFFFFF;--berry:#B23A2E;
   --disp:'Fraunces',Georgia,serif;--body:'Inter',system-ui,sans-serif;
-  /* legacy var aliases so inline styles still resolve */
   --black:#16201C;--navy:#1B4332;--navy-mid:#1B4332;--accent:#1B4332;--accent-dark:#143026;
   --white:#fff;--off-white:#FFFFFF;--green:#1B4332;--green-light:#EDF3EE;--accent-light:#EDF3EE;
   --g100:#FFFFFF;--g200:#E4E2D8;--g400:#AEB3AC;--g600:#6B756F;--g800:#C9CcC4;--red:#B23A2E;
@@ -29,17 +118,11 @@
 html{color-scheme:light;scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{font-family:var(--body);background:var(--paper);color:var(--ink);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased}
 a{color:var(--forest);text-decoration:none}
-
-/* SA stripe — keep but slimmer & muted */
 .sa-stripe{height:3px;background:linear-gradient(90deg,#1B4332 0 16%,#F6B53D 16% 33%,#FCFBF7 33% 50%,#1B4332 50% 66%,#B23A2E 66% 83%,#16201C 83% 100%);opacity:.9}
-
-/* TOP BAR — editorial dateline */
 .top-bar{background:var(--paper);border-bottom:1px solid var(--line);padding:.5rem 2rem;display:flex;align-items:center;justify-content:space-between}
 .tb-l{font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--mist)}
 .tb-r{font-size:.7rem;color:var(--mist);letter-spacing:.04em}
 .tb-r span{color:var(--forest);font-weight:600}
-
-/* MASTHEAD NAV */
 nav{background:var(--paper);border-bottom:2px solid var(--ink);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:74px;position:sticky;top:0;z-index:100}
 .logo{display:flex;align-items:center;gap:.5rem;text-decoration:none}
 .logo-text{font-family:var(--disp);font-size:1.7rem;font-weight:900;letter-spacing:-.02em;color:var(--ink)}
@@ -55,14 +138,6 @@ nav{background:var(--paper);border-bottom:2px solid var(--ink);padding:0 2rem;di
 .nav-cta::after{display:none}
 .nav-cta:hover{background:var(--forest)!important;color:#fff!important}
 @media(max-width:860px){.nav-links{gap:0;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;max-width:60vw}.nav-links::-webkit-scrollbar{display:none}.nav-links a{white-space:nowrap;padding:.5rem .6rem;font-size:.76rem}.logo-text{font-size:1.4rem}nav{padding:0 1rem}}
-
-/* AD SLOTS — quiet */
-.ad-strip{background:var(--paper);border-bottom:1px solid var(--line);text-align:center;padding:.6rem}
-.ad-ph{display:inline-flex;align-items:center;justify-content:center;background:var(--sand);border:1px solid var(--line);color:var(--g400);font-size:.62rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
-.ad-ph.lb{width:728px;height:90px;max-width:100%}.ad-ph.rect{width:300px;height:250px}
-.ad-lbl{font-size:.6rem;color:var(--g400);text-transform:uppercase;letter-spacing:.12em;margin-bottom:.3rem}
-
-/* PAGE HEADER — kicker / headline / standfirst */
 .ph{background:var(--paper);border-bottom:1px solid var(--line);padding:4rem 2rem 3rem}
 .ph-inner{max-width:1080px;margin:0 auto}
 .bc{font-size:.72rem;color:var(--mist);font-weight:500;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1.4rem}
@@ -71,94 +146,27 @@ nav{background:var(--paper);border-bottom:2px solid var(--ink);padding:0 2rem;di
 .ph-cat::before{content:'';width:24px;height:2px;background:var(--marigold)}
 .ph h1{font-family:var(--disp);font-size:clamp(2.2rem,5vw,3.6rem);font-weight:600;color:var(--ink);line-height:1.05;letter-spacing:-.02em;margin-bottom:1rem;max-width:18ch}
 .ph p{font-family:var(--body);color:var(--mist);font-size:1.1rem;line-height:1.6;max-width:60ch}
-.ph-meta{display:flex;gap:1.4rem;font-size:.72rem;color:var(--mist);font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-top:1.2rem}
-
-/* SECTIONS */
-.section{max-width:1080px;margin:0 auto;padding:3.5rem 2rem}
-.section-header{margin-bottom:2rem;padding-bottom:1rem;border-bottom:1px solid var(--line);display:flex;align-items:baseline;justify-content:space-between;gap:1rem;flex-wrap:wrap}
-.section-title{font-family:var(--disp);font-size:1.6rem;font-weight:600;letter-spacing:-.01em;color:var(--ink)}
-.section-title span{color:var(--marigold);font-weight:400;margin:0 .3rem}
-.section-more{font-family:var(--body);font-size:.8rem;font-weight:600;color:var(--forest);letter-spacing:.02em}
-.section-more::after{content:' →'}
-
-/* TICKER — editorial stat strip */
-.ticker{background:var(--sand);border-bottom:1px solid var(--line);padding:.7rem 2rem;display:flex;gap:2.5rem;overflow-x:auto;scrollbar-width:none}
-.ticker::-webkit-scrollbar{display:none}
-.tick-item{display:flex;align-items:baseline;gap:.5rem;white-space:nowrap}
-.tick-label{font-size:.68rem;color:var(--mist);font-weight:600;text-transform:uppercase;letter-spacing:.1em}
-.tick-val{font-family:var(--disp);color:var(--forest);font-weight:600;font-size:1rem}
-
-/* TOOLS GRID + CARDS */
-.tools-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.25rem}
-.tool-card{background:var(--paper);border:1px solid var(--line);padding:1.6rem;transition:.2s;display:flex;flex-direction:column;gap:.7rem;text-decoration:none;color:var(--ink);position:relative}
-.tool-card:hover{border-color:var(--ink);transform:translateY(-2px)}
-.tool-card.featured{border-top:3px solid var(--forest)}
-.tc-cat{font-family:var(--body);font-size:.68rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--mist)}
-.tool-card h3{font-family:var(--disp);font-size:1.25rem;font-weight:600;letter-spacing:-.01em;line-height:1.15;color:var(--ink)}
-.tool-card p{font-family:var(--body);font-size:.88rem;color:var(--mist);line-height:1.55;flex:1}
-.tc-link{font-family:var(--body);font-size:.8rem;font-weight:600;color:var(--forest)}
-.tc-badge{font-family:var(--body);font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.25rem .6rem;background:var(--sand);color:var(--forest);border:1px solid var(--line)}
-
-/* BLOG GRID */
-.blog-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:1.25rem}
-.blog-card{background:var(--paper);border:1px solid var(--line);padding:1.6rem;text-decoration:none;color:var(--ink);transition:.2s}
-.blog-card:hover{border-color:var(--ink);transform:translateY(-2px)}
-.blog-card.lead{border-top:3px solid var(--marigold)}
-.bc-cat{font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);margin-bottom:.6rem;display:block}
-.blog-card h3{font-family:var(--disp);font-size:1.2rem;font-weight:600;line-height:1.2;letter-spacing:-.01em;margin-bottom:.5rem}
-.blog-card.lead h3{font-size:1.6rem}
-.blog-card p{font-size:.86rem;color:var(--mist);line-height:1.55;margin-bottom:.6rem}
-.bc-more{font-size:.78rem;font-weight:600;color:var(--forest)}
-.bc-meta{font-size:.7rem;color:var(--g400);font-weight:600;letter-spacing:.04em;text-transform:uppercase}
-
-/* DATA CELLS (homepage figures) */
-.data-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem;margin-bottom:1rem}
-.dc{background:var(--sand);border:1px solid var(--line);padding:1.5rem}
-.dc-label{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--mist);margin-bottom:.5rem}
-.dc-val{font-family:var(--disp);font-size:2rem;font-weight:600;color:var(--ink);letter-spacing:-.02em;line-height:1}
-.dc-val.acc{color:var(--forest)}
-.dc-sub{font-size:.74rem;color:var(--mist);margin-top:.3rem}
-
-/* WHY CARDS */
-.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
-.why-card{background:var(--paper);border:1px solid var(--line);padding:1.8rem;border-top:3px solid var(--forest)}
-.why-num{font-family:var(--disp);font-size:2.4rem;font-weight:900;color:var(--marigold);line-height:1;margin-bottom:1rem}
-.why-card h3{font-family:var(--disp);font-size:1.2rem;font-weight:600;margin-bottom:.5rem}
-.why-card p{font-size:.88rem;color:var(--mist);line-height:1.6}
-
-/* CTA BLOCK */
-.cta-block{background:var(--ink);color:var(--paper);padding:3rem 2rem;text-align:center}
-.cta-block h2,.cta-block h3{font-family:var(--disp);font-weight:600;color:var(--paper);letter-spacing:-.01em;margin-bottom:.6rem}
-.cta-block h2{font-size:clamp(1.5rem,3vw,2.2rem)}
-.cta-block h3{font-size:1.4rem}
-.cta-block p{color:rgba(255,255,255,.7);margin-bottom:1.5rem;font-size:1rem}
-
-/* BUTTONS */
-.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 1.6rem;font-family:var(--body);font-weight:600;font-size:.9rem;cursor:pointer;border:none;transition:.18s;text-decoration:none;letter-spacing:.01em}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.85rem 1.6rem;font-family:var(--body);font-weight:600;font-size:.9rem;cursor:pointer;border:none;transition:.18s;text-decoration:none;letter-spacing:.01em}
 .btn-accent{background:var(--marigold);color:var(--ink)}
 .btn-accent:hover{background:#eaa523}
 .btn-full{width:100%;justify-content:center}
 .btn:not(.btn-accent){background:var(--ink);color:var(--paper)}
 .btn:not(.btn-accent):hover{background:var(--forest);color:#fff}
-
-/* LAYOUT (tool + article) */
+.btn-example{background:var(--forest);color:var(--paper);margin-top:.8rem;border:2px solid var(--forest)}
+.btn-example:hover{background:var(--ink);border-color:var(--ink)}
+.example-badge{display:inline-block;background:var(--marigold);color:var(--ink);font-size:.62rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.2rem .5rem;margin-right:.5rem;border-radius:2px}
 .layout{max-width:1140px;margin:0 auto;padding:2.5rem 2rem;display:grid;grid-template-columns:1fr 320px;gap:2.5rem;align-items:start}
 @media(max-width:920px){.layout{grid-template-columns:1fr;gap:1.5rem}.sidebar{display:none}}
-
-/* CARD (tool input) */
 .card{background:var(--paper);border:1px solid var(--line)}
 .card-head{padding:1.4rem 1.6rem;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:.9rem}
 .card-cat{font-family:var(--body);font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);border-right:1px solid var(--line);padding-right:.9rem}
 .card-head h2{font-family:var(--disp);font-size:1.4rem;font-weight:600;letter-spacing:-.01em}
 .card-head p{font-size:.84rem;color:var(--mist);margin-top:.15rem}
 .card-body{padding:1.6rem}
-
-/* FORM */
 .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem 1.3rem;margin-bottom:1.4rem}
 @media(max-width:500px){.form-grid{grid-template-columns:1fr}}
 .fg{display:flex;flex-direction:column;gap:.4rem}
 label{font-family:var(--body);font-size:.78rem;font-weight:600;color:var(--ink);letter-spacing:.01em}
-label .hint{font-weight:400;color:var(--mist)}
 .iw{position:relative}
 .ipre,.isuf{position:absolute;top:50%;transform:translateY(-50%);font-size:.95rem;color:var(--mist);font-weight:500;pointer-events:none}
 .ipre{left:1rem}.isuf{right:1rem}
@@ -166,8 +174,6 @@ input,select{width:100%;padding:.8rem 1rem;border:1px solid var(--line);font-fam
 input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 0 3px rgba(27,67,50,.1)}
 .has-pre input{padding-left:2rem}.has-suf input{padding-right:2.4rem}
 .sw{position:relative}.sw::after{content:'';position:absolute;right:1.1rem;top:50%;width:7px;height:7px;border-right:2px solid var(--mist);border-bottom:2px solid var(--mist);transform:translateY(-65%) rotate(45deg);pointer-events:none}
-
-/* RESULT PANELS — the editorial figure signature */
 .results{margin-top:1.6rem;display:none}
 .results.show{display:block;animation:fadeUp .4s ease}
 @keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
@@ -178,8 +184,6 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .eff-block{text-align:right;flex-shrink:0}
 .eff-val{font-family:var(--disp);font-size:2rem;font-weight:600;color:var(--marigold);display:block;letter-spacing:-.02em;line-height:1}
 .eff-lbl{font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:rgba(255,255,255,.6)}
-
-/* breakdown blocks */
 .bb{border:1px solid var(--line);margin-bottom:1rem}
 .bb-title{padding:.7rem 1.1rem;font-family:var(--body);font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.14em;background:var(--sand);border-bottom:1px solid var(--line);color:var(--mist)}
 .br{display:flex;justify-content:space-between;align-items:center;padding:.7rem 1.1rem;font-size:.92rem;border-bottom:1px solid var(--line)}
@@ -190,18 +194,10 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .total-bar{display:flex;justify-content:space-between;align-items:center;padding:1.1rem 1.3rem;background:var(--sand);border:1px solid var(--forest);margin-bottom:1rem}
 .total-bar .lbl{font-family:var(--disp);font-size:1.05rem;font-weight:600;color:var(--forest)}
 .total-bar .val{font-family:var(--disp);font-size:1.3rem;font-weight:700;color:var(--forest);font-variant-numeric:tabular-nums}
-
-/* notes */
 .note{padding:.85rem 1.1rem;font-size:.84rem;line-height:1.6;margin-bottom:.7rem;display:flex;gap:.7rem;border:1px solid var(--line);background:var(--sand)}
 .note.warn{background:#FBF3E0;border-color:#E6D08A;color:#6B5414}
+.note.navy{background:#EDF3EE;border-color:#C9D8CF;color:#1B4332}
 .note a{color:var(--forest);font-weight:600}
-
-/* tabs */
-.type-tabs,.period-tabs{display:flex;gap:.4rem;margin-bottom:1.4rem;background:var(--sand);padding:.3rem;border:1px solid var(--line)}
-.type-tab,.ptab{flex:1;padding:.6rem;border:none;background:transparent;font-family:var(--body);font-weight:600;font-size:.8rem;color:var(--mist);cursor:pointer;transition:.15s;text-align:center}
-.type-tab.active,.ptab.active{background:var(--ink);color:var(--paper)}
-
-/* SIDEBAR */
 .sidebar{display:flex;flex-direction:column;gap:1.5rem}
 .sc{background:var(--paper);border:1px solid var(--line)}
 .sc-head{padding:.8rem 1.1rem;font-family:var(--body);font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.14em;border-bottom:1px solid var(--line);background:var(--sand);color:var(--mist)}
@@ -212,16 +208,14 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .qr{display:flex;justify-content:space-between;font-size:.84rem;padding:.45rem 0;border-bottom:1px solid var(--line);color:var(--mist)}
 .qr:last-child{border-bottom:none}
 .qr strong{color:var(--ink);font-weight:600;font-family:var(--disp)}
-.toc-link{display:block;font-size:.84rem;font-weight:500;color:var(--mist);padding:.4rem 0;border-bottom:1px solid var(--line);transition:color .15s}
-.toc-link:last-child{border-bottom:none}
-.toc-link:hover{color:var(--forest)}
-.related-post{display:block;padding:.75rem 0;border-bottom:1px solid var(--line)}
-.related-post:last-child{border-bottom:none}
-.rp-cat{font-size:.62rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--forest);margin-bottom:.25rem}
-.rp-title{font-family:var(--disp);font-size:.92rem;font-weight:500;color:var(--ink);line-height:1.3}
-.related-post:hover .rp-title{color:var(--forest)}
-
-/* DATA TABLE */
+.tools-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.25rem}
+.tool-card{background:var(--paper);border:1px solid var(--line);padding:1.6rem;transition:.2s;display:flex;flex-direction:column;gap:.7rem;text-decoration:none;color:var(--ink);position:relative}
+.tool-card:hover{border-color:var(--ink);transform:translateY(-2px)}
+.tool-card.featured{border-top:3px solid var(--forest)}
+.tc-cat{font-family:var(--body);font-size:.68rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--mist)}
+.tool-card h3{font-family:var(--disp);font-size:1.25rem;font-weight:600;letter-spacing:-.01em;line-height:1.15;color:var(--ink)}
+.tool-card p{font-family:var(--body);font-size:.88rem;color:var(--mist);line-height:1.55;flex:1}
+.tc-link{font-family:var(--body);font-size:.8rem;font-weight:600;color:var(--forest)}
 .data-table{width:100%;border-collapse:collapse;margin:1.2rem 0 1.6rem;font-size:.9rem;border:1px solid var(--line)}
 .data-table thead tr{background:var(--ink)}
 .data-table th{padding:.75rem 1rem;text-align:left;font-family:var(--body);font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--paper)}
@@ -230,9 +224,10 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .data-table tr:nth-child(even) td{background:var(--sand)}
 .data-table td.td-green{color:var(--forest);font-weight:600}
 .data-table td.td-red{color:var(--berry);font-weight:600}
-.data-table td.td-acc{color:var(--forest);font-weight:600}
-
-/* ARTICLE BODY — magazine measure */
+.section{max-width:1080px;margin:0 auto;padding:3.5rem 2rem}
+.section-header{margin-bottom:2rem;padding-bottom:1rem;border-bottom:1px solid var(--line);display:flex;align-items:baseline;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.section-title{font-family:var(--disp);font-size:1.6rem;font-weight:600;letter-spacing:-.01em;color:var(--ink)}
+.section-title span{color:var(--marigold);font-weight:400;margin:0 .3rem}
 .article-body{padding:2.5rem}
 @media(max-width:600px){.article-body{padding:1.5rem}}
 .article-body h2{font-family:var(--disp);font-size:1.7rem;font-weight:600;color:var(--ink);margin:2.4rem 0 .8rem;letter-spacing:-.01em;line-height:1.15;max-width:30ch}
@@ -244,10 +239,9 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .article-body li{font-family:var(--body);font-size:1.04rem;color:#2C352F;line-height:1.7;margin-bottom:.5rem}
 .article-body a{color:var(--forest);font-weight:500;border-bottom:1px solid var(--marigold)}
 .article-body strong{font-weight:600;color:var(--ink)}
-.callout,.callout.navy,.callout.grey,.callout.green{border:none;border-left:3px solid var(--marigold);background:var(--sand);padding:1.2rem 1.4rem;margin:1.6rem 0;font-family:var(--disp);font-size:1.15rem;font-weight:500;line-height:1.5;color:var(--ink);max-width:64ch}
+.callout{border:none;border-left:3px solid var(--marigold);background:var(--sand);padding:1.2rem 1.4rem;margin:1.6rem 0;font-family:var(--disp);font-size:1.15rem;font-weight:500;line-height:1.5;color:var(--ink);max-width:64ch}
 .callout strong{color:var(--forest)}
-
-/* FOOTER */
+.callout.navy{border-left-color:var(--navy)}
 footer{background:var(--ink);color:var(--paper);margin-top:2rem}
 .footer-inner{max-width:1080px;margin:0 auto;padding:2.5rem 2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
 .footer-logo{font-family:var(--disp);font-size:1.5rem;font-weight:900;color:var(--paper)}
@@ -256,37 +250,32 @@ footer{background:var(--ink);color:var(--paper);margin-top:2rem}
 .footer-links a{color:rgba(255,255,255,.7);font-size:.82rem;font-weight:500;transition:color .15s}
 .footer-links a:hover{color:var(--marigold)}
 .footer-copy{color:rgba(255,255,255,.5);font-size:.74rem;width:100%;margin-top:.8rem;padding-top:.9rem;border-top:1px solid rgba(255,255,255,.12)}
+.disclaim{font-size:.82rem;color:var(--mist);background:var(--sand);border:1px solid var(--line);padding:.9rem 1.1rem;line-height:1.6}
+.worked-example{background:#FAFBF7;border:1px solid var(--line);border-left:4px solid var(--forest);padding:1.5rem 1.8rem;margin:1.8rem 0}
+.worked-example-head{display:flex;align-items:center;gap:.6rem;margin-bottom:1rem}
+.worked-example-tag{font-size:.66rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--forest);background:#EDF3EE;padding:.25rem .6rem;border-radius:2px}
+.worked-example h3{font-family:var(--disp);font-size:1.15rem;font-weight:600;margin-bottom:.3rem}
+.worked-example p{font-size:.9rem;color:var(--mist);line-height:1.6;margin-bottom:.8rem}
+.glossary-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem;margin:1.5rem 0}
+.glossary-item{background:var(--sand);border:1px solid var(--line);padding:1.1rem 1.3rem}
+.glossary-term{font-family:var(--disp);font-size:1rem;font-weight:600;color:var(--forest);margin-bottom:.3rem}
+.glossary-def{font-size:.84rem;color:var(--mist);line-height:1.6}
 
-/* MISC legacy */
-.scenario-result{background:var(--sand);border:1px solid var(--forest);padding:1.2rem}
-.disclaim,.disclaim-box{font-size:.82rem;color:var(--mist);background:var(--sand);border:1px solid var(--line);padding:.9rem 1.1rem;line-height:1.6}
-.eyebrow{font-family:var(--body);font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);margin-bottom:.5rem}
-
-/* RESPONSIVE */
 @media(max-width:768px){
-  [style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr!important}
-  [style*="grid-template-columns:repeat(3,1fr)"]{grid-template-columns:1fr!important}
-  [style*="grid-template-columns:repeat(4,1fr)"]{grid-template-columns:1fr 1fr!important}
-  [style*="grid-template-columns:2fr 1fr 1fr"]{grid-template-columns:1fr!important}
-  [style*="grid-template-columns:1.1fr 1fr"]{grid-template-columns:1fr!important}
-  [style*="grid-template-columns:1fr 1fr;gap:4rem"]{grid-template-columns:1fr!important;gap:2rem!important}
-  .blog-grid,.data-row,.why-grid{grid-template-columns:1fr!important}
   .ph{padding:2.5rem 1.25rem 2rem}.section{padding:2.5rem 1.25rem}.layout{padding:1.5rem 1.25rem}
   .th-panel{flex-direction:column;align-items:flex-start;gap:1rem}.eff-block{text-align:left}
   .th-amount{font-size:2.6rem}
   .footer-inner{flex-direction:column;text-align:center}.footer-links{justify-content:center}
   .top-bar{padding:.4rem 1rem}.tb-r{display:none}
   .data-table{display:block;overflow-x:auto}
+  .article-body{padding:1.5rem}
 }
+
 .story-section{margin-top:1.8rem;border-top:2px solid var(--ink);padding-top:1.8rem}
 .story-kicker{font-family:var(--body);font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);margin-bottom:.4rem;display:flex;align-items:center;gap:.6rem}
 .story-kicker::before{content:'';width:24px;height:2px;background:var(--marigold)}
 .story-title{font-family:var(--disp);font-size:1.6rem;font-weight:600;color:var(--ink);letter-spacing:-.01em;margin-bottom:.4rem}
 .story-sub{font-size:.88rem;color:var(--mist);margin-bottom:1.5rem;max-width:60ch}
-.story-age-row{display:flex;align-items:center;gap:.8rem;margin-bottom:1.6rem;padding:.9rem 1.1rem;background:var(--sand);border:1px solid var(--line)}
-.story-age-row label{font-size:.82rem;font-weight:600;color:var(--ink);white-space:nowrap}
-.story-age-row input{max-width:90px;padding:.5rem .7rem}
-.story-age-row .story-age-note{font-size:.78rem;color:var(--mist)}
 .story-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
 @media(max-width:600px){.story-grid{grid-template-columns:1fr}}
 .story-card{background:#fff;border:1px solid var(--line);padding:0;text-decoration:none;color:var(--ink);display:flex;overflow:hidden;transition:.18s;position:relative}
@@ -296,35 +285,19 @@ footer{background:var(--ink);color:var(--paper);margin-top:2rem}
 .story-stripe.c-car{background:var(--marigold)}
 .story-stripe.c-safety{background:#3d7a9e}
 .story-stripe.c-retire{background:#8a5cb8}
-.story-stripe.c-compare{background:var(--berry)}
 .story-body{padding:1.3rem 1.4rem;flex:1;min-width:0}
 .story-label{font-family:var(--body);font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:var(--mist);margin-bottom:.5rem}
 .story-val{font-family:var(--disp);font-size:1.9rem;font-weight:600;color:var(--ink);letter-spacing:-.02em;line-height:1;margin-bottom:.5rem}
 .story-desc{font-size:.8rem;color:var(--mist);line-height:1.5;margin-bottom:.7rem}
 .story-arrow{font-size:.78rem;font-weight:600;color:var(--forest)}
-.story-compare-card{grid-column:1/-1;background:#fff;border:1px solid var(--line);padding:1.4rem 1.5rem}
-.compare-toggle{display:flex;gap:.4rem;margin-bottom:1.1rem}
-.compare-toggle button{padding:.4rem .9rem;border:1px solid var(--line);background:var(--paper);font-family:var(--body);font-size:.78rem;font-weight:600;color:var(--mist);cursor:pointer;transition:.15s}
-.compare-toggle button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
-.compare-body{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap}
-.compare-vs{display:flex;align-items:center;gap:1rem;flex:1;min-width:240px}
-.compare-side{text-align:center}
-.compare-side .who{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--mist);margin-bottom:.3rem}
-.compare-side .amt{font-family:var(--disp);font-size:1.4rem;font-weight:600;color:var(--ink)}
-.compare-side.you .amt{color:var(--forest)}
-.compare-vsdivider{font-family:var(--disp);font-size:.9rem;color:var(--g400);font-style:italic}
-.compare-result{flex-shrink:0;text-align:right}
-.compare-pct{font-family:var(--disp);font-size:1.6rem;font-weight:600;line-height:1}
-.compare-pct.up{color:var(--forest)}
-.compare-pct.down{color:var(--berry)}
-.compare-select{margin-top:1rem}
-.compare-select select{max-width:280px}
 .journey{margin-top:1.5rem;padding:1.2rem 1.4rem;background:var(--sand);border:1px solid var(--line)}
 .journey-title{font-family:var(--body);font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--mist);margin-bottom:.8rem}
 .journey-path{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;font-size:.85rem}
 .journey-path a{color:var(--forest);font-weight:600;padding:.35rem .7rem;background:#fff;border:1px solid var(--line);transition:.15s}
 .journey-path a:hover{border-color:var(--forest);background:var(--sand)}
-.journey-sep{color:var(--g400)}.whatif-section{margin-top:1.8rem;border-top:2px solid var(--ink);padding-top:1.8rem}
+.journey-sep{color:var(--g400)}
+
+.whatif-section{margin-top:1.8rem;border-top:2px solid var(--ink);padding-top:1.8rem}
 .whatif-kicker{font-family:var(--body);font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);margin-bottom:.4rem;display:flex;align-items:center;gap:.6rem}
 .whatif-kicker::before{content:'';width:24px;height:2px;background:var(--marigold)}
 .whatif-title{font-family:var(--disp);font-size:1.6rem;font-weight:600;color:var(--ink);letter-spacing:-.01em;margin-bottom:.4rem}
@@ -346,188 +319,1111 @@ footer{background:var(--ink);color:var(--paper);margin-top:2rem}
 .whatif-delta-lbl{font-size:.72rem;color:rgba(255,255,255,.6);margin-top:.3rem}
 .whatif-reset{margin-top:1rem;text-align:center}
 .whatif-reset button{background:none;border:1px solid var(--line);padding:.5rem 1.1rem;font-family:var(--body);font-size:.78rem;font-weight:600;color:var(--mist);cursor:pointer;transition:.15s}
-.whatif-reset button:hover{border-color:var(--ink);color:var(--ink)}</style>
+.whatif-reset button:hover{border-color:var(--ink);color:var(--ink)}
+</style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6108324382808705" crossorigin="anonymous"></script>
 </head>
-<body><div class="sa-stripe"></div><div class="top-bar"><div class="tb-l">🇿🇦 South Africa · Affordability</div><div class="tb-r">Prime rate <span>~10.5%</span> · Plan before you commit</div></div><nav>
+<body>
+<div class="sa-stripe"></div>
+
+<div class="top-bar">
+  <div class="tb-l">🇿🇦 South Africa · Affordability</div>
+  <div class="tb-r">Prime rate <span>~10.75%</span> · Plan before you commit</div>
+</div>
+
+<nav>
   <a href="/" class="logo"><div class="logo-text">CalcMy<span>Pay</span></div></a>
   <div class="nav-links">
-    <a href="/salary-income">Salary</a><a href="/affordability" class="active">Affordability</a><a href="/wealth-building">Wealth</a><a href="/career-intelligence">Careers</a><a href="/money-tools">Tools</a><a href="/financial-coach">Coach</a><a href="/blog-salary-guide">Guides</a><a href="/salary-calculator" class="nav-cta">Calculate →</a>
+    <a href="/salary-income">Salary</a>
+    <a href="/affordability" class="active">Affordability</a>
+    <a href="/wealth-building">Wealth</a>
+    <a href="/career-intelligence">Careers</a>
+    <a href="/money-tools">Tools</a>
+    <a href="/financial-coach">Coach</a>
+    <a href="/blog-salary-guide">Guides</a>
+    <a href="/salary-calculator" class="nav-cta">Calculate →</a>
   </div>
-</nav><div class="ph"><div class="ph-inner"><div class="bc"><a href="/">Home</a><span>/</span><a href="/affordability">Affordability</a><span>/</span>Car Affordability Calculator</div><div class="ph-cat">Affordability</div><h1>Car Affordability Calculator</h1><p>Work out the car repayment and price your budget can handle</p></div></div><div class="layout"><div><div class="card"><div class="card-head"><div class="card-cat">Car</div><div><h2>How much car can I afford?</h2><p>Find a repayment that fits your budget</p></div></div>
-<div class="card-body">
-<div class="form-grid">
-<div class="fg"><label>Gross Monthly Income</label><div class="iw has-pre"><span class="ipre">R</span><input type="number" id="inc" placeholder="30 000" min="0"></div></div>
-<div class="fg"><label>% of Income for Car</label><div class="iw has-suf"><input type="number" id="pct" value="15" min="1" max="40"><span class="isuf">%</span></div></div>
-<div class="fg"><label>Deposit / Trade-in</label><div class="iw has-pre"><span class="ipre">R</span><input type="number" id="dep" placeholder="0" min="0"></div></div>
-<div class="fg"><label>Interest Rate</label><div class="iw has-suf"><input type="number" id="rate" value="12.5" step="0.25" min="1"><span class="isuf">%</span></div></div>
-<div class="fg"><label>Loan Term</label><div class="sw"><select id="term"><option value="6">72 months (6 yrs)</option><option value="5">60 months (5 yrs)</option><option value="4">48 months (4 yrs)</option></select></div></div>
-<div class="fg"><label>Balloon Payment</label><div class="iw has-suf"><input type="number" id="balloon" value="0" min="0" max="40"><span class="isuf">%</span></div></div>
-</div>
-<button class="btn btn-full btn-accent" onclick="calc()">Calculate car budget →</button>
-<div class="results" id="res">
-<div class="th-panel"><div><div class="th-label">Car price you can afford</div><div class="th-amount" id="big">R0</div><div class="th-period">including deposit</div></div><div class="eff-block"><span class="eff-val" id="rep">R0</span><span class="eff-lbl">Monthly</span></div></div>
-<div class="bb"><div class="bb-title">Your car budget</div>
-<div class="br"><span class="lbl">Affordable monthly repayment</span><span class="val pos" id="r-rep">R0</span></div>
-<div class="br"><span class="lbl">Loan amount supported</span><span class="val neu" id="r-loan">R0</span></div>
-<div class="br" id="r-balloon-row"><span class="lbl">Plus balloon (paid at end)</span><span class="val neu" id="r-balloon">R0</span></div>
-<div class="br"><span class="lbl">Plus deposit / trade-in</span><span class="val pos" id="r-dep">+R0</span></div>
-</div>
-<div class="total-bar"><span class="lbl">✓ Total car price</span><span class="val" id="r-price">R0</span></div>
-<div class="note warn"><span>⚠</span><span>Remember insurance, fuel, tyres and services on top. A balloon lowers your monthly but leaves a large lump sum owing at the end.</span></div>
-<div class="story-section" id="money-story" style="display:none">
-  <div class="story-kicker">Your money story</div>
-  <div class="story-title">The true monthly cost of this car</div>
-  <p class="story-sub">The repayment is only part of the picture — here is the full running cost.</p>
+</nav>
 
-  <div class="story-grid">
-    <a href="/blog-true-cost-of-car-ownership-sa" class="story-card"><div class="story-stripe c-car"></div><div class="story-body">
-      <div class="story-label">⛽ True monthly cost (with insurance & fuel)</div>
-      <div class="story-val" id="ms-truecost">R0</div>
-      <div class="story-desc">Repayment plus typical insurance, fuel and upkeep</div>
-      <span class="story-arrow">See the full cost breakdown →</span>
-    </div></a>
-
-    <a href="/compound-interest" class="story-card"><div class="story-stripe c-retire"></div><div class="story-body">
-      <div class="story-label">📈 If invested instead</div>
-      <div class="story-val" id="ms-invested">R0</div>
-      <div class="story-desc">What this monthly repayment could grow to in 10 years</div>
-      <span class="story-arrow">Model the alternative →</span>
-    </div></a>
-
-    <a href="/lifestyle-affordability" class="story-card"><div class="story-stripe c-housing"></div><div class="story-body">
-      <div class="story-label">📊 Does this fit your full budget?</div>
-      <div class="story-val">Check it</div>
-      <div class="story-desc">See your complete monthly picture with this car</div>
-      <span class="story-arrow">Check your lifestyle fit →</span>
-    </div></a>
-
-    <a href="/home-affordability" class="story-card"><div class="story-stripe c-safety"></div><div class="story-body">
-      <div class="story-label">🏠 Planning a home too?</div>
-      <div class="story-val">Compare</div>
-      <div class="story-desc">See how this affects your bond capacity</div>
-      <span class="story-arrow">Check home affordability →</span>
-    </div></a>
+<div class="ph">
+  <div class="ph-inner">
+    <div class="bc">
+      <a href="/">Home</a><span>/</span>
+      <a href="/affordability">Affordability</a><span>/</span>
+      Car Affordability
+    </div>
+    <div class="ph-cat">Affordability</div>
+    <h1>Car Affordability Calculator</h1>
+    <p>Work out the car repayment and price your budget can handle. Based on current South African interest rates and realistic running costs.</p>
   </div>
-
-<div class="whatif-section" id="whatif-section" style="display:none">
-  <div class="whatif-kicker">What if?</div>
-  <div class="whatif-title">Test a scenario</div>
-  <p class="whatif-sub">Drag the sliders to see how changes affect the car price you could afford.</p>
-  <div class="whatif-grid">
-    <div class="whatif-control"><div class="whatif-control-head"><label>Income change</label><output id="wi-inc-out">+0%</output></div>
-      <input type="range" id="wi-inc" min="-20" max="30" value="0" step="1" oninput="renderWhatIf()"></div>
-    <div class="whatif-control"><div class="whatif-control-head"><label>Interest rate change</label><output id="wi-rate-out">+0pp</output></div>
-      <input type="range" id="wi-rate" min="-2" max="3" value="0" step="0.25" oninput="renderWhatIf()"></div>
-  </div>
-  <div class="whatif-result"><div><div class="whatif-result-label">New car price you could afford</div><div class="whatif-result-val" id="wi-newprice">R0</div></div>
-    <div class="whatif-delta"><div class="whatif-delta-val" id="wi-delta">—</div><div class="whatif-delta-lbl">vs your current estimate</div></div></div>
-  <div class="whatif-reset"><button onclick="resetWhatIf()">Reset scenario</button></div>
-  <div class="note warn" style="margin-top:1rem"><span>⚠</span><span>This is the loan price only — remember insurance, fuel and maintenance add to your true monthly cost.</span></div>
 </div>
 
-  <div class="journey">
-    <div class="journey-title">Continue your financial plan</div>
-    <div class="journey-path">
-      <a href="/budget-planner">Budget planner</a><span class="journey-sep">→</span>
-      <a href="/debt-repayment">Debt repayment</a><span class="journey-sep">→</span>
-      <a href="/compound-interest">Compound interest</a><span class="journey-sep">→</span>
-      <a href="/financial-coach">Get your health score</a>
+<div class="layout">
+  <div>
+    <div class="card">
+      <div class="card-head">
+        <div class="card-cat">Car</div>
+        <div>
+          <h2>How much car can I afford?</h2>
+          <p>Find a repayment that fits your budget</p>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="form-grid">
+          <div class="fg">
+            <label>Gross Monthly Income</label>
+            <div class="iw has-pre"><span class="ipre">R</span><input type="number" id="inc" placeholder="30000" min="0"></div>
+          </div>
+          <div class="fg">
+            <label>% of Income for Car</label>
+            <div class="iw has-suf"><input type="number" id="pct" value="15" min="1" max="40"><span class="isuf">%</span></div>
+          </div>
+          <div class="fg">
+            <label>Deposit / Trade-in</label>
+            <div class="iw has-pre"><span class="ipre">R</span><input type="number" id="dep" placeholder="0" min="0"></div>
+          </div>
+          <div class="fg">
+            <label>Interest Rate</label>
+            <div class="iw has-suf"><input type="number" id="rate" value="12.5" step="0.25" min="1"><span class="isuf">%</span></div>
+          </div>
+          <div class="fg">
+            <label>Loan Term</label>
+            <div class="sw">
+              <select id="term">
+                <option value="6">72 months (6 yrs)</option>
+                <option value="5">60 months (5 yrs)</option>
+                <option value="4">48 months (4 yrs)</option>
+              </select>
+            </div>
+          </div>
+          <div class="fg">
+            <label>Balloon Payment</label>
+            <div class="iw has-suf"><input type="number" id="balloon" value="0" min="0" max="40"><span class="isuf">%</span></div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-full btn-accent" onclick="calc()">Calculate car budget →</button>
+        <button type="button" class="btn btn-full btn-example" onclick="loadExample()"><span class="example-badge">Example</span>Try R30k income, 60 months</button>
+
+        <div class="results" id="res">
+          <div class="th-panel">
+            <div>
+              <div class="th-label">Car price you can afford</div>
+              <div class="th-amount" id="big">R0</div>
+              <div class="th-period">including deposit</div>
+            </div>
+            <div class="eff-block">
+              <span class="eff-val" id="rep">R0</span>
+              <span class="eff-lbl">Monthly</span>
+            </div>
+          </div>
+          
+          <div class="bb">
+            <div class="bb-title">Your car budget</div>
+            <div class="br"><span class="lbl">Affordable monthly repayment</span><span class="val pos" id="r-rep">R0</span></div>
+            <div class="br"><span class="lbl">Loan amount supported</span><span class="val neu" id="r-loan">R0</span></div>
+            <div class="br" id="r-balloon-row" style="display:none"><span class="lbl">Plus balloon (paid at end)</span><span class="val neu" id="r-balloon">R0</span></div>
+            <div class="br"><span class="lbl">Plus deposit / trade-in</span><span class="val pos" id="r-dep">+R0</span></div>
+          </div>
+          
+          <div class="total-bar">
+            <span class="lbl">✓ Total car price</span>
+            <span class="val" id="r-price">R0</span>
+          </div>
+          
+          <div class="note navy">
+            <span>ℹ</span>
+            <span>Remember insurance, fuel, tyres and services on top. A balloon lowers your monthly but leaves a large lump sum owing at the end.</span>
+          </div>
+        </div>
+
+        <div class="story-section" id="money-story" style="display:none">
+          <div class="story-kicker">Your money story</div>
+          <div class="story-title">The true monthly cost of this car</div>
+          <p class="story-sub">The repayment is only part of the picture — here is the full running cost.</p>
+
+          <div class="story-grid">
+            <a href="/blog-true-cost-of-car-ownership-sa" class="story-card">
+              <div class="story-stripe c-car"></div>
+              <div class="story-body">
+                <div class="story-label">⛽ True monthly cost (with insurance & fuel)</div>
+                <div class="story-val" id="ms-truecost">R0</div>
+                <div class="story-desc">Repayment plus typical insurance, fuel and upkeep</div>
+                <span class="story-arrow">See the full cost breakdown →</span>
+              </div>
+            </a>
+
+            <a href="/compound-interest" class="story-card">
+              <div class="story-stripe c-retire"></div>
+              <div class="story-body">
+                <div class="story-label">📈 If invested instead</div>
+                <div class="story-val" id="ms-invested">R0</div>
+                <div class="story-desc">What this monthly repayment could grow to in 10 years</div>
+                <span class="story-arrow">Model the alternative →</span>
+              </div>
+            </a>
+
+            <a href="/lifestyle-affordability" class="story-card">
+              <div class="story-stripe c-housing"></div>
+              <div class="story-body">
+                <div class="story-label">📊 Does this fit your full budget?</div>
+                <div class="story-val">Check it</div>
+                <div class="story-desc">See your complete monthly picture with this car</div>
+                <span class="story-arrow">Check your lifestyle fit →</span>
+              </div>
+            </a>
+
+            <a href="/home-affordability" class="story-card">
+              <div class="story-stripe c-safety"></div>
+              <div class="story-body">
+                <div class="story-label">🏠 Planning a home too?</div>
+                <div class="story-val">Compare</div>
+                <div class="story-desc">See how this affects your bond capacity</div>
+                <span class="story-arrow">Check home affordability →</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="journey">
+            <div class="journey-title">Continue your financial plan</div>
+            <div class="journey-path">
+              <a href="/budget-planner">Budget planner</a><span class="journey-sep">→</span>
+              <a href="/debt-repayment">Debt repayment</a><span class="journey-sep">→</span>
+              <a href="/compound-interest">Compound interest</a><span class="journey-sep">→</span>
+              <a href="/financial-coach">Get your health score</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="whatif-section" id="whatif-section" style="display:none">
+          <div class="whatif-kicker">What if?</div>
+          <div class="whatif-title">Test a scenario</div>
+          <p class="whatif-sub">Drag the sliders to see how changes affect the car price you could afford.</p>
+          <div class="whatif-grid">
+            <div class="whatif-control">
+              <div class="whatif-control-head"><label>Income change</label><output id="wi-inc-out">+0%</output></div>
+              <input type="range" id="wi-inc" min="-20" max="30" value="0" step="1" oninput="renderWhatIf()">
+            </div>
+            <div class="whatif-control">
+              <div class="whatif-control-head"><label>Interest rate change</label><output id="wi-rate-out">+0pp</output></div>
+              <input type="range" id="wi-rate" min="-2" max="3" value="0" step="0.25" oninput="renderWhatIf()">
+            </div>
+          </div>
+          <div class="whatif-result">
+            <div>
+              <div class="whatif-result-label">New car price you could afford</div>
+              <div class="whatif-result-val" id="wi-newprice">R0</div>
+            </div>
+            <div class="whatif-delta">
+              <div class="whatif-delta-val" id="wi-delta">—</div>
+              <div class="whatif-delta-lbl">vs your current estimate</div>
+            </div>
+          </div>
+          <div class="whatif-reset"><button onclick="resetWhatIf()">Reset scenario</button></div>
+          <div class="note warn" style="margin-top:1rem">
+            <span>⚠</span>
+            <span>This is the loan price only — remember insurance, fuel and maintenance add to your true monthly cost.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar">
+    <div class="sc">
+      <div class="sc-head">Smart Car Buying</div>
+      <div class="sc-body">
+        <div class="tip"><span>→</span><span>Keep repayments under 15% of gross income.</span></div>
+        <div class="tip"><span>→</span><span>Total car cost (repayment + insurance + fuel) under 25%.</span></div>
+        <div class="tip"><span>→</span><span>Avoid balloon payments if you can — they cost more long-term.</span></div>
+        <div class="tip"><span>→</span><span>A bigger deposit reduces interest paid over the term.</span></div>
+        <div class="tip"><span>→</span><span>Consider 2-3 year old cars to avoid steep depreciation.</span></div>
+      </div>
+    </div>
+
+    <div class="sc">
+      <div class="sc-head">Current Market Rates</div>
+      <div class="sc-body">
+        <div class="qr"><span>Prime rate</span><strong>10.75%</strong></div>
+        <div class="qr"><span>Typical car finance</span><strong>11.75-14.75%</strong></div>
+        <div class="qr"><span>Good credit rate</span><strong>Prime - 0.5%</strong></div>
+        <div class="qr"><span>Poor credit rate</span><strong>Prime + 4-5%</strong></div>
+        <div class="qr"><span>Standard term</span><strong>60-72 months</strong></div>
+      </div>
+    </div>
+
+    <div class="sc">
+      <div class="sc-head">Related Calculators</div>
+      <div class="sc-body">
+        <div class="tip"><span>→</span><a href="/home-affordability">Home Affordability</a></div>
+        <div class="tip"><span>→</span><a href="/budget-planner">Budget Planner</a></div>
+        <div class="tip"><span>→</span><a href="/debt-repayment">Debt Repayment</a></div>
+        <div class="tip"><span>→</span><a href="/compound-interest">Compound Interest</a></div>
+      </div>
     </div>
   </div>
 </div>
 
-</div></div></div></div><div class="sidebar"><div class="sc"><div class="sc-head">Smart car buying</div><div class="sc-body">
-<div class="tip"><span>→</span><span>Keep repayments under 15% of gross income.</span></div>
-<div class="tip"><span>→</span><span>Total car cost (repayment + insurance + fuel) under 25%.</span></div>
-<div class="tip"><span>→</span><span>Avoid balloon payments if you can — they cost more long-term.</span></div>
-<div class="tip"><span>→</span><span>A bigger deposit reduces interest paid over the term.</span></div>
-</div></div></div></div><div class="section" style="padding-top:0"><div class="section-header"><div class="section-title">Related <span>/</span> Affordability Tools</div></div><div class="tools-grid"><a href="/home-affordability" class="tool-card featured"><div class="tc-cat">Affordability</div><h3>Home Affordability</h3><p>How much house you can afford on your salary.</p><span class="tc-link">Open →</span></a><a href="/rent-affordability" class="tool-card featured"><div class="tc-cat">Affordability</div><h3>Rent Affordability</h3><p>How much rent you can comfortably pay.</p><span class="tc-link">Open →</span></a><a href="/lifestyle-affordability" class="tool-card featured"><div class="tc-cat">Affordability</div><h3>Lifestyle Affordability</h3><p>See if your lifestyle fits your income.</p><span class="tc-link">Open →</span></a></div></div><div class="section" style="padding-top:0" data-articles="1"><div class="section-header"><div class="section-title">Learn more <span>/</span> Guides</div></div><div class="tools-grid"><a href="/blog-how-much-car-can-i-afford" class="tool-card featured" style="border-top-color:var(--navy)"><div class="tc-cat">Guide</div><h3>How Much Car Can I Afford in South Africa?</h3><span class="tc-link">Read guide →</span></a><a href="/blog-car-repayment-salary" class="tool-card featured" style="border-top-color:var(--navy)"><div class="tc-cat">Guide</div><h3>What Car Can I Afford on My Salary?</h3><span class="tc-link">Read guide →</span></a><a href="/blog-true-cost-of-car-ownership-sa" class="tool-card featured" style="border-top-color:var(--navy)"><div class="tc-cat">Guide</div><h3>The True Cost of Owning a Car in South Africa</h3><span class="tc-link">Read guide →</span></a></div></div>
-<div class="sa-stripe"></div>
-<div class="section"><div style="background:var(--white);border:1px solid var(--line);border-top:3px solid var(--forest)"><div class="article-body"><h2>The real cost of a car goes well beyond the repayment</h2><p>A vehicle is often the second-largest purchase most South Africans make, yet it is frequently budgeted using only the monthly instalment — ignoring insurance, fuel, maintenance, and depreciation. This calculator focuses on what you can sensibly finance, but understanding the total cost of ownership is what actually protects your budget.</p><h2>The full monthly cost breakdown</h2><p>On a typical mid-range vehicle financed at R4,500/month, the true all-in monthly cost usually looks closer to this:</p><table class="data-table"><thead><tr><th>Cost item</th><th>Typical monthly amount</th></tr></thead><tbody><tr><td>Loan repayment</td><td>R4,500</td></tr><tr><td>Comprehensive insurance</td><td>R900 - R1,800</td></tr><tr><td>Fuel (average commute)</td><td>R1,800 - R3,000</td></tr><tr><td>Maintenance and services (averaged)</td><td>R500 - R900</td></tr><tr><td>Licensing (annualised)</td><td>R50 - R100</td></tr><tr><td>Total realistic monthly cost</td><td>R7,750 - R10,300</td></tr></tbody></table><h2>Why the loan term matters more than the monthly figure</h2><p>A longer loan term reduces your monthly instalment, which can make an unaffordable car look affordable on paper. But longer terms mean paying significantly more in total interest, and you spend more years owing more than the car is worth — a position called being "upside down" on the loan, which becomes a real problem if you need to sell or trade in early.</p><table class="data-table"><thead><tr><th>Loan term</th><th>Monthly instalment (R300k @ 12.5%)</th><th>Total interest paid</th></tr></thead><tbody><tr><td>48 months</td><td>R7,980</td><td>R83,000</td></tr><tr><td>60 months</td><td>R6,750</td><td>R105,000</td></tr><tr><td>72 months</td><td>R5,970</td><td>R129,800</td></tr></tbody></table><h2>The balloon payment trap</h2><p>Balloon or residual payments reduce your monthly instalment by deferring a large lump sum to the end of the loan. They can make sense for those who plan to trade in before the balloon is due, but they are frequently used to make an otherwise unaffordable car seem manageable. If you cannot comfortably afford the car without a balloon, the balloon itself is a signal to consider a cheaper vehicle.</p><h2>New versus used: the depreciation math</h2><p>A new car loses roughly 20-30% of its value in the first two to three years — the steepest part of its depreciation curve. Buying a well-maintained vehicle that is two to three years old means someone else has already absorbed that initial loss, often for a similar vehicle at a meaningfully lower price.</p><h2>Matching your car to your broader financial picture</h2><p>The 15% rule used in this calculator is a starting point, not a target to maximise. Every rand committed to a car payment is a rand unavailable for saving or investing — money that, left in a compounding investment instead, can grow substantially over the same period. See what that trade-off looks like concretely with our <a href="/compound-interest">compound interest calculator</a>, and make sure your total transport spend still fits your overall budget using the <a href="/lifestyle-affordability">lifestyle affordability tool</a>.</p></div></div></div>
+<div class="section" style="padding-top:0">
+  <div class="section-header">
+    <div class="section-title">Related <span>/</span> Affordability Tools</div>
+  </div>
+  <div class="tools-grid">
+    <a href="/home-affordability" class="tool-card featured">
+      <div class="tc-cat">Affordability</div>
+      <h3>Home Affordability</h3>
+      <p>How much house you can afford on your salary.</p>
+      <span class="tc-link">Open →</span>
+    </a>
+    <a href="/rent-affordability" class="tool-card featured">
+      <div class="tc-cat">Affordability</div>
+      <h3>Rent Affordability</h3>
+      <p>How much rent you can comfortably pay.</p>
+      <span class="tc-link">Open →</span>
+    </a>
+    <a href="/lifestyle-affordability" class="tool-card featured">
+      <div class="tc-cat">Affordability</div>
+      <h3>Lifestyle Affordability</h3>
+      <p>See if your lifestyle fits your income.</p>
+      <span class="tc-link">Open →</span>
+    </a>
+    <a href="/budget-planner" class="tool-card featured">
+      <div class="tc-cat">Money Tools</div>
+      <h3>Budget Planner</h3>
+      <p>Plan your monthly spending with 50/30/20.</p>
+      <span class="tc-link">Open →</span>
+    </a>
+    <a href="/debt-repayment" class="tool-card featured">
+      <div class="tc-cat">Money Tools</div>
+      <h3>Debt Repayment</h3>
+      <p>Make a plan to clear your debt faster.</p>
+      <span class="tc-link">Open →</span>
+    </a>
+    <a href="/compound-interest" class="tool-card featured">
+      <div class="tc-cat">Wealth</div>
+      <h3>Compound Interest</h3>
+      <p>See how your investments grow over time.</p>
+      <span class="tc-link">Open →</span>
+    </a>
+  </div>
+</div>
 
-<footer><div class="footer-inner">
-  <div class="footer-logo">CalcMy<span>Pay</span></div>
-  <div class="footer-links"><a href="/salary-income">Salary</a><a href="/affordability">Affordability</a><a href="/wealth-building">Wealth</a><a href="/money-tools">Tools</a><a href="/financial-coach">Coach</a><a href="/blog-salary-guide">Guides</a><a href="/about">About</a><a href="/privacy-policy">Privacy</a><a href="/contact">Contact</a></div>
-  <div class="footer-copy">© 2026 CalcMyPay · Understand your salary. Plan your money. Build your future. · For informational purposes only · Not affiliated with SARS · SARS 2027 tax year</div>
-</div></footer>
-<script>const fmt=n=>'R\u00a0'+Math.round(Math.abs(n)).toLocaleString('en-ZA');
-function fmtK(n){n=Math.round(n);if(Math.abs(n)>=1e6)return 'R\u00a0'+(n/1e6).toFixed(2)+'m';if(Math.abs(n)>=1e3)return 'R\u00a0'+Math.round(n/1e3).toLocaleString('en-ZA')+'k';return fmt(n);}
+<div class="section" style="padding-top:0">
+  <div class="section-header">
+    <div class="section-title">Learn more <span>/</span> Guides</div>
+  </div>
+  <div class="tools-grid">
+    <a href="/blog-how-much-car-can-i-afford" class="tool-card featured" style="border-top-color:var(--navy)">
+      <div class="tc-cat">Guide</div>
+      <h3>How Much Car Can I Afford in South Africa?</h3>
+      <span class="tc-link">Read guide →</span>
+    </a>
+    <a href="/blog-car-repayment-salary" class="tool-card featured" style="border-top-color:var(--navy)">
+      <div class="tc-cat">Guide</div>
+      <h3>What Car Can I Afford on My Salary?</h3>
+      <span class="tc-link">Read guide →</span>
+    </a>
+    <a href="/blog-true-cost-of-car-ownership-sa" class="tool-card featured" style="border-top-color:var(--navy)">
+      <div class="tc-cat">Guide</div>
+      <h3>The True Cost of Owning a Car in South Africa</h3>
+      <span class="tc-link">Read guide →</span>
+    </a>
+  </div>
+</div>
 
-function bondPayment(principal, annualRate, years){
- const r=annualRate/100/12, n=years*12;
- if(r===0) return principal/n;
- return principal*r*Math.pow(1+r,n)/(Math.pow(1+r,n)-1);
-}
+<div class="section">
+  <div style="background:var(--white);border:1px solid var(--line);border-top:3px solid var(--forest)">
+    <div class="article-body">
 
-function calc(){
- const inc=parseFloat(document.getElementById('inc').value)||0;
- const pct=parseFloat(document.getElementById('pct').value)||15;
- const dep=parseFloat(document.getElementById('dep').value)||0;
- const rate=parseFloat(document.getElementById('rate').value)||12.5;
- const term=parseInt(document.getElementById('term').value);
- const balloonPct=parseFloat(document.getElementById('balloon').value)||0;
- if(inc<=0){alert('Please enter your monthly income.');return;}
- const repay=inc*(pct/100);
- const r=rate/100/12, n=term*12;
- // solve for loan where payment covers principal minus balloon FV
- // simpler: loan principal from payment ignoring balloon, then balloon adds price
- const loan = r===0? repay*n : repay*(Math.pow(1+r,n)-1)/(r*Math.pow(1+r,n));
- const balloonAmt = loan*(balloonPct/100);
- const price=loan+balloonAmt+dep;
- document.getElementById('big').textContent=fmt(price);
- document.getElementById('rep').textContent=fmt(repay);
- document.getElementById('r-rep').textContent=fmt(repay);
- document.getElementById('r-loan').textContent=fmt(loan);
- document.getElementById('r-balloon').textContent=fmt(balloonAmt);
- document.getElementById('r-balloon-row').style.display=balloonAmt>0?'flex':'none';
- document.getElementById('r-dep').textContent='+'+fmt(dep);
- document.getElementById('r-price').textContent=fmt(price);
- baseInputs = {inc, pct, dep, rate, term, balloonPct, price};
- document.getElementById('whatif-section').style.display = 'block';
- resetWhatIf();
- renderMoneyStory(repay);
- document.getElementById('res').classList.add('show');
- document.getElementById('res').scrollIntoView({behavior:'smooth',block:'nearest'});
-}
-document.addEventListener('keydown',e=>{if(e.key=='Enter')calc()});
+      <h2>Understanding car affordability in South Africa</h2>
+      <p>A vehicle is often the second-largest purchase most South Africans make, yet it's frequently budgeted using only the monthly instalment — ignoring insurance, fuel, maintenance, and the rapid depreciation that makes cars such poor investments. This comprehensive guide explains how to determine what car you can truly afford, the full cost of ownership, and strategies to make smart vehicle purchasing decisions.</p>
 
-function renderMoneyStory(repay){
-  // typical extra running costs: insurance ~R1200, fuel ~R2500, maintenance ~R900
-  const extras = 1200+2500+900;
-  document.getElementById('ms-truecost').textContent = fmt(repay+extras);
+      <p>The 15% rule used in this calculator is a conservative starting point: your car loan repayment should not exceed 15% of your gross monthly income. When you add insurance, fuel, and maintenance, total vehicle costs should stay under 25% of gross income. These guidelines protect your ability to save, invest, and handle unexpected expenses.</p>
 
-  const r=0.10/12, n=120;
-  const invested = repay*((Math.pow(1+r,n)-1)/r);
-  document.getElementById('ms-invested').textContent = fmtK(invested);
+      <div class="callout navy">
+        <strong>Key principle:</strong> A car is a depreciating liability, not an asset. Every rand spent on a car payment is a rand not working for you in investments. Buy what you need, not what you want, and always consider the opportunity cost of what that money could become if invested instead.
+      </div>
+
+      <h2>How car affordability is calculated</h2>
+      <p>The calculator works backwards from your affordable monthly payment to determine the maximum car price you can finance. Here's the step-by-step process:</p>
+
+      <h3>Step 1: Determine your affordable monthly payment</h3>
+      <p>Multiply your gross monthly income by your chosen percentage (default 15%). For example, with R30,000 gross income:</p>
+      <ul>
+        <li>R30,000 × 15% = <strong>R4,500 affordable monthly repayment</strong></li>
+      </ul>
+
+      <h3>Step 2: Calculate the loan amount this payment supports</h3>
+      <p>Using the standard loan amortization formula with your interest rate and term, calculate how much you can borrow with that monthly payment. At 12.5% interest over 60 months:</p>
+      <ul>
+        <li>R4,500/month supports a loan of approximately <strong>R199,000</strong></li>
+      </ul>
+
+      <h3>Step 3: Add deposit and balloon (if applicable)</h3>
+      <p>Your total affordable car price equals:</p>
+      <ul>
+        <li>Loan amount + Deposit + Balloon payment</li>
+        <li>Example: R199,000 + R50,000 deposit = <strong>R249,000 car price</strong></li>
+      </ul>
+
+      <div class="worked-example">
+        <div class="worked-example-head">
+          <span class="worked-example-tag">Worked Example</span>
+          <h3>R30,000/month salary, 60-month term, R50k deposit</h3>
+        </div>
+        <p>Let's walk through a realistic scenario: You earn R30,000 gross per month, want to keep your car payment at 15% of income, have R50,000 for a deposit/trade-in, qualify for 12.5% interest, and choose a 60-month term with no balloon.</p>
+
+        <p><strong>Step 1: Affordable monthly payment</strong></p>
+        <ul>
+          <li>R30,000 × 15% = <strong>R4,500/month</strong></li>
+        </ul>
+
+        <p><strong>Step 2: Loan amount calculation</strong></p>
+        <ul>
+          <li>Interest rate: 12.5% per year = 1.042% per month</li>
+          <li>Term: 60 months</li>
+          <li>Using loan formula: PV = PMT × [(1 - (1+r)^-n) / r]</li>
+          <li>PV = R4,500 × [(1 - (1.01042)^-60) / 0.01042]</li>
+          <li>PV = R4,500 × 44.38 = <strong>R199,710 loan amount</strong></li>
+        </ul>
+
+        <p><strong>Step 3: Total car price</strong></p>
+        <ul>
+          <li>Loan amount: R199,710</li>
+          <li>Plus deposit: R50,000</li>
+          <li><strong>Total affordable car price: R249,710</strong></li>
+        </ul>
+
+        <p><strong>Total cost over 60 months:</strong></p>
+        <ul>
+          <li>Total repayments: R4,500 × 60 = R270,000</li>
+          <li>Total interest paid: R270,000 - R199,710 = <strong>R70,290</strong></li>
+          <li>Total out of pocket: R270,000 + R50,000 = R320,000</li>
+        </ul>
+
+        <p style="margin-top:1rem">You'd pay R70,290 in interest over 5 years — about 35% of the loan amount. This highlights why shorter terms and larger deposits matter significantly.</p>
+      </div>
+
+      <h2>Car affordability reference table by salary</h2>
+      <p>The table below shows affordable car prices at common South African salary levels, assuming 15% allocation, 12.5% interest, 60-month term, and no deposit.</p>
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Monthly Gross Income</th>
+            <th>Affordable Repayment (15%)</th>
+            <th>Max Loan Amount</th>
+            <th>Total Interest Paid</th>
+            <th>With R30k Deposit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>R10,000</td>
+            <td>R1,500</td>
+            <td>R66,570</td>
+            <td class="td-red">R23,430</td>
+            <td class="td-green">R96,570</td>
+          </tr>
+          <tr>
+            <td>R15,000</td>
+            <td>R2,250</td>
+            <td>R99,855</td>
+            <td class="td-red">R35,145</td>
+            <td class="td-green">R129,855</td>
+          </tr>
+          <tr>
+            <td>R20,000</td>
+            <td>R3,000</td>
+            <td>R133,140</td>
+            <td class="td-red">R46,860</td>
+            <td class="td-green">R163,140</td>
+          </tr>
+          <tr>
+            <td>R25,000</td>
+            <td>R3,750</td>
+            <td>R166,425</td>
+            <td class="td-red">R58,575</td>
+            <td class="td-green">R196,425</td>
+          </tr>
+          <tr>
+            <td>R30,000</td>
+            <td>R4,500</td>
+            <td>R199,710</td>
+            <td class="td-red">R70,290</td>
+            <td class="td-green">R229,710</td>
+          </tr>
+          <tr>
+            <td>R40,000</td>
+            <td>R6,000</td>
+            <td>R266,280</td>
+            <td class="td-red">R93,720</td>
+            <td class="td-green">R296,280</td>
+          </tr>
+          <tr>
+            <td>R50,000</td>
+            <td>R7,500</td>
+            <td>R332,850</td>
+            <td class="td-red">R117,150</td>
+            <td class="td-green">R362,850</td>
+          </tr>
+          <tr>
+            <td>R75,000</td>
+            <td>R11,250</td>
+            <td>R499,275</td>
+            <td class="td-red">R175,725</td>
+            <td class="td-green">R529,275</td>
+          </tr>
+          <tr>
+            <td>R100,000</td>
+            <td>R15,000</td>
+            <td>R665,700</td>
+            <td class="td-red">R234,300</td>
+            <td class="td-green">R695,700</td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="font-size:.84rem;color:var(--mist);margin-top:.5rem">Note: These figures assume 12.5% interest, 60-month term, and no balloon payment. Adding a deposit increases your affordable car price by the deposit amount.</p>
+
+      <h2>The real cost of car ownership</h2>
+      <p>The monthly loan repayment is only part of what a car costs. Understanding the full cost of ownership prevents the common mistake of buying a car you can "afford" on paper but can't actually sustain.</p>
+
+      <h3>Complete monthly cost breakdown</h3>
+      <p>For a typical mid-range vehicle (R250,000-R350,000) financed at R4,500/month, expect these additional monthly costs:</p>
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Cost Item</th>
+            <th>Typical Monthly Range</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Loan repayment</strong></td>
+            <td>R4,500</td>
+            <td>Your calculated affordable payment</td>
+          </tr>
+          <tr>
+            <td><strong>Comprehensive insurance</strong></td>
+            <td>R900 - R1,800</td>
+            <td>Varies by car value, age, location, driving history</td>
+          </tr>
+          <tr>
+            <td><strong>Fuel</strong></td>
+            <td>R1,800 - R3,000</td>
+            <td>Depends on commute distance and car efficiency</td>
+          </tr>
+          <tr>
+            <td><strong>Maintenance & services</strong></td>
+            <td>R500 - R900</td>
+            <td>Averaged over year (services, tyres, repairs)</td>
+          </tr>
+          <tr>
+            <td><strong>Licensing & admin</strong></td>
+            <td>R50 - R100</td>
+            <td>Annual license fee divided by 12</td>
+          </tr>
+          <tr>
+            <td><strong>Depreciation (hidden cost)</strong></td>
+            <td>R2,500 - R4,000</td>
+            <td>Car loses 15-20% of value annually</td>
+          </tr>
+          <tr style="background:#EDF3EE"><td><strong>Total realistic monthly cost</strong></td><td class="td-green"><strong>R7,750 - R10,300</strong></td><td>1.7x to 2.3x your loan repayment</td></tr>
+        </tbody>
+      </table>
+
+      <h3>The 25% rule for total car costs</h3>
+      <p>Financial planners recommend that your total car expenses (repayment + insurance + fuel + maintenance) should not exceed 25% of gross income. Using our R30,000 example:</p>
+      <ul>
+        <li>25% of R30,000 = R7,500 maximum total car cost</li>
+        <li>If repayment is R4,500, you have R3,000 left for insurance, fuel, and maintenance</li>
+        <li>This is tight — consider a cheaper car or larger deposit to reduce the repayment</li>
+      </ul>
+
+      <h2>Loan term: Why shorter is usually better</h2>
+      <p>The loan term dramatically affects both your monthly payment and total cost. Longer terms lower monthly payments but cost significantly more in interest and leave you "upside down" (owing more than the car is worth) for longer.</p>
+
+      <h3>Term comparison: R300,000 loan at 12.5%</h3>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Loan Term</th>
+            <th>Monthly Payment</th>
+            <th>Total Interest</th>
+            <th>Total Cost</th>
+            <th>Risk Level</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>48 months (4 years)</td>
+            <td>R7,980</td>
+            <td class="td-green">R83,040</td>
+            <td>R383,040</td>
+            <td class="td-green">Low</td>
+          </tr>
+          <tr>
+            <td>60 months (5 years)</td>
+            <td>R6,750</td>
+            <td>R105,000</td>
+            <td>R405,000</td>
+            <td>Moderate</td>
+          </tr>
+          <tr>
+            <td>72 months (6 years)</td>
+            <td>R5,970</td>
+            <td class="td-red">R129,840</td>
+            <td>R429,840</td>
+            <td class="td-red">High</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>The "upside down" problem</h3>
+      <p>Cars depreciate fastest in the first 2-3 years (20-30% loss), while loan balances decrease slowly at first (most early payments go to interest). This creates a dangerous gap:</p>
+      <ul>
+        <li><strong>After 2 years on 72-month loan:</strong> You've paid ~R143,000 but only reduced the loan by ~R65,000</li>
+        <li><strong>Car value after 2 years:</strong> Down ~35% to ~R195,000</li>
+        <li><strong>Remaining loan balance:</strong> ~R235,000</li>
+        <li><strong>Result:</strong> You owe R40,000 more than the car is worth</li>
+      </ul>
+
+      <p>If you need to sell or the car is written off in an accident, you'll owe money even after the insurance payout. This is why shorter terms and larger deposits protect you.</p>
+
+      <h2>Balloon payments: The trap most buyers fall into</h2>
+      <p>A balloon (or residual) payment is a lump sum — typically 20-35% of the car's value — deferred to the end of the loan term. It reduces your monthly payment but creates significant risks.</p>
+
+      <h3>How balloon payments work</h3>
+      <p>Example: R300,000 car with 30% balloon (R90,000) over 60 months at 12.5%:</p>
+      <ul>
+        <li><strong>Without balloon:</strong> R6,750/month for 60 months</li>
+        <li><strong>With 30% balloon:</strong> R4,725/month for 60 months, then R90,000 lump sum</li>
+        <li><strong>Monthly savings:</strong> R2,025</li>
+      </ul>
+
+      <h3>The balloon trap</h3>
+      <p>When the balloon comes due after 5 years, you must:</p>
+      <ol>
+        <li><strong>Pay R90,000 cash</strong> — most people don't have this saved</li>
+        <li><strong>Refinance the balloon</strong> — typically at higher rates, extending debt another 2-3 years</li>
+        <li><strong>Trade in the car</strong> — often with negative equity rolled into the next loan</li>
+        <li><strong>Sell the car privately</strong> — hoping it's worth more than the balloon</li>
+      </ol>
+
+      <p>Most people choose option 3, creating a cycle of perpetual car debt where they never actually own a vehicle outright.</p>
+
+      <div class="callout">
+        <strong>Rule of thumb:</strong> If you can't afford the car without a balloon, you can't afford the car. The balloon is making an unaffordable purchase look affordable — it's not actually reducing the cost, just deferring it.
+      </div>
+
+      <h3>When balloons make sense</h3>
+      <p>Balloons can work in specific situations:</p>
+      <ul>
+        <li><strong>Company cars:</strong> If you'll definitely trade in before the balloon is due</li>
+        <li><strong>Short ownership plans:</strong> You're certain you'll sell before term end</li>
+        <li><strong>Investment vehicles:</strong> Classic cars that may appreciate (rare)</li>
+        <li><strong>Cash flow management:</strong> Business use where you'll have cash to settle later</li>
+      </ul>
+
+      <p>For most personal vehicles, avoid balloons entirely.</p>
+
+      <h2>New vs used: The depreciation mathematics</h2>
+      <p>Understanding depreciation is crucial for making smart car buying decisions. New cars lose value fastest in the first few years, making 2-3 year old vehicles the sweet spot for value.</p>
+
+      <h3>Typical depreciation curve</h3>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Car Age</th>
+            <th>Value Retained</th>
+            <th>Annual Depreciation</th>
+            <th>Cumulative Loss</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>New (Year 0)</td>
+            <td>100%</td>
+            <td>—</td>
+            <td>0%</td>
+          </tr>
+          <tr>
+            <td>Year 1</td>
+            <td>80-85%</td>
+            <td>15-20%</td>
+            <td class="td-red">15-20%</td>
+          </tr>
+          <tr>
+            <td>Year 2</td>
+            <td>70-75%</td>
+            <td>10-12%</td>
+            <td class="td-red">25-30%</td>
+          </tr>
+          <tr>
+            <td>Year 3</td>
+            <td>60-65%</td>
+            <td>8-10%</td>
+            <td class="td-red">35-40%</td>
+          </tr>
+          <tr>
+            <td>Year 4</td>
+            <td>50-55%</td>
+            <td>7-8%</td>
+            <td>45-50%</td>
+          </tr>
+          <tr>
+            <td>Year 5</td>
+            <td>40-45%</td>
+            <td>6-7%</td>
+            <td>55-60%</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>The used car advantage</h3>
+      <p>Buying a 2-3 year old car means:</p>
+      <ul>
+        <li>Someone else absorbed the steepest depreciation (30-40% loss)</li>
+        <li>You pay 60-70% of new price for essentially the same car</li>
+        <li>Lower insurance costs (based on lower car value)</li>
+        <li>Modern features and safety (only 2-3 years behind new)</li>
+        <li>Many still have remaining factory warranty</li>
+      </ul>
+
+      <h3>When to buy new</h3>
+      <p>New cars make sense when:</p>
+      <ul>
+        <li>You plan to keep the car 8-10+ years (spreading depreciation over longer period)</li>
+        <li>You need specific features not available in used market</li>
+        <li>You value full warranty coverage and peace of mind</li>
+        <li>You drive very high mileage (worry about used car history)</li>
+        <li>Manufacturer incentives make new pricing competitive with used</li>
+      </ul>
+
+      <h2>Interest rates and your credit score</h2>
+      <p>Your credit score significantly impacts the interest rate you'll receive on car finance, which dramatically affects affordability.</p>
+
+      <h3>South African car finance rate tiers</h3>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Credit Rating</th>
+            <th>Typical Rate</th>
+            <th>Monthly on R200k (60mo)</th>
+            <th>Total Interest</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="td-green">Excellent (750+)</td>
+            <td>10.25% (Prime - 0.5%)</td>
+            <td>R4,270</td>
+            <td>R56,200</td>
+          </tr>
+          <tr>
+            <td>Good (670-749)</td>
+            <td>11.75% (Prime + 1%)</td>
+            <td>R4,415</td>
+            <td>R64,900</td>
+          </tr>
+          <tr>
+            <td>Average (610-669)</td>
+            <td>12.75% (Prime + 2%)</td>
+            <td>R4,515</td>
+            <td>R70,900</td>
+          </tr>
+          <tr>
+            <td>Fair (580-609)</td>
+            <td>14.75% (Prime + 4%)</td>
+            <td>R4,720</td>
+            <td>R83,200</td>
+          </tr>
+          <tr>
+            <td class="td-red">Poor (Below 580)</td>
+            <td>16.75%+ (Prime + 6%+)</td>
+            <td>R4,930</td>
+            <td>R95,800</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>The difference between excellent and poor credit on a R200,000 car is nearly <strong>R40,000 in interest</strong> over 5 years. Improving your credit score before applying can save you thousands.</p>
+
+      <h3>How to improve your rate</h3>
+      <ul>
+        <li><strong>Check your credit report:</strong> Get free reports from TransUnion, Experian, XDS</li>
+        <li><strong>Dispute errors:</strong> Incorrect accounts or outdated information hurt your score</li>
+        <li><strong>Pay down existing debt:</strong> Lower credit utilization improves score</li>
+        <li><strong>Maintain perfect payment history:</strong> 6-12 months of on-time payments helps</li>
+        <li><strong>Don't apply for multiple loans:</strong> Multiple inquiries temporarily lower score</li>
+        <li><strong>Consider a co-signer:</strong> Strong co-signer can help you qualify for better rates</li>
+      </ul>
+
+      <h2>Strategies to reduce your car costs</h2>
+
+      <h3>Strategy 1: Maximize your deposit</h3>
+      <p>Every R10,000 you put down reduces your loan by R10,000 and saves you approximately R3,500 in interest over 5 years (at 12.5%). Aim for at least 10-20% down, more if possible.</p>
+
+      <h3>Strategy 2: Choose shorter terms</h3>
+      <p>If you can afford the higher monthly payment, 48 or 60-month terms save significant interest versus 72 months. You'll also avoid being upside down on the loan.</p>
+
+      <h3>Strategy 3: Buy used (2-3 years old)</h3>
+      <p>You'll save 30-40% on purchase price, pay less in insurance, and avoid the steepest depreciation while still getting a modern, reliable vehicle.</p>
+
+      <h3>Strategy 4: Negotiate the purchase price</h3>
+      <p>Focus negotiations on the total car price, not the monthly payment. Dealers can manipulate terms and balloons to hit a monthly target while increasing total cost. Know the market value before negotiating.</p>
+
+      <h3>Strategy 5: Avoid unnecessary extras</h3>
+      <p>Extended warranties, paint protection, fabric protection, and VIN etching are high-margin add-ons that provide little value. Decline them or negotiate them as free inclusions.</p>
+
+      <h3>Strategy 6: Time your purchase</h3>
+      <p>Best times to buy:</p>
+      <ul>
+        <li><strong>End of month/quarter:</strong> Salespeople need to hit targets</li>
+        <li><strong>End of year (November/December):</strong> Clearing old model year stock</li>
+        <li><strong>When new models arrive:</strong> Previous year models discounted</li>
+        <li><strong>Slow sales periods:</strong> January/February typically slow for car sales</li>
+      </ul>
+
+      <h3>Strategy 7: Shop multiple lenders</h3>
+      <p>Don't just use dealer financing. Get pre-approval from your bank, other banks, and specialized vehicle finance companies. Competition often results in better rates.</p>
+
+      <h2>The opportunity cost: What if you invested instead?</h2>
+      <p>Every rand spent on a car is a rand not invested. Let's see what happens if you chose a cheaper car and invested the difference.</p>
+
+      <h3>Scenario comparison</h3>
+      <p><strong>Option A:</strong> Buy R400,000 car, R7,200/month repayment over 60 months at 12.5%</p>
+      <p><strong>Option B:</strong> Buy R250,000 car, R4,500/month repayment, invest R2,700/month difference</p>
+
+      <p><strong>After 5 years:</strong></p>
+      <ul>
+        <li>Option A: Own a R400,000 car now worth ~R160,000 (60% depreciation)</li>
+        <li>Option B: Own a R250,000 car now worth ~R100,000, PLUS investments worth ~R207,000 (at 10% return)</li>
+        <li><strong>Net worth difference:</strong> Option B leaves you R147,000 wealthier</li>
+      </ul>
+
+      <p>After 10 years (continuing to invest the R2,700/month), Option B creates over R550,000 in wealth while Option A just has a fully depreciated vehicle. This is the power of choosing needs over wants and investing the difference.</p>
+
+      <h2>Car affordability at different life stages</h2>
+
+      <h3>Early career (20s)</h3>
+      <ul>
+        <li><strong>Priority:</strong> Minimize car costs to maximize investing</li>
+        <li><strong>Strategy:</strong> Buy reliable used car, keep 5+ years</li>
+        <li><strong>Target:</strong> Car under R150,000, payment under 10% of income</li>
+        <li><strong>Rationale:</strong> Compound interest is most powerful when young</li>
+      </ul>
+
+      <h3>Family building (30s)</h3>
+      <ul>
+        <li><strong>Priority:</strong> Balance family needs with financial goals</li>
+        <li><strong>Strategy:</strong> Safe, practical vehicle for family size</li>
+        <li><strong>Target:</strong> Car payment 15% of income, total costs under 25%</li>
+        <li><strong>Rationale:</strong> Competing priorities (house, kids, retirement)</li>
+      </ul>
+
+      <h3>Peak earning (40s-50s)</h3>
+      <ul>
+        <li><strong>Priority:</strong> Maximize retirement contributions</li>
+        <li><strong>Strategy:</strong> Avoid lifestyle inflation in vehicles</li>
+        <li><strong>Target:</strong> Maintain same car budget despite income growth</li>
+        <li><strong>Rationale:</strong> Direct income growth to investments, not cars</li>
+      </ul>
+
+      <h3>Pre-retirement (50s-60s)</h3>
+      <ul>
+        <li><strong>Priority:</strong> Reduce fixed costs before retirement</li>
+        <li><strong>Strategy:</strong> Buy last car before retirement, pay cash if possible</li>
+        <li><strong>Target:</strong> Own vehicle outright, minimal ongoing costs</li>
+        <li><strong>Rationale:</strong> Lower fixed costs = lower required retirement income</li>
+      </ul>
+
+      <h2>Common car buying mistakes</h2>
+
+      <h3>Mistake 1: Focusing on monthly payment</h3>
+      <p>Dealers can hit any monthly target by extending terms or adding balloons. Always negotiate on total price, then calculate the payment.</p>
+
+      <h3>Mistake 2: Ignoring total cost of ownership</h3>
+      <p>Luxury and performance cars have higher insurance, maintenance, and fuel costs. A BMW costing the same as a Toyota to finance might cost R3,000 more per month to run.</p>
+
+      <h3>Mistake 3: Buying more car than you need</h3>
+      <p>SUVs when sedans would work, luxury brands when mainstream brands suffice, new when used makes sense. Needs vs wants applies strongly to vehicles.</p>
+
+      <h3>Mistake 4: Trading in too frequently</h3>
+      <p>Every trade-in involves transaction costs and restarting the depreciation cycle. Keep cars 5-7+ years when possible to spread purchase costs over longer periods.</p>
+
+      <h3>Mistake 5: Skipping the pre-purchase inspection</h3>
+      <p>For used cars, always get an independent mechanical inspection. The R1,000-R2,000 cost can save you from R50,000+ in hidden problems.</p>
+
+      <h3>Mistake 6: Not checking insurance costs first</h3>
+      <p>Get insurance quotes before buying. Some cars (especially high-theft models or performance vehicles) can cost double to insure versus similar alternatives.</p>
+
+      <h3>Mistake 7: Rolling negative equity into next loan</h3>
+      <p>If you owe more than your current car is worth, don't roll that debt into your next loan. It creates a debt spiral that's hard to escape.</p>
+
+      <h3>Mistake 8: Extending warranties you don't need</h3>
+      <p>Modern cars are reliable. Extended warranties are profitable for dealers because most people never use them. Self-insure by maintaining an emergency fund instead.</p>
+
+      <h2>When to pay cash vs finance</h2>
+
+      <h3>Pay cash when:</h3>
+      <ul>
+        <li>You have sufficient savings after maintaining emergency fund</li>
+        <li>Car price is under R200,000 (manageable cash amount)</li>
+        <li>You have high-interest debt (better to pay debt first, then save for car)</li>
+        <li>You're near retirement (minimize fixed obligations)</li>
+        <li>You hate debt and value peace of mind</li>
+      </ul>
+
+      <h3>Finance when:</h3>
+      <ul>
+        <li>You can invest the cash at higher returns than loan interest rate</li>
+        <li>You need to maintain liquidity for other opportunities</li>
+        <li>You're building credit history (responsibly managed car loan helps)</li>
+        <li>Manufacturer offers 0% or very low-rate financing (rare but valuable)</li>
+        <li>Car is essential for income generation (sales, delivery, etc.)</li>
+      </ul>
+
+      <h2>Glossary: Car finance terms explained</h2>
+      <div class="glossary-grid">
+        <div class="glossary-item">
+          <div class="glossary-term">Balloon Payment</div>
+          <div class="glossary-def">A lump sum (typically 20-35% of car value) deferred to the end of the loan term, reducing monthly payments but leaving a large amount owing at term end.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">Depreciation</div>
+          <div class="glossary-def">The loss in car value over time. New cars typically lose 15-20% in year one, 10-12% in year two, and 8-10% annually thereafter.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">Upside Down</div>
+          <div class="glossary-def">When you owe more on your car loan than the car is currently worth. Common with long terms, small deposits, and high depreciation.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">Prime Rate</div>
+          <div class="glossary-def">The benchmark interest rate banks use for lending. Car finance rates are typically quoted as prime plus or minus a percentage.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">Total Cost of Ownership</div>
+          <div class="glossary-def">All costs of owning a car: loan payment, insurance, fuel, maintenance, licensing, and depreciation. Typically 1.7-2.3x the loan payment alone.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">Amortization</div>
+          <div class="glossary-def">The process of paying off a loan over time. Early payments are mostly interest; later payments are mostly principal.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">Equity</div>
+          <div class="glossary-def">The difference between your car's value and what you owe. Positive equity means the car is worth more than the loan balance.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">Negative Equity</div>
+          <div class="glossary-def">When you owe more than the car is worth. Also called being "upside down" or "underwater" on the loan.</div>
+        </div>
+      </div>
+
+      <h2>Frequently asked questions</h2>
+
+      <h3>How much should I spend on a car in South Africa?</h3>
+      <p>A common rule is to keep your car repayment under 15% of your gross monthly income, and ideally limit total vehicle costs (repayment, insurance, fuel, maintenance) to 25% of gross income. For a R30,000/month salary, that's R4,500 for the repayment and R7,500 total car costs.</p>
+
+      <h3>How is car finance calculated in South Africa?</h3>
+      <p>Car finance uses the loan amount (car price minus deposit), interest rate (typically prime plus 1-3%, so around 11.75-13.75% currently), term (usually 60-72 months), and any balloon payment to calculate your monthly instalment using standard loan amortisation formulas.</p>
+
+      <h3>What is a balloon payment on a car?</h3>
+      <p>A balloon (or residual) payment is a lump sum (typically 20-35% of car value) deferred to the end of the loan term. It reduces your monthly repayment but leaves you owing a large amount at the end, which you must pay, refinance, or trade in the car to settle.</p>
+
+      <h3>Is it better to finance a car for 60 or 72 months?</h3>
+      <p>60 months is generally better because you pay less total interest and avoid being "upside down" (owing more than the car is worth). A 72-month term lowers your monthly payment but costs significantly more in interest over the loan's life — on a R300,000 car at 12.5%, you'd pay R46,800 more in interest over 72 vs 60 months.</p>
+
+      <h3>What is the total cost of owning a car in South Africa?</h3>
+      <p>Beyond the loan repayment, expect to pay R900-R1,800 for insurance, R1,800-R3,000 for fuel, R500-R900 for maintenance, and R50-R100 for licensing monthly. The total running cost is typically 1.7x to 2.3x your loan repayment alone.</p>
+
+      <h3>Should I buy a new or used car?</h3>
+      <p>Used cars (2-3 years old) offer better value because they've already absorbed the steepest depreciation (20-30% in first 2-3 years). New cars offer warranty peace of mind and latest features but lose value fastest. Consider certified pre-owned for a middle ground.</p>
+
+      <h3>How much deposit should I put down on a car?</h3>
+      <p>Aim for at least 10-20% of the car's value as a deposit. A larger deposit reduces your loan amount, monthly payment, and total interest paid. It also helps you avoid being "upside down" on the loan where you owe more than the car is worth.</p>
+
+      <h3>What interest rate will I get on car finance?</h3>
+      <p>South African car finance rates typically range from prime (currently 10.75%) to prime plus 3-4%, depending on your credit score. Excellent credit might get prime or prime minus 0.5%, while poor credit could face prime plus 5% or higher.</p>
+
+      <h3>Can I afford a car on a R20,000 salary?</h3>
+      <p>On R20,000/month gross, using the 15% rule, you can afford a R3,000 monthly repayment. At 12.5% interest over 60 months with no deposit, this supports a car loan of approximately R133,000. With a deposit, you could afford a car worth R150,000-R170,000 total.</p>
+
+      <h3>What happens if I can't afford my car repayment?</h3>
+      <p>Missing payments damages your credit score and can lead to repossession. If struggling, contact your lender immediately to discuss options: payment holiday, term extension, or voluntary surrender. Never ignore the problem — early communication gives you more options.</p>
+
+      <h3>How do I improve my credit score for better car finance rates?</h3>
+      <p>Check your credit report for errors and dispute them, pay down existing debt to lower credit utilization, maintain perfect payment history for 6-12 months, avoid multiple loan applications, and consider a co-signer with strong credit if your score is low.</p>
+
+      <h3>Is it better to pay cash or finance a car?</h3>
+      <p>Pay cash if you have sufficient savings after maintaining your emergency fund and the car price is manageable (under R200,000). Finance if you can invest the cash at returns higher than the loan interest rate, need to maintain liquidity, or qualify for special low-rate manufacturer financing.</p>
+
+      <div class="disclaim">
+        <strong>Disclaimer:</strong> This calculator provides estimates based on the inputs you provide and current South African interest rates. Actual approval, rates, and terms depend on your credit profile, lender policies, and specific vehicle. This tool is for educational purposes only and does not constitute financial advice. Always get multiple quotes and read all terms carefully before committing to vehicle finance. CalcMyPay is not affiliated with any vehicle finance provider.
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">CalcMy<span>Pay</span></div>
+    <div class="footer-links">
+      <a href="/salary-income">Salary</a>
+      <a href="/affordability">Affordability</a>
+      <a href="/wealth-building">Wealth</a>
+      <a href="/money-tools">Tools</a>
+      <a href="/financial-coach">Coach</a>
+      <a href="/blog-salary-guide">Guides</a>
+      <a href="/about">About</a>
+      <a href="/privacy-policy">Privacy</a>
+      <a href="/contact">Contact</a>
+    </div>
+    <div class="footer-copy">
+      © 2026 CalcMyPay · Understand your salary. Plan your money. Build your future.
+    </div>
+  </div>
+</footer>
+
+<script>
+const fmt = n => 'R\u00a0' + Math.round(Math.abs(n)).toLocaleString('en-ZA');
+
+function fmtK(n) {
+  n = Math.round(n);
+  if (Math.abs(n) >= 1e6) return 'R\u00a0' + (n / 1e6).toFixed(2) + 'm';
+  if (Math.abs(n) >= 1e3) return 'R\u00a0' + Math.round(n / 1e3).toLocaleString('en-ZA') + 'k';
+  return fmt(n);
 }
 
 let baseInputs = null;
-function renderWhatIf(){
-  if(!baseInputs) return;
+
+function loadExample() {
+  document.getElementById('inc').value = 30000;
+  document.getElementById('pct').value = 15;
+  document.getElementById('dep').value = 50000;
+  document.getElementById('rate').value = 12.5;
+  document.getElementById('term').value = '5';
+  document.getElementById('balloon').value = 0;
+  calc();
+}
+
+function calc() {
+  const inc = parseFloat(document.getElementById('inc').value) || 0;
+  const pct = parseFloat(document.getElementById('pct').value) || 15;
+  const dep = parseFloat(document.getElementById('dep').value) || 0;
+  const rate = parseFloat(document.getElementById('rate').value) || 12.5;
+  const term = parseInt(document.getElementById('term').value);
+  const balloonPct = parseFloat(document.getElementById('balloon').value) || 0;
+  
+  if (inc <= 0) {
+    alert('Please enter your monthly income.');
+    return;
+  }
+
+  const repay = inc * (pct / 100);
+  const r = rate / 100 / 12;
+  const n = term * 12;
+  
+  // Calculate loan amount from payment (present value of annuity)
+  const loan = r === 0 ? repay * n : repay * (Math.pow(1 + r, n) - 1) / (r * Math.pow(1 + r, n));
+  
+  // FIXED: Balloon is % of TOTAL CAR PRICE, not loan
+  // Total price = loan + deposit + balloon
+  // balloon = balloonPct% * totalPrice
+  // So: totalPrice = loan + deposit + (balloonPct/100 * totalPrice)
+  // totalPrice * (1 - balloonPct/100) = loan + deposit
+  // totalPrice = (loan + deposit) / (1 - balloonPct/100)
+  
+  const price = (loan + dep) / (1 - balloonPct / 100);
+  const balloonAmt = price * (balloonPct / 100);
+
+  document.getElementById('big').textContent = fmt(price);
+  document.getElementById('rep').textContent = fmt(repay);
+  document.getElementById('r-rep').textContent = fmt(repay);
+  document.getElementById('r-loan').textContent = fmt(loan);
+  document.getElementById('r-balloon').textContent = fmt(balloonAmt);
+  document.getElementById('r-balloon-row').style.display = balloonAmt > 0 ? 'flex' : 'none';
+  document.getElementById('r-dep').textContent = '+' + fmt(dep);
+  document.getElementById('r-price').textContent = fmt(price);
+
+  baseInputs = { inc, pct, dep, rate, term, balloonPct, price, loan };
+  document.getElementById('whatif-section').style.display = 'block';
+  resetWhatIf();
+  renderMoneyStory(repay, price);
+  document.getElementById('money-story').style.display = 'block';
+  
+  document.getElementById('res').classList.add('show');
+  document.getElementById('res').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+document.addEventListener('keydown', e => { if (e.key === 'Enter') calc(); });
+
+function renderMoneyStory(repay, carPrice) {
+  // FIXED: Scale running costs with car price
+  // Insurance: ~0.4% of car value per month
+  // Fuel: Assume average commute ~R2,500 (doesn't scale much with price)
+  // Maintenance: ~0.2% of car value per month
+  const insurance = carPrice * 0.004;
+  const fuel = 2500;
+  const maintenance = carPrice * 0.002;
+  const extras = insurance + fuel + maintenance;
+  
+  document.getElementById('ms-truecost').textContent = fmt(repay + extras);
+
+  const r = 0.10 / 12, n = 120;
+  const invested = repay * ((Math.pow(1 + r, n) - 1) / r);
+  document.getElementById('ms-invested').textContent = fmtK(invested);
+}
+
+function renderWhatIf() {
+  if (!baseInputs) return;
   const incPct = parseFloat(document.getElementById('wi-inc').value);
   const ratePP = parseFloat(document.getElementById('wi-rate').value);
-  document.getElementById('wi-inc-out').textContent = (incPct>=0?'+':'')+incPct+'%';
-  document.getElementById('wi-rate-out').textContent = (ratePP>=0?'+':'')+ratePP+'pp';
+  
+  document.getElementById('wi-inc-out').textContent = (incPct >= 0 ? '+' : '') + incPct + '%';
+  document.getElementById('wi-rate-out').textContent = (ratePP >= 0 ? '+' : '') + ratePP + 'pp';
 
-  const newInc = baseInputs.inc * (1+incPct/100);
+  const newInc = baseInputs.inc * (1 + incPct / 100);
   const newRate = Math.max(1, baseInputs.rate + ratePP);
-  const newRepay = newInc*(baseInputs.pct/100);
-  const r = newRate/100/12, n = baseInputs.term*12;
-  const newLoan = r===0 ? newRepay*n : newRepay*(Math.pow(1+r,n)-1)/(r*Math.pow(1+r,n));
-  const newBalloon = newLoan*(baseInputs.balloonPct/100);
-  const newPrice = newLoan + newBalloon + baseInputs.dep;
+  const newRepay = newInc * (baseInputs.pct / 100);
+  const r = newRate / 100 / 12;
+  const n = baseInputs.term * 12;
+  
+  const newLoan = r === 0 ? newRepay * n : newRepay * (Math.pow(1 + r, n) - 1) / (r * Math.pow(1 + r, n));
+  const newPrice = (newLoan + baseInputs.dep) / (1 - baseInputs.balloonPct / 100);
 
   document.getElementById('wi-newprice').textContent = fmt(newPrice);
   const delta = newPrice - baseInputs.price;
   const deltaEl = document.getElementById('wi-delta');
-  if(Math.abs(delta)<500){ deltaEl.textContent='No change'; deltaEl.className='whatif-delta-val'; }
-  else if(delta>0){ deltaEl.textContent='+'+fmt(delta); deltaEl.className='whatif-delta-val up'; }
-  else { deltaEl.textContent='-'+fmt(Math.abs(delta)); deltaEl.className='whatif-delta-val down'; }
+  
+  if (Math.abs(delta) < 500) {
+    deltaEl.textContent = 'No change';
+    deltaEl.className = 'whatif-delta-val';
+  } else if (delta > 0) {
+    deltaEl.textContent = '+' + fmt(delta);
+    deltaEl.className = 'whatif-delta-val up';
+  } else {
+    deltaEl.textContent = '-' + fmt(Math.abs(delta));
+    deltaEl.className = 'whatif-delta-val down';
+  }
 }
-function resetWhatIf(){
-  document.getElementById('wi-inc').value=0;
-  document.getElementById('wi-rate').value=0;
+
+function resetWhatIf() {
+  document.getElementById('wi-inc').value = 0;
+  document.getElementById('wi-rate').value = 0;
   renderWhatIf();
 }
-</script></body></html>
+
+// Auto-load example for first-time visitors
+window.addEventListener('load', function() {
+  if (!sessionStorage.getItem('carCalcVisited')) {
+    setTimeout(loadExample, 500);
+    sessionStorage.setItem('carCalcVisited', 'true');
+  }
+});
+</script>
+
+</body>
+</html>
