@@ -256,4 +256,595 @@ footer{background:var(--ink);color:var(--paper);margin-top:2rem}
 <div class="sa-stripe"></div>
 
 <div class="top-bar">
-  <div class
+  <div class="tb-l">🇿🇦 South Africa · SARS 2027 Tax Year</div>
+  <div class="tb-r">Primary rebate <span>R17,820</span> · Tax-free <span>R99,000</span></div>
+</div>
+
+<nav>
+  <a href="/" class="logo"><div class="logo-text">CalcMy<span>Pay</span></div></a>
+  <div class="nav-links">
+    <a href="/salary-income" class="active">Salary</a>
+    <a href="/affordability">Affordability</a>
+    <a href="/wealth-building">Wealth</a>
+    <a href="/career-intelligence">Careers</a>
+    <a href="/money-tools">Tools</a>
+    <a href="/financial-coach">Coach</a>
+    <a href="/blog-salary-guide">Guides</a>
+    <a href="/salary-calculator" class="nav-cta">Calculate →</a>
+  </div>
+</nav>
+
+<div class="ph">
+  <div class="ph-inner">
+    <div class="bc">
+      <a href="/">Home</a><span>/</span>
+      <a href="/salary-income">Salary & Income</a><span>/</span>
+      PAYE Calculator
+    </div>
+    <div class="ph-cat">Salary & Income</div>
+    <h1>PAYE Calculator</h1>
+    <p>See exactly how much income tax (PAYE) you pay to SARS each month. Uses official SARS 2027 tax year tables (1 March 2026 – 28 February 2027).</p>
+  </div>
+</div>
+
+<div class="layout">
+  <div>
+    <div class="card">
+      <div class="card-head">
+        <div class="card-cat">PAYE</div>
+        <div>
+          <h2>Calculate your PAYE</h2>
+          <p>Enter your salary — see your monthly income tax</p>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="form-grid">
+          <div class="fg">
+            <label>Gross Salary</label>
+            <div class="iw has-pre"><span class="ipre">R</span><input type="number" id="sal" placeholder="30000" min="0"></div>
+          </div>
+          <div class="fg">
+            <label>Period</label>
+            <div class="sw">
+              <select id="per">
+                <option value="12">Per month</option>
+                <option value="1">Per year</option>
+              </select>
+            </div>
+          </div>
+          <div class="fg">
+            <label>Age</label>
+            <div class="sw">
+              <select id="age">
+                <option value="p">Under 65</option>
+                <option value="s">65 – 74</option>
+                <option value="t">75+</option>
+              </select>
+            </div>
+          </div>
+          <div class="fg">
+            <label>Medical Aid Members</label>
+            <div class="sw">
+              <select id="med">
+                <option value="0">None</option>
+                <option value="1">Just me</option>
+                <option value="2">Me + 1</option>
+                <option value="3">Me + 2</option>
+                <option value="4">Me + 3</option>
+                <option value="5">Me + 4+</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-full btn-accent" onclick="calc()">Calculate PAYE →</button>
+        <button type="button" class="btn btn-full btn-example" onclick="loadExample()"><span class="example-badge">Example</span>Try R30,000/month salary</button>
+
+        <div class="results" id="res">
+          <div class="th-panel">
+            <div>
+              <div class="th-label">Monthly PAYE (income tax)</div>
+              <div class="th-amount" id="big">R0</div>
+              <div class="th-period" id="period">per month to SARS</div>
+            </div>
+            <div class="eff-block">
+              <span class="eff-val" id="eff">0%</span>
+              <span class="eff-lbl">Effective rate</span>
+            </div>
+          </div>
+          <div class="bb">
+            <div class="bb-title">How it is calculated</div>
+            <div class="br"><span class="lbl">Annual taxable income</span><span class="val neu" id="r-ann">R0</span></div>
+            <div class="br"><span class="lbl">Tax per SARS tables</span><span class="val neg" id="r-raw">-R0</span></div>
+            <div class="br"><span class="lbl">Less: Primary rebate</span><span class="val pos" id="r-reb">+R0</span></div>
+            <div class="br" id="r-med-row" style="display:none"><span class="lbl">Less: Medical aid credit</span><span class="val pos" id="r-med">+R0</span></div>
+            <div class="br"><span class="lbl">Annual PAYE</span><span class="val neg" id="r-annpaye">-R0</span></div>
+          </div>
+          <div class="total-bar">
+            <span class="lbl">✓ Monthly PAYE</span>
+            <span class="val" id="r-month">R0</span>
+          </div>
+          <div class="note warn">
+            <span>⚠</span>
+            <span>Estimate based on <a href="https://www.sars.gov.za/tax-rates/income-tax/rates-of-tax-for-individuals/" target="_blank" rel="noopener">SARS 2027 tables</a>. PAYE excludes UIF — see the <a href="/salary-calculator">full salary calculator</a> for take-home.</span>
+          </div>
+
+          <div class="whatif-section" id="whatif-section" style="display:none">
+            <div class="whatif-kicker">What if?</div>
+            <div class="whatif-title">Test a scenario</div>
+            <p class="whatif-sub">Drag the sliders to see how changes affect your monthly PAYE, instantly.</p>
+            <div class="whatif-grid">
+              <div class="whatif-control">
+                <div class="whatif-control-head"><label>Salary change</label><output id="wi-sal-out">+0%</output></div>
+                <input type="range" id="wi-sal" min="-20" max="30" value="0" step="1" oninput="renderWhatIf()">
+              </div>
+              <div class="whatif-control">
+                <div class="whatif-control-head"><label>Medical aid members</label><output id="wi-med-out">Same</output></div>
+                <input type="range" id="wi-med" min="0" max="5" value="0" step="1" oninput="renderWhatIf()">
+              </div>
+            </div>
+            <div class="whatif-result">
+              <div>
+                <div class="whatif-result-label">New monthly PAYE</div>
+                <div class="whatif-result-val" id="wi-newpaye">R0</div>
+              </div>
+              <div class="whatif-delta">
+                <div class="whatif-delta-val" id="wi-delta">—</div>
+                <div class="whatif-delta-lbl">vs your current PAYE</div>
+              </div>
+            </div>
+            <div class="whatif-reset"><button onclick="resetWhatIf()">Reset scenario</button></div>
+            <div class="note warn" style="margin-top:1rem">
+              <span>⚠</span>
+              <span>This shows the <strong>tax effect only</strong>. A medical aid dependent reduces tax via the credit, but you'd also pay a higher monthly premium.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar">
+    <div class="sc">
+      <div class="sc-head">SARS 2027 Quick Reference</div>
+      <div class="sc-body">
+        <div class="qr"><span>Primary rebate</span><strong>R17,820</strong></div>
+        <div class="qr"><span>Secondary (65+)</span><strong>+R9,765</strong></div>
+        <div class="qr"><span>Tertiary (75+)</span><strong>+R3,249</strong></div>
+        <div class="qr"><span>Tax-free threshold</span><strong>R99,000/yr</strong></div>
+        <div class="qr"><span>Medical credit</span><strong>R376/member</strong></div>
+      </div>
+    </div>
+
+    <div class="sc">
+      <div class="sc-head">Related Calculators</div>
+      <div class="sc-body">
+        <div class="tip"><span>→</span><a href="/salary-calculator">Salary After Tax Calculator</a></div>
+        <div class="tip"><span>→</span><a href="/gross-to-net">Gross to Net Salary</a></div>
+        <div class="tip"><span>→</span><a href="/bonus-calculator">Bonus & 13th Cheque</a></div>
+        <div class="tip"><span>→</span><a href="/hourly-wage">Hourly Wage Calculator</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="padding-top:0">
+  <div class="section-header">
+    <div class="section-title">Related <span>/</span> Salary Tools</div>
+  </div>
+  <div class="tools-grid">
+    <a href="/salary-calculator" class="tool-card featured">
+      <div class="tc-cat">Salary & Income</div>
+      <h3>Salary After Tax Calculator</h3>
+      <span class="tc-link">Open →</span>
+    </a>
+    <a href="/gross-to-net" class="tool-card featured">
+      <div class="tc-cat">Salary & Income</div>
+      <h3>Gross to Net Salary</h3>
+      <span class="tc-link">Open →</span>
+    </a>
+    <a href="/bonus-calculator" class="tool-card featured">
+      <div class="tc-cat">Salary & Income</div>
+      <h3>Bonus & 13th Cheque</h3>
+      <span class="tc-link">Open →</span>
+    </a>
+    <a href="/overtime-calculator" class="tool-card featured">
+      <div class="tc-cat">Salary & Income</div>
+      <h3>Overtime Pay Calculator</h3>
+      <span class="tc-link">Open →</span>
+    </a>
+    <a href="/commission-calculator" class="tool-card featured">
+      <div class="tc-cat">Salary & Income</div>
+      <h3>Commission Calculator</h3>
+      <span class="tc-link">Open →</span>
+    </a>
+    <a href="/hourly-wage" class="tool-card featured">
+      <div class="tc-cat">Salary & Income</div>
+      <h3>Hourly Wage Calculator</h3>
+      <span class="tc-link">Open →</span>
+    </a>
+  </div>
+</div>
+
+<div class="section">
+  <div style="background:var(--white);border:1px solid var(--line);border-top:3px solid var(--forest)">
+    <div class="article-body">
+
+      <h2>Understanding PAYE in South Africa</h2>
+      <p>PAYE (Pay As You Earn) is the mechanism SARS uses to collect income tax from salaried employees on a monthly basis. Rather than requiring you to pay a large lump sum at the end of the tax year, your employer calculates and deducts your income tax each month, then pays it directly to SARS on your behalf. This system ensures that most salaried South Africans never face a surprise tax bill at year-end.</p>
+
+      <p>Understanding exactly how your PAYE is calculated helps you make better financial decisions, from evaluating job offers to planning for bonuses and salary increases. This comprehensive guide explains every component of the PAYE calculation using the official SARS 2027 tax year tables effective from 1 March 2026 to 28 February 2027.</p>
+
+      <h2>How PAYE is calculated step-by-step</h2>
+      <p>Your monthly PAYE deduction follows a specific sequence defined by SARS. Here's the exact calculation your payroll department performs each month:</p>
+
+      <h3>Step 1: Determine your annual taxable income</h3>
+      <p>Your monthly salary is multiplied by 12 to get your annual gross income. If you entered an annual figure, that number is used directly. This becomes your starting point for the tax calculation.</p>
+
+      <h3>Step 2: Apply SARS tax brackets</h3>
+      <p>Your annual income is then applied against South Africa's progressive tax brackets. For the 2027 tax year, the brackets are:</p>
+      <ul>
+        <li>First R245,100: 18%</li>
+        <li>R245,101 – R383,100: 26%</li>
+        <li>R383,101 – R530,200: 31%</li>
+        <li>R530,201 – R695,800: 36%</li>
+        <li>R695,801 – R887,000: 39%</li>
+        <li>R887,001 – R1,878,600: 41%</li>
+        <li>Above R1,878,600: 45%</li>
+      </ul>
+
+      <div class="callout">
+        <strong>Important:</strong> South Africa uses a progressive tax system. Only the portion of income within each bracket is taxed at that rate. If you earn R400,000, the first R245,100 is taxed at 18%, the next R138,000 at 26%, and only the R16,900 above R383,100 is taxed at 31%.
+      </div>
+
+      <h3>Step 3: Subtract rebates</h3>
+      <p>After calculating the raw tax amount from the brackets, SARS subtracts rebates directly from your tax bill. These are fixed rand amounts, not percentages:</p>
+      <ul>
+        <li><strong>Primary rebate:</strong> R17,820 for all taxpayers under 65</li>
+        <li><strong>Secondary rebate:</strong> Additional R9,765 for ages 65-74</li>
+        <li><strong>Tertiary rebate:</strong> Additional R3,249 for ages 75+</li>
+      </ul>
+
+      <p>The primary rebate of R17,820 creates the tax-free threshold. Since 18% of R99,000 equals R17,820, anyone earning under R99,000 annually pays zero income tax.</p>
+
+      <h3>Step 4: Subtract medical aid credits</h3>
+      <p>If you're on a registered medical aid scheme, SARS provides tax credits that reduce your PAYE directly:</p>
+      <ul>
+        <li>R376 per month for the main member (taxpayer)</li>
+        <li>R376 per month for the first dependent</li>
+        <li>R254 per month for each additional dependent</li>
+      </ul>
+
+      <p>For a family of four on medical aid, this equals R1,360 per month (R16,320 per year) in direct tax savings.</p>
+
+      <h3>Step 5: Divide by 12 for monthly PAYE</h3>
+      <p>The final annual tax amount is divided by 12 to determine your monthly PAYE deduction. This is the amount that appears on your payslip each month.</p>
+
+      <div class="worked-example">
+        <div class="worked-example-head">
+          <span class="worked-example-tag">Worked Example</span>
+          <h3>Calculating PAYE on R30,000 per month</h3>
+        </div>
+        <p>Let's walk through a realistic scenario: monthly salary of R30,000 (R360,000 annually), under 65, with medical aid for yourself and one dependent.</p>
+        
+        <p><strong>Tax calculation:</strong></p>
+        <ul>
+          <li>Annual salary: R360,000</li>
+          <li>Tax on R360,000 = R44,118 + 26% of (R360,000 - R245,100) = R44,118 + R29,874 = R73,992</li>
+          <li>Less primary rebate: R17,820</li>
+          <li>Less medical credit (2 members × R376 × 12): R9,024</li>
+          <li><strong>Annual PAYE: R47,148</strong></li>
+          <li><strong>Monthly PAYE: R3,929</strong></li>
+        </ul>
+
+        <p style="margin-top:1rem">Your effective tax rate is 13.1% of your gross salary. You pay R3,929 per month in income tax to SARS.</p>
+      </div>
+
+      <h2>Common PAYE amounts by salary level</h2>
+      <p>The table below shows monthly PAYE calculations for common salary levels in South Africa. These figures assume a single taxpayer under 65 with no medical aid contributions.</p>
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Monthly Salary</th>
+            <th>Annual Salary</th>
+            <th>Monthly PAYE</th>
+            <th>Effective Rate</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>R8,250</td><td>R99,000</td><td class="td-green">R0</td><td>0%</td></tr>
+          <tr><td>R10,000</td><td>R120,000</td><td>R315</td><td>3.2%</td></tr>
+          <tr><td>R15,000</td><td>R180,000</td><td>R1,215</td><td>8.1%</td></tr>
+          <tr><td>R20,000</td><td>R240,000</td><td>R2,115</td><td>10.6%</td></tr>
+          <tr><td>R25,000</td><td>R300,000</td><td>R3,381</td><td>13.5%</td></tr>
+          <tr><td>R30,000</td><td>R360,000</td><td>R4,330</td><td>14.4%</td></tr>
+          <tr><td>R40,000</td><td>R480,000</td><td>R6,003</td><td>15.0%</td></tr>
+          <tr><td>R50,000</td><td>R600,000</td><td>R8,058</td><td>16.1%</td></tr>
+          <tr><td>R65,000</td><td>R780,000</td><td>R11,627</td><td>17.9%</td></tr>
+          <tr><td>R85,000</td><td>R1,020,000</td><td>R16,456</td><td>19.4%</td></tr>
+          <tr><td>R100,000</td><td>R1,200,000</td><td>R20,018</td><td>20.0%</td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:.84rem;color:var(--mist);margin-top:.5rem">Note: These figures assume no medical aid contributions. Adding medical aid credits would reduce these PAYE amounts.</p>
+
+      <h2>Why your PAYE is not simply "your bracket rate times salary"</h2>
+      <p>One of the most common misconceptions about South African tax is that if you fall into, say, the 26% bracket, all your income is taxed at 26%. This is completely wrong and leads to significant misunderstanding about how raises and bonuses affect your take-home pay.</p>
+
+      <p>In reality, South Africa uses a <strong>progressive tax system</strong> where only the portion of income within each bracket is taxed at that rate. If you earn R400,000 per year:</p>
+      <ul>
+        <li>The first R245,100 is taxed at 18% = R44,118</li>
+        <li>The next R138,000 (R245,101 to R383,100) is taxed at 26% = R35,880</li>
+        <li>The final R16,900 (R383,101 to R400,000) is taxed at 31% = R5,239</li>
+        <li><strong>Total tax before rebates: R85,237</strong></li>
+      </ul>
+
+      <p>This is why moving into a higher tax bracket does not reduce your overall take-home pay the way people sometimes fear. You only pay the higher rate on the income above the threshold, not on your entire salary.</p>
+
+      <h2>The critical role of rebates in reducing your tax bill</h2>
+      <p>After the bracket calculation produces a theoretical tax amount, SARS rebates are subtracted directly — not as a percentage reduction, but as a fixed rand amount that everyone in that age category receives. This is why very low earners often pay no tax at all: their theoretical tax liability falls below the rebate amount entirely.</p>
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Age Category</th>
+            <th>2027 Tax Year Rebate</th>
+            <th>Combined Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Under 65</td><td>R17,820</td><td>R17,820</td></tr>
+          <tr><td>65 to 74</td><td>R9,765 additional</td><td>R27,585</td></tr>
+          <tr><td>75 and over</td><td>R3,249 additional</td><td>R30,834</td></tr>
+        </tbody>
+      </table>
+
+      <p>The primary rebate of R17,820 is what creates the tax-free threshold of R99,000. Since 18% of R99,000 equals R17,820, the rebate exactly cancels out the tax on the first R99,000 of income.</p>
+
+      <h2>Why medical aid changes your PAYE</h2>
+      <p>Medical aid contributions generate a monthly tax credit that reduces your PAYE directly. This is separate from any pre-tax deduction structure your employer might use. The medical aid tax credit is one of the more overlooked ways medical aid membership affects your actual take-home pay beyond the visible premium deduction.</p>
+
+      <p>For the 2027 tax year, the credits are:</p>
+      <ul>
+        <li><strong>Main member:</strong> R376 per month (R4,512 per year)</li>
+        <li><strong>First dependent:</strong> R376 per month (R4,512 per year)</li>
+        <li><strong>Each additional dependent:</strong> R254 per month (R3,048 per year)</li>
+      </ul>
+
+      <p>A family of four on medical aid receives R1,360 per month (R16,320 per year) in direct tax savings. This credit is applied after the rebate calculation and reduces your final PAYE amount.</p>
+
+      <h2>Strategies to legally reduce your PAYE</h2>
+      <p>While you cannot avoid paying tax entirely, there are several legal strategies to reduce your PAYE burden:</p>
+
+      <div class="strategy-grid">
+        <div class="strategy-card">
+          <div class="strategy-num">1</div>
+          <h3>Contribute to a Retirement Annuity</h3>
+          <p>Contributions up to 27.5% of your income (capped at R430,000/year) reduce your taxable income before PAYE is calculated. This is the most powerful tax reduction strategy available.</p>
+          <div class="strategy-saving">💰 Saves your marginal tax rate on every rand contributed</div>
+        </div>
+        <div class="strategy-card">
+          <div class="strategy-num">2</div>
+          <h3>Join or Upgrade Medical Aid</h3>
+          <p>Each medical aid member qualifies for R376/month tax credit. For a family of four, this saves R1,360/month directly off your PAYE bill.</p>
+          <div class="strategy-saving">💰 R376 per member per month direct reduction</div>
+        </div>
+        <div class="strategy-card">
+          <div class="strategy-num">3</div>
+          <h3>Claim Allowable Deductions</h3>
+          <p>Home office expenses, professional body fees, work-related travel, and donations to registered PBOs all reduce your taxable income when you file your tax return.</p>
+          <div class="strategy-saving">💰 Varies by deduction, claimed on annual return</div>
+        </div>
+        <div class="strategy-card">
+          <div class="strategy-num">4</div>
+          <h3>Time Bonus Payments Strategically</h3>
+          <p>If close to a bracket threshold, ask your employer to defer your bonus to the next tax year (after 1 March) to stay in a lower bracket.</p>
+          <div class="strategy-saving">💰 Up to 4% savings per bracket level avoided</div>
+        </div>
+      </div>
+
+      <h2>Understanding your effective tax rate</h2>
+      <p>Your effective tax rate is the percentage of your gross salary that goes to income tax. It's calculated as: (Annual PAYE ÷ Annual Gross Salary) × 100.</p>
+
+      <p>Due to rebates and the progressive nature of the tax system, your effective rate is always lower than your marginal rate (the rate on your top rand of income). For example, someone earning R480,000 per year has a marginal rate of 31% but an effective rate of only 15.0%.</p>
+
+      <p>This distinction is crucial when evaluating job offers or salary increases. A R50,000 raise when you're in the 31% bracket doesn't mean you lose 31% of the raise to tax — you only lose 31% of that specific R50,000, while your existing salary continues to be taxed at the lower rates that applied to it.</p>
+
+      <h2>Why your payslip PAYE might differ from this calculator</h2>
+      <p>This calculator provides an accurate estimate based on standard SARS rules, but your actual payslip PAYE might differ slightly for several reasons:</p>
+
+      <ul>
+        <li><strong>Retirement annuity contributions:</strong> If you contribute to an RA or company pension fund, this reduces your taxable income and therefore your PAYE.</li>
+        <li><strong>Travel allowance:</strong> Only 80% of a travel allowance is taxable, which affects the calculation.</li>
+        <li><strong>Employer medical aid contributions:</strong> If your employer pays part of your medical aid, this affects the credit calculation.</li>
+        <li><strong>Timing differences:</strong> If you started work mid-month or had unpaid leave, your payroll system annualizes differently.</li>
+        <li><strong>Tax directives:</strong> For large bonuses or lump sums, SARS may issue a specific tax directive with different rates.</li>
+      </ul>
+
+      <p>For your complete take-home pay including UIF and all deductions, use our <a href="/salary-calculator">full salary calculator</a>.</p>
+
+      <h2>Frequently asked questions</h2>
+
+      <h3>How is PAYE calculated in South Africa?</h3>
+      <p>PAYE is calculated by applying the SARS tax brackets to your annual income, subtracting the primary rebate of R17,820 and any medical aid credits, then dividing by 12 for the monthly amount. Your employer performs this calculation automatically each month.</p>
+
+      <h3>How much is PAYE on R30,000 per month?</h3>
+      <p>On R30,000 per month (R360,000 per year), PAYE is approximately R4,330 per month after the primary rebate, based on the SARS 2027 tax year. This assumes no medical aid credits. With medical aid for yourself and one dependent, it would be approximately R3,929 per month.</p>
+
+      <h3>What is the difference between PAYE and income tax?</h3>
+      <p>There is no difference — PAYE (Pay As You Earn) is simply the mechanism SARS uses to collect income tax monthly from salaried employees. It's the same tax, just collected differently than for freelancers or business owners who pay provisional tax.</p>
+
+      <h3>Does PAYE include UIF?</h3>
+      <p>No. PAYE is income tax only. UIF (Unemployment Insurance Fund) is a separate 1% deduction capped at R177.12 per month. Your payslip shows both as separate line items.</p>
+
+      <h3>Can I reduce my PAYE legally?</h3>
+      <p>Yes. Contributing to a retirement annuity (up to 27.5% of income, max R430,000/year) reduces your taxable income. Joining a medical aid gives you R376/month tax credit per member. Both strategies legally reduce your PAYE.</p>
+
+      <h3>Why is my PAYE higher than I expected?</h3>
+      <p>Common reasons include: you're in a higher tax bracket than you realized, you don't have medical aid credits reducing your tax, you received a bonus that was taxed at your marginal rate, or you have additional income sources that increased your total taxable income.</p>
+
+      <h3>What happens if my employer deducts too much PAYE?</h3>
+      <p>If your employer over-deducts PAYE, you'll receive a refund when you file your annual tax return with SARS. The refund is typically paid within 21-45 business days of submitting your return.</p>
+
+      <h3>How do age rebates work?</h3>
+      <p>South Africa provides additional tax rebates for older taxpayers: R9,765 extra for ages 65-74, and R3,249 extra for ages 75+. These are added to the standard R17,820 primary rebate and reduce your tax bill directly.</p>
+
+      <div class="disclaim">
+        <strong>Disclaimer:</strong> This calculator provides estimates based on SARS 2027 tax year rates (1 March 2026 – 28 February 2027). Actual tax liability may vary based on individual circumstances, specific deductions, and credits. For personalised tax advice, consult a registered tax practitioner. CalcMyPay is not affiliated with SARS.
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">CalcMy<span>Pay</span></div>
+    <div class="footer-links">
+      <a href="/salary-income">Salary</a>
+      <a href="/affordability">Affordability</a>
+      <a href="/wealth-building">Wealth</a>
+      <a href="/money-tools">Tools</a>
+      <a href="/financial-coach">Coach</a>
+      <a href="/blog-salary-guide">Guides</a>
+      <a href="/about">About</a>
+      <a href="/privacy-policy">Privacy</a>
+      <a href="/contact">Contact</a>
+    </div>
+    <div class="footer-copy">
+      © 2026 CalcMyPay · Understand your salary. Plan your money. Build your future. · For informational purposes only · Not affiliated with SARS · SARS 2027 tax year (1 March 2026 – 28 February 2027)
+    </div>
+  </div>
+</footer>
+
+<script>
+const fmt = n => 'R\u00a0' + Math.round(Math.abs(n)).toLocaleString('en-ZA');
+
+const brackets = [
+  [245100, .18, 0],
+  [383100, .26, 44118],
+  [530200, .31, 79998],
+  [695800, .36, 125599],
+  [887000, .39, 185215],
+  [1878600, .41, 259783],
+  [Infinity, .45, 666339]
+];
+
+function sarsTax(t) {
+  if (t <= 0) return 0;
+  let p = 0;
+  for (let [l, r, b] of brackets) {
+    if (t <= l) return b + (t - p) * r;
+    p = l;
+  }
+  return 0;
+}
+
+const REBATE = 17820;
+
+function medC(m) {
+  if (m === 0) return 0;
+  if (m === 1) return 376 * 12;
+  if (m === 2) return 752 * 12;
+  return (752 + (m - 2) * 254) * 12;
+}
+
+let baseInputs = null;
+
+function loadExample() {
+  document.getElementById('sal').value = 30000;
+  document.getElementById('per').value = '12';
+  document.getElementById('age').value = 'p';
+  document.getElementById('med').value = '2';
+  calc();
+}
+
+function calc() {
+  const v = parseFloat(document.getElementById('sal').value) || 0;
+  const per = parseInt(document.getElementById('per').value);
+  const age = document.getElementById('age').value;
+  const med = parseInt(document.getElementById('med').value);
+
+  if (v <= 0) { alert('Please enter your salary.'); return; }
+
+  const annual = v * per;
+  const raw = sarsTax(annual);
+  
+  let reb = REBATE;
+  if (age === 's' || age === 't') reb += 9765;
+  if (age === 't') reb += 3249;
+  
+  const mc = medC(med);
+  const paye = Math.max(0, raw - reb - mc);
+  const eff = annual > 0 ? (paye / annual * 100).toFixed(1) : 0;
+
+  document.getElementById('big').textContent = fmt(paye / 12);
+  document.getElementById('eff').textContent = eff + '%';
+  document.getElementById('r-ann').textContent = fmt(annual);
+  document.getElementById('r-raw').textContent = '-' + fmt(raw);
+  document.getElementById('r-reb').textContent = '+' + fmt(reb);
+  document.getElementById('r-med').textContent = '+' + fmt(mc);
+  document.getElementById('r-med-row').style.display = mc > 0 ? 'flex' : 'none';
+  document.getElementById('r-annpaye').textContent = '-' + fmt(paye);
+  document.getElementById('r-month').textContent = fmt(paye / 12);
+
+  baseInputs = { annual, med, age, payeMonthly: paye / 12 };
+  document.getElementById('whatif-section').style.display = 'block';
+  resetWhatIf();
+  document.getElementById('res').classList.add('show');
+  document.getElementById('res').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+document.addEventListener('keydown', e => { if (e.key === 'Enter') calc(); });
+
+function renderWhatIf() {
+  if (!baseInputs) return;
+  const salPct = parseFloat(document.getElementById('wi-sal').value);
+  const medDelta = parseInt(document.getElementById('wi-med').value);
+
+  document.getElementById('wi-sal-out').textContent = (salPct >= 0 ? '+' : '') + salPct + '%';
+  const medLabels = ['Same', 'None', 'Myself only', 'Me + 1', 'Me + 2', 'Me + 3', 'Me + 4+'];
+  document.getElementById('wi-med-out').textContent = medDelta === 0 ? 'Same' : medLabels[medDelta + 1];
+
+  const newAnnual = baseInputs.annual * (1 + salPct / 100);
+  const newMed = medDelta === 0 ? baseInputs.med : medDelta;
+
+  const raw = sarsTax(newAnnual);
+  let reb = REBATE;
+  if (baseInputs.age === 's' || baseInputs.age === 't') reb += 9765;
+  if (baseInputs.age === 't') reb += 3249;
+  const mc = medC(newMed);
+  const newPaye = Math.max(0, raw - reb - mc);
+
+  document.getElementById('wi-newpaye').textContent = fmt(newPaye / 12);
+  const delta = (newPaye / 12) - baseInputs.payeMonthly;
+  const deltaEl = document.getElementById('wi-delta');
+
+  if (Math.abs(delta) < 1) {
+    deltaEl.textContent = 'No change';
+    deltaEl.className = 'whatif-delta-val';
+  } else if (delta < 0) {
+    deltaEl.textContent = '-' + fmt(Math.abs(delta)) + ' less tax';
+    deltaEl.className = 'whatif-delta-val up';
+  } else {
+    deltaEl.textContent = '+' + fmt(delta) + ' more tax';
+    deltaEl.className = 'whatif-delta-val down';
+  }
+}
+
+function resetWhatIf() {
+  document.getElementById('wi-sal').value = 0;
+  document.getElementById('wi-med').value = 0;
+  renderWhatIf();
+}
+
+// Auto-load example for first-time visitors
+window.addEventListener('load', function() {
+  if (!sessionStorage.getItem('payeCalcVisited')) {
+    setTimeout(loadExample, 500);
+    sessionStorage.setItem('payeCalcVisited', 'true');
+  }
+});
+</script>
+
+</body>
+</html>
