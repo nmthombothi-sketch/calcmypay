@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="color-scheme" content="light"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Commission Calculator South Africa 2026 | CalcMyPay</title>
-<meta name="description" content="Calculate your commission earnings in South Africa. Work out total pay from base salary plus commission on sales.">
+<meta name="description" content="Calculate your commission earnings in South Africa. Work out total pay from base salary plus commission on sales, with tiered rates and thresholds.">
 <meta name="google-adsense-account" content="ca-pub-6108324382808705">
 <link rel="canonical" href="https://calcmypay.co.za/commission-calculator">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -12,15 +13,87 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/icon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/icon-16.png">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How is commission taxed in South Africa?","acceptedAnswer":{"@type":"Answer","text":"Commission is added to your salary and taxed as normal income at your marginal rate. Commission earners may qualify to deduct certain business expenses."}},{"@type":"Question","name":"How do I calculate commission?","acceptedAnswer":{"@type":"Answer","text":"Multiply your total sales by your commission rate (%), then add any base salary to get your total earnings."}}]}</script>
-<style>/* CalcMyPay — Editorial "Ink & Marigold" =================================== */
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How is commission taxed in South Africa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Commission is added to your salary and taxed as normal income at your marginal rate. There is no special commission tax rate. However, if commission makes up more than 50% of your total remuneration, you may qualify to deduct certain business expenses under Section 23(m) of the Income Tax Act."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I calculate commission?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Multiply your commissionable sales (total sales minus any threshold) by your commission rate percentage. Then add any base salary to get your total gross earnings. For example, R200,000 sales at 5% commission = R10,000 commission."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What expenses can commission earners deduct?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If commission exceeds 50% of your total income, you can deduct expenses directly related to earning that commission: vehicle costs (with logbook), home office expenses, cell phone, travel, entertainment of clients, and professional subscriptions. Keep detailed records and receipts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a commission threshold?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A commission threshold is a minimum sales target you must exceed before earning any commission. For example, with a R50,000 threshold and 5% commission rate, you only earn commission on sales above R50,000. If you sell R80,000, you earn commission on R30,000 only."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does tiered commission work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tiered commission increases your rate as you hit higher sales targets. For example: 3% on the first R100,000, 5% on R100,001-R200,000, and 7% above R200,000. This rewards top performers with progressively higher rates."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is commission included in UIF calculations?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. UIF contributions (1% employee + 1% employer) are calculated on your total remuneration including commission, but capped at R177.12 per month (based on R17,712 monthly earnings ceiling). Most commission earners hit this cap quickly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How should I budget on commission income?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Budget based on your lowest realistic month, not your average. Build a 6-month emergency fund to smooth over lean months. Save excess from strong months rather than increasing lifestyle spending. This creates stability despite variable income."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between commission and bonus?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Commission is directly tied to sales performance and calculated as a percentage of revenue generated. Bonuses are typically discretionary payments based on company or individual performance, often paid annually. Both are taxed as ordinary income at your marginal rate."
+      }
+    }
+  ]
+}
+</script>
+
+<style>
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap');
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
   --paper:#FFFFFF;--ink:#16201C;--forest:#1B4332;--marigold:#F6B53D;
   --mist:#6B756F;--line:#DEDBD0;--sand:#FFFFFF;--berry:#B23A2E;
   --disp:'Fraunces',Georgia,serif;--body:'Inter',system-ui,sans-serif;
-  /* legacy var aliases so inline styles still resolve */
   --black:#16201C;--navy:#1B4332;--navy-mid:#1B4332;--accent:#1B4332;--accent-dark:#143026;
   --white:#fff;--off-white:#FFFFFF;--green:#1B4332;--green-light:#EDF3EE;--accent-light:#EDF3EE;
   --g100:#FFFFFF;--g200:#E4E2D8;--g400:#AEB3AC;--g600:#6B756F;--g800:#C9CcC4;--red:#B23A2E;
@@ -29,17 +102,11 @@
 html{color-scheme:light;scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{font-family:var(--body);background:var(--paper);color:var(--ink);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased}
 a{color:var(--forest);text-decoration:none}
-
-/* SA stripe — keep but slimmer & muted */
 .sa-stripe{height:3px;background:linear-gradient(90deg,#1B4332 0 16%,#F6B53D 16% 33%,#FCFBF7 33% 50%,#1B4332 50% 66%,#B23A2E 66% 83%,#16201C 83% 100%);opacity:.9}
-
-/* TOP BAR — editorial dateline */
 .top-bar{background:var(--paper);border-bottom:1px solid var(--line);padding:.5rem 2rem;display:flex;align-items:center;justify-content:space-between}
 .tb-l{font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--mist)}
 .tb-r{font-size:.7rem;color:var(--mist);letter-spacing:.04em}
 .tb-r span{color:var(--forest);font-weight:600}
-
-/* MASTHEAD NAV */
 nav{background:var(--paper);border-bottom:2px solid var(--ink);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:74px;position:sticky;top:0;z-index:100}
 .logo{display:flex;align-items:center;gap:.5rem;text-decoration:none}
 .logo-text{font-family:var(--disp);font-size:1.7rem;font-weight:900;letter-spacing:-.02em;color:var(--ink)}
@@ -55,14 +122,6 @@ nav{background:var(--paper);border-bottom:2px solid var(--ink);padding:0 2rem;di
 .nav-cta::after{display:none}
 .nav-cta:hover{background:var(--forest)!important;color:#fff!important}
 @media(max-width:860px){.nav-links{gap:0;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;max-width:60vw}.nav-links::-webkit-scrollbar{display:none}.nav-links a{white-space:nowrap;padding:.5rem .6rem;font-size:.76rem}.logo-text{font-size:1.4rem}nav{padding:0 1rem}}
-
-/* AD SLOTS — quiet */
-.ad-strip{background:var(--paper);border-bottom:1px solid var(--line);text-align:center;padding:.6rem}
-.ad-ph{display:inline-flex;align-items:center;justify-content:center;background:var(--sand);border:1px solid var(--line);color:var(--g400);font-size:.62rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
-.ad-ph.lb{width:728px;height:90px;max-width:100%}.ad-ph.rect{width:300px;height:250px}
-.ad-lbl{font-size:.6rem;color:var(--g400);text-transform:uppercase;letter-spacing:.12em;margin-bottom:.3rem}
-
-/* PAGE HEADER — kicker / headline / standfirst */
 .ph{background:var(--paper);border-bottom:1px solid var(--line);padding:4rem 2rem 3rem}
 .ph-inner{max-width:1080px;margin:0 auto}
 .bc{font-size:.72rem;color:var(--mist);font-weight:500;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1.4rem}
@@ -71,94 +130,27 @@ nav{background:var(--paper);border-bottom:2px solid var(--ink);padding:0 2rem;di
 .ph-cat::before{content:'';width:24px;height:2px;background:var(--marigold)}
 .ph h1{font-family:var(--disp);font-size:clamp(2.2rem,5vw,3.6rem);font-weight:600;color:var(--ink);line-height:1.05;letter-spacing:-.02em;margin-bottom:1rem;max-width:18ch}
 .ph p{font-family:var(--body);color:var(--mist);font-size:1.1rem;line-height:1.6;max-width:60ch}
-.ph-meta{display:flex;gap:1.4rem;font-size:.72rem;color:var(--mist);font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-top:1.2rem}
-
-/* SECTIONS */
-.section{max-width:1080px;margin:0 auto;padding:3.5rem 2rem}
-.section-header{margin-bottom:2rem;padding-bottom:1rem;border-bottom:1px solid var(--line);display:flex;align-items:baseline;justify-content:space-between;gap:1rem;flex-wrap:wrap}
-.section-title{font-family:var(--disp);font-size:1.6rem;font-weight:600;letter-spacing:-.01em;color:var(--ink)}
-.section-title span{color:var(--marigold);font-weight:400;margin:0 .3rem}
-.section-more{font-family:var(--body);font-size:.8rem;font-weight:600;color:var(--forest);letter-spacing:.02em}
-.section-more::after{content:' →'}
-
-/* TICKER — editorial stat strip */
-.ticker{background:var(--sand);border-bottom:1px solid var(--line);padding:.7rem 2rem;display:flex;gap:2.5rem;overflow-x:auto;scrollbar-width:none}
-.ticker::-webkit-scrollbar{display:none}
-.tick-item{display:flex;align-items:baseline;gap:.5rem;white-space:nowrap}
-.tick-label{font-size:.68rem;color:var(--mist);font-weight:600;text-transform:uppercase;letter-spacing:.1em}
-.tick-val{font-family:var(--disp);color:var(--forest);font-weight:600;font-size:1rem}
-
-/* TOOLS GRID + CARDS */
-.tools-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.25rem}
-.tool-card{background:var(--paper);border:1px solid var(--line);padding:1.6rem;transition:.2s;display:flex;flex-direction:column;gap:.7rem;text-decoration:none;color:var(--ink);position:relative}
-.tool-card:hover{border-color:var(--ink);transform:translateY(-2px)}
-.tool-card.featured{border-top:3px solid var(--forest)}
-.tc-cat{font-family:var(--body);font-size:.68rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--mist)}
-.tool-card h3{font-family:var(--disp);font-size:1.25rem;font-weight:600;letter-spacing:-.01em;line-height:1.15;color:var(--ink)}
-.tool-card p{font-family:var(--body);font-size:.88rem;color:var(--mist);line-height:1.55;flex:1}
-.tc-link{font-family:var(--body);font-size:.8rem;font-weight:600;color:var(--forest)}
-.tc-badge{font-family:var(--body);font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.25rem .6rem;background:var(--sand);color:var(--forest);border:1px solid var(--line)}
-
-/* BLOG GRID */
-.blog-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:1.25rem}
-.blog-card{background:var(--paper);border:1px solid var(--line);padding:1.6rem;text-decoration:none;color:var(--ink);transition:.2s}
-.blog-card:hover{border-color:var(--ink);transform:translateY(-2px)}
-.blog-card.lead{border-top:3px solid var(--marigold)}
-.bc-cat{font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);margin-bottom:.6rem;display:block}
-.blog-card h3{font-family:var(--disp);font-size:1.2rem;font-weight:600;line-height:1.2;letter-spacing:-.01em;margin-bottom:.5rem}
-.blog-card.lead h3{font-size:1.6rem}
-.blog-card p{font-size:.86rem;color:var(--mist);line-height:1.55;margin-bottom:.6rem}
-.bc-more{font-size:.78rem;font-weight:600;color:var(--forest)}
-.bc-meta{font-size:.7rem;color:var(--g400);font-weight:600;letter-spacing:.04em;text-transform:uppercase}
-
-/* DATA CELLS (homepage figures) */
-.data-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem;margin-bottom:1rem}
-.dc{background:var(--sand);border:1px solid var(--line);padding:1.5rem}
-.dc-label{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--mist);margin-bottom:.5rem}
-.dc-val{font-family:var(--disp);font-size:2rem;font-weight:600;color:var(--ink);letter-spacing:-.02em;line-height:1}
-.dc-val.acc{color:var(--forest)}
-.dc-sub{font-size:.74rem;color:var(--mist);margin-top:.3rem}
-
-/* WHY CARDS */
-.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
-.why-card{background:var(--paper);border:1px solid var(--line);padding:1.8rem;border-top:3px solid var(--forest)}
-.why-num{font-family:var(--disp);font-size:2.4rem;font-weight:900;color:var(--marigold);line-height:1;margin-bottom:1rem}
-.why-card h3{font-family:var(--disp);font-size:1.2rem;font-weight:600;margin-bottom:.5rem}
-.why-card p{font-size:.88rem;color:var(--mist);line-height:1.6}
-
-/* CTA BLOCK */
-.cta-block{background:var(--ink);color:var(--paper);padding:3rem 2rem;text-align:center}
-.cta-block h2,.cta-block h3{font-family:var(--disp);font-weight:600;color:var(--paper);letter-spacing:-.01em;margin-bottom:.6rem}
-.cta-block h2{font-size:clamp(1.5rem,3vw,2.2rem)}
-.cta-block h3{font-size:1.4rem}
-.cta-block p{color:rgba(255,255,255,.7);margin-bottom:1.5rem;font-size:1rem}
-
-/* BUTTONS */
-.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 1.6rem;font-family:var(--body);font-weight:600;font-size:.9rem;cursor:pointer;border:none;transition:.18s;text-decoration:none;letter-spacing:.01em}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.85rem 1.6rem;font-family:var(--body);font-weight:600;font-size:.9rem;cursor:pointer;border:none;transition:.18s;text-decoration:none;letter-spacing:.01em}
 .btn-accent{background:var(--marigold);color:var(--ink)}
 .btn-accent:hover{background:#eaa523}
 .btn-full{width:100%;justify-content:center}
 .btn:not(.btn-accent){background:var(--ink);color:var(--paper)}
 .btn:not(.btn-accent):hover{background:var(--forest);color:#fff}
-
-/* LAYOUT (tool + article) */
+.btn-example{background:var(--forest);color:var(--paper);margin-top:.8rem;border:2px solid var(--forest)}
+.btn-example:hover{background:var(--ink);border-color:var(--ink)}
+.example-badge{display:inline-block;background:var(--marigold);color:var(--ink);font-size:.62rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.2rem .5rem;margin-right:.5rem;border-radius:2px}
 .layout{max-width:1140px;margin:0 auto;padding:2.5rem 2rem;display:grid;grid-template-columns:1fr 320px;gap:2.5rem;align-items:start}
 @media(max-width:920px){.layout{grid-template-columns:1fr;gap:1.5rem}.sidebar{display:none}}
-
-/* CARD (tool input) */
 .card{background:var(--paper);border:1px solid var(--line)}
 .card-head{padding:1.4rem 1.6rem;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:.9rem}
 .card-cat{font-family:var(--body);font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);border-right:1px solid var(--line);padding-right:.9rem}
 .card-head h2{font-family:var(--disp);font-size:1.4rem;font-weight:600;letter-spacing:-.01em}
 .card-head p{font-size:.84rem;color:var(--mist);margin-top:.15rem}
 .card-body{padding:1.6rem}
-
-/* FORM */
 .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem 1.3rem;margin-bottom:1.4rem}
 @media(max-width:500px){.form-grid{grid-template-columns:1fr}}
 .fg{display:flex;flex-direction:column;gap:.4rem}
 label{font-family:var(--body);font-size:.78rem;font-weight:600;color:var(--ink);letter-spacing:.01em}
-label .hint{font-weight:400;color:var(--mist)}
 .iw{position:relative}
 .ipre,.isuf{position:absolute;top:50%;transform:translateY(-50%);font-size:.95rem;color:var(--mist);font-weight:500;pointer-events:none}
 .ipre{left:1rem}.isuf{right:1rem}
@@ -166,8 +158,6 @@ input,select{width:100%;padding:.8rem 1rem;border:1px solid var(--line);font-fam
 input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 0 3px rgba(27,67,50,.1)}
 .has-pre input{padding-left:2rem}.has-suf input{padding-right:2.4rem}
 .sw{position:relative}.sw::after{content:'';position:absolute;right:1.1rem;top:50%;width:7px;height:7px;border-right:2px solid var(--mist);border-bottom:2px solid var(--mist);transform:translateY(-65%) rotate(45deg);pointer-events:none}
-
-/* RESULT PANELS — the editorial figure signature */
 .results{margin-top:1.6rem;display:none}
 .results.show{display:block;animation:fadeUp .4s ease}
 @keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
@@ -178,8 +168,6 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .eff-block{text-align:right;flex-shrink:0}
 .eff-val{font-family:var(--disp);font-size:2rem;font-weight:600;color:var(--marigold);display:block;letter-spacing:-.02em;line-height:1}
 .eff-lbl{font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:rgba(255,255,255,.6)}
-
-/* breakdown blocks */
 .bb{border:1px solid var(--line);margin-bottom:1rem}
 .bb-title{padding:.7rem 1.1rem;font-family:var(--body);font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.14em;background:var(--sand);border-bottom:1px solid var(--line);color:var(--mist)}
 .br{display:flex;justify-content:space-between;align-items:center;padding:.7rem 1.1rem;font-size:.92rem;border-bottom:1px solid var(--line)}
@@ -190,18 +178,10 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .total-bar{display:flex;justify-content:space-between;align-items:center;padding:1.1rem 1.3rem;background:var(--sand);border:1px solid var(--forest);margin-bottom:1rem}
 .total-bar .lbl{font-family:var(--disp);font-size:1.05rem;font-weight:600;color:var(--forest)}
 .total-bar .val{font-family:var(--disp);font-size:1.3rem;font-weight:700;color:var(--forest);font-variant-numeric:tabular-nums}
-
-/* notes */
 .note{padding:.85rem 1.1rem;font-size:.84rem;line-height:1.6;margin-bottom:.7rem;display:flex;gap:.7rem;border:1px solid var(--line);background:var(--sand)}
 .note.warn{background:#FBF3E0;border-color:#E6D08A;color:#6B5414}
+.note.navy{background:#EDF3EE;border-color:#C9D8CF;color:#1B4332}
 .note a{color:var(--forest);font-weight:600}
-
-/* tabs */
-.type-tabs,.period-tabs{display:flex;gap:.4rem;margin-bottom:1.4rem;background:var(--sand);padding:.3rem;border:1px solid var(--line)}
-.type-tab,.ptab{flex:1;padding:.6rem;border:none;background:transparent;font-family:var(--body);font-weight:600;font-size:.8rem;color:var(--mist);cursor:pointer;transition:.15s;text-align:center}
-.type-tab.active,.ptab.active{background:var(--ink);color:var(--paper)}
-
-/* SIDEBAR */
 .sidebar{display:flex;flex-direction:column;gap:1.5rem}
 .sc{background:var(--paper);border:1px solid var(--line)}
 .sc-head{padding:.8rem 1.1rem;font-family:var(--body);font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.14em;border-bottom:1px solid var(--line);background:var(--sand);color:var(--mist)}
@@ -212,16 +192,14 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .qr{display:flex;justify-content:space-between;font-size:.84rem;padding:.45rem 0;border-bottom:1px solid var(--line);color:var(--mist)}
 .qr:last-child{border-bottom:none}
 .qr strong{color:var(--ink);font-weight:600;font-family:var(--disp)}
-.toc-link{display:block;font-size:.84rem;font-weight:500;color:var(--mist);padding:.4rem 0;border-bottom:1px solid var(--line);transition:color .15s}
-.toc-link:last-child{border-bottom:none}
-.toc-link:hover{color:var(--forest)}
-.related-post{display:block;padding:.75rem 0;border-bottom:1px solid var(--line)}
-.related-post:last-child{border-bottom:none}
-.rp-cat{font-size:.62rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--forest);margin-bottom:.25rem}
-.rp-title{font-family:var(--disp);font-size:.92rem;font-weight:500;color:var(--ink);line-height:1.3}
-.related-post:hover .rp-title{color:var(--forest)}
-
-/* DATA TABLE */
+.tools-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.25rem}
+.tool-card{background:var(--paper);border:1px solid var(--line);padding:1.6rem;transition:.2s;display:flex;flex-direction:column;gap:.7rem;text-decoration:none;color:var(--ink);position:relative}
+.tool-card:hover{border-color:var(--ink);transform:translateY(-2px)}
+.tool-card.featured{border-top:3px solid var(--forest)}
+.tc-cat{font-family:var(--body);font-size:.68rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--mist)}
+.tool-card h3{font-family:var(--disp);font-size:1.25rem;font-weight:600;letter-spacing:-.01em;line-height:1.15;color:var(--ink)}
+.tool-card p{font-family:var(--body);font-size:.88rem;color:var(--mist);line-height:1.55;flex:1}
+.tc-link{font-family:var(--body);font-size:.8rem;font-weight:600;color:var(--forest)}
 .data-table{width:100%;border-collapse:collapse;margin:1.2rem 0 1.6rem;font-size:.9rem;border:1px solid var(--line)}
 .data-table thead tr{background:var(--ink)}
 .data-table th{padding:.75rem 1rem;text-align:left;font-family:var(--body);font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--paper)}
@@ -230,9 +208,10 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .data-table tr:nth-child(even) td{background:var(--sand)}
 .data-table td.td-green{color:var(--forest);font-weight:600}
 .data-table td.td-red{color:var(--berry);font-weight:600}
-.data-table td.td-acc{color:var(--forest);font-weight:600}
-
-/* ARTICLE BODY — magazine measure */
+.section{max-width:1080px;margin:0 auto;padding:3.5rem 2rem}
+.section-header{margin-bottom:2rem;padding-bottom:1rem;border-bottom:1px solid var(--line);display:flex;align-items:baseline;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.section-title{font-family:var(--disp);font-size:1.6rem;font-weight:600;letter-spacing:-.01em;color:var(--ink)}
+.section-title span{color:var(--marigold);font-weight:400;margin:0 .3rem}
 .article-body{padding:2.5rem}
 @media(max-width:600px){.article-body{padding:1.5rem}}
 .article-body h2{font-family:var(--disp);font-size:1.7rem;font-weight:600;color:var(--ink);margin:2.4rem 0 .8rem;letter-spacing:-.01em;line-height:1.15;max-width:30ch}
@@ -244,10 +223,8 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .article-body li{font-family:var(--body);font-size:1.04rem;color:#2C352F;line-height:1.7;margin-bottom:.5rem}
 .article-body a{color:var(--forest);font-weight:500;border-bottom:1px solid var(--marigold)}
 .article-body strong{font-weight:600;color:var(--ink)}
-.callout,.callout.navy,.callout.grey,.callout.green{border:none;border-left:3px solid var(--marigold);background:var(--sand);padding:1.2rem 1.4rem;margin:1.6rem 0;font-family:var(--disp);font-size:1.15rem;font-weight:500;line-height:1.5;color:var(--ink);max-width:64ch}
+.callout{border:none;border-left:3px solid var(--marigold);background:var(--sand);padding:1.2rem 1.4rem;margin:1.6rem 0;font-family:var(--disp);font-size:1.15rem;font-weight:500;line-height:1.5;color:var(--ink);max-width:64ch}
 .callout strong{color:var(--forest)}
-
-/* FOOTER */
 footer{background:var(--ink);color:var(--paper);margin-top:2rem}
 .footer-inner{max-width:1080px;margin:0 auto;padding:2.5rem 2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
 .footer-logo{font-family:var(--disp);font-size:1.5rem;font-weight:900;color:var(--paper)}
@@ -256,28 +233,27 @@ footer{background:var(--ink);color:var(--paper);margin-top:2rem}
 .footer-links a{color:rgba(255,255,255,.7);font-size:.82rem;font-weight:500;transition:color .15s}
 .footer-links a:hover{color:var(--marigold)}
 .footer-copy{color:rgba(255,255,255,.5);font-size:.74rem;width:100%;margin-top:.8rem;padding-top:.9rem;border-top:1px solid rgba(255,255,255,.12)}
+.disclaim{font-size:.82rem;color:var(--mist);background:var(--sand);border:1px solid var(--line);padding:.9rem 1.1rem;line-height:1.6}
+.worked-example{background:#FAFBF7;border:1px solid var(--line);border-left:4px solid var(--forest);padding:1.5rem 1.8rem;margin:1.8rem 0}
+.worked-example-head{display:flex;align-items:center;gap:.6rem;margin-bottom:1rem}
+.worked-example-tag{font-size:.66rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--forest);background:#EDF3EE;padding:.25rem .6rem;border-radius:2px}
+.worked-example h3{font-family:var(--disp);font-size:1.15rem;font-weight:600;margin-bottom:.3rem}
+.worked-example p{font-size:.9rem;color:var(--mist);line-height:1.6;margin-bottom:.8rem}
+.glossary-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem;margin:1.5rem 0}
+.glossary-item{background:var(--sand);border:1px solid var(--line);padding:1.1rem 1.3rem}
+.glossary-term{font-family:var(--disp);font-size:1rem;font-weight:600;color:var(--forest);margin-bottom:.3rem}
+.glossary-def{font-size:.84rem;color:var(--mist);line-height:1.6}
 
-/* MISC legacy */
-.scenario-result{background:var(--sand);border:1px solid var(--forest);padding:1.2rem}
-.disclaim,.disclaim-box{font-size:.82rem;color:var(--mist);background:var(--sand);border:1px solid var(--line);padding:.9rem 1.1rem;line-height:1.6}
-.eyebrow{font-family:var(--body);font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);margin-bottom:.5rem}
-
-/* RESPONSIVE */
 @media(max-width:768px){
-  [style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr!important}
-  [style*="grid-template-columns:repeat(3,1fr)"]{grid-template-columns:1fr!important}
-  [style*="grid-template-columns:repeat(4,1fr)"]{grid-template-columns:1fr 1fr!important}
-  [style*="grid-template-columns:2fr 1fr 1fr"]{grid-template-columns:1fr!important}
-  [style*="grid-template-columns:1.1fr 1fr"]{grid-template-columns:1fr!important}
-  [style*="grid-template-columns:1fr 1fr;gap:4rem"]{grid-template-columns:1fr!important;gap:2rem!important}
-  .blog-grid,.data-row,.why-grid{grid-template-columns:1fr!important}
   .ph{padding:2.5rem 1.25rem 2rem}.section{padding:2.5rem 1.25rem}.layout{padding:1.5rem 1.25rem}
   .th-panel{flex-direction:column;align-items:flex-start;gap:1rem}.eff-block{text-align:left}
   .th-amount{font-size:2.6rem}
   .footer-inner{flex-direction:column;text-align:center}.footer-links{justify-content:center}
   .top-bar{padding:.4rem 1rem}.tb-r{display:none}
   .data-table{display:block;overflow-x:auto}
+  .article-body{padding:1.5rem}
 }
+
 .whatif-section{margin-top:1.8rem;border-top:2px solid var(--ink);padding-top:1.8rem}
 .whatif-kicker{font-family:var(--body);font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);margin-bottom:.4rem;display:flex;align-items:center;gap:.6rem}
 .whatif-kicker::before{content:'';width:24px;height:2px;background:var(--marigold)}
@@ -300,131 +276,754 @@ footer{background:var(--ink);color:var(--paper);margin-top:2rem}
 .whatif-delta-lbl{font-size:.72rem;color:rgba(255,255,255,.6);margin-top:.3rem}
 .whatif-reset{margin-top:1rem;text-align:center}
 .whatif-reset button{background:none;border:1px solid var(--line);padding:.5rem 1.1rem;font-family:var(--body);font-size:.78rem;font-weight:600;color:var(--mist);cursor:pointer;transition:.15s}
-.whatif-reset button:hover{border-color:var(--ink);color:var(--ink)}</style>
+.whatif-reset button:hover{border-color:var(--ink);color:var(--ink)}
+</style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6108324382808705" crossorigin="anonymous"></script>
 </head>
-<body><div class="sa-stripe"></div><div class="top-bar"><div class="tb-l">🇿🇦 South Africa · SARS 2027 Tax Year</div><div class="tb-r">Primary rebate <span>R17,820</span> · Tax-free <span>R99,000</span></div></div><nav>
+<body>
+<div class="sa-stripe"></div>
+
+<div class="top-bar">
+  <div class="tb-l">🇿🇦 South Africa · Commission Earners</div>
+  <div class="tb-r">Section 23(m) deductions · <span>Variable income</span></div>
+</div>
+
+<nav>
   <a href="/" class="logo"><div class="logo-text">CalcMy<span>Pay</span></div></a>
   <div class="nav-links">
-    <a href="/salary-income" class="active">Salary</a><a href="/affordability">Affordability</a><a href="/wealth-building">Wealth</a><a href="/career-intelligence">Careers</a><a href="/money-tools">Tools</a><a href="/financial-coach">Coach</a><a href="/blog-salary-guide">Guides</a><a href="/salary-calculator" class="nav-cta">Calculate →</a>
+    <a href="/salary-income" class="active">Salary</a>
+    <a href="/affordability">Affordability</a>
+    <a href="/wealth-building">Wealth</a>
+    <a href="/career-intelligence">Careers</a>
+    <a href="/money-tools">Tools</a>
+    <a href="/financial-coach">Coach</a>
+    <a href="/blog-salary-guide">Guides</a>
+    <a href="/salary-calculator" class="nav-cta">Calculate →</a>
   </div>
-</nav><div class="ph"><div class="ph-inner"><div class="bc"><a href="/">Home</a><span>/</span><a href="/salary-income">Salary & Income</a><span>/</span>Commission Calculator</div><div class="ph-cat">Salary & Income</div><h1>Commission Calculator</h1><p>Work out your earnings on a commission structure</p></div></div><div class="layout"><div><div class="card"><div class="card-head"><div class="card-cat">Commission</div><div><h2>Commission earnings</h2><p>Base salary plus commission on sales</p></div></div>
-<div class="card-body">
-<div class="form-grid">
-<div class="fg"><label>Base Salary (monthly)</label><div class="iw has-pre"><span class="ipre">R</span><input type="number" id="base" placeholder="10 000" min="0"></div></div>
-<div class="fg"><label>Total Sales (this month)</label><div class="iw has-pre"><span class="ipre">R</span><input type="number" id="sales" placeholder="200 000" min="0"></div></div>
-<div class="fg"><label>Commission Rate</label><div class="iw has-suf"><input type="number" id="rate" placeholder="5" min="0" step="0.1"><span class="isuf">%</span></div></div>
-<div class="fg"><label>Threshold (no commission below)</label><div class="iw has-pre"><span class="ipre">R</span><input type="number" id="thr" placeholder="0" min="0"></div></div>
-</div>
-<button class="btn btn-full btn-accent" onclick="calc()">Calculate earnings →</button>
-<div class="results" id="res">
-<div class="th-panel"><div><div class="th-label">Total monthly earnings</div><div class="th-amount" id="big">R0</div><div class="th-period">base + commission</div></div><div class="eff-block"><span class="eff-val" id="comm">R0</span><span class="eff-lbl">Commission</span></div></div>
-<div class="bb"><div class="bb-title">Earnings breakdown</div>
-<div class="br"><span class="lbl">Base salary</span><span class="val neu" id="r-base">R0</span></div>
-<div class="br"><span class="lbl">Commissionable sales</span><span class="val neu" id="r-sales">R0</span></div>
-<div class="br"><span class="lbl">Commission earned</span><span class="val pos" id="r-comm">R0</span></div>
-</div>
-<div class="total-bar"><span class="lbl">✓ Total gross earnings</span><span class="val" id="r-tot">R0</span></div>
-<div class="note warn"><span>⚠</span><span>This is gross earnings. To see take-home after tax, enter the total in the <a href="/salary-calculator">salary calculator</a>.</span></div>
-<div class="whatif-section" id="whatif-section" style="display:none">
-  <div class="whatif-kicker">What if?</div>
-  <div class="whatif-title">Test a scenario</div>
-  <p class="whatif-sub">Drag the sliders to see how changes affect your total monthly earnings.</p>
+</nav>
 
-  <div class="whatif-grid">
-    <div class="whatif-control">
-      <div class="whatif-control-head"><label>Sales change</label><output id="wi-sales-out">+0%</output></div>
-      <input type="range" id="wi-sales" min="-50" max="100" value="0" step="5" oninput="renderWhatIf()">
+<div class="ph">
+  <div class="ph-inner">
+    <div class="bc">
+      <a href="/">Home</a><span>/</span>
+      <a href="/salary-income">Salary & Income</a><span>/</span>
+      Commission Calculator
     </div>
-    <div class="whatif-control">
-      <div class="whatif-control-head"><label>Commission rate change</label><output id="wi-rate-out">+0pp</output></div>
-      <input type="range" id="wi-rate" min="-2" max="5" value="0" step="0.5" oninput="renderWhatIf()">
-    </div>
+    <div class="ph-cat">Salary & Income</div>
+    <h1>Commission Calculator</h1>
+    <p>Calculate your total earnings on a commission structure. Work out base salary plus commission on sales, including thresholds and tiered rates common in South African sales roles.</p>
   </div>
-
-  <div class="whatif-result">
-    <div>
-      <div class="whatif-result-label">New total monthly earnings</div>
-      <div class="whatif-result-val" id="wi-newtotal">R0</div>
-    </div>
-    <div class="whatif-delta">
-      <div class="whatif-delta-val" id="wi-delta">—</div>
-      <div class="whatif-delta-lbl">vs your current earnings</div>
-    </div>
-  </div>
-  <div class="whatif-reset"><button onclick="resetWhatIf()">Reset scenario</button></div>
-  <div class="note warn" style="margin-top:1rem"><span>⚠</span><span>This is <strong>gross earnings only</strong>, before tax. Use the <a href="/salary-calculator">salary calculator</a> to see the real take-home effect of a change.</span></div>
 </div>
 
-</div></div></div></div><div class="sidebar"><div class="sc"><div class="sc-head">Commission tips</div><div class="sc-body">
-<div class="tip"><span>→</span><span>Commission is taxed at your marginal rate like normal income.</span></div>
-<div class="tip"><span>→</span><span>If commission is more than half your pay, you may deduct business expenses.</span></div>
-<div class="tip"><span>→</span><span>Keep records of work expenses to claim at tax time.</span></div>
-</div></div></div></div><div class="section" style="padding-top:0"><div style="background:var(--white);border:1px solid var(--g200);border-top:3px solid var(--navy);padding:2rem 2.2rem"><div class="article-body" style="padding:0"><h2 style="margin-top:0">How commission-based pay actually works in South Africa</h2><h2>Why commission structures vary so much</h2><p>Unlike a fixed salary, commission-based pay ties your earnings directly to performance — sales made, deals closed, targets hit. This creates upside that a fixed salary cannot match, but it also means your income can swing significantly month to month, which changes how you should budget, save and plan for tax.</p><h2>The most common structures in South Africa</h2><ul><li><strong>Base plus commission</strong> — a lower guaranteed salary topped up by a percentage of sales, common in retail, insurance and B2B sales roles.</li><li><strong>Pure commission</strong> — no base at all, common in real estate and some financial services roles, offering the highest upside and the highest risk.</li><li><strong>Tiered commission</strong> — the percentage rate increases once you hit certain sales thresholds, rewarding top performers disproportionately.</li><li><strong>Commission with a threshold</strong> — commission only kicks in once you exceed a minimum sales target, common when a base salary already covers baseline expectations.</li></ul><h2>Budgeting on variable income</h2><p>The safest approach is to budget against your lowest realistic month, not your best one. Many commission earners build a buffer during strong months specifically to smooth over quieter ones — treating irregular income as if it were a fixed salary by saving the difference when times are good.</p><h2>Tax on commission income</h2><p>Commission is taxed exactly like ordinary salary income, added to your total earnings and taxed at your marginal rate — there is no special "commission tax rate". If commission makes up more than 50% of your total income, you may also be able to claim certain business-related expenses against it; a tax practitioner can confirm what applies to your situation.</p></div></div></div>
-<div class="section" style="padding-top:0"><div class="section-header"><div class="section-title">Related <span>/</span> Salary Tools</div></div><div class="tools-grid"><a href="/salary-calculator" class="tool-card featured"><div class="tc-cat">Salary & Income</div><h3>Salary After Tax Calculator</h3><span class="tc-link">Open →</span></a><a href="/paye-calculator" class="tool-card featured"><div class="tc-cat">Salary & Income</div><h3>PAYE Calculator</h3><span class="tc-link">Open →</span></a><a href="/gross-to-net" class="tool-card featured"><div class="tc-cat">Salary & Income</div><h3>Gross to Net Salary</h3><span class="tc-link">Open →</span></a><a href="/bonus-calculator" class="tool-card featured"><div class="tc-cat">Salary & Income</div><h3>Bonus & 13th Cheque</h3><span class="tc-link">Open →</span></a><a href="/overtime-calculator" class="tool-card featured"><div class="tc-cat">Salary & Income</div><h3>Overtime Pay Calculator</h3><span class="tc-link">Open →</span></a><a href="/hourly-wage" class="tool-card featured"><div class="tc-cat">Salary & Income</div><h3>Hourly Wage Calculator</h3><span class="tc-link">Open →</span></a></div></div><div class="sa-stripe"></div>
-<div class="section"><div style="background:var(--white);border:1px solid var(--line);border-top:3px solid var(--forest)"><div class="article-body"><h2>Why commission-based income needs its own financial approach</h2><p>Earning commission introduces income variability that salaried employees rarely experience — a strong month can be followed by a lean one, even with consistent effort, simply due to deal timing, seasonality, or market conditions outside your control. Financial planning for commission earners needs to account for this variability directly, not just calculate an average.</p><h2>Budgeting on your lowest realistic month, not your average</h2><p>The single most protective habit for commission-based earners is building a budget around your worst realistic month, not your average or best month. This means covering essential expenses using your base salary or a conservative minimum commission estimate, and treating anything above that as a bonus to save or invest rather than baseline spending.</p><h2>Why tax withholding often falls short for commission earners</h2><p>Employers frequently withhold PAYE based on a single month's commission as if it were your standard monthly income, which can under- or over-withhold tax depending on how variable your commission is month to month. This is why many commission-heavy earners find themselves owing additional tax, or occasionally receiving a refund, when they file their annual return.</p><h2>The compounding effect of a strong commission structure</h2><table class="data-table"><thead><tr><th>Scenario</th><th>Effect on total earnings</th></tr></thead><tbody><tr><td>Higher base rate, lower commission %</td><td>More predictable, less upside potential</td></tr><tr><td>Lower base rate, higher commission %</td><td>More variable, greater upside if performance is strong</td></tr><tr><td>Uncapped commission</td><td>No ceiling on earnings, rewards exceptional performance</td></tr><tr><td>Tiered commission (rate increases at thresholds)</td><td>Strongly incentivises pushing past specific sales targets</td></tr></tbody></table><h2>Negotiating commission structures, not just the rate</h2><p>When evaluating or negotiating a commission-based role, the percentage rate is only one variable. The threshold before commission kicks in, whether it is tiered, how disputes or clawbacks are handled, and the payment frequency all materially affect your real earning potential and cash flow — often more than a percentage point difference in the headline rate.</p><h2>Smoothing variable income into a stable financial life</h2><p>The practical solution to variable commission income is building a larger-than-typical <a href="/emergency-fund">emergency fund</a> — closer to 6 months than 3 — specifically to smooth over the inevitable lean months without disrupting your fixed costs. Once that buffer exists, model your full take-home including tax with the <a href="/salary-calculator">salary calculator</a> using a conservative monthly commission estimate.</p></div></div></div>
+<div class="layout">
+  <div>
+    <div class="card">
+      <div class="card-head">
+        <div class="card-cat">Commission</div>
+        <div>
+          <h2>Commission earnings</h2>
+          <p>Base salary plus commission on sales</p>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="form-grid">
+          <div class="fg">
+            <label>Base Salary (monthly)</label>
+            <div class="iw has-pre"><span class="ipre">R</span><input type="number" id="base" placeholder="10000" min="0"></div>
+          </div>
+          <div class="fg">
+            <label>Total Sales (this month)</label>
+            <div class="iw has-pre"><span class="ipre">R</span><input type="number" id="sales" placeholder="200000" min="0"></div>
+          </div>
+          <div class="fg">
+            <label>Commission Rate</label>
+            <div class="iw has-suf"><input type="number" id="rate" placeholder="5" min="0" step="0.1"><span class="isuf">%</span></div>
+          </div>
+          <div class="fg">
+            <label>Threshold (no commission below)</label>
+            <div class="iw has-pre"><span class="ipre">R</span><input type="number" id="thr" placeholder="0" min="0"></div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-full btn-accent" onclick="calc()">Calculate earnings →</button>
+        <button type="button" class="btn btn-full btn-example" onclick="loadExample()"><span class="example-badge">Example</span>Try R10k base + R200k sales at 5%</button>
 
-<footer><div class="footer-inner">
-  <div class="footer-logo">CalcMy<span>Pay</span></div>
-  <div class="footer-links"><a href="/salary-income">Salary</a><a href="/affordability">Affordability</a><a href="/wealth-building">Wealth</a><a href="/money-tools">Tools</a><a href="/financial-coach">Coach</a><a href="/blog-salary-guide">Guides</a><a href="/about">About</a><a href="/privacy-policy">Privacy</a><a href="/contact">Contact</a></div>
-  <div class="footer-copy">© 2026 CalcMyPay · Understand your salary. Plan your money. Build your future. · For informational purposes only · Not affiliated with SARS · SARS 2027 tax year</div>
-</div></footer>
+        <div class="results" id="res">
+          <div class="th-panel">
+            <div>
+              <div class="th-label">Total monthly earnings</div>
+              <div class="th-amount" id="big">R0</div>
+              <div class="th-period">base + commission</div>
+            </div>
+            <div class="eff-block">
+              <span class="eff-val" id="comm">R0</span>
+              <span class="eff-lbl">Commission</span>
+            </div>
+          </div>
+          <div class="bb">
+            <div class="bb-title">Earnings breakdown</div>
+            <div class="br"><span class="lbl">Base salary</span><span class="val neu" id="r-base">R0</span></div>
+            <div class="br"><span class="lbl">Commissionable sales</span><span class="val neu" id="r-sales">R0</span></div>
+            <div class="br"><span class="lbl">Commission earned</span><span class="val pos" id="r-comm">R0</span></div>
+          </div>
+          <div class="total-bar">
+            <span class="lbl">✓ Total gross earnings</span>
+            <span class="val" id="r-tot">R0</span>
+          </div>
+          <div class="note navy">
+            <span>ℹ</span>
+            <span>If commission makes up <strong>more than 50% of your total income</strong>, you may qualify to deduct business expenses under Section 23(m) of the Income Tax Act. Keep detailed records of work-related expenses.</span>
+          </div>
+          <div class="note warn">
+            <span>⚠</span>
+            <span>This is gross earnings. To see take-home after tax, enter the total in the <a href="/salary-calculator">salary calculator</a>.</span>
+          </div>
+
+          <div class="whatif-section" id="whatif-section" style="display:none">
+            <div class="whatif-kicker">What if?</div>
+            <div class="whatif-title">Test a scenario</div>
+            <p class="whatif-sub">Drag the sliders to see how changes affect your total monthly earnings.</p>
+            <div class="whatif-grid">
+              <div class="whatif-control">
+                <div class="whatif-control-head"><label>Sales change</label><output id="wi-sales-out">+0%</output></div>
+                <input type="range" id="wi-sales" min="-50" max="100" value="0" step="5" oninput="renderWhatIf()">
+              </div>
+              <div class="whatif-control">
+                <div class="whatif-control-head"><label>Commission rate change</label><output id="wi-rate-out">+0pp</output></div>
+                <input type="range" id="wi-rate" min="-2" max="5" value="0" step="0.5" oninput="renderWhatIf()">
+              </div>
+            </div>
+            <div class="whatif-result">
+              <div>
+                <div class="whatif-result-label">New total monthly earnings</div>
+                <div class="whatif-result-val" id="wi-newtotal">R0</div>
+              </div>
+              <div class="whatif-delta">
+                <div class="whatif-delta-val" id="wi-delta">—</div>
+                <div class="whatif-delta-lbl">vs your current earnings</div>
+              </div>
+            </div>
+            <div class="whatif-reset"><button onclick="resetWhatIf()">Reset scenario</button></div>
+            <div class="note warn" style="margin-top:1rem">
+              <span>⚠</span>
+              <span>This is <strong>gross earnings only</strong>, before tax. Use the <a href="/salary-calculator">salary calculator</a> to see the real take-home effect of a change.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar">
+    <div class="sc">
+      <div class="sc-head">Commission Tips</div>
+      <div class="sc-body">
+        <div class="tip"><span>→</span><span>Commission is taxed at your marginal rate like normal income.</span></div>
+        <div class="tip"><span>→</span><span>If commission is more than half your pay, you may deduct business expenses under Section 23(m).</span></div>
+        <div class="tip"><span>→</span><span>Keep records of work expenses: vehicle, cell phone, home office, client entertainment.</span></div>
+        <div class="tip"><span>→</span><span>Budget on your lowest realistic month, not your average.</span></div>
+        <div class="tip"><span>→</span><span>Build a 6-month emergency fund to smooth variable income.</span></div>
+      </div>
+    </div>
+
+    <div class="sc">
+      <div class="sc-head">Related Calculators</div>
+      <div class="sc-body">
+        <div class="tip"><span>→</span><a href="/salary-calculator">Salary After Tax Calculator</a></div>
+        <div class="tip"><span>→</span><a href="/paye-calculator">PAYE Calculator</a></div>
+        <div class="tip"><span>→</span><a href="/bonus-calculator">Bonus & 13th Cheque</a></div>
+        <div class="tip"><span>→</span><a href="/overtime-calculator">Overtime Pay Calculator</a></div>
+        <div class="tip"><span>→</span><a href="/gross-to-net">Gross to Net Salary</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="padding-top:0">
+  <div class="section-header">
+    <div class="section-title">Related <span>/</span> Salary Tools</div>
+  </div>
+  <div class="tools-grid">
+    <a href="/salary-calculator" class="tool-card featured">
+      <div class="tc-cat">Salary & Income</div>
+      <h3>Salary After Tax Calculator</h3>
+      <span class="tc-link">Open →</span>
+    </a>
+    <a href="/paye-calculator" class="tool-card featured">
+      <div class="tc-cat">Salary & Income</div>
+      <h3>PAYE Calculator</h3>
+      <span class="tc-link">Open →</span>
+    </a>
+    <a href="/gross-to-net" class="tool-card featured">
+      <div class="tc-cat">Salary & Income</div>
+      <h3>Gross to Net Salary</h3>
+      <span class="tc-link">Open →</span>
+    </a>
+    <a href="/bonus-calculator" class="tool-card featured">
+      <div class="tc-cat">Salary & Income</div>
+      <h3>Bonus & 13th Cheque</h3>
+      <span class="tc-link">Open →</span>
+    </a>
+    <a href="/overtime-calculator" class="tool-card featured">
+      <div class="tc-cat">Salary & Income</div>
+      <h3>Overtime Pay Calculator</h3>
+      <span class="tc-link">Open →</span>
+    </a>
+    <a href="/hourly-wage" class="tool-card featured">
+      <div class="tc-cat">Salary & Income</div>
+      <h3>Hourly Wage Calculator</h3>
+      <span class="tc-link">Open →</span>
+    </a>
+  </div>
+</div>
+
+<div class="section">
+  <div style="background:var(--white);border:1px solid var(--line);border-top:3px solid var(--forest)">
+    <div class="article-body">
+
+      <h2>Understanding commission-based pay in South Africa</h2>
+      <p>Commission-based pay ties your earnings directly to performance — sales made, deals closed, targets hit. Unlike a fixed salary, commission creates upside potential that traditional employment cannot match, but it also introduces income variability that requires different financial planning approaches. This comprehensive guide explains how commission works in South Africa, how it's taxed, and how to manage variable income effectively.</p>
+
+      <p>Whether you're in retail sales, insurance, real estate, B2B consulting, or any other commission-based role, understanding the mechanics of your compensation structure helps you negotiate better terms, plan your finances, and maximize your earning potential.</p>
+
+      <h2>How commission is calculated</h2>
+      <p>The basic commission calculation is straightforward, but various structures add complexity. Here's the fundamental formula and common variations:</p>
+
+      <h3>Basic commission formula</h3>
+      <p><strong>Commission = Commissionable Sales × Commission Rate</strong></p>
+
+      <p>Where commissionable sales equals total sales minus any threshold. For example:</p>
+      <ul>
+        <li>Total sales: R200,000</li>
+        <li>Commission rate: 5%</li>
+        <li>No threshold</li>
+        <li>Commission earned: R200,000 × 5% = <strong>R10,000</strong></li>
+      </ul>
+
+      <h3>Commission with threshold</h3>
+      <p>Many employers set a minimum sales target before commission kicks in. This is common when you receive a base salary that covers baseline expectations:</p>
+      <ul>
+        <li>Total sales: R200,000</li>
+        <li>Threshold: R50,000</li>
+        <li>Commission rate: 5%</li>
+        <li>Commissionable sales: R200,000 - R50,000 = R150,000</li>
+        <li>Commission earned: R150,000 × 5% = <strong>R7,500</strong></li>
+      </ul>
+
+      <div class="callout">
+        <strong>Important:</strong> If your sales don't exceed the threshold, you earn zero commission for that period. This is why understanding your realistic sales range before accepting a role with a high threshold is critical.
+      </div>
+
+      <h3>Tiered commission structures</h3>
+      <p>Tiered commission increases your rate as you hit higher sales targets, rewarding top performers disproportionately. This is common in high-performance sales environments:</p>
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Sales Range</th>
+            <th>Commission Rate</th>
+            <th>Example: R350k Sales</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>First R100,000</td><td>3%</td><td>R3,000</td></tr>
+          <tr><td>R100,001 – R200,000</td><td>5%</td><td>R5,000</td></tr>
+          <tr><td>R200,001 – R300,000</td><td>7%</td><td>R7,000</td></tr>
+          <tr><td>Above R300,000</td><td>10%</td><td>R5,000</td></tr>
+          <tr><td><strong>Total Commission</strong></td><td></td><td class="td-green"><strong>R20,000</strong></td></tr>
+        </tbody>
+      </table>
+
+      <p>In this example, the same R350,000 in sales would earn only R10,500 at a flat 3% rate, but R20,000 with the tiered structure — nearly double. This is why tiered structures strongly incentivize pushing past specific targets.</p>
+
+      <div class="worked-example">
+        <div class="worked-example-head">
+          <span class="worked-example-tag">Worked Example</span>
+          <h3>Insurance sales agent: R10k base + 5% commission</h3>
+        </div>
+        <p>Let's walk through a realistic scenario: An insurance sales agent earns R10,000 base salary per month, with 5% commission on all policies sold above a R50,000 monthly threshold. In a strong month, they sell R200,000 worth of policies.</p>
+
+        <p><strong>Calculation:</strong></p>
+        <ul>
+          <li>Base salary: R10,000</li>
+          <li>Total sales: R200,000</li>
+          <li>Threshold: R50,000</li>
+          <li>Commissionable sales: R200,000 - R50,000 = R150,000</li>
+          <li>Commission rate: 5%</li>
+          <li>Commission earned: R150,000 × 5% = R7,500</li>
+          <li><strong>Total gross earnings: R17,500</strong></li>
+        </ul>
+
+        <p style="margin-top:1rem">In this month, commission represents 43% of total earnings (R7,500 ÷ R17,500). Since this is less than 50%, the agent would <strong>not</strong> qualify for Section 23(m) business expense deductions. However, in a stronger month where commission exceeds base salary, they would qualify.</p>
+
+        <p><strong>Tax implications:</strong> Using our salary calculator with R17,500 monthly gross, under 65, no medical aid:</p>
+        <ul>
+          <li>Annual gross: R210,000</li>
+          <li>Annual PAYE: Approximately R20,000</li>
+          <li>Monthly PAYE: ~R1,667</li>
+          <li>UIF: R177 (capped)</li>
+          <li><strong>Monthly take-home: ~R15,656</strong></li>
+        </ul>
+      </div>
+
+      <h2>Common commission structures in South Africa</h2>
+      <p>Commission structures vary significantly by industry and role. Understanding the common patterns helps you evaluate job offers and negotiate better terms.</p>
+
+      <h3>Base plus commission</h3>
+      <p>The most common structure, offering stability plus upside:</p>
+      <ul>
+        <li><strong>How it works:</strong> Guaranteed base salary plus percentage of sales</li>
+        <li><strong>Typical split:</strong> 60-70% base, 30-40% commission potential</li>
+        <li><strong>Common in:</strong> Retail, insurance, B2B sales, medical device sales</li>
+        <li><strong>Pros:</strong> Predictable income, less financial stress</li>
+        <li><strong>Cons:</strong> Lower upside potential, base may be below market rate</li>
+      </ul>
+
+      <h3>Pure commission (commission-only)</h3>
+      <p>No base salary — you eat what you kill:</p>
+      <ul>
+        <li><strong>How it works:</strong> 100% of earnings from commission</li>
+        <li><strong>Typical rates:</strong> Higher than base-plus structures (10-30% common)</li>
+        <li><strong>Common in:</strong> Real estate, financial advisory, some insurance</li>
+        <li><strong>Pros:</strong> Unlimited earning potential, true performance-based pay</li>
+        <li><strong>Cons:</strong> No income floor, high variability, requires larger emergency fund</li>
+      </ul>
+
+      <h3>Tiered commission</h3>
+      <p>Rates increase as you hit higher targets:</p>
+      <ul>
+        <li><strong>How it works:</strong> Progressive commission rates at different sales levels</li>
+        <li><strong>Typical structure:</strong> 3% → 5% → 7% → 10% at increasing thresholds</li>
+        <li><strong>Common in:</strong> High-volume sales, SaaS, enterprise sales</li>
+        <li><strong>Pros:</strong> Strongly rewards top performers, incentivizes exceeding targets</li>
+        <li><strong>Cons:</strong> Can create "all-or-nothing" pressure near thresholds</li>
+      </ul>
+
+      <h3>Commission with draws</h3>
+      <p>Advance payments against future commission:</p>
+      <ul>
+        <li><strong>How it works:</strong> Regular "salary" that's actually an advance on commission</li>
+        <li><strong>Recoverable vs non-recoverable:</strong> Recoverable draws must be repaid if commission falls short</li>
+        <li><strong>Common in:</strong> Financial services, some consulting roles</li>
+        <li><strong>Pros:</strong> Predictable cash flow during ramp-up periods</li>
+        <li><strong>Cons:</strong> Can create debt to employer in slow periods</li>
+      </ul>
+
+      <h2>Commission reference table: Common scenarios</h2>
+      <p>The table below shows total earnings for common commission scenarios at a R10,000 base salary with various sales levels and commission rates.</p>
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Monthly Sales</th>
+            <th>3% Commission</th>
+            <th>5% Commission</th>
+            <th>7% Commission</th>
+            <th>10% Commission</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>R100,000</td>
+            <td>R13,000</td>
+            <td class="td-green">R15,000</td>
+            <td>R17,000</td>
+            <td>R20,000</td>
+          </tr>
+          <tr>
+            <td>R150,000</td>
+            <td>R14,500</td>
+            <td class="td-green">R17,500</td>
+            <td>R20,500</td>
+            <td>R25,000</td>
+          </tr>
+          <tr>
+            <td>R200,000</td>
+            <td>R16,000</td>
+            <td class="td-green">R20,000</td>
+            <td>R24,000</td>
+            <td>R30,000</td>
+          </tr>
+          <tr>
+            <td>R300,000</td>
+            <td>R19,000</td>
+            <td class="td-green">R25,000</td>
+            <td>R31,000</td>
+            <td>R40,000</td>
+          </tr>
+          <tr>
+            <td>R500,000</td>
+            <td>R25,000</td>
+            <td class="td-green">R35,000</td>
+            <td>R45,000</td>
+            <td>R60,000</td>
+          </tr>
+          <tr>
+            <td>R1,000,000</td>
+            <td>R40,000</td>
+            <td class="td-green">R60,000</td>
+            <td>R80,000</td>
+            <td>R110,000</td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="font-size:.84rem;color:var(--mist);margin-top:.5rem">Note: These figures assume no threshold. Subtract threshold from sales before calculating commission if your structure includes one.</p>
+
+      <h2>How commission is taxed in South Africa</h2>
+      <p>Commission income is taxed exactly like ordinary salary — there is no special "commission tax rate." However, commission earners may qualify for specific deductions that salaried employees cannot claim.</p>
+
+      <h3>PAYE on commission</h3>
+      <p>Your employer adds commission to your base salary and calculates PAYE on the total. Commission is taxed at your marginal rate — the rate applicable to your combined income for that month.</p>
+
+      <div class="callout">
+        <strong>Common problem:</strong> Employers sometimes calculate PAYE on commission as if it were your regular monthly income, which can under- or over-withhold tax. This is why many commission earners owe additional tax or receive refunds when filing their annual return.
+      </div>
+
+      <h3>Section 23(m) deductions for commission earners</h3>
+      <p>If commission makes up <strong>more than 50% of your total remuneration</strong>, you qualify to deduct certain business expenses under Section 23(m) of the Income Tax Act. This is a significant tax advantage not available to regular salaried employees.</p>
+
+      <p><strong>Qualifying expenses include:</strong></p>
+      <ul>
+        <li><strong>Vehicle expenses:</strong> Fuel, maintenance, insurance, depreciation (requires detailed logbook showing business vs personal use)</li>
+        <li><strong>Home office:</strong> Proportional share of rent/bond interest, rates, electricity if you have a dedicated workspace</li>
+        <li><strong>Communication:</strong> Cell phone, internet (business proportion)</li>
+        <li><strong>Travel:</strong> Client meetings, site visits (with logbook)</li>
+        <li><strong>Entertainment:</strong> Client meals and entertainment (50% deductible, with business purpose documented)</li>
+        <li><strong>Professional subscriptions:</strong> Industry body memberships</li>
+        <li><strong>Equipment:</strong> Computers, phones, tools used for work</li>
+      </ul>
+
+      <p><strong>Example:</strong> If you earn R500,000 annually with R300,000 from commission (60%), and you have R50,000 in qualifying business expenses, you can deduct the full R50,000 from your taxable income, potentially saving R15,000-R22,500 in tax depending on your marginal rate.</p>
+
+      <h3>Record-keeping requirements</h3>
+      <p>To claim Section 23(m) deductions, you must maintain detailed records:</p>
+      <ul>
+        <li>All receipts and invoices for business expenses</li>
+        <li>Vehicle logbook showing date, kilometers, purpose for every business trip</li>
+        <li>Home office calculation showing floor area proportion</li>
+        <li>Cell phone and internet bills with business use percentage</li>
+        <li>Client entertainment records showing business purpose and attendees</li>
+      </ul>
+
+      <p>SARS can audit these claims up to five years after submission, so keep records organized and accessible.</p>
+
+      <h2>Budgeting on variable commission income</h2>
+      <p>The biggest challenge of commission-based pay isn't earning it — it's managing the variability. A strong month followed by a lean one can create cash flow chaos if you're not prepared.</p>
+
+      <h3>The "lowest realistic month" budget</h3>
+      <p>The single most protective habit for commission earners is building your budget around your <strong>lowest realistic month</strong>, not your average or best month. This means:</p>
+
+      <ul>
+        <li>Calculate your essential monthly expenses (housing, food, transport, insurance)</li>
+        <li>Ensure these are covered by your base salary or conservative minimum commission</li>
+        <li>Treat anything above this baseline as bonus income to save or invest</li>
+      </ul>
+
+      <p>This approach creates stability: in bad months, you cover essentials without stress; in good months, you build wealth rather than inflating lifestyle.</p>
+
+      <h3>The 6-month emergency fund</h3>
+      <p>While salaried employees are typically advised to have 3 months of expenses in emergency savings, commission earners should target <strong>6 months minimum</strong>, ideally 6-12 months if your income is highly variable.</p>
+
+      <p>This larger buffer serves specific purposes:</p>
+      <ul>
+        <li><strong>Smooths seasonal patterns:</strong> Many sales roles have predictable busy and quiet periods</li>
+        <li><strong>Covers deal timing gaps:</strong> Large deals can take months to close, creating irregular income</li>
+        <li><strong>Protects against market downturns:</strong> Economic conditions affect sales across entire industries</li>
+        <li><strong>Provides negotiation leverage:</strong> With a strong buffer, you can walk away from bad deals or toxic clients</li>
+      </ul>
+
+      <h3>The "smoothing" strategy</h3>
+      <p>Advanced commission earners use a smoothing strategy to create artificial stability:</p>
+
+      <ol>
+        <li><strong>Calculate your target monthly "salary":</strong> Take your average monthly commission over the past 12 months, reduce by 20% for safety</li>
+        <li><strong>Open a "commission holding" account:</strong> All commission payments go here first</li>
+        <li><strong>Pay yourself the target amount monthly:</strong> Transfer from holding to personal account on the same date each month</li>
+        <li><strong>Save the excess:</strong> In strong months, the surplus builds your buffer; in weak months, you draw down</li>
+      </ol>
+
+      <p>This creates predictable cash flow despite variable income, making budgeting and financial planning much easier.</p>
+
+      <h2>Negotiating commission structures</h2>
+      <p>When evaluating or negotiating a commission-based role, the percentage rate is only one variable. Several other factors materially affect your real earning potential.</p>
+
+      <h3>Key negotiation points beyond the rate</h3>
+
+      <p><strong>Threshold level:</strong> A lower threshold means you start earning commission sooner. If you're confident in your sales ability, negotiate for a lower threshold rather than a higher rate.</p>
+
+      <p><strong>Tier structure:</strong> Understand exactly where tiers kick in and how steep the progression is. A structure with 3% → 5% → 7% is very different from 3% → 3.5% → 4%.</p>
+
+      <p><strong>Payment timing:</strong> When do you get paid? Immediately on sale? On delivery? When the client pays? Delays can create serious cash flow problems even with strong sales.</p>
+
+      <p><strong>Clawback provisions:</strong> What happens if a client cancels or doesn't pay? Some employers claw back commission, sometimes months later. Understand the clawback period and conditions.</p>
+
+      <p><strong>Cap or no cap:</strong> Uncapped commission means no ceiling on earnings. Some roles cap commission at a multiple of base salary — avoid these if possible, as they punish success.</p>
+
+      <p><strong>Split structures:</strong> In team sales, how is commission split? Is it 50/50? Based on role? Understand splits before accepting team-based roles.</p>
+
+      <h3>Questions to ask before accepting</h3>
+      <ul>
+        <li>What's the average commission earned by someone in this role over the past 12 months?</li>
+        <li>What's the range — lowest to highest earner?</li>
+        <li>How long is the typical ramp-up period before reaching full productivity?</li>
+        <li>Are leads provided, or do I generate my own?</li>
+        <li>What's the sales cycle length?</li>
+        <li>How are disputes over commission calculated resolved?</li>
+        <li>Can I see the commission agreement in writing before starting?</li>
+      </ul>
+
+      <h2>Common commission scenarios and calculations</h2>
+
+      <h3>Real estate agent (pure commission)</h3>
+      <p><strong>Structure:</strong> No base, 50% of agency commission (agency takes 50%)</p>
+      <p><strong>Example:</strong> Sell R2,000,000 property at 5% agency commission</p>
+      <ul>
+        <li>Agency commission: R2,000,000 × 5% = R100,000</li>
+        <li>Agent's share: R100,000 × 50% = R50,000</li>
+        <li><strong>Gross earnings: R50,000 from one sale</strong></li>
+      </ul>
+      <p><strong>Reality:</strong> May close 2-3 properties per year, creating highly variable income. Requires 12+ month emergency fund.</p>
+
+      <h3>Car salesperson (base plus commission)</h3>
+      <p><strong>Structure:</strong> R8,000 base, 2% commission on vehicles above R150,000 threshold</p>
+      <p><strong>Example:</strong> Sell 8 cars totaling R1,200,000 in a month</p>
+      <ul>
+        <li>Base salary: R8,000</li>
+        <li>Commissionable sales: R1,200,000 - R150,000 = R1,050,000</li>
+        <li>Commission: R1,050,000 × 2% = R21,000</li>
+        <li><strong>Total gross: R29,000</strong></li>
+      </ul>
+
+      <h3>Software sales (tiered commission)</h3>
+      <p><strong>Structure:</strong> R40,000 base, tiered commission on annual contract value (ACV)</p>
+      <ul>
+        <li>First R500,000 ACV: 5%</li>
+        <li>R500,001 – R1,000,000 ACV: 8%</li>
+        <li>Above R1,000,000 ACV: 12%</li>
+      </ul>
+      <p><strong>Example:</strong> Close R1,500,000 in ACV in a quarter</p>
+      <ul>
+        <li>First R500,000 × 5% = R25,000</li>
+        <li>Next R500,000 × 8% = R40,000</li>
+        <li>Final R500,000 × 12% = R60,000</li>
+        <li><strong>Quarterly commission: R125,000</strong> (plus base salary)</li>
+      </ul>
+
+      <h2>Tax planning strategies for commission earners</h2>
+      <p>Commission income creates unique tax planning opportunities not available to regular salaried employees.</p>
+
+      <h3>Maximize Section 23(m) deductions</h3>
+      <p>If commission exceeds 50% of your income, aggressively track and claim all qualifying business expenses. Common missed deductions include:</p>
+      <ul>
+        <li>Home office (many commission earners work from home)</li>
+        <li>Vehicle expenses (with proper logbook)</li>
+        <li>Cell phone and internet (business proportion)</li>
+        <li>Professional development and courses</li>
+        <li>Industry publications and subscriptions</li>
+      </ul>
+
+      <h3>Retirement annuity contributions</h3>
+      <p>Commission earners can contribute up to 27.5% of taxable income (capped at R430,000) to a retirement annuity, deducting the full amount from taxable income. This is especially powerful in high-commission years:</p>
+
+      <ul>
+        <li>Earn R800,000 in a strong year</li>
+        <li>Contribute R100,000 to RA</li>
+        <li>Reduce taxable income to R700,000</li>
+        <li>Save approximately R30,000-R40,000 in tax (depending on marginal rate)</li>
+        <li>Build retirement savings simultaneously</li>
+      </ul>
+
+      <h3>Income averaging through RA</h3>
+      <p>Use high-commission years to make larger RA contributions, effectively "averaging" your income for tax purposes. In low-commission years, contribute less. This smooths your tax burden over time.</p>
+
+      <h3>Timing of large expenses</h3>
+      <p>If you're near the Section 23(m) threshold (50% commission), consider timing large business purchases to push you over the threshold in years when it makes sense, maximizing your deduction eligibility.</p>
+
+      <h2>Glossary: Commission terms explained</h2>
+      <div class="glossary-grid">
+        <div class="glossary-item">
+          <div class="glossary-term">Commission</div>
+          <div class="glossary-def">Payment based on a percentage of sales or revenue generated. Unlike salary, it varies with performance.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">Base Salary</div>
+          <div class="glossary-def">Guaranteed fixed payment regardless of sales performance. Provides income floor in commission structures.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">Threshold</div>
+          <div class="glossary-def">Minimum sales target that must be exceeded before earning commission. Sales below threshold earn zero commission.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">Tiered Commission</div>
+          <div class="glossary-def">Structure where commission rate increases at higher sales levels, rewarding top performers with progressively higher rates.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">Clawback</div>
+          <div class="glossary-def">Provision allowing employer to recover commission if sale is cancelled, client doesn't pay, or other conditions aren't met.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">Section 23(m)</div>
+          <div class="glossary-def">Section of Income Tax Act allowing commission earners (where commission >50% of income) to deduct business expenses.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">Draw</div>
+          <div class="glossary-def">Advance payment against future commission. Can be recoverable (must repay if commission falls short) or non-recoverable.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">Marginal Tax Rate</div>
+          <div class="glossary-def">The tax rate applied to your next rand of income. Commission is taxed at this rate, which may be higher than your average effective rate.</div>
+        </div>
+      </div>
+
+      <h2>Frequently asked questions</h2>
+
+      <h3>How is commission taxed in South Africa?</h3>
+      <p>Commission is added to your salary and taxed as normal income at your marginal rate. There is no special commission tax rate. However, if commission makes up more than 50% of your total remuneration, you may qualify to deduct certain business expenses under Section 23(m) of the Income Tax Act.</p>
+
+      <h3>How do I calculate commission?</h3>
+      <p>Multiply your commissionable sales (total sales minus any threshold) by your commission rate percentage. Then add any base salary to get your total gross earnings. For example, R200,000 sales at 5% commission = R10,000 commission.</p>
+
+      <h3>What expenses can commission earners deduct?</h3>
+      <p>If commission exceeds 50% of your total income, you can deduct expenses directly related to earning that commission: vehicle costs (with logbook), home office expenses, cell phone, travel, entertainment of clients, and professional subscriptions. Keep detailed records and receipts for at least 5 years.</p>
+
+      <h3>What is a commission threshold?</h3>
+      <p>A commission threshold is a minimum sales target you must exceed before earning any commission. For example, with a R50,000 threshold and 5% commission rate, you only earn commission on sales above R50,000. If you sell R80,000, you earn commission on R30,000 only (R1,500).</p>
+
+      <h3>How does tiered commission work?</h3>
+      <p>Tiered commission increases your rate as you hit higher sales targets. For example: 3% on the first R100,000, 5% on R100,001-R200,000, and 7% above R200,000. This rewards top performers with progressively higher rates and strongly incentivizes exceeding targets.</p>
+
+      <h3>Is commission included in UIF calculations?</h3>
+      <p>Yes. UIF contributions (1% employee + 1% employer) are calculated on your total remuneration including commission, but capped at R177.12 per month (based on R17,712 monthly earnings ceiling). Most commission earners hit this cap quickly.</p>
+
+      <h3>How should I budget on commission income?</h3>
+      <p>Budget based on your lowest realistic month, not your average. Build a 6-month emergency fund to smooth over lean months. Save excess from strong months rather than increasing lifestyle spending. This creates stability despite variable income.</p>
+
+      <h3>What's the difference between commission and bonus?</h3>
+      <p>Commission is directly tied to sales performance and calculated as a percentage of revenue generated. Bonuses are typically discretionary payments based on company or individual performance, often paid annually. Both are taxed as ordinary income at your marginal rate.</p>
+
+      <h3>Can I claim home office expenses as a commission earner?</h3>
+      <p>Yes, if commission exceeds 50% of your income and you have a dedicated workspace used exclusively for work. You can claim a proportional share of rent/bond interest, rates, electricity, and other home costs based on floor area. Be aware this may affect capital gains tax when you sell your home.</p>
+
+      <h3>What happens if I don't meet my sales targets?</h3>
+      <p>If you have a base salary, you still receive it regardless of performance. If you're on pure commission or have a threshold you don't meet, you earn zero commission for that period. This is why emergency funds are critical for commission earners — they protect you during slow months.</p>
+
+      <h3>Should I register as a provisional taxpayer?</h3>
+      <p>If you're a pure commission earner (no employer deducting PAYE), you must register as a provisional taxpayer and submit returns twice per year (August and February). If you have an employer deducting PAYE from your commission, you're already covered, but may still owe additional tax at year-end if commission was under-withheld.</p>
+
+      <h3>How do I negotiate a better commission structure?</h3>
+      <p>Focus on more than just the rate. Negotiate for: lower thresholds, better tier structures, faster payment timing, uncapped earnings, favorable clawback provisions, and clear written agreements. Ask about average earnings in the role and the range between lowest and highest performers.</p>
+
+      <div class="disclaim">
+        <strong>Disclaimer:</strong> This calculator provides gross earnings estimates only. It does not calculate tax, UIF, or other deductions. Commission income and Section 23(m) deductions can be complex — consult a registered tax practitioner for personalized advice. Keep detailed records of all business expenses if claiming deductions. CalcMyPay is not affiliated with SARS.
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">CalcMy<span>Pay</span></div>
+    <div class="footer-links">
+      <a href="/salary-income">Salary</a>
+      <a href="/affordability">Affordability</a>
+      <a href="/wealth-building">Wealth</a>
+      <a href="/money-tools">Tools</a>
+      <a href="/financial-coach">Coach</a>
+      <a href="/blog-salary-guide">Guides</a>
+      <a href="/about">About</a>
+      <a href="/privacy-policy">Privacy</a>
+      <a href="/contact">Contact</a>
+    </div>
+    <div class="footer-copy">
+      © 2026 CalcMyPay · Understand your salary. Plan your money. Build your future. · For informational purposes only · Not affiliated with SARS
+    </div>
+  </div>
+</footer>
+
 <script>
-const fmt=n=>'R\u00a0'+Math.round(Math.abs(n)).toLocaleString('en-ZA');
-const brackets=[[245100,.18,0],[383100,.26,44118],[530200,.31,79998],[695800,.36,125599],[887000,.39,185215],[1878600,.41,259783],[Infinity,.45,666339]];
-function sarsTax(t){if(t<=0)return 0;let p=0;for(let[l,r,b]of brackets){if(t<=l)return b+(t-p)*r;p=l;}return 0;}
-function marginalRate(a){let p=0;for(let[l,r]of brackets){if(a<=l)return r;p=l;}return .45;}
-const REBATE=17820;
-
-function calc(){
- const base=parseFloat(document.getElementById('base').value)||0;
- const sales=parseFloat(document.getElementById('sales').value)||0;
- const rate=parseFloat(document.getElementById('rate').value)||0;
- const thr=parseFloat(document.getElementById('thr').value)||0;
- if(sales<=0&&base<=0){alert('Please enter your sales or base salary.');return;}
- const commSales=Math.max(0,sales-thr);
- const comm=commSales*(rate/100);
- const tot=base+comm;
- document.getElementById('big').textContent=fmt(tot);
- document.getElementById('comm').textContent=fmt(comm);
- document.getElementById('r-base').textContent=fmt(base);
- document.getElementById('r-sales').textContent=fmt(commSales);
- document.getElementById('r-comm').textContent=fmt(comm);
- document.getElementById('r-tot').textContent=fmt(tot);
- baseInputs = {base, commSales, rate, total: tot};
- document.getElementById('whatif-section').style.display = 'block';
- resetWhatIf();
- document.getElementById('res').classList.add('show');
- document.getElementById('res').scrollIntoView({behavior:'smooth',block:'nearest'});
-}
-document.addEventListener('keydown',e=>{if(e.key=='Enter')calc()});
+const fmt = n => 'R\u00a0' + Math.round(Math.abs(n)).toLocaleString('en-ZA');
 
 let baseInputs = null;
 
-function renderWhatIf(){
-  if(!baseInputs) return;
+function loadExample() {
+  document.getElementById('base').value = 10000;
+  document.getElementById('sales').value = 200000;
+  document.getElementById('rate').value = 5;
+  document.getElementById('thr').value = 0;
+  calc();
+}
+
+function calc() {
+  const base = parseFloat(document.getElementById('base').value) || 0;
+  const sales = parseFloat(document.getElementById('sales').value) || 0;
+  const rate = parseFloat(document.getElementById('rate').value) || 0;
+  const thr = parseFloat(document.getElementById('thr').value) || 0;
+
+  if (sales <= 0 && base <= 0) { alert('Please enter your sales or base salary.'); return; }
+
+  const commSales = Math.max(0, sales - thr);
+  const comm = commSales * (rate / 100);
+  const tot = base + comm;
+
+  document.getElementById('big').textContent = fmt(tot);
+  document.getElementById('comm').textContent = fmt(comm);
+  document.getElementById('r-base').textContent = fmt(base);
+  document.getElementById('r-sales').textContent = fmt(commSales);
+  document.getElementById('r-comm').textContent = fmt(comm);
+  document.getElementById('r-tot').textContent = fmt(tot);
+
+  baseInputs = { base, commSales, rate, total: tot };
+  document.getElementById('whatif-section').style.display = 'block';
+  resetWhatIf();
+  document.getElementById('res').classList.add('show');
+  document.getElementById('res').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+document.addEventListener('keydown', e => { if (e.key === 'Enter') calc(); });
+
+function renderWhatIf() {
+  if (!baseInputs) return;
   const salesPct = parseFloat(document.getElementById('wi-sales').value);
   const ratePP = parseFloat(document.getElementById('wi-rate').value);
 
-  document.getElementById('wi-sales-out').textContent = (salesPct>=0?'+':'')+salesPct+'%';
-  document.getElementById('wi-rate-out').textContent = (ratePP>=0?'+':'')+ratePP+'pp';
+  document.getElementById('wi-sales-out').textContent = (salesPct >= 0 ? '+' : '') + salesPct + '%';
+  document.getElementById('wi-rate-out').textContent = (ratePP >= 0 ? '+' : '') + ratePP + 'pp';
 
-  const newCommSales = baseInputs.commSales * (1 + salesPct/100);
+  const newCommSales = baseInputs.commSales * (1 + salesPct / 100);
   const newRate = Math.max(0, baseInputs.rate + ratePP);
-  const newComm = newCommSales * (newRate/100);
+  const newComm = newCommSales * (newRate / 100);
   const newTotal = baseInputs.base + newComm;
 
   document.getElementById('wi-newtotal').textContent = fmt(newTotal);
   const delta = newTotal - baseInputs.total;
   const deltaEl = document.getElementById('wi-delta');
-  if(Math.abs(delta) < 1){ deltaEl.textContent = 'No change'; deltaEl.className = 'whatif-delta-val'; }
-  else if(delta > 0){ deltaEl.textContent = '+'+fmt(delta); deltaEl.className = 'whatif-delta-val up'; }
-  else { deltaEl.textContent = '-'+fmt(Math.abs(delta)); deltaEl.className = 'whatif-delta-val down'; }
+
+  if (Math.abs(delta) < 1) {
+    deltaEl.textContent = 'No change';
+    deltaEl.className = 'whatif-delta-val';
+  } else if (delta > 0) {
+    deltaEl.textContent = '+' + fmt(delta);
+    deltaEl.className = 'whatif-delta-val up';
+  } else {
+    deltaEl.textContent = '-' + fmt(Math.abs(delta));
+    deltaEl.className = 'whatif-delta-val down';
+  }
 }
 
-function resetWhatIf(){
+function resetWhatIf() {
   document.getElementById('wi-sales').value = 0;
   document.getElementById('wi-rate').value = 0;
   renderWhatIf();
 }
-</script></body></html>
+
+// Auto-load example for first-time visitors
+window.addEventListener('load', function() {
+  if (!sessionStorage.getItem('commissionCalcVisited')) {
+    setTimeout(loadExample, 500);
+    sessionStorage.setItem('commissionCalcVisited', 'true');
+  }
+});
+</script>
+
+</body>
+</html>
