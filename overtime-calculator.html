@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="color-scheme" content="light"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Overtime Pay Calculator South Africa 2026 | CalcMyPay</title>
-<meta name="description" content="Calculate your overtime pay in South Africa at 1.5x and 2x rates under the BCEA. Work out what your extra hours are worth.">
+<meta name="description" content="Calculate your overtime pay in South Africa at 1.5x and 2x rates under the BCEA. Work out what your extra hours are worth with our free calculator.">
 <meta name="google-adsense-account" content="ca-pub-6108324382808705">
 <link rel="canonical" href="https://calcmypay.co.za/overtime-calculator">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -12,15 +13,56 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/icon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/icon-16.png">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How is overtime calculated in South Africa?","acceptedAnswer":{"@type":"Answer","text":"Under the BCEA, overtime is paid at 1.5 times your normal hourly rate on weekdays and Saturdays, and 2 times on Sundays and public holidays."}},{"@type":"Question","name":"What is the overtime rate in South Africa?","acceptedAnswer":{"@type":"Answer","text":"The standard overtime rate is 1.5x your normal wage. Work on Sundays and public holidays is paid at 2x your normal rate."}}]}</script>
-<style>/* CalcMyPay — Editorial "Ink & Marigold" =================================== */
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How is overtime calculated in South Africa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Under the BCEA, overtime is paid at 1.5 times your normal hourly rate on weekdays and Saturdays, and 2 times on Sundays and public holidays. Your hourly rate is calculated by dividing your monthly salary by 4.33 weeks, then by your normal weekly hours."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the overtime rate in South Africa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The standard overtime rate is 1.5x your normal wage for weekdays and Saturdays. Work on Sundays and public holidays is paid at 2x your normal rate, or you may receive a paid day off in lieu plus your normal rate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who qualifies for overtime pay in South Africa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Employees earning below the BCEA earnings threshold of R269,600.90 per year (effective 1 May 2026) are entitled to overtime pay. Senior managers and employees earning above this threshold may be excluded depending on their contract."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is overtime taxed differently in South Africa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Overtime pay is added to your regular salary and taxed at your marginal rate — there is no special lower tax rate for overtime. However, because overtime is irregular, it doesn't typically change your overall annual tax bracket."
+      }
+    }
+  ]
+}
+</script>
+
+<style>
+/* CalcMyPay — Editorial "Ink & Marigold" */
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap');
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
   --paper:#FFFFFF;--ink:#16201C;--forest:#1B4332;--marigold:#F6B53D;
   --mist:#6B756F;--line:#DEDBD0;--sand:#FFFFFF;--berry:#B23A2E;
   --disp:'Fraunces',Georgia,serif;--body:'Inter',system-ui,sans-serif;
-  /* legacy var aliases so inline styles still resolve */
   --black:#16201C;--navy:#1B4332;--navy-mid:#1B4332;--accent:#1B4332;--accent-dark:#143026;
   --white:#fff;--off-white:#FFFFFF;--green:#1B4332;--green-light:#EDF3EE;--accent-light:#EDF3EE;
   --g100:#FFFFFF;--g200:#E4E2D8;--g400:#AEB3AC;--g600:#6B756F;--g800:#C9CcC4;--red:#B23A2E;
@@ -29,17 +71,11 @@
 html{color-scheme:light;scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{font-family:var(--body);background:var(--paper);color:var(--ink);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased}
 a{color:var(--forest);text-decoration:none}
-
-/* SA stripe — keep but slimmer & muted */
 .sa-stripe{height:3px;background:linear-gradient(90deg,#1B4332 0 16%,#F6B53D 16% 33%,#FCFBF7 33% 50%,#1B4332 50% 66%,#B23A2E 66% 83%,#16201C 83% 100%);opacity:.9}
-
-/* TOP BAR — editorial dateline */
 .top-bar{background:var(--paper);border-bottom:1px solid var(--line);padding:.5rem 2rem;display:flex;align-items:center;justify-content:space-between}
 .tb-l{font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--mist)}
 .tb-r{font-size:.7rem;color:var(--mist);letter-spacing:.04em}
 .tb-r span{color:var(--forest);font-weight:600}
-
-/* MASTHEAD NAV */
 nav{background:var(--paper);border-bottom:2px solid var(--ink);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:74px;position:sticky;top:0;z-index:100}
 .logo{display:flex;align-items:center;gap:.5rem;text-decoration:none}
 .logo-text{font-family:var(--disp);font-size:1.7rem;font-weight:900;letter-spacing:-.02em;color:var(--ink)}
@@ -55,14 +91,6 @@ nav{background:var(--paper);border-bottom:2px solid var(--ink);padding:0 2rem;di
 .nav-cta::after{display:none}
 .nav-cta:hover{background:var(--forest)!important;color:#fff!important}
 @media(max-width:860px){.nav-links{gap:0;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;max-width:60vw}.nav-links::-webkit-scrollbar{display:none}.nav-links a{white-space:nowrap;padding:.5rem .6rem;font-size:.76rem}.logo-text{font-size:1.4rem}nav{padding:0 1rem}}
-
-/* AD SLOTS — quiet */
-.ad-strip{background:var(--paper);border-bottom:1px solid var(--line);text-align:center;padding:.6rem}
-.ad-ph{display:inline-flex;align-items:center;justify-content:center;background:var(--sand);border:1px solid var(--line);color:var(--g400);font-size:.62rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
-.ad-ph.lb{width:728px;height:90px;max-width:100%}.ad-ph.rect{width:300px;height:250px}
-.ad-lbl{font-size:.6rem;color:var(--g400);text-transform:uppercase;letter-spacing:.12em;margin-bottom:.3rem}
-
-/* PAGE HEADER — kicker / headline / standfirst */
 .ph{background:var(--paper);border-bottom:1px solid var(--line);padding:4rem 2rem 3rem}
 .ph-inner{max-width:1080px;margin:0 auto}
 .bc{font-size:.72rem;color:var(--mist);font-weight:500;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1.4rem}
@@ -71,94 +99,27 @@ nav{background:var(--paper);border-bottom:2px solid var(--ink);padding:0 2rem;di
 .ph-cat::before{content:'';width:24px;height:2px;background:var(--marigold)}
 .ph h1{font-family:var(--disp);font-size:clamp(2.2rem,5vw,3.6rem);font-weight:600;color:var(--ink);line-height:1.05;letter-spacing:-.02em;margin-bottom:1rem;max-width:18ch}
 .ph p{font-family:var(--body);color:var(--mist);font-size:1.1rem;line-height:1.6;max-width:60ch}
-.ph-meta{display:flex;gap:1.4rem;font-size:.72rem;color:var(--mist);font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-top:1.2rem}
-
-/* SECTIONS */
-.section{max-width:1080px;margin:0 auto;padding:3.5rem 2rem}
-.section-header{margin-bottom:2rem;padding-bottom:1rem;border-bottom:1px solid var(--line);display:flex;align-items:baseline;justify-content:space-between;gap:1rem;flex-wrap:wrap}
-.section-title{font-family:var(--disp);font-size:1.6rem;font-weight:600;letter-spacing:-.01em;color:var(--ink)}
-.section-title span{color:var(--marigold);font-weight:400;margin:0 .3rem}
-.section-more{font-family:var(--body);font-size:.8rem;font-weight:600;color:var(--forest);letter-spacing:.02em}
-.section-more::after{content:' →'}
-
-/* TICKER — editorial stat strip */
-.ticker{background:var(--sand);border-bottom:1px solid var(--line);padding:.7rem 2rem;display:flex;gap:2.5rem;overflow-x:auto;scrollbar-width:none}
-.ticker::-webkit-scrollbar{display:none}
-.tick-item{display:flex;align-items:baseline;gap:.5rem;white-space:nowrap}
-.tick-label{font-size:.68rem;color:var(--mist);font-weight:600;text-transform:uppercase;letter-spacing:.1em}
-.tick-val{font-family:var(--disp);color:var(--forest);font-weight:600;font-size:1rem}
-
-/* TOOLS GRID + CARDS */
-.tools-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.25rem}
-.tool-card{background:var(--paper);border:1px solid var(--line);padding:1.6rem;transition:.2s;display:flex;flex-direction:column;gap:.7rem;text-decoration:none;color:var(--ink);position:relative}
-.tool-card:hover{border-color:var(--ink);transform:translateY(-2px)}
-.tool-card.featured{border-top:3px solid var(--forest)}
-.tc-cat{font-family:var(--body);font-size:.68rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--mist)}
-.tool-card h3{font-family:var(--disp);font-size:1.25rem;font-weight:600;letter-spacing:-.01em;line-height:1.15;color:var(--ink)}
-.tool-card p{font-family:var(--body);font-size:.88rem;color:var(--mist);line-height:1.55;flex:1}
-.tc-link{font-family:var(--body);font-size:.8rem;font-weight:600;color:var(--forest)}
-.tc-badge{font-family:var(--body);font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.25rem .6rem;background:var(--sand);color:var(--forest);border:1px solid var(--line)}
-
-/* BLOG GRID */
-.blog-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:1.25rem}
-.blog-card{background:var(--paper);border:1px solid var(--line);padding:1.6rem;text-decoration:none;color:var(--ink);transition:.2s}
-.blog-card:hover{border-color:var(--ink);transform:translateY(-2px)}
-.blog-card.lead{border-top:3px solid var(--marigold)}
-.bc-cat{font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);margin-bottom:.6rem;display:block}
-.blog-card h3{font-family:var(--disp);font-size:1.2rem;font-weight:600;line-height:1.2;letter-spacing:-.01em;margin-bottom:.5rem}
-.blog-card.lead h3{font-size:1.6rem}
-.blog-card p{font-size:.86rem;color:var(--mist);line-height:1.55;margin-bottom:.6rem}
-.bc-more{font-size:.78rem;font-weight:600;color:var(--forest)}
-.bc-meta{font-size:.7rem;color:var(--g400);font-weight:600;letter-spacing:.04em;text-transform:uppercase}
-
-/* DATA CELLS (homepage figures) */
-.data-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem;margin-bottom:1rem}
-.dc{background:var(--sand);border:1px solid var(--line);padding:1.5rem}
-.dc-label{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--mist);margin-bottom:.5rem}
-.dc-val{font-family:var(--disp);font-size:2rem;font-weight:600;color:var(--ink);letter-spacing:-.02em;line-height:1}
-.dc-val.acc{color:var(--forest)}
-.dc-sub{font-size:.74rem;color:var(--mist);margin-top:.3rem}
-
-/* WHY CARDS */
-.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
-.why-card{background:var(--paper);border:1px solid var(--line);padding:1.8rem;border-top:3px solid var(--forest)}
-.why-num{font-family:var(--disp);font-size:2.4rem;font-weight:900;color:var(--marigold);line-height:1;margin-bottom:1rem}
-.why-card h3{font-family:var(--disp);font-size:1.2rem;font-weight:600;margin-bottom:.5rem}
-.why-card p{font-size:.88rem;color:var(--mist);line-height:1.6}
-
-/* CTA BLOCK */
-.cta-block{background:var(--ink);color:var(--paper);padding:3rem 2rem;text-align:center}
-.cta-block h2,.cta-block h3{font-family:var(--disp);font-weight:600;color:var(--paper);letter-spacing:-.01em;margin-bottom:.6rem}
-.cta-block h2{font-size:clamp(1.5rem,3vw,2.2rem)}
-.cta-block h3{font-size:1.4rem}
-.cta-block p{color:rgba(255,255,255,.7);margin-bottom:1.5rem;font-size:1rem}
-
-/* BUTTONS */
-.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 1.6rem;font-family:var(--body);font-weight:600;font-size:.9rem;cursor:pointer;border:none;transition:.18s;text-decoration:none;letter-spacing:.01em}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.85rem 1.6rem;font-family:var(--body);font-weight:600;font-size:.9rem;cursor:pointer;border:none;transition:.18s;text-decoration:none;letter-spacing:.01em}
 .btn-accent{background:var(--marigold);color:var(--ink)}
 .btn-accent:hover{background:#eaa523}
 .btn-full{width:100%;justify-content:center}
 .btn:not(.btn-accent){background:var(--ink);color:var(--paper)}
 .btn:not(.btn-accent):hover{background:var(--forest);color:#fff}
-
-/* LAYOUT (tool + article) */
+.btn-example{background:var(--forest);color:var(--paper);margin-top:.8rem;border:2px solid var(--forest)}
+.btn-example:hover{background:var(--ink);border-color:var(--ink)}
+.example-badge{display:inline-block;background:var(--marigold);color:var(--ink);font-size:.62rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.2rem .5rem;margin-right:.5rem;border-radius:2px}
 .layout{max-width:1140px;margin:0 auto;padding:2.5rem 2rem;display:grid;grid-template-columns:1fr 320px;gap:2.5rem;align-items:start}
 @media(max-width:920px){.layout{grid-template-columns:1fr;gap:1.5rem}.sidebar{display:none}}
-
-/* CARD (tool input) */
 .card{background:var(--paper);border:1px solid var(--line)}
 .card-head{padding:1.4rem 1.6rem;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:.9rem}
 .card-cat{font-family:var(--body);font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);border-right:1px solid var(--line);padding-right:.9rem}
 .card-head h2{font-family:var(--disp);font-size:1.4rem;font-weight:600;letter-spacing:-.01em}
 .card-head p{font-size:.84rem;color:var(--mist);margin-top:.15rem}
 .card-body{padding:1.6rem}
-
-/* FORM */
 .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem 1.3rem;margin-bottom:1.4rem}
 @media(max-width:500px){.form-grid{grid-template-columns:1fr}}
 .fg{display:flex;flex-direction:column;gap:.4rem}
 label{font-family:var(--body);font-size:.78rem;font-weight:600;color:var(--ink);letter-spacing:.01em}
-label .hint{font-weight:400;color:var(--mist)}
 .iw{position:relative}
 .ipre,.isuf{position:absolute;top:50%;transform:translateY(-50%);font-size:.95rem;color:var(--mist);font-weight:500;pointer-events:none}
 .ipre{left:1rem}.isuf{right:1rem}
@@ -166,8 +127,6 @@ input,select{width:100%;padding:.8rem 1rem;border:1px solid var(--line);font-fam
 input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 0 3px rgba(27,67,50,.1)}
 .has-pre input{padding-left:2rem}.has-suf input{padding-right:2.4rem}
 .sw{position:relative}.sw::after{content:'';position:absolute;right:1.1rem;top:50%;width:7px;height:7px;border-right:2px solid var(--mist);border-bottom:2px solid var(--mist);transform:translateY(-65%) rotate(45deg);pointer-events:none}
-
-/* RESULT PANELS — the editorial figure signature */
 .results{margin-top:1.6rem;display:none}
 .results.show{display:block;animation:fadeUp .4s ease}
 @keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
@@ -178,8 +137,6 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .eff-block{text-align:right;flex-shrink:0}
 .eff-val{font-family:var(--disp);font-size:2rem;font-weight:600;color:var(--marigold);display:block;letter-spacing:-.02em;line-height:1}
 .eff-lbl{font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:rgba(255,255,255,.6)}
-
-/* breakdown blocks */
 .bb{border:1px solid var(--line);margin-bottom:1rem}
 .bb-title{padding:.7rem 1.1rem;font-family:var(--body);font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.14em;background:var(--sand);border-bottom:1px solid var(--line);color:var(--mist)}
 .br{display:flex;justify-content:space-between;align-items:center;padding:.7rem 1.1rem;font-size:.92rem;border-bottom:1px solid var(--line)}
@@ -190,18 +147,10 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .total-bar{display:flex;justify-content:space-between;align-items:center;padding:1.1rem 1.3rem;background:var(--sand);border:1px solid var(--forest);margin-bottom:1rem}
 .total-bar .lbl{font-family:var(--disp);font-size:1.05rem;font-weight:600;color:var(--forest)}
 .total-bar .val{font-family:var(--disp);font-size:1.3rem;font-weight:700;color:var(--forest);font-variant-numeric:tabular-nums}
-
-/* notes */
 .note{padding:.85rem 1.1rem;font-size:.84rem;line-height:1.6;margin-bottom:.7rem;display:flex;gap:.7rem;border:1px solid var(--line);background:var(--sand)}
 .note.warn{background:#FBF3E0;border-color:#E6D08A;color:#6B5414}
+.note.navy{background:#EDF3EE;border-color:#C9D8CF;color:#1B4332}
 .note a{color:var(--forest);font-weight:600}
-
-/* tabs */
-.type-tabs,.period-tabs{display:flex;gap:.4rem;margin-bottom:1.4rem;background:var(--sand);padding:.3rem;border:1px solid var(--line)}
-.type-tab,.ptab{flex:1;padding:.6rem;border:none;background:transparent;font-family:var(--body);font-weight:600;font-size:.8rem;color:var(--mist);cursor:pointer;transition:.15s;text-align:center}
-.type-tab.active,.ptab.active{background:var(--ink);color:var(--paper)}
-
-/* SIDEBAR */
 .sidebar{display:flex;flex-direction:column;gap:1.5rem}
 .sc{background:var(--paper);border:1px solid var(--line)}
 .sc-head{padding:.8rem 1.1rem;font-family:var(--body);font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.14em;border-bottom:1px solid var(--line);background:var(--sand);color:var(--mist)}
@@ -212,16 +161,14 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .qr{display:flex;justify-content:space-between;font-size:.84rem;padding:.45rem 0;border-bottom:1px solid var(--line);color:var(--mist)}
 .qr:last-child{border-bottom:none}
 .qr strong{color:var(--ink);font-weight:600;font-family:var(--disp)}
-.toc-link{display:block;font-size:.84rem;font-weight:500;color:var(--mist);padding:.4rem 0;border-bottom:1px solid var(--line);transition:color .15s}
-.toc-link:last-child{border-bottom:none}
-.toc-link:hover{color:var(--forest)}
-.related-post{display:block;padding:.75rem 0;border-bottom:1px solid var(--line)}
-.related-post:last-child{border-bottom:none}
-.rp-cat{font-size:.62rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--forest);margin-bottom:.25rem}
-.rp-title{font-family:var(--disp);font-size:.92rem;font-weight:500;color:var(--ink);line-height:1.3}
-.related-post:hover .rp-title{color:var(--forest)}
-
-/* DATA TABLE */
+.tools-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.25rem}
+.tool-card{background:var(--paper);border:1px solid var(--line);padding:1.6rem;transition:.2s;display:flex;flex-direction:column;gap:.7rem;text-decoration:none;color:var(--ink);position:relative}
+.tool-card:hover{border-color:var(--ink);transform:translateY(-2px)}
+.tool-card.featured{border-top:3px solid var(--forest)}
+.tc-cat{font-family:var(--body);font-size:.68rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--mist)}
+.tool-card h3{font-family:var(--disp);font-size:1.25rem;font-weight:600;letter-spacing:-.01em;line-height:1.15;color:var(--ink)}
+.tool-card p{font-family:var(--body);font-size:.88rem;color:var(--mist);line-height:1.55;flex:1}
+.tc-link{font-family:var(--body);font-size:.8rem;font-weight:600;color:var(--forest)}
 .data-table{width:100%;border-collapse:collapse;margin:1.2rem 0 1.6rem;font-size:.9rem;border:1px solid var(--line)}
 .data-table thead tr{background:var(--ink)}
 .data-table th{padding:.75rem 1rem;text-align:left;font-family:var(--body);font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--paper)}
@@ -230,9 +177,10 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .data-table tr:nth-child(even) td{background:var(--sand)}
 .data-table td.td-green{color:var(--forest);font-weight:600}
 .data-table td.td-red{color:var(--berry);font-weight:600}
-.data-table td.td-acc{color:var(--forest);font-weight:600}
-
-/* ARTICLE BODY — magazine measure */
+.section{max-width:1080px;margin:0 auto;padding:3.5rem 2rem}
+.section-header{margin-bottom:2rem;padding-bottom:1rem;border-bottom:1px solid var(--line);display:flex;align-items:baseline;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.section-title{font-family:var(--disp);font-size:1.6rem;font-weight:600;letter-spacing:-.01em;color:var(--ink)}
+.section-title span{color:var(--marigold);font-weight:400;margin:0 .3rem}
 .article-body{padding:2.5rem}
 @media(max-width:600px){.article-body{padding:1.5rem}}
 .article-body h2{font-family:var(--disp);font-size:1.7rem;font-weight:600;color:var(--ink);margin:2.4rem 0 .8rem;letter-spacing:-.01em;line-height:1.15;max-width:30ch}
@@ -244,10 +192,8 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .article-body li{font-family:var(--body);font-size:1.04rem;color:#2C352F;line-height:1.7;margin-bottom:.5rem}
 .article-body a{color:var(--forest);font-weight:500;border-bottom:1px solid var(--marigold)}
 .article-body strong{font-weight:600;color:var(--ink)}
-.callout,.callout.navy,.callout.grey,.callout.green{border:none;border-left:3px solid var(--marigold);background:var(--sand);padding:1.2rem 1.4rem;margin:1.6rem 0;font-family:var(--disp);font-size:1.15rem;font-weight:500;line-height:1.5;color:var(--ink);max-width:64ch}
+.callout{border:none;border-left:3px solid var(--marigold);background:var(--sand);padding:1.2rem 1.4rem;margin:1.6rem 0;font-family:var(--disp);font-size:1.15rem;font-weight:500;line-height:1.5;color:var(--ink);max-width:64ch}
 .callout strong{color:var(--forest)}
-
-/* FOOTER */
 footer{background:var(--ink);color:var(--paper);margin-top:2rem}
 .footer-inner{max-width:1080px;margin:0 auto;padding:2.5rem 2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
 .footer-logo{font-family:var(--disp);font-size:1.5rem;font-weight:900;color:var(--paper)}
@@ -256,28 +202,33 @@ footer{background:var(--ink);color:var(--paper);margin-top:2rem}
 .footer-links a{color:rgba(255,255,255,.7);font-size:.82rem;font-weight:500;transition:color .15s}
 .footer-links a:hover{color:var(--marigold)}
 .footer-copy{color:rgba(255,255,255,.5);font-size:.74rem;width:100%;margin-top:.8rem;padding-top:.9rem;border-top:1px solid rgba(255,255,255,.12)}
+.disclaim{font-size:.82rem;color:var(--mist);background:var(--sand);border:1px solid var(--line);padding:.9rem 1.1rem;line-height:1.6}
+.worked-example{background:#FAFBF7;border:1px solid var(--line);border-left:4px solid var(--forest);padding:1.5rem 1.8rem;margin:1.8rem 0}
+.worked-example-head{display:flex;align-items:center;gap:.6rem;margin-bottom:1rem}
+.worked-example-tag{font-size:.66rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--forest);background:#EDF3EE;padding:.25rem .6rem;border-radius:2px}
+.worked-example h3{font-family:var(--disp);font-size:1.15rem;font-weight:600;margin-bottom:.3rem}
+.worked-example p{font-size:.9rem;color:var(--mist);line-height:1.6;margin-bottom:.8rem}
+.strategy-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.25rem;margin:1.5rem 0}
+.strategy-card{background:var(--paper);border:1px solid var(--line);padding:1.6rem;border-top:3px solid var(--forest);transition:.2s}
+.strategy-card:hover{border-color:var(--ink);transform:translateY(-2px)}
+.strategy-num{font-family:var(--disp);font-size:2rem;font-weight:900;color:var(--marigold);margin-bottom:.5rem}
+.strategy-card h3{font-family:var(--disp);font-size:1.1rem;font-weight:600;color:var(--ink);margin-bottom:.5rem}
+.strategy-card p{font-size:.86rem;color:var(--mist);line-height:1.6;margin-bottom:.5rem}
+.glossary-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem;margin:1.5rem 0}
+.glossary-item{background:var(--sand);border:1px solid var(--line);padding:1.1rem 1.3rem}
+.glossary-term{font-family:var(--disp);font-size:1rem;font-weight:600;color:var(--forest);margin-bottom:.3rem}
+.glossary-def{font-size:.84rem;color:var(--mist);line-height:1.6}
 
-/* MISC legacy */
-.scenario-result{background:var(--sand);border:1px solid var(--forest);padding:1.2rem}
-.disclaim,.disclaim-box{font-size:.82rem;color:var(--mist);background:var(--sand);border:1px solid var(--line);padding:.9rem 1.1rem;line-height:1.6}
-.eyebrow{font-family:var(--body);font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);margin-bottom:.5rem}
-
-/* RESPONSIVE */
 @media(max-width:768px){
-  [style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr!important}
-  [style*="grid-template-columns:repeat(3,1fr)"]{grid-template-columns:1fr!important}
-  [style*="grid-template-columns:repeat(4,1fr)"]{grid-template-columns:1fr 1fr!important}
-  [style*="grid-template-columns:2fr 1fr 1fr"]{grid-template-columns:1fr!important}
-  [style*="grid-template-columns:1.1fr 1fr"]{grid-template-columns:1fr!important}
-  [style*="grid-template-columns:1fr 1fr;gap:4rem"]{grid-template-columns:1fr!important;gap:2rem!important}
-  .blog-grid,.data-row,.why-grid{grid-template-columns:1fr!important}
   .ph{padding:2.5rem 1.25rem 2rem}.section{padding:2.5rem 1.25rem}.layout{padding:1.5rem 1.25rem}
   .th-panel{flex-direction:column;align-items:flex-start;gap:1rem}.eff-block{text-align:left}
   .th-amount{font-size:2.6rem}
   .footer-inner{flex-direction:column;text-align:center}.footer-links{justify-content:center}
   .top-bar{padding:.4rem 1rem}.tb-r{display:none}
   .data-table{display:block;overflow-x:auto}
+  .article-body{padding:1.5rem}
 }
+
 .whatif-section{margin-top:1.8rem;border-top:2px solid var(--ink);padding-top:1.8rem}
 .whatif-kicker{font-family:var(--body);font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);margin-bottom:.4rem;display:flex;align-items:center;gap:.6rem}
 .whatif-kicker::before{content:'';width:24px;height:2px;background:var(--marigold)}
@@ -300,119 +251,599 @@ footer{background:var(--ink);color:var(--paper);margin-top:2rem}
 .whatif-delta-lbl{font-size:.72rem;color:rgba(255,255,255,.6);margin-top:.3rem}
 .whatif-reset{margin-top:1rem;text-align:center}
 .whatif-reset button{background:none;border:1px solid var(--line);padding:.5rem 1.1rem;font-family:var(--body);font-size:.78rem;font-weight:600;color:var(--mist);cursor:pointer;transition:.15s}
-.whatif-reset button:hover{border-color:var(--ink);color:var(--ink)}</style>
+.whatif-reset button:hover{border-color:var(--ink);color:var(--ink)}
+</style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6108324382808705" crossorigin="anonymous"></script>
 </head>
-<body><div class="sa-stripe"></div><div class="top-bar"><div class="tb-l">🇿🇦 South Africa · SARS 2027 Tax Year</div><div class="tb-r">Primary rebate <span>R17,820</span> · Tax-free <span>R99,000</span></div></div><nav>
+<body>
+<div class="sa-stripe"></div>
+
+<div class="top-bar">
+  <div class="tb-l">🇿🇦 South Africa · BCEA 2026</div>
+  <div class="tb-r">BCEA threshold <span>R269,600/yr</span> · Max overtime <span>10 hrs/week</span></div>
+</div>
+
+<nav>
   <a href="/" class="logo"><div class="logo-text">CalcMy<span>Pay</span></div></a>
   <div class="nav-links">
-    <a href="/salary-income" class="active">Salary</a><a href="/affordability">Affordability</a><a href="/wealth-building">Wealth</a><a href="/career-intelligence">Careers</a><a href="/money-tools">Tools</a><a href="/financial-coach">Coach</a><a href="/blog-salary-guide">Guides</a><a href="/salary-calculator" class="nav-cta">Calculate →</a>
+    <a href="/salary-income" class="active">Salary</a>
+    <a href="/affordability">Affordability</a>
+    <a href="/wealth-building">Wealth</a>
+    <a href="/career-intelligence">Careers</a>
+    <a href="/money-tools">Tools</a>
+    <a href="/financial-coach">Coach</a>
+    <a href="/blog-salary-guide">Guides</a>
+    <a href="/salary-calculator" class="nav-cta">Calculate →</a>
   </div>
-</nav><div class="ph"><div class="ph-inner"><div class="bc"><a href="/">Home</a><span>/</span><a href="/salary-income">Salary & Income</a><span>/</span>Overtime Pay Calculator</div><div class="ph-cat">Salary & Income</div><h1>Overtime Pay Calculator</h1><p>Calculate overtime at 1.5x and 2x rates under the BCEA</p></div></div><div class="layout"><div><div class="card"><div class="card-head"><div class="card-cat">Overtime</div><div><h2>Overtime pay</h2><p>Work out what your extra hours are worth</p></div></div>
-<div class="card-body">
-<div class="form-grid">
-<div class="fg"><label>Your Normal Pay</label><div class="iw has-pre"><span class="ipre">R</span><input type="number" id="pay" placeholder="20 000" min="0"></div></div>
-<div class="fg"><label>Pay Period</label><div class="sw"><select id="per"><option value="m">Per month</option><option value="h">Per hour</option></select></div></div>
-<div class="fg"><label>Normal Hours / Week</label><div class="iw"><input type="number" id="hrs" placeholder="40" min="1" value="40"></div></div>
-<div class="fg"><label>Overtime Hours (1.5x)</label><div class="iw"><input type="number" id="ot15" placeholder="0" min="0"></div></div>
-<div class="fg"><label>Sunday / Holiday Hours (2x)</label><div class="iw"><input type="number" id="ot2" placeholder="0" min="0"></div></div>
-</div>
-<button class="btn btn-full btn-accent" onclick="calc()">Calculate overtime →</button>
-<div class="results" id="res">
-<div class="th-panel"><div><div class="th-label">Total overtime pay</div><div class="th-amount" id="big">R0</div><div class="th-period">for these hours</div></div><div class="eff-block"><span class="eff-val" id="rate">R0</span><span class="eff-lbl">Normal hourly</span></div></div>
-<div class="bb"><div class="bb-title">Overtime breakdown</div>
-<div class="br"><span class="lbl">Normal hourly rate</span><span class="val neu" id="r-rate">R0</span></div>
-<div class="br"><span class="lbl">Overtime at 1.5x</span><span class="val pos" id="r-ot15">R0</span></div>
-<div class="br"><span class="lbl">Sunday/holiday at 2x</span><span class="val pos" id="r-ot2">R0</span></div>
-</div>
-<div class="total-bar"><span class="lbl">✓ Total overtime earned</span><span class="val" id="r-tot">R0</span></div>
-<div class="note warn"><span>⚠</span><span>Overtime is added to your salary and taxed at your marginal rate. The BCEA limits overtime to 10 hours/week for most employees.</span></div>
-<div class="whatif-section" id="whatif-section" style="display:none">
-  <div class="whatif-kicker">What if?</div>
-  <div class="whatif-title">Test a scenario</div>
-  <p class="whatif-sub">Drag the sliders to see how changes affect your total overtime pay.</p>
+</nav>
 
-  <div class="whatif-grid">
-    <div class="whatif-control">
-      <div class="whatif-control-head"><label>Extra 1.5x hours</label><output id="wi-ot15-out">+0 hrs</output></div>
-      <input type="range" id="wi-ot15" min="0" max="20" value="0" step="1" oninput="renderWhatIf()">
+<div class="ph">
+  <div class="ph-inner">
+    <div class="bc">
+      <a href="/">Home</a><span>/</span>
+      <a href="/salary-income">Salary & Income</a><span>/</span>
+      Overtime Calculator
     </div>
-    <div class="whatif-control">
-      <div class="whatif-control-head"><label>Extra weekend/holiday hours (2x)</label><output id="wi-ot2-out">+0 hrs</output></div>
-      <input type="range" id="wi-ot2" min="0" max="20" value="0" step="1" oninput="renderWhatIf()">
-    </div>
+    <div class="ph-cat">Salary & Income</div>
+    <h1>Overtime Pay Calculator</h1>
+    <p>Calculate your overtime pay at 1.5x and 2x rates under the Basic Conditions of Employment Act (BCEA). Find out exactly what your extra hours are worth.</p>
   </div>
-
-  <div class="whatif-result">
-    <div>
-      <div class="whatif-result-label">New total overtime pay</div>
-      <div class="whatif-result-val" id="wi-newtotal">R0</div>
-    </div>
-    <div class="whatif-delta">
-      <div class="whatif-delta-val" id="wi-delta">—</div>
-      <div class="whatif-delta-lbl">vs your current overtime pay</div>
-    </div>
-  </div>
-  <div class="whatif-reset"><button onclick="resetWhatIf()">Reset scenario</button></div>
-  <div class="note warn" style="margin-top:1rem"><span>⚠</span><span>This is <strong>gross overtime pay only</strong>, before tax, and does not check BCEA hour limits. Overtime is taxed at your marginal rate — see the <a href="/salary-calculator">salary calculator</a> for take-home.</span></div>
 </div>
 
-</div></div></div></div><div class="sidebar"><div class="sc"><div class="sc-head">BCEA overtime rules</div><div class="sc-body">
-<div class="tip"><span>→</span><span>Weekday & Saturday overtime: <strong>1.5x</strong> normal rate.</span></div>
-<div class="tip"><span>→</span><span>Sunday & public holiday: <strong>2x</strong> normal rate.</span></div>
-<div class="tip"><span>→</span><span>Overtime is capped at 10 hours per week.</span></div>
-<div class="tip"><span>→</span><span>Employees above the BCEA earnings threshold may be excluded.</span></div>
-</div></div></div></div><div class="section" style="padding-top:0"><div style="background:var(--white);border:1px solid var(--g200);border-top:3px solid var(--navy);padding:2rem 2.2rem"><div class="article-body" style="padding:0"><h2 style="margin-top:0">Your rights and rates for overtime pay under South African law</h2><h2>What the law actually requires</h2><p>The Basic Conditions of Employment Act (BCEA) sets the minimum standards for overtime pay in South Africa. Employers cannot legally pay less than these rates for qualifying overtime work, though many pay more as part of their own policies.</p><h2>The legal minimum rates</h2><ul><li><strong>Weekday and Saturday overtime</strong> — at least 1.5 times your normal hourly rate.</li><li><strong>Sunday and public holiday work</strong> — at least 2 times your normal hourly rate, or a paid day off plus your normal rate, depending on your agreement.</li><li><strong>Maximum overtime</strong> — generally capped at 10 hours per week, and total working hours (normal plus overtime) may not exceed 12 hours per day.</li></ul><h2>Who this applies to</h2><p>The BCEA overtime provisions apply to most employees, but there are exclusions — senior managerial employees, and anyone earning above the earnings threshold set annually by the Minister of Employment and Labour, may be excluded from these specific protections, depending on their contract.</p><h2>Overtime and your tax</h2><p>Overtime pay is added to your normal salary for that month and taxed at your marginal rate — there is no separate, lower tax rate for overtime earnings. A big overtime month can occasionally push part of your income into a higher tax bracket for that month, though your annual tax liability is calculated on your total yearly earnings, not any single month in isolation.</p></div></div></div>
-<div class="section" style="padding-top:0"><div class="section-header"><div class="section-title">Related <span>/</span> Salary Tools</div></div><div class="tools-grid"><a href="/salary-calculator" class="tool-card featured"><div class="tc-cat">Salary & Income</div><h3>Salary After Tax Calculator</h3><span class="tc-link">Open →</span></a><a href="/paye-calculator" class="tool-card featured"><div class="tc-cat">Salary & Income</div><h3>PAYE Calculator</h3><span class="tc-link">Open →</span></a><a href="/gross-to-net" class="tool-card featured"><div class="tc-cat">Salary & Income</div><h3>Gross to Net Salary</h3><span class="tc-link">Open →</span></a><a href="/bonus-calculator" class="tool-card featured"><div class="tc-cat">Salary & Income</div><h3>Bonus & 13th Cheque</h3><span class="tc-link">Open →</span></a><a href="/commission-calculator" class="tool-card featured"><div class="tc-cat">Salary & Income</div><h3>Commission Calculator</h3><span class="tc-link">Open →</span></a><a href="/hourly-wage" class="tool-card featured"><div class="tc-cat">Salary & Income</div><h3>Hourly Wage Calculator</h3><span class="tc-link">Open →</span></a></div></div><div class="sa-stripe"></div>
-<div class="section"><div style="background:var(--white);border:1px solid var(--line);border-top:3px solid var(--forest)"><div class="article-body"><h2>The legal framework behind overtime pay in South Africa</h2><p>The Basic Conditions of Employment Act (BCEA) sets the legal minimum standards for overtime compensation, though many employment contracts and sectoral agreements provide more generous terms. Understanding the legal baseline helps you recognise whether your employer's overtime policy meets, exceeds, or potentially falls short of what the law requires.</p><h2>Who is and is not covered by BCEA overtime provisions</h2><p>Not every employee is entitled to overtime under the BCEA. Employees earning above a specified annual earnings threshold, and those in certain senior management or specific sectoral roles, may be excluded from these provisions. It is worth checking your specific employment contract and sector to understand which rules apply to your situation.</p><h2>Why the 1.5x and 2x rates exist</h2><table class="data-table"><thead><tr><th>Time worked</th><th>Rate</th><th>Rationale</th></tr></thead><tbody><tr><td>Normal weekday/Saturday overtime</td><td>1.5x</td><td>Compensates for time beyond the standard work week</td></tr><tr><td>Sunday work</td><td>2x (or a day off in lieu)</td><td>Sundays are treated as a protected rest day by default</td></tr><tr><td>Public holidays</td><td>2x</td><td>Recognises the significance of public holidays as rest days</td></tr></tbody></table><h2>The BCEA overtime hour limits</h2><p>The BCEA generally limits overtime to 10 hours per week for covered employees, and total working time (ordinary plus overtime) is capped to protect against excessive hours. If you are regularly working significantly more than this, it is worth understanding whether this is compliant with your specific employment arrangement.</p><h2>How overtime interacts with your tax bracket</h2><p>Overtime pay is added to your ordinary income for the month it is earned and taxed at your marginal rate — the rate applicable to your combined income for that specific month, not a special "overtime rate." This means a month with substantial overtime can push a portion of your income into a higher tax bracket for that month specifically, even if your average annual income remains in a lower bracket.</p><h2>Making overtime work for your broader financial picture</h2><p>Overtime income is often irregular, which makes it well suited to specific financial goals rather than baseline monthly budgeting. Consider directing overtime earnings straight into your <a href="/emergency-fund">emergency fund</a> or a <a href="/savings-goal">specific savings goal</a>, rather than letting it blend into regular spending where its impact is harder to track.</p></div></div></div>
+<div class="layout">
+  <div>
+    <div class="card">
+      <div class="card-head">
+        <div class="card-cat">Overtime</div>
+        <div>
+          <h2>Overtime pay</h2>
+          <p>Work out what your extra hours are worth</p>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="form-grid">
+          <div class="fg">
+            <label>Your Normal Pay</label>
+            <div class="iw has-pre"><span class="ipre">R</span><input type="number" id="pay" placeholder="20000" min="0"></div>
+          </div>
+          <div class="fg">
+            <label>Pay Period</label>
+            <div class="sw">
+              <select id="per">
+                <option value="m">Per month</option>
+                <option value="h">Per hour</option>
+              </select>
+            </div>
+          </div>
+          <div class="fg">
+            <label>Normal Hours / Week</label>
+            <div class="iw"><input type="number" id="hrs" placeholder="40" min="1" value="40"></div>
+          </div>
+          <div class="fg">
+            <label>Overtime Hours (1.5x)</label>
+            <div class="iw"><input type="number" id="ot15" placeholder="0" min="0"></div>
+          </div>
+          <div class="fg">
+            <label>Sunday / Holiday Hours (2x)</label>
+            <div class="iw"><input type="number" id="ot2" placeholder="0" min="0"></div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-full btn-accent" onclick="calc()">Calculate overtime →</button>
+        <button type="button" class="btn btn-full btn-example" onclick="loadExample()"><span class="example-badge">Example</span>Try R20k salary + 10 hrs overtime</button>
 
-<footer><div class="footer-inner">
-  <div class="footer-logo">CalcMy<span>Pay</span></div>
-  <div class="footer-links"><a href="/salary-income">Salary</a><a href="/affordability">Affordability</a><a href="/wealth-building">Wealth</a><a href="/money-tools">Tools</a><a href="/financial-coach">Coach</a><a href="/blog-salary-guide">Guides</a><a href="/about">About</a><a href="/privacy-policy">Privacy</a><a href="/contact">Contact</a></div>
-  <div class="footer-copy">© 2026 CalcMyPay · Understand your salary. Plan your money. Build your future. · For informational purposes only · Not affiliated with SARS · SARS 2027 tax year</div>
-</div></footer>
+        <div class="results" id="res">
+          <div class="th-panel">
+            <div>
+              <div class="th-label">Total overtime pay</div>
+              <div class="th-amount" id="big">R0</div>
+              <div class="th-period">for these hours</div>
+            </div>
+            <div class="eff-block">
+              <span class="eff-val" id="rate">R0</span>
+              <span class="eff-lbl">Normal hourly</span>
+            </div>
+          </div>
+          <div class="bb">
+            <div class="bb-title">Overtime breakdown</div>
+            <div class="br"><span class="lbl">Normal hourly rate</span><span class="val neu" id="r-rate">R0</span></div>
+            <div class="br"><span class="lbl">Overtime at 1.5x</span><span class="val pos" id="r-ot15">R0</span></div>
+            <div class="br"><span class="lbl">Sunday/holiday at 2x</span><span class="val pos" id="r-ot2">R0</span></div>
+          </div>
+          <div class="total-bar">
+            <span class="lbl">✓ Total overtime earned</span>
+            <span class="val" id="r-tot">R0</span>
+          </div>
+          <div class="note warn">
+            <span>⚠</span>
+            <span>Overtime is added to your salary and taxed at your marginal rate. The BCEA limits overtime to 10 hours/week for most employees.</span>
+          </div>
+
+          <div class="whatif-section" id="whatif-section" style="display:none">
+            <div class="whatif-kicker">What if?</div>
+            <div class="whatif-title">Test a scenario</div>
+            <p class="whatif-sub">Drag the sliders to see how changes affect your total overtime pay.</p>
+            <div class="whatif-grid">
+              <div class="whatif-control">
+                <div class="whatif-control-head"><label>Extra 1.5x hours</label><output id="wi-ot15-out">+0 hrs</output></div>
+                <input type="range" id="wi-ot15" min="0" max="20" value="0" step="1" oninput="renderWhatIf()">
+              </div>
+              <div class="whatif-control">
+                <div class="whatif-control-head"><label>Extra weekend/holiday hours (2x)</label><output id="wi-ot2-out">+0 hrs</output></div>
+                <input type="range" id="wi-ot2" min="0" max="20" value="0" step="1" oninput="renderWhatIf()">
+              </div>
+            </div>
+            <div class="whatif-result">
+              <div>
+                <div class="whatif-result-label">New total overtime pay</div>
+                <div class="whatif-result-val" id="wi-newtotal">R0</div>
+              </div>
+              <div class="whatif-delta">
+                <div class="whatif-delta-val" id="wi-delta">—</div>
+                <div class="whatif-delta-lbl">vs your current overtime pay</div>
+              </div>
+            </div>
+            <div class="whatif-reset"><button onclick="resetWhatIf()">Reset scenario</button></div>
+            <div class="note warn" style="margin-top:1rem">
+              <span>⚠</span>
+              <span>This is <strong>gross overtime pay only</strong>, before tax, and does not check BCEA hour limits. Overtime is taxed at your marginal rate — see the <a href="/salary-calculator">salary calculator</a> for take-home.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar">
+    <div class="sc">
+      <div class="sc-head">BCEA Overtime Rules 2026</div>
+      <div class="sc-body">
+        <div class="tip"><span>→</span><span>Weekday & Saturday overtime: <strong>1.5x</strong> normal rate.</span></div>
+        <div class="tip"><span>→</span><span>Sunday & public holiday: <strong>2x</strong> normal rate.</span></div>
+        <div class="tip"><span>→</span><span>Overtime is capped at <strong>10 hours per week</strong>.</span></div>
+        <div class="tip"><span>→</span><span>BCEA earnings threshold: <strong>R269,600.90/yr</strong> (from 1 May 2026).</span></div>
+        <div class="tip"><span>→</span><span>Employees earning above the threshold may be excluded from overtime provisions.</span></div>
+      </div>
+    </div>
+
+    <div class="sc">
+      <div class="sc-head">Related Calculators</div>
+      <div class="sc-body">
+        <div class="tip"><span>→</span><a href="/salary-calculator">Salary After Tax Calculator</a></div>
+        <div class="tip"><span>→</span><a href="/paye-calculator">PAYE Calculator</a></div>
+        <div class="tip"><span>→</span><a href="/bonus-calculator">Bonus & 13th Cheque</a></div>
+        <div class="tip"><span>→</span><a href="/hourly-wage">Hourly Wage Calculator</a></div>
+        <div class="tip"><span>→</span><a href="/commission-calculator">Commission Calculator</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="padding-top:0">
+  <div class="section-header">
+    <div class="section-title">Related <span>/</span> Salary Tools</div>
+  </div>
+  <div class="tools-grid">
+    <a href="/salary-calculator" class="tool-card featured">
+      <div class="tc-cat">Salary & Income</div>
+      <h3>Salary After Tax Calculator</h3>
+      <span class="tc-link">Open →</span>
+    </a>
+    <a href="/paye-calculator" class="tool-card featured">
+      <div class="tc-cat">Salary & Income</div>
+      <h3>PAYE Calculator</h3>
+      <span class="tc-link">Open →</span>
+    </a>
+    <a href="/gross-to-net" class="tool-card featured">
+      <div class="tc-cat">Salary & Income</div>
+      <h3>Gross to Net Salary</h3>
+      <span class="tc-link">Open →</span>
+    </a>
+    <a href="/bonus-calculator" class="tool-card featured">
+      <div class="tc-cat">Salary & Income</div>
+      <h3>Bonus & 13th Cheque</h3>
+      <span class="tc-link">Open →</span>
+    </a>
+    <a href="/commission-calculator" class="tool-card featured">
+      <div class="tc-cat">Salary & Income</div>
+      <h3>Commission Calculator</h3>
+      <span class="tc-link">Open →</span>
+    </a>
+    <a href="/hourly-wage" class="tool-card featured">
+      <div class="tc-cat">Salary & Income</div>
+      <h3>Hourly Wage Calculator</h3>
+      <span class="tc-link">Open →</span>
+    </a>
+  </div>
+</div>
+
+<div class="section">
+  <div style="background:var(--white);border:1px solid var(--line);border-top:3px solid var(--forest)">
+    <div class="article-body">
+
+      <h2>Understanding overtime pay in South Africa</h2>
+      <p>Overtime pay is one of the most misunderstood aspects of South African employment law. Many workers don't know exactly what they're entitled to, how their overtime rate is calculated, or whether they even qualify for overtime protection under the law. This comprehensive guide explains everything you need to know about overtime pay under the Basic Conditions of Employment Act (BCEA), including the legal minimum rates, who qualifies, and how to calculate what your extra hours are actually worth.</p>
+
+      <p>Whether you're regularly working overtime, occasionally called in on weekends, or trying to understand whether your employer is meeting their legal obligations, this calculator and guide will give you the clarity you need. All calculations are based on the current BCEA provisions and the earnings threshold effective from 1 May 2026.</p>
+
+      <h2>What the BCEA actually requires for overtime</h2>
+      <p>The Basic Conditions of Employment Act (BCEA) sets the legal minimum standards for overtime compensation in South Africa. These are minimum requirements — your employment contract or sectoral determination may provide more generous terms, but no employer can legally pay less than what the BCEA requires.</p>
+
+      <h3>The legal minimum overtime rates</h3>
+      <p>South African law recognizes two different overtime rates depending on when the work is performed:</p>
+
+      <ul>
+        <li><strong>Weekday and Saturday overtime:</strong> At least 1.5 times your normal hourly rate. This applies to any work beyond your normal working hours on Monday through Saturday.</li>
+        <li><strong>Sunday and public holiday work:</strong> At least 2 times your normal hourly rate, OR your normal rate plus a paid day off in lieu. This recognizes Sundays and public holidays as protected rest days.</li>
+      </ul>
+
+      <div class="callout">
+        <strong>Important:</strong> These are minimum rates. Many employers, particularly in unionized sectors or professional services, pay higher overtime rates as part of their employment policies or collective agreements. Always check your specific contract.
+      </div>
+
+      <h3>Maximum overtime hours</h3>
+      <p>The BCEA generally limits overtime to <strong>10 hours per week</strong> for covered employees. Additionally, total working time (ordinary hours plus overtime) may not exceed:</p>
+      <ul>
+        <li>12 hours on any single day</li>
+        <li>45 hours per week for employees working 5 days or fewer</li>
+        <li>48 hours per week for employees working 6 days</li>
+      </ul>
+
+      <p>If you're regularly working significantly more than these limits, it's worth understanding whether this is compliant with your specific employment arrangement and whether you're being properly compensated.</p>
+
+      <h2>Who qualifies for overtime protection?</h2>
+      <p>Not every employee in South Africa is automatically entitled to overtime pay under the BCEA. The law excludes certain categories of workers from these specific protections:</p>
+
+      <h3>The BCEA earnings threshold</h3>
+      <p>The most important factor is whether you earn above or below the BCEA earnings threshold. As of 1 May 2026, this threshold is <strong>R269,600.90 per year</strong> (approximately R22,466.74 per month).</p>
+
+      <ul>
+        <li><strong>Earning below the threshold:</strong> You are entitled to the full protection of BCEA overtime provisions. Your employer must pay you at least 1.5x for weekday overtime and 2x for Sunday/public holiday work.</li>
+        <li><strong>Earning above the threshold:</strong> You may be excluded from BCEA overtime protections, depending on your employment contract. Many employers still pay overtime to higher earners as a matter of policy or contractual agreement.</li>
+      </ul>
+
+      <h3>Senior management exclusion</h3>
+      <p>Senior managerial employees — those with authority to make significant decisions about the business and their own working hours — may also be excluded from overtime provisions, regardless of their earnings level.</p>
+
+      <h3>Sectoral determinations</h3>
+      <p>Certain industries have sectoral determinations that may override or supplement the general BCEA provisions. These include:</p>
+      <ul>
+        <li>Farm workers</li>
+        <li>Domestic workers</li>
+        <li>Hospitality sector</li>
+        <li>Security services</li>
+        <li>Wholesale and retail</li>
+      </ul>
+
+      <p>Each sectoral determination has its own specific rules about overtime rates, maximum hours, and rest periods. If you work in one of these sectors, check the specific determination that applies to your industry.</p>
+
+      <h2>How to calculate your overtime rate</h2>
+      <p>Calculating your overtime pay requires first determining your normal hourly rate. Here's the step-by-step process:</p>
+
+      <h3>Step 1: Determine your normal hourly rate</h3>
+      <p>If you're paid monthly, convert to an hourly rate using this formula:</p>
+      <ul>
+        <li>Monthly salary × 12 = Annual salary</li>
+        <li>Annual salary ÷ 52 weeks = Weekly salary</li>
+        <li>Weekly salary ÷ Normal hours per week = Hourly rate</li>
+      </ul>
+
+      <p>For example, if you earn R20,000 per month and work 45 hours per week:</p>
+      <ul>
+        <li>R20,000 × 12 = R240,000 per year</li>
+        <li>R240,000 ÷ 52 = R4,615.38 per week</li>
+        <li>R4,615.38 ÷ 45 = <strong>R102.56 per hour</strong></li>
+      </ul>
+
+      <h3>Step 2: Apply the overtime multiplier</h3>
+      <p>Once you have your normal hourly rate:</p>
+      <ul>
+        <li>Weekday/Saturday overtime: Hourly rate × 1.5</li>
+        <li>Sunday/Public holiday: Hourly rate × 2.0</li>
+      </ul>
+
+      <div class="worked-example">
+        <div class="worked-example-head">
+          <span class="worked-example-tag">Worked Example</span>
+          <h3>Calculating overtime on R20,000 monthly salary</h3>
+        </div>
+        <p>Let's work through a realistic scenario: You earn R20,000 per month, work 45 hours per week normally, and in one week you work 8 hours of weekday overtime plus 4 hours on a Sunday.</p>
+        
+        <p><strong>Step 1: Calculate normal hourly rate</strong></p>
+        <ul>
+          <li>R20,000 × 12 = R240,000 per year</li>
+          <li>R240,000 ÷ 52 = R4,615.38 per week</li>
+          <li>R4,615.38 ÷ 45 = R102.56 per hour</li>
+        </ul>
+
+        <p><strong>Step 2: Calculate overtime rates</strong></p>
+        <ul>
+          <li>Weekday overtime rate: R102.56 × 1.5 = R153.84 per hour</li>
+          <li>Sunday rate: R102.56 × 2.0 = R205.12 per hour</li>
+        </ul>
+
+        <p><strong>Step 3: Calculate total overtime pay</strong></p>
+        <ul>
+          <li>8 hours weekday overtime: 8 × R153.84 = R1,230.72</li>
+          <li>4 hours Sunday work: 4 × R205.12 = R820.48</li>
+          <li><strong>Total overtime: R2,051.20</strong></li>
+        </ul>
+
+        <p style="margin-top:1rem">For those 12 hours of extra work, you would earn R2,051.20 in overtime pay, in addition to your normal salary. This is before tax — overtime is added to your regular income and taxed at your marginal rate.</p>
+      </div>
+
+      <h2>Common overtime scenarios and calculations</h2>
+      <p>The table below shows overtime calculations for common salary levels and overtime scenarios. These figures assume a 45-hour work week and use the 1.5x and 2x BCEA minimum rates.</p>
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Monthly Salary</th>
+            <th>Hourly Rate</th>
+            <th>1.5x Rate</th>
+            <th>2x Rate</th>
+            <th>10 hrs weekday OT</th>
+            <th>4 hrs Sunday</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>R8,000</td>
+            <td>R41.03</td>
+            <td>R61.54</td>
+            <td>R82.05</td>
+            <td class="td-green">R615.40</td>
+            <td class="td-green">R328.20</td>
+          </tr>
+          <tr>
+            <td>R12,000</td>
+            <td>R61.54</td>
+            <td>R92.31</td>
+            <td>R123.08</td>
+            <td class="td-green">R923.10</td>
+            <td class="td-green">R492.32</td>
+          </tr>
+          <tr>
+            <td>R15,000</td>
+            <td>R76.92</td>
+            <td>R115.38</td>
+            <td>R153.85</td>
+            <td class="td-green">R1,153.80</td>
+            <td class="td-green">R615.40</td>
+          </tr>
+          <tr>
+            <td>R20,000</td>
+            <td>R102.56</td>
+            <td>R153.85</td>
+            <td>R205.13</td>
+            <td class="td-green">R1,538.50</td>
+            <td class="td-green">R820.52</td>
+          </tr>
+          <tr>
+            <td>R25,000</td>
+            <td>R128.21</td>
+            <td>R192.31</td>
+            <td>R256.41</td>
+            <td class="td-green">R1,923.10</td>
+            <td class="td-green">R1,025.64</td>
+          </tr>
+          <tr>
+            <td>R30,000</td>
+            <td>R153.85</td>
+            <td>R230.77</td>
+            <td>R307.69</td>
+            <td class="td-green">R2,307.70</td>
+            <td class="td-green">R1,230.76</td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="font-size:.84rem;color:var(--mist);margin-top:.5rem">Note: These calculations assume a 45-hour work week. If you work different normal hours, your hourly rate will be different. Employees earning above R269,600.90/year may not be entitled to overtime under the BCEA.</p>
+
+      <h2>How overtime interacts with your tax</h2>
+      <p>A common misconception is that overtime is taxed at a special lower rate, or conversely, that it's taxed at a punitive higher rate. The reality is simpler: overtime pay is added to your regular salary for the month it's earned and taxed at your marginal rate — the rate that applies to your combined income for that specific month.</p>
+
+      <h3>Why overtime doesn't usually change your tax bracket</h3>
+      <p>Because overtime is typically irregular, it doesn't usually push you into a higher annual tax bracket. Your annual tax liability is calculated on your total yearly earnings, not on any single month in isolation. However, in a month with substantial overtime, a portion of that month's income may be taxed at your marginal rate, which could be higher than your average effective rate.</p>
+
+      <h3>Example: Overtime and marginal tax</h3>
+      <p>If you earn R300,000 per year (26% marginal rate) and earn an additional R5,000 in overtime one month, that R5,000 will be taxed at approximately 26%. You would keep roughly R3,700 after tax. The overtime doesn't change the tax rate on your regular salary — it's simply added on top and taxed at your marginal rate.</p>
+
+      <h2>Time off in lieu vs overtime payment</h2>
+      <p>The BCEA allows for an alternative to cash payment for Sunday and public holiday work: you may receive your normal rate plus a paid day off in lieu. This arrangement must be agreed upon in writing and the time off must be granted within a reasonable period.</p>
+
+      <p>For weekday and Saturday overtime, the BCEA requires cash payment at 1.5x — time off in lieu is not a legal alternative for these hours, though some employers may offer it as an additional benefit beyond the legal minimum.</p>
+
+      <h2>Strategies for managing overtime income</h2>
+      <p>Overtime income is often irregular and unpredictable, which makes it poorly suited for baseline monthly budgeting. Here are strategic approaches to make the most of overtime earnings:</p>
+
+      <div class="strategy-grid">
+        <div class="strategy-card">
+          <div class="strategy-num">1</div>
+          <h3>Direct to Emergency Fund</h3>
+          <p>Because overtime is irregular, it's perfect for building your emergency fund without affecting your regular budget. Aim for 3-6 months of expenses.</p>
+        </div>
+        <div class="strategy-card">
+          <div class="strategy-num">2</div>
+          <h3>Specific Savings Goals</h3>
+          <p>Allocate overtime to specific goals like a car deposit, holiday, or home improvements. This keeps it separate from regular spending and gives you clear targets.</p>
+        </div>
+        <div class="strategy-card">
+          <div class="strategy-num">3</div>
+          <h3>Debt Reduction</h3>
+          <p>Use irregular overtime income to make extra payments on high-interest debt like credit cards or personal loans. This accelerates debt payoff without straining your monthly budget.</p>
+        </div>
+        <div class="strategy-card">
+          <div class="strategy-num">4</div>
+          <h3>Retirement Contributions</h3>
+          <p>Consider directing overtime to a retirement annuity. This reduces your taxable income (saving tax at your marginal rate) while building long-term wealth.</p>
+        </div>
+        <div class="strategy-card">
+          <div class="strategy-num">5</div>
+          <h3>Avoid Lifestyle Creep</h3>
+          <p>Don't increase your regular expenses based on overtime income. When overtime decreases (as it often does), you'll be stuck with higher fixed costs you can't afford.</p>
+        </div>
+        <div class="strategy-card">
+          <div class="strategy-num">6</div>
+          <h3>Track and Review</h3>
+          <p>Keep records of your overtime hours and payments. Review quarterly to understand patterns and ensure you're being paid correctly for all hours worked.</p>
+        </div>
+      </div>
+
+      <h2>Record-keeping and disputes</h2>
+      <p>Under the BCEA, employers must keep records of employees' working hours and overtime. However, it's wise to keep your own records as well. Track:</p>
+      <ul>
+        <li>Daily hours worked (start time, end time, breaks)</li>
+        <li>Which days were overtime vs normal hours</li>
+        <li>Sunday and public holiday work</li>
+        <li>Any agreements about time off in lieu</li>
+      </ul>
+
+      <p>If you believe you're not being paid the correct overtime rates, first raise the issue with your employer or HR department. If this doesn't resolve the matter, you can refer a dispute to the CCMA (Commission for Conciliation, Mediation and Arbitration) or the Department of Employment and Labour.</p>
+
+      <h2>Glossary: Overtime terms explained</h2>
+      <div class="glossary-grid">
+        <div class="glossary-item">
+          <div class="glossary-term">BCEA</div>
+          <div class="glossary-def">Basic Conditions of Employment Act — the primary legislation governing working hours, overtime, leave, and other employment conditions in South Africa.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">Earnings Threshold</div>
+          <div class="glossary-def">The annual earnings level (R269,600.90 from May 2026) above which employees may be excluded from certain BCEA protections, including overtime provisions.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">Normal Hours</div>
+          <div class="glossary-def">The regular working hours specified in your employment contract, typically 45 hours per week. Overtime is calculated as hours worked beyond this.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">Time Off in Lieu</div>
+          <div class="glossary-def">Paid time off granted instead of cash payment for overtime work. Allowed for Sunday/public holiday work under BCEA, but not for weekday overtime.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">Marginal Tax Rate</div>
+          <div class="glossary-def">The tax rate applied to your next rand of income. Overtime is taxed at this rate, which may be higher than your average effective tax rate.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">Sectoral Determination</div>
+          <div class="glossary-def">Industry-specific employment regulations that may override general BCEA provisions for certain sectors like farming, domestic work, or hospitality.</div>
+        </div>
+      </div>
+
+      <h2>Frequently asked questions</h2>
+
+      <h3>How is overtime calculated in South Africa?</h3>
+      <p>Overtime is calculated by first determining your normal hourly rate (monthly salary × 12 ÷ 52 weeks ÷ normal weekly hours), then applying the appropriate multiplier: 1.5x for weekday/Saturday overtime and 2x for Sunday/public holiday work.</p>
+
+      <h3>What is the overtime rate in South Africa?</h3>
+      <p>The minimum overtime rate is 1.5 times your normal hourly rate for weekdays and Saturdays. Work on Sundays and public holidays must be paid at 2 times your normal rate, or you may receive your normal rate plus a paid day off in lieu.</p>
+
+      <h3>Who qualifies for overtime pay in South Africa?</h3>
+      <p>Employees earning below the BCEA earnings threshold of R269,600.90 per year (effective 1 May 2026) are entitled to overtime pay. Senior managers and employees earning above this threshold may be excluded depending on their employment contract.</p>
+
+      <h3>Is overtime taxed differently in South Africa?</h3>
+      <p>No. Overtime pay is added to your regular salary for the month it's earned and taxed at your marginal rate. There is no special lower or higher tax rate for overtime income.</p>
+
+      <h3>Can my employer refuse to pay me overtime?</h3>
+      <p>If you earn below the BCEA earnings threshold (R269,600.90/year) and you've worked overtime as required or authorized by your employer, they must pay you at the legal minimum rates. Refusing to pay lawful overtime is a violation of the BCEA.</p>
+
+      <h3>What's the maximum overtime I can work?</h3>
+      <p>The BCEA generally limits overtime to 10 hours per week. Total working time (normal hours plus overtime) cannot exceed 12 hours per day or 45-48 hours per week depending on your work schedule.</p>
+
+      <h3>Do I get overtime for working on public holidays?</h3>
+      <p>Yes. Work on public holidays must be paid at 2 times your normal rate, or you may receive your normal rate plus a paid day off in lieu. This applies to employees earning below the BCEA threshold.</p>
+
+      <h3>What if my employer offers time off instead of overtime pay?</h3>
+      <p>Time off in lieu is only legally acceptable for Sunday and public holiday work, and must be agreed in writing. For weekday and Saturday overtime, the BCEA requires cash payment at 1.5x — time off in lieu is not a legal alternative.</p>
+
+      <h3>Does overtime count towards my UIF contributions?</h3>
+      <p>Yes. UIF contributions are calculated on your total remuneration, including overtime pay. However, UIF is capped at R177.12 per month (1% of R17,712), so if your regular salary already exceeds this ceiling, no additional UIF is deducted from overtime.</p>
+
+      <h3>What should I do if I'm not being paid the correct overtime?</h3>
+      <p>First raise the issue with your employer or HR department in writing. Keep records of your hours worked and what you were paid. If the matter isn't resolved, you can refer a dispute to the CCMA or contact the Department of Employment and Labour.</p>
+
+      <div class="disclaim">
+        <strong>Disclaimer:</strong> This calculator provides estimates based on BCEA minimum rates and the earnings threshold effective from 1 May 2026 (R269,600.90 per year). Your specific employment contract or sectoral determination may provide different terms. This tool does not account for tax — overtime is added to your salary and taxed at your marginal rate. For personalized advice about your employment rights, consult with a labor law practitioner or the Department of Employment and Labour. CalcMyPay is not affiliated with the Department of Employment and Labour.
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">CalcMy<span>Pay</span></div>
+    <div class="footer-links">
+      <a href="/salary-income">Salary</a>
+      <a href="/affordability">Affordability</a>
+      <a href="/wealth-building">Wealth</a>
+      <a href="/money-tools">Tools</a>
+      <a href="/financial-coach">Coach</a>
+      <a href="/blog-salary-guide">Guides</a>
+      <a href="/about">About</a>
+      <a href="/privacy-policy">Privacy</a>
+      <a href="/contact">Contact</a>
+    </div>
+    <div class="footer-copy">
+      © 2026 CalcMyPay · Understand your salary. Plan your money. Build your future. · For informational purposes only · Not affiliated with the Department of Employment and Labour · BCEA 2026
+    </div>
+  </div>
+</footer>
+
 <script>
-const fmt=n=>'R\u00a0'+Math.round(Math.abs(n)).toLocaleString('en-ZA');
-const brackets=[[245100,.18,0],[383100,.26,44118],[530200,.31,79998],[695800,.36,125599],[887000,.39,185215],[1878600,.41,259783],[Infinity,.45,666339]];
-function sarsTax(t){if(t<=0)return 0;let p=0;for(let[l,r,b]of brackets){if(t<=l)return b+(t-p)*r;p=l;}return 0;}
-function marginalRate(a){let p=0;for(let[l,r]of brackets){if(a<=l)return r;p=l;}return .45;}
-const REBATE=17820;
-
-function calc(){
- const pay=parseFloat(document.getElementById('pay').value)||0;
- const per=document.getElementById('per').value;
- const hrs=parseFloat(document.getElementById('hrs').value)||40;
- const ot15=parseFloat(document.getElementById('ot15').value)||0;
- const ot2=parseFloat(document.getElementById('ot2').value)||0;
- if(pay<=0){alert('Please enter your pay.');return;}
- let hourly;
- if(per=='h')hourly=pay; else hourly=(pay*12)/(hrs*52);
- const p15=hourly*1.5*ot15;
- const p2=hourly*2*ot2;
- const tot=p15+p2;
- document.getElementById('big').textContent=fmt(tot);
- document.getElementById('rate').textContent=fmt(hourly);
- document.getElementById('r-rate').textContent=fmt(hourly);
- document.getElementById('r-ot15').textContent=fmt(p15);
- document.getElementById('r-ot2').textContent=fmt(p2);
- document.getElementById('r-tot').textContent=fmt(tot);
- baseInputs = {hourly, ot15, ot2, total: tot};
- document.getElementById('whatif-section').style.display = 'block';
- resetWhatIf();
- document.getElementById('res').classList.add('show');
- document.getElementById('res').scrollIntoView({behavior:'smooth',block:'nearest'});
-}
-document.addEventListener('keydown',e=>{if(e.key=='Enter')calc()});
+const fmt = n => 'R\u00a0' + Math.round(Math.abs(n)).toLocaleString('en-ZA');
 
 let baseInputs = null;
 
-function renderWhatIf(){
-  if(!baseInputs) return;
+function loadExample() {
+  document.getElementById('pay').value = 20000;
+  document.getElementById('per').value = 'm';
+  document.getElementById('hrs').value = 45;
+  document.getElementById('ot15').value = 8;
+  document.getElementById('ot2').value = 4;
+  calc();
+}
+
+function calc() {
+  const pay = parseFloat(document.getElementById('pay').value) || 0;
+  const per = document.getElementById('per').value;
+  const hrs = parseFloat(document.getElementById('hrs').value) || 40;
+  const ot15 = parseFloat(document.getElementById('ot15').value) || 0;
+  const ot2 = parseFloat(document.getElementById('ot2').value) || 0;
+
+  if (pay <= 0) { alert('Please enter your pay.'); return; }
+
+  let hourly;
+  if (per === 'h') {
+    hourly = pay;
+  } else {
+    hourly = (pay * 12) / (hrs * 52);
+  }
+
+  const p15 = hourly * 1.5 * ot15;
+  const p2 = hourly * 2 * ot2;
+  const tot = p15 + p2;
+
+  document.getElementById('big').textContent = fmt(tot);
+  document.getElementById('rate').textContent = fmt(hourly);
+  document.getElementById('r-rate').textContent = fmt(hourly);
+  document.getElementById('r-ot15').textContent = fmt(p15);
+  document.getElementById('r-ot2').textContent = fmt(p2);
+  document.getElementById('r-tot').textContent = fmt(tot);
+
+  baseInputs = { hourly, ot15, ot2, total: tot };
+  document.getElementById('whatif-section').style.display = 'block';
+  resetWhatIf();
+  document.getElementById('res').classList.add('show');
+  document.getElementById('res').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+document.addEventListener('keydown', e => { if (e.key === 'Enter') calc(); });
+
+function renderWhatIf() {
+  if (!baseInputs) return;
   const extra15 = parseFloat(document.getElementById('wi-ot15').value);
   const extra2 = parseFloat(document.getElementById('wi-ot2').value);
 
-  document.getElementById('wi-ot15-out').textContent = '+'+extra15+' hrs';
-  document.getElementById('wi-ot2-out').textContent = '+'+extra2+' hrs';
+  document.getElementById('wi-ot15-out').textContent = '+' + extra15 + ' hrs';
+  document.getElementById('wi-ot2-out').textContent = '+' + extra2 + ' hrs';
 
   const newOt15 = baseInputs.ot15 + extra15;
   const newOt2 = baseInputs.ot2 + extra2;
@@ -423,13 +854,30 @@ function renderWhatIf(){
   document.getElementById('wi-newtotal').textContent = fmt(newTotal);
   const delta = newTotal - baseInputs.total;
   const deltaEl = document.getElementById('wi-delta');
-  if(Math.abs(delta) < 1){ deltaEl.textContent = 'No change'; deltaEl.className = 'whatif-delta-val'; }
-  else { deltaEl.textContent = '+'+fmt(delta); deltaEl.className = 'whatif-delta-val up'; }
+
+  if (Math.abs(delta) < 1) {
+    deltaEl.textContent = 'No change';
+    deltaEl.className = 'whatif-delta-val';
+  } else {
+    deltaEl.textContent = '+' + fmt(delta);
+    deltaEl.className = 'whatif-delta-val up';
+  }
 }
 
-function resetWhatIf(){
+function resetWhatIf() {
   document.getElementById('wi-ot15').value = 0;
   document.getElementById('wi-ot2').value = 0;
   renderWhatIf();
 }
-</script></body></html>
+
+// Auto-load example for first-time visitors
+window.addEventListener('load', function() {
+  if (!sessionStorage.getItem('overtimeCalcVisited')) {
+    setTimeout(loadExample, 500);
+    sessionStorage.setItem('overtimeCalcVisited', 'true');
+  }
+});
+</script>
+
+</body>
+</html>
