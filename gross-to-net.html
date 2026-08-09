@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="color-scheme" content="light"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gross to Net Salary Calculator South Africa 2026 | CalcMyPay</title>
 <meta name="description" content="Convert your gross salary to net take-home pay in South Africa. See PAYE, UIF and your actual monthly pay for the SARS 2027 tax year.">
 <meta name="google-adsense-account" content="ca-pub-6108324382808705">
@@ -11,16 +12,65 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/icon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/icon-16.png">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the difference between gross and net salary?","acceptedAnswer":{"@type":"Answer","text":"Gross salary is your total pay before deductions. Net salary (take-home) is what remains after PAYE income tax and UIF are deducted."}},{"@type":"Question","name":"How do I calculate net salary from gross in South Africa?","acceptedAnswer":{"@type":"Answer","text":"Subtract PAYE (income tax after the R17,820 rebate) and UIF (1%, capped at R177/month) from your gross salary to get your net take-home pay."}}]}</script>
-<style>/* CalcMyPay — Editorial "Ink & Marigold" =================================== */
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between gross and net salary?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Gross salary is your total pay before deductions. Net salary (take-home pay) is what remains after PAYE income tax, UIF contributions, and any other deductions like retirement annuity or medical aid premiums."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I calculate net salary from gross in South Africa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Subtract PAYE (income tax after the R17,820 rebate and medical credits) and UIF (1%, capped at R2,125.44/year) from your gross salary to get your net take-home pay."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What percentage of my salary goes to tax in South Africa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The effective tax rate varies by income. Someone earning R240,000/year pays about 10.4%, while someone earning R1,200,000/year pays about 20%. The gap between gross and net widens as income rises due to South Africa's progressive tax system."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is UIF included in gross salary?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, UIF (1% of your salary, capped at R177.12/month) is deducted from your gross salary. It appears as a separate line item on your payslip and reduces your take-home pay."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does gross salary include medical aid and pension?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In South Africa, gross salary (CTC - Cost to Company) typically includes the employer's contribution to medical aid and pension/provident funds. However, the employee's portion is deducted from gross to calculate net pay."
+      }
+    }
+  ]
+}
+</script>
+
+<style>
+/* CalcMyPay — Editorial "Ink & Marigold" */
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap');
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
   --paper:#FFFFFF;--ink:#16201C;--forest:#1B4332;--marigold:#F6B53D;
   --mist:#6B756F;--line:#DEDBD0;--sand:#FFFFFF;--berry:#B23A2E;
   --disp:'Fraunces',Georgia,serif;--body:'Inter',system-ui,sans-serif;
-  /* legacy var aliases so inline styles still resolve */
   --black:#16201C;--navy:#1B4332;--navy-mid:#1B4332;--accent:#1B4332;--accent-dark:#143026;
   --white:#fff;--off-white:#FFFFFF;--green:#1B4332;--green-light:#EDF3EE;--accent-light:#EDF3EE;
   --g100:#FFFFFF;--g200:#E4E2D8;--g400:#AEB3AC;--g600:#6B756F;--g800:#C9CcC4;--red:#B23A2E;
@@ -29,17 +79,11 @@
 html{color-scheme:light;scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{font-family:var(--body);background:var(--paper);color:var(--ink);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased}
 a{color:var(--forest);text-decoration:none}
-
-/* SA stripe — keep but slimmer & muted */
 .sa-stripe{height:3px;background:linear-gradient(90deg,#1B4332 0 16%,#F6B53D 16% 33%,#FCFBF7 33% 50%,#1B4332 50% 66%,#B23A2E 66% 83%,#16201C 83% 100%);opacity:.9}
-
-/* TOP BAR — editorial dateline */
 .top-bar{background:var(--paper);border-bottom:1px solid var(--line);padding:.5rem 2rem;display:flex;align-items:center;justify-content:space-between}
 .tb-l{font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--mist)}
 .tb-r{font-size:.7rem;color:var(--mist);letter-spacing:.04em}
 .tb-r span{color:var(--forest);font-weight:600}
-
-/* MASTHEAD NAV */
 nav{background:var(--paper);border-bottom:2px solid var(--ink);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:74px;position:sticky;top:0;z-index:100}
 .logo{display:flex;align-items:center;gap:.5rem;text-decoration:none}
 .logo-text{font-family:var(--disp);font-size:1.7rem;font-weight:900;letter-spacing:-.02em;color:var(--ink)}
@@ -55,14 +99,6 @@ nav{background:var(--paper);border-bottom:2px solid var(--ink);padding:0 2rem;di
 .nav-cta::after{display:none}
 .nav-cta:hover{background:var(--forest)!important;color:#fff!important}
 @media(max-width:860px){.nav-links{gap:0;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;max-width:60vw}.nav-links::-webkit-scrollbar{display:none}.nav-links a{white-space:nowrap;padding:.5rem .6rem;font-size:.76rem}.logo-text{font-size:1.4rem}nav{padding:0 1rem}}
-
-/* AD SLOTS — quiet */
-.ad-strip{background:var(--paper);border-bottom:1px solid var(--line);text-align:center;padding:.6rem}
-.ad-ph{display:inline-flex;align-items:center;justify-content:center;background:var(--sand);border:1px solid var(--line);color:var(--g400);font-size:.62rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
-.ad-ph.lb{width:728px;height:90px;max-width:100%}.ad-ph.rect{width:300px;height:250px}
-.ad-lbl{font-size:.6rem;color:var(--g400);text-transform:uppercase;letter-spacing:.12em;margin-bottom:.3rem}
-
-/* PAGE HEADER — kicker / headline / standfirst */
 .ph{background:var(--paper);border-bottom:1px solid var(--line);padding:4rem 2rem 3rem}
 .ph-inner{max-width:1080px;margin:0 auto}
 .bc{font-size:.72rem;color:var(--mist);font-weight:500;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1.4rem}
@@ -71,94 +107,27 @@ nav{background:var(--paper);border-bottom:2px solid var(--ink);padding:0 2rem;di
 .ph-cat::before{content:'';width:24px;height:2px;background:var(--marigold)}
 .ph h1{font-family:var(--disp);font-size:clamp(2.2rem,5vw,3.6rem);font-weight:600;color:var(--ink);line-height:1.05;letter-spacing:-.02em;margin-bottom:1rem;max-width:18ch}
 .ph p{font-family:var(--body);color:var(--mist);font-size:1.1rem;line-height:1.6;max-width:60ch}
-.ph-meta{display:flex;gap:1.4rem;font-size:.72rem;color:var(--mist);font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-top:1.2rem}
-
-/* SECTIONS */
-.section{max-width:1080px;margin:0 auto;padding:3.5rem 2rem}
-.section-header{margin-bottom:2rem;padding-bottom:1rem;border-bottom:1px solid var(--line);display:flex;align-items:baseline;justify-content:space-between;gap:1rem;flex-wrap:wrap}
-.section-title{font-family:var(--disp);font-size:1.6rem;font-weight:600;letter-spacing:-.01em;color:var(--ink)}
-.section-title span{color:var(--marigold);font-weight:400;margin:0 .3rem}
-.section-more{font-family:var(--body);font-size:.8rem;font-weight:600;color:var(--forest);letter-spacing:.02em}
-.section-more::after{content:' →'}
-
-/* TICKER — editorial stat strip */
-.ticker{background:var(--sand);border-bottom:1px solid var(--line);padding:.7rem 2rem;display:flex;gap:2.5rem;overflow-x:auto;scrollbar-width:none}
-.ticker::-webkit-scrollbar{display:none}
-.tick-item{display:flex;align-items:baseline;gap:.5rem;white-space:nowrap}
-.tick-label{font-size:.68rem;color:var(--mist);font-weight:600;text-transform:uppercase;letter-spacing:.1em}
-.tick-val{font-family:var(--disp);color:var(--forest);font-weight:600;font-size:1rem}
-
-/* TOOLS GRID + CARDS */
-.tools-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.25rem}
-.tool-card{background:var(--paper);border:1px solid var(--line);padding:1.6rem;transition:.2s;display:flex;flex-direction:column;gap:.7rem;text-decoration:none;color:var(--ink);position:relative}
-.tool-card:hover{border-color:var(--ink);transform:translateY(-2px)}
-.tool-card.featured{border-top:3px solid var(--forest)}
-.tc-cat{font-family:var(--body);font-size:.68rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--mist)}
-.tool-card h3{font-family:var(--disp);font-size:1.25rem;font-weight:600;letter-spacing:-.01em;line-height:1.15;color:var(--ink)}
-.tool-card p{font-family:var(--body);font-size:.88rem;color:var(--mist);line-height:1.55;flex:1}
-.tc-link{font-family:var(--body);font-size:.8rem;font-weight:600;color:var(--forest)}
-.tc-badge{font-family:var(--body);font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.25rem .6rem;background:var(--sand);color:var(--forest);border:1px solid var(--line)}
-
-/* BLOG GRID */
-.blog-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:1.25rem}
-.blog-card{background:var(--paper);border:1px solid var(--line);padding:1.6rem;text-decoration:none;color:var(--ink);transition:.2s}
-.blog-card:hover{border-color:var(--ink);transform:translateY(-2px)}
-.blog-card.lead{border-top:3px solid var(--marigold)}
-.bc-cat{font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);margin-bottom:.6rem;display:block}
-.blog-card h3{font-family:var(--disp);font-size:1.2rem;font-weight:600;line-height:1.2;letter-spacing:-.01em;margin-bottom:.5rem}
-.blog-card.lead h3{font-size:1.6rem}
-.blog-card p{font-size:.86rem;color:var(--mist);line-height:1.55;margin-bottom:.6rem}
-.bc-more{font-size:.78rem;font-weight:600;color:var(--forest)}
-.bc-meta{font-size:.7rem;color:var(--g400);font-weight:600;letter-spacing:.04em;text-transform:uppercase}
-
-/* DATA CELLS (homepage figures) */
-.data-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem;margin-bottom:1rem}
-.dc{background:var(--sand);border:1px solid var(--line);padding:1.5rem}
-.dc-label{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--mist);margin-bottom:.5rem}
-.dc-val{font-family:var(--disp);font-size:2rem;font-weight:600;color:var(--ink);letter-spacing:-.02em;line-height:1}
-.dc-val.acc{color:var(--forest)}
-.dc-sub{font-size:.74rem;color:var(--mist);margin-top:.3rem}
-
-/* WHY CARDS */
-.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
-.why-card{background:var(--paper);border:1px solid var(--line);padding:1.8rem;border-top:3px solid var(--forest)}
-.why-num{font-family:var(--disp);font-size:2.4rem;font-weight:900;color:var(--marigold);line-height:1;margin-bottom:1rem}
-.why-card h3{font-family:var(--disp);font-size:1.2rem;font-weight:600;margin-bottom:.5rem}
-.why-card p{font-size:.88rem;color:var(--mist);line-height:1.6}
-
-/* CTA BLOCK */
-.cta-block{background:var(--ink);color:var(--paper);padding:3rem 2rem;text-align:center}
-.cta-block h2,.cta-block h3{font-family:var(--disp);font-weight:600;color:var(--paper);letter-spacing:-.01em;margin-bottom:.6rem}
-.cta-block h2{font-size:clamp(1.5rem,3vw,2.2rem)}
-.cta-block h3{font-size:1.4rem}
-.cta-block p{color:rgba(255,255,255,.7);margin-bottom:1.5rem;font-size:1rem}
-
-/* BUTTONS */
-.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 1.6rem;font-family:var(--body);font-weight:600;font-size:.9rem;cursor:pointer;border:none;transition:.18s;text-decoration:none;letter-spacing:.01em}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.85rem 1.6rem;font-family:var(--body);font-weight:600;font-size:.9rem;cursor:pointer;border:none;transition:.18s;text-decoration:none;letter-spacing:.01em}
 .btn-accent{background:var(--marigold);color:var(--ink)}
 .btn-accent:hover{background:#eaa523}
 .btn-full{width:100%;justify-content:center}
 .btn:not(.btn-accent){background:var(--ink);color:var(--paper)}
 .btn:not(.btn-accent):hover{background:var(--forest);color:#fff}
-
-/* LAYOUT (tool + article) */
+.btn-example{background:var(--forest);color:var(--paper);margin-top:.8rem;border:2px solid var(--forest)}
+.btn-example:hover{background:var(--ink);border-color:var(--ink)}
+.example-badge{display:inline-block;background:var(--marigold);color:var(--ink);font-size:.62rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.2rem .5rem;margin-right:.5rem;border-radius:2px}
 .layout{max-width:1140px;margin:0 auto;padding:2.5rem 2rem;display:grid;grid-template-columns:1fr 320px;gap:2.5rem;align-items:start}
 @media(max-width:920px){.layout{grid-template-columns:1fr;gap:1.5rem}.sidebar{display:none}}
-
-/* CARD (tool input) */
 .card{background:var(--paper);border:1px solid var(--line)}
 .card-head{padding:1.4rem 1.6rem;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:.9rem}
 .card-cat{font-family:var(--body);font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);border-right:1px solid var(--line);padding-right:.9rem}
 .card-head h2{font-family:var(--disp);font-size:1.4rem;font-weight:600;letter-spacing:-.01em}
 .card-head p{font-size:.84rem;color:var(--mist);margin-top:.15rem}
 .card-body{padding:1.6rem}
-
-/* FORM */
 .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem 1.3rem;margin-bottom:1.4rem}
 @media(max-width:500px){.form-grid{grid-template-columns:1fr}}
 .fg{display:flex;flex-direction:column;gap:.4rem}
 label{font-family:var(--body);font-size:.78rem;font-weight:600;color:var(--ink);letter-spacing:.01em}
-label .hint{font-weight:400;color:var(--mist)}
 .iw{position:relative}
 .ipre,.isuf{position:absolute;top:50%;transform:translateY(-50%);font-size:.95rem;color:var(--mist);font-weight:500;pointer-events:none}
 .ipre{left:1rem}.isuf{right:1rem}
@@ -166,8 +135,6 @@ input,select{width:100%;padding:.8rem 1rem;border:1px solid var(--line);font-fam
 input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 0 3px rgba(27,67,50,.1)}
 .has-pre input{padding-left:2rem}.has-suf input{padding-right:2.4rem}
 .sw{position:relative}.sw::after{content:'';position:absolute;right:1.1rem;top:50%;width:7px;height:7px;border-right:2px solid var(--mist);border-bottom:2px solid var(--mist);transform:translateY(-65%) rotate(45deg);pointer-events:none}
-
-/* RESULT PANELS — the editorial figure signature */
 .results{margin-top:1.6rem;display:none}
 .results.show{display:block;animation:fadeUp .4s ease}
 @keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
@@ -178,8 +145,6 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .eff-block{text-align:right;flex-shrink:0}
 .eff-val{font-family:var(--disp);font-size:2rem;font-weight:600;color:var(--marigold);display:block;letter-spacing:-.02em;line-height:1}
 .eff-lbl{font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:rgba(255,255,255,.6)}
-
-/* breakdown blocks */
 .bb{border:1px solid var(--line);margin-bottom:1rem}
 .bb-title{padding:.7rem 1.1rem;font-family:var(--body);font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.14em;background:var(--sand);border-bottom:1px solid var(--line);color:var(--mist)}
 .br{display:flex;justify-content:space-between;align-items:center;padding:.7rem 1.1rem;font-size:.92rem;border-bottom:1px solid var(--line)}
@@ -190,18 +155,10 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .total-bar{display:flex;justify-content:space-between;align-items:center;padding:1.1rem 1.3rem;background:var(--sand);border:1px solid var(--forest);margin-bottom:1rem}
 .total-bar .lbl{font-family:var(--disp);font-size:1.05rem;font-weight:600;color:var(--forest)}
 .total-bar .val{font-family:var(--disp);font-size:1.3rem;font-weight:700;color:var(--forest);font-variant-numeric:tabular-nums}
-
-/* notes */
 .note{padding:.85rem 1.1rem;font-size:.84rem;line-height:1.6;margin-bottom:.7rem;display:flex;gap:.7rem;border:1px solid var(--line);background:var(--sand)}
 .note.warn{background:#FBF3E0;border-color:#E6D08A;color:#6B5414}
+.note.navy{background:#EDF3EE;border-color:#C9D8CF;color:#1B4332}
 .note a{color:var(--forest);font-weight:600}
-
-/* tabs */
-.type-tabs,.period-tabs{display:flex;gap:.4rem;margin-bottom:1.4rem;background:var(--sand);padding:.3rem;border:1px solid var(--line)}
-.type-tab,.ptab{flex:1;padding:.6rem;border:none;background:transparent;font-family:var(--body);font-weight:600;font-size:.8rem;color:var(--mist);cursor:pointer;transition:.15s;text-align:center}
-.type-tab.active,.ptab.active{background:var(--ink);color:var(--paper)}
-
-/* SIDEBAR */
 .sidebar{display:flex;flex-direction:column;gap:1.5rem}
 .sc{background:var(--paper);border:1px solid var(--line)}
 .sc-head{padding:.8rem 1.1rem;font-family:var(--body);font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.14em;border-bottom:1px solid var(--line);background:var(--sand);color:var(--mist)}
@@ -212,16 +169,14 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .qr{display:flex;justify-content:space-between;font-size:.84rem;padding:.45rem 0;border-bottom:1px solid var(--line);color:var(--mist)}
 .qr:last-child{border-bottom:none}
 .qr strong{color:var(--ink);font-weight:600;font-family:var(--disp)}
-.toc-link{display:block;font-size:.84rem;font-weight:500;color:var(--mist);padding:.4rem 0;border-bottom:1px solid var(--line);transition:color .15s}
-.toc-link:last-child{border-bottom:none}
-.toc-link:hover{color:var(--forest)}
-.related-post{display:block;padding:.75rem 0;border-bottom:1px solid var(--line)}
-.related-post:last-child{border-bottom:none}
-.rp-cat{font-size:.62rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--forest);margin-bottom:.25rem}
-.rp-title{font-family:var(--disp);font-size:.92rem;font-weight:500;color:var(--ink);line-height:1.3}
-.related-post:hover .rp-title{color:var(--forest)}
-
-/* DATA TABLE */
+.tools-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.25rem}
+.tool-card{background:var(--paper);border:1px solid var(--line);padding:1.6rem;transition:.2s;display:flex;flex-direction:column;gap:.7rem;text-decoration:none;color:var(--ink);position:relative}
+.tool-card:hover{border-color:var(--ink);transform:translateY(-2px)}
+.tool-card.featured{border-top:3px solid var(--forest)}
+.tc-cat{font-family:var(--body);font-size:.68rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--mist)}
+.tool-card h3{font-family:var(--disp);font-size:1.25rem;font-weight:600;letter-spacing:-.01em;line-height:1.15;color:var(--ink)}
+.tool-card p{font-family:var(--body);font-size:.88rem;color:var(--mist);line-height:1.55;flex:1}
+.tc-link{font-family:var(--body);font-size:.8rem;font-weight:600;color:var(--forest)}
 .data-table{width:100%;border-collapse:collapse;margin:1.2rem 0 1.6rem;font-size:.9rem;border:1px solid var(--line)}
 .data-table thead tr{background:var(--ink)}
 .data-table th{padding:.75rem 1rem;text-align:left;font-family:var(--body);font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--paper)}
@@ -230,9 +185,10 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .data-table tr:nth-child(even) td{background:var(--sand)}
 .data-table td.td-green{color:var(--forest);font-weight:600}
 .data-table td.td-red{color:var(--berry);font-weight:600}
-.data-table td.td-acc{color:var(--forest);font-weight:600}
-
-/* ARTICLE BODY — magazine measure */
+.section{max-width:1080px;margin:0 auto;padding:3.5rem 2rem}
+.section-header{margin-bottom:2rem;padding-bottom:1rem;border-bottom:1px solid var(--line);display:flex;align-items:baseline;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.section-title{font-family:var(--disp);font-size:1.6rem;font-weight:600;letter-spacing:-.01em;color:var(--ink)}
+.section-title span{color:var(--marigold);font-weight:400;margin:0 .3rem}
 .article-body{padding:2.5rem}
 @media(max-width:600px){.article-body{padding:1.5rem}}
 .article-body h2{font-family:var(--disp);font-size:1.7rem;font-weight:600;color:var(--ink);margin:2.4rem 0 .8rem;letter-spacing:-.01em;line-height:1.15;max-width:30ch}
@@ -244,10 +200,8 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .article-body li{font-family:var(--body);font-size:1.04rem;color:#2C352F;line-height:1.7;margin-bottom:.5rem}
 .article-body a{color:var(--forest);font-weight:500;border-bottom:1px solid var(--marigold)}
 .article-body strong{font-weight:600;color:var(--ink)}
-.callout,.callout.navy,.callout.grey,.callout.green{border:none;border-left:3px solid var(--marigold);background:var(--sand);padding:1.2rem 1.4rem;margin:1.6rem 0;font-family:var(--disp);font-size:1.15rem;font-weight:500;line-height:1.5;color:var(--ink);max-width:64ch}
+.callout{border:none;border-left:3px solid var(--marigold);background:var(--sand);padding:1.2rem 1.4rem;margin:1.6rem 0;font-family:var(--disp);font-size:1.15rem;font-weight:500;line-height:1.5;color:var(--ink);max-width:64ch}
 .callout strong{color:var(--forest)}
-
-/* FOOTER */
 footer{background:var(--ink);color:var(--paper);margin-top:2rem}
 .footer-inner{max-width:1080px;margin:0 auto;padding:2.5rem 2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
 .footer-logo{font-family:var(--disp);font-size:1.5rem;font-weight:900;color:var(--paper)}
@@ -256,34 +210,33 @@ footer{background:var(--ink);color:var(--paper);margin-top:2rem}
 .footer-links a{color:rgba(255,255,255,.7);font-size:.82rem;font-weight:500;transition:color .15s}
 .footer-links a:hover{color:var(--marigold)}
 .footer-copy{color:rgba(255,255,255,.5);font-size:.74rem;width:100%;margin-top:.8rem;padding-top:.9rem;border-top:1px solid rgba(255,255,255,.12)}
+.disclaim{font-size:.82rem;color:var(--mist);background:var(--sand);border:1px solid var(--line);padding:.9rem 1.1rem;line-height:1.6}
+.worked-example{background:#FAFBF7;border:1px solid var(--line);border-left:4px solid var(--forest);padding:1.5rem 1.8rem;margin:1.8rem 0}
+.worked-example-head{display:flex;align-items:center;gap:.6rem;margin-bottom:1rem}
+.worked-example-tag{font-size:.66rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--forest);background:#EDF3EE;padding:.25rem .6rem;border-radius:2px}
+.worked-example h3{font-family:var(--disp);font-size:1.15rem;font-weight:600;margin-bottom:.3rem}
+.worked-example p{font-size:.9rem;color:var(--mist);line-height:1.6;margin-bottom:.8rem}
+.glossary-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem;margin:1.5rem 0}
+.glossary-item{background:var(--sand);border:1px solid var(--line);padding:1.1rem 1.3rem}
+.glossary-term{font-family:var(--disp);font-size:1rem;font-weight:600;color:var(--forest);margin-bottom:.3rem}
+.glossary-def{font-size:.84rem;color:var(--mist);line-height:1.6}
 
-/* MISC legacy */
-.scenario-result{background:var(--sand);border:1px solid var(--forest);padding:1.2rem}
-.disclaim,.disclaim-box{font-size:.82rem;color:var(--mist);background:var(--sand);border:1px solid var(--line);padding:.9rem 1.1rem;line-height:1.6}
-.eyebrow{font-family:var(--body);font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);margin-bottom:.5rem}
-
-/* RESPONSIVE */
 @media(max-width:768px){
-  [style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr!important}
-  [style*="grid-template-columns:repeat(3,1fr)"]{grid-template-columns:1fr!important}
-  [style*="grid-template-columns:repeat(4,1fr)"]{grid-template-columns:1fr 1fr!important}
-  [style*="grid-template-columns:2fr 1fr 1fr"]{grid-template-columns:1fr!important}
-  [style*="grid-template-columns:1.1fr 1fr"]{grid-template-columns:1fr!important}
-  [style*="grid-template-columns:1fr 1fr;gap:4rem"]{grid-template-columns:1fr!important;gap:2rem!important}
-  .blog-grid,.data-row,.why-grid{grid-template-columns:1fr!important}
   .ph{padding:2.5rem 1.25rem 2rem}.section{padding:2.5rem 1.25rem}.layout{padding:1.5rem 1.25rem}
   .th-panel{flex-direction:column;align-items:flex-start;gap:1rem}.eff-block{text-align:left}
   .th-amount{font-size:2.6rem}
   .footer-inner{flex-direction:column;text-align:center}.footer-links{justify-content:center}
   .top-bar{padding:.4rem 1rem}.tb-r{display:none}
   .data-table{display:block;overflow-x:auto}
+  .article-body{padding:1.5rem}
 }
+
 .story-section{margin-top:1.8rem;border-top:2px solid var(--ink);padding-top:1.8rem}
 .story-kicker{font-family:var(--body);font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);margin-bottom:.4rem;display:flex;align-items:center;gap:.6rem}
 .story-kicker::before{content:'';width:24px;height:2px;background:var(--marigold)}
 .story-title{font-family:var(--disp);font-size:1.6rem;font-weight:600;color:var(--ink);letter-spacing:-.01em;margin-bottom:.4rem}
 .story-sub{font-size:.88rem;color:var(--mist);margin-bottom:1.5rem;max-width:60ch}
-.story-age-row{display:flex;align-items:center;gap:.8rem;margin-bottom:1.6rem;padding:.9rem 1.1rem;background:var(--sand);border:1px solid var(--line)}
+.story-age-row{display:flex;align-items:center;gap:.8rem;margin-bottom:1.6rem;padding:.9rem 1.1rem;background:var(--sand);border:1px solid var(--line);flex-wrap:wrap}
 .story-age-row label{font-size:.82rem;font-weight:600;color:var(--ink);white-space:nowrap}
 .story-age-row input{max-width:90px;padding:.5rem .7rem}
 .story-age-row .story-age-note{font-size:.78rem;color:var(--mist)}
@@ -324,7 +277,8 @@ footer{background:var(--ink);color:var(--paper);margin-top:2rem}
 .journey-path{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;font-size:.85rem}
 .journey-path a{color:var(--forest);font-weight:600;padding:.35rem .7rem;background:#fff;border:1px solid var(--line);transition:.15s}
 .journey-path a:hover{border-color:var(--forest);background:var(--sand)}
-.journey-sep{color:var(--g400)}.whatif-section{margin-top:1.8rem;border-top:2px solid var(--ink);padding-top:1.8rem}
+.journey-sep{color:var(--g400)}
+.whatif-section{margin-top:1.8rem;border-top:2px solid var(--ink);padding-top:1.8rem}
 .whatif-kicker{font-family:var(--body);font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);margin-bottom:.4rem;display:flex;align-items:center;gap:.6rem}
 .whatif-kicker::before{content:'';width:24px;height:2px;background:var(--marigold)}
 .whatif-title{font-family:var(--disp);font-size:1.6rem;font-weight:600;color:var(--ink);letter-spacing:-.01em;margin-bottom:.4rem}
@@ -346,239 +300,860 @@ footer{background:var(--ink);color:var(--paper);margin-top:2rem}
 .whatif-delta-lbl{font-size:.72rem;color:rgba(255,255,255,.6);margin-top:.3rem}
 .whatif-reset{margin-top:1rem;text-align:center}
 .whatif-reset button{background:none;border:1px solid var(--line);padding:.5rem 1.1rem;font-family:var(--body);font-size:.78rem;font-weight:600;color:var(--mist);cursor:pointer;transition:.15s}
-.whatif-reset button:hover{border-color:var(--ink);color:var(--ink)}</style>
+.whatif-reset button:hover{border-color:var(--ink);color:var(--ink)}
+</style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6108324382808705" crossorigin="anonymous"></script>
 </head>
-<body><div class="sa-stripe"></div><div class="top-bar"><div class="tb-l">🇿🇦 South Africa · SARS 2027 Tax Year</div><div class="tb-r">Primary rebate <span>R17,820</span> · Tax-free <span>R99,000</span></div></div><nav>
+<body>
+<div class="sa-stripe"></div>
+
+<div class="top-bar">
+  <div class="tb-l">🇿🇦 South Africa · SARS 2027 Tax Year</div>
+  <div class="tb-r">Primary rebate <span>R17,820</span> · Tax-free <span>R99,000</span></div>
+</div>
+
+<nav>
   <a href="/" class="logo"><div class="logo-text">CalcMy<span>Pay</span></div></a>
   <div class="nav-links">
-    <a href="/salary-income" class="active">Salary</a><a href="/affordability">Affordability</a><a href="/wealth-building">Wealth</a><a href="/career-intelligence">Careers</a><a href="/money-tools">Tools</a><a href="/financial-coach">Coach</a><a href="/blog-salary-guide">Guides</a><a href="/salary-calculator" class="nav-cta">Calculate →</a>
+    <a href="/salary-income" class="active">Salary</a>
+    <a href="/affordability">Affordability</a>
+    <a href="/wealth-building">Wealth</a>
+    <a href="/career-intelligence">Careers</a>
+    <a href="/money-tools">Tools</a>
+    <a href="/financial-coach">Coach</a>
+    <a href="/blog-salary-guide">Guides</a>
+    <a href="/salary-calculator" class="nav-cta">Calculate →</a>
   </div>
-</nav><div class="ph"><div class="ph-inner"><div class="bc"><a href="/">Home</a><span>/</span><a href="/salary-income">Salary & Income</a><span>/</span>Gross to Net Salary Calculator</div><div class="ph-cat">Salary & Income</div><h1>Gross to Net Salary Calculator</h1><p>Turn a gross salary into your actual take-home pay · SARS 2027 tax year</p></div></div><div class="layout"><div><div class="card"><div class="card-head"><div class="card-cat">Gross → Net</div><div><h2>Gross to net salary</h2><p>See your real take-home from a gross figure</p></div></div>
-<div class="card-body">
-<div class="form-grid">
-<div class="fg"><label>Gross Salary</label><div class="iw has-pre"><span class="ipre">R</span><input type="number" id="sal" placeholder="30 000" min="0"></div></div>
-<div class="fg"><label>Period</label><div class="sw"><select id="per"><option value="12">Per month</option><option value="1">Per year</option></select></div></div>
-<div class="fg"><label>Age</label><div class="sw"><select id="age"><option value="p">Under 65</option><option value="s">65 – 74</option><option value="t">75+</option></select></div></div>
-<div class="fg"><label>Medical Aid Members</label><div class="sw"><select id="med"><option value="0">None</option><option value="1">Just me</option><option value="2">Me + 1</option><option value="3">Me + 2</option><option value="4">Me + 3</option><option value="5">Me + 4+</option></select></div></div>
-</div>
-<button class="btn btn-full btn-accent" onclick="calc()">Convert to net →</button>
-<div class="results" id="res">
-<div class="th-panel"><div><div class="th-label">Net take-home pay</div><div class="th-amount" id="big">R0</div><div class="th-period">per month</div></div><div class="eff-block"><span class="eff-val" id="eff">0%</span><span class="eff-lbl">Total deductions</span></div></div>
-<div class="bb"><div class="bb-title">From gross to net</div>
-<div class="br"><span class="lbl">Gross salary</span><span class="val neu" id="r-gross">R0</span></div>
-<div class="br"><span class="lbl">Less: PAYE</span><span class="val neg" id="r-paye">-R0</span></div>
-<div class="br"><span class="lbl">Less: UIF (1%)</span><span class="val neg" id="r-uif">-R0</span></div>
-</div>
-<div class="total-bar"><span class="lbl">✓ Net take-home</span><span class="val" id="r-net">R0</span></div>
-<div class="note warn"><span>⚠</span><span>Based on SARS 2027 tables. For medical aid, RA and travel allowance, use the <a href="/salary-calculator">full salary calculator</a>.</span></div>
-<div class="story-section" id="money-story" style="display:none">
-  <div class="story-kicker">Your money story</div>
-  <div class="story-title">What this means for you</div>
-  <p class="story-sub">Estimates based on your take-home pay, using the same rules as our dedicated calculators. Add your age for a personalised retirement projection.</p>
+</nav>
 
-  <div class="story-age-row">
-    <label for="ms-age">Your age (optional)</label>
-    <div class="iw" style="max-width:90px"><input type="number" id="ms-age" placeholder="30" min="18" max="70" oninput="renderMoneyStory(lastTakeHome)"></div>
-    <span class="story-age-note">Used only for the retirement projection below</span>
+<div class="ph">
+  <div class="ph-inner">
+    <div class="bc">
+      <a href="/">Home</a><span>/</span>
+      <a href="/salary-income">Salary & Income</a><span>/</span>
+      Gross to Net Salary
+    </div>
+    <div class="ph-cat">Salary & Income</div>
+    <h1>Gross to Net Salary Calculator</h1>
+    <p>Convert your gross salary into your actual take-home pay. See exactly how much PAYE and UIF is deducted using the SARS 2027 tax year tables.</p>
   </div>
+</div>
 
-  <div class="story-grid">
-    <a href="/rent-affordability" class="story-card"><div class="story-stripe c-housing"></div><div class="story-body">
-      <div class="story-label">✅ Comfortable rent, up to</div>
-      <div class="story-val" id="ms-rent">R0</div>
-      <div class="story-desc">Using the 30% of take-home guideline</div>
-      <span class="story-arrow">Check rent affordability →</span>
-    </div></a>
-
-    <a href="/home-affordability" class="story-card"><div class="story-stripe c-housing"></div><div class="story-body">
-      <div class="story-label">🏠 Home price you may qualify for</div>
-      <div class="story-val" id="ms-home">R0</div>
-      <div class="story-desc">20-year bond at ~11%, no deposit assumed</div>
-      <span class="story-arrow">Check home affordability →</span>
-    </div></a>
-
-    <a href="/car-affordability" class="story-card"><div class="story-stripe c-car"></div><div class="story-body">
-      <div class="story-label">🚗 Recommended maximum car price</div>
-      <div class="story-val" id="ms-car">R0</div>
-      <div class="story-desc">Keeping repayments under 15% of take-home</div>
-      <span class="story-arrow">Check car affordability →</span>
-    </div></a>
-
-    <a href="/emergency-fund" class="story-card"><div class="story-stripe c-safety"></div><div class="story-body">
-      <div class="story-label">💰 Emergency fund target</div>
-      <div class="story-val" id="ms-emergency">R0</div>
-      <div class="story-desc" id="ms-emergency-desc">3–6 months of take-home pay</div>
-      <span class="story-arrow">Build your safety net →</span>
-    </div></a>
-
-    <a href="/retirement-calculator" class="story-card" style="grid-column:1/-1">
-      <div class="story-stripe c-retire"></div><div class="story-body">
-      <div class="story-label">📈 Retirement projection<span id="ms-retire-agenote"></span></div>
-      <div class="story-val" id="ms-retirement">R0</div>
-      <div class="story-desc">Saving 15% of take-home, invested at ~10% annual growth</div>
-      <span class="story-arrow">Plan your retirement in detail →</span>
-    </div></a>
-
-    <div class="story-compare-card">
-      <div class="story-label" style="margin-bottom:.9rem">📊 How your take-home compares</div>
-      <div class="compare-toggle">
-        <button class="on" id="cmp-tab-avg" onclick="setCompareMode('avg')">National average</button>
-        <button id="cmp-tab-prof" onclick="setCompareMode('prof')">By profession</button>
+<div class="layout">
+  <div>
+    <div class="card">
+      <div class="card-head">
+        <div class="card-cat">Gross → Net</div>
+        <div>
+          <h2>Gross to net salary</h2>
+          <p>See your real take-home from a gross figure</p>
+        </div>
       </div>
-      <div id="compare-avg-view">
-        <div class="compare-body">
-          <div class="compare-vs">
-            <div class="compare-side"><div class="who">SA average</div><div class="amt" id="cmp-avg-val">R22,800</div></div>
-            <div class="compare-vsdivider">vs</div>
-            <div class="compare-side you"><div class="who">You</div><div class="amt" id="cmp-you-val">R0</div></div>
+      <div class="card-body">
+        <div class="form-grid">
+          <div class="fg">
+            <label>Gross Salary</label>
+            <div class="iw has-pre"><span class="ipre">R</span><input type="number" id="sal" placeholder="30000" min="0"></div>
           </div>
-          <div class="compare-result"><div class="compare-pct" id="cmp-pct">—</div></div>
-        </div>
-      </div>
-      <div id="compare-prof-view" style="display:none">
-        <div class="compare-select">
-          <div class="sw"><select id="ms-prof" onchange="renderProfCompare()"></select></div>
-        </div>
-        <div class="compare-body" style="margin-top:1rem">
-          <div class="compare-vs">
-            <div class="compare-side"><div class="who" id="cmp-prof-name">—</div><div class="amt" id="cmp-prof-val">R0</div></div>
-            <div class="compare-vsdivider">vs</div>
-            <div class="compare-side you"><div class="who">You</div><div class="amt" id="cmp-you-val2">R0</div></div>
+          <div class="fg">
+            <label>Period</label>
+            <div class="sw">
+              <select id="per">
+                <option value="12">Per month</option>
+                <option value="1">Per year</option>
+              </select>
+            </div>
           </div>
-          <div class="compare-result"><div class="compare-pct" id="cmp-prof-pct">—</div></div>
+          <div class="fg">
+            <label>Age</label>
+            <div class="sw">
+              <select id="age">
+                <option value="p">Under 65</option>
+                <option value="s">65 – 74</option>
+                <option value="t">75+</option>
+              </select>
+            </div>
+          </div>
+          <div class="fg">
+            <label>Medical Aid Members</label>
+            <div class="sw">
+              <select id="med">
+                <option value="0">None</option>
+                <option value="1">Just me</option>
+                <option value="2">Me + 1</option>
+                <option value="3">Me + 2</option>
+                <option value="4">Me + 3</option>
+                <option value="5">Me + 4+</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-full btn-accent" onclick="calc()">Convert to net →</button>
+        <button type="button" class="btn btn-full btn-example" onclick="loadExample()"><span class="example-badge">Example</span>Try R30,000/month salary</button>
+
+        <div class="results" id="res">
+          <div class="th-panel">
+            <div>
+              <div class="th-label">Net take-home pay</div>
+              <div class="th-amount" id="big">R0</div>
+              <div class="th-period">per month</div>
+            </div>
+            <div class="eff-block">
+              <span class="eff-val" id="eff">0%</span>
+              <span class="eff-lbl">Total deductions</span>
+            </div>
+          </div>
+          <div class="bb">
+            <div class="bb-title">From gross to net</div>
+            <div class="br"><span class="lbl">Gross salary</span><span class="val neu" id="r-gross">R0</span></div>
+            <div class="br"><span class="lbl">Less: PAYE</span><span class="val neg" id="r-paye">-R0</span></div>
+            <div class="br"><span class="lbl">Less: UIF (1%)</span><span class="val neg" id="r-uif">-R0</span></div>
+          </div>
+          <div class="total-bar">
+            <span class="lbl">✓ Net take-home</span>
+            <span class="val" id="r-net">R0</span>
+          </div>
+          <div class="note warn">
+            <span>⚠</span>
+            <span>Based on SARS 2027 tables. For medical aid premiums, RA contributions and travel allowance deductions, use the <a href="/salary-calculator">full salary calculator</a>.</span>
+          </div>
+
+          <div class="story-section" id="money-story" style="display:none">
+            <div class="story-kicker">Your money story</div>
+            <div class="story-title">What this means for you</div>
+            <p class="story-sub">Estimates based on your take-home pay, using the same rules as our dedicated calculators. Add your age for a personalised retirement projection.</p>
+
+            <div class="story-age-row">
+              <label for="ms-age">Your age (optional)</label>
+              <div class="iw" style="max-width:90px"><input type="number" id="ms-age" placeholder="30" min="18" max="70" oninput="renderMoneyStory(lastTakeHome)"></div>
+              <span class="story-age-note">Used only for the retirement projection below</span>
+            </div>
+
+            <div class="story-grid">
+              <a href="/rent-affordability" class="story-card">
+                <div class="story-stripe c-housing"></div>
+                <div class="story-body">
+                  <div class="story-label">✅ Comfortable rent, up to</div>
+                  <div class="story-val" id="ms-rent">R0</div>
+                  <div class="story-desc">Using the 30% of take-home guideline</div>
+                  <span class="story-arrow">Check rent affordability →</span>
+                </div>
+              </a>
+              <a href="/home-affordability" class="story-card">
+                <div class="story-stripe c-housing"></div>
+                <div class="story-body">
+                  <div class="story-label">🏠 Home price you may qualify for</div>
+                  <div class="story-val" id="ms-home">R0</div>
+                  <div class="story-desc">20-year bond at ~11%, no deposit assumed</div>
+                  <span class="story-arrow">Check home affordability →</span>
+                </div>
+              </a>
+              <a href="/car-affordability" class="story-card">
+                <div class="story-stripe c-car"></div>
+                <div class="story-body">
+                  <div class="story-label">🚗 Recommended maximum car price</div>
+                  <div class="story-val" id="ms-car">R0</div>
+                  <div class="story-desc">Keeping repayments under 15% of take-home</div>
+                  <span class="story-arrow">Check car affordability →</span>
+                </div>
+              </a>
+              <a href="/emergency-fund" class="story-card">
+                <div class="story-stripe c-safety"></div>
+                <div class="story-body">
+                  <div class="story-label">💰 Emergency fund target</div>
+                  <div class="story-val" id="ms-emergency">R0</div>
+                  <div class="story-desc" id="ms-emergency-desc">3–6 months of take-home pay</div>
+                  <span class="story-arrow">Build your safety net →</span>
+                </div>
+              </a>
+              <a href="/retirement-calculator" class="story-card" style="grid-column:1/-1">
+                <div class="story-stripe c-retire"></div>
+                <div class="story-body">
+                  <div class="story-label">📈 Retirement projection<span id="ms-retire-agenote"></span></div>
+                  <div class="story-val" id="ms-retirement">R0</div>
+                  <div class="story-desc">Saving 15% of take-home, invested at ~10% annual growth</div>
+                  <span class="story-arrow">Plan your retirement in detail →</span>
+                </div>
+              </a>
+              <div class="story-compare-card">
+                <div class="story-label" style="margin-bottom:.9rem">📊 How your take-home compares</div>
+                <div class="compare-toggle">
+                  <button class="on" id="cmp-tab-avg" onclick="setCompareMode('avg')">National average</button>
+                  <button id="cmp-tab-prof" onclick="setCompareMode('prof')">By profession</button>
+                </div>
+                <div id="compare-avg-view">
+                  <div class="compare-body">
+                    <div class="compare-vs">
+                      <div class="compare-side"><div class="who">SA average</div><div class="amt" id="cmp-avg-val">R22,800</div></div>
+                      <div class="compare-vsdivider">vs</div>
+                      <div class="compare-side you"><div class="who">You</div><div class="amt" id="cmp-you-val">R0</div></div>
+                    </div>
+                    <div class="compare-result"><div class="compare-pct" id="cmp-pct">—</div></div>
+                  </div>
+                </div>
+                <div id="compare-prof-view" style="display:none">
+                  <div class="compare-select">
+                    <div class="sw"><select id="ms-prof" onchange="renderProfCompare()"></select></div>
+                  </div>
+                  <div class="compare-body" style="margin-top:1rem">
+                    <div class="compare-vs">
+                      <div class="compare-side"><div class="who" id="cmp-prof-name">—</div><div class="amt" id="cmp-prof-val">R0</div></div>
+                      <div class="compare-vsdivider">vs</div>
+                      <div class="compare-side you"><div class="who">You</div><div class="amt" id="cmp-you-val2">R0</div></div>
+                    </div>
+                    <div class="compare-result"><div class="compare-pct" id="cmp-prof-pct">—</div></div>
+                  </div>
+                </div>
+                <div style="margin-top:.9rem"><a href="/salary-database" class="story-arrow">Explore the full salary database →</a></div>
+              </div>
+            </div>
+
+            <div class="journey">
+              <div class="journey-title">Continue your financial plan</div>
+              <div class="journey-path">
+                <a href="/budget-planner">Budget planner</a><span class="journey-sep">→</span>
+                <a href="/net-worth">Net worth</a><span class="journey-sep">→</span>
+                <a href="/savings-goal">Savings goal</a><span class="journey-sep">→</span>
+                <a href="/financial-coach">Get your health score</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="whatif-section" id="whatif-section" style="display:none">
+            <div class="whatif-kicker">What if?</div>
+            <div class="whatif-title">Test a scenario</div>
+            <p class="whatif-sub">Drag the sliders to see how changes affect your net take-home pay.</p>
+            <div class="whatif-grid">
+              <div class="whatif-control">
+                <div class="whatif-control-head"><label>Salary change</label><output id="wi-sal-out">+0%</output></div>
+                <input type="range" id="wi-sal" min="-20" max="30" value="0" step="1" oninput="renderWhatIf()">
+              </div>
+              <div class="whatif-control">
+                <div class="whatif-control-head"><label>Medical aid members</label><output id="wi-med-out">Same</output></div>
+                <input type="range" id="wi-med" min="0" max="5" value="0" step="1" oninput="renderWhatIf()">
+              </div>
+            </div>
+            <div class="whatif-result">
+              <div>
+                <div class="whatif-result-label">New net take-home (monthly)</div>
+                <div class="whatif-result-val" id="wi-newnet">R0</div>
+              </div>
+              <div class="whatif-delta">
+                <div class="whatif-delta-val" id="wi-delta">—</div>
+                <div class="whatif-delta-lbl">vs your current net pay</div>
+              </div>
+            </div>
+            <div class="whatif-reset"><button onclick="resetWhatIf()">Reset scenario</button></div>
+            <div class="note warn" style="margin-top:1rem">
+              <span>⚠</span>
+              <span>This shows the <strong>tax effect only</strong>. A medical aid dependent reduces tax via the credit, but you'd also pay a higher premium — this tool doesn't model that cost.</span>
+            </div>
+          </div>
         </div>
       </div>
-      <div style="margin-top:.9rem"><a href="/salary-database" class="story-arrow">Explore the full salary database →</a></div>
     </div>
   </div>
 
-  <div class="journey">
-    <div class="journey-title">Continue your financial plan</div>
-    <div class="journey-path">
-      <a href="/budget-planner">Budget planner</a><span class="journey-sep">→</span>
-      <a href="/net-worth">Net worth</a><span class="journey-sep">→</span>
-      <a href="/savings-goal">Savings goal</a><span class="journey-sep">→</span>
-      <a href="/financial-coach">Get your health score</a>
+  <div class="sidebar">
+    <div class="sc">
+      <div class="sc-head">SARS 2027 Quick Reference</div>
+      <div class="sc-body">
+        <div class="qr"><span>Primary rebate</span><strong>R17,820</strong></div>
+        <div class="qr"><span>Secondary (65+)</span><strong>+R9,765</strong></div>
+        <div class="qr"><span>Tertiary (75+)</span><strong>+R3,249</strong></div>
+        <div class="qr"><span>Tax-free threshold</span><strong>R99,000/yr</strong></div>
+        <div class="qr"><span>UIF earnings ceiling</span><strong>R17,712/mo</strong></div>
+        <div class="qr"><span>UIF max contribution</span><strong>R2,125.44/yr</strong></div>
+        <div class="qr"><span>Medical credit</span><strong>R376/member</strong></div>
+      </div>
+    </div>
+
+    <div class="sc">
+      <div class="sc-head">Related Calculators</div>
+      <div class="sc-body">
+        <div class="tip"><span>→</span><a href="/salary-calculator">Salary After Tax Calculator</a></div>
+        <div class="tip"><span>→</span><a href="/paye-calculator">PAYE Calculator</a></div>
+        <div class="tip"><span>→</span><a href="/bonus-calculator">Bonus & 13th Cheque</a></div>
+        <div class="tip"><span>→</span><a href="/overtime-calculator">Overtime Pay Calculator</a></div>
+        <div class="tip"><span>→</span><a href="/hourly-wage">Hourly Wage Calculator</a></div>
+      </div>
     </div>
   </div>
 </div>
 
-<div class="whatif-section" id="whatif-section" style="display:none">
-  <div class="whatif-kicker">What if?</div>
-  <div class="whatif-title">Test a scenario</div>
-  <p class="whatif-sub">Drag the sliders to see how changes affect your net take-home pay.</p>
-
-  <div class="whatif-grid">
-    <div class="whatif-control">
-      <div class="whatif-control-head"><label>Salary change</label><output id="wi-sal-out">+0%</output></div>
-      <input type="range" id="wi-sal" min="-20" max="30" value="0" step="1" oninput="renderWhatIf()">
-    </div>
-    <div class="whatif-control">
-      <div class="whatif-control-head"><label>Medical aid members</label><output id="wi-med-out">Same</output></div>
-      <input type="range" id="wi-med" min="0" max="5" value="0" step="1" oninput="renderWhatIf()">
-    </div>
+<div class="section" style="padding-top:0">
+  <div class="section-header">
+    <div class="section-title">Related <span>/</span> Salary Tools</div>
   </div>
-
-  <div class="whatif-result">
-    <div>
-      <div class="whatif-result-label">New net take-home (monthly)</div>
-      <div class="whatif-result-val" id="wi-newnet">R0</div>
-    </div>
-    <div class="whatif-delta">
-      <div class="whatif-delta-val" id="wi-delta">—</div>
-      <div class="whatif-delta-lbl">vs your current net pay</div>
-    </div>
+  <div class="tools-grid">
+    <a href="/salary-calculator" class="tool-card featured">
+      <div class="tc-cat">Salary & Income</div>
+      <h3>Salary After Tax Calculator</h3>
+      <span class="tc-link">Open →</span>
+    </a>
+    <a href="/paye-calculator" class="tool-card featured">
+      <div class="tc-cat">Salary & Income</div>
+      <h3>PAYE Calculator</h3>
+      <span class="tc-link">Open →</span>
+    </a>
+    <a href="/bonus-calculator" class="tool-card featured">
+      <div class="tc-cat">Salary & Income</div>
+      <h3>Bonus & 13th Cheque</h3>
+      <span class="tc-link">Open →</span>
+    </a>
+    <a href="/overtime-calculator" class="tool-card featured">
+      <div class="tc-cat">Salary & Income</div>
+      <h3>Overtime Pay Calculator</h3>
+      <span class="tc-link">Open →</span>
+    </a>
+    <a href="/commission-calculator" class="tool-card featured">
+      <div class="tc-cat">Salary & Income</div>
+      <h3>Commission Calculator</h3>
+      <span class="tc-link">Open →</span>
+    </a>
+    <a href="/hourly-wage" class="tool-card featured">
+      <div class="tc-cat">Salary & Income</div>
+      <h3>Hourly Wage Calculator</h3>
+      <span class="tc-link">Open →</span>
+    </a>
   </div>
-  <div class="whatif-reset"><button onclick="resetWhatIf()">Reset scenario</button></div>
-  <div class="note warn" style="margin-top:1rem"><span>⚠</span><span>This shows the <strong>tax effect only</strong>. A medical aid dependent reduces tax via the credit, but you'd also pay a higher premium — this tool doesn't model that cost.</span></div>
 </div>
-</div></div></div></div><div class="sidebar"><div class="sc"><div class="sc-head">Quick reference</div><div class="sc-body">
-<div class="qr"><span>Primary rebate</span><strong>R17,820</strong></div>
-<div class="qr"><span>Tax-free threshold</span><strong>R99,000/yr</strong></div>
-<div class="qr"><span>UIF rate</span><strong>1% (max R177/mo)</strong></div>
-<div class="qr"><span>Medical credit</span><strong>R376/member</strong></div>
-</div></div></div></div><div class="section" style="padding-top:0"><div class="section-header"><div class="section-title">Related <span>/</span> Salary Tools</div></div><div class="tools-grid"><a href="/salary-calculator" class="tool-card featured"><div class="tc-cat">Salary & Income</div><h3>Salary After Tax Calculator</h3><span class="tc-link">Open →</span></a><a href="/paye-calculator" class="tool-card featured"><div class="tc-cat">Salary & Income</div><h3>PAYE Calculator</h3><span class="tc-link">Open →</span></a><a href="/bonus-calculator" class="tool-card featured"><div class="tc-cat">Salary & Income</div><h3>Bonus & 13th Cheque</h3><span class="tc-link">Open →</span></a><a href="/overtime-calculator" class="tool-card featured"><div class="tc-cat">Salary & Income</div><h3>Overtime Pay Calculator</h3><span class="tc-link">Open →</span></a><a href="/commission-calculator" class="tool-card featured"><div class="tc-cat">Salary & Income</div><h3>Commission Calculator</h3><span class="tc-link">Open →</span></a><a href="/hourly-wage" class="tool-card featured"><div class="tc-cat">Salary & Income</div><h3>Hourly Wage Calculator</h3><span class="tc-link">Open →</span></a></div></div><div class="sa-stripe"></div>
-<div class="section"><div style="background:var(--white);border:1px solid var(--line);border-top:3px solid var(--forest)"><div class="article-body"><h2>The gap between gross and net that surprises new employees</h2><p>Starting a first job or negotiating a new salary, it is easy to anchor on the gross figure quoted in an offer letter. The real number that determines your lifestyle — what actually lands in your account — is often 20-30% lower once PAYE, UIF and any deductions are accounted for. Understanding this gap before accepting an offer prevents an unpleasant surprise on your first payslip.</p><h2>Why this matters most at salary negotiation time</h2><p>When comparing two job offers, always compare like for like — either both in gross terms or both in net terms, never one of each. A company quoting a slightly lower gross salary but including strong benefits (medical aid contribution, pension matching) can genuinely leave you better off than a higher gross offer with no benefits, once the full picture is calculated.</p><h2>Why the gap between gross and net surprises so many people</h2><p>A job offer quoting R30,000 "gross" and R30,000 "net" imply very different actual take-home amounts, yet the distinction is often glossed over in casual conversation about salary. Gross is your salary before any deductions; net is what actually reaches your bank account after PAYE, UIF, and any other deductions like retirement contributions or medical aid.</p><h2>The deductions that create the gap</h2><table class="data-table"><thead><tr><th>Deduction</th><th>What it is</th><th>Typical impact</th></tr></thead><tbody><tr><td>PAYE (income tax)</td><td>Progressive tax based on SARS brackets</td><td>Largest deduction for most earners</td></tr><tr><td>UIF</td><td>1% of salary, capped annually</td><td>Small but consistent</td></tr><tr><td>Retirement fund contributions</td><td>Pension or provident fund, if applicable</td><td>Varies by employer scheme</td></tr><tr><td>Medical aid</td><td>If deducted at source</td><td>Varies by plan and dependents</td></tr></tbody></table><h2>Why the percentage gap grows as income rises</h2><p>South Africa uses a progressive tax system, meaning higher income is taxed at higher marginal rates. This means the gap between gross and net widens, proportionally, as salary increases — someone earning R15,000/month might see a gap of around 10-12%, while someone earning R80,000/month can see a gap closer to 30% once medical credits and rebates are properly accounted for.</p><h2>Where this calculation matters most in practice</h2><ul><li><strong>Comparing job offers:</strong> always convert to net before comparing, since gross figures alone can be misleading if benefits or structures differ</li><li><strong>Salary negotiations:</strong> understanding your own gap helps you negotiate the right gross figure to achieve a target take-home</li><li><strong>Budgeting for a new role:</strong> plan your monthly budget around net, not gross, to avoid an unpleasant surprise on your first payslip</li></ul><h2>Building this into a fuller financial picture</h2><p>Knowing your net income is the starting point for every other financial decision — what you can afford, how much you can save, and what your tax position looks like. Once you have this figure, see what it means practically with our <a href="/lifestyle-affordability">lifestyle affordability calculator</a>, or check how your net compares to others in your field using the <a href="/salary-database">salary database</a>.</p></div></div></div>
 
-<footer><div class="footer-inner">
-  <div class="footer-logo">CalcMy<span>Pay</span></div>
-  <div class="footer-links"><a href="/salary-income">Salary</a><a href="/affordability">Affordability</a><a href="/wealth-building">Wealth</a><a href="/money-tools">Tools</a><a href="/financial-coach">Coach</a><a href="/blog-salary-guide">Guides</a><a href="/about">About</a><a href="/privacy-policy">Privacy</a><a href="/contact">Contact</a></div>
-  <div class="footer-copy">© 2026 CalcMyPay · Understand your salary. Plan your money. Build your future. · For informational purposes only · Not affiliated with SARS · SARS 2027 tax year</div>
-</div></footer>
+<div class="section">
+  <div style="background:var(--white);border:1px solid var(--line);border-top:3px solid var(--forest)">
+    <div class="article-body">
+
+      <h2>Understanding the gap between gross and net salary</h2>
+      <p>Starting a first job or negotiating a new salary, it is easy to anchor on the gross figure quoted in an offer letter. The real number that determines your lifestyle — what actually lands in your bank account — is often 15-30% lower once PAYE, UIF, and any deductions are accounted for. Understanding this gap before accepting an offer prevents an unpleasant surprise on your first payslip.</p>
+
+      <p>This gross to net salary calculator shows you exactly how much of your gross salary survives the journey to your bank account. It applies the official SARS 2027 tax year tables (effective 1 March 2026 to 28 February 2027), including the primary rebate, age-related rebates, medical aid credits, and UIF contributions. The result is an accurate picture of your actual take-home pay.</p>
+
+      <h2>What "gross" and "net" actually mean</h2>
+      <p>The terms "gross salary" and "net salary" are used constantly in job offers, salary negotiations, and financial planning — but many South Africans don't fully understand the difference until they see their first payslip.</p>
+
+      <h3>Gross salary (CTC)</h3>
+      <p>Your gross salary, often called CTC (Cost to Company), is the total amount your employer commits to paying you before any deductions are made. This is the figure typically quoted in job offers, employment contracts, and annual salary reviews. It includes your basic salary plus any guaranteed benefits like employer contributions to medical aid, pension, or provident funds.</p>
+
+      <h3>Net salary (take-home pay)</h3>
+      <p>Your net salary is what actually lands in your bank account each month after all mandatory and voluntary deductions have been subtracted. This is the number that matters for budgeting, loan applications, and lifestyle planning — yet it's rarely the number quoted in job offers.</p>
+
+      <div class="callout">
+        <strong>Key insight:</strong> A job offer quoting R30,000 "gross" and one quoting R30,000 "net" represent very different actual take-home amounts. Always convert to the same basis before comparing offers.
+      </div>
+
+      <h2>The deductions that create the gap</h2>
+      <p>Several mandatory and voluntary deductions create the difference between your gross salary and your net take-home pay. Understanding each one helps you predict your actual monthly income and plan your finances accordingly.</p>
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Deduction</th>
+            <th>What it is</th>
+            <th>Typical impact</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>PAYE (income tax)</strong></td>
+            <td>Progressive tax based on SARS 2027 brackets, reduced by rebates and credits</td>
+            <td class="td-red">Largest deduction — 0% to 45% marginal rate</td>
+          </tr>
+          <tr>
+            <td><strong>UIF</strong></td>
+            <td>1% of salary, capped at R177.12/month (R2,125.44/year)</td>
+            <td>Small but consistent (0.5% to 1% effective)</td>
+          </tr>
+          <tr>
+            <td><strong>Retirement contributions</strong></td>
+            <td>Pension, provident, or retirement annuity (up to 27.5% deductible)</td>
+            <td>Varies — typically 5% to 15% of salary</td>
+          </tr>
+          <tr>
+            <td><strong>Medical aid</strong></td>
+            <td>Monthly premium for you and dependents</td>
+            <td>Varies — R1,500 to R5,000+ per month</td>
+          </tr>
+          <tr>
+            <td><strong>Other deductions</strong></td>
+            <td>Union fees, funeral cover, savings schemes, loans</td>
+            <td>Varies widely</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Step-by-step: How gross becomes net</h2>
+      <p>The conversion from gross to net salary follows a specific sequence defined by South African tax law. Here's exactly how your employer calculates what you take home:</p>
+
+      <h3>Step 1: Start with your gross annual salary</h3>
+      <p>If you entered a monthly figure, multiply by 12 to get your annual gross. This is your starting point.</p>
+
+      <h3>Step 2: Calculate PAYE using SARS tax brackets</h3>
+      <p>Your annual gross is applied against the progressive SARS 2027 tax brackets:</p>
+      <ul>
+        <li>First R245,100: 18%</li>
+        <li>R245,101 – R383,100: 26%</li>
+        <li>R383,101 – R530,200: 31%</li>
+        <li>R530,201 – R695,800: 36%</li>
+        <li>R695,801 – R887,000: 39%</li>
+        <li>R887,001 – R1,878,600: 41%</li>
+        <li>Above R1,878,600: 45%</li>
+      </ul>
+
+      <h3>Step 3: Subtract rebates</h3>
+      <p>The primary rebate of R17,820 is subtracted directly from your tax bill. If you're 65 or older, additional rebates apply (R9,765 for ages 65-74, plus R3,249 for ages 75+).</p>
+
+      <h3>Step 4: Subtract medical aid credits</h3>
+      <p>If you're on a registered medical aid, tax credits of R376/month per member reduce your PAYE directly.</p>
+
+      <h3>Step 5: Calculate UIF</h3>
+      <p>UIF is 1% of your salary, but capped at R177.12 per month (because the earnings ceiling is R17,712/month). This means the maximum annual UIF contribution is R2,125.44.</p>
+
+      <h3>Step 6: Divide by 12 for monthly figures</h3>
+      <p>The annual totals are divided by 12 to give you your monthly take-home pay.</p>
+
+      <div class="worked-example">
+        <div class="worked-example-head">
+          <span class="worked-example-tag">Worked Example</span>
+          <h3>Converting R30,000 gross to net</h3>
+        </div>
+        <p>Let's walk through a realistic scenario: monthly gross salary of R30,000 (R360,000 annually), under 65, with medical aid for yourself and one dependent.</p>
+
+        <p><strong>Tax calculation:</strong></p>
+        <ul>
+          <li>Annual gross: R360,000</li>
+          <li>Tax on R360,000 = R44,118 + 26% of (R360,000 - R245,100) = R44,118 + R29,874 = R73,992</li>
+          <li>Less primary rebate: R17,820</li>
+          <li>Less medical credit (2 × R376 × 12): R9,024</li>
+          <li>Annual PAYE: R47,148</li>
+          <li>Monthly PAYE: R3,929</li>
+        </ul>
+
+        <p><strong>UIF calculation:</strong></p>
+        <ul>
+          <li>1% of R30,000 = R300, but capped at R177.12</li>
+          <li>Monthly UIF: R177.12</li>
+        </ul>
+
+        <p><strong>Net take-home:</strong></p>
+        <ul>
+          <li>Gross monthly: R30,000</li>
+          <li>Less PAYE: R3,929</li>
+          <li>Less UIF: R177</li>
+          <li><strong>Net take-home: R25,894 per month</strong></li>
+        </ul>
+
+        <p style="margin-top:1rem">You keep approximately <strong>86.3%</strong> of your gross salary. The deductions total R4,106 per month.</p>
+      </div>
+
+      <h2>Gross to net reference table (2027 tax year)</h2>
+      <p>The table below shows the conversion from gross to net salary at common income levels. These figures assume a single taxpayer under 65 with no medical aid contributions.</p>
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Gross Monthly</th>
+            <th>Gross Annual</th>
+            <th>PAYE/month</th>
+            <th>UIF/month</th>
+            <th>Net Monthly</th>
+            <th>You Keep</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>R8,250</td>
+            <td>R99,000</td>
+            <td class="td-green">R0</td>
+            <td>R83</td>
+            <td class="td-green"><strong>R8,167</strong></td>
+            <td>99.0%</td>
+          </tr>
+          <tr>
+            <td>R10,000</td>
+            <td>R120,000</td>
+            <td>R315</td>
+            <td>R100</td>
+            <td class="td-green"><strong>R9,585</strong></td>
+            <td>95.9%</td>
+          </tr>
+          <tr>
+            <td>R15,000</td>
+            <td>R180,000</td>
+            <td>R1,215</td>
+            <td>R150</td>
+            <td class="td-green"><strong>R13,635</strong></td>
+            <td>90.9%</td>
+          </tr>
+          <tr>
+            <td>R20,000</td>
+            <td>R240,000</td>
+            <td>R2,115</td>
+            <td>R177</td>
+            <td class="td-green"><strong>R17,708</strong></td>
+            <td>88.5%</td>
+          </tr>
+          <tr>
+            <td>R25,000</td>
+            <td>R300,000</td>
+            <td>R3,381</td>
+            <td>R177</td>
+            <td class="td-green"><strong>R21,442</strong></td>
+            <td>85.8%</td>
+          </tr>
+          <tr>
+            <td>R30,000</td>
+            <td>R360,000</td>
+            <td>R5,182</td>
+            <td>R177</td>
+            <td class="td-green"><strong>R24,641</strong></td>
+            <td>82.1%</td>
+          </tr>
+          <tr>
+            <td>R40,000</td>
+            <td>R480,000</td>
+            <td>R4,695</td>
+            <td>R177</td>
+            <td class="td-green"><strong>R35,128</strong></td>
+            <td>87.8%</td>
+          </tr>
+          <tr>
+            <td>R50,000</td>
+            <td>R600,000</td>
+            <td>R7,276</td>
+            <td>R177</td>
+            <td class="td-green"><strong>R42,547</strong></td>
+            <td>85.1%</td>
+          </tr>
+          <tr>
+            <td>R65,000</td>
+            <td>R780,000</td>
+            <td>R11,718</td>
+            <td>R177</td>
+            <td class="td-green"><strong>R53,105</strong></td>
+            <td>81.7%</td>
+          </tr>
+          <tr>
+            <td>R85,000</td>
+            <td>R1,020,000</td>
+            <td>R18,494</td>
+            <td>R177</td>
+            <td class="td-green"><strong>R66,329</strong></td>
+            <td>78.0%</td>
+          </tr>
+          <tr>
+            <td>R100,000</td>
+            <td>R1,200,000</td>
+            <td>R23,653</td>
+            <td>R177</td>
+            <td class="td-green"><strong>R76,170</strong></td>
+            <td>76.2%</td>
+          </tr>
+          <tr>
+            <td>R150,000</td>
+            <td>R1,800,000</td>
+            <td>R31,503</td>
+            <td>R177</td>
+            <td class="td-green"><strong>R118,320</strong></td>
+            <td>78.9%</td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="font-size:.84rem;color:var(--mist);margin-top:.5rem">Note: These figures assume no medical aid, no retirement contributions, and no travel allowance. Your actual net will differ based on your specific deductions.</p>
+
+      <h2>Why the gross-to-net gap widens with income</h2>
+      <p>South Africa uses a progressive tax system, meaning higher income is taxed at higher marginal rates. This creates an important pattern: the percentage gap between gross and net widens as salary increases.</p>
+
+      <ul>
+        <li>At <strong>R15,000/month</strong>: You keep about 90.9% (gap of 9.1%)</li>
+        <li>At <strong>R30,000/month</strong>: You keep about 82.1% (gap of 17.9%)</li>
+        <li>At <strong>R50,000/month</strong>: You keep about 85.1% (gap of 14.9%)</li>
+        <li>At <strong>R100,000/month</strong>: You keep about 76.2% (gap of 23.8%)</li>
+      </ul>
+
+      <p>This progressive structure means that a R10,000 raise doesn't translate to R10,000 more in your pocket. The portion of the raise that falls in a higher tax bracket will be taxed at that higher rate. This is why understanding your marginal rate is crucial when evaluating salary increases or bonuses.</p>
+
+      <h2>Common scenarios where gross-to-net conversion matters most</h2>
+
+      <h3>1. Comparing job offers</h3>
+      <p>When comparing two job offers, always convert both to net terms before comparing. A company quoting a slightly lower gross salary but including strong benefits (medical aid contribution, pension matching, no co-payment) can genuinely leave you better off than a higher gross offer with no benefits. Use this calculator to see the true take-home difference.</p>
+
+      <h3>2. Salary negotiations</h3>
+      <p>Understanding your own gross-to-net gap helps you negotiate the right gross figure to achieve a target take-home. If you need R30,000 net per month to cover your expenses, you'll need to negotiate a gross of roughly R36,500 (assuming no medical aid or retirement contributions).</p>
+
+      <h3>3. Loan applications</h3>
+      <p>Banks assess your affordability based on your net income, not your gross. When applying for a home loan, car finance, or credit card, the bank looks at your actual take-home pay. Understanding this figure in advance helps you apply for realistic amounts.</p>
+
+      <h3>4. Budgeting for a new role</h3>
+      <p>Plan your monthly budget around net income, not gross. A common mistake is budgeting based on the gross figure from your offer letter, then facing a shortfall when your first payslip arrives with all the deductions applied.</p>
+
+      <h3>5. Freelance rate setting</h3>
+      <p>If you're transitioning from employment to freelancing, you need to set your rates based on your desired net income plus all the deductions you previously had covered by your employer (including the employer portion of UIF, which is another 1% of salary).</p>
+
+      <h2>Hidden factors that affect your net salary</h2>
+      <p>Beyond the basic PAYE and UIF deductions shown in this calculator, several other factors can significantly affect your actual take-home pay:</p>
+
+      <h3>Medical aid premiums</h3>
+      <p>While medical aid provides valuable tax credits (R376/month per member), the premiums themselves are a significant deduction from your gross salary. A family medical aid plan can cost R3,000 to R6,000 per month, substantially reducing your net pay even after accounting for the tax credit.</p>
+
+      <h3>Retirement contributions</h3>
+      <p>Contributions to pension, provident, or retirement annuity funds reduce your taxable income (up to 27.5% of income, capped at R430,000/year), but they also reduce your immediate take-home pay. The trade-off is long-term tax savings and retirement security.</p>
+
+      <h3>Travel allowances</h3>
+      <p>If you receive a travel allowance, only 80% is automatically included in your taxable income (20% is considered business use). This can significantly reduce your PAYE compared to someone with the same gross but no travel allowance.</p>
+
+      <h3>Employer-paid benefits</h3>
+      <p>Some employers pay for benefits directly (medical aid, life insurance, income protection) rather than deducting them from your salary. These "employer-paid" benefits appear in your CTC but don't reduce your net pay — though they may create a taxable fringe benefit.</p>
+
+      <h2>Tips to maximize your take-home pay</h2>
+      <p>While you can't eliminate taxes and mandatory deductions, there are legal strategies to optimize your net salary:</p>
+
+      <ul>
+        <li><strong>Structure your CTC wisely:</strong> Include a travel allowance if you drive for business — the 20% automatic exclusion reduces your taxable income.</li>
+        <li><strong>Use medical aid credits:</strong> If you're paying out-of-pocket medical expenses, joining a medical aid gives you R376/month tax credit per member.</li>
+        <li><strong>Maximize retirement contributions:</strong> Up to 27.5% of income (capped at R430,000/year) is tax-deductible. This reduces PAYE while building retirement savings.</li>
+        <li><strong>Time bonuses strategically:</strong> If you're near a bracket threshold, ask for bonuses in the next tax year to stay in a lower bracket.</li>
+        <li><strong>Claim all deductions:</strong> Home office, professional body fees, wear-and-tear, and donations (Section 18A) all reduce taxable income when you file.</li>
+        <li><strong>Review your tax return:</strong> File annually even if your employer deducts PAYE correctly — you may be owed a refund.</li>
+      </ul>
+
+      <h2>Glossary: Gross to net terms explained</h2>
+      <div class="glossary-grid">
+        <div class="glossary-item">
+          <div class="glossary-term">Gross Salary (CTC)</div>
+          <div class="glossary-def">Cost to Company — your total salary package before any deductions, including employer contributions to benefits.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">Net Salary</div>
+          <div class="glossary-def">Take-home pay — what actually lands in your bank account after all deductions have been subtracted.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">PAYE</div>
+          <div class="glossary-def">Pay As You Earn — income tax deducted monthly by your employer based on SARS tax brackets, rebates, and credits.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">UIF</div>
+          <div class="glossary-def">Unemployment Insurance Fund — 1% contribution deducted from salary, capped at R177.12/month (R2,125.44/year).</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">Primary Rebate</div>
+          <div class="glossary-def">R17,820 annual tax rebate for all taxpayers under 65, creating the R99,000 tax-free threshold.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">Marginal Rate</div>
+          <div class="glossary-def">The tax rate applied to your next rand of income. Important for evaluating raises, bonuses, and overtime.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">Effective Tax Rate</div>
+          <div class="glossary-def">Your total tax as a percentage of gross income. Always lower than your marginal rate due to rebates and progressive brackets.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">Tax-Free Threshold</div>
+          <div class="glossary-def">The annual income level below which you pay no income tax. R99,000 for under 65, R153,250 for 65-74, R171,300 for 75+.</div>
+        </div>
+      </div>
+
+      <h2>Frequently asked questions</h2>
+
+      <h3>What is the difference between gross and net salary?</h3>
+      <p>Gross salary is your total pay before any deductions. Net salary (take-home pay) is what remains after PAYE income tax, UIF contributions, and any other deductions like retirement annuity or medical aid premiums have been subtracted.</p>
+
+      <h3>How do I calculate net salary from gross in South Africa?</h3>
+      <p>Subtract PAYE (income tax after the R17,820 rebate and medical credits) and UIF (1%, capped at R2,125.44/year) from your gross salary to get your net take-home pay. For a complete calculation including medical aid premiums, retirement contributions, and travel allowances, use the full salary calculator.</p>
+
+      <h3>What percentage of my salary goes to tax in South Africa?</h3>
+      <p>The effective tax rate varies significantly by income due to the progressive tax system. Someone earning R240,000/year pays about 10.4% effective tax, while someone earning R1,200,000/year pays about 20%. The gap between gross and net widens as income rises.</p>
+
+      <h3>Is UIF included in gross salary?</h3>
+      <p>Yes, UIF (1% of your salary, capped at R177.12/month) is deducted from your gross salary. It appears as a separate line item on your payslip and reduces your take-home pay. Your employer also contributes a matching 1%.</p>
+
+      <h3>Does gross salary include medical aid and pension?</h3>
+      <p>In South Africa, gross salary (CTC - Cost to Company) typically includes the total value of employer contributions to medical aid and pension/provident funds. However, the employee's portion of these contributions is deducted from gross to calculate net pay.</p>
+
+      <h3>Why is my net pay lower than I expected?</h3>
+      <p>Common reasons include: you're in a higher tax bracket than you realized, you have additional deductions (medical aid, retirement, union fees) you didn't account for, you received taxable fringe benefits, or your employer calculated PAYE based on annualized income that includes bonuses or irregular payments.</p>
+
+      <h3>Can I increase my net pay legally?</h3>
+      <p>Yes, through strategies like: contributing to a retirement annuity (reduces taxable income), joining a medical aid (tax credits of R376/month per member), structuring a travel allowance (20% automatic exclusion), and claiming all allowable deductions on your annual tax return.</p>
+
+      <h3>What happens if my employer deducts too much tax?</h3>
+      <p>If your employer over-deducts PAYE, you'll receive a refund when you file your annual tax return with SARS. Refunds are typically paid within 21-45 business days of submitting your return, provided there are no issues or audits.</p>
+
+      <h3>Does this calculator include all deductions?</h3>
+      <p>This calculator shows the core mandatory deductions: PAYE and UIF. It includes medical aid tax credits but does not subtract medical aid premiums, retirement contributions, or other voluntary deductions. For a complete picture including all these factors, use our full salary calculator.</p>
+
+      <h3>How does age affect my net salary?</h3>
+      <p>Taxpayers aged 65-74 receive an additional secondary rebate of R9,765 per year, and those 75+ receive a further tertiary rebate of R3,249. These additional rebates reduce PAYE and increase net pay compared to someone under 65 with the same gross salary.</p>
+
+      <div class="disclaim">
+        <strong>Disclaimer:</strong> This calculator provides estimates based on SARS 2027 tax year rates (1 March 2026 – 28 February 2027). It shows basic PAYE and UIF deductions only. Actual take-home pay will vary based on medical aid premiums, retirement contributions, travel allowances, and other voluntary deductions. For personalized tax advice, consult a registered tax practitioner. CalcMyPay is not affiliated with SARS.
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">CalcMy<span>Pay</span></div>
+    <div class="footer-links">
+      <a href="/salary-income">Salary</a>
+      <a href="/affordability">Affordability</a>
+      <a href="/wealth-building">Wealth</a>
+      <a href="/money-tools">Tools</a>
+      <a href="/financial-coach">Coach</a>
+      <a href="/blog-salary-guide">Guides</a>
+      <a href="/about">About</a>
+      <a href="/privacy-policy">Privacy</a>
+      <a href="/contact">Contact</a>
+    </div>
+    <div class="footer-copy">
+      © 2026 CalcMyPay · Understand your salary. Plan your money. Build your future. · For informational purposes only · Not affiliated with SARS · SARS 2027 tax year (1 March 2026 – 28 February 2027)
+    </div>
+  </div>
+</footer>
+
 <script>
-const fmt=n=>'R\u00a0'+Math.round(Math.abs(n)).toLocaleString('en-ZA');
-const brackets=[[245100,.18,0],[383100,.26,44118],[530200,.31,79998],[695800,.36,125599],[887000,.39,185215],[1878600,.41,259783],[Infinity,.45,666339]];
-function sarsTax(t){if(t<=0)return 0;let p=0;for(let[l,r,b]of brackets){if(t<=l)return b+(t-p)*r;p=l;}return 0;}
-function marginalRate(a){let p=0;for(let[l,r]of brackets){if(a<=l)return r;p=l;}return .45;}
-const REBATE=17820;
+const fmt = n => 'R\u00a0' + Math.round(Math.abs(n)).toLocaleString('en-ZA');
 
-function medC(m){if(m==0)return 0;if(m==1)return 376*12;if(m==2)return 752*12;return(752+(m-2)*254)*12;}
-function calc(){
- const v=parseFloat(document.getElementById('sal').value)||0;
- const per=parseInt(document.getElementById('per').value);
- const age=document.getElementById('age').value;
- const med=parseInt(document.getElementById('med').value);
- if(v<=0){alert('Please enter your gross salary.');return;}
- const annual=v*per;
- let reb=REBATE; if(age=='s'||age=='t')reb+=9765; if(age=='t')reb+=3249;
- const paye=Math.max(0,sarsTax(annual)-reb-medC(med));
- const uif=Math.min(annual*.01,17712);
- const net=annual-paye-uif;
- const ded=annual>0?((paye+uif)/annual*100).toFixed(1):0;
- document.getElementById('big').textContent=fmt(net/12);
- document.getElementById('eff').textContent=ded+'%';
- document.getElementById('r-gross').textContent=fmt(annual/12);
- document.getElementById('r-paye').textContent='-'+fmt(paye/12);
- document.getElementById('r-uif').textContent='-'+fmt(uif/12);
- document.getElementById('r-net').textContent=fmt(net/12);
- baseInputs = {annual, med, age, netMonthly: net/12};
- document.getElementById('whatif-section').style.display = 'block';
- resetWhatIf();
- renderMoneyStory(net);
- document.getElementById('res').classList.add('show');
- document.getElementById('res').scrollIntoView({behavior:'smooth',block:'nearest'});
+const brackets = [
+  [245100, .18, 0],
+  [383100, .26, 44118],
+  [530200, .31, 79998],
+  [695800, .36, 125599],
+  [887000, .39, 185215],
+  [1878600, .41, 259783],
+  [Infinity, .45, 666339]
+];
+
+function sarsTax(t) {
+  if (t <= 0) return 0;
+  let p = 0;
+  for (let [l, r, b] of brackets) {
+    if (t <= l) return b + (t - p) * r;
+    p = l;
+  }
+  return 0;
 }
-document.addEventListener('keydown',e=>{if(e.key=='Enter')calc()});
+
+const REBATE = 17820;
+
+function medC(m) {
+  if (m === 0) return 0;
+  if (m === 1) return 376 * 12;
+  if (m === 2) return 752 * 12;
+  return (752 + (m - 2) * 254) * 12;
+}
+
+// FIXED: UIF caps - 2026/2027
+const UIF_MONTHLY_CEILING = 17712;
+const UIF_ANNUAL_CAP = 2125.44; // R177.12/month × 12
 
 let lastTakeHome = 0;
+let baseInputs = null;
 
-const SAL=[{"slug": "teacher", "name": "Teacher", "cat": "Education", "jun": 19000, "avg": 24000, "sen": 62000, "th": 20639, "qual": "Degree (B.Ed)"}, {"slug": "nurse", "name": "Registered Nurse", "cat": "Healthcare", "jun": 19000, "avg": 28000, "sen": 65000, "th": 23559, "qual": "Diploma/Degree"}, {"slug": "doctor", "name": "Doctor", "cat": "Healthcare", "jun": 42000, "avg": 75000, "sen": 220000, "th": 53642, "qual": "MBChB"}, {"slug": "pharmacist", "name": "Pharmacist", "cat": "Healthcare", "jun": 28000, "avg": 45000, "sen": 80000, "th": 35274, "qual": "BPharm"}, {"slug": "accountant", "name": "Accountant", "cat": "Finance", "jun": 22000, "avg": 45000, "sen": 130000, "th": 35274, "qual": "Degree / CA(SA)"}, {"slug": "engineer", "name": "Engineer", "cat": "Engineering", "jun": 32000, "avg": 48000, "sen": 140000, "th": 37164, "qual": "Degree (Eng)"}, {"slug": "developer", "name": "Software Developer", "cat": "Technology", "jun": 38000, "avg": 55000, "sen": 130000, "th": 41574, "qual": "Degree / self-taught"}, {"slug": "data-scientist", "name": "Data Scientist", "cat": "Technology", "jun": 38000, "avg": 58000, "sen": 150000, "th": 43464, "qual": "Degree (STEM)"}, {"slug": "lawyer", "name": "Lawyer", "cat": "Legal", "jun": 22000, "avg": 52000, "sen": 180000, "th": 39684, "qual": "LLB"}, {"slug": "marketing-manager", "name": "Marketing Manager", "cat": "Marketing", "jun": 25000, "avg": 42000, "sen": 120000, "th": 33275, "qual": "Degree / diploma"}, {"slug": "pilot", "name": "Commercial Pilot", "cat": "Aviation", "jun": 40000, "avg": 70000, "sen": 200000, "th": 50664, "qual": "CPL/ATPL licence"}, {"slug": "police-officer", "name": "Police Officer", "cat": "Government", "jun": 16000, "avg": 19000, "sen": 55000, "th": 16875, "qual": "Matric + training"}, {"slug": "electrician", "name": "Electrician", "cat": "Trades", "jun": 12000, "avg": 22000, "sen": 45000, "th": 19179, "qual": "Red Seal trade"}, {"slug": "plumber", "name": "Plumber", "cat": "Trades", "jun": 11000, "avg": 20000, "sen": 42000, "th": 17685, "qual": "Red Seal trade"}];
+function loadExample() {
+  document.getElementById('sal').value = 30000;
+  document.getElementById('per').value = '12';
+  document.getElementById('age').value = 'p';
+  document.getElementById('med').value = '2';
+  calc();
+}
 
-function fmtK(n){n=Math.round(n);if(Math.abs(n)>=1e6)return 'R\u00a0'+(n/1e6).toFixed(2)+'m';if(Math.abs(n)>=1e3)return 'R\u00a0'+Math.round(n/1e3).toLocaleString('en-ZA')+'k';return fmt(n);}
+function calc() {
+  const v = parseFloat(document.getElementById('sal').value) || 0;
+  const per = parseInt(document.getElementById('per').value);
+  const age = document.getElementById('age').value;
+  const med = parseInt(document.getElementById('med').value);
 
-function renderMoneyStory(annualTakeHome){
+  if (v <= 0) { alert('Please enter your gross salary.'); return; }
+
+  const annual = v * per;
+  let reb = REBATE;
+  if (age === 's' || age === 't') reb += 9765;
+  if (age === 't') reb += 3249;
+
+  const paye = Math.max(0, sarsTax(annual) - reb - medC(med));
+  
+  // FIXED: UIF uses correct annual cap of R2,125.44
+  const uif = Math.min(annual * .01, UIF_ANNUAL_CAP);
+  
+  const net = annual - paye - uif;
+  const ded = annual > 0 ? ((paye + uif) / annual * 100).toFixed(1) : 0;
+
+  document.getElementById('big').textContent = fmt(net / 12);
+  document.getElementById('eff').textContent = ded + '%';
+  document.getElementById('r-gross').textContent = fmt(annual / 12);
+  document.getElementById('r-paye').textContent = '-' + fmt(paye / 12);
+  document.getElementById('r-uif').textContent = '-' + fmt(uif / 12);
+  document.getElementById('r-net').textContent = fmt(net / 12);
+
+  baseInputs = { annual, med, age, netMonthly: net / 12 };
+  document.getElementById('whatif-section').style.display = 'block';
+  resetWhatIf();
+  renderMoneyStory(net);
+  document.getElementById('res').classList.add('show');
+  document.getElementById('res').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+document.addEventListener('keydown', e => { if (e.key === 'Enter') calc(); });
+
+const SAL = [
+  { "slug": "teacher", "name": "Teacher", "cat": "Education", "jun": 19000, "avg": 24000, "sen": 62000, "th": 20639, "qual": "Degree (B.Ed)" },
+  { "slug": "nurse", "name": "Registered Nurse", "cat": "Healthcare", "jun": 19000, "avg": 28000, "sen": 65000, "th": 23559, "qual": "Diploma/Degree" },
+  { "slug": "doctor", "name": "Doctor", "cat": "Healthcare", "jun": 42000, "avg": 75000, "sen": 220000, "th": 53642, "qual": "MBChB" },
+  { "slug": "pharmacist", "name": "Pharmacist", "cat": "Healthcare", "jun": 28000, "avg": 45000, "sen": 80000, "th": 35274, "qual": "BPharm" },
+  { "slug": "accountant", "name": "Accountant", "cat": "Finance", "jun": 22000, "avg": 45000, "sen": 130000, "th": 35274, "qual": "Degree / CA(SA)" },
+  { "slug": "engineer", "name": "Engineer", "cat": "Engineering", "jun": 32000, "avg": 48000, "sen": 140000, "th": 37164, "qual": "Degree (Eng)" },
+  { "slug": "developer", "name": "Software Developer", "cat": "Technology", "jun": 38000, "avg": 55000, "sen": 130000, "th": 41574, "qual": "Degree / self-taught" },
+  { "slug": "data-scientist", "name": "Data Scientist", "cat": "Technology", "jun": 38000, "avg": 58000, "sen": 150000, "th": 43464, "qual": "Degree (STEM)" },
+  { "slug": "lawyer", "name": "Lawyer", "cat": "Legal", "jun": 22000, "avg": 52000, "sen": 180000, "th": 39684, "qual": "LLB" },
+  { "slug": "marketing-manager", "name": "Marketing Manager", "cat": "Marketing", "jun": 25000, "avg": 42000, "sen": 120000, "th": 33275, "qual": "Degree / diploma" },
+  { "slug": "pilot", "name": "Commercial Pilot", "cat": "Aviation", "jun": 40000, "avg": 70000, "sen": 200000, "th": 50664, "qual": "CPL/ATPL licence" },
+  { "slug": "police-officer", "name": "Police Officer", "cat": "Government", "jun": 16000, "avg": 19000, "sen": 55000, "th": 16875, "qual": "Matric + training" },
+  { "slug": "electrician", "name": "Electrician", "cat": "Trades", "jun": 12000, "avg": 22000, "sen": 45000, "th": 19179, "qual": "Red Seal trade" },
+  { "slug": "plumber", "name": "Plumber", "cat": "Trades", "jun": 11000, "avg": 20000, "sen": 42000, "th": 17685, "qual": "Red Seal trade" }
+];
+
+function fmtK(n) {
+  n = Math.round(n);
+  if (Math.abs(n) >= 1e6) return 'R\u00a0' + (n / 1e6).toFixed(2) + 'm';
+  if (Math.abs(n) >= 1e3) return 'R\u00a0' + Math.round(n / 1e3).toLocaleString('en-ZA') + 'k';
+  return fmt(n);
+}
+
+function renderMoneyStory(annualTakeHome) {
   lastTakeHome = annualTakeHome;
-  const monthlyTH = annualTakeHome/12;
+  const monthlyTH = annualTakeHome / 12;
 
-  const rentMax = monthlyTH*0.30;
-  const carMax = monthlyTH*0.15;
-  const bondR=0.11/12, bondN=20*12;
-  const bondCapacity = rentMax*((Math.pow(1+bondR,bondN)-1)/(bondR*Math.pow(1+bondR,bondN)));
-  const carRate=0.125/12, carN=72;
-  const carPrice = carMax*((Math.pow(1+carRate,carN)-1)/(carRate*Math.pow(1+carRate,carN)));
-  const emergency3 = monthlyTH*3;
-  const emergency6 = monthlyTH*6;
+  const rentMax = monthlyTH * 0.30;
+  const carMax = monthlyTH * 0.15;
+  const bondR = 0.11 / 12, bondN = 20 * 12;
+  const bondCapacity = rentMax * ((Math.pow(1 + bondR, bondN) - 1) / (bondR * Math.pow(1 + bondR, bondN)));
+  const carRate = 0.125 / 12, carN = 72;
+  const carPrice = carMax * ((Math.pow(1 + carRate, carN) - 1) / (carRate * Math.pow(1 + carRate, carN)));
+  const emergency3 = monthlyTH * 3;
+  const emergency6 = monthlyTH * 6;
 
   document.getElementById('ms-rent').textContent = fmt(rentMax);
   document.getElementById('ms-home').textContent = fmtK(bondCapacity);
   document.getElementById('ms-car').textContent = fmtK(carPrice);
   document.getElementById('ms-emergency').textContent = fmt(emergency3);
-  document.getElementById('ms-emergency-desc').textContent = fmt(emergency3)+' \u2013 '+fmt(emergency6)+' (3\u20136 months of take-home)';
+  document.getElementById('ms-emergency-desc').textContent = fmt(emergency3) + ' \u2013 ' + fmt(emergency6) + ' (3\u20136 months of take-home)';
 
-  const ageInput = parseInt(document.getElementById('ms-age').value)||0;
-  const monthlyRA = monthlyTH*0.15;
-  const rr = 0.10/12;
+  const ageInput = parseInt(document.getElementById('ms-age').value) || 0;
+  const monthlyRA = monthlyTH * 0.15;
+  const rr = 0.10 / 12;
   const agenoteEl = document.getElementById('ms-retire-agenote');
   const retireEl = document.getElementById('ms-retirement');
-  if(ageInput > 0 && ageInput < 65){
-    const years = 65-ageInput;
-    const rn = years*12;
-    const proj = monthlyRA*((Math.pow(1+rr,rn)-1)/rr);
+
+  if (ageInput > 0 && ageInput < 65) {
+    const years = 65 - ageInput;
+    const rn = years * 12;
+    const proj = monthlyRA * ((Math.pow(1 + rr, rn) - 1) / rr);
     retireEl.textContent = fmtK(proj);
-    agenoteEl.textContent = ' \u2014 by age 65 ('+years+' years to go)';
+    agenoteEl.textContent = ' \u2014 by age 65 (' + years + ' years to go)';
   } else {
-    const proj20 = monthlyRA*((Math.pow(1+rr,20*12)-1)/rr);
+    const proj20 = monthlyRA * ((Math.pow(1 + rr, 20 * 12) - 1) / rr);
     retireEl.textContent = fmtK(proj20);
     agenoteEl.textContent = ' \u2014 over 20 years (enter your age above for an exact projection)';
   }
@@ -586,75 +1161,111 @@ function renderMoneyStory(annualTakeHome){
   document.getElementById('cmp-you-val').textContent = fmt(monthlyTH);
   document.getElementById('cmp-you-val2').textContent = fmt(monthlyTH);
   updateCompareAvg(monthlyTH);
-  if(document.getElementById('ms-prof').options.length===0) initProfSelect();
-  renderProfCompare();
 
+  if (document.getElementById('ms-prof').options.length === 0) {
+    initProfSelect();
+  }
+  renderProfCompare();
   document.getElementById('money-story').style.display = 'block';
 }
 
-function updateCompareAvg(monthlyTH){
+function updateCompareAvg(monthlyTH) {
   const avg = 22800;
-  const diff = ((monthlyTH-avg)/avg*100);
+  const diff = ((monthlyTH - avg) / avg * 100);
   const el = document.getElementById('cmp-pct');
-  if(diff>=0){ el.textContent='\u2191 '+diff.toFixed(0)+'% above average'; el.className='compare-pct up'; }
-  else{ el.textContent='\u2193 '+Math.abs(diff).toFixed(0)+'% below average'; el.className='compare-pct down'; }
+  if (diff >= 0) {
+    el.textContent = '\u2191 ' + diff.toFixed(0) + '% above average';
+    el.className = 'compare-pct up';
+  } else {
+    el.textContent = '\u2193 ' + Math.abs(diff).toFixed(0) + '% below average';
+    el.className = 'compare-pct down';
+  }
 }
 
-function initProfSelect(){
-  const sel=document.getElementById('ms-prof');
-  SAL.slice().sort((a,b)=>a.name.localeCompare(b.name)).forEach(s=>sel.add(new Option(s.name, s.slug)));
-  sel.value = SAL.find(s=>s.slug==='developer') ? 'developer' : SAL[0].slug;
+function initProfSelect() {
+  const sel = document.getElementById('ms-prof');
+  SAL.slice().sort((a, b) => a.name.localeCompare(b.name)).forEach(s => sel.add(new Option(s.name, s.slug)));
+  sel.value = SAL.find(s => s.slug === 'developer') ? 'developer' : SAL[0].slug;
 }
 
-function renderProfCompare(){
+function renderProfCompare() {
   const slug = document.getElementById('ms-prof').value;
-  const prof = SAL.find(s=>s.slug===slug);
-  if(!prof) return;
-  const monthlyTH = lastTakeHome/12;
+  const prof = SAL.find(s => s.slug === slug);
+  if (!prof) return;
+  const monthlyTH = lastTakeHome / 12;
   document.getElementById('cmp-prof-name').textContent = prof.name;
   document.getElementById('cmp-prof-val').textContent = fmt(prof.th);
-  const diff = ((monthlyTH-prof.th)/prof.th*100);
+  const diff = ((monthlyTH - prof.th) / prof.th * 100);
   const el = document.getElementById('cmp-prof-pct');
-  if(diff>=0){ el.textContent='\u2191 '+diff.toFixed(0)+'% above'; el.className='compare-pct up'; }
-  else{ el.textContent='\u2193 '+Math.abs(diff).toFixed(0)+'% below'; el.className='compare-pct down'; }
+  if (diff >= 0) {
+    el.textContent = '\u2191 ' + diff.toFixed(0) + '% above';
+    el.className = 'compare-pct up';
+  } else {
+    el.textContent = '\u2193 ' + Math.abs(diff).toFixed(0) + '% below';
+    el.className = 'compare-pct down';
+  }
 }
 
-function setCompareMode(mode){
-  document.getElementById('cmp-tab-avg').classList.toggle('on', mode==='avg');
-  document.getElementById('cmp-tab-prof').classList.toggle('on', mode==='prof');
-  document.getElementById('compare-avg-view').style.display = mode==='avg' ? 'block' : 'none';
-  document.getElementById('compare-prof-view').style.display = mode==='prof' ? 'block' : 'none';
+function setCompareMode(mode) {
+  document.getElementById('cmp-tab-avg').classList.toggle('on', mode === 'avg');
+  document.getElementById('cmp-tab-prof').classList.toggle('on', mode === 'prof');
+  document.getElementById('compare-avg-view').style.display = mode === 'avg' ? 'block' : 'none';
+  document.getElementById('compare-prof-view').style.display = mode === 'prof' ? 'block' : 'none';
 }
-let baseInputs = null;
 
-function renderWhatIf(){
-  if(!baseInputs) return;
+function renderWhatIf() {
+  if (!baseInputs) return;
   const salPct = parseFloat(document.getElementById('wi-sal').value);
   const medDelta = parseInt(document.getElementById('wi-med').value);
 
-  document.getElementById('wi-sal-out').textContent = (salPct>=0?'+':'')+salPct+'%';
-  const medLabels=['Same','None','Myself only','Me + 1','Me + 2','Me + 3','Me + 4+'];
-  document.getElementById('wi-med-out').textContent = medDelta===0 ? 'Same' : medLabels[medDelta+1];
+  document.getElementById('wi-sal-out').textContent = (salPct >= 0 ? '+' : '') + salPct + '%';
+  const medLabels = ['Same', 'None', 'Myself only', 'Me + 1', 'Me + 2', 'Me + 3', 'Me + 4+'];
+  document.getElementById('wi-med-out').textContent = medDelta === 0 ? 'Same' : medLabels[medDelta + 1];
 
-  const newAnnual = baseInputs.annual * (1 + salPct/100);
-  const newMed = medDelta===0 ? baseInputs.med : medDelta;
+  const newAnnual = baseInputs.annual * (1 + salPct / 100);
+  const newMed = medDelta === 0 ? baseInputs.med : medDelta;
 
-  let reb=REBATE; if(baseInputs.age=='s'||baseInputs.age=='t')reb+=9765; if(baseInputs.age=='t')reb+=3249;
-  const paye = Math.max(0, sarsTax(newAnnual)-reb-medC(newMed));
-  const uif = Math.min(newAnnual*.01, 17712);
-  const newNet = (newAnnual-paye-uif)/12;
+  let reb = REBATE;
+  if (baseInputs.age === 's' || baseInputs.age === 't') reb += 9765;
+  if (baseInputs.age === 't') reb += 3249;
+
+  const paye = Math.max(0, sarsTax(newAnnual) - reb - medC(newMed));
+  
+  // FIXED: UIF uses correct annual cap
+  const uif = Math.min(newAnnual * .01, UIF_ANNUAL_CAP);
+  
+  const newNet = (newAnnual - paye - uif) / 12;
 
   document.getElementById('wi-newnet').textContent = fmt(newNet);
   const delta = newNet - baseInputs.netMonthly;
   const deltaEl = document.getElementById('wi-delta');
-  if(Math.abs(delta) < 1){ deltaEl.textContent = 'No change'; deltaEl.className = 'whatif-delta-val'; }
-  else if(delta>0){ deltaEl.textContent = '+'+fmt(delta); deltaEl.className = 'whatif-delta-val up'; }
-  else { deltaEl.textContent = '-'+fmt(Math.abs(delta)); deltaEl.className = 'whatif-delta-val down'; }
+
+  if (Math.abs(delta) < 1) {
+    deltaEl.textContent = 'No change';
+    deltaEl.className = 'whatif-delta-val';
+  } else if (delta > 0) {
+    deltaEl.textContent = '+' + fmt(delta);
+    deltaEl.className = 'whatif-delta-val up';
+  } else {
+    deltaEl.textContent = '-' + fmt(Math.abs(delta));
+    deltaEl.className = 'whatif-delta-val down';
+  }
 }
 
-function resetWhatIf(){
+function resetWhatIf() {
   document.getElementById('wi-sal').value = 0;
   document.getElementById('wi-med').value = 0;
   renderWhatIf();
 }
-</script></body></html>
+
+// Auto-load example for first-time visitors
+window.addEventListener('load', function() {
+  if (!sessionStorage.getItem('grossToNetVisited')) {
+    setTimeout(loadExample, 500);
+    sessionStorage.setItem('grossToNetVisited', 'true');
+  }
+});
+</script>
+
+</body>
+</html>
