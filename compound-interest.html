@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="color-scheme" content="light"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Compound Interest Calculator South Africa 2026 | CalcMyPay</title>
-<meta name="description" content="See how your savings and investments grow with compound interest in South Africa. Free compound growth calculator with monthly contributions.">
+<meta name="description" content="See how your savings and investments grow with compound interest in South Africa. Free calculator with monthly contributions, inflation adjustment, and fee impact.">
 <meta name="google-adsense-account" content="ca-pub-6108324382808705">
 <link rel="canonical" href="https://calcmypay.co.za/compound-interest">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -12,15 +13,119 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/icon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/icon-16.png">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does compound interest work?","acceptedAnswer":{"@type":"Answer","text":"Compound interest earns returns on both your original money and previously earned interest. Over time this creates exponential growth, especially with regular monthly contributions."}},{"@type":"Question","name":"What is a realistic investment return in South Africa?","acceptedAnswer":{"@type":"Answer","text":"Historically, a diversified South African equity portfolio has returned around 8–12% per year before inflation. Conservative estimates use 8–10% for long-term planning."}}]}</script>
-<style>/* CalcMyPay — Editorial "Ink & Marigold" =================================== */
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How does compound interest work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Compound interest earns returns on both your original money and previously earned interest. Over time this creates exponential growth, especially with regular monthly contributions. For example, R100,000 invested at 10% for 20 years grows to R672,750 without any additional contributions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a realistic investment return in South Africa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Historically, a diversified South African equity portfolio has returned around 10-12% per year before inflation. Conservative estimates use 8-10% for long-term planning. After inflation (typically 5-6%), real returns are 4-6% annually."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much will R1,000 per month grow to in 20 years?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "At a 10% annual return, R1,000 per month invested for 20 years grows to approximately R723,000. You would have contributed R240,000, with R483,000 earned in compound interest. This demonstrates the power of consistent monthly contributions over time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the Rule of 72?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Rule of 72 is a quick way to estimate how long it takes for an investment to double. Divide 72 by your annual return rate. At 10% return, your money doubles every 7.2 years (72 ÷ 10). At 12%, it doubles every 6 years."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do investment fees affect compound returns?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Fees dramatically reduce long-term returns. A 2% annual fee versus 0.5% can reduce your final balance by 25-30% over 20 years. On R1,000/month for 20 years at 10% gross return, a 2% fee reduces your balance from R723,000 to approximately R545,000 — a R178,000 difference."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I invest in a TFSA or regular investment account?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Always maximize your TFSA first (R36,000/year limit). Growth in a TFSA is completely tax-free forever. In a regular account, you pay capital gains tax on growth above R40,000/year. Over 20 years, the tax savings in a TFSA can add 15-25% to your final balance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does inflation affect investment returns?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Inflation erodes purchasing power. If you earn 10% nominal return but inflation is 6%, your real return is only 4%. Over 20 years at 6% inflation, R1,000,000 will only buy what R312,000 buys today. Always consider real (inflation-adjusted) returns for long-term planning."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's better: lump sum or monthly investing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mathematically, lump sum investing typically outperforms because money starts compounding immediately. However, monthly investing (dollar-cost averaging) reduces timing risk and builds discipline. Most people benefit from a combination: invest available lump sums immediately, then add regular monthly contributions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much do I need to invest to become a millionaire?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "At 10% annual return, you need to invest approximately R2,600 per month for 20 years, or R1,100 per month for 30 years to reach R1 million. Starting early dramatically reduces the required monthly contribution due to the power of compounding over time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between simple and compound interest?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Simple interest earns returns only on your original investment. Compound interest earns returns on both your original investment AND previously earned interest. Over 20 years at 10%, R100,000 grows to R300,000 with simple interest but R672,750 with compound interest — more than double."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should interest be compounded?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "More frequent compounding (monthly vs annually) produces slightly higher returns, but the difference is small. R100,000 at 10% for 20 years: annual compounding = R672,750, monthly compounding = R732,800. For most investment decisions, the compounding frequency matters less than the return rate and time horizon."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I lose money with compound interest investments?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, if you invest in volatile assets like stocks, your balance can decline in bad years. However, over long periods (10+ years), diversified equity portfolios have historically always produced positive returns in South Africa. The key is staying invested through market cycles rather than selling during downturns."
+      }
+    }
+  ]
+}
+</script>
+
+<style>
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap');
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
   --paper:#FFFFFF;--ink:#16201C;--forest:#1B4332;--marigold:#F6B53D;
   --mist:#6B756F;--line:#DEDBD0;--sand:#FFFFFF;--berry:#B23A2E;
   --disp:'Fraunces',Georgia,serif;--body:'Inter',system-ui,sans-serif;
-  /* legacy var aliases so inline styles still resolve */
   --black:#16201C;--navy:#1B4332;--navy-mid:#1B4332;--accent:#1B4332;--accent-dark:#143026;
   --white:#fff;--off-white:#FFFFFF;--green:#1B4332;--green-light:#EDF3EE;--accent-light:#EDF3EE;
   --g100:#FFFFFF;--g200:#E4E2D8;--g400:#AEB3AC;--g600:#6B756F;--g800:#C9CcC4;--red:#B23A2E;
@@ -29,17 +134,11 @@
 html{color-scheme:light;scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{font-family:var(--body);background:var(--paper);color:var(--ink);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased}
 a{color:var(--forest);text-decoration:none}
-
-/* SA stripe — keep but slimmer & muted */
 .sa-stripe{height:3px;background:linear-gradient(90deg,#1B4332 0 16%,#F6B53D 16% 33%,#FCFBF7 33% 50%,#1B4332 50% 66%,#B23A2E 66% 83%,#16201C 83% 100%);opacity:.9}
-
-/* TOP BAR — editorial dateline */
 .top-bar{background:var(--paper);border-bottom:1px solid var(--line);padding:.5rem 2rem;display:flex;align-items:center;justify-content:space-between}
 .tb-l{font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--mist)}
 .tb-r{font-size:.7rem;color:var(--mist);letter-spacing:.04em}
 .tb-r span{color:var(--forest);font-weight:600}
-
-/* MASTHEAD NAV */
 nav{background:var(--paper);border-bottom:2px solid var(--ink);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:74px;position:sticky;top:0;z-index:100}
 .logo{display:flex;align-items:center;gap:.5rem;text-decoration:none}
 .logo-text{font-family:var(--disp);font-size:1.7rem;font-weight:900;letter-spacing:-.02em;color:var(--ink)}
@@ -55,14 +154,6 @@ nav{background:var(--paper);border-bottom:2px solid var(--ink);padding:0 2rem;di
 .nav-cta::after{display:none}
 .nav-cta:hover{background:var(--forest)!important;color:#fff!important}
 @media(max-width:860px){.nav-links{gap:0;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;max-width:60vw}.nav-links::-webkit-scrollbar{display:none}.nav-links a{white-space:nowrap;padding:.5rem .6rem;font-size:.76rem}.logo-text{font-size:1.4rem}nav{padding:0 1rem}}
-
-/* AD SLOTS — quiet */
-.ad-strip{background:var(--paper);border-bottom:1px solid var(--line);text-align:center;padding:.6rem}
-.ad-ph{display:inline-flex;align-items:center;justify-content:center;background:var(--sand);border:1px solid var(--line);color:var(--g400);font-size:.62rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
-.ad-ph.lb{width:728px;height:90px;max-width:100%}.ad-ph.rect{width:300px;height:250px}
-.ad-lbl{font-size:.6rem;color:var(--g400);text-transform:uppercase;letter-spacing:.12em;margin-bottom:.3rem}
-
-/* PAGE HEADER — kicker / headline / standfirst */
 .ph{background:var(--paper);border-bottom:1px solid var(--line);padding:4rem 2rem 3rem}
 .ph-inner{max-width:1080px;margin:0 auto}
 .bc{font-size:.72rem;color:var(--mist);font-weight:500;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1.4rem}
@@ -71,89 +162,23 @@ nav{background:var(--paper);border-bottom:2px solid var(--ink);padding:0 2rem;di
 .ph-cat::before{content:'';width:24px;height:2px;background:var(--marigold)}
 .ph h1{font-family:var(--disp);font-size:clamp(2.2rem,5vw,3.6rem);font-weight:600;color:var(--ink);line-height:1.05;letter-spacing:-.02em;margin-bottom:1rem;max-width:18ch}
 .ph p{font-family:var(--body);color:var(--mist);font-size:1.1rem;line-height:1.6;max-width:60ch}
-.ph-meta{display:flex;gap:1.4rem;font-size:.72rem;color:var(--mist);font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-top:1.2rem}
-
-/* SECTIONS */
-.section{max-width:1080px;margin:0 auto;padding:3.5rem 2rem}
-.section-header{margin-bottom:2rem;padding-bottom:1rem;border-bottom:1px solid var(--line);display:flex;align-items:baseline;justify-content:space-between;gap:1rem;flex-wrap:wrap}
-.section-title{font-family:var(--disp);font-size:1.6rem;font-weight:600;letter-spacing:-.01em;color:var(--ink)}
-.section-title span{color:var(--marigold);font-weight:400;margin:0 .3rem}
-.section-more{font-family:var(--body);font-size:.8rem;font-weight:600;color:var(--forest);letter-spacing:.02em}
-.section-more::after{content:' →'}
-
-/* TICKER — editorial stat strip */
-.ticker{background:var(--sand);border-bottom:1px solid var(--line);padding:.7rem 2rem;display:flex;gap:2.5rem;overflow-x:auto;scrollbar-width:none}
-.ticker::-webkit-scrollbar{display:none}
-.tick-item{display:flex;align-items:baseline;gap:.5rem;white-space:nowrap}
-.tick-label{font-size:.68rem;color:var(--mist);font-weight:600;text-transform:uppercase;letter-spacing:.1em}
-.tick-val{font-family:var(--disp);color:var(--forest);font-weight:600;font-size:1rem}
-
-/* TOOLS GRID + CARDS */
-.tools-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.25rem}
-.tool-card{background:var(--paper);border:1px solid var(--line);padding:1.6rem;transition:.2s;display:flex;flex-direction:column;gap:.7rem;text-decoration:none;color:var(--ink);position:relative}
-.tool-card:hover{border-color:var(--ink);transform:translateY(-2px)}
-.tool-card.featured{border-top:3px solid var(--forest)}
-.tc-cat{font-family:var(--body);font-size:.68rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--mist)}
-.tool-card h3{font-family:var(--disp);font-size:1.25rem;font-weight:600;letter-spacing:-.01em;line-height:1.15;color:var(--ink)}
-.tool-card p{font-family:var(--body);font-size:.88rem;color:var(--mist);line-height:1.55;flex:1}
-.tc-link{font-family:var(--body);font-size:.8rem;font-weight:600;color:var(--forest)}
-.tc-badge{font-family:var(--body);font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.25rem .6rem;background:var(--sand);color:var(--forest);border:1px solid var(--line)}
-
-/* BLOG GRID */
-.blog-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:1.25rem}
-.blog-card{background:var(--paper);border:1px solid var(--line);padding:1.6rem;text-decoration:none;color:var(--ink);transition:.2s}
-.blog-card:hover{border-color:var(--ink);transform:translateY(-2px)}
-.blog-card.lead{border-top:3px solid var(--marigold)}
-.bc-cat{font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);margin-bottom:.6rem;display:block}
-.blog-card h3{font-family:var(--disp);font-size:1.2rem;font-weight:600;line-height:1.2;letter-spacing:-.01em;margin-bottom:.5rem}
-.blog-card.lead h3{font-size:1.6rem}
-.blog-card p{font-size:.86rem;color:var(--mist);line-height:1.55;margin-bottom:.6rem}
-.bc-more{font-size:.78rem;font-weight:600;color:var(--forest)}
-.bc-meta{font-size:.7rem;color:var(--g400);font-weight:600;letter-spacing:.04em;text-transform:uppercase}
-
-/* DATA CELLS (homepage figures) */
-.data-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem;margin-bottom:1rem}
-.dc{background:var(--sand);border:1px solid var(--line);padding:1.5rem}
-.dc-label{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--mist);margin-bottom:.5rem}
-.dc-val{font-family:var(--disp);font-size:2rem;font-weight:600;color:var(--ink);letter-spacing:-.02em;line-height:1}
-.dc-val.acc{color:var(--forest)}
-.dc-sub{font-size:.74rem;color:var(--mist);margin-top:.3rem}
-
-/* WHY CARDS */
-.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
-.why-card{background:var(--paper);border:1px solid var(--line);padding:1.8rem;border-top:3px solid var(--forest)}
-.why-num{font-family:var(--disp);font-size:2.4rem;font-weight:900;color:var(--marigold);line-height:1;margin-bottom:1rem}
-.why-card h3{font-family:var(--disp);font-size:1.2rem;font-weight:600;margin-bottom:.5rem}
-.why-card p{font-size:.88rem;color:var(--mist);line-height:1.6}
-
-/* CTA BLOCK */
-.cta-block{background:var(--ink);color:var(--paper);padding:3rem 2rem;text-align:center}
-.cta-block h2,.cta-block h3{font-family:var(--disp);font-weight:600;color:var(--paper);letter-spacing:-.01em;margin-bottom:.6rem}
-.cta-block h2{font-size:clamp(1.5rem,3vw,2.2rem)}
-.cta-block h3{font-size:1.4rem}
-.cta-block p{color:rgba(255,255,255,.7);margin-bottom:1.5rem;font-size:1rem}
-
-/* BUTTONS */
-.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 1.6rem;font-family:var(--body);font-weight:600;font-size:.9rem;cursor:pointer;border:none;transition:.18s;text-decoration:none;letter-spacing:.01em}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.85rem 1.6rem;font-family:var(--body);font-weight:600;font-size:.9rem;cursor:pointer;border:none;transition:.18s;text-decoration:none;letter-spacing:.01em}
 .btn-accent{background:var(--marigold);color:var(--ink)}
 .btn-accent:hover{background:#eaa523}
 .btn-full{width:100%;justify-content:center}
 .btn:not(.btn-accent){background:var(--ink);color:var(--paper)}
 .btn:not(.btn-accent):hover{background:var(--forest);color:#fff}
-
-/* LAYOUT (tool + article) */
+.btn-example{background:var(--forest);color:var(--paper);margin-top:.8rem;border:2px solid var(--forest)}
+.btn-example:hover{background:var(--ink);border-color:var(--ink)}
+.example-badge{display:inline-block;background:var(--marigold);color:var(--ink);font-size:.62rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.2rem .5rem;margin-right:.5rem;border-radius:2px}
 .layout{max-width:1140px;margin:0 auto;padding:2.5rem 2rem;display:grid;grid-template-columns:1fr 320px;gap:2.5rem;align-items:start}
 @media(max-width:920px){.layout{grid-template-columns:1fr;gap:1.5rem}.sidebar{display:none}}
-
-/* CARD (tool input) */
 .card{background:var(--paper);border:1px solid var(--line)}
 .card-head{padding:1.4rem 1.6rem;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:.9rem}
 .card-cat{font-family:var(--body);font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);border-right:1px solid var(--line);padding-right:.9rem}
 .card-head h2{font-family:var(--disp);font-size:1.4rem;font-weight:600;letter-spacing:-.01em}
 .card-head p{font-size:.84rem;color:var(--mist);margin-top:.15rem}
 .card-body{padding:1.6rem}
-
-/* FORM */
 .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem 1.3rem;margin-bottom:1.4rem}
 @media(max-width:500px){.form-grid{grid-template-columns:1fr}}
 .fg{display:flex;flex-direction:column;gap:.4rem}
@@ -166,8 +191,6 @@ input,select{width:100%;padding:.8rem 1rem;border:1px solid var(--line);font-fam
 input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 0 3px rgba(27,67,50,.1)}
 .has-pre input{padding-left:2rem}.has-suf input{padding-right:2.4rem}
 .sw{position:relative}.sw::after{content:'';position:absolute;right:1.1rem;top:50%;width:7px;height:7px;border-right:2px solid var(--mist);border-bottom:2px solid var(--mist);transform:translateY(-65%) rotate(45deg);pointer-events:none}
-
-/* RESULT PANELS — the editorial figure signature */
 .results{margin-top:1.6rem;display:none}
 .results.show{display:block;animation:fadeUp .4s ease}
 @keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
@@ -178,8 +201,6 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .eff-block{text-align:right;flex-shrink:0}
 .eff-val{font-family:var(--disp);font-size:2rem;font-weight:600;color:var(--marigold);display:block;letter-spacing:-.02em;line-height:1}
 .eff-lbl{font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:rgba(255,255,255,.6)}
-
-/* breakdown blocks */
 .bb{border:1px solid var(--line);margin-bottom:1rem}
 .bb-title{padding:.7rem 1.1rem;font-family:var(--body);font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.14em;background:var(--sand);border-bottom:1px solid var(--line);color:var(--mist)}
 .br{display:flex;justify-content:space-between;align-items:center;padding:.7rem 1.1rem;font-size:.92rem;border-bottom:1px solid var(--line)}
@@ -190,18 +211,10 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .total-bar{display:flex;justify-content:space-between;align-items:center;padding:1.1rem 1.3rem;background:var(--sand);border:1px solid var(--forest);margin-bottom:1rem}
 .total-bar .lbl{font-family:var(--disp);font-size:1.05rem;font-weight:600;color:var(--forest)}
 .total-bar .val{font-family:var(--disp);font-size:1.3rem;font-weight:700;color:var(--forest);font-variant-numeric:tabular-nums}
-
-/* notes */
 .note{padding:.85rem 1.1rem;font-size:.84rem;line-height:1.6;margin-bottom:.7rem;display:flex;gap:.7rem;border:1px solid var(--line);background:var(--sand)}
 .note.warn{background:#FBF3E0;border-color:#E6D08A;color:#6B5414}
+.note.navy{background:#EDF3EE;border-color:#C9D8CF;color:#1B4332}
 .note a{color:var(--forest);font-weight:600}
-
-/* tabs */
-.type-tabs,.period-tabs{display:flex;gap:.4rem;margin-bottom:1.4rem;background:var(--sand);padding:.3rem;border:1px solid var(--line)}
-.type-tab,.ptab{flex:1;padding:.6rem;border:none;background:transparent;font-family:var(--body);font-weight:600;font-size:.8rem;color:var(--mist);cursor:pointer;transition:.15s;text-align:center}
-.type-tab.active,.ptab.active{background:var(--ink);color:var(--paper)}
-
-/* SIDEBAR */
 .sidebar{display:flex;flex-direction:column;gap:1.5rem}
 .sc{background:var(--paper);border:1px solid var(--line)}
 .sc-head{padding:.8rem 1.1rem;font-family:var(--body);font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.14em;border-bottom:1px solid var(--line);background:var(--sand);color:var(--mist)}
@@ -209,19 +222,14 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .tip{display:flex;gap:.7rem;margin-bottom:.85rem;font-size:.84rem;color:var(--mist);line-height:1.55}
 .tip:last-child{margin-bottom:0}
 .tip a{color:var(--forest);font-weight:600}
-.qr{display:flex;justify-content:space-between;font-size:.84rem;padding:.45rem 0;border-bottom:1px solid var(--line);color:var(--mist)}
-.qr:last-child{border-bottom:none}
-.qr strong{color:var(--ink);font-weight:600;font-family:var(--disp)}
-.toc-link{display:block;font-size:.84rem;font-weight:500;color:var(--mist);padding:.4rem 0;border-bottom:1px solid var(--line);transition:color .15s}
-.toc-link:last-child{border-bottom:none}
-.toc-link:hover{color:var(--forest)}
-.related-post{display:block;padding:.75rem 0;border-bottom:1px solid var(--line)}
-.related-post:last-child{border-bottom:none}
-.rp-cat{font-size:.62rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--forest);margin-bottom:.25rem}
-.rp-title{font-family:var(--disp);font-size:.92rem;font-weight:500;color:var(--ink);line-height:1.3}
-.related-post:hover .rp-title{color:var(--forest)}
-
-/* DATA TABLE */
+.tools-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.25rem}
+.tool-card{background:var(--paper);border:1px solid var(--line);padding:1.6rem;transition:.2s;display:flex;flex-direction:column;gap:.7rem;text-decoration:none;color:var(--ink);position:relative}
+.tool-card:hover{border-color:var(--ink);transform:translateY(-2px)}
+.tool-card.featured{border-top:3px solid var(--forest)}
+.tc-cat{font-family:var(--body);font-size:.68rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--mist)}
+.tool-card h3{font-family:var(--disp);font-size:1.25rem;font-weight:600;letter-spacing:-.01em;line-height:1.15;color:var(--ink)}
+.tool-card p{font-family:var(--body);font-size:.88rem;color:var(--mist);line-height:1.55;flex:1}
+.tc-link{font-family:var(--body);font-size:.8rem;font-weight:600;color:var(--forest)}
 .data-table{width:100%;border-collapse:collapse;margin:1.2rem 0 1.6rem;font-size:.9rem;border:1px solid var(--line)}
 .data-table thead tr{background:var(--ink)}
 .data-table th{padding:.75rem 1rem;text-align:left;font-family:var(--body);font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--paper)}
@@ -230,9 +238,10 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .data-table tr:nth-child(even) td{background:var(--sand)}
 .data-table td.td-green{color:var(--forest);font-weight:600}
 .data-table td.td-red{color:var(--berry);font-weight:600}
-.data-table td.td-acc{color:var(--forest);font-weight:600}
-
-/* ARTICLE BODY — magazine measure */
+.section{max-width:1080px;margin:0 auto;padding:3.5rem 2rem}
+.section-header{margin-bottom:2rem;padding-bottom:1rem;border-bottom:1px solid var(--line);display:flex;align-items:baseline;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.section-title{font-family:var(--disp);font-size:1.6rem;font-weight:600;letter-spacing:-.01em;color:var(--ink)}
+.section-title span{color:var(--marigold);font-weight:400;margin:0 .3rem}
 .article-body{padding:2.5rem}
 @media(max-width:600px){.article-body{padding:1.5rem}}
 .article-body h2{font-family:var(--disp);font-size:1.7rem;font-weight:600;color:var(--ink);margin:2.4rem 0 .8rem;letter-spacing:-.01em;line-height:1.15;max-width:30ch}
@@ -244,10 +253,9 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .article-body li{font-family:var(--body);font-size:1.04rem;color:#2C352F;line-height:1.7;margin-bottom:.5rem}
 .article-body a{color:var(--forest);font-weight:500;border-bottom:1px solid var(--marigold)}
 .article-body strong{font-weight:600;color:var(--ink)}
-.callout,.callout.navy,.callout.grey,.callout.green{border:none;border-left:3px solid var(--marigold);background:var(--sand);padding:1.2rem 1.4rem;margin:1.6rem 0;font-family:var(--disp);font-size:1.15rem;font-weight:500;line-height:1.5;color:var(--ink);max-width:64ch}
+.callout{border:none;border-left:3px solid var(--marigold);background:var(--sand);padding:1.2rem 1.4rem;margin:1.6rem 0;font-family:var(--disp);font-size:1.15rem;font-weight:500;line-height:1.5;color:var(--ink);max-width:64ch}
 .callout strong{color:var(--forest)}
-
-/* FOOTER */
+.callout.navy{border-left-color:var(--navy)}
 footer{background:var(--ink);color:var(--paper);margin-top:2rem}
 .footer-inner{max-width:1080px;margin:0 auto;padding:2.5rem 2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
 .footer-logo{font-family:var(--disp);font-size:1.5rem;font-weight:900;color:var(--paper)}
@@ -256,37 +264,32 @@ footer{background:var(--ink);color:var(--paper);margin-top:2rem}
 .footer-links a{color:rgba(255,255,255,.7);font-size:.82rem;font-weight:500;transition:color .15s}
 .footer-links a:hover{color:var(--marigold)}
 .footer-copy{color:rgba(255,255,255,.5);font-size:.74rem;width:100%;margin-top:.8rem;padding-top:.9rem;border-top:1px solid rgba(255,255,255,.12)}
+.disclaim{font-size:.82rem;color:var(--mist);background:var(--sand);border:1px solid var(--line);padding:.9rem 1.1rem;line-height:1.6}
+.worked-example{background:#FAFBF7;border:1px solid var(--line);border-left:4px solid var(--forest);padding:1.5rem 1.8rem;margin:1.8rem 0}
+.worked-example-head{display:flex;align-items:center;gap:.6rem;margin-bottom:1rem}
+.worked-example-tag{font-size:.66rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--forest);background:#EDF3EE;padding:.25rem .6rem;border-radius:2px}
+.worked-example h3{font-family:var(--disp);font-size:1.15rem;font-weight:600;margin-bottom:.3rem}
+.worked-example p{font-size:.9rem;color:var(--mist);line-height:1.6;margin-bottom:.8rem}
+.glossary-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem;margin:1.5rem 0}
+.glossary-item{background:var(--sand);border:1px solid var(--line);padding:1.1rem 1.3rem}
+.glossary-term{font-family:var(--disp);font-size:1rem;font-weight:600;color:var(--forest);margin-bottom:.3rem}
+.glossary-def{font-size:.84rem;color:var(--mist);line-height:1.6}
 
-/* MISC legacy */
-.scenario-result{background:var(--sand);border:1px solid var(--forest);padding:1.2rem}
-.disclaim,.disclaim-box{font-size:.82rem;color:var(--mist);background:var(--sand);border:1px solid var(--line);padding:.9rem 1.1rem;line-height:1.6}
-.eyebrow{font-family:var(--body);font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);margin-bottom:.5rem}
-
-/* RESPONSIVE */
 @media(max-width:768px){
-  [style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr!important}
-  [style*="grid-template-columns:repeat(3,1fr)"]{grid-template-columns:1fr!important}
-  [style*="grid-template-columns:repeat(4,1fr)"]{grid-template-columns:1fr 1fr!important}
-  [style*="grid-template-columns:2fr 1fr 1fr"]{grid-template-columns:1fr!important}
-  [style*="grid-template-columns:1.1fr 1fr"]{grid-template-columns:1fr!important}
-  [style*="grid-template-columns:1fr 1fr;gap:4rem"]{grid-template-columns:1fr!important;gap:2rem!important}
-  .blog-grid,.data-row,.why-grid{grid-template-columns:1fr!important}
   .ph{padding:2.5rem 1.25rem 2rem}.section{padding:2.5rem 1.25rem}.layout{padding:1.5rem 1.25rem}
   .th-panel{flex-direction:column;align-items:flex-start;gap:1rem}.eff-block{text-align:left}
   .th-amount{font-size:2.6rem}
   .footer-inner{flex-direction:column;text-align:center}.footer-links{justify-content:center}
   .top-bar{padding:.4rem 1rem}.tb-r{display:none}
   .data-table{display:block;overflow-x:auto}
+  .article-body{padding:1.5rem}
 }
+
 .story-section{margin-top:1.8rem;border-top:2px solid var(--ink);padding-top:1.8rem}
 .story-kicker{font-family:var(--body);font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);margin-bottom:.4rem;display:flex;align-items:center;gap:.6rem}
 .story-kicker::before{content:'';width:24px;height:2px;background:var(--marigold)}
 .story-title{font-family:var(--disp);font-size:1.6rem;font-weight:600;color:var(--ink);letter-spacing:-.01em;margin-bottom:.4rem}
 .story-sub{font-size:.88rem;color:var(--mist);margin-bottom:1.5rem;max-width:60ch}
-.story-age-row{display:flex;align-items:center;gap:.8rem;margin-bottom:1.6rem;padding:.9rem 1.1rem;background:var(--sand);border:1px solid var(--line)}
-.story-age-row label{font-size:.82rem;font-weight:600;color:var(--ink);white-space:nowrap}
-.story-age-row input{max-width:90px;padding:.5rem .7rem}
-.story-age-row .story-age-note{font-size:.78rem;color:var(--mist)}
 .story-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
 @media(max-width:600px){.story-grid{grid-template-columns:1fr}}
 .story-card{background:#fff;border:1px solid var(--line);padding:0;text-decoration:none;color:var(--ink);display:flex;overflow:hidden;transition:.18s;position:relative}
@@ -296,35 +299,19 @@ footer{background:var(--ink);color:var(--paper);margin-top:2rem}
 .story-stripe.c-car{background:var(--marigold)}
 .story-stripe.c-safety{background:#3d7a9e}
 .story-stripe.c-retire{background:#8a5cb8}
-.story-stripe.c-compare{background:var(--berry)}
 .story-body{padding:1.3rem 1.4rem;flex:1;min-width:0}
 .story-label{font-family:var(--body);font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:var(--mist);margin-bottom:.5rem}
 .story-val{font-family:var(--disp);font-size:1.9rem;font-weight:600;color:var(--ink);letter-spacing:-.02em;line-height:1;margin-bottom:.5rem}
 .story-desc{font-size:.8rem;color:var(--mist);line-height:1.5;margin-bottom:.7rem}
 .story-arrow{font-size:.78rem;font-weight:600;color:var(--forest)}
-.story-compare-card{grid-column:1/-1;background:#fff;border:1px solid var(--line);padding:1.4rem 1.5rem}
-.compare-toggle{display:flex;gap:.4rem;margin-bottom:1.1rem}
-.compare-toggle button{padding:.4rem .9rem;border:1px solid var(--line);background:var(--paper);font-family:var(--body);font-size:.78rem;font-weight:600;color:var(--mist);cursor:pointer;transition:.15s}
-.compare-toggle button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
-.compare-body{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap}
-.compare-vs{display:flex;align-items:center;gap:1rem;flex:1;min-width:240px}
-.compare-side{text-align:center}
-.compare-side .who{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--mist);margin-bottom:.3rem}
-.compare-side .amt{font-family:var(--disp);font-size:1.4rem;font-weight:600;color:var(--ink)}
-.compare-side.you .amt{color:var(--forest)}
-.compare-vsdivider{font-family:var(--disp);font-size:.9rem;color:var(--g400);font-style:italic}
-.compare-result{flex-shrink:0;text-align:right}
-.compare-pct{font-family:var(--disp);font-size:1.6rem;font-weight:600;line-height:1}
-.compare-pct.up{color:var(--forest)}
-.compare-pct.down{color:var(--berry)}
-.compare-select{margin-top:1rem}
-.compare-select select{max-width:280px}
 .journey{margin-top:1.5rem;padding:1.2rem 1.4rem;background:var(--sand);border:1px solid var(--line)}
 .journey-title{font-family:var(--body);font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--mist);margin-bottom:.8rem}
 .journey-path{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;font-size:.85rem}
 .journey-path a{color:var(--forest);font-weight:600;padding:.35rem .7rem;background:#fff;border:1px solid var(--line);transition:.15s}
 .journey-path a:hover{border-color:var(--forest);background:var(--sand)}
-.journey-sep{color:var(--g400)}.whatif-section{margin-top:1.8rem;border-top:2px solid var(--ink);padding-top:1.8rem}
+.journey-sep{color:var(--g400)}
+
+.whatif-section{margin-top:1.8rem;border-top:2px solid var(--ink);padding-top:1.8rem}
 .whatif-kicker{font-family:var(--body);font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);margin-bottom:.4rem;display:flex;align-items:center;gap:.6rem}
 .whatif-kicker::before{content:'';width:24px;height:2px;background:var(--marigold)}
 .whatif-title{font-family:var(--disp);font-size:1.6rem;font-weight:600;color:var(--ink);letter-spacing:-.01em;margin-bottom:.4rem}
@@ -346,211 +333,1063 @@ footer{background:var(--ink);color:var(--paper);margin-top:2rem}
 .whatif-delta-lbl{font-size:.72rem;color:rgba(255,255,255,.6);margin-top:.3rem}
 .whatif-reset{margin-top:1rem;text-align:center}
 .whatif-reset button{background:none;border:1px solid var(--line);padding:.5rem 1.1rem;font-family:var(--body);font-size:.78rem;font-weight:600;color:var(--mist);cursor:pointer;transition:.15s}
-.whatif-reset button:hover{border-color:var(--ink);color:var(--ink)}</style>
+.whatif-reset button:hover{border-color:var(--ink);color:var(--ink)}
+</style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6108324382808705" crossorigin="anonymous"></script>
 </head>
-<body><div class="sa-stripe"></div><div class="top-bar"><div class="tb-l">🇿🇦 South Africa · Wealth Building</div><div class="tb-r">Plan your money · <span>Build your future</span></div></div><nav>
+<body>
+<div class="sa-stripe"></div>
+
+<div class="top-bar">
+  <div class="tb-l">🇿🇦 South Africa · Wealth Building</div>
+  <div class="tb-r">Plan your money · <span>Build your future</span></div>
+</div>
+
+<nav>
   <a href="/" class="logo"><div class="logo-text">CalcMy<span>Pay</span></div></a>
   <div class="nav-links">
-    <a href="/salary-income">Salary</a><a href="/affordability">Affordability</a><a href="/wealth-building" class="active">Wealth</a><a href="/career-intelligence">Careers</a><a href="/money-tools">Tools</a><a href="/financial-coach">Coach</a><a href="/blog-salary-guide">Guides</a><a href="/salary-calculator" class="nav-cta">Calculate →</a>
+    <a href="/salary-income">Salary</a>
+    <a href="/affordability">Affordability</a>
+    <a href="/wealth-building" class="active">Wealth</a>
+    <a href="/career-intelligence">Careers</a>
+    <a href="/money-tools">Tools</a>
+    <a href="/financial-coach">Coach</a>
+    <a href="/blog-salary-guide">Guides</a>
+    <a href="/salary-calculator" class="nav-cta">Calculate →</a>
   </div>
-</nav><div class="ph"><div class="ph-inner"><div class="bc"><a href="/">Home</a><span>/</span><a href="/wealth-building">Wealth Building</a><span>/</span>Compound Interest Calculator</div><div class="ph-cat">Wealth Building</div><h1>Compound Interest Calculator</h1><p>See how your money grows over time with compounding</p></div></div><div class="layout"><div><div class="card"><div class="card-head"><div class="card-cat">Compound</div><div><h2>Compound interest</h2><p>Watch your money grow over time</p></div></div>
-<div class="card-body">
-<div class="form-grid">
-<div class="fg"><label>Starting Amount</label><div class="iw has-pre"><span class="ipre">R</span><input type="number" id="start" placeholder="10 000" min="0"></div></div>
-<div class="fg"><label>Monthly Contribution</label><div class="iw has-pre"><span class="ipre">R</span><input type="number" id="monthly" placeholder="2 000" min="0"></div></div>
-<div class="fg"><label>Annual Return</label><div class="iw has-suf"><input type="number" id="rate" value="10" step="0.5" min="0"><span class="isuf">%</span></div></div>
-<div class="fg"><label>Years</label><div class="iw"><input type="number" id="years" placeholder="20" min="1" value="20"></div></div>
-</div>
-<button class="btn btn-full btn-accent" onclick="calc()">Calculate growth →</button>
-<div class="results" id="res">
-<div class="th-panel"><div><div class="th-label">Future value</div><div class="th-amount" id="big">R0</div><div class="th-period" id="period">after 20 years</div></div><div class="eff-block"><span class="eff-val" id="growth">R0</span><span class="eff-lbl">Interest earned</span></div></div>
-<div class="bb"><div class="bb-title">Your investment breakdown</div>
-<div class="br"><span class="lbl">Starting amount</span><span class="val neu" id="r-start">R0</span></div>
-<div class="br"><span class="lbl">Total contributions</span><span class="val neu" id="r-contrib">R0</span></div>
-<div class="br"><span class="lbl">Total invested</span><span class="val neu" id="r-invested">R0</span></div>
-<div class="br"><span class="lbl">Interest / growth earned</span><span class="val pos" id="r-interest">R0</span></div>
-</div>
-<div class="total-bar"><span class="lbl">✓ Future value</span><span class="val" id="r-final">R0</span></div>
-<div id="chart" style="margin-top:1rem"></div>
-<div class="note warn"><span>⚠</span><span>Returns are not guaranteed and vary with markets. This assumes a constant return for illustration. Inflation will reduce real buying power over time.</span></div>
-<div class="story-section" id="money-story" style="display:none">
-  <div class="story-kicker">Your money story</div>
-  <div class="story-title">What this future value could actually fund</div>
-  <p class="story-sub">Turning a projected number into real financial milestones.</p>
+</nav>
 
-  <div class="story-grid">
-    <a href="/retirement-calculator" class="story-card"><div class="story-stripe c-retire"></div><div class="story-body">
-      <div class="story-label">💵 Monthly income this could provide</div>
-      <div class="story-val" id="ms-income">R0</div>
-      <div class="story-desc">Using the 4% safe withdrawal rule, for life</div>
-      <span class="story-arrow">Plan your retirement in detail →</span>
-    </div></a>
-
-    <a href="/fire-calculator" class="story-card"><div class="story-stripe c-car"></div><div class="story-body">
-      <div class="story-label">🔥 Progress toward financial independence</div>
-      <div class="story-val" id="ms-fire-fund">—</div>
-      <div class="story-desc">Compared to a R6m reference FIRE number (R20k/month expenses)</div>
-      <span class="story-arrow">Find your FIRE number →</span>
-    </div></a>
-
-    <a href="/home-affordability" class="story-card"><div class="story-stripe c-housing"></div><div class="story-body">
-      <div class="story-label">🏠 As a 10% deposit, it supports a</div>
-      <div class="story-val" id="ms-deposit">—</div>
-      <div class="story-desc">Home price this deposit could unlock</div>
-      <span class="story-arrow">Check home affordability →</span>
-    </div></a>
-
-    <a href="/savings-goal" class="story-card"><div class="story-stripe c-safety"></div><div class="story-body">
-      <div class="story-label">🎯 Set this as a savings goal</div>
-      <div class="story-val">Plan it</div>
-      <div class="story-desc">Turn this projection into a concrete monthly plan</div>
-      <span class="story-arrow">Build your savings plan →</span>
-    </div></a>
-  </div>
-
-  <div class="journey">
-    <div class="journey-title">Continue your financial plan</div>
-    <div class="journey-path">
-      <a href="/retirement-calculator">Retirement calculator</a><span class="journey-sep">→</span>
-      <a href="/fire-calculator">FIRE calculator</a><span class="journey-sep">→</span>
-      <a href="/net-worth">Net worth</a><span class="journey-sep">→</span>
-      <a href="/blog-compound-interest-explained-sa">Compounding explained</a>
+<div class="ph">
+  <div class="ph-inner">
+    <div class="bc">
+      <a href="/">Home</a><span>/</span>
+      <a href="/wealth-building">Wealth Building</a><span>/</span>
+      Compound Interest Calculator
     </div>
+    <div class="ph-cat">Wealth Building</div>
+    <h1>Compound Interest Calculator</h1>
+    <p>See how your money grows over time with compounding. Includes inflation adjustment, fee impact, and realistic South African return assumptions.</p>
   </div>
 </div>
 
-<div class="whatif-section" id="whatif-section" style="display:none">
-  <div class="whatif-kicker">What if?</div>
-  <div class="whatif-title">Test a scenario</div>
-  <p class="whatif-sub">Drag the sliders to see how changes affect your future value.</p>
+<div class="layout">
+  <div>
+    <div class="card">
+      <div class="card-head">
+        <div class="card-cat">Compound</div>
+        <div>
+          <h2>Compound interest</h2>
+          <p>Watch your money grow over time</p>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="form-grid">
+          <div class="fg">
+            <label>Starting Amount</label>
+            <div class="iw has-pre"><span class="ipre">R</span><input type="number" id="start" placeholder="10000" min="0"></div>
+          </div>
+          <div class="fg">
+            <label>Monthly Contribution</label>
+            <div class="iw has-pre"><span class="ipre">R</span><input type="number" id="monthly" placeholder="2000" min="0"></div>
+          </div>
+          <div class="fg">
+            <label>Annual Return (before fees)</label>
+            <div class="iw has-suf"><input type="number" id="rate" value="10" step="0.5" min="0"><span class="isuf">%</span></div>
+          </div>
+          <div class="fg">
+            <label>Investment Fees</label>
+            <div class="iw has-suf"><input type="number" id="fees" value="1" step="0.25" min="0"><span class="isuf">%</span></div>
+          </div>
+          <div class="fg">
+            <label>Inflation Rate</label>
+            <div class="iw has-suf"><input type="number" id="inflation" value="6" step="0.5" min="0"><span class="isuf">%</span></div>
+          </div>
+          <div class="fg">
+            <label>Years</label>
+            <div class="iw"><input type="number" id="years" placeholder="20" min="1" value="20"></div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-full btn-accent" onclick="calc()">Calculate growth →</button>
+        <button type="button" class="btn btn-full btn-example" onclick="loadExample()"><span class="example-badge">Example</span>Try R10k start + R2k/month for 20 years</button>
 
-  <div class="whatif-grid">
-    <div class="whatif-control">
-      <div class="whatif-control-head"><label>Extra monthly contribution</label><output id="wi-contrib-out">R0</output></div>
-      <input type="range" id="wi-contrib" min="0" max="10000" value="0" step="250" oninput="renderWhatIf()">
-    </div>
-    <div class="whatif-control">
-      <div class="whatif-control-head"><label>Extra years invested</label><output id="wi-years-out">+0 yrs</output></div>
-      <input type="range" id="wi-years" min="0" max="20" value="0" step="1" oninput="renderWhatIf()">
+        <div class="results" id="res">
+          <div class="th-panel">
+            <div>
+              <div class="th-label">Future value (nominal)</div>
+              <div class="th-amount" id="big">R0</div>
+              <div class="th-period" id="period">after 20 years</div>
+            </div>
+            <div class="eff-block">
+              <span class="eff-val" id="growth">R0</span>
+              <span class="eff-lbl">Interest earned</span>
+            </div>
+          </div>
+          
+          <div class="bb">
+            <div class="bb-title">Your investment breakdown</div>
+            <div class="br"><span class="lbl">Starting amount</span><span class="val neu" id="r-start">R0</span></div>
+            <div class="br"><span class="lbl">Total contributions</span><span class="val neu" id="r-contrib">R0</span></div>
+            <div class="br"><span class="lbl">Total invested</span><span class="val neu" id="r-invested">R0</span></div>
+            <div class="br"><span class="lbl">Gross growth (before fees)</span><span class="val pos" id="r-gross">R0</span></div>
+            <div class="br"><span class="lbl">Fees paid</span><span class="val neg" id="r-fees">R0</span></div>
+            <div class="br"><span class="lbl">Net growth (after fees)</span><span class="val pos" id="r-interest">R0</span></div>
+          </div>
+          
+          <div class="bb">
+            <div class="bb-title">Inflation-adjusted value</div>
+            <div class="br"><span class="lbl">Future value (nominal)</span><span class="val neu" id="r-nominal">R0</span></div>
+            <div class="br"><span class="lbl">Real value (today's rands)</span><span class="val acc" id="r-real">R0</span></div>
+            <div class="br"><span class="lbl">Real return (after inflation & fees)</span><span class="val neu" id="r-real-return">0%</span></div>
+          </div>
+          
+          <div class="total-bar">
+            <span class="lbl">✓ Future value (nominal)</span>
+            <span class="val" id="r-final">R0</span>
+          </div>
+          
+          <div id="chart" style="margin-top:1rem"></div>
+          
+          <div class="note navy">
+            <span>ℹ</span>
+            <span><strong>Rule of 72:</strong> At <span id="rule72-rate">10</span>% net return, your money doubles every <strong><span id="rule72-years">7.2</span> years</strong>. This shows the power of compounding — the longer you stay invested, the faster your money grows.</span>
+          </div>
+          
+          <div class="note warn">
+            <span>⚠</span>
+            <span>Returns are not guaranteed and vary with markets. This assumes constant returns for illustration. Past performance doesn't guarantee future results. Inflation reduces real purchasing power over time.</span>
+          </div>
+        </div>
+
+        <div class="story-section" id="money-story" style="display:none">
+          <div class="story-kicker">Your money story</div>
+          <div class="story-title">What this future value could actually fund</div>
+          <p class="story-sub">Turning a projected number into real financial milestones.</p>
+
+          <div class="story-grid">
+            <a href="/retirement-calculator" class="story-card">
+              <div class="story-stripe c-retire"></div>
+              <div class="story-body">
+                <div class="story-label">💵 Monthly income this could provide</div>
+                <div class="story-val" id="ms-income">R0</div>
+                <div class="story-desc">Using the 4% safe withdrawal rule, for life</div>
+                <span class="story-arrow">Plan your retirement in detail →</span>
+              </div>
+            </a>
+
+            <a href="/fire-calculator" class="story-card">
+              <div class="story-stripe c-car"></div>
+              <div class="story-body">
+                <div class="story-label">🔥 Progress toward financial independence</div>
+                <div class="story-val" id="ms-fire-fund">—</div>
+                <div class="story-desc">Compared to a R6m reference FIRE number (R20k/month expenses)</div>
+                <span class="story-arrow">Find your FIRE number →</span>
+              </div>
+            </a>
+
+            <a href="/home-affordability" class="story-card">
+              <div class="story-stripe c-housing"></div>
+              <div class="story-body">
+                <div class="story-label">🏠 As a 10% deposit, it supports a</div>
+                <div class="story-val" id="ms-deposit">—</div>
+                <div class="story-desc">Home price this deposit could unlock</div>
+                <span class="story-arrow">Check home affordability →</span>
+              </div>
+            </a>
+
+            <a href="/savings-goal" class="story-card">
+              <div class="story-stripe c-safety"></div>
+              <div class="story-body">
+                <div class="story-label">🎯 Set this as a savings goal</div>
+                <div class="story-val">Plan it</div>
+                <div class="story-desc">Turn this projection into a concrete monthly plan</div>
+                <span class="story-arrow">Build your savings plan →</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="journey">
+            <div class="journey-title">Continue your financial plan</div>
+            <div class="journey-path">
+              <a href="/retirement-calculator">Retirement calculator</a><span class="journey-sep">→</span>
+              <a href="/fire-calculator">FIRE calculator</a><span class="journey-sep">→</span>
+              <a href="/net-worth">Net worth</a><span class="journey-sep">→</span>
+              <a href="/blog-compound-interest-explained-sa">Compounding explained</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="whatif-section" id="whatif-section" style="display:none">
+          <div class="whatif-kicker">What if?</div>
+          <div class="whatif-title">Test a scenario</div>
+          <p class="whatif-sub">Drag the sliders to see how changes affect your future value.</p>
+
+          <div class="whatif-grid">
+            <div class="whatif-control">
+              <div class="whatif-control-head"><label>Extra monthly contribution</label><output id="wi-contrib-out">R0</output></div>
+              <input type="range" id="wi-contrib" min="-2000" max="10000" value="0" step="250" oninput="renderWhatIf()">
+            </div>
+            <div class="whatif-control">
+              <div class="whatif-control-head"><label>Extra years invested</label><output id="wi-years-out">+0 yrs</output></div>
+              <input type="range" id="wi-years" min="-5" max="20" value="0" step="1" oninput="renderWhatIf()">
+            </div>
+          </div>
+
+          <div class="whatif-result">
+            <div>
+              <div class="whatif-result-label">New future value</div>
+              <div class="whatif-result-val" id="wi-newfv">R0</div>
+            </div>
+            <div class="whatif-delta">
+              <div class="whatif-delta-val" id="wi-delta">—</div>
+              <div class="whatif-delta-lbl">vs your current projection</div>
+            </div>
+          </div>
+          <div class="whatif-reset"><button onclick="resetWhatIf()">Reset scenario</button></div>
+          <div class="note warn" style="margin-top:1rem">
+            <span>⚠</span>
+            <span>Assumes the same rate of return continues. Real returns vary year to year and are never guaranteed.</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="whatif-result">
-    <div>
-      <div class="whatif-result-label">New future value</div>
-      <div class="whatif-result-val" id="wi-newfv">R0</div>
+  <div class="sidebar">
+    <div class="sc">
+      <div class="sc-head">The Power of Compounding</div>
+      <div class="sc-body">
+        <div class="tip"><span>→</span><span>Time is your biggest advantage — start as early as you can.</span></div>
+        <div class="tip"><span>→</span><span>Regular monthly contributions massively boost the end result.</span></div>
+        <div class="tip"><span>→</span><span>A <a href="/tfsa-calculator">TFSA</a> lets your growth compound tax-free.</span></div>
+        <div class="tip"><span>→</span><span>Even small amounts grow large over decades.</span></div>
+        <div class="tip"><span>→</span><span>Keep fees below 1% annually when possible.</span></div>
+      </div>
     </div>
-    <div class="whatif-delta">
-      <div class="whatif-delta-val" id="wi-delta">—</div>
-      <div class="whatif-delta-lbl">vs your current projection</div>
+
+    <div class="sc">
+      <div class="sc-head">Typical SA Returns</div>
+      <div class="sc-body">
+        <div class="tip"><span>→</span><span>SA equities (long-term): 10-12%</span></div>
+        <div class="tip"><span>→</span><span>Balanced funds: 8-10%</span></div>
+        <div class="tip"><span>→</span><span>Bonds/fixed income: 7-9%</span></div>
+        <div class="tip"><span>→</span><span>Money market: 6-7%</span></div>
+        <div class="tip"><span>→</span><span>Inflation (historical): 5-6%</span></div>
+      </div>
+    </div>
+
+    <div class="sc">
+      <div class="sc-head">Related Calculators</div>
+      <div class="sc-body">
+        <div class="tip"><span>→</span><a href="/retirement-calculator">Retirement Calculator</a></div>
+        <div class="tip"><span>→</span><a href="/fire-calculator">FIRE Calculator</a></div>
+        <div class="tip"><span>→</span><a href="/savings-goal">Savings Goal</a></div>
+        <div class="tip"><span>→</span><a href="/net-worth">Net Worth</a></div>
+      </div>
     </div>
   </div>
-  <div class="whatif-reset"><button onclick="resetWhatIf()">Reset scenario</button></div>
-  <div class="note warn" style="margin-top:1rem"><span>⚠</span><span>Assumes the same rate of return continues. Real returns vary year to year and are never guaranteed.</span></div>
 </div>
 
-</div></div></div></div><div class="sidebar"><div class="sc"><div class="sc-head">The power of compounding</div><div class="sc-body">
-<div class="tip"><span>→</span><span>Time is your biggest advantage — start as early as you can.</span></div>
-<div class="tip"><span>→</span><span>Regular monthly contributions massively boost the end result.</span></div>
-<div class="tip"><span>→</span><span>A TFSA lets your growth compound tax-free.</span></div>
-<div class="tip"><span>→</span><span>Even small amounts grow large over decades.</span></div>
-</div></div></div></div><div class="section" style="padding-top:0"><div class="section-header"><div class="section-title">Related <span>/</span> Wealth Tools</div></div><div class="tools-grid"><a href="/net-worth" class="tool-card featured"><div class="tc-cat">Wealth Building</div><h3>Net Worth Calculator</h3><p>Track what you own minus what you owe.</p><span class="tc-link">Open →</span></a><a href="/retirement-calculator" class="tool-card featured"><div class="tc-cat">Wealth Building</div><h3>Retirement Calculator</h3><p>Are you saving enough to retire well?</p><span class="tc-link">Open →</span></a><a href="/savings-goal" class="tool-card featured"><div class="tc-cat">Wealth Building</div><h3>Savings Goal Calculator</h3><p>Plan how to reach a savings target.</p><span class="tc-link">Open →</span></a><a href="/fire-calculator" class="tool-card featured"><div class="tc-cat">Wealth Building</div><h3>FIRE Calculator</h3><p>Find your financial independence number.</p><span class="tc-link">Open →</span></a></div></div><div class="section" style="padding-top:0" data-articles="1"><div class="section-header"><div class="section-title">Learn more <span>/</span> Guides</div></div><div class="tools-grid"><a href="/blog-compound-interest-explained-sa" class="tool-card featured" style="border-top-color:var(--navy)"><div class="tc-cat">Guide</div><h3>Compound Interest Explained for South Africans</h3><span class="tc-link">Read guide →</span></a><a href="/blog-how-to-become-a-millionaire-sa" class="tool-card featured" style="border-top-color:var(--navy)"><div class="tc-cat">Guide</div><h3>How to Save Your First R1 Million</h3><span class="tc-link">Read guide →</span></a><a href="/blog-best-investments-south-africa-2026" class="tool-card featured" style="border-top-color:var(--navy)"><div class="tc-cat">Guide</div><h3>Best Ways to Invest Money in South Africa</h3><span class="tc-link">Read guide →</span></a></div></div>
-<div class="sa-stripe"></div>
-<div class="section"><div style="background:var(--white);border:1px solid var(--line);border-top:3px solid var(--forest)"><div class="article-body"><h2>The mechanics behind compounding, explained simply</h2><p>Compound interest is often described as "interest on interest" — a phrase that is accurate but abstract. In practical terms, it means every rand you invest starts earning its own returns, and those returns then earn returns too. The effect is small in year one and dramatic by year twenty, which is exactly why time in the market matters more than almost any other single factor in building wealth.</p><h2>A concrete illustration of the acceleration</h2><p>Consider R100,000 invested at a steady 10% annual return, with no further contributions. In year one, you earn R10,000. But by year ten, you are earning roughly R23,600 in that single year alone — more than double the original annual gain — simply because the base you are earning on has grown.</p><table class="data-table"><thead><tr><th>Year</th><th>Balance</th><th>That year's growth</th></tr></thead><tbody><tr><td>1</td><td>R110,000</td><td>R10,000</td></tr><tr><td>5</td><td>R161,051</td><td>R14,641</td></tr><tr><td>10</td><td>R259,374</td><td>R23,579</td></tr><tr><td>20</td><td>R672,750</td><td>R61,159</td></tr></tbody></table><h2>Why monthly contributions change the outcome so dramatically</h2><p>A lump sum compounds on itself, but regular monthly contributions add fresh capital that then also has years to compound. This is why the calculator above weights consistent monthly investing so heavily — someone contributing R2,000/month for 20 years typically ends up with a meaningfully larger balance than someone who invests a much larger lump sum once and stops.</p><h2>The real-world variables this calculator simplifies</h2><ul><li><strong>Returns are never constant</strong> — markets move up and down year to year; this tool assumes a smoothed average for clarity, not a guarantee</li><li><strong>Inflation erodes real value</strong> — a rand in 20 years buys less than a rand today, so your real (inflation-adjusted) growth is lower than the nominal figure shown</li><li><strong>Fees matter more than people expect</strong> — a 2% annual fee versus a 0.5% fee compounds into a very large difference over decades</li><li><strong>Tax treatment varies</strong> — growth inside a tax-free savings account compounds untaxed, while growth in a regular account is taxed along the way</li></ul><h2>Where compounding works hardest for South Africans</h2><p>A tax-free savings account is one of the most direct ways to let compounding work without the drag of tax on your growth. Combined with a retirement annuity — which adds an upfront tax deduction on top of tax-free growth — these two vehicles are the backbone of most disciplined long-term investing strategies in South Africa.</p><h2>Turning this projection into an actual plan</h2><p>A future value on a screen is only useful once it becomes a plan you act on. If this projection reveals a gap between where you're headed and where you want to be, the <a href="/savings-goal">savings goal calculator</a> can help you work out exactly how much more to contribute, and the <a href="/retirement-calculator">retirement calculator</a> shows what this kind of growth means specifically for your retirement timeline.</p></div></div></div>
+<div class="section" style="padding-top:0">
+  <div class="section-header">
+    <div class="section-title">Related <span>/</span> Wealth Tools</div>
+  </div>
+  <div class="tools-grid">
+    <a href="/net-worth" class="tool-card featured">
+      <div class="tc-cat">Wealth Building</div>
+      <h3>Net Worth Calculator</h3>
+      <p>Track what you own minus what you owe.</p>
+      <span class="tc-link">Open →</span>
+    </a>
+    <a href="/retirement-calculator" class="tool-card featured">
+      <div class="tc-cat">Wealth Building</div>
+      <h3>Retirement Calculator</h3>
+      <p>Are you saving enough to retire well?</p>
+      <span class="tc-link">Open →</span>
+    </a>
+    <a href="/savings-goal" class="tool-card featured">
+      <div class="tc-cat">Wealth Building</div>
+      <h3>Savings Goal Calculator</h3>
+      <p>Plan how to reach a savings target.</p>
+      <span class="tc-link">Open →</span>
+    </a>
+    <a href="/fire-calculator" class="tool-card featured">
+      <div class="tc-cat">Wealth Building</div>
+      <h3>FIRE Calculator</h3>
+      <p>Find your financial independence number.</p>
+      <span class="tc-link">Open →</span>
+    </a>
+    <a href="/tfsa-calculator" class="tool-card featured">
+      <div class="tc-cat">Tax-Free</div>
+      <h3>TFSA Calculator</h3>
+      <p>Maximize your tax-free savings.</p>
+      <span class="tc-link">Open →</span>
+    </a>
+    <a href="/investment-comparison" class="tool-card featured">
+      <div class="tc-cat">Investments</div>
+      <h3>Investment Comparison</h3>
+      <p>Compare different investment strategies.</p>
+      <span class="tc-link">Open →</span>
+    </a>
+  </div>
+</div>
 
-<footer><div class="footer-inner">
-  <div class="footer-logo">CalcMy<span>Pay</span></div>
-  <div class="footer-links"><a href="/salary-income">Salary</a><a href="/affordability">Affordability</a><a href="/wealth-building">Wealth</a><a href="/money-tools">Tools</a><a href="/financial-coach">Coach</a><a href="/blog-salary-guide">Guides</a><a href="/about">About</a><a href="/privacy-policy">Privacy</a><a href="/contact">Contact</a></div>
-  <div class="footer-copy">© 2026 CalcMyPay · Understand your salary. Plan your money. Build your future. · For informational purposes only · Not affiliated with SARS · SARS 2027 tax year</div>
-</div></footer>
-<script>const fmt=n=>'R\u00a0'+Math.round(Math.abs(n)).toLocaleString('en-ZA');
-function fmtK(n){n=Math.round(n);if(Math.abs(n)>=1e6)return 'R\u00a0'+(n/1e6).toFixed(2)+'m';if(Math.abs(n)>=1e3)return 'R\u00a0'+Math.round(n/1e3).toLocaleString('en-ZA')+'k';return fmt(n);}
+<div class="section" style="padding-top:0">
+  <div class="section-header">
+    <div class="section-title">Learn more <span>/</span> Guides</div>
+  </div>
+  <div class="tools-grid">
+    <a href="/blog-compound-interest-explained-sa" class="tool-card featured" style="border-top-color:var(--navy)">
+      <div class="tc-cat">Guide</div>
+      <h3>Compound Interest Explained for South Africans</h3>
+      <span class="tc-link">Read guide →</span>
+    </a>
+    <a href="/blog-how-to-become-a-millionaire-sa" class="tool-card featured" style="border-top-color:var(--navy)">
+      <div class="tc-cat">Guide</div>
+      <h3>How to Save Your First R1 Million</h3>
+      <span class="tc-link">Read guide →</span>
+    </a>
+    <a href="/blog-best-investments-south-africa-2026" class="tool-card featured" style="border-top-color:var(--navy)">
+      <div class="tc-cat">Guide</div>
+      <h3>Best Ways to Invest Money in South Africa</h3>
+      <span class="tc-link">Read guide →</span>
+    </a>
+  </div>
+</div>
 
-function calc(){
- const start=parseFloat(document.getElementById('start').value)||0;
- const monthly=parseFloat(document.getElementById('monthly').value)||0;
- const rate=parseFloat(document.getElementById('rate').value)||10;
- const years=parseInt(document.getElementById('years').value)||20;
- if(start<=0&&monthly<=0){alert('Enter a starting amount or monthly contribution.');return;}
- const r=rate/100/12, n=years*12;
- let fvStart=start*Math.pow(1+r,n);
- let fvMonthly= r===0? monthly*n : monthly*((Math.pow(1+r,n)-1)/r);
- const fv=fvStart+fvMonthly;
- const contrib=monthly*n;
- const invested=start+contrib;
- const interest=fv-invested;
- document.getElementById('big').textContent=fmt(fv);
- document.getElementById('period').textContent='after '+years+' years';
- document.getElementById('growth').textContent=fmtK(interest);
- document.getElementById('r-start').textContent=fmt(start);
- document.getElementById('r-contrib').textContent=fmt(contrib);
- document.getElementById('r-invested').textContent=fmt(invested);
- document.getElementById('r-interest').textContent=fmt(interest);
- document.getElementById('r-final').textContent=fmt(fv);
- // simple bar chart by year
- let bars='';
- const step=Math.max(1,Math.round(years/10));
- let maxv=fv;
- for(let y=step;y<=years;y+=step){
-   const nn=y*12;
-   const v=start*Math.pow(1+r,nn)+(r===0?monthly*nn:monthly*((Math.pow(1+r,nn)-1)/r));
-   const h=Math.round(v/maxv*100);
-   bars+=`<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:.3rem"><div style="width:100%;background:var(--accent);height:${h}px;border-radius:3px 3px 0 0;min-height:2px"></div><span style="font-size:.6rem;color:var(--g600)">${y}y</span></div>`;
- }
- document.getElementById('chart').innerHTML='<div class="bb-title" style="border:1px solid var(--g200);border-bottom:none">Growth over time</div><div style="display:flex;align-items:flex-end;gap:3px;height:120px;padding:1rem;border:1px solid var(--g200);background:var(--white)">'+bars+'</div>';
- renderMoneyStory(fv);
- baseInputs = {start, monthly, rate, years, fv};
- document.getElementById('whatif-section').style.display = 'block';
- resetWhatIf();
- document.getElementById('res').classList.add('show');
- document.getElementById('res').scrollIntoView({behavior:'smooth',block:'nearest'});
-}
-document.addEventListener('keydown',e=>{if(e.key=='Enter')calc()});
+<div class="section">
+  <div style="background:var(--white);border:1px solid var(--line);border-top:3px solid var(--forest)">
+    <div class="article-body">
 
-function renderMoneyStory(fv){
-  const drawMonthly = fv*0.04/12;
-  document.getElementById('ms-income').textContent = fmtK(drawMonthly)+'/month';
+      <h2>Understanding compound interest: The eighth wonder of the world</h2>
+      <p>Albert Einstein allegedly called compound interest "the eighth wonder of the world" — and while that quote's authenticity is debated, the mathematical power it describes is undeniable. Compound interest is the process where your investment earns returns not just on your original capital, but also on all the returns it has previously generated. This creates a snowball effect that accelerates dramatically over time.</p>
 
-  const fireEl = document.getElementById('ms-fire-fund');
-  // Assume a modest SA monthly expense benchmark of R20,000 -> FIRE number R6m, for a relatable comparison
-  const referenceFireNum = 6000000;
-  const pct = (fv/referenceFireNum*100);
-  fireEl.textContent = pct.toFixed(0)+'% of a R6m FIRE number';
+      <p>For South African investors, understanding compound interest is essential for building long-term wealth. Whether you're saving for retirement, a home deposit, or financial independence, compound growth is the engine that turns modest monthly contributions into life-changing sums over decades.</p>
 
-  const depositEl = document.getElementById('ms-deposit');
-  // Compare to a 10% deposit on a range of home prices
-  const homePriceSupported = fv/0.10;
-  depositEl.textContent = fmtK(homePriceSupported)+' home';
+      <div class="callout navy">
+        <strong>Key insight:</strong> The most important factor in compound growth isn't your return rate — it's time. Starting 10 years earlier can more than double your final balance, even with identical monthly contributions. This is why financial advisors constantly emphasize "time in the market" over "timing the market."
+      </div>
+
+      <h2>How compound interest actually works</h2>
+      <p>Let's break down the mechanics with a concrete example. Suppose you invest R100,000 at a 10% annual return:</p>
+
+      <ul>
+        <li><strong>Year 1:</strong> You earn R10,000 (10% of R100,000). Balance: R110,000</li>
+        <li><strong>Year 2:</strong> You earn R11,000 (10% of R110,000). Balance: R121,000</li>
+        <li><strong>Year 3:</strong> You earn R12,100 (10% of R121,000). Balance: R133,100</li>
+        <li><strong>Year 10:</strong> You earn R23,579 in that single year. Balance: R259,374</li>
+        <li><strong>Year 20:</strong> You earn R61,159 in that single year. Balance: R672,750</li>
+      </ul>
+
+      <p>Notice how the annual growth accelerates? In year 1, you earned R10,000. By year 20, you're earning R61,159 annually — more than six times the original amount — even though you haven't added a single rand. This acceleration is the magic of compounding.</p>
+
+      <div class="worked-example">
+        <div class="worked-example-head">
+          <span class="worked-example-tag">Worked Example</span>
+          <h3>Two investors, same contributions, different start dates</h3>
+        </div>
+        <p>This example shows why starting early matters more than almost any other factor in investing.</p>
+
+        <p><strong>Investor A (starts at age 25):</strong></p>
+        <ul>
+          <li>Invests R2,000/month from age 25 to 65 (40 years)</li>
+          <li>Total contributions: R960,000</li>
+          <li>At 10% return: <strong>R10,680,000 final balance</strong></li>
+        </ul>
+
+        <p><strong>Investor B (starts at age 35):</strong></p>
+        <ul>
+          <li>Invests R2,000/month from age 35 to 65 (30 years)</li>
+          <li>Total contributions: R720,000</li>
+          <li>At 10% return: <strong>R3,940,000 final balance</strong></li>
+        </ul>
+
+        <p style="margin-top:1rem"><strong>The difference:</strong> Investor A contributed only R240,000 more (33% more) but ended with R6,740,000 more (171% more). Those extra 10 years of compounding created R6.7 million in additional wealth. This is why financial advisors say the best time to start investing was 10 years ago, and the second-best time is today.</p>
+      </div>
+
+      <h2>The Rule of 72: Quick doubling time estimation</h2>
+      <p>The Rule of 72 is a simple mental shortcut for estimating how long it takes an investment to double. Divide 72 by your annual return rate:</p>
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Annual Return</th>
+            <th>Years to Double</th>
+            <th>Example (R100k starting)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>6%</td>
+            <td>12 years</td>
+            <td>R100k → R200k in 12 years</td>
+          </tr>
+          <tr>
+            <td>8%</td>
+            <td>9 years</td>
+            <td>R100k → R200k in 9 years</td>
+          </tr>
+          <tr>
+            <td class="td-green">10%</td>
+            <td class="td-green">7.2 years</td>
+            <td class="td-green">R100k → R200k in 7.2 years</td>
+          </tr>
+          <tr>
+            <td>12%</td>
+            <td>6 years</td>
+            <td>R100k → R200k in 6 years</td>
+          </tr>
+          <tr>
+            <td>15%</td>
+            <td>4.8 years</td>
+            <td>R100k → R200k in 4.8 years</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>At 10% return (typical for South African equities), your money doubles roughly every 7 years. Over 35 years, that's 5 doublings: R100,000 becomes R200,000, then R400,000, R800,000, R1.6 million, and finally R3.2 million — without adding another cent.</p>
+
+      <h2>Monthly contributions: The real wealth accelerator</h2>
+      <p>While lump sum investing shows the power of compounding, regular monthly contributions demonstrate its true potential. When you add fresh capital consistently, each contribution gets its own compounding timeline, creating multiple overlapping snowballs.</p>
+
+      <h3>Why monthly contributions outperform lump sums (for most people)</h3>
+      <ul>
+        <li><strong>Discipline:</strong> Automated monthly contributions remove emotion and ensure consistent investing</li>
+        <li><strong>Dollar-cost averaging:</strong> You buy more units when prices are low, fewer when high</li>
+        <li><strong>Cash flow friendly:</strong> Most people can afford R2,000/month but not R500,000 lump sum</li>
+        <li><strong>Multiple compounding timelines:</strong> Each contribution compounds for a different length of time</li>
+      </ul>
+
+      <h3>Monthly contribution impact table</h3>
+      <p>How different monthly contributions grow over time at 10% annual return:</p>
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Monthly Contribution</th>
+            <th>10 Years</th>
+            <th>20 Years</th>
+            <th>30 Years</th>
+            <th>40 Years</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>R500</td>
+            <td>R97,000</td>
+            <td>R367,000</td>
+            <td>R1,028,000</td>
+            <td class="td-green">R2,650,000</td>
+          </tr>
+          <tr>
+            <td>R1,000</td>
+            <td>R194,000</td>
+            <td>R733,000</td>
+            <td>R2,056,000</td>
+            <td class="td-green">R5,300,000</td>
+          </tr>
+          <tr>
+            <td class="td-green">R2,000</td>
+            <td class="td-green">R389,000</td>
+            <td class="td-green">R1,467,000</td>
+            <td class="td-green">R4,113,000</td>
+            <td class="td-green">R10,600,000</td>
+          </tr>
+          <tr>
+            <td>R5,000</td>
+            <td>R972,000</td>
+            <td>R3,667,000</td>
+            <td>R10,282,000</td>
+            <td class="td-green">R26,500,000</td>
+          </tr>
+          <tr>
+            <td>R10,000</td>
+            <td>R1,944,000</td>
+            <td>R7,334,000</td>
+            <td>R20,564,000</td>
+            <td class="td-green">R53,000,000</td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="font-size:.84rem;color:var(--mist);margin-top:.5rem">Note: These assume 10% annual return with monthly compounding. Actual returns vary. These are nominal values — inflation reduces real purchasing power.</p>
+
+      <h2>The devastating impact of investment fees</h2>
+      <p>Investment fees seem small — 1%, 2%, maybe 3% annually — but they compound against you just as powerfully as returns compound for you. Over long periods, fees can destroy enormous amounts of wealth.</p>
+
+      <h3>Fee impact on R2,000/month for 30 years at 10% gross return</h3>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Annual Fee</th>
+            <th>Net Return</th>
+            <th>Final Balance</th>
+            <th>Lost to Fees</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="td-green">0.5% (low-cost ETF)</td>
+            <td class="td-green">9.5%</td>
+            <td class="td-green">R3,538,000</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>1.0% (typical unit trust)</td>
+            <td>9.0%</td>
+            <td>R3,033,000</td>
+            <td class="td-red">R505,000</td>
+          </tr>
+          <tr>
+            <td>1.5% (active fund)</td>
+            <td>8.5%</td>
+            <td>R2,613,000</td>
+            <td class="td-red">R925,000</td>
+          </tr>
+          <tr>
+            <td>2.0% (expensive fund)</td>
+            <td>8.0%</td>
+            <td>R2,263,000</td>
+            <td class="td-red">R1,275,000</td>
+          </tr>
+          <tr>
+            <td>3.0% (very expensive)</td>
+            <td>7.0%</td>
+            <td>R1,706,000</td>
+            <td class="td-red">R1,832,000</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>A 2.5% difference in fees (0.5% vs 3.0%) costs you <strong>R1.8 million</strong> over 30 years. This is why low-cost index funds and ETFs have become so popular — they deliver market returns with minimal fee drag.</p>
+
+      <div class="callout">
+        <strong>Critical question:</strong> Ask any financial advisor or fund manager: "What is the total expense ratio (TER) of this investment?" If they can't answer immediately or it's above 1.5%, consider alternatives. Over 20+ years, every basis point matters enormously.
+      </div>
+
+      <h2>Inflation: The silent wealth destroyer</h2>
+      <p>While compound interest builds nominal wealth, inflation erodes real purchasing power. South African inflation has averaged 5-6% over the past two decades, meaning a rand in 20 years will buy only what 30-40 cents buys today.</p>
+
+      <h3>Real vs nominal returns</h3>
+      <p>If your investment returns 10% but inflation is 6%, your real return is only 4%. This matters enormously for long-term planning:</p>
+
+      <ul>
+        <li><strong>Nominal value:</strong> R2,000/month for 30 years at 10% = R4,113,000</li>
+        <li><strong>Real value (6% inflation):</strong> That R4,113,000 will only buy what <strong>R712,000</strong> buys today</li>
+        <li><strong>Real return:</strong> 4% annually, not 10%</li>
+      </ul>
+
+      <p>This is why financial planners emphasize real (inflation-adjusted) returns for retirement planning. A R5 million retirement fund sounds impressive, but if inflation averages 6% over your working life, that R5 million will only provide the purchasing power of about R1.5 million in today's money.</p>
+
+      <h3>Inflation impact over time</h3>
+      <p>What R1,000,000 will actually buy in the future at 6% inflation:</p>
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Years in Future</th>
+            <th>Nominal Value</th>
+            <th>Real Value (Today's Rands)</th>
+            <th>Purchasing Power Lost</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>0</td>
+            <td>R1,000,000</td>
+            <td>R1,000,000</td>
+            <td>0%</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>R1,000,000</td>
+            <td>R558,000</td>
+            <td>44%</td>
+          </tr>
+          <tr>
+            <td>20</td>
+            <td>R1,000,000</td>
+            <td>R312,000</td>
+            <td>69%</td>
+          </tr>
+          <tr>
+            <td>30</td>
+            <td>R1,000,000</td>
+            <td>R174,000</td>
+            <td>83%</td>
+          </tr>
+          <tr>
+            <td>40</td>
+            <td>R1,000,000</td>
+            <td>R97,000</td>
+            <td>90%</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>This table shows why you need much larger nominal retirement targets than you might initially think. To have R1 million in today's purchasing power in 30 years, you'll need approximately R5.7 million nominally.</p>
+
+      <h2>Investment vehicles: Where to let your money compound</h2>
+      <p>South Africans have several tax-efficient vehicles for compound growth. Choosing the right one can add 15-25% to your final balance through tax savings alone.</p>
+
+      <h3>Tax-Free Savings Account (TFSA)</h3>
+      <p><strong>Annual limit:</strong> R36,000/year (R3,000/month)</p>
+      <p><strong>Lifetime limit:</strong> R500,000 total contributions</p>
+      <p><strong>Tax treatment:</strong> All growth, dividends, and interest completely tax-free forever</p>
+      <p><strong>Best for:</strong> Long-term growth (10+ years), emergency fund, first investment account</p>
+
+      <p><strong>Why it matters:</strong> In a regular investment account, you pay capital gains tax on growth above R40,000/year. Over 20 years, this tax drag can reduce your final balance by 15-25%. A TFSA eliminates this completely.</p>
+
+      <div class="worked-example">
+        <div class="worked-example-head">
+          <span class="worked-example-tag">Worked Example</span>
+          <h3>TFSA vs regular investment: R3,000/month for 25 years</h3>
+        </div>
+
+        <p><strong>TFSA (tax-free):</strong></p>
+        <ul>
+          <li>Monthly contribution: R3,000 (within R36k annual limit)</li>
+          <li>Return: 10% annually</li>
+          <li>Time: 25 years</li>
+          <li>Tax on growth: R0</li>
+          <li><strong>Final balance: R3,585,000</strong></li>
+        </ul>
+
+        <p><strong>Regular investment account:</strong></p>
+        <ul>
+          <li>Same contributions and returns</li>
+          <li>Capital gains tax: ~15% effective rate on growth above R40k/year</li>
+          <li>Estimated tax paid over 25 years: ~R450,000</li>
+          <li><strong>Final balance: ~R3,135,000</strong></li>
+        </ul>
+
+        <p style="margin-top:1rem"><strong>Difference:</strong> R450,000 more in the TFSA — a 14% improvement just from tax efficiency. This is why maximizing your TFSA should be priority #1 for most investors.</p>
+      </div>
+
+      <h3>Retirement Annuity (RA)</h3>
+      <p><strong>Annual limit:</strong> 27.5% of taxable income (capped at R430,000)</p>
+      <p><strong>Tax treatment:</strong> Contributions tax-deductible, growth tax-free, taxed on withdrawal (first R550,000 tax-free)</p>
+      <p><strong>Best for:</strong> Retirement savings, high earners seeking tax deductions</p>
+
+      <p><strong>Double benefit:</strong> You get an upfront tax deduction (saving 18-45% depending on your bracket) plus tax-free growth. For someone in the 36% tax bracket, contributing R100,000 to an RA immediately saves R36,000 in tax — effectively a 36% instant return.</p>
+
+      <h3>Regular investment account</h3>
+      <p><strong>Limits:</strong> None</p>
+      <p><strong>Tax treatment:</strong> Capital gains tax on growth above R40,000/year, dividend withholding tax 20%, interest exemption R23,800/year</p>
+      <p><strong>Best for:</strong> Amounts exceeding TFSA/RA limits, pre-retirement access needs</p>
+
+      <p><strong>When to use:</strong> After maximizing TFSA and RA contributions. Offers maximum flexibility but least tax efficiency.</p>
+
+      <h3>Optimal investment order for most South Africans</h3>
+      <ol>
+        <li><strong>Emergency fund:</strong> 3-6 months expenses in accessible savings/money market</li>
+        <li><strong>Maximize TFSA:</strong> R3,000/month or R36,000/year</li>
+        <li><strong>Maximize RA:</strong> Up to 27.5% of income if you benefit from tax deduction</li>
+        <li><strong>Regular investment account:</strong> Any additional investment capital</li>
+      </ol>
+
+      <h2>Realistic return expectations for South African investors</h2>
+      <p>Understanding realistic returns helps you set appropriate expectations and avoid disappointment. Here are typical long-term returns for different asset classes in South Africa:</p>
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Asset Class</th>
+            <th>Typical Annual Return</th>
+            <th>Risk Level</th>
+            <th>Best Time Horizon</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>SA Equities (JSE)</td>
+            <td class="td-green">10-12%</td>
+            <td>High</td>
+            <td>10+ years</td>
+          </tr>
+          <tr>
+            <td>Global Equities</td>
+            <td class="td-green">8-10% (USD)</td>
+            <td>High</td>
+            <td>10+ years</td>
+          </tr>
+          <tr>
+            <td>Balanced Funds</td>
+            <td>8-10%</td>
+            <td>Medium</td>
+            <td>7+ years</td>
+          </tr>
+          <tr>
+            <td>SA Bonds</td>
+            <td>7-9%</td>
+            <td>Low-Medium</td>
+            <td>3+ years</td>
+          </tr>
+          <tr>
+            <td>Money Market</td>
+            <td>6-7%</td>
+            <td>Low</td>
+            <td>0-3 years</td>
+          </tr>
+          <tr>
+            <td>Property (REITs)</td>
+            <td>8-12%</td>
+            <td>Medium-High</td>
+            <td>7+ years</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>The equity risk premium</h3>
+      <p>Equities (stocks) historically outperform other asset classes by 4-6% annually over long periods. This "equity risk premium" compensates investors for the higher volatility and risk of stocks. However, this premium only materializes over long time horizons (10+ years).</p>
+
+      <p>For investors with 20+ year time horizons (like retirement savings), a high equity allocation (70-100%) typically makes sense. For shorter time horizons (3-7 years), a more conservative allocation with bonds and money market reduces the risk of needing to sell during a market downturn.</p>
+
+      <h2>Common compound interest mistakes</h2>
+
+      <h3>Mistake 1: Waiting for the "perfect time" to start</h3>
+      <p>Every month you delay costs you compound growth. Waiting 5 years to start investing can reduce your final balance by 30-40%, even if you invest the same monthly amount thereafter. The best time to start was yesterday; the second-best time is today.</p>
+
+      <h3>Mistake 2: Stopping contributions during market downturns</h3>
+      <p>Market downturns are when your contributions buy the most units. Stopping contributions during downturns means you miss the best buying opportunities. Continue contributing consistently regardless of market conditions — this is dollar-cost averaging in action.</p>
+
+      <h3>Mistake 3: Chasing past performance</h3>
+      <p>Last year's best-performing fund is rarely this year's best performer. Chasing performance leads to buying high and selling low. Instead, choose a diversified, low-cost strategy and stick with it through market cycles.</p>
+
+      <h3>Mistake 4: Ignoring fees</h3>
+      <p>As shown earlier, fees compound against you just as powerfully as returns compound for you. A 2% fee difference can cost you millions over 20-30 years. Always ask about the total expense ratio (TER) and choose low-cost options when possible.</p>
+
+      <h3>Mistake 5: Withdrawing early</h3>
+      <p>Withdrawing from long-term investments for short-term needs destroys compound growth. That R100,000 you withdraw at year 10 would have grown to R260,000 by year 20 and R670,000 by year 30. Keep long-term money invested for the long term.</p>
+
+      <h3>Mistake 6: Not increasing contributions with salary increases</h3>
+      <p>When you get a raise, increase your investment contributions by at least half the raise amount. This accelerates your wealth building without significantly impacting your lifestyle. If you get a 10% raise, increase contributions by 5% and enjoy 5% lifestyle improvement.</p>
+
+      <h3>Mistake 7: Panic selling during market crashes</h3>
+      <p>Every major market crash in history has been followed by recovery and new highs. Investors who panic sell during crashes lock in losses and miss the recovery. The South African stock market has recovered from every crash in history — often within 2-3 years.</p>
+
+      <h2>Advanced compound interest strategies</h2>
+
+      <h3>Strategy 1: The step-up method</h3>
+      <p>Start with contributions you can comfortably afford, then increase them annually by your salary increase percentage. This feels painless because your lifestyle isn't changing, but your investments grow dramatically.</p>
+
+      <p><strong>Example:</strong> Start with R1,000/month. Get 8% annual raises. Increase contributions by 8% each year.</p>
+      <ul>
+        <li>Year 1: R1,000/month</li>
+        <li>Year 5: R1,360/month</li>
+        <li>Year 10: R2,159/month</li>
+        <li>Year 20: R4,661/month</li>
+      </ul>
+
+      <p>Over 20 years, you contribute R660,000 (vs R240,000 with fixed R1,000/month). At 10% return, you end with R2.8 million instead of R733,000 — nearly 4x more.</p>
+
+      <h3>Strategy 2: Tax-loss harvesting (advanced)</h3>
+      <p>In regular investment accounts, you can sell losing investments to realize capital losses, then immediately buy similar (but not identical) investments. This resets your cost base lower, reducing future capital gains tax. Consult a tax professional before implementing.</p>
+
+      <h3>Strategy 3: Rebalancing</h3>
+      <p>Annually rebalance your portfolio back to your target allocation. This forces you to sell winners (that have grown beyond target) and buy losers (that have fallen below target) — effectively buying low and selling high systematically.</p>
+
+      <h3>Strategy 4: Dividend reinvestment</h3>
+      <p>Automatically reinvest all dividends rather than taking them as cash. This accelerates compounding because dividends buy more units, which generate more dividends, creating a virtuous cycle.</p>
+
+      <h2>Compound interest at different life stages</h2>
+
+      <h3>Your 20s: The golden decade</h3>
+      <p>Money invested in your 20s has 40+ years to compound. R1,000/month starting at age 25 grows to R5.3 million by age 65 (at 10% return). The same R1,000/month starting at age 35 grows to only R2 million. Starting early is the single most powerful advantage you can have.</p>
+
+      <p><strong>Strategy:</strong> Maximize TFSA, start RA contributions even if small, invest aggressively (high equity allocation), focus on building the habit.</p>
+
+      <h3>Your 30s: Acceleration phase</h3>
+      <p>You likely have more income but also more expenses (home, family). The key is maintaining and increasing investment contributions despite competing priorities.</p>
+
+      <p><strong>Strategy:</strong> Maximize TFSA and RA, use step-up method to increase contributions with raises, maintain high equity allocation for long-term goals.</p>
+
+      <h3>Your 40s: Peak earning years</h3>
+      <p>This is typically your highest-earning decade. Avoid lifestyle inflation — direct extra income to investments rather than spending.</p>
+
+      <p><strong>Strategy:</strong> Maximize all tax-advantaged accounts, consider additional regular investment accounts, start shifting some assets to more conservative allocations as retirement approaches.</p>
+
+      <h3>Your 50s: Pre-retirement focus</h3>
+      <p>With 10-15 years to retirement, start reducing equity exposure gradually to protect accumulated wealth from market downturns near retirement.</p>
+
+      <p><strong>Strategy:</strong> Catch-up contributions if behind target, gradually shift to more conservative allocation, maximize RA contributions for tax benefits.</p>
+
+      <h3>Your 60s: Transition to retirement</h3>
+      <p>Focus shifts from accumulation to preservation and income generation.</p>
+
+      <p><strong>Strategy:</strong> Conservative allocation (40-60% equities), plan withdrawal strategy, consider living annuity vs guaranteed annuity options.</p>
+
+      <h2>Glossary: Compound interest terms</h2>
+      <div class="glossary-grid">
+        <div class="glossary-item">
+          <div class="glossary-term">Compound Interest</div>
+          <div class="glossary-def">Interest earned on both the original investment and previously earned interest, creating exponential growth over time.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">Simple Interest</div>
+          <div class="glossary-def">Interest earned only on the original investment amount, without compounding. Grows linearly rather than exponentially.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">Nominal Return</div>
+          <div class="glossary-def">The stated return before adjusting for inflation or fees. This is what you see on your statement.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">Real Return</div>
+          <div class="glossary-def">The return after adjusting for inflation. This represents actual purchasing power growth.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">Total Expense Ratio (TER)</div>
+          <div class="glossary-def">The total annual cost of an investment fund, expressed as a percentage. Includes management fees, admin costs, and other charges.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">Dollar-Cost Averaging</div>
+          <div class="glossary-def">Investing fixed amounts regularly regardless of market conditions. Buys more units when prices are low, fewer when high.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">Rule of 72</div>
+          <div class="glossary-def">A quick way to estimate doubling time. Divide 72 by the annual return rate to get approximate years to double.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">Equity Risk Premium</div>
+          <div class="glossary-def">The extra return stocks provide over risk-free investments, compensating for higher volatility and risk.</div>
+        </div>
+        <div class="glossary-term">Time Horizon</div>
+          <div class="glossary-def">How long you plan to keep money invested. Longer horizons allow more aggressive investments and greater compounding.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">Rebalancing</div>
+          <div class="glossary-def">Periodically adjusting your portfolio back to target allocations by selling winners and buying losers.</div>
+        </div>
+      </div>
+
+      <h2>Frequently asked questions</h2>
+
+      <h3>How does compound interest work?</h3>
+      <p>Compound interest earns returns on both your original money and previously earned interest. Over time this creates exponential growth, especially with regular monthly contributions. For example, R100,000 invested at 10% for 20 years grows to R672,750 without any additional contributions.</p>
+
+      <h3>What is a realistic investment return in South Africa?</h3>
+      <p>Historically, a diversified South African equity portfolio has returned around 10-12% per year before inflation. Conservative estimates use 8-10% for long-term planning. After inflation (typically 5-6%), real returns are 4-6% annually.</p>
+
+      <h3>How much will R1,000 per month grow to in 20 years?</h3>
+      <p>At a 10% annual return, R1,000 per month invested for 20 years grows to approximately R723,000. You would have contributed R240,000, with R483,000 earned in compound interest. This demonstrates the power of consistent monthly contributions over time.</p>
+
+      <h3>What is the Rule of 72?</h3>
+      <p>The Rule of 72 is a quick way to estimate how long it takes for an investment to double. Divide 72 by your annual return rate. At 10% return, your money doubles every 7.2 years (72 ÷ 10). At 12%, it doubles every 6 years.</p>
+
+      <h3>How do investment fees affect compound returns?</h3>
+      <p>Fees dramatically reduce long-term returns. A 2% annual fee versus 0.5% can reduce your final balance by 25-30% over 20 years. On R1,000/month for 20 years at 10% gross return, a 2% fee reduces your balance from R723,000 to approximately R545,000 — a R178,000 difference.</p>
+
+      <h3>Should I invest in a TFSA or regular investment account?</h3>
+      <p>Always maximize your TFSA first (R36,000/year limit). Growth in a TFSA is completely tax-free forever. In a regular account, you pay capital gains tax on growth above R40,000/year. Over 20 years, the tax savings in a TFSA can add 15-25% to your final balance.</p>
+
+      <h3>How does inflation affect investment returns?</h3>
+      <p>Inflation erodes purchasing power. If you earn 10% nominal return but inflation is 6%, your real return is only 4%. Over 20 years at 6% inflation, R1,000,000 will only buy what R312,000 buys today. Always consider real (inflation-adjusted) returns for long-term planning.</p>
+
+      <h3>What's better: lump sum or monthly investing?</h3>
+      <p>Mathematically, lump sum investing typically outperforms because money starts compounding immediately. However, monthly investing (dollar-cost averaging) reduces timing risk and builds discipline. Most people benefit from a combination: invest available lump sums immediately, then add regular monthly contributions.</p>
+
+      <h3>How much do I need to invest to become a millionaire?</h3>
+      <p>At 10% annual return, you need to invest approximately R2,600 per month for 20 years, or R1,100 per month for 30 years to reach R1 million. Starting early dramatically reduces the required monthly contribution due to the power of compounding over time.</p>
+
+      <h3>What is the difference between simple and compound interest?</h3>
+      <p>Simple interest earns returns only on your original investment. Compound interest earns returns on both your original investment AND previously earned interest. Over 20 years at 10%, R100,000 grows to R300,000 with simple interest but R672,750 with compound interest — more than double.</p>
+
+      <h3>How often should interest be compounded?</h3>
+      <p>More frequent compounding (monthly vs annually) produces slightly higher returns, but the difference is small. R100,000 at 10% for 20 years: annual compounding = R672,750, monthly compounding = R732,800. For most investment decisions, the compounding frequency matters less than the return rate and time horizon.</p>
+
+      <h3>Can I lose money with compound interest investments?</h3>
+      <p>Yes, if you invest in volatile assets like stocks, your balance can decline in bad years. However, over long periods (10+ years), diversified equity portfolios have historically always produced positive returns in South Africa. The key is staying invested through market cycles rather than selling during downturns.</p>
+
+      <div class="disclaim">
+        <strong>Disclaimer:</strong> This calculator provides estimates based on assumed constant returns. Actual investment returns vary significantly year to year and are never guaranteed. Past performance doesn't indicate future results. This tool is for educational purposes only and does not constitute investment advice. Consult a registered financial advisor for personalized investment guidance. CalcMyPay is not a financial services provider.
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">CalcMy<span>Pay</span></div>
+    <div class="footer-links">
+      <a href="/salary-income">Salary</a>
+      <a href="/affordability">Affordability</a>
+      <a href="/wealth-building">Wealth</a>
+      <a href="/money-tools">Tools</a>
+      <a href="/financial-coach">Coach</a>
+      <a href="/blog-salary-guide">Guides</a>
+      <a href="/about">About</a>
+      <a href="/privacy-policy">Privacy</a>
+      <a href="/contact">Contact</a>
+    </div>
+    <div class="footer-copy">
+      © 2026 CalcMyPay · Understand your salary. Plan your money. Build your future.
+    </div>
+  </div>
+</footer>
+
+<script>
+const fmt = n => 'R\u00a0' + Math.round(Math.abs(n)).toLocaleString('en-ZA');
+
+function fmtK(n) {
+  n = Math.round(n);
+  if (Math.abs(n) >= 1e6) return 'R\u00a0' + (n / 1e6).toFixed(2) + 'm';
+  if (Math.abs(n) >= 1e3) return 'R\u00a0' + Math.round(n / 1e3).toLocaleString('en-ZA') + 'k';
+  return fmt(n);
 }
 
 let baseInputs = null;
 
-function renderWhatIf(){
-  if(!baseInputs) return;
+function loadExample() {
+  document.getElementById('start').value = 10000;
+  document.getElementById('monthly').value = 2000;
+  document.getElementById('rate').value = 10;
+  document.getElementById('fees').value = 1;
+  document.getElementById('inflation').value = 6;
+  document.getElementById('years').value = 20;
+  calc();
+}
+
+function calc() {
+  const start = parseFloat(document.getElementById('start').value) || 0;
+  const monthly = parseFloat(document.getElementById('monthly').value) || 0;
+  const grossRate = parseFloat(document.getElementById('rate').value) || 10;
+  const fees = parseFloat(document.getElementById('fees').value) || 0;
+  const inflation = parseFloat(document.getElementById('inflation').value) || 6;
+  const years = parseInt(document.getElementById('years').value) || 20;
+
+  if (start <= 0 && monthly <= 0) {
+    alert('Enter a starting amount or monthly contribution.');
+    return;
+  }
+
+  // Calculate net return after fees
+  const netRate = Math.max(0, grossRate - fees);
+  const r = netRate / 100 / 12;
+  const n = years * 12;
+
+  // Calculate future value with net return
+  const fvStart = start * Math.pow(1 + r, n);
+  const fvMonthly = r === 0 ? monthly * n : monthly * ((Math.pow(1 + r, n) - 1) / r);
+  const fv = fvStart + fvMonthly;
+
+  // Calculate gross future value (without fees) for comparison
+  const grossR = grossRate / 100 / 12;
+  const fvStartGross = start * Math.pow(1 + grossR, n);
+  const fvMonthlyGross = grossR === 0 ? monthly * n : monthly * ((Math.pow(1 + grossR, n) - 1) / grossR);
+  const fvGross = fvStartGross + fvMonthlyGross;
+
+  const contrib = monthly * n;
+  const invested = start + contrib;
+  const grossGrowth = fvGross - invested;
+  const feesPaid = fvGross - fv;
+  const netGrowth = fv - invested;
+
+  // Calculate real (inflation-adjusted) value
+  const realValue = fv / Math.pow(1 + inflation / 100, years);
+  const realReturn = ((1 + netRate / 100) / (1 + inflation / 100) - 1) * 100;
+
+  document.getElementById('big').textContent = fmt(fv);
+  document.getElementById('period').textContent = 'after ' + years + ' years';
+  document.getElementById('growth').textContent = fmtK(netGrowth);
+  document.getElementById('r-start').textContent = fmt(start);
+  document.getElementById('r-contrib').textContent = fmt(contrib);
+  document.getElementById('r-invested').textContent = fmt(invested);
+  document.getElementById('r-gross').textContent = fmt(grossGrowth);
+  document.getElementById('r-fees').textContent = '-' + fmt(feesPaid);
+  document.getElementById('r-interest').textContent = fmt(netGrowth);
+  document.getElementById('r-nominal').textContent = fmt(fv);
+  document.getElementById('r-real').textContent = fmt(realValue);
+  document.getElementById('r-real-return').textContent = realReturn.toFixed(1) + '%';
+  document.getElementById('r-final').textContent = fmt(fv);
+
+  // Rule of 72
+  document.getElementById('rule72-rate').textContent = netRate.toFixed(1);
+  document.getElementById('rule72-years').textContent = (72 / netRate).toFixed(1);
+
+  // Simple bar chart by year
+  let bars = '';
+  const step = Math.max(1, Math.round(years / 10));
+  let maxv = fv;
+  for (let y = step; y <= years; y += step) {
+    const nn = y * 12;
+    const v = start * Math.pow(1 + r, nn) + (r === 0 ? monthly * nn : monthly * ((Math.pow(1 + r, nn) - 1) / r));
+    const h = Math.round(v / maxv * 100);
+    bars += `<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:.3rem"><div style="width:100%;background:var(--accent);height:${h}px;border-radius:3px 3px 0 0;min-height:2px"></div><span style="font-size:.6rem;color:var(--g600)">${y}y</span></div>`;
+  }
+  document.getElementById('chart').innerHTML = '<div class="bb-title" style="border:1px solid var(--g200);border-bottom:none">Growth over time</div><div style="display:flex;align-items:flex-end;gap:3px;height:120px;padding:1rem;border:1px solid var(--g200);background:var(--white)">' + bars + '</div>';
+
+  renderMoneyStory(fv);
+  baseInputs = { start, monthly, grossRate, fees, inflation, years, fv };
+  document.getElementById('whatif-section').style.display = 'block';
+  resetWhatIf();
+  document.getElementById('money-story').style.display = 'block';
+  document.getElementById('res').classList.add('show');
+  document.getElementById('res').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+document.addEventListener('keydown', e => { if (e.key === 'Enter') calc(); });
+
+function renderMoneyStory(fv) {
+  const drawMonthly = fv * 0.04 / 12;
+  document.getElementById('ms-income').textContent = fmtK(drawMonthly) + '/month';
+
+  const fireEl = document.getElementById('ms-fire-fund');
+  const referenceFireNum = 6000000;
+  const pct = (fv / referenceFireNum * 100);
+  fireEl.textContent = pct.toFixed(0) + '% of a R6m FIRE number';
+
+  const depositEl = document.getElementById('ms-deposit');
+  const homePriceSupported = fv / 0.10;
+  depositEl.textContent = fmtK(homePriceSupported) + ' home';
+}
+
+function renderWhatIf() {
+  if (!baseInputs) return;
   const extraContrib = parseFloat(document.getElementById('wi-contrib').value);
   const extraYears = parseFloat(document.getElementById('wi-years').value);
 
   document.getElementById('wi-contrib-out').textContent = fmt(extraContrib);
-  document.getElementById('wi-years-out').textContent = '+'+extraYears+' yrs';
+  document.getElementById('wi-years-out').textContent = (extraYears >= 0 ? '+' : '') + extraYears + ' yrs';
 
-  const newMonthly = baseInputs.monthly + extraContrib;
-  const newYears = baseInputs.years + extraYears;
-  const r = baseInputs.rate/100/12, n = newYears*12;
-  const fvStart = baseInputs.start * Math.pow(1+r, n);
-  const fvMonthly = r===0 ? newMonthly*n : newMonthly*((Math.pow(1+r,n)-1)/r);
+  const newMonthly = Math.max(0, baseInputs.monthly + extraContrib);
+  const newYears = Math.max(1, baseInputs.years + extraYears);
+  const netRate = Math.max(0, baseInputs.grossRate - baseInputs.fees);
+  const r = netRate / 100 / 12;
+  const n = newYears * 12;
+
+  const fvStart = baseInputs.start * Math.pow(1 + r, n);
+  const fvMonthly = r === 0 ? newMonthly * n : newMonthly * ((Math.pow(1 + r, n) - 1) / r);
   const newFv = fvStart + fvMonthly;
 
   document.getElementById('wi-newfv').textContent = fmtK(newFv);
   const delta = newFv - baseInputs.fv;
   const deltaEl = document.getElementById('wi-delta');
-  if(Math.abs(delta) < 1){ deltaEl.textContent = 'No change'; deltaEl.className = 'whatif-delta-val'; }
-  else { deltaEl.textContent = '+'+fmtK(delta); deltaEl.className = 'whatif-delta-val up'; }
+
+  if (Math.abs(delta) < 1000) {
+    deltaEl.textContent = 'No change';
+    deltaEl.className = 'whatif-delta-val';
+  } else if (delta > 0) {
+    deltaEl.textContent = '+' + fmtK(delta);
+    deltaEl.className = 'whatif-delta-val up';
+  } else {
+    deltaEl.textContent = fmtK(delta);
+    deltaEl.className = 'whatif-delta-val down';
+  }
 }
 
-function resetWhatIf(){
+function resetWhatIf() {
   document.getElementById('wi-contrib').value = 0;
   document.getElementById('wi-years').value = 0;
   renderWhatIf();
 }
-</script></body></html>
+
+// Auto-load example for first-time visitors
+window.addEventListener('load', function() {
+  if (!sessionStorage.getItem('compoundCalcVisited')) {
+    setTimeout(loadExample, 500);
+    sessionStorage.setItem('compoundCalcVisited', 'true');
+  }
+});
+</script>
+
+</body>
+</html>
