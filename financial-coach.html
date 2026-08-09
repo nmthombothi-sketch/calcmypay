@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="color-scheme" content="light"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI Financial Coach South Africa 2026 — Free Financial Health Score | CalcMyPay</title>
 <meta name="description" content="Get your free financial health score out of 100. Personalised analysis of your savings rate, debt, emergency fund and retirement readiness, plus scenario simulations.">
 <meta name="google-adsense-account" content="ca-pub-6108324382808705">
@@ -12,15 +13,87 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/icon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/icon-16.png">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is a financial health score?","acceptedAnswer":{"@type":"Answer","text":"A financial health score rates your overall money situation out of 100 based on your savings rate, debt burden, emergency fund and retirement readiness. It gives you a single number to track your financial progress over time."}},{"@type":"Question","name":"How is my financial health score calculated?","acceptedAnswer":{"@type":"Answer","text":"The score combines four factors: your savings rate (how much of your income you save), debt burden (debt relative to income), emergency fund coverage (months of expenses saved), and retirement readiness (savings versus age-based targets)."}},{"@type":"Question","name":"What is a good savings rate in South Africa?","acceptedAnswer":{"@type":"Answer","text":"Financial planners generally recommend saving at least 15% of your gross income. Saving 20% or more puts you in a strong position for early financial independence."}}]}</script>
-<style>/* CalcMyPay — Editorial "Ink & Marigold" =================================== */
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a financial health score?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A financial health score rates your overall money situation out of 100 based on four pillars: savings rate, debt burden, emergency fund coverage, and retirement readiness. It gives you a single number to track your financial progress over time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is my financial health score calculated?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The score combines four factors with different weights: savings rate (30%), debt burden (25%), emergency fund (20%), and retirement readiness (25%). Each factor is scored out of 100 using established financial planning benchmarks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a good savings rate in South Africa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Financial planners generally recommend saving at least 15% of your gross income. Saving 20% or more puts you in a strong position. This includes retirement contributions and any other savings, not just cash in the bank."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many months of expenses should I have in my emergency fund?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Aim for at least 3 months of essential expenses as a minimum. The ideal is 6 months, especially if your income is variable or you work freelance. Self-employed people should target 6-12 months."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a healthy debt-to-income ratio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A debt-to-income ratio below 20% is considered healthy. Between 20-36% is manageable but should be reduced. Above 36% is considered high and leaves little room for savings or unexpected expenses."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much should I have saved for retirement by age 40?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A common benchmark is having 2-3 times your annual salary saved for retirement by age 40. By age 50, aim for 4-6 times your annual salary. These are guidelines, not strict rules — your specific target depends on your desired retirement lifestyle."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is my financial data safe with this tool?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. All calculations happen entirely in your browser. No financial data is sent to any server, stored in any database, or shared with any third party. Your numbers disappear when you close or refresh the page."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between a financial coach and a financial adviser?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A financial coach provides educational guidance and tools to help you understand and improve your finances. A registered financial adviser (FSCA-regulated in South Africa) can provide specific product recommendations and regulated advice. Use this tool for education; consult an adviser for complex situations."
+      }
+    }
+  ]
+}
+</script>
+
+<style>
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap');
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
   --paper:#FFFFFF;--ink:#16201C;--forest:#1B4332;--marigold:#F6B53D;
   --mist:#6B756F;--line:#DEDBD0;--sand:#FFFFFF;--berry:#B23A2E;
   --disp:'Fraunces',Georgia,serif;--body:'Inter',system-ui,sans-serif;
-  /* legacy var aliases so inline styles still resolve */
   --black:#16201C;--navy:#1B4332;--navy-mid:#1B4332;--accent:#1B4332;--accent-dark:#143026;
   --white:#fff;--off-white:#FFFFFF;--green:#1B4332;--green-light:#EDF3EE;--accent-light:#EDF3EE;
   --g100:#FFFFFF;--g200:#E4E2D8;--g400:#AEB3AC;--g600:#6B756F;--g800:#C9CcC4;--red:#B23A2E;
@@ -29,17 +102,11 @@
 html{color-scheme:light;scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{font-family:var(--body);background:var(--paper);color:var(--ink);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased}
 a{color:var(--forest);text-decoration:none}
-
-/* SA stripe — keep but slimmer & muted */
 .sa-stripe{height:3px;background:linear-gradient(90deg,#1B4332 0 16%,#F6B53D 16% 33%,#FCFBF7 33% 50%,#1B4332 50% 66%,#B23A2E 66% 83%,#16201C 83% 100%);opacity:.9}
-
-/* TOP BAR — editorial dateline */
 .top-bar{background:var(--paper);border-bottom:1px solid var(--line);padding:.5rem 2rem;display:flex;align-items:center;justify-content:space-between}
 .tb-l{font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--mist)}
 .tb-r{font-size:.7rem;color:var(--mist);letter-spacing:.04em}
 .tb-r span{color:var(--forest);font-weight:600}
-
-/* MASTHEAD NAV */
 nav{background:var(--paper);border-bottom:2px solid var(--ink);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:74px;position:sticky;top:0;z-index:100}
 .logo{display:flex;align-items:center;gap:.5rem;text-decoration:none}
 .logo-text{font-family:var(--disp);font-size:1.7rem;font-weight:900;letter-spacing:-.02em;color:var(--ink)}
@@ -55,40 +122,10 @@ nav{background:var(--paper);border-bottom:2px solid var(--ink);padding:0 2rem;di
 .nav-cta::after{display:none}
 .nav-cta:hover{background:var(--forest)!important;color:#fff!important}
 @media(max-width:860px){.nav-links{gap:0;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;max-width:60vw}.nav-links::-webkit-scrollbar{display:none}.nav-links a{white-space:nowrap;padding:.5rem .6rem;font-size:.76rem}.logo-text{font-size:1.4rem}nav{padding:0 1rem}}
-
-/* AD SLOTS — quiet */
-.ad-strip{background:var(--paper);border-bottom:1px solid var(--line);text-align:center;padding:.6rem}
-.ad-ph{display:inline-flex;align-items:center;justify-content:center;background:var(--sand);border:1px solid var(--line);color:var(--g400);font-size:.62rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
-.ad-ph.lb{width:728px;height:90px;max-width:100%}.ad-ph.rect{width:300px;height:250px}
-.ad-lbl{font-size:.6rem;color:var(--g400);text-transform:uppercase;letter-spacing:.12em;margin-bottom:.3rem}
-
-/* PAGE HEADER — kicker / headline / standfirst */
-.ph{background:var(--paper);border-bottom:1px solid var(--line);padding:4rem 2rem 3rem}
-.ph-inner{max-width:1080px;margin:0 auto}
-.bc{font-size:.72rem;color:var(--mist);font-weight:500;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1.4rem}
-.bc a{color:var(--mist)}.bc a:hover{color:var(--forest)}.bc span{margin:0 .5rem;color:var(--line)}
-.ph-cat{font-family:var(--body);font-size:.72rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--forest);margin-bottom:1rem;display:flex;align-items:center;gap:.6rem}
-.ph-cat::before{content:'';width:24px;height:2px;background:var(--marigold)}
-.ph h1{font-family:var(--disp);font-size:clamp(2.2rem,5vw,3.6rem);font-weight:600;color:var(--ink);line-height:1.05;letter-spacing:-.02em;margin-bottom:1rem;max-width:18ch}
-.ph p{font-family:var(--body);color:var(--mist);font-size:1.1rem;line-height:1.6;max-width:60ch}
-.ph-meta{display:flex;gap:1.4rem;font-size:.72rem;color:var(--mist);font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-top:1.2rem}
-
-/* SECTIONS */
 .section{max-width:1080px;margin:0 auto;padding:3.5rem 2rem}
 .section-header{margin-bottom:2rem;padding-bottom:1rem;border-bottom:1px solid var(--line);display:flex;align-items:baseline;justify-content:space-between;gap:1rem;flex-wrap:wrap}
 .section-title{font-family:var(--disp);font-size:1.6rem;font-weight:600;letter-spacing:-.01em;color:var(--ink)}
 .section-title span{color:var(--marigold);font-weight:400;margin:0 .3rem}
-.section-more{font-family:var(--body);font-size:.8rem;font-weight:600;color:var(--forest);letter-spacing:.02em}
-.section-more::after{content:' →'}
-
-/* TICKER — editorial stat strip */
-.ticker{background:var(--sand);border-bottom:1px solid var(--line);padding:.7rem 2rem;display:flex;gap:2.5rem;overflow-x:auto;scrollbar-width:none}
-.ticker::-webkit-scrollbar{display:none}
-.tick-item{display:flex;align-items:baseline;gap:.5rem;white-space:nowrap}
-.tick-label{font-size:.68rem;color:var(--mist);font-weight:600;text-transform:uppercase;letter-spacing:.1em}
-.tick-val{font-family:var(--disp);color:var(--forest);font-weight:600;font-size:1rem}
-
-/* TOOLS GRID + CARDS */
 .tools-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.25rem}
 .tool-card{background:var(--paper);border:1px solid var(--line);padding:1.6rem;transition:.2s;display:flex;flex-direction:column;gap:.7rem;text-decoration:none;color:var(--ink);position:relative}
 .tool-card:hover{border-color:var(--ink);transform:translateY(-2px)}
@@ -97,131 +134,6 @@ nav{background:var(--paper);border-bottom:2px solid var(--ink);padding:0 2rem;di
 .tool-card h3{font-family:var(--disp);font-size:1.25rem;font-weight:600;letter-spacing:-.01em;line-height:1.15;color:var(--ink)}
 .tool-card p{font-family:var(--body);font-size:.88rem;color:var(--mist);line-height:1.55;flex:1}
 .tc-link{font-family:var(--body);font-size:.8rem;font-weight:600;color:var(--forest)}
-.tc-badge{font-family:var(--body);font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.25rem .6rem;background:var(--sand);color:var(--forest);border:1px solid var(--line)}
-
-/* BLOG GRID */
-.blog-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:1.25rem}
-.blog-card{background:var(--paper);border:1px solid var(--line);padding:1.6rem;text-decoration:none;color:var(--ink);transition:.2s}
-.blog-card:hover{border-color:var(--ink);transform:translateY(-2px)}
-.blog-card.lead{border-top:3px solid var(--marigold)}
-.bc-cat{font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);margin-bottom:.6rem;display:block}
-.blog-card h3{font-family:var(--disp);font-size:1.2rem;font-weight:600;line-height:1.2;letter-spacing:-.01em;margin-bottom:.5rem}
-.blog-card.lead h3{font-size:1.6rem}
-.blog-card p{font-size:.86rem;color:var(--mist);line-height:1.55;margin-bottom:.6rem}
-.bc-more{font-size:.78rem;font-weight:600;color:var(--forest)}
-.bc-meta{font-size:.7rem;color:var(--g400);font-weight:600;letter-spacing:.04em;text-transform:uppercase}
-
-/* DATA CELLS (homepage figures) */
-.data-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem;margin-bottom:1rem}
-.dc{background:var(--sand);border:1px solid var(--line);padding:1.5rem}
-.dc-label{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--mist);margin-bottom:.5rem}
-.dc-val{font-family:var(--disp);font-size:2rem;font-weight:600;color:var(--ink);letter-spacing:-.02em;line-height:1}
-.dc-val.acc{color:var(--forest)}
-.dc-sub{font-size:.74rem;color:var(--mist);margin-top:.3rem}
-
-/* WHY CARDS */
-.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
-.why-card{background:var(--paper);border:1px solid var(--line);padding:1.8rem;border-top:3px solid var(--forest)}
-.why-num{font-family:var(--disp);font-size:2.4rem;font-weight:900;color:var(--marigold);line-height:1;margin-bottom:1rem}
-.why-card h3{font-family:var(--disp);font-size:1.2rem;font-weight:600;margin-bottom:.5rem}
-.why-card p{font-size:.88rem;color:var(--mist);line-height:1.6}
-
-/* CTA BLOCK */
-.cta-block{background:var(--ink);color:var(--paper);padding:3rem 2rem;text-align:center}
-.cta-block h2,.cta-block h3{font-family:var(--disp);font-weight:600;color:var(--paper);letter-spacing:-.01em;margin-bottom:.6rem}
-.cta-block h2{font-size:clamp(1.5rem,3vw,2.2rem)}
-.cta-block h3{font-size:1.4rem}
-.cta-block p{color:rgba(255,255,255,.7);margin-bottom:1.5rem;font-size:1rem}
-
-/* BUTTONS */
-.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 1.6rem;font-family:var(--body);font-weight:600;font-size:.9rem;cursor:pointer;border:none;transition:.18s;text-decoration:none;letter-spacing:.01em}
-.btn-accent{background:var(--marigold);color:var(--ink)}
-.btn-accent:hover{background:#eaa523}
-.btn-full{width:100%;justify-content:center}
-.btn:not(.btn-accent){background:var(--ink);color:var(--paper)}
-.btn:not(.btn-accent):hover{background:var(--forest);color:#fff}
-
-/* LAYOUT (tool + article) */
-.layout{max-width:1140px;margin:0 auto;padding:2.5rem 2rem;display:grid;grid-template-columns:1fr 320px;gap:2.5rem;align-items:start}
-@media(max-width:920px){.layout{grid-template-columns:1fr;gap:1.5rem}.sidebar{display:none}}
-
-/* CARD (tool input) */
-.card{background:var(--paper);border:1px solid var(--line)}
-.card-head{padding:1.4rem 1.6rem;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:.9rem}
-.card-cat{font-family:var(--body);font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);border-right:1px solid var(--line);padding-right:.9rem}
-.card-head h2{font-family:var(--disp);font-size:1.4rem;font-weight:600;letter-spacing:-.01em}
-.card-head p{font-size:.84rem;color:var(--mist);margin-top:.15rem}
-.card-body{padding:1.6rem}
-
-/* FORM */
-.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem 1.3rem;margin-bottom:1.4rem}
-@media(max-width:500px){.form-grid{grid-template-columns:1fr}}
-.fg{display:flex;flex-direction:column;gap:.4rem}
-label{font-family:var(--body);font-size:.78rem;font-weight:600;color:var(--ink);letter-spacing:.01em}
-label .hint{font-weight:400;color:var(--mist)}
-.iw{position:relative}
-.ipre,.isuf{position:absolute;top:50%;transform:translateY(-50%);font-size:.95rem;color:var(--mist);font-weight:500;pointer-events:none}
-.ipre{left:1rem}.isuf{right:1rem}
-input,select{width:100%;padding:.8rem 1rem;border:1px solid var(--line);font-family:var(--body);font-size:1rem;font-weight:500;color:var(--ink);background:var(--paper);transition:.15s;appearance:none;border-radius:0}
-input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 0 3px rgba(27,67,50,.1)}
-.has-pre input{padding-left:2rem}.has-suf input{padding-right:2.4rem}
-.sw{position:relative}.sw::after{content:'';position:absolute;right:1.1rem;top:50%;width:7px;height:7px;border-right:2px solid var(--mist);border-bottom:2px solid var(--mist);transform:translateY(-65%) rotate(45deg);pointer-events:none}
-
-/* RESULT PANELS — the editorial figure signature */
-.results{margin-top:1.6rem;display:none}
-.results.show{display:block;animation:fadeUp .4s ease}
-@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
-.th-panel{background:var(--ink);color:var(--paper);padding:2rem;display:flex;justify-content:space-between;align-items:flex-end;gap:1.5rem;margin-bottom:1.4rem}
-.th-label{font-family:var(--body);font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:rgba(255,255,255,.6);margin-bottom:.6rem}
-.th-amount{font-family:var(--disp);font-size:3.4rem;font-weight:600;line-height:.95;letter-spacing:-.03em;color:#fff;border-bottom:3px solid var(--marigold);padding-bottom:.3rem;display:inline-block}
-.th-period{font-size:.82rem;color:rgba(255,255,255,.6);margin-top:.6rem}
-.eff-block{text-align:right;flex-shrink:0}
-.eff-val{font-family:var(--disp);font-size:2rem;font-weight:600;color:var(--marigold);display:block;letter-spacing:-.02em;line-height:1}
-.eff-lbl{font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:rgba(255,255,255,.6)}
-
-/* breakdown blocks */
-.bb{border:1px solid var(--line);margin-bottom:1rem}
-.bb-title{padding:.7rem 1.1rem;font-family:var(--body);font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.14em;background:var(--sand);border-bottom:1px solid var(--line);color:var(--mist)}
-.br{display:flex;justify-content:space-between;align-items:center;padding:.7rem 1.1rem;font-size:.92rem;border-bottom:1px solid var(--line)}
-.br:last-child{border-bottom:none}
-.br .lbl{color:var(--mist)}
-.br .val{font-weight:600;font-variant-numeric:tabular-nums;font-family:var(--body)}
-.val.neg{color:var(--berry)}.val.pos{color:var(--forest)}.val.neu{color:var(--ink)}.val.acc{color:var(--forest)}
-.total-bar{display:flex;justify-content:space-between;align-items:center;padding:1.1rem 1.3rem;background:var(--sand);border:1px solid var(--forest);margin-bottom:1rem}
-.total-bar .lbl{font-family:var(--disp);font-size:1.05rem;font-weight:600;color:var(--forest)}
-.total-bar .val{font-family:var(--disp);font-size:1.3rem;font-weight:700;color:var(--forest);font-variant-numeric:tabular-nums}
-
-/* notes */
-.note{padding:.85rem 1.1rem;font-size:.84rem;line-height:1.6;margin-bottom:.7rem;display:flex;gap:.7rem;border:1px solid var(--line);background:var(--sand)}
-.note.warn{background:#FBF3E0;border-color:#E6D08A;color:#6B5414}
-.note a{color:var(--forest);font-weight:600}
-
-/* tabs */
-.type-tabs,.period-tabs{display:flex;gap:.4rem;margin-bottom:1.4rem;background:var(--sand);padding:.3rem;border:1px solid var(--line)}
-.type-tab,.ptab{flex:1;padding:.6rem;border:none;background:transparent;font-family:var(--body);font-weight:600;font-size:.8rem;color:var(--mist);cursor:pointer;transition:.15s;text-align:center}
-.type-tab.active,.ptab.active{background:var(--ink);color:var(--paper)}
-
-/* SIDEBAR */
-.sidebar{display:flex;flex-direction:column;gap:1.5rem}
-.sc{background:var(--paper);border:1px solid var(--line)}
-.sc-head{padding:.8rem 1.1rem;font-family:var(--body);font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.14em;border-bottom:1px solid var(--line);background:var(--sand);color:var(--mist)}
-.sc-body{padding:1.1rem}
-.tip{display:flex;gap:.7rem;margin-bottom:.85rem;font-size:.84rem;color:var(--mist);line-height:1.55}
-.tip:last-child{margin-bottom:0}
-.tip a{color:var(--forest);font-weight:600}
-.qr{display:flex;justify-content:space-between;font-size:.84rem;padding:.45rem 0;border-bottom:1px solid var(--line);color:var(--mist)}
-.qr:last-child{border-bottom:none}
-.qr strong{color:var(--ink);font-weight:600;font-family:var(--disp)}
-.toc-link{display:block;font-size:.84rem;font-weight:500;color:var(--mist);padding:.4rem 0;border-bottom:1px solid var(--line);transition:color .15s}
-.toc-link:last-child{border-bottom:none}
-.toc-link:hover{color:var(--forest)}
-.related-post{display:block;padding:.75rem 0;border-bottom:1px solid var(--line)}
-.related-post:last-child{border-bottom:none}
-.rp-cat{font-size:.62rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--forest);margin-bottom:.25rem}
-.rp-title{font-family:var(--disp);font-size:.92rem;font-weight:500;color:var(--ink);line-height:1.3}
-.related-post:hover .rp-title{color:var(--forest)}
-
-/* DATA TABLE */
 .data-table{width:100%;border-collapse:collapse;margin:1.2rem 0 1.6rem;font-size:.9rem;border:1px solid var(--line)}
 .data-table thead tr{background:var(--ink)}
 .data-table th{padding:.75rem 1rem;text-align:left;font-family:var(--body);font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--paper)}
@@ -230,9 +142,6 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .data-table tr:nth-child(even) td{background:var(--sand)}
 .data-table td.td-green{color:var(--forest);font-weight:600}
 .data-table td.td-red{color:var(--berry);font-weight:600}
-.data-table td.td-acc{color:var(--forest);font-weight:600}
-
-/* ARTICLE BODY — magazine measure */
 .article-body{padding:2.5rem}
 @media(max-width:600px){.article-body{padding:1.5rem}}
 .article-body h2{font-family:var(--disp);font-size:1.7rem;font-weight:600;color:var(--ink);margin:2.4rem 0 .8rem;letter-spacing:-.01em;line-height:1.15;max-width:30ch}
@@ -244,10 +153,8 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .article-body li{font-family:var(--body);font-size:1.04rem;color:#2C352F;line-height:1.7;margin-bottom:.5rem}
 .article-body a{color:var(--forest);font-weight:500;border-bottom:1px solid var(--marigold)}
 .article-body strong{font-weight:600;color:var(--ink)}
-.callout,.callout.navy,.callout.grey,.callout.green{border:none;border-left:3px solid var(--marigold);background:var(--sand);padding:1.2rem 1.4rem;margin:1.6rem 0;font-family:var(--disp);font-size:1.15rem;font-weight:500;line-height:1.5;color:var(--ink);max-width:64ch}
+.callout{border:none;border-left:3px solid var(--marigold);background:var(--sand);padding:1.2rem 1.4rem;margin:1.6rem 0;font-family:var(--disp);font-size:1.15rem;font-weight:500;line-height:1.5;color:var(--ink);max-width:64ch}
 .callout strong{color:var(--forest)}
-
-/* FOOTER */
 footer{background:var(--ink);color:var(--paper);margin-top:2rem}
 .footer-inner{max-width:1080px;margin:0 auto;padding:2.5rem 2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
 .footer-logo{font-family:var(--disp);font-size:1.5rem;font-weight:900;color:var(--paper)}
@@ -256,33 +163,25 @@ footer{background:var(--ink);color:var(--paper);margin-top:2rem}
 .footer-links a{color:rgba(255,255,255,.7);font-size:.82rem;font-weight:500;transition:color .15s}
 .footer-links a:hover{color:var(--marigold)}
 .footer-copy{color:rgba(255,255,255,.5);font-size:.74rem;width:100%;margin-top:.8rem;padding-top:.9rem;border-top:1px solid rgba(255,255,255,.12)}
+.disclaim-box{font-size:.82rem;color:var(--mist);background:var(--sand);border:1px solid var(--line);padding:.9rem 1.1rem;line-height:1.6}
+.glossary-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem;margin:1.5rem 0}
+.glossary-item{background:var(--sand);border:1px solid var(--line);padding:1.1rem 1.3rem}
+.glossary-term{font-family:var(--disp);font-size:1rem;font-weight:600;color:var(--forest);margin-bottom:.3rem}
+.glossary-def{font-size:.84rem;color:var(--mist);line-height:1.6}
+.worked-example{background:#FAFBF7;border:1px solid var(--line);border-left:4px solid var(--forest);padding:1.5rem 1.8rem;margin:1.8rem 0}
+.worked-example-head{display:flex;align-items:center;gap:.6rem;margin-bottom:1rem}
+.worked-example-tag{font-size:.66rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--forest);background:#EDF3EE;padding:.25rem .6rem;border-radius:2px}
+.worked-example h3{font-family:var(--disp);font-size:1.15rem;font-weight:600;margin-bottom:.3rem}
+.worked-example p{font-size:.9rem;color:var(--mist);line-height:1.6;margin-bottom:.8rem}
 
-/* MISC legacy */
-.scenario-result{background:var(--sand);border:1px solid var(--forest);padding:1.2rem}
-.disclaim,.disclaim-box{font-size:.82rem;color:var(--mist);background:var(--sand);border:1px solid var(--line);padding:.9rem 1.1rem;line-height:1.6}
-.eyebrow{font-family:var(--body);font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);margin-bottom:.5rem}
-
-/* RESPONSIVE */
 @media(max-width:768px){
-  [style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr!important}
-  [style*="grid-template-columns:repeat(3,1fr)"]{grid-template-columns:1fr!important}
-  [style*="grid-template-columns:repeat(4,1fr)"]{grid-template-columns:1fr 1fr!important}
-  [style*="grid-template-columns:2fr 1fr 1fr"]{grid-template-columns:1fr!important}
-  [style*="grid-template-columns:1.1fr 1fr"]{grid-template-columns:1fr!important}
-  [style*="grid-template-columns:1fr 1fr;gap:4rem"]{grid-template-columns:1fr!important;gap:2rem!important}
-  .blog-grid,.data-row,.why-grid{grid-template-columns:1fr!important}
-  .ph{padding:2.5rem 1.25rem 2rem}.section{padding:2.5rem 1.25rem}.layout{padding:1.5rem 1.25rem}
-  .th-panel{flex-direction:column;align-items:flex-start;gap:1rem}.eff-block{text-align:left}
-  .th-amount{font-size:2.6rem}
+  .section{padding:2.5rem 1.25rem}
   .footer-inner{flex-direction:column;text-align:center}.footer-links{justify-content:center}
   .top-bar{padding:.4rem 1rem}.tb-r{display:none}
   .data-table{display:block;overflow-x:auto}
+  .article-body{padding:1.5rem}
 }
-</style>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6108324382808705" crossorigin="anonymous"></script>
-</head>
-<body>
-<style>
+
 .coach-hero{background:var(--black);border-bottom:3px solid var(--accent);padding:3rem 2rem}
 .coach-hero-in{max-width:1200px;margin:0 auto}
 .coach-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(5,150,105,.15);border:1px solid var(--accent);color:var(--accent);font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.4rem .8rem;border-radius:9999px;margin-bottom:1rem}
@@ -293,7 +192,30 @@ footer{background:var(--ink);color:var(--paper);margin-top:2rem}
 @media(max-width:900px){.coach-grid{grid-template-columns:1fr}}
 .coach-input{background:var(--white);border:1px solid var(--g200);border-radius:0;position:sticky;top:78px}
 @media(max-width:900px){.coach-input{position:static}}
-/* score ring */
+.card-head{padding:1.4rem 1.6rem;border-bottom:1px solid var(--g200);display:flex;align-items:center;gap:.9rem}
+.card-cat{font-family:var(--body);font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);border-right:1px solid var(--line);padding-right:.9rem}
+.card-head h2{font-family:var(--disp);font-size:1.4rem;font-weight:600;letter-spacing:-.01em}
+.card-head p{font-size:.84rem;color:var(--mist);margin-top:.15rem}
+.card-body{padding:1.6rem}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem 1.3rem;margin-bottom:1.4rem}
+@media(max-width:500px){.form-grid{grid-template-columns:1fr}}
+.fg{display:flex;flex-direction:column;gap:.4rem}
+label{font-family:var(--body);font-size:.78rem;font-weight:600;color:var(--ink);letter-spacing:.01em}
+.iw{position:relative}
+.ipre{position:absolute;top:50%;transform:translateY(-50%);font-size:.95rem;color:var(--mist);font-weight:500;pointer-events:none;left:1rem}
+input,select{width:100%;padding:.8rem 1rem;border:1px solid var(--line);font-family:var(--body);font-size:1rem;font-weight:500;color:var(--ink);background:var(--paper);transition:.15s;appearance:none;border-radius:0}
+input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 0 3px rgba(27,67,50,.1)}
+.has-pre input{padding-left:2rem}
+.sw{position:relative}.sw::after{content:'';position:absolute;right:1.1rem;top:50%;width:7px;height:7px;border-right:2px solid var(--mist);border-bottom:2px solid var(--mist);transform:translateY(-65%) rotate(45deg);pointer-events:none}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.85rem 1.6rem;font-family:var(--body);font-weight:600;font-size:.9rem;cursor:pointer;border:none;transition:.18s;text-decoration:none;letter-spacing:.01em}
+.btn-accent{background:var(--marigold);color:var(--ink)}
+.btn-accent:hover{background:#eaa523}
+.btn-full{width:100%;justify-content:center}
+.btn:not(.btn-accent){background:var(--ink);color:var(--paper)}
+.btn:not(.btn-accent):hover{background:var(--forest);color:#fff}
+.btn-example{background:var(--forest);color:var(--paper);margin-top:.8rem;border:2px solid var(--forest)}
+.btn-example:hover{background:var(--ink);border-color:var(--ink)}
+.example-badge{display:inline-block;background:var(--marigold);color:var(--ink);font-size:.62rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.2rem .5rem;margin-right:.5rem;border-radius:2px}
 .score-card{background:var(--black);color:#fff;padding:2rem;text-align:center;border-bottom:3px solid var(--accent)}
 .score-ring{width:160px;height:160px;margin:0 auto 1rem;position:relative}
 .score-ring svg{transform:rotate(-90deg)}
@@ -302,7 +224,6 @@ footer{background:var(--ink);color:var(--paper);margin-top:2rem}
 .score-num .o{font-size:.8rem;color:var(--g600);font-weight:600}
 .score-label{font-family:var(--fs);font-size:1.2rem;font-weight:900;letter-spacing:-.02em;margin-bottom:.3rem}
 .score-sub{font-size:.85rem;color:var(--g600)}
-/* metric cards */
 .metric-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--g200);border:1px solid var(--g200);margin-bottom:1.5rem}
 .metric{background:var(--white);padding:1.2rem}
 .metric-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:.4rem}
@@ -315,7 +236,6 @@ footer{background:var(--ink);color:var(--paper);margin-top:2rem}
 .metric-bar{height:6px;background:var(--g200);border-radius:9999px;margin-top:.7rem;overflow:hidden}
 .metric-bar span{display:block;height:100%;border-radius:9999px;transition:width .8s}
 .metric-desc{font-size:.76rem;color:var(--g600);margin-top:.5rem;line-height:1.5}
-/* recommendations */
 .rec{display:flex;gap:.9rem;padding:1.1rem 1.3rem;background:var(--white);border:1px solid var(--g200);border-left:3px solid var(--accent);margin-bottom:.7rem}
 .rec.warn{border-left-color:#f0a23c}
 .rec.crit{border-left-color:#c0001f}
@@ -323,7 +243,6 @@ footer{background:var(--ink);color:var(--paper);margin-top:2rem}
 .rec h4{font-family:var(--fs);font-size:.92rem;font-weight:700;margin-bottom:.25rem}
 .rec p{font-size:.83rem;color:var(--g600);line-height:1.6}
 .rec strong{color:var(--accent);font-weight:700}
-/* premium scenario panel */
 .premium{background:linear-gradient(135deg,var(--navy),var(--black));border:1px solid var(--navy-mid);border-radius:0;padding:0;overflow:hidden;margin-top:1.5rem}
 .premium-h{padding:1.3rem 1.5rem;border-bottom:1px solid var(--navy-mid);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
 .premium-h h3{font-family:var(--fs);font-size:1.1rem;font-weight:900;color:#fff;letter-spacing:-.02em;display:flex;align-items:center;gap:.5rem}
@@ -342,226 +261,912 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;bac
 .scenario-result{background:rgba(5,150,105,.1);border:1px solid var(--accent);padding:1.2rem;margin-top:1rem}
 .scenario-result .big{font-family:var(--fs);font-size:1.8rem;font-weight:900;color:var(--accent);letter-spacing:-.03em;line-height:1;margin-bottom:.3rem}
 .scenario-result .lbl{font-size:.8rem;color:var(--g600)}
-.lock-overlay{text-align:center;padding:1rem}
 .coach-empty{background:var(--white);border:1px dashed var(--g400);padding:3rem 2rem;text-align:center;color:var(--g600)}
 .coach-empty .ico{font-size:2.5rem;margin-bottom:.8rem;opacity:.4}
-.disclaim-box{font-size:.78rem;color:var(--g600);background:var(--off-white);border:1px solid var(--g200);padding:.9rem 1.1rem;margin-top:1.5rem;line-height:1.6}
-</style><div class="sa-stripe"></div><div class="top-bar"><div class="tb-l">🇿🇦 South Africa · AI Financial Coach</div><div class="tb-r">Free health score · <span>Premium simulations</span></div></div><nav>
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6108324382808705" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="sa-stripe"></div>
+
+<div class="top-bar">
+  <div class="tb-l">🇿🇦 South Africa · AI Financial Coach</div>
+  <div class="tb-r">Free health score · <span>Premium simulations</span></div>
+</div>
+
+<nav>
   <a href="/" class="logo"><div class="logo-text">CalcMy<span>Pay</span></div></a>
   <div class="nav-links">
-    <a href="/salary-income">Salary</a><a href="/affordability">Affordability</a><a href="/wealth-building">Wealth</a><a href="/career-intelligence">Careers</a><a href="/money-tools">Tools</a><a href="/blog-salary-guide">Guides</a><a href="/salary-calculator" class="nav-cta">Calculate →</a>
+    <a href="/salary-income">Salary</a>
+    <a href="/affordability">Affordability</a>
+    <a href="/wealth-building">Wealth</a>
+    <a href="/career-intelligence">Careers</a>
+    <a href="/money-tools">Tools</a>
+    <a href="/blog-salary-guide">Guides</a>
+    <a href="/financial-coach" class="active">Coach</a>
+    <a href="/salary-calculator" class="nav-cta">Calculate →</a>
   </div>
-</nav><div class="coach-hero"><div class="coach-hero-in">
-<div class="coach-badge">✦ AI Financial Coach</div>
-<h1>Your money, scored and explained</h1>
-<p>Get a financial health score out of 100, a full breakdown of your savings, debt, safety net and retirement readiness — plus personalised recommendations and scenario simulations. Built for South Africans.</p>
-</div></div><div class="coach-wrap"><div class="coach-grid"><div class="coach-input">
-<div class="card-head" style="border-bottom:1px solid var(--g200)"><div class="card-cat">Coach</div><div><h2>Your details</h2><p>Private — never leaves your device</p></div></div>
-<div class="card-body">
-<div class="form-grid" style="grid-template-columns:1fr 1fr">
-<div class="fg"><label>Age</label><div class="iw"><input type="number" id="age" placeholder="32" min="18" max="90"></div></div>
-<div class="fg"><label>Country</label><div class="sw"><select id="country"><option value="za" selected>South Africa</option><option value="other">Other</option></select></div></div>
+</nav>
+
+<div class="coach-hero">
+  <div class="coach-hero-in">
+    <div class="coach-badge">✦ AI Financial Coach</div>
+    <h1>Your money, scored and explained</h1>
+    <p>Get a financial health score out of 100, a full breakdown of your savings, debt, safety net and retirement readiness — plus personalised recommendations and scenario simulations. Built for South Africans.</p>
+  </div>
 </div>
-<div class="fg"><label>Monthly Income (take-home)</label><div class="iw has-pre"><span class="ipre">R</span><input type="number" id="income" placeholder="35 000" min="0"></div></div>
-<div class="fg"><label>Monthly Expenses</label><div class="iw has-pre"><span class="ipre">R</span><input type="number" id="expenses" placeholder="24 000" min="0"></div></div>
-<div class="fg"><label>Housing Cost (rent/bond, of expenses)</label><div class="iw has-pre"><span class="ipre">R</span><input type="number" id="housing" placeholder="10 000" min="0"></div></div>
-<div class="fg"><label>Total Debt</label><div class="iw has-pre"><span class="ipre">R</span><input type="number" id="debt" placeholder="120 000" min="0"></div></div>
-<div class="fg"><label>Monthly Debt Repayments</label><div class="iw has-pre"><span class="ipre">R</span><input type="number" id="debtpay" placeholder="3 500" min="0"></div></div>
-<div class="fg"><label>Cash Savings</label><div class="iw has-pre"><span class="ipre">R</span><input type="number" id="savings" placeholder="40 000" min="0"></div></div>
-<div class="fg"><label>Investments & Retirement</label><div class="iw has-pre"><span class="ipre">R</span><input type="number" id="invest" placeholder="250 000" min="0"></div></div>
-<div class="fg"><label>Primary Financial Goal</label><div class="sw"><select id="goal"><option value="retire">Retire comfortably</option><option value="debt">Get out of debt</option><option value="house">Buy a house</option><option value="emergency">Build a safety net</option><option value="wealth">Build long-term wealth</option><option value="fire">Financial independence (FIRE)</option></select></div></div>
-<button class="btn btn-full btn-accent" onclick="runCoach()" style="margin-top:.5rem">Analyse my finances →</button>
-<div class="disclaim-box">🔒 Your numbers are processed entirely in your browser. Nothing is sent to any server or stored. This is educational guidance, not regulated financial advice.</div>
-</div></div><div><div id="coach-out">
-<div class="coach-empty"><div class="ico">🧭</div><h3 style="font-family:var(--fs);font-weight:900;color:var(--navy);margin-bottom:.4rem">Your financial coach is ready</h3><p style="max-width:42ch;margin:0 auto">Fill in your details and get a financial health score, a full breakdown, personalised recommendations and premium scenario simulations.</p></div>
-</div></div></div></div><div class="section" style="padding-top:0" data-articles="1"><div class="section-header"><div class="section-title">Learn more <span>/</span> Guides</div></div><div class="tools-grid"><a href="/blog-financial-health-score-explained" class="tool-card featured" style="border-top-color:var(--navy)"><div class="tc-cat">Guide</div><h3>What is a Financial Health Score?</h3><span class="tc-link">Read guide →</span></a></div></div><div class="section" style="padding-top:0"><div style="background:var(--white);border:1px solid var(--g200);border-top:3px solid var(--navy);padding:2rem 2.2rem"><div class="article-body" style="padding:0"><h2 style="margin-top:0">How the AI Financial Coach actually works</h2><h2>A rules-based coach, built on real financial planning principles</h2><p>This tool analyses your income, expenses, debt and savings against widely-used financial planning benchmarks — the same guidelines used by financial advisers — to produce a health score and specific recommendations. It is not a generic chatbot; every number and suggestion it gives is calculated directly from what you enter.</p><h2>The four pillars behind your score</h2><ul><li><strong>Savings rate</strong> — how much of your income you are keeping and putting to work, benchmarked against the widely recommended 15% target.</li><li><strong>Debt burden</strong> — how much of your income is committed to servicing debt, and whether that leaves room for anything else.</li><li><strong>Emergency fund</strong> — how many months of expenses you could cover if your income stopped tomorrow.</li><li><strong>Retirement readiness</strong> — whether your current trajectory is realistically on track for the retirement you want.</li></ul><h2>What makes the recommendations specific to you</h2><p>Rather than generic advice like "save more" or "spend less", the coach calculates exact figures — how much more to save, what your emergency fund target actually is in rands, what a specific change would do to your position — based on the numbers you provide, processed entirely in your browser.</p><h2>Your privacy while using this tool</h2><p>None of the financial details you enter here are transmitted to or stored on any server. The analysis happens locally on your device and disappears when you close or refresh the page.</p></div></div></div>
-<div class="sa-stripe"></div>
-<div class="section"><div style="background:var(--white);border:1px solid var(--line);border-top:3px solid var(--forest)"><div class="article-body"><h2>Why a single score can meaningfully represent complex finances</h2><p>Financial health involves many moving parts — income, spending, debt, savings, and long-term planning — which can feel overwhelming to assess individually. A composite score, built from the metrics that matter most, gives you a fast, honest read on your overall position, similar to how a credit score condenses complex repayment history into a single usable number.</p><h2>What genuinely drives the score, and why</h2><table class="data-table"><thead><tr><th>Factor</th><th>Why it is weighted the way it is</th></tr></thead><tbody><tr><td>Savings rate</td><td>The clearest predictor of long-term financial security, regardless of income level</td></tr><tr><td>Debt-to-income ratio</td><td>High debt service costs constrain every other financial decision</td></tr><tr><td>Emergency fund coverage</td><td>Determines resilience to unexpected shocks without derailing progress</td></tr><tr><td>Retirement trajectory</td><td>Reflects whether current habits are sustainable over a full working life</td></tr></tbody></table><h2>Why the same score can mean different things for different people</h2><p>A moderate score for someone in their twenties, just beginning to build financial habits, represents a very different situation than the same score for someone approaching retirement age. Context matters — use the score as a snapshot of your current trajectory, and revisit it periodically to track whether your trajectory is improving.</p><h2>The value of the scenario simulator specifically</h2><p>The most actionable part of this tool is not the score itself, but seeing concretely how a specific, achievable change — an extra R500/month in savings, a small increase in retirement contribution — shifts your outlook. Abstract advice to "save more" rarely motivates action; seeing the calculated effect of a specific number often does.</p><h2>What this tool intentionally does not do</h2><p>This coach provides educational analysis based on the numbers you enter, using established financial planning principles — it does not access your actual accounts, provide regulated financial advice, or replace a conversation with a qualified financial adviser for complex situations like estate planning, tax structuring, or investment product selection.</p><h2>Making the most of your results</h2><p>Revisit this tool every few months as your situation changes, and use it alongside our specific calculators for deeper analysis — the <a href="/retirement-calculator">retirement calculator</a> for long-term projections, or the <a href="/debt-repayment">debt repayment calculator</a> if debt is holding your score back.</p></div></div></div>
 
-<footer><div class="footer-inner">
-  <div class="footer-logo">CalcMy<span>Pay</span></div>
-  <div class="footer-links"><a href="/salary-income">Salary</a><a href="/affordability">Affordability</a><a href="/wealth-building">Wealth</a><a href="/money-tools">Tools</a><a href="/financial-coach">Coach</a><a href="/blog-salary-guide">Guides</a><a href="/about">About</a><a href="/privacy-policy">Privacy</a><a href="/contact">Contact</a></div>
-  <div class="footer-copy">© 2026 CalcMyPay · Understand your salary. Plan your money. Build your future. · For informational purposes only · Not affiliated with SARS · SARS 2027 tax year</div>
-</div></footer>
+<div class="coach-wrap">
+  <div class="coach-grid">
+    <div class="coach-input">
+      <div class="card-head">
+        <div class="card-cat">Coach</div>
+        <div>
+          <h2>Your details</h2>
+          <p>Private — never leaves your device</p>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="form-grid">
+          <div class="fg">
+            <label>Age</label>
+            <div class="iw"><input type="number" id="age" placeholder="32" min="18" max="90"></div>
+          </div>
+          <div class="fg">
+            <label>Country</label>
+            <div class="sw">
+              <select id="country">
+                <option value="za" selected>South Africa</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="fg">
+          <label>Monthly Income (take-home)</label>
+          <div class="iw has-pre"><span class="ipre">R</span><input type="number" id="income" placeholder="35000" min="0"></div>
+        </div>
+        <div class="fg">
+          <label>Monthly Expenses</label>
+          <div class="iw has-pre"><span class="ipre">R</span><input type="number" id="expenses" placeholder="24000" min="0"></div>
+        </div>
+        <div class="fg">
+          <label>Housing Cost (rent/bond, of expenses)</label>
+          <div class="iw has-pre"><span class="ipre">R</span><input type="number" id="housing" placeholder="10000" min="0"></div>
+        </div>
+        <div class="fg">
+          <label>Total Debt</label>
+          <div class="iw has-pre"><span class="ipre">R</span><input type="number" id="debt" placeholder="120000" min="0"></div>
+        </div>
+        <div class="fg">
+          <label>Monthly Debt Repayments</label>
+          <div class="iw has-pre"><span class="ipre">R</span><input type="number" id="debtpay" placeholder="3500" min="0"></div>
+        </div>
+        <div class="fg">
+          <label>Cash Savings</label>
+          <div class="iw has-pre"><span class="ipre">R</span><input type="number" id="savings" placeholder="40000" min="0"></div>
+        </div>
+        <div class="fg">
+          <label>Investments & Retirement</label>
+          <div class="iw has-pre"><span class="ipre">R</span><input type="number" id="invest" placeholder="250000" min="0"></div>
+        </div>
+        <div class="fg">
+          <label>Primary Financial Goal</label>
+          <div class="sw">
+            <select id="goal">
+              <option value="retire">Retire comfortably</option>
+              <option value="debt">Get out of debt</option>
+              <option value="house">Buy a house</option>
+              <option value="emergency">Build a safety net</option>
+              <option value="wealth">Build long-term wealth</option>
+              <option value="fire">Financial independence (FIRE)</option>
+            </select>
+          </div>
+        </div>
+        <button type="button" class="btn btn-full btn-accent" onclick="runCoach()" style="margin-top:.5rem">Analyse my finances →</button>
+        <button type="button" class="btn btn-full btn-example" onclick="loadExample()"><span class="example-badge">Example</span>Try sample: Age 32, R35k income</button>
+        <div class="disclaim-box">🔒 Your numbers are processed entirely in your browser. Nothing is sent to any server or stored. This is educational guidance, not regulated financial advice.</div>
+      </div>
+    </div>
+
+    <div>
+      <div id="coach-out">
+        <div class="coach-empty">
+          <div class="ico">🧭</div>
+          <h3 style="font-family:var(--fs);font-weight:900;color:var(--navy);margin-bottom:.4rem">Your financial coach is ready</h3>
+          <p style="max-width:42ch;margin:0 auto">Fill in your details and get a financial health score, a full breakdown, personalised recommendations and premium scenario simulations.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="padding-top:0">
+  <div class="section-header">
+    <div class="section-title">Related <span>/</span> Financial Tools</div>
+  </div>
+  <div class="tools-grid">
+    <a href="/salary-calculator" class="tool-card featured">
+      <div class="tc-cat">Salary & Income</div>
+      <h3>Salary After Tax Calculator</h3>
+      <span class="tc-link">Open →</span>
+    </a>
+    <a href="/retirement-calculator" class="tool-card featured">
+      <div class="tc-cat">Retirement</div>
+      <h3>Retirement Calculator</h3>
+      <span class="tc-link">Open →</span>
+    </a>
+    <a href="/emergency-fund" class="tool-card featured">
+      <div class="tc-cat">Safety Net</div>
+      <h3>Emergency Fund Calculator</h3>
+      <span class="tc-link">Open →</span>
+    </a>
+    <a href="/compound-interest" class="tool-card featured">
+      <div class="tc-cat">Wealth</div>
+      <h3>Compound Interest Calculator</h3>
+      <span class="tc-link">Open →</span>
+    </a>
+    <a href="/home-affordability" class="tool-card featured">
+      <div class="tc-cat">Property</div>
+      <h3>Home Affordability Calculator</h3>
+      <span class="tc-link">Open →</span>
+    </a>
+    <a href="/fire-calculator" class="tool-card featured">
+      <div class="tc-cat">FIRE</div>
+      <h3>Financial Independence Calculator</h3>
+      <span class="tc-link">Open →</span>
+    </a>
+  </div>
+</div>
+
+<div class="section">
+  <div style="background:var(--white);border:1px solid var(--line);border-top:3px solid var(--forest)">
+    <div class="article-body">
+
+      <h2>Understanding your financial health score</h2>
+      <p>Financial health involves many moving parts — income, spending, debt, savings, and long-term planning — which can feel overwhelming to assess individually. Just as a medical check-up gives you key vital signs (blood pressure, cholesterol, heart rate) to understand your physical health, a financial health score condenses your money situation into a single meaningful number you can track over time.</p>
+
+      <p>This AI Financial Coach analyses your finances against established financial planning benchmarks — the same guidelines used by certified financial planners — to produce a score out of 100 and specific, actionable recommendations. All calculations happen entirely in your browser; no data is ever transmitted or stored.</p>
+
+      <h2>The four pillars of financial health</h2>
+      <p>Your financial health score is built on four equally important pillars, each weighted according to its predictive power for long-term financial security.</p>
+
+      <h3>Pillar 1: Savings Rate (30% of score)</h3>
+      <p>Your savings rate measures what percentage of your income you're keeping and putting to work, rather than spending. This is calculated as (income - expenses) ÷ income × 100.</p>
+
+      <ul>
+        <li><strong>Below 0%:</strong> You're spending more than you earn — a critical situation requiring immediate action</li>
+        <li><strong>0-10%:</strong> Below the recommended minimum; building wealth will be very slow</li>
+        <li><strong>10-15%:</strong> Acceptable but below the planner-recommended target</li>
+        <li><strong>15-20%:</strong> Strong — meeting or exceeding the recommended 15% benchmark</li>
+        <li><strong>20%+:</strong> Excellent — on track for early financial independence</li>
+      </ul>
+
+      <p>The 15% benchmark comes from decades of financial planning research. It includes all forms of saving: retirement contributions, investments, cash savings, and even debt repayment (since paying down debt builds net worth).</p>
+
+      <h3>Pillar 2: Debt Burden (25% of score)</h3>
+      <p>Your debt-to-income ratio measures how much of your monthly income goes to debt repayments. High debt service costs constrain every other financial decision and leave you vulnerable to income disruptions.</p>
+
+      <ul>
+        <li><strong>0-20%:</strong> Healthy — debt is manageable and doesn't constrain your finances</li>
+        <li><strong>20-36%:</strong> Manageable but should be reduced; leaves limited room for savings</li>
+        <li><strong>36%+:</strong> High — above the guideline used by most lenders; risky if income drops</li>
+        <li><strong>50%+:</strong> Critical — debt payments consume half your income</li>
+      </ul>
+
+      <p>The 36% threshold is widely used by South African banks when assessing bond applications. Above this level, you're considered over-indebted by most financial standards.</p>
+
+      <h3>Pillar 3: Emergency Fund (20% of score)</h3>
+      <p>Your emergency fund measures how many months of expenses you could cover if your income stopped tomorrow. This is calculated as total cash savings ÷ monthly expenses.</p>
+
+      <ul>
+        <li><strong>0-1 month:</strong> At risk — any unexpected expense or income disruption creates a crisis</li>
+        <li><strong>1-3 months:</strong> Below minimum — you have a small buffer but it's inadequate</li>
+        <li><strong>3-6 months:</strong> Good — you have the recommended minimum safety net</li>
+        <li><strong>6+ months:</strong> Excellent — strong protection, especially important for freelancers</li>
+      </ul>
+
+      <p>The 3-month minimum is based on typical job-search duration in South Africa. Self-employed people and freelancers should target 6-12 months due to income volatility.</p>
+
+      <h3>Pillar 4: Retirement Readiness (25% of score)</h3>
+      <p>Your retirement readiness compares your current investments and retirement savings against an age-based benchmark. This uses the "multiples of salary" approach popularised by Fidelity and adapted for South African conditions.</p>
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Age</th>
+            <th>Target Multiple</th>
+            <th>Example: R500k Salary</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Under 30</td><td>0.5x</td><td>R250,000</td></tr>
+          <tr><td>30-34</td><td>1x</td><td>R500,000</td></tr>
+          <tr><td>35-39</td><td>2x</td><td>R1,000,000</td></tr>
+          <tr><td>40-44</td><td>3x</td><td>R1,500,000</td></tr>
+          <tr><td>45-49</td><td>4x</td><td>R2,000,000</td></tr>
+          <tr><td>50-54</td><td>6x</td><td>R3,000,000</td></tr>
+          <tr><td>55-59</td><td>7x</td><td>R3,500,000</td></tr>
+          <tr><td>60+</td><td>8x</td><td>R4,000,000</td></tr>
+        </tbody>
+      </table>
+
+      <p>These targets assume retirement at 65 with a replacement ratio of approximately 75% of final salary. If you plan to retire earlier or maintain a more expensive lifestyle, you'll need higher multiples.</p>
+
+      <div class="worked-example">
+        <div class="worked-example-head">
+          <span class="worked-example-tag">Worked Example</span>
+          <h3>Profile: 35-year-old professional in Johannesburg</h3>
+        </div>
+        <p>Let's walk through a realistic scenario: Thandi is 35, earns R35,000 take-home per month, spends R24,000 monthly (including R10,000 rent), has R120,000 in debt with R3,500 monthly repayments, R40,000 in cash savings, and R250,000 in retirement investments.</p>
+
+        <p><strong>Pillar 1 — Savings Rate:</strong></p>
+        <ul>
+          <li>(R35,000 - R24,000) ÷ R35,000 = 31.4%</li>
+          <li>Score: 100/100 (well above 15% target)</li>
+        </ul>
+
+        <p><strong>Pillar 2 — Debt Burden:</strong></p>
+        <ul>
+          <li>R3,500 ÷ R35,000 = 10%</li>
+          <li>Score: 75/100 (healthy, well below 36% guideline)</li>
+        </ul>
+
+        <p><strong>Pillar 3 — Emergency Fund:</strong></p>
+        <ul>
+          <li>R40,000 ÷ R24,000 = 1.7 months</li>
+          <li>Score: 28/100 (below 3-month minimum)</li>
+        </ul>
+
+        <p><strong>Pillar 4 — Retirement Readiness:</strong></p>
+        <ul>
+          <li>Target at age 35: 2x annual salary = R840,000</li>
+          <li>Current: R250,000 ÷ R840,000 = 29.8%</li>
+          <li>Score: 30/100 (behind age-based benchmark)</li>
+        </ul>
+
+        <p><strong>Overall Score:</strong></p>
+        <ul>
+          <li>(100 × 0.30) + (75 × 0.25) + (28 × 0.20) + (30 × 0.25) = 30 + 18.75 + 5.6 + 7.5 = <strong>62/100</strong></li>
+          <li>Rating: <strong>Strong</strong> — good savings rate and debt management, but emergency fund and retirement need attention</li>
+        </ul>
+      </div>
+
+      <h2>Common financial profiles and their scores</h2>
+      <p>Understanding how different financial situations translate into scores helps you benchmark yourself against common profiles.</p>
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Profile</th>
+            <th>Typical Score</th>
+            <th>Key Characteristics</th>
+            <th>Priority Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Recent Graduate</strong><br>(Age 23, starting career)</td>
+            <td>45-55</td>
+            <td>Low savings, student debt, small emergency fund</td>
+            <td>Build emergency fund before investing</td>
+          </tr>
+          <tr>
+            <td><strong>Young Professional</strong><br>(Age 28, established)</td>
+            <td>55-70</td>
+            <td>Growing income, some debt, building savings</td>
+            <td>Maximize retirement contributions</td>
+          </tr>
+          <tr>
+            <td><strong>Family Builder</strong><br>(Age 35, young family)</td>
+            <td>50-65</td>
+            <td>Mortgage, school costs, stretched budget</td>
+            <td>Automate savings, reduce discretionary spend</td>
+          </tr>
+          <tr>
+            <td><strong>Peak Earner</strong><br>(Age 45, senior role)</td>
+            <td>65-80</td>
+            <td>High income, significant investments, debt declining</td>
+            <td>Catch up on retirement if behind</td>
+          </tr>
+          <tr>
+            <td><strong>Pre-Retirement</strong><br>(Age 58, winding down)</td>
+            <td>70-85</td>
+            <td>Large investment portfolio, low debt, high savings rate</td>
+            <td>Tax-efficient drawdown planning</td>
+          </tr>
+          <tr>
+            <td><strong>Over-indebted</strong><br>(Any age, high debt)</td>
+            <td>20-40</td>
+            <td>Debt >40% of income, minimal savings</td>
+            <td>Aggressive debt payoff, freeze new credit</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>How to improve your score: Priority actions</h2>
+      <p>Not all improvements are equal. Here's the most effective sequence to raise your financial health score, based on impact and feasibility.</p>
+
+      <h3>Phase 1: Stop the bleeding (0-3 months)</h3>
+      <p>If your score is below 50, start here:</p>
+      <ul>
+        <li><strong>Track every rand:</strong> Use an app or spreadsheet to see where your money actually goes for one full month</li>
+        <li><strong>Cut discretionary spending by 20%:</strong> Eating out, subscriptions, entertainment — these are the fastest to reduce</li>
+        <li><strong>Stop taking on new debt:</strong> Freeze credit cards, don't finance new purchases</li>
+        <li><strong>Build R5,000 emergency buffer:</strong> Even a small cash reserve prevents small emergencies from becoming debt</li>
+      </ul>
+
+      <h3>Phase 2: Build the foundation (3-12 months)</h3>
+      <p>Once spending is under control:</p>
+      <ul>
+        <li><strong>Reach 3 months emergency fund:</strong> Keep this in a high-interest savings account (money market or TFG account)</li>
+        <li><strong>Attack high-interest debt:</strong> Focus extra payments on credit cards and personal loans (>15% interest)</li>
+        <li><strong>Start retirement contributions:</strong> Even 5% of income gets you started and builds the habit</li>
+        <li><strong>Get basic insurance:</strong> Life, disability, and income protection if you have dependents</li>
+      </ul>
+
+      <h3>Phase 3: Grow and optimize (1-5 years)</h3>
+      <p>With the foundation solid:</p>
+      <ul>
+        <li><strong>Reach 6 months emergency fund:</strong> Especially important if self-employed or in volatile industry</li>
+        <li><strong>Maximize retirement contributions:</strong> Aim for 15% of income; use RA for tax deduction up to 27.5%</li>
+        <li><strong>Pay off all "bad" debt:</strong> Credit cards, personal loans, car finance (keep only mortgage if affordable)</li>
+        <li><strong>Start investing beyond retirement:</strong> Tax-free savings account (R36,000/year limit), then ETFs</li>
+      </ul>
+
+      <h3>Phase 4: Accelerate and optimize (5+ years)</h3>
+      <p>For high scores seeking excellence:</p>
+      <ul>
+        <li><strong>Save 20%+ of income:</strong> This is the FIRE (Financial Independence, Retire Early) path</li>
+        <li><strong>Diversify investments:</strong> Local and international equities, property, alternative assets</li>
+        <li><strong>Tax optimization:</strong> Maximize TFSA, use RA deduction, structure capital gains efficiently</li>
+        <li><strong>Estate planning:</strong> Will, trust if needed, beneficiary nominations updated</li>
+      </ul>
+
+      <h2>Age-specific financial benchmarks</h2>
+      <p>Your financial priorities shift as you move through life. Here are age-appropriate targets for South Africans.</p>
+
+      <h3>Age 20-29: Building habits</h3>
+      <ul>
+        <li><strong>Primary focus:</strong> Establish good habits, avoid lifestyle inflation</li>
+        <li><strong>Emergency fund:</strong> 3 months of expenses</li>
+        <li><strong>Debt:</strong> Pay off student loans; avoid consumer debt</li>
+        <li><strong>Retirement:</strong> Start contributing even small amounts — time is your biggest asset</li>
+        <li><strong>Investing:</strong> Open a TFSA; learn about ETFs and index funds</li>
+      </ul>
+
+      <h3>Age 30-39: Building wealth</h3>
+      <ul>
+        <li><strong>Primary focus:</strong> Maximize earnings, accelerate savings, manage family costs</li>
+        <li><strong>Emergency fund:</strong> 3-6 months (6 if single income household)</li>
+        <li><strong>Debt:</strong> Mortgage OK if affordable (<30% of income); eliminate consumer debt</li>
+        <li><strong>Retirement:</strong> 15%+ of income; aim for 1-2x salary saved by 35</li>
+        <li><strong>Insurance:</strong> Life cover if dependents; income protection; disability</li>
+      </ul>
+
+      <h3>Age 40-49: Peak accumulation</h3>
+      <ul>
+        <li><strong>Primary focus:</strong> Catch up if behind; maximize peak earning years</li>
+        <li><strong>Emergency fund:</strong> 6 months (job market tougher at this age)</li>
+        <li><strong>Debt:</strong> Aggressively pay down mortgage; no consumer debt</li>
+        <li><strong>Retirement:</strong> 20%+ if behind target; max out RA deduction</li>
+        <li><strong>Investing:</strong> Diversify beyond retirement; consider property investment</li>
+      </ul>
+
+      <h3>Age 50-59: Pre-retirement</h3>
+      <ul>
+        <li><strong>Primary focus:</strong> Final push; reduce risk; plan drawdown</li>
+        <li><strong>Emergency fund:</strong> 6-12 months (employment options narrow)</li>
+        <li><strong>Debt:</strong> Aim to be debt-free by retirement; mortgage paid off ideal</li>
+        <li><strong>Retirement:</strong> 6-8x salary saved; consider catch-up contributions</li>
+        <li><strong>Planning:</strong> Model retirement income; decide retirement age; plan medical aid</li>
+      </ul>
+
+      <h3>Age 60+: Retirement</h3>
+      <ul>
+        <li><strong>Primary focus:</strong> Preserve capital; generate sustainable income</li>
+        <li><strong>Withdrawal rate:</strong> 4% rule or less to make savings last 30+ years</li>
+        <li><strong>Investments:</strong> Shift to income-producing; reduce equity exposure gradually</li>
+        <li><strong>Estate:</strong> Update will; consider living annuity vs guaranteed annuity</li>
+        <li><strong>Tax:</strong> Use primary residence exclusion; manage CGT efficiently</li>
+      </ul>
+
+      <h2>The scenario simulator: Testing your financial future</h2>
+      <p>The most powerful feature of this coach is the scenario simulator. Rather than giving abstract advice like "save more," it shows you exactly how specific changes reshape your future.</p>
+
+      <h3>Why scenarios beat advice</h3>
+      <p>Research in behavioural economics consistently shows that abstract advice ("you should save more") rarely changes behaviour. But seeing a specific, calculated outcome ("if I save R500 more per month, I'll have R847,000 extra at retirement") creates the concrete motivation needed to act.</p>
+
+      <p>The simulator uses compound interest calculations at a conservative 10% annual return (roughly the long-term average for a balanced equity fund in South Africa) to project the impact of changes over time.</p>
+
+      <h3>The three scenarios explained</h3>
+
+      <p><strong>Save More Scenario:</strong> Shows how much additional wealth you'd accumulate at age 65 if you increased your monthly savings by a specific amount. This is the most powerful scenario because it demonstrates the exponential power of compound interest over long periods.</p>
+
+      <p><strong>Retire Later Scenario:</strong> Shows the impact of working additional years before retiring. Each extra year has a double benefit: you contribute more to your retirement fund, AND your existing savings compound for longer. This scenario often surprises people with how powerful even 2-3 extra years can be.</p>
+
+      <p><strong>Extra Debt Payment Scenario:</strong> Shows how additional debt payments accelerate your payoff date and save interest. At typical South African interest rates (15-20% for credit cards, 10-13% for personal loans), every extra rand paid saves you more than you'd earn in most investments.</p>
+
+      <h2>Common mistakes that lower your financial health score</h2>
+      <p>These are the most frequent errors South Africans make that unnecessarily damage their financial health.</p>
+
+      <h3>1. Lifestyle inflation</h3>
+      <p>Every time you get a raise, you upgrade your car, move to a bigger house, or eat out more. Your expenses rise to match your income, and your savings rate stays flat. The solution: commit to saving at least 50% of every raise.</p>
+
+      <h3>2. Ignoring retirement until "later"</h3>
+      <p>The most expensive mistake in personal finance. Starting at 25 vs 35 can literally double your retirement wealth due to compound interest. Even small contributions in your 20s are worth more than large contributions in your 40s.</p>
+
+      <h3>3. Carrying credit card debt</h3>
+      <p>At 20%+ interest, credit card debt is a wealth destroyer. The interest compounds against you just as powerfully as investments compound for you. Pay these off before any other financial goal.</p>
+
+      <h3>4. No emergency fund</h3>
+      <p>Without a cash buffer, every unexpected expense (car breakdown, medical bill, retrenchment) becomes debt. This creates a vicious cycle where debt payments consume the money you'd otherwise save.</p>
+
+      <h3>5. Over-insuring or under-insuring</h3>
+      <p>Some South Africans pay for expensive whole-life or investment-linked insurance they don't need. Others have no cover and one tragedy wipes out their family's financial security. Get term life and disability if you have dependents; skip the fancy investment products.</p>
+
+      <h3>6. Chasing hot investments</h3>
+      <p>Buying what's gone up recently (crypto, specific stocks, property in trendy areas) and selling what's gone down is a proven way to lose money. Stick to diversified, low-cost index funds for long-term wealth building.</p>
+
+      <h3>7. Not using tax-advantaged accounts</h3>
+      <p>South Africans leave billions in tax savings on the table every year by not maximizing their TFSA (R36,000/year) and RA deductions (27.5% of income). These are the easiest "returns" you'll ever get.</p>
+
+      <h3>8. Ignoring your financial health</h3>
+      <p>Many people avoid looking at their finances because it's stressful. But you can't improve what you don't measure. Check your financial health score quarterly, just like you'd check your weight or blood pressure.</p>
+
+      <h2>How to use this tool effectively</h2>
+
+      <h3>Quarterly check-ins</h3>
+      <p>Run the coach every 3 months to track your progress. Your score should gradually increase as you implement the recommendations. If it stalls, you've identified where to focus next.</p>
+
+      <h3>Before major decisions</h3>
+      <p>Use the tool before big financial decisions: Should I buy this house? Can I afford this car? Should I change jobs? See how each scenario affects your overall financial health.</p>
+
+      <h3>Goal setting</h3>
+      <p>Set a target score (e.g., "I want to reach 75 by December") and work backward to the specific actions needed. This is more motivating than vague goals like "save more."</p>
+
+      <h3>Partner discussions</h3>
+      <p>If you share finances with a partner, run the coach together. It provides an objective, numbers-based starting point for money conversations that can otherwise become emotional.</p>
+
+      <h2>Glossary: Financial health terms explained</h2>
+      <div class="glossary-grid">
+        <div class="glossary-item">
+          <div class="glossary-term">Savings Rate</div>
+          <div class="glossary-def">The percentage of your income you save or invest rather than spend. Calculated as (income - expenses) ÷ income × 100.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">Debt-to-Income Ratio</div>
+          <div class="glossary-def">Monthly debt repayments as a percentage of monthly income. Below 20% is healthy; above 36% is considered over-indebted.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">Emergency Fund</div>
+          <div class="glossary-def">Cash savings equal to 3-6 months of essential expenses, kept in an accessible account for unexpected events.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">Compound Interest</div>
+          <div class="glossary-def">Interest earned on both your initial investment and previously earned interest. The primary engine of long-term wealth building.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">Replacement Ratio</div>
+          <div class="glossary-def">The percentage of your pre-retirement income you'll need in retirement. Typically 70-80% for most South Africans.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">FIRE</div>
+          <div class="glossary-def">Financial Independence, Retire Early. A movement focused on saving aggressively (often 50%+ of income) to retire decades early.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">TFSA</div>
+          <div class="glossary-def">Tax-Free Savings Account. South African account where investment growth and withdrawals are tax-free. Limited to R36,000/year.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">RA</div>
+          <div class="glossary-def">Retirement Annuity. Tax-deductible retirement savings vehicle. Contributions deductible up to 27.5% of income (R430,000 cap).</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">Lifestyle Inflation</div>
+          <div class="glossary-def">The tendency to increase spending as income rises, preventing savings rate from improving despite higher earnings.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">Net Worth</div>
+          <div class="glossary-def">Total assets minus total liabilities. The ultimate measure of financial progress, tracked over time.</div>
+        </div>
+      </div>
+
+      <h2>Frequently asked questions</h2>
+
+      <h3>What is a financial health score?</h3>
+      <p>A financial health score rates your overall money situation out of 100 based on four pillars: savings rate, debt burden, emergency fund coverage, and retirement readiness. It gives you a single number to track your financial progress over time.</p>
+
+      <h3>How is my financial health score calculated?</h3>
+      <p>The score combines four factors with different weights: savings rate (30%), debt burden (25%), emergency fund (20%), and retirement readiness (25%). Each factor is scored out of 100 using established financial planning benchmarks, then weighted and combined into your overall score.</p>
+
+      <h3>What is a good savings rate in South Africa?</h3>
+      <p>Financial planners generally recommend saving at least 15% of your gross income. Saving 20% or more puts you in a strong position. This includes retirement contributions and any other savings, not just cash in the bank.</p>
+
+      <h3>How many months of expenses should I have in my emergency fund?</h3>
+      <p>Aim for at least 3 months of essential expenses as a minimum. The ideal is 6 months, especially if your income is variable or you work freelance. Self-employed people should target 6-12 months due to income volatility.</p>
+
+      <h3>What is a healthy debt-to-income ratio?</h3>
+      <p>A debt-to-income ratio below 20% is considered healthy. Between 20-36% is manageable but should be reduced. Above 36% is considered high and leaves little room for savings or unexpected expenses. This is the threshold most South African banks use when assessing bond applications.</p>
+
+      <h3>How much should I have saved for retirement by age 40?</h3>
+      <p>A common benchmark is having 2-3 times your annual salary saved for retirement by age 40. By age 50, aim for 4-6 times your annual salary. These are guidelines, not strict rules — your specific target depends on your desired retirement lifestyle and planned retirement age.</p>
+
+      <h3>Is my financial data safe with this tool?</h3>
+      <p>Yes. All calculations happen entirely in your browser using JavaScript. No financial data is sent to any server, stored in any database, or shared with any third party. Your numbers disappear when you close or refresh the page.</p>
+
+      <h3>What's the difference between a financial coach and a financial adviser?</h3>
+      <p>A financial coach provides educational guidance and tools to help you understand and improve your finances. A registered financial adviser (FSCA-regulated in South Africa) can provide specific product recommendations and regulated advice. Use this tool for education and tracking; consult a registered adviser for complex situations like estate planning or specific investment product selection.</p>
+
+      <h3>Why does my score seem low even though I earn well?</h3>
+      <p>Income level doesn't directly affect your score — only how you manage that income. A high earner spending everything they make will score lower than a moderate earner saving 20%. The score measures financial behaviours and outcomes, not income level.</p>
+
+      <h3>How often should I check my financial health score?</h3>
+      <p>Quarterly (every 3 months) is ideal for most people. This gives you enough time to implement changes and see progress, without obsessing over daily fluctuations. Check more frequently (monthly) when you're actively working to improve a specific area.</p>
+
+      <h3>Can I use this tool if I'm self-employed?</h3>
+      <p>Yes. Enter your average monthly take-home income (after business expenses and taxes) and your personal expenses. Self-employed people should target a higher emergency fund (6-12 months) due to income volatility, which the coach's recommendations will reflect.</p>
+
+      <h3>Does this tool replace a financial adviser?</h3>
+      <p>No. This tool provides educational analysis based on general financial planning principles. For personalised advice on specific products, tax structuring, estate planning, or complex situations, consult a registered financial adviser (FSCA-regulated in South Africa).</p>
+
+      <div class="disclaim-box">
+        <strong>Disclaimer:</strong> This analysis is for educational purposes only and is not regulated financial advice. Benchmarks are general guidelines adapted for South African conditions. Individual circumstances vary significantly. For advice specific to your situation, consult a registered financial adviser with the Financial Sector Conduct Authority (FSCA). CalcMyPay is not affiliated with the FSCA or any financial services provider.
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">CalcMy<span>Pay</span></div>
+    <div class="footer-links">
+      <a href="/salary-income">Salary</a>
+      <a href="/affordability">Affordability</a>
+      <a href="/wealth-building">Wealth</a>
+      <a href="/money-tools">Tools</a>
+      <a href="/financial-coach">Coach</a>
+      <a href="/blog-salary-guide">Guides</a>
+      <a href="/about">About</a>
+      <a href="/privacy-policy">Privacy</a>
+      <a href="/contact">Contact</a>
+    </div>
+    <div class="footer-copy">
+      © 2026 CalcMyPay · Understand your salary. Plan your money. Build your future. · For informational purposes only · Not affiliated with FSCA or any financial services provider
+    </div>
+  </div>
+</footer>
+
 <script>
-const fmt=n=>'R\u00a0'+Math.round(Math.abs(n)).toLocaleString('en-ZA');
-function fmtK(n){n=Math.round(n);if(Math.abs(n)>=1e6)return 'R\u00a0'+(n/1e6).toFixed(2)+'m';if(Math.abs(n)>=1e3)return 'R\u00a0'+Math.round(n/1e3).toLocaleString('en-ZA')+'k';return fmt(n);}
-let COACH=null;
+const fmt = n => 'R\u00a0' + Math.round(Math.abs(n)).toLocaleString('en-ZA');
 
-function val(id){return parseFloat(document.getElementById(id).value)||0;}
-
-function runCoach(){
- const age=val('age'), income=val('income'), expenses=val('expenses'), housing=val('housing'),
-       debt=val('debt'), debtpay=val('debtpay'), savings=val('savings'), invest=val('invest');
- const goal=document.getElementById('goal').value;
- if(income<=0){alert('Please enter your monthly income.');return;}
- if(age<=0){alert('Please enter your age.');return;}
-
- // ---- Core metrics ----
- const surplus=income-expenses;
- const savingsRate=income>0?(surplus/income*100):0;
- const housingRate=income>0?(housing/income*100):0;
- const debtToIncome=income>0?(debtpay/income*100):0;       // monthly debt service ratio
- const emergencyMonths=expenses>0?(savings/expenses):0;
- // retirement readiness: target = age-based multiple of annual income (Fidelity-style, adapted)
- const annualIncome=income*12;
- const targetMult = age<30?0.5 : age<35?1 : age<40?2 : age<45?3 : age<50?4 : age<55?6 : age<60?7 : 8;
- const retireTarget=annualIncome*targetMult;
- const retireRatio=retireTarget>0?(invest/retireTarget):0;
-
- // ---- Sub-scores (each out of 100) ----
- // savings rate: 0% ->0, 15%->75, 20%+ ->100
- let sSave=Math.max(0,Math.min(100, savingsRate/20*100));
- // debt: DTI 0% ->100, 20%->60, 40%+ ->0
- let sDebt=Math.max(0,Math.min(100,100-(debtToIncome/40*100)));
- // emergency: 0 months ->0, 3 ->60, 6+ ->100
- let sEmer=Math.max(0,Math.min(100, emergencyMonths/6*100));
- // retirement: ratio 0->0, 1.0+->100
- let sRet=Math.max(0,Math.min(100, retireRatio*100));
-
- // weighted total
- const score=Math.round(sSave*0.30 + sDebt*0.25 + sEmer*0.20 + sRet*0.25);
-
- COACH={age,income,expenses,housing,debt,debtpay,savings,invest,goal,surplus,savingsRate,housingRate,debtToIncome,emergencyMonths,retireTarget,retireRatio,annualIncome,score,sSave,sDebt,sEmer,sRet};
-
- render();
+function fmtK(n) {
+  n = Math.round(n);
+  if (Math.abs(n) >= 1e6) return 'R\u00a0' + (n / 1e6).toFixed(2) + 'm';
+  if (Math.abs(n) >= 1e3) return 'R\u00a0' + Math.round(n / 1e3).toLocaleString('en-ZA') + 'k';
+  return fmt(n);
 }
 
-function band(score){
- if(score>=80)return['Excellent','#059669','You are in great financial shape'];
- if(score>=65)return['Strong','#059669','You are doing well with room to optimise'];
- if(score>=50)return['Fair','#92400e','A solid base with key areas to improve'];
- if(score>=35)return['Needs work','#c0001f','Several areas need attention'];
- return['At risk','#c0001f','Your finances need urgent focus'];
-}
-function pill(s){if(s>=70)return['pill-good','Good'];if(s>=45)return['pill-ok','OK'];return['pill-bad','Low'];}
-function barColor(s){return s>=70?'#059669':s>=45?'#f0a23c':'#c0001f';}
+let COACH = null;
 
-function metricCard(name,valStr,score,desc){
- const[pc,pl]=pill(score);
- return `<div class="metric"><div class="metric-top"><span class="metric-name">${name}</span><span class="metric-pill ${pc}">${pl}</span></div><div class="metric-val">${valStr}</div><div class="metric-bar"><span style="width:${Math.round(score)}%;background:${barColor(score)}"></span></div><div class="metric-desc">${desc}</div></div>`;
-}
+function val(id) { return parseFloat(document.getElementById(id).value) || 0; }
 
-function recommendations(c){
- let recs=[];
- // savings rate
- if(c.savingsRate<0){recs.push(['crit','🚨','You are spending more than you earn',`You are running a monthly shortfall of <strong>${fmt(Math.abs(c.surplus))}</strong>. This is the most urgent thing to fix — review your largest expenses, starting with housing and debt, before anything else.`]);}
- else if(c.savingsRate<15){const better=c.income*0.15;recs.push(['warn','💰',`You are saving ${c.savingsRate.toFixed(0)}% of your income`,`Financial planners recommend at least <strong>15%</strong>. Increasing your saving to ${fmt(better)}/month (R${Math.round(c.income*0.15-c.surplus).toLocaleString('en-ZA')} more) would meaningfully improve your retirement outcome.`]);}
- else {recs.push(['','✅',`Strong savings rate of ${c.savingsRate.toFixed(0)}%`,`You are saving above the recommended 15%. Make sure this money is working for you in <a href="/wealth-building">investments</a> rather than sitting in low-interest accounts.`]);}
- // housing
- if(c.housingRate>30){recs.push(['warn','🏠',`Housing is ${c.housingRate.toFixed(0)}% of your income`,`That is above the recommended <strong>30%</strong> ceiling. High housing costs squeeze everything else. If you can't reduce it now, prioritise growing your income or avoid adding other fixed costs.`]);}
- else if(c.housing>0){recs.push(['','✅',`Housing is a healthy ${c.housingRate.toFixed(0)}% of income`,`You are within the recommended 30% guideline, which leaves room to save and invest.`]);}
- // debt
- if(c.debtToIncome>36){recs.push(['crit','⛓️',`Debt repayments are ${c.debtToIncome.toFixed(0)}% of income`,`This is a heavy debt load (above the 36% guideline). Use our <a href="/debt-repayment">debt repayment tool</a> to build a payoff plan — focus extra payments on your highest-interest debt first.`]);}
- else if(c.debtToIncome>20){recs.push(['warn','⛓️',`Debt takes ${c.debtToIncome.toFixed(0)}% of your income`,`Manageable but worth reducing. Clearing debt is a guaranteed return equal to your interest rate — often better than investing.`]);}
- // emergency fund
- if(c.emergencyMonths<3){const need=c.expenses*3-c.savings;recs.push(['warn','🛟',`Emergency fund covers ${c.emergencyMonths.toFixed(1)} months`,`Aim for at least <strong>3 months</strong> of expenses. You need about ${fmt(Math.max(0,need))} more. Build this before investing aggressively — see our <a href="/emergency-fund">emergency fund tool</a>.`]);}
- else if(c.emergencyMonths<6){recs.push(['','🛟',`Emergency fund covers ${c.emergencyMonths.toFixed(1)} months`,`Good progress. Topping up to 6 months gives you a stronger buffer, especially important if your income is variable.`]);}
- else {recs.push(['','✅',`Solid ${c.emergencyMonths.toFixed(0)}-month emergency fund`,`You have a strong safety net. Any cash beyond 6 months could work harder in <a href="/wealth-building">investments</a>.`]);}
- // retirement
- if(c.retireRatio<0.5){recs.push(['warn','📈','Retirement savings are behind target',`For your age, a useful benchmark is around <strong>${fmtK(c.retireTarget)}</strong> invested. You're at ${fmtK(c.invest)}. A <a href="/blog-retirement-annuity-sa">retirement annuity</a> boosts this and cuts your tax. Time is your biggest ally — increase contributions now.`]);}
- else if(c.retireRatio<1){recs.push(['','📈','Retirement savings are on their way',`You're at about ${(c.retireRatio*100).toFixed(0)}% of a healthy age-based target. Keep contributing consistently and let compounding do the work.`]);}
- else {recs.push(['','✅','Retirement savings are on track',`You're at or above the age-based benchmark. Stay the course and review annually.`]);}
- // goal-specific
- const goalMsg={
-   retire:'Your goal is a comfortable retirement. Maximise your retirement annuity (deductible up to 27.5% of income) and use our <a href="/retirement-calculator">retirement calculator</a> to check you are on track.',
-   debt:'Your goal is getting out of debt. Channel any surplus into your highest-interest debt and use the <a href="/debt-repayment">debt repayment tool</a> to set a target date.',
-   house:'Your goal is buying a house. Focus on your deposit and check what you can afford with our <a href="/home-affordability">home affordability tool</a>. A bigger deposit means a smaller bond.',
-   emergency:'Your goal is a safety net. Prioritise filling your emergency fund to 3–6 months before investing — see the <a href="/emergency-fund">emergency fund tool</a>.',
-   wealth:'Your goal is long-term wealth. With your safety net in place, invest consistently — compound growth is the engine. See our <a href="/compound-interest">compound interest tool</a>.',
-   fire:'Your goal is financial independence. Your savings rate is everything here — the higher it is, the sooner you reach FIRE. Check your number with our <a href="/fire-calculator">FIRE calculator</a>.'
- };
- recs.push(['','🎯','Your goal: '+document.getElementById('goal').options[document.getElementById('goal').selectedIndex].text,goalMsg[c.goal]]);
- return recs;
+function loadExample() {
+  document.getElementById('age').value = 32;
+  document.getElementById('income').value = 35000;
+  document.getElementById('expenses').value = 24000;
+  document.getElementById('housing').value = 10000;
+  document.getElementById('debt').value = 120000;
+  document.getElementById('debtpay').value = 3500;
+  document.getElementById('savings').value = 40000;
+  document.getElementById('invest').value = 250000;
+  document.getElementById('goal').value = 'retire';
+  runCoach();
 }
 
-function render(){
- const c=COACH;
- const[lbl,col,sub]=band(c.score);
- const circ=2*Math.PI*70;
- const off=circ*(1-c.score/100);
- let html='';
- // SCORE RING
- html+=`<div class="score-card">
- <div class="score-ring"><svg width="160" height="160"><circle cx="80" cy="80" r="70" fill="none" stroke="#1a2942" stroke-width="12"/><circle cx="80" cy="80" r="70" fill="none" stroke="${col}" stroke-width="12" stroke-linecap="round" stroke-dasharray="${circ}" stroke-dashoffset="${off}"/></svg>
- <div class="score-num"><span class="n">${c.score}</span><span class="o">out of 100</span></div></div>
- <div class="score-label" style="color:${col}">${lbl}</div>
- <div class="score-sub">${sub}</div></div>`;
- // METRICS
- html+='<div style="background:var(--white);border:1px solid var(--g200);border-top:none;padding:1.5rem">';
- html+='<div class="section-title" style="margin-bottom:1rem">Your financial breakdown</div>';
- html+='<div class="metric-grid">';
- html+=metricCard('Savings Rate',c.savingsRate.toFixed(0)+'%',c.sSave,c.savingsRate>=15?'At or above the recommended 15%.':'Below the recommended 15% of income.');
- html+=metricCard('Debt Burden',c.debtToIncome.toFixed(0)+'%',c.sDebt,c.debtToIncome<=20?'Healthy debt-to-income ratio.':c.debtToIncome<=36?'Manageable but worth reducing.':'High — above the 36% guideline.');
- html+=metricCard('Emergency Fund',c.emergencyMonths.toFixed(1)+' mo',c.sEmer,c.emergencyMonths>=6?'Strong safety net of 6+ months.':c.emergencyMonths>=3?'Decent buffer; aim for 6 months.':'Below the 3-month minimum.');
- html+=metricCard('Retirement',Math.round(c.retireRatio*100)+'%',c.sRet,c.retireRatio>=1?'On track for your age.':'Behind the age-based benchmark.');
- html+='</div></div>';
- // RECOMMENDATIONS
- html+='<div style="background:var(--white);border:1px solid var(--g200);border-top:none;padding:1.5rem">';
- html+='<div class="section-title" style="margin-bottom:1rem">Your personalised recommendations</div>';
- recommendations(c).forEach(r=>{const[type,ic,h,p]=r;html+=`<div class="rec ${type}"><div class="rec-ic">${ic}</div><div><h4>${h}</h4><p>${p}</p></div></div>`;});
- html+='</div>';
- // PREMIUM SCENARIOS
- html+=premiumPanel(c);
- html+='<div class="disclaim-box" style="margin-top:1.5rem">This analysis is for educational purposes and is not regulated financial advice. Benchmarks are general guidelines adapted for South Africa. For advice specific to your situation, consult a registered financial adviser.</div>';
- document.getElementById('coach-out').innerHTML=html;
- document.getElementById('coach-out').scrollIntoView({behavior:'smooth',block:'start'});
+function runCoach() {
+  const age = val('age'), income = val('income'), expenses = val('expenses'), housing = val('housing'),
+        debt = val('debt'), debtpay = val('debtpay'), savings = val('savings'), invest = val('invest');
+  const goal = document.getElementById('goal').value;
+
+  if (income <= 0) { alert('Please enter your monthly income.'); return; }
+  if (age <= 0) { alert('Please enter your age.'); return; }
+
+  // Core metrics
+  const surplus = income - expenses;
+  const savingsRate = income > 0 ? (surplus / income * 100) : 0;
+  const housingRate = income > 0 ? (housing / income * 100) : 0;
+  const debtToIncome = income > 0 ? (debtpay / income * 100) : 0;
+  const emergencyMonths = expenses > 0 ? (savings / expenses) : 0;
+
+  // Retirement readiness
+  const annualIncome = income * 12;
+  const targetMult = age < 30 ? 0.5 : age < 35 ? 1 : age < 40 ? 2 : age < 45 ? 3 : age < 50 ? 4 : age < 55 ? 6 : age < 60 ? 7 : 8;
+  const retireTarget = annualIncome * targetMult;
+  const retireRatio = retireTarget > 0 ? (invest / retireTarget) : 0;
+
+  // Sub-scores (each out of 100)
+  let sSave = Math.max(0, Math.min(100, savingsRate / 20 * 100));
+  let sDebt = Math.max(0, Math.min(100, 100 - (debtToIncome / 40 * 100)));
+  let sEmer = Math.max(0, Math.min(100, emergencyMonths / 6 * 100));
+  let sRet = Math.max(0, Math.min(100, retireRatio * 100));
+
+  // Weighted total
+  const score = Math.round(sSave * 0.30 + sDebt * 0.25 + sEmer * 0.20 + sRet * 0.25);
+
+  COACH = { age, income, expenses, housing, debt, debtpay, savings, invest, goal, surplus, savingsRate, housingRate, debtToIncome, emergencyMonths, retireTarget, retireRatio, annualIncome, score, sSave, sDebt, sEmer, sRet };
+
+  render();
 }
 
-function premiumPanel(c){
- return `<div class="premium">
- <div class="premium-h"><h3>✦ Scenario Simulator <span class="premium-tag">Premium</span></h3></div>
- <div class="premium-b">
- <p style="color:var(--g600);font-size:.85rem;margin-bottom:1.2rem">See how small changes today reshape your future. Drag the sliders.</p>
- <div class="scenario-tabs">
-   <button class="scenario-tab on" onclick="scen('save',this)">Save more</button>
-   <button class="scenario-tab" onclick="scen('retire',this)">Retire later</button>
-   <button class="scenario-tab" onclick="scen('debt',this)">Extra debt payment</button>
- </div>
- <div id="scenario-area"></div>
- </div></div>`;
+function band(score) {
+  if (score >= 80) return ['Excellent', '#059669', 'You are in great financial shape'];
+  if (score >= 65) return ['Strong', '#059669', 'You are doing well with room to optimise'];
+  if (score >= 50) return ['Fair', '#92400e', 'A solid base with key areas to improve'];
+  if (score >= 35) return ['Needs work', '#c0001f', 'Several areas need attention'];
+  return ['At risk', '#c0001f', 'Your finances need urgent focus'];
 }
 
-let scenMode='save';
-function scen(mode,btn){scenMode=mode;document.querySelectorAll('.scenario-tab').forEach(t=>t.classList.remove('on'));btn.classList.add('on');drawScen();}
-function drawScen(){
- const c=COACH;const a=document.getElementById('scenario-area');
- if(scenMode=='save'){
-   a.innerHTML=`<div class="scenario-control"><label>Extra savings per month</label><output id="so">R 500</output></div><input type="range" min="0" max="5000" step="100" value="500" oninput="calcScen(this.value)"><div id="scen-out"></div>`;
-   calcScen(500);
- } else if(scenMode=='retire'){
-   a.innerHTML=`<div class="scenario-control"><label>Extra years before retiring</label><output id="so">5 years</output></div><input type="range" min="0" max="15" step="1" value="5" oninput="calcScen(this.value)"><div id="scen-out"></div>`;
-   calcScen(5);
- } else {
-   a.innerHTML=`<div class="scenario-control"><label>Extra debt payment per month</label><output id="so">R 500</output></div><input type="range" min="0" max="5000" step="100" value="500" oninput="calcScen(this.value)"><div id="scen-out"></div>`;
-   calcScen(500);
- }
+function pill(s) {
+  if (s >= 70) return ['pill-good', 'Good'];
+  if (s >= 45) return ['pill-ok', 'OK'];
+  return ['pill-bad', 'Low'];
 }
-function calcScen(v){
- v=parseFloat(v);const c=COACH;const out=document.getElementById('scen-out');
- const yearsToRetire=Math.max(1,65-c.age);const r=0.10/12;
- if(scenMode=='save'){
-   document.getElementById('so').textContent='R '+v.toLocaleString('en-ZA');
-   const n=yearsToRetire*12;
-   const fv= r===0? v*n : v*((Math.pow(1+r,n)-1)/r);
-   out.innerHTML=`<div class="scenario-result"><div class="big">+${fmtK(fv)}</div><div class="lbl">extra at retirement (age 65) from saving ${fmt(v)} more per month, at ~10% annual growth over ${yearsToRetire} years.</div></div>`;
- } else if(scenMode=='retire'){
-   document.getElementById('so').textContent=v+(v==1?' year':' years');
-   const baseN=yearsToRetire*12, newN=(yearsToRetire+v)*12;
-   const monthly=Math.max(c.surplus,500);
-   const fvBase=monthly*((Math.pow(1+r,baseN)-1)/r)+c.invest*Math.pow(1+r,baseN);
-   const fvNew=monthly*((Math.pow(1+r,newN)-1)/r)+c.invest*Math.pow(1+r,newN);
-   out.innerHTML=`<div class="scenario-result"><div class="big">+${fmtK(fvNew-fvBase)}</div><div class="lbl">extra in your retirement pot by working ${v} more year${v==1?'':'s'} — your money compounds for longer and you contribute more.</div></div>`;
- } else {
-   document.getElementById('so').textContent='R '+v.toLocaleString('en-ZA');
-   if(c.debt<=0||c.debtpay<=0){out.innerHTML=`<div class="scenario-result"><div class="big">No debt 🎉</div><div class="lbl">You have no debt to accelerate — channel this into investing instead.</div></div>`;return;}
-   const rate=0.18/12;
-   function payoff(pay){let b=c.debt,m=0,i=0;if(pay<=b*rate)return null;while(b>0&&m<600){const ii=b*rate;i+=ii;b=b+ii-pay;m++;}return{m,i};}
-   const base=payoff(c.debtpay), imp=payoff(c.debtpay+v);
-   if(!base){out.innerHTML=`<div class="scenario-result"><div class="lbl">Your current payment barely covers interest — even small extra payments help enormously.</div></div>`;return;}
-   const monthsSaved=base.m-imp.m, intSaved=base.i-imp.i;
-   out.innerHTML=`<div class="scenario-result"><div class="big">${monthsSaved} months sooner</div><div class="lbl">debt-free, saving ${fmt(intSaved)} in interest by paying ${fmt(v)} extra per month (assuming ~18% rate).</div></div>`;
- }
+
+function barColor(s) {
+  return s >= 70 ? '#059669' : s >= 45 ? '#f0a23c' : '#c0001f';
 }
-document.addEventListener('keydown',e=>{if(e.key=='Enter'&&document.getElementById('income'))runCoach();});
-</script></body></html>
+
+function metricCard(name, valStr, score, desc) {
+  const [pc, pl] = pill(score);
+  return `<div class="metric">
+    <div class="metric-top">
+      <span class="metric-name">${name}</span>
+      <span class="metric-pill ${pc}">${pl}</span>
+    </div>
+    <div class="metric-val">${valStr}</div>
+    <div class="metric-bar"><span style="width:${Math.round(score)}%;background:${barColor(score)}"></span></div>
+    <div class="metric-desc">${desc}</div>
+  </div>`;
+}
+
+function recommendations(c) {
+  let recs = [];
+
+  // Savings rate
+  if (c.savingsRate < 0) {
+    recs.push(['crit', '🚨', 'You are spending more than you earn',
+      `You are running a monthly shortfall of <strong>${fmt(Math.abs(c.surplus))}</strong>. This is the most urgent thing to fix — review your largest expenses, starting with housing and debt, before anything else.`]);
+  } else if (c.savingsRate < 15) {
+    const better = c.income * 0.15;
+    recs.push(['warn', '💰', `You are saving ${c.savingsRate.toFixed(0)}% of your income`,
+      `Financial planners recommend at least <strong>15%</strong>. Increasing your saving to ${fmt(better)}/month (R${Math.round(c.income * 0.15 - c.surplus).toLocaleString('en-ZA')} more) would meaningfully improve your retirement outcome.`]);
+  } else {
+    recs.push(['', '✅', `Strong savings rate of ${c.savingsRate.toFixed(0)}%`,
+      `You are saving above the recommended 15%. Make sure this money is working for you in <a href="/wealth-building">investments</a> rather than sitting in low-interest accounts.`]);
+  }
+
+  // Housing
+  if (c.housingRate > 30) {
+    recs.push(['warn', '🏠', `Housing is ${c.housingRate.toFixed(0)}% of your income`,
+      `That is above the recommended <strong>30%</strong> ceiling. High housing costs squeeze everything else. If you can't reduce it now, prioritise growing your income or avoid adding other fixed costs.`]);
+  } else if (c.housing > 0) {
+    recs.push(['', '✅', `Housing is a healthy ${c.housingRate.toFixed(0)}% of income`,
+      `You are within the recommended 30% guideline, which leaves room to save and invest.`]);
+  }
+
+  // Debt
+  if (c.debtToIncome > 36) {
+    recs.push(['crit', '⛓️', `Debt repayments are ${c.debtToIncome.toFixed(0)}% of income`,
+      `This is a heavy debt load (above the 36% guideline). Use our <a href="/debt-repayment">debt repayment tool</a> to build a payoff plan — focus extra payments on your highest-interest debt first.`]);
+  } else if (c.debtToIncome > 20) {
+    recs.push(['warn', '⛓️', `Debt takes ${c.debtToIncome.toFixed(0)}% of your income`,
+      `Manageable but worth reducing. Clearing debt is a guaranteed return equal to your interest rate — often better than investing.`]);
+  }
+
+  // Emergency fund
+  if (c.emergencyMonths < 3) {
+    const need = c.expenses * 3 - c.savings;
+    recs.push(['warn', '🛟', `Emergency fund covers ${c.emergencyMonths.toFixed(1)} months`,
+      `Aim for at least <strong>3 months</strong> of expenses. You need about ${fmt(Math.max(0, need))} more. Build this before investing aggressively — see our <a href="/emergency-fund">emergency fund tool</a>.`]);
+  } else if (c.emergencyMonths < 6) {
+    recs.push(['', '🛟', `Emergency fund covers ${c.emergencyMonths.toFixed(1)} months`,
+      `Good progress. Topping up to 6 months gives you a stronger buffer, especially important if your income is variable.`]);
+  } else {
+    recs.push(['', '✅', `Solid ${c.emergencyMonths.toFixed(0)}-month emergency fund`,
+      `You have a strong safety net. Any cash beyond 6 months could work harder in <a href="/wealth-building">investments</a>.`]);
+  }
+
+  // Retirement
+  if (c.retireRatio < 0.5) {
+    recs.push(['warn', '📈', 'Retirement savings are behind target',
+      `For your age, a useful benchmark is around <strong>${fmtK(c.retireTarget)}</strong> invested. You're at ${fmtK(c.invest)}. A <a href="/retirement-calculator">retirement annuity</a> boosts this and cuts your tax. Time is your biggest ally — increase contributions now.`]);
+  } else if (c.retireRatio < 1) {
+    recs.push(['', '📈', 'Retirement savings are on their way',
+      `You're at about ${(c.retireRatio * 100).toFixed(0)}% of a healthy age-based target. Keep contributing consistently and let compounding do the work.`]);
+  } else {
+    recs.push(['', '✅', 'Retirement savings are on track',
+      `You're at or above the age-based benchmark. Stay the course and review annually.`]);
+  }
+
+  // Goal-specific
+  const goalMsg = {
+    retire: 'Your goal is a comfortable retirement. Maximise your retirement annuity (deductible up to 27.5% of income) and use our <a href="/retirement-calculator">retirement calculator</a> to check you are on track.',
+    debt: 'Your goal is getting out of debt. Channel any surplus into your highest-interest debt and use the <a href="/debt-repayment">debt repayment tool</a> to set a target date.',
+    house: 'Your goal is buying a house. Focus on your deposit and check what you can afford with our <a href="/home-affordability">home affordability tool</a>. A bigger deposit means a smaller bond.',
+    emergency: 'Your goal is a safety net. Prioritise filling your emergency fund to 3–6 months before investing — see the <a href="/emergency-fund">emergency fund tool</a>.',
+    wealth: 'Your goal is long-term wealth. With your safety net in place, invest consistently — compound growth is the engine. See our <a href="/compound-interest">compound interest tool</a>.',
+    fire: 'Your goal is financial independence. Your savings rate is everything here — the higher it is, the sooner you reach FIRE. Check your number with our <a href="/fire-calculator">FIRE calculator</a>.'
+  };
+  recs.push(['', '🎯', 'Your goal: ' + document.getElementById('goal').options[document.getElementById('goal').selectedIndex].text, goalMsg[c.goal]]);
+
+  return recs;
+}
+
+function render() {
+  const c = COACH;
+  const [lbl, col, sub] = band(c.score);
+  const circ = 2 * Math.PI * 70;
+  const off = circ * (1 - c.score / 100);
+  let html = '';
+
+  // SCORE RING
+  html += `<div class="score-card">
+    <div class="score-ring">
+      <svg width="160" height="160">
+        <circle cx="80" cy="80" r="70" fill="none" stroke="#1a2942" stroke-width="12"/>
+        <circle cx="80" cy="80" r="70" fill="none" stroke="${col}" stroke-width="12" stroke-linecap="round" stroke-dasharray="${circ}" stroke-dashoffset="${off}"/>
+      </svg>
+      <div class="score-num">
+        <span class="n">${c.score}</span>
+        <span class="o">out of 100</span>
+      </div>
+    </div>
+    <div class="score-label" style="color:${col}">${lbl}</div>
+    <div class="score-sub">${sub}</div>
+  </div>`;
+
+  // METRICS
+  html += '<div style="background:var(--white);border:1px solid var(--g200);border-top:none;padding:1.5rem">';
+  html += '<div class="section-title" style="margin-bottom:1rem">Your financial breakdown</div>';
+  html += '<div class="metric-grid">';
+  html += metricCard('Savings Rate', c.savingsRate.toFixed(0) + '%', c.sSave, c.savingsRate >= 15 ? 'At or above the recommended 15%.' : 'Below the recommended 15% of income.');
+  html += metricCard('Debt Burden', c.debtToIncome.toFixed(0) + '%', c.sDebt, c.debtToIncome <= 20 ? 'Healthy debt-to-income ratio.' : c.debtToIncome <= 36 ? 'Manageable but worth reducing.' : 'High — above the 36% guideline.');
+  html += metricCard('Emergency Fund', c.emergencyMonths.toFixed(1) + ' mo', c.sEmer, c.emergencyMonths >= 6 ? 'Strong safety net of 6+ months.' : c.emergencyMonths >= 3 ? 'Decent buffer; aim for 6 months.' : 'Below the 3-month minimum.');
+  html += metricCard('Retirement', Math.round(c.retireRatio * 100) + '%', c.sRet, c.retireRatio >= 1 ? 'On track for your age.' : 'Behind the age-based benchmark.');
+  html += '</div></div>';
+
+  // RECOMMENDATIONS
+  html += '<div style="background:var(--white);border:1px solid var(--g200);border-top:none;padding:1.5rem">';
+  html += '<div class="section-title" style="margin-bottom:1rem">Your personalised recommendations</div>';
+  recommendations(c).forEach(r => {
+    const [type, ic, h, p] = r;
+    html += `<div class="rec ${type}"><div class="rec-ic">${ic}</div><div><h4>${h}</h4><p>${p}</p></div></div>`;
+  });
+  html += '</div>';
+
+  // PREMIUM SCENARIOS
+  html += premiumPanel(c);
+
+  html += '<div class="disclaim-box" style="margin-top:1.5rem">This analysis is for educational purposes and is not regulated financial advice. Benchmarks are general guidelines adapted for South Africa. For advice specific to your situation, consult a registered financial adviser.</div>';
+
+  document.getElementById('coach-out').innerHTML = html;
+
+  // FIXED: Call drawScen() after render to initialize scenario panel
+  drawScen();
+
+  document.getElementById('coach-out').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function premiumPanel(c) {
+  return `<div class="premium">
+    <div class="premium-h">
+      <h3>✦ Scenario Simulator <span class="premium-tag">Premium</span></h3>
+    </div>
+    <div class="premium-b">
+      <p style="color:var(--g600);font-size:.85rem;margin-bottom:1.2rem">See how small changes today reshape your future. Drag the sliders.</p>
+      <div class="scenario-tabs">
+        <button class="scenario-tab on" onclick="scen('save',this)">Save more</button>
+        <button class="scenario-tab" onclick="scen('retire',this)">Retire later</button>
+        <button class="scenario-tab" onclick="scen('debt',this)">Extra debt payment</button>
+      </div>
+      <div id="scenario-area"></div>
+    </div>
+  </div>`;
+}
+
+let scenMode = 'save';
+
+function scen(mode, btn) {
+  scenMode = mode;
+  document.querySelectorAll('.scenario-tab').forEach(t => t.classList.remove('on'));
+  btn.classList.add('on');
+  drawScen();
+}
+
+function drawScen() {
+  const c = COACH;
+  const a = document.getElementById('scenario-area');
+  if (!a) return; // Safety check if scenario area not yet rendered
+
+  if (scenMode === 'save') {
+    a.innerHTML = `<div class="scenario-control"><label>Extra savings per month</label><output id="so">R 500</output></div><input type="range" min="0" max="5000" step="100" value="500" oninput="calcScen(this.value)"><div id="scen-out"></div>`;
+    calcScen(500);
+  } else if (scenMode === 'retire') {
+    a.innerHTML = `<div class="scenario-control"><label>Extra years before retiring</label><output id="so">5 years</output></div><input type="range" min="0" max="15" step="1" value="5" oninput="calcScen(this.value)"><div id="scen-out"></div>`;
+    calcScen(5);
+  } else {
+    a.innerHTML = `<div class="scenario-control"><label>Extra debt payment per month</label><output id="so">R 500</output></div><input type="range" min="0" max="5000" step="100" value="500" oninput="calcScen(this.value)"><div id="scen-out"></div>`;
+    calcScen(500);
+  }
+}
+
+function calcScen(v) {
+  v = parseFloat(v);
+  const c = COACH;
+  const out = document.getElementById('scen-out');
+  if (!out) return;
+
+  const yearsToRetire = Math.max(1, 65 - c.age);
+  const r = 0.10 / 12;
+
+  if (scenMode === 'save') {
+    document.getElementById('so').textContent = 'R ' + v.toLocaleString('en-ZA');
+    const n = yearsToRetire * 12;
+    const fv = r === 0 ? v * n : v * ((Math.pow(1 + r, n) - 1) / r);
+    out.innerHTML = `<div class="scenario-result"><div class="big">+${fmtK(fv)}</div><div class="lbl">extra at retirement (age 65) from saving ${fmt(v)} more per month, at ~10% annual growth over ${yearsToRetire} years.</div></div>`;
+  } else if (scenMode === 'retire') {
+    document.getElementById('so').textContent = v + (v == 1 ? ' year' : ' years');
+    const baseN = yearsToRetire * 12, newN = (yearsToRetire + v) * 12;
+    const monthly = Math.max(c.surplus, 500);
+    const fvBase = monthly * ((Math.pow(1 + r, baseN) - 1) / r) + c.invest * Math.pow(1 + r, baseN);
+    const fvNew = monthly * ((Math.pow(1 + r, newN) - 1) / r) + c.invest * Math.pow(1 + r, newN);
+    out.innerHTML = `<div class="scenario-result"><div class="big">+${fmtK(fvNew - fvBase)}</div><div class="lbl">extra in your retirement pot by working ${v} more year${v == 1 ? '' : 's'} — your money compounds for longer and you contribute more.</div></div>`;
+  } else {
+    document.getElementById('so').textContent = 'R ' + v.toLocaleString('en-ZA');
+    if (c.debt <= 0 || c.debtpay <= 0) {
+      out.innerHTML = `<div class="scenario-result"><div class="big">No debt 🎉</div><div class="lbl">You have no debt to accelerate — channel this into investing instead.</div></div>`;
+      return;
+    }
+    const rate = 0.18 / 12;
+    function payoff(pay) {
+      let b = c.debt, m = 0, i = 0;
+      if (pay <= b * rate) return null;
+      while (b > 0 && m < 600) {
+        const ii = b * rate;
+        i += ii;
+        b = b + ii - pay;
+        m++;
+      }
+      return { m, i };
+    }
+    const base = payoff(c.debtpay), imp = payoff(c.debtpay + v);
+    if (!base) {
+      out.innerHTML = `<div class="scenario-result"><div class="lbl">Your current payment barely covers interest — even small extra payments help enormously.</div></div>`;
+      return;
+    }
+    if (!imp) {
+      out.innerHTML = `<div class="scenario-result"><div class="lbl">The extra payment still doesn't cover interest — increase it further to see payoff acceleration.</div></div>`;
+      return;
+    }
+    const monthsSaved = base.m - imp.m, intSaved = base.i - imp.i;
+    out.innerHTML = `<div class="scenario-result"><div class="big">${monthsSaved} months sooner</div><div class="lbl">debt-free, saving ${fmt(intSaved)} in interest by paying ${fmt(v)} extra per month (assuming ~18% rate).</div></div>`;
+  }
+}
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Enter' && document.getElementById('income')) runCoach();
+});
+
+// Auto-load example for first-time visitors
+window.addEventListener('load', function() {
+  if (!sessionStorage.getItem('coachVisited')) {
+    setTimeout(loadExample, 500);
+    sessionStorage.setItem('coachVisited', 'true');
+  }
+});
+</script>
+
+</body>
+</html>
