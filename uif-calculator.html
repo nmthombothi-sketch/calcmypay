@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="color-scheme" content="light"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>UIF Benefit Calculator South Africa 2026 | CalcMyPay</title>
-<meta name="description" content="Calculate your UIF benefit if retrenched or on maternity leave in South Africa. Free 2026 UIF calculator based on current Department of Labour figures.">
+<meta name="description" content="Calculate your UIF benefit if retrenched or on maternity leave in South Africa. Free 2026 UIF calculator based on current Department of Labour figures with IRR formula.">
 <meta name="google-adsense-account" content="ca-pub-6108324382808705">
 <link rel="canonical" href="https://calcmypay.co.za/uif-calculator">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -12,14 +13,103 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/icon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/icon-16.png">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>/* CalcMyPay — Editorial "Ink & Marigold" =================================== */
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How is the UIF benefit calculated in South Africa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "UIF benefits use an Income Replacement Rate (IRR) formula between 38% and 60% of your salary — lower earners receive a higher percentage. Benefits are based on salary capped at R17,712 per month (R212,544 per year)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long can I claim UIF for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can claim UIF for up to 238 days (34 weeks) for retrenchment or illness, and up to 121 days (17 weeks) for maternity, depending on your accumulated credit days. You earn 1 credit day for every 4 days worked while contributing to UIF."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the UIF earnings ceiling for 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The UIF earnings ceiling is R17,712 per month (R212,544 per year). If you earn more than this, your UIF contributions and benefits are calculated on R17,712 only. The maximum monthly contribution is R177.12 (1% of R17,712)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much UIF will I get if I earn R20,000 per month?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If you earn R20,000 per month, your UIF benefit is calculated on the ceiling of R17,712 (not your full salary). With 4+ years of contributions, you could receive approximately R6,731 per month for up to 238 days (about R53,400 total)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I claim UIF if I resign from my job?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. You cannot claim UIF if you voluntarily resign. UIF benefits are only available if you were retrenched, dismissed (not for misconduct), your contract expired, your employer died (domestic workers), or you are on maternity leave or ill."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I apply for UIF benefits?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Apply online at ufiling.labour.gov.za or visit your nearest Labour Centre within 6 months of becoming unemployed. You need your ID, UI-19 form from your employer, recent payslip, and bank details. Payment typically takes 2-4 weeks after approval."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I pay tax on UIF benefits?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. UIF benefits are tax-free in South Africa under the Income Tax Act. You do not need to declare UIF benefits on your tax return, and no PAYE is deducted from UIF payments."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the Income Replacement Rate (IRR)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The IRR is the percentage of your salary that UIF replaces. It ranges from 38% (for earners at the ceiling) to 60% (for low earners). The sliding scale is designed to provide proportionally more support to lower-income workers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many credit days do I need for UIF?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You earn 1 credit day for every 4 days worked while contributing to UIF. To claim the maximum 238 days, you need approximately 4 years of continuous employment. If you've worked less than 4 years, your claim period will be proportionally shorter."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I claim UIF if I'm a freelancer or self-employed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Generally no. UIF is for employees with an employer who contributes on their behalf. Self-employed people, freelancers, and independent contractors cannot claim UIF unless they voluntarily registered and contributed (which is rare). Freelancers should build their own emergency fund instead."
+      }
+    }
+  ]
+}
+</script>
+
+<style>
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap');
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
   --paper:#FFFFFF;--ink:#16201C;--forest:#1B4332;--marigold:#F6B53D;
   --mist:#6B756F;--line:#DEDBD0;--sand:#FFFFFF;--berry:#B23A2E;
   --disp:'Fraunces',Georgia,serif;--body:'Inter',system-ui,sans-serif;
-  /* legacy var aliases so inline styles still resolve */
   --black:#16201C;--navy:#1B4332;--navy-mid:#1B4332;--accent:#1B4332;--accent-dark:#143026;
   --white:#fff;--off-white:#FFFFFF;--green:#1B4332;--green-light:#EDF3EE;--accent-light:#EDF3EE;
   --g100:#FFFFFF;--g200:#E4E2D8;--g400:#AEB3AC;--g600:#6B756F;--g800:#C9CcC4;--red:#B23A2E;
@@ -28,17 +118,11 @@
 html{color-scheme:light;scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{font-family:var(--body);background:var(--paper);color:var(--ink);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased}
 a{color:var(--forest);text-decoration:none}
-
-/* SA stripe — keep but slimmer & muted */
 .sa-stripe{height:3px;background:linear-gradient(90deg,#1B4332 0 16%,#F6B53D 16% 33%,#FCFBF7 33% 50%,#1B4332 50% 66%,#B23A2E 66% 83%,#16201C 83% 100%);opacity:.9}
-
-/* TOP BAR — editorial dateline */
 .top-bar{background:var(--paper);border-bottom:1px solid var(--line);padding:.5rem 2rem;display:flex;align-items:center;justify-content:space-between}
 .tb-l{font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--mist)}
 .tb-r{font-size:.7rem;color:var(--mist);letter-spacing:.04em}
 .tb-r span{color:var(--forest);font-weight:600}
-
-/* MASTHEAD NAV */
 nav{background:var(--paper);border-bottom:2px solid var(--ink);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:74px;position:sticky;top:0;z-index:100}
 .logo{display:flex;align-items:center;gap:.5rem;text-decoration:none}
 .logo-text{font-family:var(--disp);font-size:1.7rem;font-weight:900;letter-spacing:-.02em;color:var(--ink)}
@@ -54,14 +138,6 @@ nav{background:var(--paper);border-bottom:2px solid var(--ink);padding:0 2rem;di
 .nav-cta::after{display:none}
 .nav-cta:hover{background:var(--forest)!important;color:#fff!important}
 @media(max-width:860px){.nav-links{gap:0;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;max-width:60vw}.nav-links::-webkit-scrollbar{display:none}.nav-links a{white-space:nowrap;padding:.5rem .6rem;font-size:.76rem}.logo-text{font-size:1.4rem}nav{padding:0 1rem}}
-
-/* AD SLOTS — quiet */
-.ad-strip{background:var(--paper);border-bottom:1px solid var(--line);text-align:center;padding:.6rem}
-.ad-ph{display:inline-flex;align-items:center;justify-content:center;background:var(--sand);border:1px solid var(--line);color:var(--g400);font-size:.62rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
-.ad-ph.lb{width:728px;height:90px;max-width:100%}.ad-ph.rect{width:300px;height:250px}
-.ad-lbl{font-size:.6rem;color:var(--g400);text-transform:uppercase;letter-spacing:.12em;margin-bottom:.3rem}
-
-/* PAGE HEADER — kicker / headline / standfirst */
 .ph{background:var(--paper);border-bottom:1px solid var(--line);padding:4rem 2rem 3rem}
 .ph-inner{max-width:1080px;margin:0 auto}
 .bc{font-size:.72rem;color:var(--mist);font-weight:500;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1.4rem}
@@ -70,103 +146,33 @@ nav{background:var(--paper);border-bottom:2px solid var(--ink);padding:0 2rem;di
 .ph-cat::before{content:'';width:24px;height:2px;background:var(--marigold)}
 .ph h1{font-family:var(--disp);font-size:clamp(2.2rem,5vw,3.6rem);font-weight:600;color:var(--ink);line-height:1.05;letter-spacing:-.02em;margin-bottom:1rem;max-width:18ch}
 .ph p{font-family:var(--body);color:var(--mist);font-size:1.1rem;line-height:1.6;max-width:60ch}
-.ph-meta{display:flex;gap:1.4rem;font-size:.72rem;color:var(--mist);font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-top:1.2rem}
-
-/* SECTIONS */
-.section{max-width:1080px;margin:0 auto;padding:3.5rem 2rem}
-.section-header{margin-bottom:2rem;padding-bottom:1rem;border-bottom:1px solid var(--line);display:flex;align-items:baseline;justify-content:space-between;gap:1rem;flex-wrap:wrap}
-.section-title{font-family:var(--disp);font-size:1.6rem;font-weight:600;letter-spacing:-.01em;color:var(--ink)}
-.section-title span{color:var(--marigold);font-weight:400;margin:0 .3rem}
-.section-more{font-family:var(--body);font-size:.8rem;font-weight:600;color:var(--forest);letter-spacing:.02em}
-.section-more::after{content:' →'}
-
-/* TICKER — editorial stat strip */
-.ticker{background:var(--sand);border-bottom:1px solid var(--line);padding:.7rem 2rem;display:flex;gap:2.5rem;overflow-x:auto;scrollbar-width:none}
-.ticker::-webkit-scrollbar{display:none}
-.tick-item{display:flex;align-items:baseline;gap:.5rem;white-space:nowrap}
-.tick-label{font-size:.68rem;color:var(--mist);font-weight:600;text-transform:uppercase;letter-spacing:.1em}
-.tick-val{font-family:var(--disp);color:var(--forest);font-weight:600;font-size:1rem}
-
-/* TOOLS GRID + CARDS */
-.tools-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.25rem}
-.tool-card{background:var(--paper);border:1px solid var(--line);padding:1.6rem;transition:.2s;display:flex;flex-direction:column;gap:.7rem;text-decoration:none;color:var(--ink);position:relative}
-.tool-card:hover{border-color:var(--ink);transform:translateY(-2px)}
-.tool-card.featured{border-top:3px solid var(--forest)}
-.tc-cat{font-family:var(--body);font-size:.68rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--mist)}
-.tool-card h3{font-family:var(--disp);font-size:1.25rem;font-weight:600;letter-spacing:-.01em;line-height:1.15;color:var(--ink)}
-.tool-card p{font-family:var(--body);font-size:.88rem;color:var(--mist);line-height:1.55;flex:1}
-.tc-link{font-family:var(--body);font-size:.8rem;font-weight:600;color:var(--forest)}
-.tc-badge{font-family:var(--body);font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.25rem .6rem;background:var(--sand);color:var(--forest);border:1px solid var(--line)}
-
-/* BLOG GRID */
-.blog-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:1.25rem}
-.blog-card{background:var(--paper);border:1px solid var(--line);padding:1.6rem;text-decoration:none;color:var(--ink);transition:.2s}
-.blog-card:hover{border-color:var(--ink);transform:translateY(-2px)}
-.blog-card.lead{border-top:3px solid var(--marigold)}
-.bc-cat{font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);margin-bottom:.6rem;display:block}
-.blog-card h3{font-family:var(--disp);font-size:1.2rem;font-weight:600;line-height:1.2;letter-spacing:-.01em;margin-bottom:.5rem}
-.blog-card.lead h3{font-size:1.6rem}
-.blog-card p{font-size:.86rem;color:var(--mist);line-height:1.55;margin-bottom:.6rem}
-.bc-more{font-size:.78rem;font-weight:600;color:var(--forest)}
-.bc-meta{font-size:.7rem;color:var(--g400);font-weight:600;letter-spacing:.04em;text-transform:uppercase}
-
-/* DATA CELLS (homepage figures) */
-.data-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem;margin-bottom:1rem}
-.dc{background:var(--sand);border:1px solid var(--line);padding:1.5rem}
-.dc-label{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--mist);margin-bottom:.5rem}
-.dc-val{font-family:var(--disp);font-size:2rem;font-weight:600;color:var(--ink);letter-spacing:-.02em;line-height:1}
-.dc-val.acc{color:var(--forest)}
-.dc-sub{font-size:.74rem;color:var(--mist);margin-top:.3rem}
-
-/* WHY CARDS */
-.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
-.why-card{background:var(--paper);border:1px solid var(--line);padding:1.8rem;border-top:3px solid var(--forest)}
-.why-num{font-family:var(--disp);font-size:2.4rem;font-weight:900;color:var(--marigold);line-height:1;margin-bottom:1rem}
-.why-card h3{font-family:var(--disp);font-size:1.2rem;font-weight:600;margin-bottom:.5rem}
-.why-card p{font-size:.88rem;color:var(--mist);line-height:1.6}
-
-/* CTA BLOCK */
-.cta-block{background:var(--ink);color:var(--paper);padding:3rem 2rem;text-align:center}
-.cta-block h2,.cta-block h3{font-family:var(--disp);font-weight:600;color:var(--paper);letter-spacing:-.01em;margin-bottom:.6rem}
-.cta-block h2{font-size:clamp(1.5rem,3vw,2.2rem)}
-.cta-block h3{font-size:1.4rem}
-.cta-block p{color:rgba(255,255,255,.7);margin-bottom:1.5rem;font-size:1rem}
-
-/* BUTTONS */
-.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 1.6rem;font-family:var(--body);font-weight:600;font-size:.9rem;cursor:pointer;border:none;transition:.18s;text-decoration:none;letter-spacing:.01em}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.85rem 1.6rem;font-family:var(--body);font-weight:600;font-size:.9rem;cursor:pointer;border:none;transition:.18s;text-decoration:none;letter-spacing:.01em}
 .btn-accent{background:var(--marigold);color:var(--ink)}
 .btn-accent:hover{background:#eaa523}
 .btn-full{width:100%;justify-content:center}
 .btn:not(.btn-accent){background:var(--ink);color:var(--paper)}
 .btn:not(.btn-accent):hover{background:var(--forest);color:#fff}
-
-/* LAYOUT (tool + article) */
+.btn-example{background:var(--forest);color:var(--paper);margin-top:.8rem;border:2px solid var(--forest)}
+.btn-example:hover{background:var(--ink);border-color:var(--ink)}
+.example-badge{display:inline-block;background:var(--marigold);color:var(--ink);font-size:.62rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.2rem .5rem;margin-right:.5rem;border-radius:2px}
 .layout{max-width:1140px;margin:0 auto;padding:2.5rem 2rem;display:grid;grid-template-columns:1fr 320px;gap:2.5rem;align-items:start}
 @media(max-width:920px){.layout{grid-template-columns:1fr;gap:1.5rem}.sidebar{display:none}}
-
-/* CARD (tool input) */
 .card{background:var(--paper);border:1px solid var(--line)}
 .card-head{padding:1.4rem 1.6rem;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:.9rem}
 .card-cat{font-family:var(--body);font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);border-right:1px solid var(--line);padding-right:.9rem}
 .card-head h2{font-family:var(--disp);font-size:1.4rem;font-weight:600;letter-spacing:-.01em}
 .card-head p{font-size:.84rem;color:var(--mist);margin-top:.15rem}
 .card-body{padding:1.6rem}
-
-/* FORM */
 .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem 1.3rem;margin-bottom:1.4rem}
 @media(max-width:500px){.form-grid{grid-template-columns:1fr}}
 .fg{display:flex;flex-direction:column;gap:.4rem}
 label{font-family:var(--body);font-size:.78rem;font-weight:600;color:var(--ink);letter-spacing:.01em}
-label .hint{font-weight:400;color:var(--mist)}
 .iw{position:relative}
-.ipre,.isuf{position:absolute;top:50%;transform:translateY(-50%);font-size:.95rem;color:var(--mist);font-weight:500;pointer-events:none}
-.ipre{left:1rem}.isuf{right:1rem}
+.ipre{position:absolute;top:50%;transform:translateY(-50%);font-size:.95rem;color:var(--mist);font-weight:500;pointer-events:none;left:1rem}
 input,select{width:100%;padding:.8rem 1rem;border:1px solid var(--line);font-family:var(--body);font-size:1rem;font-weight:500;color:var(--ink);background:var(--paper);transition:.15s;appearance:none;border-radius:0}
 input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 0 3px rgba(27,67,50,.1)}
-.has-pre input{padding-left:2rem}.has-suf input{padding-right:2.4rem}
+.has-pre input{padding-left:2rem}
 .sw{position:relative}.sw::after{content:'';position:absolute;right:1.1rem;top:50%;width:7px;height:7px;border-right:2px solid var(--mist);border-bottom:2px solid var(--mist);transform:translateY(-65%) rotate(45deg);pointer-events:none}
-
-/* RESULT PANELS — the editorial figure signature */
 .results{margin-top:1.6rem;display:none}
 .results.show{display:block;animation:fadeUp .4s ease}
 @keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
@@ -177,8 +183,6 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .eff-block{text-align:right;flex-shrink:0}
 .eff-val{font-family:var(--disp);font-size:2rem;font-weight:600;color:var(--marigold);display:block;letter-spacing:-.02em;line-height:1}
 .eff-lbl{font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:rgba(255,255,255,.6)}
-
-/* breakdown blocks */
 .bb{border:1px solid var(--line);margin-bottom:1rem}
 .bb-title{padding:.7rem 1.1rem;font-family:var(--body);font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.14em;background:var(--sand);border-bottom:1px solid var(--line);color:var(--mist)}
 .br{display:flex;justify-content:space-between;align-items:center;padding:.7rem 1.1rem;font-size:.92rem;border-bottom:1px solid var(--line)}
@@ -189,18 +193,13 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .total-bar{display:flex;justify-content:space-between;align-items:center;padding:1.1rem 1.3rem;background:var(--sand);border:1px solid var(--forest);margin-bottom:1rem}
 .total-bar .lbl{font-family:var(--disp);font-size:1.05rem;font-weight:600;color:var(--forest)}
 .total-bar .val{font-family:var(--disp);font-size:1.3rem;font-weight:700;color:var(--forest);font-variant-numeric:tabular-nums}
-
-/* notes */
 .note{padding:.85rem 1.1rem;font-size:.84rem;line-height:1.6;margin-bottom:.7rem;display:flex;gap:.7rem;border:1px solid var(--line);background:var(--sand)}
 .note.warn{background:#FBF3E0;border-color:#E6D08A;color:#6B5414}
+.note.navy{background:#EDF3EE;border-color:#C9D8CF;color:#1B4332}
 .note a{color:var(--forest);font-weight:600}
-
-/* tabs */
-.type-tabs,.period-tabs{display:flex;gap:.4rem;margin-bottom:1.4rem;background:var(--sand);padding:.3rem;border:1px solid var(--line)}
-.type-tab,.ptab{flex:1;padding:.6rem;border:none;background:transparent;font-family:var(--body);font-weight:600;font-size:.8rem;color:var(--mist);cursor:pointer;transition:.15s;text-align:center}
-.type-tab.active,.ptab.active{background:var(--ink);color:var(--paper)}
-
-/* SIDEBAR */
+.type-tabs{display:flex;gap:.4rem;margin-bottom:1.4rem;background:var(--sand);padding:.3rem;border:1px solid var(--line)}
+.type-tab{flex:1;padding:.6rem;border:none;background:transparent;font-family:var(--body);font-weight:600;font-size:.8rem;color:var(--mist);cursor:pointer;transition:.15s;text-align:center}
+.type-tab.active{background:var(--ink);color:var(--paper)}
 .sidebar{display:flex;flex-direction:column;gap:1.5rem}
 .sc{background:var(--paper);border:1px solid var(--line)}
 .sc-head{padding:.8rem 1.1rem;font-family:var(--body);font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.14em;border-bottom:1px solid var(--line);background:var(--sand);color:var(--mist)}
@@ -211,16 +210,14 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .qr{display:flex;justify-content:space-between;font-size:.84rem;padding:.45rem 0;border-bottom:1px solid var(--line);color:var(--mist)}
 .qr:last-child{border-bottom:none}
 .qr strong{color:var(--ink);font-weight:600;font-family:var(--disp)}
-.toc-link{display:block;font-size:.84rem;font-weight:500;color:var(--mist);padding:.4rem 0;border-bottom:1px solid var(--line);transition:color .15s}
-.toc-link:last-child{border-bottom:none}
-.toc-link:hover{color:var(--forest)}
-.related-post{display:block;padding:.75rem 0;border-bottom:1px solid var(--line)}
-.related-post:last-child{border-bottom:none}
-.rp-cat{font-size:.62rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--forest);margin-bottom:.25rem}
-.rp-title{font-family:var(--disp);font-size:.92rem;font-weight:500;color:var(--ink);line-height:1.3}
-.related-post:hover .rp-title{color:var(--forest)}
-
-/* DATA TABLE */
+.tools-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.25rem}
+.tool-card{background:var(--paper);border:1px solid var(--line);padding:1.6rem;transition:.2s;display:flex;flex-direction:column;gap:.7rem;text-decoration:none;color:var(--ink);position:relative}
+.tool-card:hover{border-color:var(--ink);transform:translateY(-2px)}
+.tool-card.featured{border-top:3px solid var(--forest)}
+.tc-cat{font-family:var(--body);font-size:.68rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--mist)}
+.tool-card h3{font-family:var(--disp);font-size:1.25rem;font-weight:600;letter-spacing:-.01em;line-height:1.15;color:var(--ink)}
+.tool-card p{font-family:var(--body);font-size:.88rem;color:var(--mist);line-height:1.55;flex:1}
+.tc-link{font-family:var(--body);font-size:.8rem;font-weight:600;color:var(--forest)}
 .data-table{width:100%;border-collapse:collapse;margin:1.2rem 0 1.6rem;font-size:.9rem;border:1px solid var(--line)}
 .data-table thead tr{background:var(--ink)}
 .data-table th{padding:.75rem 1rem;text-align:left;font-family:var(--body);font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--paper)}
@@ -229,9 +226,10 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .data-table tr:nth-child(even) td{background:var(--sand)}
 .data-table td.td-green{color:var(--forest);font-weight:600}
 .data-table td.td-red{color:var(--berry);font-weight:600}
-.data-table td.td-acc{color:var(--forest);font-weight:600}
-
-/* ARTICLE BODY — magazine measure */
+.section{max-width:1080px;margin:0 auto;padding:3.5rem 2rem}
+.section-header{margin-bottom:2rem;padding-bottom:1rem;border-bottom:1px solid var(--line);display:flex;align-items:baseline;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.section-title{font-family:var(--disp);font-size:1.6rem;font-weight:600;letter-spacing:-.01em;color:var(--ink)}
+.section-title span{color:var(--marigold);font-weight:400;margin:0 .3rem}
 .article-body{padding:2.5rem}
 @media(max-width:600px){.article-body{padding:1.5rem}}
 .article-body h2{font-family:var(--disp);font-size:1.7rem;font-weight:600;color:var(--ink);margin:2.4rem 0 .8rem;letter-spacing:-.01em;line-height:1.15;max-width:30ch}
@@ -243,10 +241,9 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .article-body li{font-family:var(--body);font-size:1.04rem;color:#2C352F;line-height:1.7;margin-bottom:.5rem}
 .article-body a{color:var(--forest);font-weight:500;border-bottom:1px solid var(--marigold)}
 .article-body strong{font-weight:600;color:var(--ink)}
-.callout,.callout.navy,.callout.grey,.callout.green{border:none;border-left:3px solid var(--marigold);background:var(--sand);padding:1.2rem 1.4rem;margin:1.6rem 0;font-family:var(--disp);font-size:1.15rem;font-weight:500;line-height:1.5;color:var(--ink);max-width:64ch}
+.callout{border:none;border-left:3px solid var(--marigold);background:var(--sand);padding:1.2rem 1.4rem;margin:1.6rem 0;font-family:var(--disp);font-size:1.15rem;font-weight:500;line-height:1.5;color:var(--ink);max-width:64ch}
 .callout strong{color:var(--forest)}
-
-/* FOOTER */
+.callout.navy{border-left-color:var(--navy)}
 footer{background:var(--ink);color:var(--paper);margin-top:2rem}
 .footer-inner{max-width:1080px;margin:0 auto;padding:2.5rem 2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
 .footer-logo{font-family:var(--disp);font-size:1.5rem;font-weight:900;color:var(--paper)}
@@ -255,28 +252,27 @@ footer{background:var(--ink);color:var(--paper);margin-top:2rem}
 .footer-links a{color:rgba(255,255,255,.7);font-size:.82rem;font-weight:500;transition:color .15s}
 .footer-links a:hover{color:var(--marigold)}
 .footer-copy{color:rgba(255,255,255,.5);font-size:.74rem;width:100%;margin-top:.8rem;padding-top:.9rem;border-top:1px solid rgba(255,255,255,.12)}
+.disclaim{font-size:.82rem;color:var(--mist);background:var(--sand);border:1px solid var(--line);padding:.9rem 1.1rem;line-height:1.6}
+.worked-example{background:#FAFBF7;border:1px solid var(--line);border-left:4px solid var(--forest);padding:1.5rem 1.8rem;margin:1.8rem 0}
+.worked-example-head{display:flex;align-items:center;gap:.6rem;margin-bottom:1rem}
+.worked-example-tag{font-size:.66rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--forest);background:#EDF3EE;padding:.25rem .6rem;border-radius:2px}
+.worked-example h3{font-family:var(--disp);font-size:1.15rem;font-weight:600;margin-bottom:.3rem}
+.worked-example p{font-size:.9rem;color:var(--mist);line-height:1.6;margin-bottom:.8rem}
+.glossary-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem;margin:1.5rem 0}
+.glossary-item{background:var(--sand);border:1px solid var(--line);padding:1.1rem 1.3rem}
+.glossary-term{font-family:var(--disp);font-size:1rem;font-weight:600;color:var(--forest);margin-bottom:.3rem}
+.glossary-def{font-size:.84rem;color:var(--mist);line-height:1.6}
 
-/* MISC legacy */
-.scenario-result{background:var(--sand);border:1px solid var(--forest);padding:1.2rem}
-.disclaim,.disclaim-box{font-size:.82rem;color:var(--mist);background:var(--sand);border:1px solid var(--line);padding:.9rem 1.1rem;line-height:1.6}
-.eyebrow{font-family:var(--body);font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);margin-bottom:.5rem}
-
-/* RESPONSIVE */
 @media(max-width:768px){
-  [style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr!important}
-  [style*="grid-template-columns:repeat(3,1fr)"]{grid-template-columns:1fr!important}
-  [style*="grid-template-columns:repeat(4,1fr)"]{grid-template-columns:1fr 1fr!important}
-  [style*="grid-template-columns:2fr 1fr 1fr"]{grid-template-columns:1fr!important}
-  [style*="grid-template-columns:1.1fr 1fr"]{grid-template-columns:1fr!important}
-  [style*="grid-template-columns:1fr 1fr;gap:4rem"]{grid-template-columns:1fr!important;gap:2rem!important}
-  .blog-grid,.data-row,.why-grid{grid-template-columns:1fr!important}
   .ph{padding:2.5rem 1.25rem 2rem}.section{padding:2.5rem 1.25rem}.layout{padding:1.5rem 1.25rem}
   .th-panel{flex-direction:column;align-items:flex-start;gap:1rem}.eff-block{text-align:left}
   .th-amount{font-size:2.6rem}
   .footer-inner{flex-direction:column;text-align:center}.footer-links{justify-content:center}
   .top-bar{padding:.4rem 1rem}.tb-r{display:none}
   .data-table{display:block;overflow-x:auto}
+  .article-body{padding:1.5rem}
 }
+
 .whatif-section{margin-top:1.8rem;border-top:2px solid var(--ink);padding-top:1.8rem}
 .whatif-kicker{font-family:var(--body);font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);margin-bottom:.4rem;display:flex;align-items:center;gap:.6rem}
 .whatif-kicker::before{content:'';width:24px;height:2px;background:var(--marigold)}
@@ -299,99 +295,161 @@ footer{background:var(--ink);color:var(--paper);margin-top:2rem}
 .whatif-delta-lbl{font-size:.72rem;color:rgba(255,255,255,.6);margin-top:.3rem}
 .whatif-reset{margin-top:1rem;text-align:center}
 .whatif-reset button{background:none;border:1px solid var(--line);padding:.5rem 1.1rem;font-family:var(--body);font-size:.78rem;font-weight:600;color:var(--mist);cursor:pointer;transition:.15s}
-.whatif-reset button:hover{border-color:var(--ink);color:var(--ink)}</style><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How is the UIF benefit calculated in South Africa?","acceptedAnswer":{"@type":"Answer","text":"UIF benefits use an Income Replacement Rate (IRR) formula between 38% and 60% of your salary — lower earners receive a higher percentage. Benefits are based on salary capped at R17,712/year."}},{"@type":"Question","name":"How long can I claim UIF for?","acceptedAnswer":{"@type":"Answer","text":"You can claim UIF for up to 238 days for retrenchment or illness, and up to 121 days (17 weeks) for maternity, depending on your accumulated credit days."}}]}</script>
+.whatif-reset button:hover{border-color:var(--ink);color:var(--ink)}
+</style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6108324382808705" crossorigin="anonymous"></script>
-</head><body>
-<div class="top-bar"><div class="tb-l">🇿🇦 South Africa · UIF Benefits 2026</div><div class="tb-r">UIF cap <span>R17,712/yr</span></div></div>
+</head>
+<body>
+<div class="sa-stripe"></div>
+
+<div class="top-bar">
+  <div class="tb-l">🇿🇦 South Africa · UIF Benefits 2026</div>
+  <div class="tb-r">UIF ceiling <span>R17,712/month</span> · Max claim <span>238 days</span></div>
+</div>
+
 <nav>
   <a href="/" class="logo"><div class="logo-text">CalcMy<span>Pay</span></div></a>
   <div class="nav-links">
-    <a href="/salary-income" class="active">Salary</a><a href="/affordability">Affordability</a><a href="/wealth-building">Wealth</a><a href="/career-intelligence">Careers</a><a href="/money-tools">Tools</a><a href="/financial-coach">Coach</a><a href="/blog-salary-guide">Guides</a><a href="/salary-calculator" class="nav-cta">Calculate →</a>
+    <a href="/salary-income" class="active">Salary</a>
+    <a href="/affordability">Affordability</a>
+    <a href="/wealth-building">Wealth</a>
+    <a href="/career-intelligence">Careers</a>
+    <a href="/money-tools">Tools</a>
+    <a href="/financial-coach">Coach</a>
+    <a href="/blog-salary-guide">Guides</a>
+    <a href="/salary-calculator" class="nav-cta">Calculate →</a>
   </div>
 </nav>
 
-<div class="ph"><div class="ph-inner">
-  <div class="bc"><a href="/">Home</a><span>/</span>UIF Calculator</div>
-  <div class="ph-cat">UIF</div>
-  <h1>UIF Benefit Calculator South Africa</h1>
-  <p>Calculate your monthly UIF benefit if retrenched, on maternity leave or ill · Based on Department of Employment &amp; Labour figures</p>
-</div></div>
+<div class="ph">
+  <div class="ph-inner">
+    <div class="bc">
+      <a href="/">Home</a><span>/</span>
+      <a href="/salary-income">Salary & Income</a><span>/</span>
+      UIF Calculator
+    </div>
+    <div class="ph-cat">UIF Benefits</div>
+    <h1>UIF Benefit Calculator South Africa</h1>
+    <p>Calculate your monthly UIF benefit if retrenched, on maternity leave, or ill. Based on Department of Employment & Labour figures with the official Income Replacement Rate (IRR) formula.</p>
+  </div>
+</div>
 
 <div class="layout">
   <div>
     <div class="card">
-      <div class="card-head"><div class="card-cat">UIF</div><div><h2>Calculate your UIF benefit</h2><p>Select your claim type and enter your salary details</p></div></div>
+      <div class="card-head">
+        <div class="card-cat">UIF</div>
+        <div>
+          <h2>Calculate your UIF benefit</h2>
+          <p>Select your claim type and enter your salary details</p>
+        </div>
+      </div>
       <div class="card-body">
         <div class="type-tabs">
-          <button class="type-tab active" onclick="setType('retrenchment',this)">Retrenchment</button>
-          <button class="type-tab" onclick="setType('maternity',this)">Maternity</button>
-          <button class="type-tab" onclick="setType('illness',this)">Illness</button>
+          <button type="button" class="type-tab active" onclick="setType('retrenchment',this)">Retrenchment</button>
+          <button type="button" class="type-tab" onclick="setType('maternity',this)">Maternity</button>
+          <button type="button" class="type-tab" onclick="setType('illness',this)">Illness</button>
         </div>
         <div class="form-grid">
-          <div class="fg"><label>Monthly Gross Salary</label><div class="iw has-pre"><span class="ipre">R</span><input type="number" id="salary" placeholder="25 000" min="0"></div></div>
-          <div class="fg"><label>Years Employed at This Job</label><div class="sw"><select id="years"><option value="0.5">Less than 1 year</option><option value="2">1 – 2 years</option><option value="4">2 – 4 years</option><option value="6">4+ years (max credits)</option></select></div></div>
+          <div class="fg">
+            <label>Monthly Gross Salary</label>
+            <div class="iw has-pre"><span class="ipre">R</span><input type="number" id="salary" placeholder="25000" min="0"></div>
+          </div>
+          <div class="fg">
+            <label>Years Employed at This Job</label>
+            <div class="sw">
+              <select id="years">
+                <option value="0.5">Less than 1 year</option>
+                <option value="2">1 – 2 years</option>
+                <option value="4">2 – 4 years</option>
+                <option value="6">4+ years (max credits)</option>
+              </select>
+            </div>
+          </div>
         </div>
-        <button class="btn btn-full btn-accent" onclick="calculate()">Calculate my UIF benefit →</button>
+        <button type="button" class="btn btn-full btn-accent" onclick="calculate()">Calculate my UIF benefit →</button>
+        <button type="button" class="btn btn-full btn-example" onclick="loadExample()"><span class="example-badge">Example</span>Try R25k salary, 4 years employed</button>
 
         <div class="results" id="results">
           <div style="height:1.2rem"></div>
           <div class="th-panel">
-            <div><div class="th-label" id="th-label">Monthly UIF benefit</div><div class="th-amount" id="th-amount">R0</div><div class="th-period">per month (estimated)</div></div>
-            <div class="eff-block"><span class="eff-val" id="eff-rate">0%</span><span class="eff-lbl">Of salary</span></div>
+            <div>
+              <div class="th-label" id="th-label">Monthly UIF benefit</div>
+              <div class="th-amount" id="th-amount">R0</div>
+              <div class="th-period">per month (estimated)</div>
+            </div>
+            <div class="eff-block">
+              <span class="eff-val" id="eff-rate">0%</span>
+              <span class="eff-lbl">Of salary</span>
+            </div>
           </div>
-          <div class="bb"><div class="bb-title">UIF Benefit Breakdown</div>
+          <div class="bb">
+            <div class="bb-title">UIF Benefit Breakdown</div>
             <div class="br"><span class="lbl">Monthly gross salary</span><span class="val neu" id="br-salary">R0</span></div>
-            <div class="br"><span class="lbl">Salary used for UIF (capped at R17,712/yr)</span><span class="val neu" id="br-capped">R0</span></div>
+            <div class="br"><span class="lbl">Salary used for UIF (capped at R17,712/mo)</span><span class="val neu" id="br-capped">R0</span></div>
             <div class="br"><span class="lbl">Daily income (÷ 30)</span><span class="val neu" id="br-daily">R0</span></div>
             <div class="br"><span class="lbl">Income Replacement Rate (IRR)</span><span class="val neu" id="br-irr">0%</span></div>
             <div class="br"><span class="lbl">Daily UIF benefit</span><span class="val pos" id="br-daily-benefit">R0</span></div>
             <div class="br"><span class="lbl">Monthly UIF benefit (× 30)</span><span class="val pos" id="br-monthly-benefit">R0</span></div>
           </div>
-          <div class="bb"><div class="bb-title">Claim Duration</div>
+          <div class="bb">
+            <div class="bb-title">Claim Duration</div>
             <div class="br"><span class="lbl">Claim type</span><span class="val neu" id="br-type">Retrenchment</span></div>
             <div class="br"><span class="lbl">Your credit days (based on employment)</span><span class="val neu" id="br-credits">0 days</span></div>
             <div class="br"><span class="lbl">Maximum claim period</span><span class="val neu" id="br-max">0 days</span></div>
             <div class="br"><span class="lbl">Your claim period</span><span class="val neu" id="br-claim">0 days</span></div>
           </div>
-          <div class="total-bar"><span class="lbl">✓ Estimated total UIF payout</span><span class="val" id="br-total">R0</span></div>
-          <div class="note navy"><span>ℹ</span><span>UIF uses an <strong>Income Replacement Rate (IRR)</strong> formula — lower earners receive a higher percentage. Minimum IRR is 38%, maximum is 60%.</span></div>
-          <div class="note warn"><span>⚠</span><span>Estimates only. Actual benefits are determined by the Department of Employment &amp; Labour. Apply at <strong>ufiling.labour.gov.za</strong> or your nearest Labour Centre.</span></div>
-<div class="whatif-section" id="whatif-section" style="display:none">
-  <div class="whatif-kicker">What if?</div>
-  <div class="whatif-title">Test a scenario</div>
-  <p class="whatif-sub">Drag the sliders to see how changes affect your UIF payout.</p>
+          <div class="total-bar">
+            <span class="lbl">✓ Estimated total UIF payout</span>
+            <span class="val" id="br-total">R0</span>
+          </div>
+          <div class="note navy">
+            <span>ℹ</span>
+            <span>UIF uses an <strong>Income Replacement Rate (IRR)</strong> formula — lower earners receive a higher percentage (up to 60%), while higher earners receive the minimum 38%. UIF benefits are <strong>tax-free</strong>.</span>
+          </div>
+          <div class="note warn">
+            <span>⚠</span>
+            <span>Estimates only. Actual benefits are determined by the Department of Employment & Labour. Apply at <strong>ufiling.labour.gov.za</strong> or your nearest Labour Centre within 6 months.</span>
+          </div>
 
-  <div class="whatif-grid">
-    <div class="whatif-control">
-      <div class="whatif-control-head"><label>Salary change</label><output id="wi-sal-out">+0%</output></div>
-      <input type="range" id="wi-sal" min="-20" max="30" value="0" step="1" oninput="renderWhatIf()">
-    </div>
-    <div class="whatif-control">
-      <div class="whatif-control-head"><label>Extra years employed</label><output id="wi-years-out">+0 yrs</output></div>
-      <input type="range" id="wi-years" min="0" max="10" value="0" step="0.5" oninput="renderWhatIf()">
-    </div>
-  </div>
-
-  <div class="whatif-result">
-    <div>
-      <div class="whatif-result-label">New total UIF payout</div>
-      <div class="whatif-result-val" id="wi-newtotal">R0</div>
-    </div>
-    <div class="whatif-delta">
-      <div class="whatif-delta-val" id="wi-delta">—</div>
-      <div class="whatif-delta-lbl">vs your current estimate</div>
-    </div>
-  </div>
-  <div class="whatif-reset"><button onclick="resetWhatIf()">Reset scenario</button></div>
-  <div class="note warn" style="margin-top:1rem"><span>⚠</span><span>UIF is capped regardless of salary above R17,712/year, and benefits are ultimately decided by the Department of Employment &amp; Labour — this is an estimate to guide expectations, not a guarantee.</span></div>
-</div>
-
+          <div class="whatif-section" id="whatif-section" style="display:none">
+            <div class="whatif-kicker">What if?</div>
+            <div class="whatif-title">Test a scenario</div>
+            <p class="whatif-sub">Drag the sliders to see how changes affect your UIF payout.</p>
+            <div class="whatif-grid">
+              <div class="whatif-control">
+                <div class="whatif-control-head"><label>Salary change</label><output id="wi-sal-out">+0%</output></div>
+                <input type="range" id="wi-sal" min="-20" max="30" value="0" step="1" oninput="renderWhatIf()">
+              </div>
+              <div class="whatif-control">
+                <div class="whatif-control-head"><label>Extra years employed</label><output id="wi-years-out">+0 yrs</output></div>
+                <input type="range" id="wi-years" min="0" max="10" value="0" step="0.5" oninput="renderWhatIf()">
+              </div>
+            </div>
+            <div class="whatif-result">
+              <div>
+                <div class="whatif-result-label">New total UIF payout</div>
+                <div class="whatif-result-val" id="wi-newtotal">R0</div>
+              </div>
+              <div class="whatif-delta">
+                <div class="whatif-delta-val" id="wi-delta">—</div>
+                <div class="whatif-delta-lbl">vs your current estimate</div>
+              </div>
+            </div>
+            <div class="whatif-reset"><button onclick="resetWhatIf()">Reset scenario</button></div>
+            <div class="note warn" style="margin-top:1rem">
+              <span>⚠</span>
+              <span>UIF is capped at R17,712/month regardless of your actual salary. Benefits are ultimately decided by the Department of Employment & Labour — this is an estimate to guide expectations.</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
     <div style="margin-top:1.5rem">
-      <div class="section-header"><div class="section-title">How to claim <span>/</span> UIF Process</div></div>
+      <div class="section-header">
+        <div class="section-title">How to claim <span>/</span> UIF Process</div>
+      </div>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-bottom:1.5rem">
         <div style="background:var(--white);border:1px solid var(--g200);padding:1.2rem;border-top:3px solid var(--navy)">
           <h3 style="font-family:var(--fs);font-size:.9rem;font-weight:700;margin-bottom:.5rem">Documents you need</h3>
@@ -406,66 +464,670 @@ footer{background:var(--ink);color:var(--paper);margin-top:2rem}
   </div>
 
   <div class="sidebar">
-    
-    <div class="sc"><div class="sc-head">UIF quick facts</div><div class="sc-body">
-      <div class="qr"><span>Your contribution</span><strong>1% of salary</strong></div>
-      <div class="qr"><span>Employer contribution</span><strong>1% of salary</strong></div>
-      <div class="qr"><span>Monthly cap</span><strong>R1,476/month</strong></div>
-      <div class="qr"><span>Annual cap</span><strong>R17,712/year</strong></div>
-      <div class="qr"><span>Min benefit (IRR)</span><strong>38% of salary</strong></div>
-      <div class="qr"><span>Max benefit (IRR)</span><strong>60% of salary</strong></div>
-      <div class="qr"><span>Max claim period</span><strong>238 days</strong></div>
-      <div class="qr"><span>Maternity period</span><strong>121 days</strong></div>
-    </div></div>
-    
+    <div class="sc">
+      <div class="sc-head">UIF Quick Facts 2026</div>
+      <div class="sc-body">
+        <div class="qr"><span>Your contribution</span><strong>1% of salary</strong></div>
+        <div class="qr"><span>Employer contribution</span><strong>1% of salary</strong></div>
+        <div class="qr"><span>Earnings ceiling</span><strong>R17,712/mo</strong></div>
+        <div class="qr"><span>Max monthly contribution</span><strong>R177.12</strong></div>
+        <div class="qr"><span>Annual ceiling</span><strong>R212,544/yr</strong></div>
+        <div class="qr"><span>Min benefit (IRR)</span><strong>38% of salary</strong></div>
+        <div class="qr"><span>Max benefit (IRR)</span><strong>60% of salary</strong></div>
+        <div class="qr"><span>Max claim (retrenchment)</span><strong>238 days</strong></div>
+        <div class="qr"><span>Max claim (maternity)</span><strong>121 days</strong></div>
+        <div class="qr"><span>Claim deadline</span><strong>6 months</strong></div>
+      </div>
+    </div>
+
+    <div class="sc">
+      <div class="sc-head">Related Calculators</div>
+      <div class="sc-body">
+        <div class="tip"><span>→</span><a href="/salary-calculator">Salary After Tax Calculator</a></div>
+        <div class="tip"><span>→</span><a href="/paye-calculator">PAYE Calculator</a></div>
+        <div class="tip"><span>→</span><a href="/gross-to-net">Gross to Net Salary</a></div>
+        <div class="tip"><span>→</span><a href="/emergency-fund">Emergency Fund Calculator</a></div>
+      </div>
+    </div>
   </div>
 </div>
 
+<div class="section" style="padding-top:0">
+  <div class="section-header">
+    <div class="section-title">Related <span>/</span> Salary Tools</div>
+  </div>
+  <div class="tools-grid">
+    <a href="/salary-calculator" class="tool-card featured">
+      <div class="tc-cat">Salary & Income</div>
+      <h3>Salary After Tax Calculator</h3>
+      <span class="tc-link">Open →</span>
+    </a>
+    <a href="/paye-calculator" class="tool-card featured">
+      <div class="tc-cat">Salary & Income</div>
+      <h3>PAYE Calculator</h3>
+      <span class="tc-link">Open →</span>
+    </a>
+    <a href="/gross-to-net" class="tool-card featured">
+      <div class="tc-cat">Salary & Income</div>
+      <h3>Gross to Net Salary</h3>
+      <span class="tc-link">Open →</span>
+    </a>
+    <a href="/bonus-calculator" class="tool-card featured">
+      <div class="tc-cat">Salary & Income</div>
+      <h3>Bonus & 13th Cheque</h3>
+      <span class="tc-link">Open →</span>
+    </a>
+    <a href="/overtime-calculator" class="tool-card featured">
+      <div class="tc-cat">Salary & Income</div>
+      <h3>Overtime Pay Calculator</h3>
+      <span class="tc-link">Open →</span>
+    </a>
+    <a href="/commission-calculator" class="tool-card featured">
+      <div class="tc-cat">Salary & Income</div>
+      <h3>Commission Calculator</h3>
+      <span class="tc-link">Open →</span>
+    </a>
+  </div>
+</div>
 
-<div class="section"><div style="background:var(--white);border:1px solid var(--line);border-top:3px solid var(--forest)"><div class="article-body"><h2>Understanding your UIF benefit</h2><p>The Unemployment Insurance Fund exists to give South African workers a financial bridge when they lose their income unexpectedly — through retrenchment, illness, maternity leave or the death of a breadwinner. Both you and your employer contribute 1% of your salary each month, and that fund is what pays out when you need it.</p><p>This calculator gives you a realistic estimate of what you could receive, but the actual amount is determined by the Department of Employment and Labour when you apply. Understanding how the calculation works helps you know what to expect and plan around it.</p><h2>How the Income Replacement Rate works</h2><p>UIF does not simply pay everyone the same percentage of their salary. It uses a sliding scale called the Income Replacement Rate (IRR), which is more generous to lower earners. The IRR ranges from 38% to 60% of your capped daily income — the less you earn, the higher percentage you receive, which is designed to cushion those who need it most.</p><table class="data-table"><thead><tr><th>Monthly salary (capped)</th><th>Approximate IRR</th><th>What this means</th></tr></thead><tbody><tr><td>R3,000</td><td>~58%</td><td>Lower earners get a higher replacement rate</td></tr><tr><td>R8,000</td><td>~45%</td><td>Middle income earners get a moderate rate</td></tr><tr><td>R14,760 (near cap)</td><td>~38%</td><td>Higher earners get the minimum 38% rate</td></tr></tbody></table><h2>Worked example: a retrenchment claim</h2><p>Say you earned R18,000/month before being retrenched, with 4 years of continuous employment. Because UIF salary contributions are capped at R17,712/year in insurable earnings (R1,476/month), your benefit is calculated on the capped amount, not your full salary.</p><p>Your daily income for UIF purposes would be R1,476 ÷ 30 = R49.20. At an IRR of roughly 38% (since your capped income sits near the top of the scale), your daily benefit works out to about R18.70, or roughly R561/month. Over your maximum claim period of 238 days, that could total around R4,439 — a modest sum meant to bridge, not replace, your income.</p><h2>How your credit days are calculated</h2><p>You do not automatically qualify for the maximum 238-day claim period. UIF works on a credit system: you earn one day of benefit for every four days you were employed and contributing, up to the maximum. This is why longer continuous employment matters — someone with 8+ years of steady contributions will have banked the full 238 days, while someone who changed jobs frequently may have fewer credits.</p><ul><li><strong>Under 1 year employed:</strong> fewer credit days, shorter claim period</li><li><strong>4+ years employed:</strong> usually reaches the maximum 238-day cap</li><li><strong>Maternity claims:</strong> capped separately at 121 days (17 weeks), regardless of credits</li><li><strong>Multiple short-term jobs:</strong> credits can still accumulate if UIF contributions were made throughout</li></ul><h2>What happens after you apply</h2><p>Once you submit your claim with your UI-19 form, ID and banking details, the Department typically takes 2–4 weeks to process a first payment, assuming your documentation is complete. Payments are usually made monthly for the duration of your approved claim period, directly into your bank account.</p><p>If your circumstances change — for example, you find new employment before your claim period ends — you are required to inform the Department, as continuing to claim after starting new work is fraud and can result in having to repay everything received plus penalties.</p><h2>Making UIF work as part of your safety net</h2><p>UIF is a genuine safety net, but it is rarely enough to maintain your full lifestyle — as this calculator shows, the payout is a fraction of your actual salary. It works best as one layer of protection alongside your own <a href="/emergency-fund">emergency fund</a>, which can cover the gap between what UIF pays and what you actually need to live on.</p></div></div></div>
+<div class="section">
+  <div style="background:var(--white);border:1px solid var(--line);border-top:3px solid var(--forest)">
+    <div class="article-body">
 
-<footer><div class="footer-inner">
-  <div class="footer-logo">CalcMy<span>Pay</span></div>
-  <div class="footer-links"><a href="/salary-income">Salary</a><a href="/affordability">Affordability</a><a href="/wealth-building">Wealth</a><a href="/money-tools">Tools</a><a href="/financial-coach">Coach</a><a href="/blog-salary-guide">Guides</a><a href="/about">About</a><a href="/privacy-policy">Privacy</a><a href="/contact">Contact</a></div>
-  <div class="footer-copy">© 2026 CalcMyPay · For informational purposes only · Not affiliated with SARS or the Department of Employment &amp; Labour</div>
-</div></footer>
+      <h2>Understanding your UIF benefit in South Africa</h2>
+      <p>The Unemployment Insurance Fund (UIF) exists to give South African workers a financial bridge when they lose their income unexpectedly — through retrenchment, illness, maternity leave, or the death of a breadwinner. Both you and your employer contribute 1% of your salary each month, and that fund is what pays out when you need it most.</p>
+
+      <p>This calculator gives you a realistic estimate of what you could receive based on the official Department of Employment and Labour formulas, but the actual amount is determined by the Department when you apply. Understanding how the calculation works helps you know what to expect and plan around it effectively.</p>
+
+      <div class="callout navy">
+        <strong>Key fact:</strong> UIF benefits are completely <strong>tax-free</strong> in South Africa. You don't pay income tax on UIF payments, and you don't need to declare them on your annual tax return.
+      </div>
+
+      <h2>How the Income Replacement Rate (IRR) works</h2>
+      <p>UIF does not simply pay everyone the same percentage of their salary. It uses a sliding scale called the Income Replacement Rate (IRR), which is more generous to lower earners. The IRR ranges from 38% to 60% of your capped daily income — the less you earn, the higher percentage you receive, which is designed to cushion those who need it most.</p>
+
+      <h3>The IRR formula explained</h3>
+      <p>The official IRR formula produces a percentage between 38% and 60% based on your daily income:</p>
+      <ul>
+        <li><strong>Very low earners:</strong> Receive up to 60% of their salary as UIF benefit</li>
+        <li><strong>Middle earners:</strong> Receive between 38% and 60%, sliding scale</li>
+        <li><strong>Earners at the ceiling (R17,712+):</strong> Receive the minimum 38%</li>
+      </ul>
+
+      <p>This progressive structure ensures that lower-income workers, who have less financial cushion, receive proportionally more support during unemployment.</p>
+
+      <h3>IRR at different salary levels</h3>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Monthly Salary</th>
+            <th>Daily Income</th>
+            <th>Approximate IRR</th>
+            <th>Monthly Benefit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>R2,000</td><td>R66.67</td><td>~58%</td><td class="td-green">R1,160</td></tr>
+          <tr><td>R4,000</td><td>R133.33</td><td>~52%</td><td class="td-green">R2,080</td></tr>
+          <tr><td>R6,000</td><td>R200.00</td><td>~48%</td><td class="td-green">R2,880</td></tr>
+          <tr><td>R8,000</td><td>R266.67</td><td>~45%</td><td class="td-green">R3,600</td></tr>
+          <tr><td>R10,000</td><td>R333.33</td><td>~43%</td><td class="td-green">R4,300</td></tr>
+          <tr><td>R12,000</td><td>R400.00</td><td>~41%</td><td class="td-green">R4,920</td></tr>
+          <tr><td>R14,000</td><td>R466.67</td><td>~39%</td><td class="td-green">R5,460</td></tr>
+          <tr><td>R17,712 (ceiling)</td><td>R590.40</td><td>38%</td><td class="td-green">R6,731</td></tr>
+          <tr><td>R25,000+</td><td>R590.40 (capped)</td><td>38%</td><td class="td-green">R6,731</td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:.84rem;color:var(--mist);margin-top:.5rem">Note: These are approximate IRR values. The exact rate is calculated using the official formula. All salaries above R17,712/month are capped at that level for UIF purposes.</p>
+
+      <h2>The UIF earnings ceiling: R17,712 per month</h2>
+      <p>One of the most important concepts to understand is the UIF earnings ceiling. As of 2026, this ceiling is set at <strong>R17,712 per month</strong> (R212,544 per year). This affects both your contributions and your benefits.</p>
+
+      <h3>How the ceiling affects contributions</h3>
+      <p>If you earn R17,712 or less per month, both you and your employer contribute 1% of your actual salary:</p>
+      <ul>
+        <li>Earning R10,000: You contribute R100, employer contributes R100 (total R200/month)</li>
+        <li>Earning R17,712: You contribute R177.12, employer contributes R177.12 (total R354.24/month)</li>
+      </ul>
+
+      <p>If you earn more than R17,712, contributions are calculated on R17,712 only:</p>
+      <ul>
+        <li>Earning R30,000: You still contribute R177.12, employer still contributes R177.12</li>
+        <li>Earning R100,000: Same maximum contribution of R177.12 each</li>
+      </ul>
+
+      <h3>How the ceiling affects benefits</h3>
+      <p>Your UIF benefit is also calculated on the capped amount, not your full salary. This means someone earning R50,000/month receives the same UIF benefit as someone earning R17,712/month — approximately R6,731 per month.</p>
+
+      <p>This is why high earners need to supplement UIF with their own <a href="/emergency-fund">emergency fund</a> — the UIF benefit alone will not come close to replacing their income.</p>
+
+      <div class="worked-example">
+        <div class="worked-example-head">
+          <span class="worked-example-tag">Worked Example</span>
+          <h3>Retrenchment claim: R25,000/month salary, 4 years employed</h3>
+        </div>
+        <p>Let's walk through a realistic scenario: You earned R25,000 per month and were retrenched after 4 years of continuous employment with UIF contributions.</p>
+
+        <p><strong>Step 1: Apply the UIF ceiling</strong></p>
+        <ul>
+          <li>Your salary: R25,000/month</li>
+          <li>UIF ceiling: R17,712/month</li>
+          <li>Salary used for UIF calculation: <strong>R17,712</strong> (capped)</li>
+        </ul>
+
+        <p><strong>Step 2: Calculate daily income</strong></p>
+        <ul>
+          <li>R17,712 ÷ 30 days = <strong>R590.40 per day</strong></li>
+        </ul>
+
+        <p><strong>Step 3: Determine IRR</strong></p>
+        <ul>
+          <li>At the ceiling (R590.40/day), IRR is approximately <strong>38%</strong> (the minimum)</li>
+        </ul>
+
+        <p><strong>Step 4: Calculate daily benefit</strong></p>
+        <ul>
+          <li>R590.40 × 38% = <strong>R224.35 per day</strong></li>
+        </ul>
+
+        <p><strong>Step 5: Calculate monthly benefit</strong></p>
+        <ul>
+          <li>R224.35 × 30 days = <strong>R6,731 per month</strong></li>
+        </ul>
+
+        <p><strong>Step 6: Determine claim duration</strong></p>
+        <ul>
+          <li>4 years of employment = approximately 365 credit days</li>
+          <li>Maximum claim: 238 days</li>
+          <li>Your claim period: <strong>238 days</strong> (you have enough credits)</li>
+        </ul>
+
+        <p><strong>Step 7: Calculate total payout</strong></p>
+        <ul>
+          <li>R224.35 × 238 days = <strong>R53,395 total</strong></li>
+        </ul>
+
+        <p style="margin-top:1rem"><strong>What this means:</strong> You would receive approximately R6,731 per month for up to 8 months (238 days). This represents about <strong>27% of your actual salary</strong> — highlighting why UIF is a safety net, not an income replacement. Your own emergency fund should cover the remaining gap.</p>
+      </div>
+
+      <h2>UIF benefit reference table by salary level</h2>
+      <p>The table below shows estimated UIF benefits at common salary levels, assuming you have sufficient credit days (4+ years of employment) for the maximum claim period.</p>
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Monthly Salary</th>
+            <th>Monthly UIF Benefit</th>
+            <th>% of Salary</th>
+            <th>Max Claim (238 days)</th>
+            <th>Monthly Gap</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>R3,000</td>
+            <td class="td-green">R1,740</td>
+            <td>58%</td>
+            <td>R13,804</td>
+            <td>R1,260</td>
+          </tr>
+          <tr>
+            <td>R5,000</td>
+            <td class="td-green">R2,550</td>
+            <td>51%</td>
+            <td>R20,230</td>
+            <td>R2,450</td>
+          </tr>
+          <tr>
+            <td>R8,000</td>
+            <td class="td-green">R3,600</td>
+            <td>45%</td>
+            <td>R28,560</td>
+            <td>R4,400</td>
+          </tr>
+          <tr>
+            <td>R10,000</td>
+            <td class="td-green">R4,300</td>
+            <td>43%</td>
+            <td>R34,113</td>
+            <td>R5,700</td>
+          </tr>
+          <tr>
+            <td>R12,000</td>
+            <td class="td-green">R4,920</td>
+            <td>41%</td>
+            <td>R39,031</td>
+            <td>R7,080</td>
+          </tr>
+          <tr>
+            <td>R15,000</td>
+            <td class="td-green">R5,850</td>
+            <td>39%</td>
+            <td>R46,411</td>
+            <td>R9,150</td>
+          </tr>
+          <tr>
+            <td>R17,712 (ceiling)</td>
+            <td class="td-green">R6,731</td>
+            <td>38%</td>
+            <td>R53,395</td>
+            <td>R10,981</td>
+          </tr>
+          <tr>
+            <td>R20,000</td>
+            <td class="td-green">R6,731</td>
+            <td>34%</td>
+            <td>R53,395</td>
+            <td>R13,269</td>
+          </tr>
+          <tr>
+            <td>R30,000</td>
+            <td class="td-green">R6,731</td>
+            <td>22%</td>
+            <td>R53,395</td>
+            <td>R23,269</td>
+          </tr>
+          <tr>
+            <td>R50,000</td>
+            <td class="td-green">R6,731</td>
+            <td>13%</td>
+            <td>R53,395</td>
+            <td>R43,269</td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="font-size:.84rem;color:var(--mist);margin-top:.5rem">Note: "Monthly Gap" shows how much your UIF benefit falls short of your actual salary. This gap must be covered by your own savings or other income.</p>
+
+      <h2>How your credit days are calculated</h2>
+      <p>You do not automatically qualify for the maximum 238-day claim period. UIF works on a credit system: you earn one day of benefit for every four days you were employed and contributing, up to the maximum.</p>
+
+      <h3>The credit calculation</h3>
+      <p><strong>Formula:</strong> Credit days = (Days worked ÷ 4), capped at 238 days</p>
+
+      <p>This is why longer continuous employment matters — someone with 4+ years of steady contributions will have banked the full 238 days, while someone who changed jobs frequently or worked part-time may have fewer credits.</p>
+
+      <h3>Credit days by employment duration</h3>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Years Employed</th>
+            <th>Approximate Credit Days</th>
+            <th>Maximum Claim Period</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>6 months</td><td>~45 days</td><td>45 days (6 weeks)</td></tr>
+          <tr><td>1 year</td><td>~91 days</td><td>91 days (13 weeks)</td></tr>
+          <tr><td>2 years</td><td>~182 days</td><td>182 days (26 weeks)</td></tr>
+          <tr><td>3 years</td><td>~274 days</td><td>238 days (capped)</td></tr>
+          <tr><td>4+ years</td><td>238 days (max)</td><td>238 days (34 weeks)</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Special cases</h3>
+      <ul>
+        <li><strong>Multiple short-term jobs:</strong> Credits can still accumulate if UIF contributions were made throughout, even across different employers</li>
+        <li><strong>Part-time work:</strong> Credits are earned based on actual days worked, not full-time equivalent</li>
+        <li><strong>Gaps in employment:</strong> Previous credits remain valid but no new credits are earned during gaps</li>
+        <li><strong>Maternity claims:</strong> Capped separately at 121 days (17 weeks), regardless of accumulated credits</li>
+      </ul>
+
+      <h2>Different types of UIF claims</h2>
+      <p>UIF covers several different situations, each with its own rules and maximum claim periods.</p>
+
+      <h3>Unemployment benefits (retrenchment/dismissal)</h3>
+      <ul>
+        <li><strong>When you qualify:</strong> Retrenchment, dismissal (not for misconduct), contract expiration, employer insolvency</li>
+        <li><strong>Maximum claim:</strong> 238 days (34 weeks)</li>
+        <li><strong>Key requirement:</strong> Must actively seek new employment and be available for work</li>
+        <li><strong>Must apply:</strong> Within 6 months of becoming unemployed</li>
+      </ul>
+
+      <h3>Maternity benefits</h3>
+      <ul>
+        <li><strong>When you qualify:</strong> During pregnancy and after childbirth</li>
+        <li><strong>Maximum claim:</strong> 121 days (17 weeks) — typically 4 weeks before and 13 weeks after birth</li>
+        <li><strong>Key requirement:</strong> Medical certificate confirming pregnancy/birth</li>
+        <li><strong>Must apply:</strong> Within 6 months of childbirth</li>
+        <li><strong>Special note:</strong> You can claim even if you're still employed but on unpaid maternity leave</li>
+      </ul>
+
+      <h3>Illness benefits</h3>
+      <ul>
+        <li><strong>When you qualify:</strong> Unable to work due to illness for more than 14 days</li>
+        <li><strong>Maximum claim:</strong> 238 days in any 4-year period</li>
+        <li><strong>Key requirement:</strong> Medical certificate from registered practitioner</li>
+        <li><strong>Special note:</strong> First 14 days are not covered (employer's responsibility)</li>
+      </ul>
+
+      <h3>Death benefits (for dependents)</h3>
+      <ul>
+        <li><strong>When you qualify:</strong> Dependent of deceased contributor</li>
+        <li><strong>Maximum claim:</strong> Lump sum based on credits accumulated by deceased</li>
+        <li><strong>Key requirement:</strong> Death certificate, proof of dependency</li>
+        <li><strong>Must apply:</strong> Within 6 months of death</li>
+      </ul>
+
+      <h2>When you CANNOT claim UIF</h2>
+      <p>Understanding when you're not eligible is just as important as knowing when you are. You cannot claim UIF in these situations:</p>
+
+      <ul>
+        <li><strong>Voluntary resignation:</strong> If you choose to leave your job, you forfeit UIF benefits</li>
+        <li><strong>Dismissal for misconduct:</strong> If you were fired for serious misconduct (theft, violence, gross negligence)</li>
+        <li><strong>Freelancers and self-employed:</strong> Unless you voluntarily registered and contributed (rare)</li>
+        <li><strong>Independent contractors:</strong> Not considered employees under UIF</li>
+        <li><strong>Foreign workers without valid permits:</strong> Must have legal right to work in SA</li>
+        <li><strong>Hours worked less than 24 per month:</strong> Domestic workers working fewer than 24 hours monthly</li>
+        <li><strong>Public servants:</strong> Some government employees are covered by different pension schemes</li>
+        <li><strong>Learners on learnerships:</strong> Generally not covered unless specific conditions are met</li>
+      </ul>
+
+      <div class="callout">
+        <strong>Critical warning:</strong> If you're considering resigning to claim UIF, don't. Resignation disqualifies you from benefits, and attempting to claim after resigning is fraud that can result in criminal charges and repayment of all benefits received.
+      </div>
+
+      <h2>The UIF application process: Step by step</h2>
+      <p>Applying for UIF has been streamlined in recent years, but it still requires proper documentation and patience. Here's exactly what to expect.</p>
+
+      <h3>Step 1: Gather your documents</h3>
+      <p>Before applying, ensure you have:</p>
+      <ul>
+        <li>13-digit South African ID book or smart ID card (or valid passport for foreign workers)</li>
+        <li>UI-19 form from your employer (showing employment dates and reason for termination)</li>
+        <li>UI-2.7 form (remuneration received while ill — for illness claims only)</li>
+        <li>Most recent payslip or proof of salary</li>
+        <li>Bank statement showing your account details (must be in your name)</li>
+        <li>For maternity: Medical certificate (UI-2.1) confirming pregnancy and expected/actual birth date</li>
+      </ul>
+
+      <h3>Step 2: Choose your application method</h3>
+      <p>You have two options:</p>
+
+      <p><strong>Online (recommended):</strong> Visit ufiling.labour.gov.za, create an account, and submit your application digitally. This is faster and allows you to track progress online.</p>
+
+      <p><strong>In person:</strong> Visit your nearest Department of Employment and Labour office with original documents and copies. You'll need to complete physical forms and submit them to a consultant.</p>
+
+      <h3>Step 3: Submit and wait for processing</h3>
+      <p>After submission:</p>
+      <ul>
+        <li>Your application is reviewed (typically 2-4 weeks)</li>
+        <li>If approved, you'll receive notification with your benefit amount and claim period</li>
+        <li>First payment is usually made within 2-4 weeks of approval</li>
+        <li>Subsequent payments are made monthly for the duration of your claim</li>
+      </ul>
+
+      <h3>Step 4: Continue claiming (if applicable)</h3>
+      <p>For unemployment benefits, you must:</p>
+      <ul>
+        <li>Report to the Labour Centre every 4 weeks (or online if available)</li>
+        <li>Provide proof of job search efforts</li>
+        <li>Confirm you're still unemployed and available for work</li>
+        <li>Report any new employment immediately</li>
+      </ul>
+
+      <h2>Common problems and how to solve them</h2>
+      <p>UIF claims often face delays due to common issues. Here's how to avoid or resolve them.</p>
+
+      <h3>Problem: Employer hasn't provided UI-19 form</h3>
+      <p><strong>Solution:</strong> Your employer is legally required to provide this within a reasonable time. If they refuse, contact the Department of Labour's call centre (0800 872 872) or visit your nearest Labour Centre. They can intervene on your behalf or accept alternative documentation.</p>
+
+      <h3>Problem: Employer didn't contribute to UIF</h3>
+      <p><strong>Solution:</strong> This is a serious violation by your employer. Report them to the Department of Labour immediately. You may still be able to claim benefits, and your employer will face penalties and be required to pay back-contributions.</p>
+
+      <h3>Problem: Application rejected</h3>
+      <p><strong>Solution:</strong> Ask for written reasons for rejection. Common reasons include missing documents, insufficient credits, or applying after the 6-month deadline. You can appeal the decision or reapply with corrected documentation.</p>
+
+      <h3>Problem: Payments are late or not arriving</h3>
+      <p><strong>Solution:</strong> First check your bank details are correct. Then contact the UIF call centre or visit a Labour Centre. Delays often occur due to banking detail errors or system backlogs.</p>
+
+      <h3>Problem: Disagreement with benefit amount</h3>
+      <p><strong>Solution:</strong> Request a detailed breakdown of the calculation. If you believe there's an error (wrong salary used, incorrect credits), you can appeal through the Department's dispute resolution process.</p>
+
+      <h2>UIF vs your emergency fund: Why you need both</h2>
+      <p>As this calculator demonstrates, UIF benefits are designed as a safety net, not a complete income replacement. For most workers, especially those earning above R10,000 per month, UIF covers only a fraction of their actual expenses.</p>
+
+      <h3>The UIF gap</h3>
+      <p>Consider these scenarios:</p>
+      <ul>
+        <li><strong>Earning R15,000/month:</strong> UIF pays ~R5,850 (39%) — gap of R9,150/month</li>
+        <li><strong>Earning R25,000/month:</strong> UIF pays ~R6,731 (27%) — gap of R18,269/month</li>
+        <li><strong>Earning R40,000/month:</strong> UIF pays ~R6,731 (17%) — gap of R33,269/month</li>
+      </ul>
+
+      <p>This gap must be covered by your own resources — which is why a personal emergency fund is essential.</p>
+
+      <h3>Recommended emergency fund size</h3>
+      <p>Financial planners typically recommend:</p>
+      <ul>
+        <li><strong>3 months of expenses:</strong> Minimum for stable employment</li>
+        <li><strong>6 months of expenses:</strong> Recommended for most workers</li>
+        <li><strong>6-12 months of expenses:</strong> Freelancers, commission earners, or volatile industries</li>
+      </ul>
+
+      <p>Your emergency fund should be calculated based on your essential monthly expenses (housing, food, transport, insurance), not your full salary. Use our <a href="/emergency-fund">emergency fund calculator</a> to determine your target.</p>
+
+      <h2>Tax treatment of UIF benefits</h2>
+      <p>One significant advantage of UIF benefits is their tax treatment.</p>
+
+      <h3>UIF benefits are tax-free</h3>
+      <p>Under the Income Tax Act, UIF benefits are specifically exempt from income tax. This means:</p>
+      <ul>
+        <li>No PAYE is deducted from UIF payments</li>
+        <li>You receive the full benefit amount calculated by the Department</li>
+        <li>UIF benefits do not need to be declared on your annual tax return (ITR12)</li>
+        <li>UIF benefits do not affect your tax bracket or marginal rate</li>
+      </ul>
+
+      <h3>Interaction with other income</h3>
+      <p>If you receive UIF benefits while also earning other income (part-time work, rental income, investment income), only the other income is taxable. The UIF portion remains tax-free regardless of your total income.</p>
+
+      <h2>Making the most of your UIF benefits</h2>
+      <p>While you can't control whether you'll need UIF, you can optimize how you use it if you do.</p>
+
+      <h3>Strategy 1: Apply immediately</h3>
+      <p>Don't wait. The 6-month deadline is strict, and processing takes time. Apply within the first week of becoming unemployed or starting maternity leave to minimize the gap before payments begin.</p>
+
+      <h3>Strategy 2: Budget around the UIF amount</h3>
+      <p>Use this calculator to know exactly what to expect, then immediately adjust your budget to match your UIF income plus any emergency fund drawdown. Cut discretionary spending immediately rather than waiting until savings run low.</p>
+
+      <h3>Strategy 3: Don't count on it for planning</h3>
+      <p>UIF is uncertain — applications can be delayed, rejected, or paid less than expected. Never make major financial commitments (like signing a lease) based on expected UIF income alone.</p>
+
+      <h3>Strategy 4: Use it to extend your runway</h3>
+      <p>UIF gives you breathing room to find the right job rather than accepting the first offer out of desperation. Use this time strategically to upskill, network, and find a role that matches your career goals.</p>
+
+      <h3>Strategy 5: Report new employment immediately</h3>
+      <p>Once you start a new job, you must stop claiming UIF. Continuing to claim after starting work is fraud and can result in having to repay everything plus penalties. Report your new employment date to the Department immediately.</p>
+
+      <h2>Common myths about UIF benefits</h2>
+
+      <h3>Myth: "UIF pays 80% of my salary"</h3>
+      <p><strong>Reality:</strong> UIF pays between 38% and 60% of your capped salary (R17,712/month maximum). For most earners above R10,000, it's closer to 38-45% of actual salary.</p>
+
+      <h3>Myth: "I can claim UIF if I resign"</h3>
+      <p><strong>Reality:</strong> Voluntary resignation disqualifies you from UIF benefits. Only retrenchment, dismissal (not for misconduct), contract expiration, maternity, or illness qualify.</p>
+
+      <h3>Myth: "My employer pays UIF, so I don't need to worry"</h3>
+      <p><strong>Reality:</strong> While your employer contributes 1%, you also contribute 1% from your salary. Check your payslip to confirm both contributions are being made.</p>
+
+      <h3>Myth: "UIF will cover my full salary while I look for work"</h3>
+      <p><strong>Reality:</strong> UIF is designed as a partial safety net, not full income replacement. Most workers need to supplement UIF with savings or other income.</p>
+
+      <h3>Myth: "I've been working for 20 years, so I'll get more UIF"</h3>
+      <p><strong>Reality:</strong> UIF benefits are capped at 238 days regardless of how long you've worked. After 4 years, you've already accumulated the maximum credits.</p>
+
+      <h3>Myth: "I can claim UIF from multiple jobs simultaneously"</h3>
+      <p><strong>Reality:</strong> UIF benefits are calculated on your total contributions across all employers, but you can only claim once based on your combined credit days.</p>
+
+      <h2>Glossary: UIF terms explained</h2>
+      <div class="glossary-grid">
+        <div class="glossary-item">
+          <div class="glossary-term">UIF</div>
+          <div class="glossary-def">Unemployment Insurance Fund — a government fund that provides short-term relief to workers who become unemployed or are unable to work due to maternity, illness, or death of a breadwinner.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">IRR</div>
+          <div class="glossary-def">Income Replacement Rate — the percentage of your salary that UIF replaces, ranging from 38% to 60% based on a sliding scale.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">Earnings Ceiling</div>
+          <div class="glossary-def">R17,712 per month — the maximum salary used for UIF calculations. Earnings above this are ignored for both contributions and benefits.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">Credit Days</div>
+          <div class="glossary-def">Days of UIF benefit you've earned through contributions. You earn 1 credit day for every 4 days worked, up to a maximum of 238 days.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">UI-19 Form</div>
+          <div class="glossary-def">Official form from your employer showing your employment dates, salary, and reason for termination. Required for all UIF claims.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">Retrenchment</div>
+          <div class="glossary-def">Dismissal due to operational requirements (company restructuring, downsizing, economic reasons). Qualifies for UIF benefits.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">uFiling</div>
+          <div class="glossary-def">The Department of Labour's online system (ufiling.labour.gov.za) for UIF applications, contributions, and benefit tracking.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">Contribution</div>
+          <div class="glossary-def">Monthly payment to UIF — 1% from employee + 1% from employer = 2% total. Based on salary up to R17,712/month.</div>
+        </div>
+      </div>
+
+      <h2>Frequently asked questions</h2>
+
+      <h3>How is the UIF benefit calculated in South Africa?</h3>
+      <p>UIF benefits use an Income Replacement Rate (IRR) formula between 38% and 60% of your salary — lower earners receive a higher percentage. Benefits are based on salary capped at R17,712 per month (R212,544 per year). The formula uses your daily income to determine your specific IRR percentage.</p>
+
+      <h3>How long can I claim UIF for?</h3>
+      <p>You can claim UIF for up to 238 days (34 weeks) for retrenchment or illness, and up to 121 days (17 weeks) for maternity, depending on your accumulated credit days. You earn 1 credit day for every 4 days worked while contributing to UIF, so you need approximately 4 years of employment for the maximum claim period.</p>
+
+      <h3>What is the UIF earnings ceiling for 2026?</h3>
+      <p>The UIF earnings ceiling is R17,712 per month (R212,544 per year). If you earn more than this, your UIF contributions and benefits are calculated on R17,712 only. The maximum monthly contribution is R177.12 (1% of R17,712) from both you and your employer.</p>
+
+      <h3>How much UIF will I get if I earn R20,000 per month?</h3>
+      <p>If you earn R20,000 per month, your UIF benefit is calculated on the ceiling of R17,712 (not your full salary). With 4+ years of contributions, you could receive approximately R6,731 per month for up to 238 days (about R53,395 total). This represents about 34% of your actual salary.</p>
+
+      <h3>Can I claim UIF if I resign from my job?</h3>
+      <p>No. You cannot claim UIF if you voluntarily resign. UIF benefits are only available if you were retrenched, dismissed (not for misconduct), your contract expired, your employer died (domestic workers), or you are on maternity leave or ill. Resignation permanently disqualifies you from claiming.</p>
+
+      <h3>How do I apply for UIF benefits?</h3>
+      <p>Apply online at ufiling.labour.gov.za or visit your nearest Labour Centre within 6 months of becoming unemployed. You need your ID, UI-19 form from your employer, recent payslip, and bank details. Payment typically takes 2-4 weeks after approval, directly into your bank account.</p>
+
+      <h3>Do I pay tax on UIF benefits?</h3>
+      <p>No. UIF benefits are completely tax-free in South Africa under the Income Tax Act. You do not need to declare UIF benefits on your tax return, and no PAYE is deducted from UIF payments. You receive the full benefit amount calculated by the Department.</p>
+
+      <h3>What is the Income Replacement Rate (IRR)?</h3>
+      <p>The IRR is the percentage of your salary that UIF replaces. It ranges from 38% (for earners at the ceiling of R17,712/month) to 60% (for very low earners). The sliding scale is designed to provide proportionally more support to lower-income workers who have less financial cushion.</p>
+
+      <h3>How many credit days do I need for UIF?</h3>
+      <p>You earn 1 credit day for every 4 days worked while contributing to UIF. To claim the maximum 238 days, you need approximately 4 years of continuous employment (about 952 working days). If you've worked less than 4 years, your claim period will be proportionally shorter.</p>
+
+      <h3>Can I claim UIF if I'm a freelancer or self-employed?</h3>
+      <p>Generally no. UIF is for employees with an employer who contributes on their behalf. Self-employed people, freelancers, and independent contractors cannot claim UIF unless they voluntarily registered and contributed (which is rare). Freelancers should build their own emergency fund instead.</p>
+
+      <h3>What documents do I need to claim UIF?</h3>
+      <p>You need your South African ID, UI-19 form from your employer (showing employment dates and termination reason), most recent payslip, and bank account details in your name. For maternity claims, you also need a medical certificate (UI-2.1 form) confirming your pregnancy and expected/actual birth date.</p>
+
+      <h3>How long does it take to receive UIF payments?</h3>
+      <p>After submitting a complete application, the Department typically takes 2-4 weeks to process and approve your claim. The first payment usually arrives within 2-4 weeks of approval. Subsequent payments are made monthly for the duration of your approved claim period.</p>
+
+      <h3>Can I work part-time while claiming UIF?</h3>
+      <p>You must inform the Department if you start any work, even part-time. Depending on your earnings, your UIF benefit may be reduced or stopped entirely. Failing to report new employment while claiming UIF is fraud and can result in repayment of all benefits plus penalties.</p>
+
+      <h3>What happens if my UIF application is rejected?</h3>
+      <p>Ask for written reasons for rejection. Common reasons include insufficient credit days, missing documentation, or applying after the 6-month deadline. You can appeal the decision through the Department's dispute resolution process or reapply with corrected documentation if the issue was fixable.</p>
+
+      <div class="disclaim">
+        <strong>Disclaimer:</strong> This calculator provides estimates based on Department of Employment and Labour formulas and the UIF earnings ceiling of R17,712/month as of 2026. Actual benefits are determined by the Department when you apply and may differ based on your specific circumstances and accumulated credits. This tool is for educational purposes only and does not constitute financial or legal advice. For definitive information about your UIF benefits, contact the Department of Employment and Labour or visit ufiling.labour.gov.za. CalcMyPay is not affiliated with the Department of Employment and Labour.
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">CalcMy<span>Pay</span></div>
+    <div class="footer-links">
+      <a href="/salary-income">Salary</a>
+      <a href="/affordability">Affordability</a>
+      <a href="/wealth-building">Wealth</a>
+      <a href="/money-tools">Tools</a>
+      <a href="/financial-coach">Coach</a>
+      <a href="/blog-salary-guide">Guides</a>
+      <a href="/about">About</a>
+      <a href="/privacy-policy">Privacy</a>
+      <a href="/contact">Contact</a>
+    </div>
+    <div class="footer-copy">
+      © 2026 CalcMyPay · For informational purposes only · Not affiliated with the Department of Employment & Labour
+    </div>
+  </div>
+</footer>
 
 <script>
 let claimType = 'retrenchment';
 const fmt = n => 'R\u00a0' + Math.round(Math.abs(n)).toLocaleString('en-ZA');
 
-function setType(type, btn){
+// FIXED: Correct UIF ceiling - R17,712 per month (not R1,476)
+const UIF_MONTHLY_CEILING = 17712;
+
+function setType(type, btn) {
   claimType = type;
   document.querySelectorAll('.type-tab').forEach(t => t.classList.remove('active'));
   btn.classList.add('active');
 }
 
-function calcIRR(dailyIncome){
-  // SARS IRR formula: min 38%, max 60%
-  const irr = Math.min(60, Math.max(38, 29.2 + (7238.4 / Math.max(dailyIncome, 1))));
-  return irr / 100;
+function calcIRR(dailyIncome) {
+  // IRR formula: 29.2 + (7173.24 / (dailyIncome + 4027.56))
+  // Capped between 38% and 60%
+  if (dailyIncome <= 0) return 0.60;
+  const irr = 29.2 + (7173.24 / (dailyIncome + 4027.56));
+  const capped = Math.min(60, Math.max(38, irr));
+  return capped / 100;
 }
 
-function calculate(){
-  const salary = parseFloat(document.getElementById('salary').value)||0;
-  const yearsVal = parseFloat(document.getElementById('years').value);
-  if(salary <= 0){alert('Please enter your monthly salary.');return;}
+function loadExample() {
+  document.getElementById('salary').value = 25000;
+  document.getElementById('years').value = '4';
+  calculate();
+}
 
-  // UIF cap: R17,712/yr = R1,476/month
-  const cappedMonthly = Math.min(salary, 1476);
+function calculate() {
+  const salary = parseFloat(document.getElementById('salary').value) || 0;
+  const yearsVal = parseFloat(document.getElementById('years').value);
+  
+  if (salary <= 0) {
+    alert('Please enter your monthly salary.');
+    return;
+  }
+
+  // FIXED: Cap at R17,712/month (correct UIF ceiling)
+  const cappedMonthly = Math.min(salary, UIF_MONTHLY_CEILING);
   const dailyIncome = cappedMonthly / 30;
   const irr = calcIRR(dailyIncome);
   const dailyBenefit = dailyIncome * irr;
   const monthlyBenefit = dailyBenefit * 30;
-  const pctOfSalary = ((monthlyBenefit / salary) * 100).toFixed(1);
+  const pctOfSalary = salary > 0 ? ((monthlyBenefit / salary) * 100).toFixed(1) : 0;
 
   // Credit days: 1 day per 4 days worked, max 238
   const creditDays = Math.min(238, Math.round(yearsVal * 365 / 4));
-  const maxDays = {retrenchment: 238, maternity: 121, illness: 238}[claimType];
+  const maxDays = { retrenchment: 238, maternity: 121, illness: 238 }[claimType];
   const claimDays = Math.min(creditDays, maxDays);
   const totalPayout = dailyBenefit * claimDays;
-  const typeLabels = {retrenchment:'Retrenchment',maternity:'Maternity leave',illness:'Illness'};
-  const maxLabels = {retrenchment:'238 days',maternity:'121 days (17 weeks)',illness:'238 days'};
+  
+  const typeLabels = {
+    retrenchment: 'Retrenchment',
+    maternity: 'Maternity leave',
+    illness: 'Illness'
+  };
+  const maxLabels = {
+    retrenchment: '238 days (34 weeks)',
+    maternity: '121 days (17 weeks)',
+    illness: '238 days (34 weeks)'
+  };
 
   document.getElementById('th-amount').textContent = fmt(monthlyBenefit);
   document.getElementById('th-label').textContent = `Monthly UIF (${typeLabels[claimType]})`;
@@ -482,50 +1144,70 @@ function calculate(){
   document.getElementById('br-claim').textContent = claimDays + ' days';
   document.getElementById('br-total').textContent = fmt(totalPayout);
 
-  baseInputs = {salary, yearsVal, total: totalPayout};
+  baseInputs = { salary, yearsVal, total: totalPayout };
   document.getElementById('whatif-section').style.display = 'block';
   resetWhatIf();
 
   document.getElementById('results').classList.add('show');
-  document.getElementById('results').scrollIntoView({behavior:'smooth',block:'nearest'});
+  document.getElementById('results').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }
-document.addEventListener('keydown', e => {if(e.key==='Enter') calculate();});
+
+document.addEventListener('keydown', e => { if (e.key === 'Enter') calculate(); });
 
 let baseInputs = null;
 
-function renderWhatIf(){
-  if(!baseInputs) return;
+function renderWhatIf() {
+  if (!baseInputs) return;
   const salPct = parseFloat(document.getElementById('wi-sal').value);
   const extraYears = parseFloat(document.getElementById('wi-years').value);
 
-  document.getElementById('wi-sal-out').textContent = (salPct>=0?'+':'')+salPct+'%';
-  document.getElementById('wi-years-out').textContent = '+'+extraYears+' yrs';
+  document.getElementById('wi-sal-out').textContent = (salPct >= 0 ? '+' : '') + salPct + '%';
+  document.getElementById('wi-years-out').textContent = '+' + extraYears + ' yrs';
 
-  const newSalary = baseInputs.salary * (1 + salPct/100);
+  const newSalary = baseInputs.salary * (1 + salPct / 100);
   const newYears = baseInputs.yearsVal + extraYears;
 
-  const newCapped = Math.min(newSalary, 1476);
+  // FIXED: Use correct UIF ceiling
+  const newCapped = Math.min(newSalary, UIF_MONTHLY_CEILING);
   const newDaily = newCapped / 30;
   const newIrr = calcIRR(newDaily);
   const newDailyBenefit = newDaily * newIrr;
 
   const newCreditDays = Math.min(238, Math.round(newYears * 365 / 4));
-  const maxDays = {retrenchment: 238, maternity: 121, illness: 238}[claimType];
+  const maxDays = { retrenchment: 238, maternity: 121, illness: 238 }[claimType];
   const newClaimDays = Math.min(newCreditDays, maxDays);
   const newTotal = newDailyBenefit * newClaimDays;
 
   document.getElementById('wi-newtotal').textContent = fmt(newTotal);
   const delta = newTotal - baseInputs.total;
   const deltaEl = document.getElementById('wi-delta');
-  if(Math.abs(delta) < 1){ deltaEl.textContent = 'No change'; deltaEl.className = 'whatif-delta-val'; }
-  else if(delta > 0){ deltaEl.textContent = '+'+fmt(delta); deltaEl.className = 'whatif-delta-val up'; }
-  else { deltaEl.textContent = '-'+fmt(Math.abs(delta)); deltaEl.className = 'whatif-delta-val down'; }
+  
+  if (Math.abs(delta) < 1) {
+    deltaEl.textContent = 'No change';
+    deltaEl.className = 'whatif-delta-val';
+  } else if (delta > 0) {
+    deltaEl.textContent = '+' + fmt(delta);
+    deltaEl.className = 'whatif-delta-val up';
+  } else {
+    deltaEl.textContent = '-' + fmt(Math.abs(delta));
+    deltaEl.className = 'whatif-delta-val down';
+  }
 }
 
-function resetWhatIf(){
+function resetWhatIf() {
   document.getElementById('wi-sal').value = 0;
   document.getElementById('wi-years').value = 0;
   renderWhatIf();
 }
+
+// Auto-load example for first-time visitors
+window.addEventListener('load', function() {
+  if (!sessionStorage.getItem('uifCalcVisited')) {
+    setTimeout(loadExample, 500);
+    sessionStorage.setItem('uifCalcVisited', 'true');
+  }
+});
 </script>
-</body></html>
+
+</body>
+</html>
