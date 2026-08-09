@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="color-scheme" content="light"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PAYE Calculator South Africa 2026 — Income Tax | CalcMyPay</title>
-<meta name="description" content="Calculate your PAYE (income tax) in South Africa for the SARS 2027 tax year. See exactly how much tax is deducted from your salary each month.">
+<meta name="description" content="Calculate your PAYE (income tax) in South Africa for the SARS 2027 tax year. See exactly how much tax is deducted from your salary each month with our free calculator.">
 <meta name="google-adsense-account" content="ca-pub-6108324382808705">
 <link rel="canonical" href="https://calcmypay.co.za/paye-calculator">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -12,15 +13,56 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/icon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/icon-16.png">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How is PAYE calculated in South Africa?","acceptedAnswer":{"@type":"Answer","text":"PAYE is calculated by applying the SARS tax brackets to your annual income, subtracting the primary rebate of R17,820 and any medical aid credits, then dividing by 12 for the monthly amount."}},{"@type":"Question","name":"How much is PAYE on R30,000 per month?","acceptedAnswer":{"@type":"Answer","text":"On R30,000/month (R360,000/year), PAYE is approximately R4,330/month after the primary rebate, based on the SARS 2027 tax year."}}]}</script>
-<style>/* CalcMyPay — Editorial "Ink & Marigold" =================================== */
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How is PAYE calculated in South Africa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "PAYE is calculated by applying the SARS tax brackets to your annual income, subtracting the primary rebate of R17,820 and any medical aid credits, then dividing by 12 for the monthly amount."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much is PAYE on R30,000 per month?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "On R30,000/month (R360,000/year), PAYE is approximately R5,182/month after the primary rebate, based on the SARS 2027 tax year."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between PAYE and income tax?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is no difference — PAYE (Pay As You Earn) is simply the mechanism SARS uses to collect income tax monthly from salaried employees rather than requiring a lump sum payment at year-end."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does PAYE include UIF?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. PAYE is income tax only. UIF (Unemployment Insurance Fund) is a separate 1% deduction. Your payslip shows both as separate line items."
+      }
+    }
+  ]
+}
+</script>
+
+<style>
+/* CalcMyPay — Editorial "Ink & Marigold" */
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap');
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
   --paper:#FFFFFF;--ink:#16201C;--forest:#1B4332;--marigold:#F6B53D;
   --mist:#6B756F;--line:#DEDBD0;--sand:#FFFFFF;--berry:#B23A2E;
   --disp:'Fraunces',Georgia,serif;--body:'Inter',system-ui,sans-serif;
-  /* legacy var aliases so inline styles still resolve */
   --black:#16201C;--navy:#1B4332;--navy-mid:#1B4332;--accent:#1B4332;--accent-dark:#143026;
   --white:#fff;--off-white:#FFFFFF;--green:#1B4332;--green-light:#EDF3EE;--accent-light:#EDF3EE;
   --g100:#FFFFFF;--g200:#E4E2D8;--g400:#AEB3AC;--g600:#6B756F;--g800:#C9CcC4;--red:#B23A2E;
@@ -29,17 +71,11 @@
 html{color-scheme:light;scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{font-family:var(--body);background:var(--paper);color:var(--ink);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased}
 a{color:var(--forest);text-decoration:none}
-
-/* SA stripe — keep but slimmer & muted */
 .sa-stripe{height:3px;background:linear-gradient(90deg,#1B4332 0 16%,#F6B53D 16% 33%,#FCFBF7 33% 50%,#1B4332 50% 66%,#B23A2E 66% 83%,#16201C 83% 100%);opacity:.9}
-
-/* TOP BAR — editorial dateline */
 .top-bar{background:var(--paper);border-bottom:1px solid var(--line);padding:.5rem 2rem;display:flex;align-items:center;justify-content:space-between}
 .tb-l{font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--mist)}
 .tb-r{font-size:.7rem;color:var(--mist);letter-spacing:.04em}
 .tb-r span{color:var(--forest);font-weight:600}
-
-/* MASTHEAD NAV */
 nav{background:var(--paper);border-bottom:2px solid var(--ink);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:74px;position:sticky;top:0;z-index:100}
 .logo{display:flex;align-items:center;gap:.5rem;text-decoration:none}
 .logo-text{font-family:var(--disp);font-size:1.7rem;font-weight:900;letter-spacing:-.02em;color:var(--ink)}
@@ -55,14 +91,6 @@ nav{background:var(--paper);border-bottom:2px solid var(--ink);padding:0 2rem;di
 .nav-cta::after{display:none}
 .nav-cta:hover{background:var(--forest)!important;color:#fff!important}
 @media(max-width:860px){.nav-links{gap:0;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;max-width:60vw}.nav-links::-webkit-scrollbar{display:none}.nav-links a{white-space:nowrap;padding:.5rem .6rem;font-size:.76rem}.logo-text{font-size:1.4rem}nav{padding:0 1rem}}
-
-/* AD SLOTS — quiet */
-.ad-strip{background:var(--paper);border-bottom:1px solid var(--line);text-align:center;padding:.6rem}
-.ad-ph{display:inline-flex;align-items:center;justify-content:center;background:var(--sand);border:1px solid var(--line);color:var(--g400);font-size:.62rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
-.ad-ph.lb{width:728px;height:90px;max-width:100%}.ad-ph.rect{width:300px;height:250px}
-.ad-lbl{font-size:.6rem;color:var(--g400);text-transform:uppercase;letter-spacing:.12em;margin-bottom:.3rem}
-
-/* PAGE HEADER — kicker / headline / standfirst */
 .ph{background:var(--paper);border-bottom:1px solid var(--line);padding:4rem 2rem 3rem}
 .ph-inner{max-width:1080px;margin:0 auto}
 .bc{font-size:.72rem;color:var(--mist);font-weight:500;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1.4rem}
@@ -71,94 +99,27 @@ nav{background:var(--paper);border-bottom:2px solid var(--ink);padding:0 2rem;di
 .ph-cat::before{content:'';width:24px;height:2px;background:var(--marigold)}
 .ph h1{font-family:var(--disp);font-size:clamp(2.2rem,5vw,3.6rem);font-weight:600;color:var(--ink);line-height:1.05;letter-spacing:-.02em;margin-bottom:1rem;max-width:18ch}
 .ph p{font-family:var(--body);color:var(--mist);font-size:1.1rem;line-height:1.6;max-width:60ch}
-.ph-meta{display:flex;gap:1.4rem;font-size:.72rem;color:var(--mist);font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-top:1.2rem}
-
-/* SECTIONS */
-.section{max-width:1080px;margin:0 auto;padding:3.5rem 2rem}
-.section-header{margin-bottom:2rem;padding-bottom:1rem;border-bottom:1px solid var(--line);display:flex;align-items:baseline;justify-content:space-between;gap:1rem;flex-wrap:wrap}
-.section-title{font-family:var(--disp);font-size:1.6rem;font-weight:600;letter-spacing:-.01em;color:var(--ink)}
-.section-title span{color:var(--marigold);font-weight:400;margin:0 .3rem}
-.section-more{font-family:var(--body);font-size:.8rem;font-weight:600;color:var(--forest);letter-spacing:.02em}
-.section-more::after{content:' →'}
-
-/* TICKER — editorial stat strip */
-.ticker{background:var(--sand);border-bottom:1px solid var(--line);padding:.7rem 2rem;display:flex;gap:2.5rem;overflow-x:auto;scrollbar-width:none}
-.ticker::-webkit-scrollbar{display:none}
-.tick-item{display:flex;align-items:baseline;gap:.5rem;white-space:nowrap}
-.tick-label{font-size:.68rem;color:var(--mist);font-weight:600;text-transform:uppercase;letter-spacing:.1em}
-.tick-val{font-family:var(--disp);color:var(--forest);font-weight:600;font-size:1rem}
-
-/* TOOLS GRID + CARDS */
-.tools-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.25rem}
-.tool-card{background:var(--paper);border:1px solid var(--line);padding:1.6rem;transition:.2s;display:flex;flex-direction:column;gap:.7rem;text-decoration:none;color:var(--ink);position:relative}
-.tool-card:hover{border-color:var(--ink);transform:translateY(-2px)}
-.tool-card.featured{border-top:3px solid var(--forest)}
-.tc-cat{font-family:var(--body);font-size:.68rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--mist)}
-.tool-card h3{font-family:var(--disp);font-size:1.25rem;font-weight:600;letter-spacing:-.01em;line-height:1.15;color:var(--ink)}
-.tool-card p{font-family:var(--body);font-size:.88rem;color:var(--mist);line-height:1.55;flex:1}
-.tc-link{font-family:var(--body);font-size:.8rem;font-weight:600;color:var(--forest)}
-.tc-badge{font-family:var(--body);font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.25rem .6rem;background:var(--sand);color:var(--forest);border:1px solid var(--line)}
-
-/* BLOG GRID */
-.blog-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:1.25rem}
-.blog-card{background:var(--paper);border:1px solid var(--line);padding:1.6rem;text-decoration:none;color:var(--ink);transition:.2s}
-.blog-card:hover{border-color:var(--ink);transform:translateY(-2px)}
-.blog-card.lead{border-top:3px solid var(--marigold)}
-.bc-cat{font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);margin-bottom:.6rem;display:block}
-.blog-card h3{font-family:var(--disp);font-size:1.2rem;font-weight:600;line-height:1.2;letter-spacing:-.01em;margin-bottom:.5rem}
-.blog-card.lead h3{font-size:1.6rem}
-.blog-card p{font-size:.86rem;color:var(--mist);line-height:1.55;margin-bottom:.6rem}
-.bc-more{font-size:.78rem;font-weight:600;color:var(--forest)}
-.bc-meta{font-size:.7rem;color:var(--g400);font-weight:600;letter-spacing:.04em;text-transform:uppercase}
-
-/* DATA CELLS (homepage figures) */
-.data-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem;margin-bottom:1rem}
-.dc{background:var(--sand);border:1px solid var(--line);padding:1.5rem}
-.dc-label{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--mist);margin-bottom:.5rem}
-.dc-val{font-family:var(--disp);font-size:2rem;font-weight:600;color:var(--ink);letter-spacing:-.02em;line-height:1}
-.dc-val.acc{color:var(--forest)}
-.dc-sub{font-size:.74rem;color:var(--mist);margin-top:.3rem}
-
-/* WHY CARDS */
-.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
-.why-card{background:var(--paper);border:1px solid var(--line);padding:1.8rem;border-top:3px solid var(--forest)}
-.why-num{font-family:var(--disp);font-size:2.4rem;font-weight:900;color:var(--marigold);line-height:1;margin-bottom:1rem}
-.why-card h3{font-family:var(--disp);font-size:1.2rem;font-weight:600;margin-bottom:.5rem}
-.why-card p{font-size:.88rem;color:var(--mist);line-height:1.6}
-
-/* CTA BLOCK */
-.cta-block{background:var(--ink);color:var(--paper);padding:3rem 2rem;text-align:center}
-.cta-block h2,.cta-block h3{font-family:var(--disp);font-weight:600;color:var(--paper);letter-spacing:-.01em;margin-bottom:.6rem}
-.cta-block h2{font-size:clamp(1.5rem,3vw,2.2rem)}
-.cta-block h3{font-size:1.4rem}
-.cta-block p{color:rgba(255,255,255,.7);margin-bottom:1.5rem;font-size:1rem}
-
-/* BUTTONS */
-.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 1.6rem;font-family:var(--body);font-weight:600;font-size:.9rem;cursor:pointer;border:none;transition:.18s;text-decoration:none;letter-spacing:.01em}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.85rem 1.6rem;font-family:var(--body);font-weight:600;font-size:.9rem;cursor:pointer;border:none;transition:.18s;text-decoration:none;letter-spacing:.01em}
 .btn-accent{background:var(--marigold);color:var(--ink)}
 .btn-accent:hover{background:#eaa523}
 .btn-full{width:100%;justify-content:center}
 .btn:not(.btn-accent){background:var(--ink);color:var(--paper)}
 .btn:not(.btn-accent):hover{background:var(--forest);color:#fff}
-
-/* LAYOUT (tool + article) */
+.btn-example{background:var(--forest);color:var(--paper);margin-top:.8rem;border:2px solid var(--forest)}
+.btn-example:hover{background:var(--ink);border-color:var(--ink)}
+.example-badge{display:inline-block;background:var(--marigold);color:var(--ink);font-size:.62rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.2rem .5rem;margin-right:.5rem;border-radius:2px}
 .layout{max-width:1140px;margin:0 auto;padding:2.5rem 2rem;display:grid;grid-template-columns:1fr 320px;gap:2.5rem;align-items:start}
 @media(max-width:920px){.layout{grid-template-columns:1fr;gap:1.5rem}.sidebar{display:none}}
-
-/* CARD (tool input) */
 .card{background:var(--paper);border:1px solid var(--line)}
 .card-head{padding:1.4rem 1.6rem;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:.9rem}
 .card-cat{font-family:var(--body);font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);border-right:1px solid var(--line);padding-right:.9rem}
 .card-head h2{font-family:var(--disp);font-size:1.4rem;font-weight:600;letter-spacing:-.01em}
 .card-head p{font-size:.84rem;color:var(--mist);margin-top:.15rem}
 .card-body{padding:1.6rem}
-
-/* FORM */
 .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem 1.3rem;margin-bottom:1.4rem}
 @media(max-width:500px){.form-grid{grid-template-columns:1fr}}
 .fg{display:flex;flex-direction:column;gap:.4rem}
 label{font-family:var(--body);font-size:.78rem;font-weight:600;color:var(--ink);letter-spacing:.01em}
-label .hint{font-weight:400;color:var(--mist)}
 .iw{position:relative}
 .ipre,.isuf{position:absolute;top:50%;transform:translateY(-50%);font-size:.95rem;color:var(--mist);font-weight:500;pointer-events:none}
 .ipre{left:1rem}.isuf{right:1rem}
@@ -166,8 +127,6 @@ input,select{width:100%;padding:.8rem 1rem;border:1px solid var(--line);font-fam
 input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 0 3px rgba(27,67,50,.1)}
 .has-pre input{padding-left:2rem}.has-suf input{padding-right:2.4rem}
 .sw{position:relative}.sw::after{content:'';position:absolute;right:1.1rem;top:50%;width:7px;height:7px;border-right:2px solid var(--mist);border-bottom:2px solid var(--mist);transform:translateY(-65%) rotate(45deg);pointer-events:none}
-
-/* RESULT PANELS — the editorial figure signature */
 .results{margin-top:1.6rem;display:none}
 .results.show{display:block;animation:fadeUp .4s ease}
 @keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
@@ -178,8 +137,6 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .eff-block{text-align:right;flex-shrink:0}
 .eff-val{font-family:var(--disp);font-size:2rem;font-weight:600;color:var(--marigold);display:block;letter-spacing:-.02em;line-height:1}
 .eff-lbl{font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:rgba(255,255,255,.6)}
-
-/* breakdown blocks */
 .bb{border:1px solid var(--line);margin-bottom:1rem}
 .bb-title{padding:.7rem 1.1rem;font-family:var(--body);font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.14em;background:var(--sand);border-bottom:1px solid var(--line);color:var(--mist)}
 .br{display:flex;justify-content:space-between;align-items:center;padding:.7rem 1.1rem;font-size:.92rem;border-bottom:1px solid var(--line)}
@@ -190,18 +147,10 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .total-bar{display:flex;justify-content:space-between;align-items:center;padding:1.1rem 1.3rem;background:var(--sand);border:1px solid var(--forest);margin-bottom:1rem}
 .total-bar .lbl{font-family:var(--disp);font-size:1.05rem;font-weight:600;color:var(--forest)}
 .total-bar .val{font-family:var(--disp);font-size:1.3rem;font-weight:700;color:var(--forest);font-variant-numeric:tabular-nums}
-
-/* notes */
 .note{padding:.85rem 1.1rem;font-size:.84rem;line-height:1.6;margin-bottom:.7rem;display:flex;gap:.7rem;border:1px solid var(--line);background:var(--sand)}
 .note.warn{background:#FBF3E0;border-color:#E6D08A;color:#6B5414}
+.note.navy{background:#EDF3EE;border-color:#C9D8CF;color:#1B4332}
 .note a{color:var(--forest);font-weight:600}
-
-/* tabs */
-.type-tabs,.period-tabs{display:flex;gap:.4rem;margin-bottom:1.4rem;background:var(--sand);padding:.3rem;border:1px solid var(--line)}
-.type-tab,.ptab{flex:1;padding:.6rem;border:none;background:transparent;font-family:var(--body);font-weight:600;font-size:.8rem;color:var(--mist);cursor:pointer;transition:.15s;text-align:center}
-.type-tab.active,.ptab.active{background:var(--ink);color:var(--paper)}
-
-/* SIDEBAR */
 .sidebar{display:flex;flex-direction:column;gap:1.5rem}
 .sc{background:var(--paper);border:1px solid var(--line)}
 .sc-head{padding:.8rem 1.1rem;font-family:var(--body);font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.14em;border-bottom:1px solid var(--line);background:var(--sand);color:var(--mist)}
@@ -212,16 +161,14 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .qr{display:flex;justify-content:space-between;font-size:.84rem;padding:.45rem 0;border-bottom:1px solid var(--line);color:var(--mist)}
 .qr:last-child{border-bottom:none}
 .qr strong{color:var(--ink);font-weight:600;font-family:var(--disp)}
-.toc-link{display:block;font-size:.84rem;font-weight:500;color:var(--mist);padding:.4rem 0;border-bottom:1px solid var(--line);transition:color .15s}
-.toc-link:last-child{border-bottom:none}
-.toc-link:hover{color:var(--forest)}
-.related-post{display:block;padding:.75rem 0;border-bottom:1px solid var(--line)}
-.related-post:last-child{border-bottom:none}
-.rp-cat{font-size:.62rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--forest);margin-bottom:.25rem}
-.rp-title{font-family:var(--disp);font-size:.92rem;font-weight:500;color:var(--ink);line-height:1.3}
-.related-post:hover .rp-title{color:var(--forest)}
-
-/* DATA TABLE */
+.tools-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.25rem}
+.tool-card{background:var(--paper);border:1px solid var(--line);padding:1.6rem;transition:.2s;display:flex;flex-direction:column;gap:.7rem;text-decoration:none;color:var(--ink);position:relative}
+.tool-card:hover{border-color:var(--ink);transform:translateY(-2px)}
+.tool-card.featured{border-top:3px solid var(--forest)}
+.tc-cat{font-family:var(--body);font-size:.68rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--mist)}
+.tool-card h3{font-family:var(--disp);font-size:1.25rem;font-weight:600;letter-spacing:-.01em;line-height:1.15;color:var(--ink)}
+.tool-card p{font-family:var(--body);font-size:.88rem;color:var(--mist);line-height:1.55;flex:1}
+.tc-link{font-family:var(--body);font-size:.8rem;font-weight:600;color:var(--forest)}
 .data-table{width:100%;border-collapse:collapse;margin:1.2rem 0 1.6rem;font-size:.9rem;border:1px solid var(--line)}
 .data-table thead tr{background:var(--ink)}
 .data-table th{padding:.75rem 1rem;text-align:left;font-family:var(--body);font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--paper)}
@@ -230,9 +177,10 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .data-table tr:nth-child(even) td{background:var(--sand)}
 .data-table td.td-green{color:var(--forest);font-weight:600}
 .data-table td.td-red{color:var(--berry);font-weight:600}
-.data-table td.td-acc{color:var(--forest);font-weight:600}
-
-/* ARTICLE BODY — magazine measure */
+.section{max-width:1080px;margin:0 auto;padding:3.5rem 2rem}
+.section-header{margin-bottom:2rem;padding-bottom:1rem;border-bottom:1px solid var(--line);display:flex;align-items:baseline;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.section-title{font-family:var(--disp);font-size:1.6rem;font-weight:600;letter-spacing:-.01em;color:var(--ink)}
+.section-title span{color:var(--marigold);font-weight:400;margin:0 .3rem}
 .article-body{padding:2.5rem}
 @media(max-width:600px){.article-body{padding:1.5rem}}
 .article-body h2{font-family:var(--disp);font-size:1.7rem;font-weight:600;color:var(--ink);margin:2.4rem 0 .8rem;letter-spacing:-.01em;line-height:1.15;max-width:30ch}
@@ -244,10 +192,8 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .article-body li{font-family:var(--body);font-size:1.04rem;color:#2C352F;line-height:1.7;margin-bottom:.5rem}
 .article-body a{color:var(--forest);font-weight:500;border-bottom:1px solid var(--marigold)}
 .article-body strong{font-weight:600;color:var(--ink)}
-.callout,.callout.navy,.callout.grey,.callout.green{border:none;border-left:3px solid var(--marigold);background:var(--sand);padding:1.2rem 1.4rem;margin:1.6rem 0;font-family:var(--disp);font-size:1.15rem;font-weight:500;line-height:1.5;color:var(--ink);max-width:64ch}
+.callout{border:none;border-left:3px solid var(--marigold);background:var(--sand);padding:1.2rem 1.4rem;margin:1.6rem 0;font-family:var(--disp);font-size:1.15rem;font-weight:500;line-height:1.5;color:var(--ink);max-width:64ch}
 .callout strong{color:var(--forest)}
-
-/* FOOTER */
 footer{background:var(--ink);color:var(--paper);margin-top:2rem}
 .footer-inner{max-width:1080px;margin:0 auto;padding:2.5rem 2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
 .footer-logo{font-family:var(--disp);font-size:1.5rem;font-weight:900;color:var(--paper)}
@@ -256,28 +202,30 @@ footer{background:var(--ink);color:var(--paper);margin-top:2rem}
 .footer-links a{color:rgba(255,255,255,.7);font-size:.82rem;font-weight:500;transition:color .15s}
 .footer-links a:hover{color:var(--marigold)}
 .footer-copy{color:rgba(255,255,255,.5);font-size:.74rem;width:100%;margin-top:.8rem;padding-top:.9rem;border-top:1px solid rgba(255,255,255,.12)}
+.disclaim{font-size:.82rem;color:var(--mist);background:var(--sand);border:1px solid var(--line);padding:.9rem 1.1rem;line-height:1.6}
+.worked-example{background:#FAFBF7;border:1px solid var(--line);border-left:4px solid var(--forest);padding:1.5rem 1.8rem;margin:1.8rem 0}
+.worked-example-head{display:flex;align-items:center;gap:.6rem;margin-bottom:1rem}
+.worked-example-tag{font-size:.66rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--forest);background:#EDF3EE;padding:.25rem .6rem;border-radius:2px}
+.worked-example h3{font-family:var(--disp);font-size:1.15rem;font-weight:600;margin-bottom:.3rem}
+.worked-example p{font-size:.9rem;color:var(--mist);line-height:1.6;margin-bottom:.8rem}
+.strategy-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.25rem;margin:1.5rem 0}
+.strategy-card{background:var(--paper);border:1px solid var(--line);padding:1.6rem;border-top:3px solid var(--forest);transition:.2s}
+.strategy-card:hover{border-color:var(--ink);transform:translateY(-2px)}
+.strategy-num{font-family:var(--disp);font-size:2rem;font-weight:900;color:var(--marigold);margin-bottom:.5rem}
+.strategy-card h3{font-family:var(--disp);font-size:1.1rem;font-weight:600;color:var(--ink);margin-bottom:.5rem}
+.strategy-card p{font-size:.86rem;color:var(--mist);line-height:1.6;margin-bottom:.5rem}
+.strategy-saving{font-size:.78rem;color:var(--forest);font-weight:600;padding-top:.5rem;border-top:1px dashed var(--line);margin-top:.5rem}
 
-/* MISC legacy */
-.scenario-result{background:var(--sand);border:1px solid var(--forest);padding:1.2rem}
-.disclaim,.disclaim-box{font-size:.82rem;color:var(--mist);background:var(--sand);border:1px solid var(--line);padding:.9rem 1.1rem;line-height:1.6}
-.eyebrow{font-family:var(--body);font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);margin-bottom:.5rem}
-
-/* RESPONSIVE */
 @media(max-width:768px){
-  [style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr!important}
-  [style*="grid-template-columns:repeat(3,1fr)"]{grid-template-columns:1fr!important}
-  [style*="grid-template-columns:repeat(4,1fr)"]{grid-template-columns:1fr 1fr!important}
-  [style*="grid-template-columns:2fr 1fr 1fr"]{grid-template-columns:1fr!important}
-  [style*="grid-template-columns:1.1fr 1fr"]{grid-template-columns:1fr!important}
-  [style*="grid-template-columns:1fr 1fr;gap:4rem"]{grid-template-columns:1fr!important;gap:2rem!important}
-  .blog-grid,.data-row,.why-grid{grid-template-columns:1fr!important}
   .ph{padding:2.5rem 1.25rem 2rem}.section{padding:2.5rem 1.25rem}.layout{padding:1.5rem 1.25rem}
   .th-panel{flex-direction:column;align-items:flex-start;gap:1rem}.eff-block{text-align:left}
   .th-amount{font-size:2.6rem}
   .footer-inner{flex-direction:column;text-align:center}.footer-links{justify-content:center}
   .top-bar{padding:.4rem 1rem}.tb-r{display:none}
   .data-table{display:block;overflow-x:auto}
+  .article-body{padding:1.5rem}
 }
+
 .whatif-section{margin-top:1.8rem;border-top:2px solid var(--ink);padding-top:1.8rem}
 .whatif-kicker{font-family:var(--body);font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);margin-bottom:.4rem;display:flex;align-items:center;gap:.6rem}
 .whatif-kicker::before{content:'';width:24px;height:2px;background:var(--marigold)}
@@ -300,147 +248,12 @@ footer{background:var(--ink);color:var(--paper);margin-top:2rem}
 .whatif-delta-lbl{font-size:.72rem;color:rgba(255,255,255,.6);margin-top:.3rem}
 .whatif-reset{margin-top:1rem;text-align:center}
 .whatif-reset button{background:none;border:1px solid var(--line);padding:.5rem 1.1rem;font-family:var(--body);font-size:.78rem;font-weight:600;color:var(--mist);cursor:pointer;transition:.15s}
-.whatif-reset button:hover{border-color:var(--ink);color:var(--ink)}</style>
+.whatif-reset button:hover{border-color:var(--ink);color:var(--ink)}
+</style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6108324382808705" crossorigin="anonymous"></script>
 </head>
-<body><div class="sa-stripe"></div><div class="top-bar"><div class="tb-l">🇿🇦 South Africa · SARS 2027 Tax Year</div><div class="tb-r">Primary rebate <span>R17,820</span> · Tax-free <span>R99,000</span></div></div><nav>
-  <a href="/" class="logo"><div class="logo-text">CalcMy<span>Pay</span></div></a>
-  <div class="nav-links">
-    <a href="/salary-income" class="active">Salary</a><a href="/affordability">Affordability</a><a href="/wealth-building">Wealth</a><a href="/career-intelligence">Careers</a><a href="/money-tools">Tools</a><a href="/financial-coach">Coach</a><a href="/blog-salary-guide">Guides</a><a href="/salary-calculator" class="nav-cta">Calculate →</a>
-  </div>
-</nav><div class="ph"><div class="ph-inner"><div class="bc"><a href="/">Home</a><span>/</span><a href="/salary-income">Salary & Income</a><span>/</span>PAYE Calculator</div><div class="ph-cat">Salary & Income</div><h1>PAYE Calculator</h1><p>See exactly how much income tax (PAYE) you pay to SARS · 2027 tax year</p></div></div><div class="layout"><div><div class="card"><div class="card-head"><div class="card-cat">PAYE</div><div><h2>Calculate your PAYE</h2><p>Enter your salary — see your monthly income tax</p></div></div>
-<div class="card-body">
-<div class="form-grid">
-<div class="fg"><label>Gross Salary</label><div class="iw has-pre"><span class="ipre">R</span><input type="number" id="sal" placeholder="30 000" min="0"></div></div>
-<div class="fg"><label>Period</label><div class="sw"><select id="per"><option value="12">Per month</option><option value="1">Per year</option></select></div></div>
-<div class="fg"><label>Age</label><div class="sw"><select id="age"><option value="p">Under 65</option><option value="s">65 – 74</option><option value="t">75+</option></select></div></div>
-<div class="fg"><label>Medical Aid Members</label><div class="sw"><select id="med"><option value="0">None</option><option value="1">Just me</option><option value="2">Me + 1</option><option value="3">Me + 2</option><option value="4">Me + 3</option><option value="5">Me + 4+</option></select></div></div>
-</div>
-<button class="btn btn-full btn-accent" onclick="calc()">Calculate PAYE →</button>
-<div class="results" id="res">
-<div class="th-panel"><div><div class="th-label">Monthly PAYE (income tax)</div><div class="th-amount" id="big">R0</div><div class="th-period" id="period">per month to SARS</div></div><div class="eff-block"><span class="eff-val" id="eff">0%</span><span class="eff-lbl">Effective rate</span></div></div>
-<div class="bb"><div class="bb-title">How it is calculated</div>
-<div class="br"><span class="lbl">Annual taxable income</span><span class="val neu" id="r-ann">R0</span></div>
-<div class="br"><span class="lbl">Tax per SARS tables</span><span class="val neg" id="r-raw">-R0</span></div>
-<div class="br"><span class="lbl">Less: Primary rebate</span><span class="val pos" id="r-reb">+R0</span></div>
-<div class="br" id="r-med-row"><span class="lbl">Less: Medical aid credit</span><span class="val pos" id="r-med">+R0</span></div>
-<div class="br"><span class="lbl">Annual PAYE</span><span class="val neg" id="r-annpaye">-R0</span></div>
-</div>
-<div class="total-bar"><span class="lbl">✓ Monthly PAYE</span><span class="val" id="r-month">R0</span></div>
-<div class="note warn"><span>⚠</span><span>Estimate based on <a href="https://www.sars.gov.za/tax-rates/income-tax/rates-of-tax-for-individuals/" target="_blank">SARS 2027 tables</a>. PAYE excludes UIF — see the <a href="/salary-calculator">full salary calculator</a> for take-home.</span></div>
-<div class="whatif-section" id="whatif-section" style="display:none">
-  <div class="whatif-kicker">What if?</div>
-  <div class="whatif-title">Test a scenario</div>
-  <p class="whatif-sub">Drag the sliders to see how changes affect your monthly PAYE, instantly.</p>
+<body>
+<div class="sa-stripe"></div>
 
-  <div class="whatif-grid">
-    <div class="whatif-control">
-      <div class="whatif-control-head"><label>Salary change</label><output id="wi-sal-out">+0%</output></div>
-      <input type="range" id="wi-sal" min="-20" max="30" value="0" step="1" oninput="renderWhatIf()">
-    </div>
-    <div class="whatif-control">
-      <div class="whatif-control-head"><label>Medical aid members</label><output id="wi-med-out">Same</output></div>
-      <input type="range" id="wi-med" min="0" max="5" value="0" step="1" oninput="renderWhatIf()">
-    </div>
-  </div>
-
-  <div class="whatif-result">
-    <div>
-      <div class="whatif-result-label">New monthly PAYE</div>
-      <div class="whatif-result-val" id="wi-newpaye">R0</div>
-    </div>
-    <div class="whatif-delta">
-      <div class="whatif-delta-val" id="wi-delta">—</div>
-      <div class="whatif-delta-lbl">vs your current PAYE</div>
-    </div>
-  </div>
-  <div class="whatif-reset"><button onclick="resetWhatIf()">Reset scenario</button></div>
-  <div class="note warn" style="margin-top:1rem"><span>⚠</span><span>This shows the <strong>tax effect only</strong>. A medical aid dependent reduces tax via the credit, but you'd also pay a higher monthly premium — this tool doesn't model that cost.</span></div>
-</div>
-
-</div></div></div></div><div class="sidebar"><div class="sc"><div class="sc-head">Quick reference</div><div class="sc-body">
-<div class="qr"><span>Primary rebate</span><strong>R17,820</strong></div>
-<div class="qr"><span>Tax-free threshold</span><strong>R99,000/yr</strong></div>
-<div class="qr"><span>UIF rate</span><strong>1% (max R177/mo)</strong></div>
-<div class="qr"><span>Medical credit</span><strong>R376/member</strong></div>
-</div></div></div></div><div class="section" style="padding-top:0"><div style="background:var(--white);border:1px solid var(--g200);border-top:3px solid var(--navy);padding:2rem 2.2rem"><div class="article-body" style="padding:0"><h2 style="margin-top:0">Understanding PAYE — South Africa's pay-as-you-earn tax</h2><h2>What PAYE actually is</h2><p>PAYE (Pay-As-You-Earn) is the mechanism SARS uses to collect income tax throughout the year rather than in one large annual payment. Your employer calculates and deducts it from your salary every month, then pays it directly to SARS on your behalf — which is why most salaried South Africans never have to pay a large lump sum at tax season.</p><h2>How your PAYE is actually calculated</h2><ul><li>Your annual salary is run through the SARS tax brackets to calculate your gross tax liability.</li><li>The primary rebate (and secondary or tertiary rebates if you qualify by age) is subtracted directly from that amount.</li><li>Any medical aid tax credits you qualify for are subtracted next.</li><li>The result is divided by 12 to give your monthly PAYE deduction.</li></ul><h2>Why your PAYE might not match a simple percentage</h2><p>Many people expect their tax to simply be "18% of my salary" or similar, but South Africa's progressive tax system means different portions of your income are taxed at different rates, and several deductions and rebates are applied before you reach the final number. This is why two people with different circumstances but the same salary can pay noticeably different amounts of tax.</p><h2>What this calculator does not include</h2><p>This tool isolates PAYE specifically. It does not include UIF, which is a separate 1% deduction, or the effect of retirement annuity contributions and travel allowances, which change your taxable income. For your complete take-home pay including all of these factors, use the full salary calculator instead.</p></div></div></div>
-<div class="section" style="padding-top:0"><div class="section-header"><div class="section-title">Related <span>/</span> Salary Tools</div></div><div class="tools-grid"><a href="/salary-calculator" class="tool-card featured"><div class="tc-cat">Salary & Income</div><h3>Salary After Tax Calculator</h3><span class="tc-link">Open →</span></a><a href="/gross-to-net" class="tool-card featured"><div class="tc-cat">Salary & Income</div><h3>Gross to Net Salary</h3><span class="tc-link">Open →</span></a><a href="/bonus-calculator" class="tool-card featured"><div class="tc-cat">Salary & Income</div><h3>Bonus & 13th Cheque</h3><span class="tc-link">Open →</span></a><a href="/overtime-calculator" class="tool-card featured"><div class="tc-cat">Salary & Income</div><h3>Overtime Pay Calculator</h3><span class="tc-link">Open →</span></a><a href="/commission-calculator" class="tool-card featured"><div class="tc-cat">Salary & Income</div><h3>Commission Calculator</h3><span class="tc-link">Open →</span></a><a href="/hourly-wage" class="tool-card featured"><div class="tc-cat">Salary & Income</div><h3>Hourly Wage Calculator</h3><span class="tc-link">Open →</span></a></div></div><div class="sa-stripe"></div>
-<div class="section"><div style="background:var(--white);border:1px solid var(--line);border-top:3px solid var(--forest)"><div class="article-body"><h2>How PAYE actually gets calculated behind the scenes</h2><p>PAYE (Pay As You Earn) is not a flat percentage — it is calculated by applying South Africa's progressive tax brackets to your full annual income, then dividing the result across the months you are paid. Understanding this mechanism explains several things that otherwise seem confusing about your payslip, including why a bonus can be taxed at a seemingly high rate.</p><h2>Why your PAYE is not simply "your bracket's rate times your salary"</h2><p>A common misconception is that if you fall into, say, the 26% bracket, all your income is taxed at 26%. In reality, only the portion of income within that bracket is taxed at that rate — the portion below it is still taxed at the lower rates that applied to it. This is why moving into a higher bracket does not reduce your overall take-home the way people sometimes fear.</p><h2>The role of rebates in reducing your actual tax bill</h2><p>After the bracket calculation produces a theoretical tax amount, SARS rebates are subtracted directly — not as a percentage reduction, but as a fixed rand amount everyone in that age category receives. This is why very low earners often pay no tax at all: their theoretical tax liability falls below the rebate amount entirely.</p><table class="data-table"><thead><tr><th>Age category</th><th>2027 tax year rebate</th></tr></thead><tbody><tr><td>Under 65</td><td>R17,235</td></tr><tr><td>65 to 74</td><td>R9,444 additional</td></tr><tr><td>75 and over</td><td>R3,145 additional</td></tr></tbody></table><h2>Why medical aid changes your PAYE, not just your monthly premium</h2><p>Medical aid contributions generate a monthly tax credit that reduces your PAYE directly — a mechanism separate from, and in addition to, any pre-tax deduction structure your employer might use. This is one of the more overlooked ways medical aid membership affects your actual take-home pay beyond the visible premium deduction.</p><h2>Using this calculation to plan ahead</h2><p>Understanding exactly how your PAYE is derived puts you in a better position to plan around it — whether that means adjusting retirement contributions to reduce taxable income, or simply understanding what a raise or bonus will actually net you after tax. See the <a href="/salary-calculator">full salary calculator</a> for your complete take-home picture including UIF, or the <a href="/bonus-calculator">bonus calculator</a> to understand how a lump sum payment is taxed specifically.</p></div></div></div>
-
-<footer><div class="footer-inner">
-  <div class="footer-logo">CalcMy<span>Pay</span></div>
-  <div class="footer-links"><a href="/salary-income">Salary</a><a href="/affordability">Affordability</a><a href="/wealth-building">Wealth</a><a href="/money-tools">Tools</a><a href="/financial-coach">Coach</a><a href="/blog-salary-guide">Guides</a><a href="/about">About</a><a href="/privacy-policy">Privacy</a><a href="/contact">Contact</a></div>
-  <div class="footer-copy">© 2026 CalcMyPay · Understand your salary. Plan your money. Build your future. · For informational purposes only · Not affiliated with SARS · SARS 2027 tax year</div>
-</div></footer>
-<script>
-const fmt=n=>'R\u00a0'+Math.round(Math.abs(n)).toLocaleString('en-ZA');
-const brackets=[[245100,.18,0],[383100,.26,44118],[530200,.31,79998],[695800,.36,125599],[887000,.39,185215],[1878600,.41,259783],[Infinity,.45,666339]];
-function sarsTax(t){if(t<=0)return 0;let p=0;for(let[l,r,b]of brackets){if(t<=l)return b+(t-p)*r;p=l;}return 0;}
-function marginalRate(a){let p=0;for(let[l,r]of brackets){if(a<=l)return r;p=l;}return .45;}
-const REBATE=17820;
-
-function medC(m){if(m==0)return 0;if(m==1)return 376*12;if(m==2)return 752*12;return(752+(m-2)*254)*12;}
-function calc(){
- const v=parseFloat(document.getElementById('sal').value)||0;
- const per=parseInt(document.getElementById('per').value);
- const age=document.getElementById('age').value;
- const med=parseInt(document.getElementById('med').value);
- if(v<=0){alert('Please enter your salary.');return;}
- const annual=v*per;
- const raw=sarsTax(annual);
- let reb=REBATE; if(age=='s'||age=='t')reb+=9765; if(age=='t')reb+=3249;
- const mc=medC(med);
- const paye=Math.max(0,raw-reb-mc);
- const eff=annual>0?(paye/annual*100).toFixed(1):0;
- document.getElementById('big').textContent=fmt(paye/12);
- document.getElementById('eff').textContent=eff+'%';
- document.getElementById('r-ann').textContent=fmt(annual);
- document.getElementById('r-raw').textContent='-'+fmt(raw);
- document.getElementById('r-reb').textContent='+'+fmt(reb);
- document.getElementById('r-med').textContent='+'+fmt(mc);
- document.getElementById('r-med-row').style.display=mc>0?'flex':'none';
- document.getElementById('r-annpaye').textContent='-'+fmt(paye);
- document.getElementById('r-month').textContent=fmt(paye/12);
- baseInputs = {annual, med, age, payeMonthly: paye/12};
- document.getElementById('whatif-section').style.display = 'block';
- resetWhatIf();
- document.getElementById('res').classList.add('show');
- document.getElementById('res').scrollIntoView({behavior:'smooth',block:'nearest'});
-}
-document.addEventListener('keydown',e=>{if(e.key=='Enter')calc()});
-
-let baseInputs = null;
-
-function renderWhatIf(){
-  if(!baseInputs) return;
-  const salPct = parseFloat(document.getElementById('wi-sal').value);
-  const medDelta = parseInt(document.getElementById('wi-med').value);
-
-  document.getElementById('wi-sal-out').textContent = (salPct>=0?'+':'')+salPct+'%';
-  const medLabels=['Same','None','Myself only','Me + 1','Me + 2','Me + 3','Me + 4+'];
-  document.getElementById('wi-med-out').textContent = medDelta===0 ? 'Same' : medLabels[medDelta+1];
-
-  const newAnnual = baseInputs.annual * (1 + salPct/100);
-  const newMed = medDelta===0 ? baseInputs.med : medDelta;
-
-  const raw = sarsTax(newAnnual);
-  let reb = REBATE;
-  if(baseInputs.age=='s'||baseInputs.age=='t') reb += 9765;
-  if(baseInputs.age=='t') reb += 3249;
-  const mc = medC(newMed);
-  const newPaye = Math.max(0, raw - reb - mc);
-
-  document.getElementById('wi-newpaye').textContent = fmt(newPaye/12);
-  const delta = (newPaye/12) - baseInputs.payeMonthly;
-  const deltaEl = document.getElementById('wi-delta');
-  if(Math.abs(delta) < 1){ deltaEl.textContent = 'No change'; deltaEl.className = 'whatif-delta-val'; }
-  else if(delta < 0){ deltaEl.textContent = '-'+fmt(Math.abs(delta))+' less tax'; deltaEl.className = 'whatif-delta-val up'; }
-  else { deltaEl.textContent = '+'+fmt(delta)+' more tax'; deltaEl.className = 'whatif-delta-val down'; }
-}
-
-function resetWhatIf(){
-  document.getElementById('wi-sal').value = 0;
-  document.getElementById('wi-med').value = 0;
-  renderWhatIf();
-}
-</script></body></html>
+<div class="top-bar">
+  <div class
