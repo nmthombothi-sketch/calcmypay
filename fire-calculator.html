@@ -2,27 +2,150 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="color-scheme" content="light"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FIRE Calculator South Africa 2026 — Financial Independence | CalcMyPay</title>
-<meta name="description" content="Calculate your FIRE number and when you can reach financial independence in South Africa. Free FIRE calculator with savings rate.">
+<meta name="description" content="Free South African FIRE calculator. Calculate your financial independence number, savings rate, and when you can retire early. Includes inflation adjustment and SA-specific guidance.">
+<meta name="keywords" content="FIRE calculator south africa, financial independence retire early SA, FIRE number calculator, 4% rule south africa, savings rate FIRE, lean FIRE fat FIRE SA, retirement annuity FIRE, TFSA FIRE south africa">
+<meta name="author" content="CalcMyPay">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="FIRE Calculator South Africa 2026 | CalcMyPay">
+<meta property="og:description" content="Calculate your FIRE number, savings rate, and when you can reach financial independence in South Africa.">
+<meta property="og:url" content="https://calcmypay.co.za/fire-calculator">
+<meta property="og:image" content="https://calcmypay.co.za/og-image.jpg">
+<meta property="og:site_name" content="CalcMyPay">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="FIRE Calculator South Africa 2026">
+<meta name="twitter:description" content="Calculate your FIRE number and when you can reach financial independence in SA.">
+
 <meta name="google-adsense-account" content="ca-pub-6108324382808705">
 <link rel="canonical" href="https://calcmypay.co.za/fire-calculator">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/icon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/icon-16.png">
+
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap" as="style">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the FIRE number?","acceptedAnswer":{"@type":"Answer","text":"Your FIRE (Financial Independence, Retire Early) number is the amount you need invested to live off forever, usually 25 times your annual expenses based on a 4% safe withdrawal rate."}},{"@type":"Question","name":"How do I calculate when I can reach FIRE?","acceptedAnswer":{"@type":"Answer","text":"It depends on your savings rate. The higher the percentage of income you save and invest, the sooner you reach financial independence — often in 10–20 years with a 40–60% savings rate."}}]}</script>
-<style>/* CalcMyPay — Editorial "Ink & Marigold" =================================== */
+
+<!-- WebApplication Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "FIRE Calculator",
+  "description": "Calculate your FIRE number and years to financial independence in South Africa based on expenses, savings, and expected returns.",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "All",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "ZAR" },
+  "areaServed": "ZA"
+}
+</script>
+
+<!-- FAQ Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the FIRE number and how is it calculated?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Your FIRE (Financial Independence, Retire Early) number is the amount you need invested to live off indefinitely without working. It is typically calculated as 25 times your annual expenses, based on the 4% safe withdrawal rule. For example, if you spend R20,000/month (R240,000/year), your FIRE number is R6,000,000."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the 4% safe withdrawal rule?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The 4% rule comes from the Trinity Study (1998), which showed that withdrawing 4% of a diversified portfolio annually, adjusted for inflation, had a 95%+ success rate over 30 years. For early retirees with 40-50 year horizons, many FIRE practitioners use a more conservative 3-3.5% rate, which means a FIRE number of 29-33× annual expenses rather than 25×."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What savings rate do I need to reach FIRE?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Your savings rate (percentage of income saved) determines your FIRE timeline more than your income does. At 10% savings rate it takes ~51 years; at 25% about 32 years; at 50% about 17 years; at 65% about 10.5 years; at 75% about 7 years. Most FIRE practitioners target 40-60% savings rates to reach independence within 15-20 years."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between Lean FIRE, Fat FIRE, and Barista FIRE?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lean FIRE targets a minimal frugal lifestyle (typically R15,000-R25,000/month in SA), requiring a smaller nest egg. Fat FIRE targets a comfortable or lavish lifestyle (R50,000+/month), requiring a substantially larger number. Barista FIRE means reaching partial independence and continuing part-time or lower-stress work to cover a portion of expenses, dramatically lowering the FIRE number needed. Coast FIRE means having enough invested that it will grow to your full FIRE number by traditional retirement age without further contributions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does FIRE work in South Africa specifically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SA FIRE practitioners use Retirement Annuities (tax-deductible up to 27.5% of income, R350,000 cap), Tax-Free Savings Accounts (R40,000/year, R500,000 lifetime), and low-cost ETFs like Satrix, CoreShares, and Sygnia. Exchange controls (R10 million single discretionary + R10 million foreign investment allowance) affect offshore investing. Medical aid costs in retirement must be factored into your monthly expenses."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I use a 4% or 3% withdrawal rate for FIRE in South Africa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The 4% rule was designed for 30-year retirements. SA early retirees with 40-50 year horizons, rand volatility, and higher local inflation should consider a more conservative 3-3.5% rate (meaning 29-33× expenses rather than 25×). This builds in a safety margin for extended downturns, currency depreciation, and longer withdrawal periods."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What investment vehicles do South African FIRE practitioners use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most SA FIRE portfolios combine: 1) Retirement Annuities for tax-deductible contributions, 2) Tax-Free Savings Accounts for the R40,000/year tax-free allowance, 3) Low-cost local ETFs (Satrix MSCI World, Sygnia Itrix, CoreShares S&P 500), 4) Direct offshore ETFs through exchange control allowances for USD exposure, and 5) Property or business interests for diversification. The key is keeping total fees under 1% TER."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does my FIRE number need to be adjusted for inflation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Your FIRE number today won't have the same purchasing power in 15 years. With SA inflation averaging 5-6%, a R6 million FIRE number today would need to be approximately R12-14 million in 15 years to maintain the same lifestyle. Use an inflation-adjusted calculator or increase your nominal target by 5-6% annually as you approach FIRE."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does the rand's volatility affect FIRE planning in SA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Rand depreciation (historically 3-5% annually against USD) means offshore investments in dollars grow faster in rand terms but introduce currency risk. Many SA FIRE practitioners hold 40-60% of their portfolio in USD-denominated assets (offshore ETFs, foreign shares) to hedge against rand weakness, especially if they plan to travel, buy imported goods, or eventually emigrate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if I reach FIRE early but want to keep working?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This is called 'Coast FIRE' or 'Barista FIRE' — you have financial independence but continue working for enjoyment, purpose, or additional income. The benefit is your invested capital continues compounding without withdrawals, often doubling every 7-10 years. Many early retirees transition to consulting, passion projects, or part-time work that provides meaning without financial pressure."
+      }
+    }
+  ]
+}
+</script>
+
+<style>/* CalcMyPay — Editorial "Ink & Marigold" */
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap');
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
   --paper:#FFFFFF;--ink:#16201C;--forest:#1B4332;--marigold:#F6B53D;
   --mist:#6B756F;--line:#DEDBD0;--sand:#FFFFFF;--berry:#B23A2E;
   --disp:'Fraunces',Georgia,serif;--body:'Inter',system-ui,sans-serif;
-  /* legacy var aliases so inline styles still resolve */
-  --black:#16201C;--navy:#1B4332;--navy-mid:#1B4332;--accent:#1B4332;--accent-dark:#143026;
-  --white:#fff;--off-white:#FFFFFF;--green:#1B4332;--green-light:#EDF3EE;--accent-light:#EDF3EE;
+  --black:#16201C;--navy:#1B4332;--accent:#1B4332;
+  --white:#fff;--green:#1B4332;--green-light:#EDF3EE;
   --g100:#FFFFFF;--g200:#E4E2D8;--g400:#AEB3AC;--g600:#6B756F;--g800:#C9CcC4;--red:#B23A2E;
   --fs:'Fraunces',Georgia,serif;--fn:'Inter',system-ui,sans-serif;
 }
@@ -30,16 +153,13 @@ html{color-scheme:light;scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{font-family:var(--body);background:var(--paper);color:var(--ink);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased}
 a{color:var(--forest);text-decoration:none}
 
-/* SA stripe — keep but slimmer & muted */
 .sa-stripe{height:3px;background:linear-gradient(90deg,#1B4332 0 16%,#F6B53D 16% 33%,#FCFBF7 33% 50%,#1B4332 50% 66%,#B23A2E 66% 83%,#16201C 83% 100%);opacity:.9}
 
-/* TOP BAR — editorial dateline */
 .top-bar{background:var(--paper);border-bottom:1px solid var(--line);padding:.5rem 2rem;display:flex;align-items:center;justify-content:space-between}
 .tb-l{font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--mist)}
 .tb-r{font-size:.7rem;color:var(--mist);letter-spacing:.04em}
 .tb-r span{color:var(--forest);font-weight:600}
 
-/* MASTHEAD NAV */
 nav{background:var(--paper);border-bottom:2px solid var(--ink);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:74px;position:sticky;top:0;z-index:100}
 .logo{display:flex;align-items:center;gap:.5rem;text-decoration:none}
 .logo-text{font-family:var(--disp);font-size:1.7rem;font-weight:900;letter-spacing:-.02em;color:var(--ink)}
@@ -56,13 +176,6 @@ nav{background:var(--paper);border-bottom:2px solid var(--ink);padding:0 2rem;di
 .nav-cta:hover{background:var(--forest)!important;color:#fff!important}
 @media(max-width:860px){.nav-links{gap:0;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;max-width:60vw}.nav-links::-webkit-scrollbar{display:none}.nav-links a{white-space:nowrap;padding:.5rem .6rem;font-size:.76rem}.logo-text{font-size:1.4rem}nav{padding:0 1rem}}
 
-/* AD SLOTS — quiet */
-.ad-strip{background:var(--paper);border-bottom:1px solid var(--line);text-align:center;padding:.6rem}
-.ad-ph{display:inline-flex;align-items:center;justify-content:center;background:var(--sand);border:1px solid var(--line);color:var(--g400);font-size:.62rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
-.ad-ph.lb{width:728px;height:90px;max-width:100%}.ad-ph.rect{width:300px;height:250px}
-.ad-lbl{font-size:.6rem;color:var(--g400);text-transform:uppercase;letter-spacing:.12em;margin-bottom:.3rem}
-
-/* PAGE HEADER — kicker / headline / standfirst */
 .ph{background:var(--paper);border-bottom:1px solid var(--line);padding:4rem 2rem 3rem}
 .ph-inner{max-width:1080px;margin:0 auto}
 .bc{font-size:.72rem;color:var(--mist);font-weight:500;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1.4rem}
@@ -73,87 +186,21 @@ nav{background:var(--paper);border-bottom:2px solid var(--ink);padding:0 2rem;di
 .ph p{font-family:var(--body);color:var(--mist);font-size:1.1rem;line-height:1.6;max-width:60ch}
 .ph-meta{display:flex;gap:1.4rem;font-size:.72rem;color:var(--mist);font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-top:1.2rem}
 
-/* SECTIONS */
 .section{max-width:1080px;margin:0 auto;padding:3.5rem 2rem}
 .section-header{margin-bottom:2rem;padding-bottom:1rem;border-bottom:1px solid var(--line);display:flex;align-items:baseline;justify-content:space-between;gap:1rem;flex-wrap:wrap}
 .section-title{font-family:var(--disp);font-size:1.6rem;font-weight:600;letter-spacing:-.01em;color:var(--ink)}
 .section-title span{color:var(--marigold);font-weight:400;margin:0 .3rem}
-.section-more{font-family:var(--body);font-size:.8rem;font-weight:600;color:var(--forest);letter-spacing:.02em}
-.section-more::after{content:' →'}
 
-/* TICKER — editorial stat strip */
-.ticker{background:var(--sand);border-bottom:1px solid var(--line);padding:.7rem 2rem;display:flex;gap:2.5rem;overflow-x:auto;scrollbar-width:none}
-.ticker::-webkit-scrollbar{display:none}
-.tick-item{display:flex;align-items:baseline;gap:.5rem;white-space:nowrap}
-.tick-label{font-size:.68rem;color:var(--mist);font-weight:600;text-transform:uppercase;letter-spacing:.1em}
-.tick-val{font-family:var(--disp);color:var(--forest);font-weight:600;font-size:1rem}
-
-/* TOOLS GRID + CARDS */
-.tools-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.25rem}
-.tool-card{background:var(--paper);border:1px solid var(--line);padding:1.6rem;transition:.2s;display:flex;flex-direction:column;gap:.7rem;text-decoration:none;color:var(--ink);position:relative}
-.tool-card:hover{border-color:var(--ink);transform:translateY(-2px)}
-.tool-card.featured{border-top:3px solid var(--forest)}
-.tc-cat{font-family:var(--body);font-size:.68rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--mist)}
-.tool-card h3{font-family:var(--disp);font-size:1.25rem;font-weight:600;letter-spacing:-.01em;line-height:1.15;color:var(--ink)}
-.tool-card p{font-family:var(--body);font-size:.88rem;color:var(--mist);line-height:1.55;flex:1}
-.tc-link{font-family:var(--body);font-size:.8rem;font-weight:600;color:var(--forest)}
-.tc-badge{font-family:var(--body);font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.25rem .6rem;background:var(--sand);color:var(--forest);border:1px solid var(--line)}
-
-/* BLOG GRID */
-.blog-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:1.25rem}
-.blog-card{background:var(--paper);border:1px solid var(--line);padding:1.6rem;text-decoration:none;color:var(--ink);transition:.2s}
-.blog-card:hover{border-color:var(--ink);transform:translateY(-2px)}
-.blog-card.lead{border-top:3px solid var(--marigold)}
-.bc-cat{font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);margin-bottom:.6rem;display:block}
-.blog-card h3{font-family:var(--disp);font-size:1.2rem;font-weight:600;line-height:1.2;letter-spacing:-.01em;margin-bottom:.5rem}
-.blog-card.lead h3{font-size:1.6rem}
-.blog-card p{font-size:.86rem;color:var(--mist);line-height:1.55;margin-bottom:.6rem}
-.bc-more{font-size:.78rem;font-weight:600;color:var(--forest)}
-.bc-meta{font-size:.7rem;color:var(--g400);font-weight:600;letter-spacing:.04em;text-transform:uppercase}
-
-/* DATA CELLS (homepage figures) */
-.data-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem;margin-bottom:1rem}
-.dc{background:var(--sand);border:1px solid var(--line);padding:1.5rem}
-.dc-label{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--mist);margin-bottom:.5rem}
-.dc-val{font-family:var(--disp);font-size:2rem;font-weight:600;color:var(--ink);letter-spacing:-.02em;line-height:1}
-.dc-val.acc{color:var(--forest)}
-.dc-sub{font-size:.74rem;color:var(--mist);margin-top:.3rem}
-
-/* WHY CARDS */
-.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
-.why-card{background:var(--paper);border:1px solid var(--line);padding:1.8rem;border-top:3px solid var(--forest)}
-.why-num{font-family:var(--disp);font-size:2.4rem;font-weight:900;color:var(--marigold);line-height:1;margin-bottom:1rem}
-.why-card h3{font-family:var(--disp);font-size:1.2rem;font-weight:600;margin-bottom:.5rem}
-.why-card p{font-size:.88rem;color:var(--mist);line-height:1.6}
-
-/* CTA BLOCK */
-.cta-block{background:var(--ink);color:var(--paper);padding:3rem 2rem;text-align:center}
-.cta-block h2,.cta-block h3{font-family:var(--disp);font-weight:600;color:var(--paper);letter-spacing:-.01em;margin-bottom:.6rem}
-.cta-block h2{font-size:clamp(1.5rem,3vw,2.2rem)}
-.cta-block h3{font-size:1.4rem}
-.cta-block p{color:rgba(255,255,255,.7);margin-bottom:1.5rem;font-size:1rem}
-
-/* BUTTONS */
-.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 1.6rem;font-family:var(--body);font-weight:600;font-size:.9rem;cursor:pointer;border:none;transition:.18s;text-decoration:none;letter-spacing:.01em}
-.btn-accent{background:var(--marigold);color:var(--ink)}
-.btn-accent:hover{background:#eaa523}
-.btn-full{width:100%;justify-content:center}
-.btn:not(.btn-accent){background:var(--ink);color:var(--paper)}
-.btn:not(.btn-accent):hover{background:var(--forest);color:#fff}
-
-/* LAYOUT (tool + article) */
 .layout{max-width:1140px;margin:0 auto;padding:2.5rem 2rem;display:grid;grid-template-columns:1fr 320px;gap:2.5rem;align-items:start}
 @media(max-width:920px){.layout{grid-template-columns:1fr;gap:1.5rem}.sidebar{display:none}}
 
-/* CARD (tool input) */
-.card{background:var(--paper);border:1px solid var(--line)}
+.card{background:var(--paper);border:1px solid var(--line);border-top:3px solid var(--navy)}
 .card-head{padding:1.4rem 1.6rem;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:.9rem}
 .card-cat{font-family:var(--body);font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);border-right:1px solid var(--line);padding-right:.9rem}
 .card-head h2{font-family:var(--disp);font-size:1.4rem;font-weight:600;letter-spacing:-.01em}
 .card-head p{font-size:.84rem;color:var(--mist);margin-top:.15rem}
 .card-body{padding:1.6rem}
 
-/* FORM */
 .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem 1.3rem;margin-bottom:1.4rem}
 @media(max-width:500px){.form-grid{grid-template-columns:1fr}}
 .fg{display:flex;flex-direction:column;gap:.4rem}
@@ -167,11 +214,33 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .has-pre input{padding-left:2rem}.has-suf input{padding-right:2.4rem}
 .sw{position:relative}.sw::after{content:'';position:absolute;right:1.1rem;top:50%;width:7px;height:7px;border-right:2px solid var(--mist);border-bottom:2px solid var(--mist);transform:translateY(-65%) rotate(45deg);pointer-events:none}
 
-/* RESULT PANELS — the editorial figure signature */
+.fire-pills{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.2rem}
+.fire-pill{padding:.4rem .9rem;background:var(--sand);border:1px solid var(--line);font-family:var(--body);font-size:.78rem;font-weight:600;color:var(--mist);cursor:pointer;transition:.15s}
+.fire-pill:hover{border-color:var(--forest);color:var(--forest)}
+.fire-pill.active{background:var(--ink);color:#fff;border-color:var(--ink)}
+
+.input-error{border-color:var(--berry)!important;box-shadow:0 0 0 3px rgba(178,58,46,.15)!important}
+.error-msg{color:var(--berry);font-size:.78rem;font-weight:500;margin-top:.2rem;display:none}
+.error-msg.show{display:block}
+
+.advanced-toggle{display:flex;align-items:center;gap:.6rem;margin:1rem 0;padding:.8rem 1rem;background:var(--sand);border:1px solid var(--line);cursor:pointer;font-family:var(--body);font-size:.88rem;font-weight:500;color:var(--ink);transition:.15s}
+.advanced-toggle:hover{border-color:var(--forest)}
+.advanced-toggle .arrow{transition:transform .2s;font-size:.8rem}
+.advanced-toggle.open .arrow{transform:rotate(90deg)}
+.advanced-options{display:none;padding:1rem;background:var(--sand);border:1px solid var(--line);border-top:none;margin-bottom:1.4rem}
+.advanced-options.show{display:block}
+
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 1.6rem;font-family:var(--body);font-weight:600;font-size:.9rem;cursor:pointer;border:none;transition:.18s;text-decoration:none;letter-spacing:.01em}
+.btn-accent{background:var(--marigold);color:var(--ink)}
+.btn-accent:hover{background:#eaa523}
+.btn-full{width:100%;justify-content:center}
+.btn:not(.btn-accent){background:var(--ink);color:var(--paper)}
+.btn:not(.btn-accent):hover{background:var(--forest);color:#fff}
+
 .results{margin-top:1.6rem;display:none}
 .results.show{display:block;animation:fadeUp .4s ease}
 @keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
-.th-panel{background:var(--ink);color:var(--paper);padding:2rem;display:flex;justify-content:space-between;align-items:flex-end;gap:1.5rem;margin-bottom:1.4rem}
+.th-panel{background:var(--ink);color:var(--paper);padding:2rem;display:flex;justify-content:space-between;align-items:flex-end;gap:1.5rem;margin-bottom:1.4rem;flex-wrap:wrap}
 .th-label{font-family:var(--body);font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:rgba(255,255,255,.6);margin-bottom:.6rem}
 .th-amount{font-family:var(--disp);font-size:3.4rem;font-weight:600;line-height:.95;letter-spacing:-.03em;color:#fff;border-bottom:3px solid var(--marigold);padding-bottom:.3rem;display:inline-block}
 .th-period{font-size:.82rem;color:rgba(255,255,255,.6);margin-top:.6rem}
@@ -179,7 +248,15 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .eff-val{font-family:var(--disp);font-size:2rem;font-weight:600;color:var(--marigold);display:block;letter-spacing:-.02em;line-height:1}
 .eff-lbl{font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:rgba(255,255,255,.6)}
 
-/* breakdown blocks */
+.savings-rate-panel{background:var(--green-light);border:1px solid var(--forest);padding:1.2rem 1.4rem;margin-bottom:1.4rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.sr-info .sr-label{font-family:var(--body);font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--forest);margin-bottom:.3rem}
+.sr-info .sr-value{font-family:var(--disp);font-size:2.2rem;font-weight:600;color:var(--forest);line-height:1}
+.sr-info .sr-context{font-size:.8rem;color:var(--mist);margin-top:.3rem}
+.sr-grade{padding:.4rem 1rem;background:var(--forest);color:#fff;font-family:var(--body);font-size:.82rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em}
+
+.progress-bar{height:12px;background:var(--sand);border:1px solid var(--line);border-radius:6px;overflow:hidden;margin-bottom:1rem}
+.progress-fill{height:100%;background:linear-gradient(90deg,var(--forest),var(--marigold));transition:width .6s ease}
+
 .bb{border:1px solid var(--line);margin-bottom:1rem}
 .bb-title{padding:.7rem 1.1rem;font-family:var(--body);font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.14em;background:var(--sand);border-bottom:1px solid var(--line);color:var(--mist)}
 .br{display:flex;justify-content:space-between;align-items:center;padding:.7rem 1.1rem;font-size:.92rem;border-bottom:1px solid var(--line)}
@@ -191,17 +268,11 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .total-bar .lbl{font-family:var(--disp);font-size:1.05rem;font-weight:600;color:var(--forest)}
 .total-bar .val{font-family:var(--disp);font-size:1.3rem;font-weight:700;color:var(--forest);font-variant-numeric:tabular-nums}
 
-/* notes */
 .note{padding:.85rem 1.1rem;font-size:.84rem;line-height:1.6;margin-bottom:.7rem;display:flex;gap:.7rem;border:1px solid var(--line);background:var(--sand)}
 .note.warn{background:#FBF3E0;border-color:#E6D08A;color:#6B5414}
+.note.success{background:var(--green-light);border-color:var(--forest);color:var(--forest)}
 .note a{color:var(--forest);font-weight:600}
 
-/* tabs */
-.type-tabs,.period-tabs{display:flex;gap:.4rem;margin-bottom:1.4rem;background:var(--sand);padding:.3rem;border:1px solid var(--line)}
-.type-tab,.ptab{flex:1;padding:.6rem;border:none;background:transparent;font-family:var(--body);font-weight:600;font-size:.8rem;color:var(--mist);cursor:pointer;transition:.15s;text-align:center}
-.type-tab.active,.ptab.active{background:var(--ink);color:var(--paper)}
-
-/* SIDEBAR */
 .sidebar{display:flex;flex-direction:column;gap:1.5rem}
 .sc{background:var(--paper);border:1px solid var(--line)}
 .sc-head{padding:.8rem 1.1rem;font-family:var(--body);font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.14em;border-bottom:1px solid var(--line);background:var(--sand);color:var(--mist)}
@@ -209,19 +280,21 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .tip{display:flex;gap:.7rem;margin-bottom:.85rem;font-size:.84rem;color:var(--mist);line-height:1.55}
 .tip:last-child{margin-bottom:0}
 .tip a{color:var(--forest);font-weight:600}
-.qr{display:flex;justify-content:space-between;font-size:.84rem;padding:.45rem 0;border-bottom:1px solid var(--line);color:var(--mist)}
-.qr:last-child{border-bottom:none}
-.qr strong{color:var(--ink);font-weight:600;font-family:var(--disp)}
-.toc-link{display:block;font-size:.84rem;font-weight:500;color:var(--mist);padding:.4rem 0;border-bottom:1px solid var(--line);transition:color .15s}
-.toc-link:last-child{border-bottom:none}
-.toc-link:hover{color:var(--forest)}
 .related-post{display:block;padding:.75rem 0;border-bottom:1px solid var(--line)}
 .related-post:last-child{border-bottom:none}
 .rp-cat{font-size:.62rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--forest);margin-bottom:.25rem}
 .rp-title{font-family:var(--disp);font-size:.92rem;font-weight:500;color:var(--ink);line-height:1.3}
 .related-post:hover .rp-title{color:var(--forest)}
 
-/* DATA TABLE */
+.tools-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.25rem}
+.tool-card{background:var(--paper);border:1px solid var(--line);padding:1.6rem;transition:.2s;display:flex;flex-direction:column;gap:.7rem;text-decoration:none;color:var(--ink);position:relative}
+.tool-card:hover{border-color:var(--ink);transform:translateY(-2px)}
+.tool-card.featured{border-top:3px solid var(--forest)}
+.tc-cat{font-family:var(--body);font-size:.68rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--mist)}
+.tool-card h3{font-family:var(--disp);font-size:1.25rem;font-weight:600;letter-spacing:-.01em;line-height:1.15;color:var(--ink)}
+.tool-card p{font-family:var(--body);font-size:.88rem;color:var(--mist);line-height:1.55;flex:1}
+.tc-link{font-family:var(--body);font-size:.8rem;font-weight:600;color:var(--forest)}
+
 .data-table{width:100%;border-collapse:collapse;margin:1.2rem 0 1.6rem;font-size:.9rem;border:1px solid var(--line)}
 .data-table thead tr{background:var(--ink)}
 .data-table th{padding:.75rem 1rem;text-align:left;font-family:var(--body);font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--paper)}
@@ -230,9 +303,7 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .data-table tr:nth-child(even) td{background:var(--sand)}
 .data-table td.td-green{color:var(--forest);font-weight:600}
 .data-table td.td-red{color:var(--berry);font-weight:600}
-.data-table td.td-acc{color:var(--forest);font-weight:600}
 
-/* ARTICLE BODY — magazine measure */
 .article-body{padding:2.5rem}
 @media(max-width:600px){.article-body{padding:1.5rem}}
 .article-body h2{font-family:var(--disp);font-size:1.7rem;font-weight:600;color:var(--ink);margin:2.4rem 0 .8rem;letter-spacing:-.01em;line-height:1.15;max-width:30ch}
@@ -240,91 +311,36 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .article-body h2:first-child{margin-top:0}
 .article-body h3{font-family:var(--disp);font-size:1.25rem;font-weight:600;margin:1.6rem 0 .5rem}
 .article-body p{font-family:var(--body);font-size:1.06rem;color:#2C352F;line-height:1.75;margin-bottom:1.1rem;max-width:68ch}
-.article-body ul{margin:.6rem 0 1.3rem 1.3rem;max-width:66ch}
+.article-body ul,.article-body ol{margin:.6rem 0 1.3rem 1.3rem;max-width:66ch}
 .article-body li{font-family:var(--body);font-size:1.04rem;color:#2C352F;line-height:1.7;margin-bottom:.5rem}
 .article-body a{color:var(--forest);font-weight:500;border-bottom:1px solid var(--marigold)}
 .article-body strong{font-weight:600;color:var(--ink)}
-.callout,.callout.navy,.callout.grey,.callout.green{border:none;border-left:3px solid var(--marigold);background:var(--sand);padding:1.2rem 1.4rem;margin:1.6rem 0;font-family:var(--disp);font-size:1.15rem;font-weight:500;line-height:1.5;color:var(--ink);max-width:64ch}
+.callout{border:none;border-left:3px solid var(--marigold);background:var(--sand);padding:1.2rem 1.4rem;margin:1.6rem 0;font-family:var(--disp);font-size:1.15rem;font-weight:500;line-height:1.5;color:var(--ink);max-width:64ch}
+.callout.warn{border-left:3px solid var(--berry);background:#FBF3E0;color:#6B5414}
 .callout strong{color:var(--forest)}
+.callout.warn strong{color:var(--berry)}
 
-/* FOOTER */
-footer{background:var(--ink);color:var(--paper);margin-top:2rem}
-.footer-inner{max-width:1080px;margin:0 auto;padding:2.5rem 2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
-.footer-logo{font-family:var(--disp);font-size:1.5rem;font-weight:900;color:var(--paper)}
-.footer-logo span{color:var(--marigold);font-style:italic;font-weight:600}
-.footer-links{display:flex;gap:1.4rem;flex-wrap:wrap}
-.footer-links a{color:rgba(255,255,255,.7);font-size:.82rem;font-weight:500;transition:color .15s}
-.footer-links a:hover{color:var(--marigold)}
-.footer-copy{color:rgba(255,255,255,.5);font-size:.74rem;width:100%;margin-top:.8rem;padding-top:.9rem;border-top:1px solid rgba(255,255,255,.12)}
-
-/* MISC legacy */
-.scenario-result{background:var(--sand);border:1px solid var(--forest);padding:1.2rem}
-.disclaim,.disclaim-box{font-size:.82rem;color:var(--mist);background:var(--sand);border:1px solid var(--line);padding:.9rem 1.1rem;line-height:1.6}
-.eyebrow{font-family:var(--body);font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);margin-bottom:.5rem}
-
-/* RESPONSIVE */
-@media(max-width:768px){
-  [style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr!important}
-  [style*="grid-template-columns:repeat(3,1fr)"]{grid-template-columns:1fr!important}
-  [style*="grid-template-columns:repeat(4,1fr)"]{grid-template-columns:1fr 1fr!important}
-  [style*="grid-template-columns:2fr 1fr 1fr"]{grid-template-columns:1fr!important}
-  [style*="grid-template-columns:1.1fr 1fr"]{grid-template-columns:1fr!important}
-  [style*="grid-template-columns:1fr 1fr;gap:4rem"]{grid-template-columns:1fr!important;gap:2rem!important}
-  .blog-grid,.data-row,.why-grid{grid-template-columns:1fr!important}
-  .ph{padding:2.5rem 1.25rem 2rem}.section{padding:2.5rem 1.25rem}.layout{padding:1.5rem 1.25rem}
-  .th-panel{flex-direction:column;align-items:flex-start;gap:1rem}.eff-block{text-align:left}
-  .th-amount{font-size:2.6rem}
-  .footer-inner{flex-direction:column;text-align:center}.footer-links{justify-content:center}
-  .top-bar{padding:.4rem 1rem}.tb-r{display:none}
-  .data-table{display:block;overflow-x:auto}
-}
 .story-section{margin-top:1.8rem;border-top:2px solid var(--ink);padding-top:1.8rem}
 .story-kicker{font-family:var(--body);font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);margin-bottom:.4rem;display:flex;align-items:center;gap:.6rem}
 .story-kicker::before{content:'';width:24px;height:2px;background:var(--marigold)}
 .story-title{font-family:var(--disp);font-size:1.6rem;font-weight:600;color:var(--ink);letter-spacing:-.01em;margin-bottom:.4rem}
 .story-sub{font-size:.88rem;color:var(--mist);margin-bottom:1.5rem;max-width:60ch}
-.story-age-row{display:flex;align-items:center;gap:.8rem;margin-bottom:1.6rem;padding:.9rem 1.1rem;background:var(--sand);border:1px solid var(--line)}
-.story-age-row label{font-size:.82rem;font-weight:600;color:var(--ink);white-space:nowrap}
-.story-age-row input{max-width:90px;padding:.5rem .7rem}
-.story-age-row .story-age-note{font-size:.78rem;color:var(--mist)}
 .story-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
 @media(max-width:600px){.story-grid{grid-template-columns:1fr}}
 .story-card{background:#fff;border:1px solid var(--line);padding:0;text-decoration:none;color:var(--ink);display:flex;overflow:hidden;transition:.18s;position:relative}
 .story-card:hover{border-color:var(--ink);box-shadow:0 4px 18px rgba(0,0,0,.07);transform:translateY(-2px)}
 .story-stripe{width:6px;flex-shrink:0}
-.story-stripe.c-housing{background:var(--forest)}
-.story-stripe.c-car{background:var(--marigold)}
 .story-stripe.c-safety{background:#3d7a9e}
 .story-stripe.c-retire{background:#8a5cb8}
-.story-stripe.c-compare{background:var(--berry)}
+.story-stripe.c-car{background:var(--marigold)}
+.story-stripe.c-housing{background:var(--forest)}
 .story-body{padding:1.3rem 1.4rem;flex:1;min-width:0}
 .story-label{font-family:var(--body);font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:var(--mist);margin-bottom:.5rem}
 .story-val{font-family:var(--disp);font-size:1.9rem;font-weight:600;color:var(--ink);letter-spacing:-.02em;line-height:1;margin-bottom:.5rem}
 .story-desc{font-size:.8rem;color:var(--mist);line-height:1.5;margin-bottom:.7rem}
 .story-arrow{font-size:.78rem;font-weight:600;color:var(--forest)}
-.story-compare-card{grid-column:1/-1;background:#fff;border:1px solid var(--line);padding:1.4rem 1.5rem}
-.compare-toggle{display:flex;gap:.4rem;margin-bottom:1.1rem}
-.compare-toggle button{padding:.4rem .9rem;border:1px solid var(--line);background:var(--paper);font-family:var(--body);font-size:.78rem;font-weight:600;color:var(--mist);cursor:pointer;transition:.15s}
-.compare-toggle button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
-.compare-body{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap}
-.compare-vs{display:flex;align-items:center;gap:1rem;flex:1;min-width:240px}
-.compare-side{text-align:center}
-.compare-side .who{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--mist);margin-bottom:.3rem}
-.compare-side .amt{font-family:var(--disp);font-size:1.4rem;font-weight:600;color:var(--ink)}
-.compare-side.you .amt{color:var(--forest)}
-.compare-vsdivider{font-family:var(--disp);font-size:.9rem;color:var(--g400);font-style:italic}
-.compare-result{flex-shrink:0;text-align:right}
-.compare-pct{font-family:var(--disp);font-size:1.6rem;font-weight:600;line-height:1}
-.compare-pct.up{color:var(--forest)}
-.compare-pct.down{color:var(--berry)}
-.compare-select{margin-top:1rem}
-.compare-select select{max-width:280px}
-.journey{margin-top:1.5rem;padding:1.2rem 1.4rem;background:var(--sand);border:1px solid var(--line)}
-.journey-title{font-family:var(--body);font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--mist);margin-bottom:.8rem}
-.journey-path{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;font-size:.85rem}
-.journey-path a{color:var(--forest);font-weight:600;padding:.35rem .7rem;background:#fff;border:1px solid var(--line);transition:.15s}
-.journey-path a:hover{border-color:var(--forest);background:var(--sand)}
-.journey-sep{color:var(--g400)}.whatif-section{margin-top:1.8rem;border-top:2px solid var(--ink);padding-top:1.8rem}
+
+.whatif-section{margin-top:1.8rem;border-top:2px solid var(--ink);padding-top:1.8rem}
 .whatif-kicker{font-family:var(--body);font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);margin-bottom:.4rem;display:flex;align-items:center;gap:.6rem}
 .whatif-kicker::before{content:'';width:24px;height:2px;background:var(--marigold)}
 .whatif-title{font-family:var(--disp);font-size:1.6rem;font-weight:600;color:var(--ink);letter-spacing:-.01em;margin-bottom:.4rem}
@@ -346,190 +362,968 @@ footer{background:var(--ink);color:var(--paper);margin-top:2rem}
 .whatif-delta-lbl{font-size:.72rem;color:rgba(255,255,255,.6);margin-top:.3rem}
 .whatif-reset{margin-top:1rem;text-align:center}
 .whatif-reset button{background:none;border:1px solid var(--line);padding:.5rem 1.1rem;font-family:var(--body);font-size:.78rem;font-weight:600;color:var(--mist);cursor:pointer;transition:.15s}
-.whatif-reset button:hover{border-color:var(--ink);color:var(--ink)}</style>
+.whatif-reset button:hover{border-color:var(--ink);color:var(--ink)}
+
+.journey{margin-top:1.5rem;padding:1.2rem 1.4rem;background:var(--sand);border:1px solid var(--line)}
+.journey-title{font-family:var(--body);font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--mist);margin-bottom:.8rem}
+.journey-path{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;font-size:.85rem}
+.journey-path a{color:var(--forest);font-weight:600;padding:.35rem .7rem;background:#fff;border:1px solid var(--line);transition:.15s}
+.journey-path a:hover{border-color:var(--forest);background:var(--sand)}
+.journey-sep{color:var(--g400)}
+
+footer{background:var(--ink);color:var(--paper);margin-top:2rem}
+.footer-inner{max-width:1080px;margin:0 auto;padding:2.5rem 2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.footer-logo{font-family:var(--disp);font-size:1.5rem;font-weight:900;color:var(--paper)}
+.footer-logo span{color:var(--marigold);font-style:italic;font-weight:600}
+.footer-links{display:flex;gap:1.4rem;flex-wrap:wrap}
+.footer-links a{color:rgba(255,255,255,.7);font-size:.82rem;font-weight:500;transition:color .15s}
+.footer-links a:hover{color:var(--marigold)}
+.footer-copy{color:rgba(255,255,255,.5);font-size:.74rem;width:100%;margin-top:.8rem;padding-top:.9rem;border-top:1px solid rgba(255,255,255,.12)}
+
+@media(max-width:768px){
+  [style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr!important}
+  [style*="grid-template-columns:repeat(3,1fr)"]{grid-template-columns:1fr!important}
+  [style*="grid-template-columns:repeat(4,1fr)"]{grid-template-columns:1fr 1fr!important}
+  [style*="grid-template-columns:2fr 1fr 1fr"]{grid-template-columns:1fr!important}
+  [style*="grid-template-columns:1.1fr 1fr"]{grid-template-columns:1fr!important}
+  .tools-grid{grid-template-columns:1fr!important}
+  .ph{padding:2.5rem 1.25rem 2rem}.section{padding:2.5rem 1.25rem}.layout{padding:1.5rem 1.25rem}
+  .th-panel{flex-direction:column;align-items:flex-start;gap:1rem}.eff-block{text-align:left}
+  .th-amount{font-size:2.6rem}
+  .footer-inner{flex-direction:column;text-align:center}.footer-links{justify-content:center}
+  .top-bar{padding:.4rem 1rem}.tb-r{display:none}
+  .data-table{display:block;overflow-x:auto}
+}
+</style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6108324382808705" crossorigin="anonymous"></script>
 </head>
-<body><div class="sa-stripe"></div><div class="top-bar"><div class="tb-l">🇿🇦 South Africa · Wealth Building</div><div class="tb-r">Plan your money · <span>Build your future</span></div></div><nav>
+<body>
+<div class="sa-stripe"></div>
+<div class="top-bar">
+  <div class="tb-l">🇿🇦 South Africa · Wealth Building</div>
+  <div class="tb-r">Plan your money · <span>Build your future</span></div>
+</div>
+
+<nav>
   <a href="/" class="logo"><div class="logo-text">CalcMy<span>Pay</span></div></a>
   <div class="nav-links">
-    <a href="/salary-income">Salary</a><a href="/affordability">Affordability</a><a href="/wealth-building" class="active">Wealth</a><a href="/career-intelligence">Careers</a><a href="/money-tools">Tools</a><a href="/financial-coach">Coach</a><a href="/blog-salary-guide">Guides</a><a href="/salary-calculator" class="nav-cta">Calculate →</a>
+    <a href="/salary-income">Salary</a>
+    <a href="/affordability">Affordability</a>
+    <a href="/wealth-building" class="active">Wealth</a>
+    <a href="/career-intelligence">Careers</a>
+    <a href="/money-tools">Tools</a>
+    <a href="/financial-coach">Coach</a>
+    <a href="/blog-salary-guide">Guides</a>
+    <a href="/salary-calculator" class="nav-cta">Calculate →</a>
   </div>
-</nav><div class="ph"><div class="ph-inner"><div class="bc"><a href="/">Home</a><span>/</span><a href="/wealth-building">Wealth Building</a><span>/</span>FIRE Calculator</div><div class="ph-cat">Wealth Building</div><h1>FIRE Calculator</h1><p>Find your financial independence number and retire early</p></div></div><div class="layout"><div><div class="card"><div class="card-head"><div class="card-cat">FIRE</div><div><h2>Your FIRE number</h2><p>When can you reach financial independence?</p></div></div>
-<div class="card-body">
-<div class="form-grid">
-<div class="fg"><label>Monthly Expenses</label><div class="iw has-pre"><span class="ipre">R</span><input type="number" id="exp" placeholder="20 000" min="0"></div></div>
-<div class="fg"><label>Current Investments</label><div class="iw has-pre"><span class="ipre">R</span><input type="number" id="have" placeholder="300 000" min="0"></div></div>
-<div class="fg"><label>Monthly Investment</label><div class="iw has-pre"><span class="ipre">R</span><input type="number" id="monthly" placeholder="8 000" min="0"></div></div>
-<div class="fg"><label>Expected Return</label><div class="iw has-suf"><input type="number" id="rate" value="10" step="0.5" min="1"><span class="isuf">%</span></div></div>
-</div>
-<button class="btn btn-full btn-accent" onclick="calc()">Calculate FIRE →</button>
-<div class="results" id="res">
-<div class="th-panel"><div><div class="th-label">Your FIRE number</div><div class="th-amount" id="big">R0</div><div class="th-period">to be financially independent</div></div><div class="eff-block"><span class="eff-val" id="yrs">0</span><span class="eff-lbl">Years to FIRE</span></div></div>
-<div class="bb"><div class="bb-title">Your path to financial independence</div>
-<div class="br"><span class="lbl">Annual expenses</span><span class="val neu" id="r-annual">R0</span></div>
-<div class="br"><span class="lbl">FIRE number (25x expenses)</span><span class="val neu" id="r-fire">R0</span></div>
-<div class="br"><span class="lbl">Current investments</span><span class="val pos" id="r-have">R0</span></div>
-<div class="br"><span class="lbl">Years to reach FIRE</span><span class="val neu" id="r-years">0</span></div>
-<div class="br"><span class="lbl">Age you reach it (from 30)</span><span class="val neu" id="r-age">—</span></div>
-</div>
-<div class="total-bar"><span class="lbl">✓ FIRE target</span><span class="val" id="r-target">R0</span></div>
-<div class="note warn"><span>ℹ</span><span>FIRE uses the 4% safe withdrawal rule (25x annual expenses). The higher your savings rate, the faster you get there. This ignores inflation for simplicity.</span></div>
-<div class="story-section" id="money-story" style="display:none">
-  <div class="story-kicker">Your money story</div>
-  <div class="story-title">What financial independence means for you</div>
-  <p class="story-sub">Your FIRE number translated into real milestones and sensitivity to change.</p>
+</nav>
 
-  <div class="story-grid">
-    <a href="/retirement-calculator" class="story-card"><div class="story-stripe c-retire"></div><div class="story-body">
-      <div class="story-label">📅 If you save R2,000 more per month</div>
-      <div class="story-val" id="ms-faster">—</div>
-      <div class="story-desc">How much sooner you could reach FIRE</div>
-      <span class="story-arrow">Model your retirement in detail →</span>
-    </div></a>
-
-    <a href="/compound-interest" class="story-card"><div class="story-stripe c-housing"></div><div class="story-body">
-      <div class="story-label">📈 Halfway milestone</div>
-      <div class="story-val" id="ms-halfway">R0</div>
-      <div class="story-desc">The nest egg value marking 50% of your FIRE number</div>
-      <span class="story-arrow">See your growth curve →</span>
-    </div></a>
-
-    <a href="/lifestyle-affordability" class="story-card"><div class="story-stripe c-car"></div><div class="story-body">
-      <div class="story-label">🎯 What drives your number</div>
-      <div class="story-val" id="ms-expense-sensitivity">—</div>
-      <div class="story-desc">Cutting expenses lowers your FIRE number twice over</div>
-      <span class="story-arrow">Check your lifestyle costs →</span>
-    </div></a>
-
-    <a href="/financial-coach" class="story-card"><div class="story-stripe c-safety"></div><div class="story-body">
-      <div class="story-label">🧭 Get a full financial health check</div>
-      <div class="story-val">Free score</div>
-      <div class="story-desc">See how your savings rate stacks up overall</div>
-      <span class="story-arrow">Get your health score →</span>
-    </div></a>
-  </div>
-
-  <div class="journey">
-    <div class="journey-title">Continue your financial plan</div>
-    <div class="journey-path">
-      <a href="/retirement-calculator">Retirement calculator</a><span class="journey-sep">→</span>
-      <a href="/net-worth">Net worth</a><span class="journey-sep">→</span>
-      <a href="/savings-goal">Savings goal</a><span class="journey-sep">→</span>
-      <a href="/blog-fire-movement-south-africa">FIRE guide</a>
+<div class="ph">
+  <div class="ph-inner">
+    <div class="bc"><a href="/">Home</a><span>/</span><a href="/wealth-building">Wealth Building</a><span>/</span>FIRE Calculator</div>
+    <div class="ph-cat">Wealth Building</div>
+    <h1>FIRE Calculator</h1>
+    <p>Find your financial independence number, see your savings rate, and calculate when you can reach FIRE in South Africa.</p>
+    <div class="ph-meta">
+      <span>Updated Aug 2026</span>
+      <span>SA-specific · RA + TFSA aware</span>
+      <span>Free forever</span>
     </div>
   </div>
 </div>
-<div class="whatif-section" id="whatif-section" style="display:none">
-  <div class="whatif-kicker">What if?</div>
-  <div class="whatif-title">Test a FIRE scenario</div>
-  <p class="whatif-sub">See how saving more, cutting expenses, or a stronger return changes your timeline.</p>
 
-  <div class="whatif-grid">
-    <div class="whatif-control">
-      <div class="whatif-control-head"><label>Extra monthly investment</label><output id="wi-extra-out">R0</output></div>
-      <input type="range" id="wi-extra" min="0" max="10000" value="0" step="250" data-default="0" oninput="renderWhatIf()">
-    </div>
-    <div class="whatif-control">
-      <div class="whatif-control-head"><label>Cut monthly expenses by</label><output id="wi-cut-out">R0</output></div>
-      <input type="range" id="wi-cut" min="0" max="10000" value="0" step="500" data-default="0" oninput="renderWhatIf()">
-    </div>
-    <div class="whatif-control">
-      <div class="whatif-control-head"><label>Expected annual return</label><output id="wi-rate-out">+0%</output></div>
-      <input type="range" id="wi-rate" min="-4" max="4" value="0" step="0.5" data-default="0" oninput="renderWhatIf()">
-    </div>
-    <div class="whatif-control">
-      <div class="whatif-control-head"><label>Extra lump sum today</label><output id="wi-lump-out">R0</output></div>
-      <input type="range" id="wi-lump" min="0" max="500000" value="0" step="10000" data-default="0" oninput="renderWhatIf()">
+<div class="layout">
+  <div>
+    <div class="card">
+      <div class="card-head">
+        <div class="card-cat">FIRE</div>
+        <div>
+          <h2>Your FIRE number</h2>
+          <p>When can you reach financial independence?</p>
+        </div>
+      </div>
+
+      <div class="card-body">
+        <label style="margin-bottom:.6rem;display:block">FIRE style (optional preset)</label>
+        <div class="fire-pills">
+          <button class="fire-pill" onclick="setFIREType(this, 'lean')">Lean FIRE · frugal</button>
+          <button class="fire-pill active" onclick="setFIREType(this, 'standard')">Standard · 4% rule</button>
+          <button class="fire-pill" onclick="setFIREType(this, 'conservative')">Conservative · 3.5%</button>
+          <button class="fire-pill" onclick="setFIREType(this, 'fat')">Fat FIRE · comfortable</button>
+        </div>
+
+        <div class="form-grid">
+          <div class="fg">
+            <label for="exp">Monthly Expenses</label>
+            <div class="iw has-pre">
+              <span class="ipre">R</span>
+              <input type="number" id="exp" placeholder="20 000" min="0" step="500" aria-describedby="exp-error">
+            </div>
+            <div class="error-msg" id="exp-error">Enter your monthly expenses</div>
+          </div>
+
+          <div class="fg">
+            <label for="monthly">Monthly Investment</label>
+            <div class="iw has-pre">
+              <span class="ipre">R</span>
+              <input type="number" id="monthly" placeholder="8 000" min="0" step="500" aria-describedby="monthly-error">
+            </div>
+            <div class="error-msg" id="monthly-error">Enter your monthly investment amount</div>
+          </div>
+
+          <div class="fg">
+            <label for="have">Current Investments</label>
+            <div class="iw has-pre">
+              <span class="ipre">R</span>
+              <input type="number" id="have" placeholder="300 000" min="0" step="10000">
+            </div>
+          </div>
+
+          <div class="fg">
+            <label for="age">Current Age</label>
+            <div class="iw">
+              <input type="number" id="age" placeholder="30" value="30" min="18" max="80" step="1">
+            </div>
+          </div>
+
+          <div class="fg">
+            <label for="income">Monthly Income <span class="hint">(for savings rate)</span></label>
+            <div class="iw has-pre">
+              <span class="ipre">R</span>
+              <input type="number" id="income" placeholder="40 000" min="0" step="500">
+            </div>
+          </div>
+
+          <div class="fg">
+            <label for="rate">Expected Return (annual)</label>
+            <div class="iw has-suf">
+              <input type="number" id="rate" value="10" step="0.5" min="1" max="20">
+              <span class="isuf">%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="advanced-toggle" onclick="toggleAdvanced()">
+          <span class="arrow">▶</span>
+          <span>Advanced options: withdrawal rate, inflation adjustment</span>
+        </div>
+
+        <div class="advanced-options" id="advanced-options">
+          <div class="form-grid">
+            <div class="fg">
+              <label for="withdrawal">Safe Withdrawal Rate</label>
+              <div class="iw has-suf">
+                <input type="number" id="withdrawal" value="4" step="0.25" min="2" max="6">
+                <span class="isuf">%</span>
+              </div>
+              <div class="error-msg" id="withdrawal-hint" style="color:var(--mist);display:block">4% = 25× expenses. Lower = safer for early retirees</div>
+            </div>
+
+            <div class="fg">
+              <label for="inflation">Expected Inflation (annual)</label>
+              <div class="iw has-suf">
+                <input type="number" id="inflation" value="5.5" step="0.5" min="0" max="15">
+                <span class="isuf">%</span>
+              </div>
+              <div class="error-msg" id="inflation-hint" style="color:var(--mist);display:block">SA average ~5-6%. Real return = return - inflation</div>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn btn-full btn-accent" onclick="calc()">Calculate FIRE →</button>
+
+        <div class="results" id="res">
+          <div class="th-panel">
+            <div>
+              <div class="th-label">Your FIRE number</div>
+              <div class="th-amount" id="big">R0</div>
+              <div class="th-period" id="period">to be financially independent</div>
+            </div>
+            <div class="eff-block">
+              <span class="eff-val" id="yrs">0</span>
+              <span class="eff-lbl">Years to FIRE</span>
+            </div>
+          </div>
+
+          <!-- Savings Rate Panel -->
+          <div class="savings-rate-panel" id="savings-rate-panel" style="display:none">
+            <div class="sr-info">
+              <div class="sr-label">Your savings rate</div>
+              <div class="sr-value" id="savings-rate">0%</div>
+              <div class="sr-context" id="savings-rate-context">Of your monthly income going to investments</div>
+            </div>
+            <div class="sr-grade" id="savings-rate-grade">—</div>
+          </div>
+
+          <div class="progress-bar">
+            <div class="progress-fill" id="progress-fill" style="width:0%"></div>
+          </div>
+
+          <div class="bb">
+            <div class="bb-title">Your path to financial independence</div>
+            <div class="br"><span class="lbl">Annual expenses</span><span class="val neu" id="r-annual">R0</span></div>
+            <div class="br"><span class="lbl">FIRE target (× <span id="r-multiplier">25</span>)</span><span class="val neu" id="r-fire">R0</span></div>
+            <div class="br"><span class="lbl">Current investments</span><span class="val pos" id="r-have">R0</span></div>
+            <div class="br"><span class="lbl">Gap to close</span><span class="val neu" id="r-gap">R0</span></div>
+            <div class="br"><span class="lbl">Years to reach FIRE</span><span class="val neu" id="r-years">0</span></div>
+            <div class="br"><span class="lbl">Age you reach it</span><span class="val neu" id="r-age">—</span></div>
+            <div class="br" id="inflation-adjusted-row" style="display:none"><span class="lbl">Inflation-adjusted target</span><span class="val neg" id="r-inflated">R0</span></div>
+          </div>
+
+          <div class="total-bar">
+            <span class="lbl">✓ FIRE target</span>
+            <span class="val" id="r-target">R0</span>
+          </div>
+
+          <div class="note success" id="already-fire-note" style="display:none">
+            <span>🎉</span>
+            <span><strong>Congratulations!</strong> You've already reached your FIRE number. Consider transitioning to Coast FIRE — your investments continue compounding without further contributions, or explore Barista FIRE for a lower-stress lifestyle.</span>
+          </div>
+
+          <div class="note warn" id="high-expenses-note" style="display:none">
+            <span>💡</span>
+            <span><strong>Cutting expenses has a double benefit:</strong> Every R1,000/month you cut reduces your FIRE target by R300,000 AND increases your savings rate. Reducing from R25,000 to R20,000/month could cut years off your timeline.</span>
+          </div>
+
+          <!-- Money Story -->
+          <div class="story-section" id="money-story" style="display:none">
+            <div class="story-kicker">Your money story</div>
+            <div class="story-title">What financial independence means for you</div>
+            <p class="story-sub">Your FIRE number translated into real milestones and sensitivity to change.</p>
+
+            <div class="story-grid">
+              <a href="/retirement-calculator" class="story-card">
+                <div class="story-stripe c-retire"></div>
+                <div class="story-body">
+                  <div class="story-label">📅 Save R2,000 more per month</div>
+                  <div class="story-val" id="ms-faster">—</div>
+                  <div class="story-desc">How much sooner you could reach FIRE</div>
+                  <span class="story-arrow">Model your retirement in detail →</span>
+                </div>
+              </a>
+
+              <a href="/compound-interest" class="story-card">
+                <div class="story-stripe c-housing"></div>
+                <div class="story-body">
+                  <div class="story-label">📈 Halfway milestone</div>
+                  <div class="story-val" id="ms-halfway">R0</div>
+                  <div class="story-desc">The nest egg value marking 50% of your FIRE number</div>
+                  <span class="story-arrow">See your growth curve →</span>
+                </div>
+              </a>
+
+              <a href="/lifestyle-affordability" class="story-card">
+                <div class="story-stripe c-car"></div>
+                <div class="story-body">
+                  <div class="story-label">🎯 Cut R1,000 from expenses</div>
+                  <div class="story-val" id="ms-expense-sensitivity">—</div>
+                  <div class="story-desc">The double benefit of cutting spending</div>
+                  <span class="story-arrow">Check your lifestyle costs →</span>
+                </div>
+              </a>
+
+              <a href="/financial-coach" class="story-card">
+                <div class="story-stripe c-safety"></div>
+                <div class="story-body">
+                  <div class="story-label">🧭 Get a full financial health check</div>
+                  <div class="story-val">Free score</div>
+                  <div class="story-desc">See how your savings rate stacks up overall</div>
+                  <span class="story-arrow">Get your health score →</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- What-If -->
+          <div class="whatif-section" id="whatif-section" style="display:none">
+            <div class="whatif-kicker">What if?</div>
+            <div class="whatif-title">Test a FIRE scenario</div>
+            <p class="whatif-sub">See how saving more, cutting expenses, or a stronger return changes your timeline.</p>
+
+            <div class="whatif-grid">
+              <div class="whatif-control">
+                <div class="whatif-control-head">
+                  <label for="wi-extra">Extra monthly investment</label>
+                  <output id="wi-extra-out">R0</output>
+                </div>
+                <input type="range" id="wi-extra" min="0" max="10000" value="0" step="250" data-default="0" oninput="renderWhatIf()">
+              </div>
+              <div class="whatif-control">
+                <div class="whatif-control-head">
+                  <label for="wi-cut">Cut monthly expenses by</label>
+                  <output id="wi-cut-out">R0</output>
+                </div>
+                <input type="range" id="wi-cut" min="0" max="10000" value="0" step="500" data-default="0" oninput="renderWhatIf()">
+              </div>
+              <div class="whatif-control">
+                <div class="whatif-control-head">
+                  <label for="wi-rate">Expected annual return</label>
+                  <output id="wi-rate-out">+0%</output>
+                </div>
+                <input type="range" id="wi-rate" min="-4" max="4" value="0" step="0.5" data-default="0" oninput="renderWhatIf()">
+              </div>
+              <div class="whatif-control">
+                <div class="whatif-control-head">
+                  <label for="wi-lump">Extra lump sum today</label>
+                  <output id="wi-lump-out">R0</output>
+                </div>
+                <input type="range" id="wi-lump" min="0" max="500000" value="0" step="10000" data-default="0" oninput="renderWhatIf()">
+              </div>
+            </div>
+
+            <div class="whatif-result">
+              <div>
+                <div class="whatif-result-label">New years to FIRE</div>
+                <div class="whatif-result-val" id="wi-years">—</div>
+              </div>
+              <div class="whatif-delta">
+                <div class="whatif-delta-val" id="wi-delta">—</div>
+                <div class="whatif-delta-lbl">vs your current timeline</div>
+              </div>
+            </div>
+            <div class="whatif-reset"><button onclick="resetWhatIf()">Reset scenario</button></div>
+            <div class="note warn" style="margin-top:1rem">
+              <span>⚠</span>
+              <span>Cutting expenses also lowers your FIRE number itself (since it's based on annual expenses) — a genuine double benefit. Make sure any cut is realistic and sustainable long-term.</span>
+            </div>
+          </div>
+
+          <div class="journey" id="journey-section" style="display:none">
+            <div class="journey-title">Continue your financial plan</div>
+            <div class="journey-path">
+              <a href="/retirement-calculator">Retirement calculator</a><span class="journey-sep">→</span>
+              <a href="/net-worth">Net worth</a><span class="journey-sep">→</span>
+              <a href="/savings-goal">Savings goal</a><span class="journey-sep">→</span>
+              <a href="/blog-fire-movement-south-africa">FIRE guide</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="whatif-result">
-    <div>
-      <div class="whatif-result-label">New years to FIRE</div>
-      <div class="whatif-result-val" id="wi-years">—</div>
+  <div class="sidebar">
+    <div class="sc">
+      <div class="sc-head">FIRE principles</div>
+      <div class="sc-body">
+        <div class="tip"><span>→</span><span>FIRE number = annual expenses ÷ withdrawal rate.</span></div>
+        <div class="tip"><span>→</span><span>Your savings rate matters more than your income.</span></div>
+        <div class="tip"><span>→</span><span>Cutting expenses lowers your FIRE number twice over.</span></div>
+        <div class="tip"><span>→</span><span>Low-cost index funds are the classic FIRE vehicle.</span></div>
+        <div class="tip"><span>→</span><span>Use RAs (27.5% tax deduction) to accelerate your journey.</span></div>
+      </div>
     </div>
-    <div class="whatif-delta">
-      <div class="whatif-delta-val" id="wi-delta">—</div>
-      <div class="whatif-delta-lbl">vs your current timeline</div>
+
+    <div class="sc">
+      <div class="sc-head">SA FIRE specifics</div>
+      <div class="sc-body">
+        <div class="tip"><span>💰</span><span><strong>Retirement Annuities:</strong> Tax-deductible up to 27.5% of income (max R350k/year).</span></div>
+        <div class="tip"><span>🛡</span><span><strong>Tax-Free Savings:</strong> R40,000/year, R500,000 lifetime limit.</span></div>
+        <div class="tip"><span>🌍</span><span><strong>Offshore:</strong> R10M single discretionary + R10M foreign investment allowance.</span></div>
+        <div class="tip"><span>📊</span><span><strong>Local ETFs:</strong> Satrix, Sygnia, CoreShares — keep TER under 1%.</span></div>
+      </div>
+    </div>
+
+    <div class="sc">
+      <div class="sc-head">FIRE types explained</div>
+      <div class="sc-body">
+        <div class="tip"><span>🥗</span><span><strong>Lean FIRE:</strong> Frugal lifestyle, R15k-25k/month expenses.</span></div>
+        <div class="tip"><span>🍽</span><span><strong>Fat FIRE:</strong> Comfortable/lavish, R50k+/month expenses.</span></div>
+        <div class="tip"><span>☕</span><span><strong>Barista FIRE:</strong> Part-time work covers some expenses.</span></div>
+        <div class="tip"><span>🏖</span><span><strong>Coast FIRE:</strong> Existing investments grow to target without more contributions.</span></div>
+      </div>
+    </div>
+
+    <div class="sc">
+      <div class="sc-head">Related tools</div>
+      <div class="sc-body">
+        <a href="/retirement-calculator" class="related-post">
+          <div class="rp-cat">Wealth Building</div>
+          <div class="rp-title">Retirement Calculator</div>
+        </a>
+        <a href="/net-worth" class="related-post">
+          <div class="rp-cat">Wealth Building</div>
+          <div class="rp-title">Net Worth Calculator</div>
+        </a>
+        <a href="/compound-interest" class="related-post">
+          <div class="rp-cat">Wealth Building</div>
+          <div class="rp-title">Compound Interest Calculator</div>
+        </a>
+        <a href="/savings-goal" class="related-post">
+          <div class="rp-cat">Wealth Building</div>
+          <div class="rp-title">Savings Goal Calculator</div>
+        </a>
+      </div>
     </div>
   </div>
-  <div class="whatif-reset"><button onclick="resetWhatIf()">Reset scenario</button></div>
-  <div class="note warn" style="margin-top:1rem"><span>⚠</span><span>This shows the effect on your timeline only. Cutting expenses also lowers your FIRE number itself (since it's based on 25x expenses) — a genuine double benefit, but make sure any cut is realistic and sustainable long-term.</span></div>
 </div>
 
+<div class="section" style="padding-top:0">
+  <div class="section-header">
+    <div class="section-title">Related <span>/</span> Wealth Tools</div>
+  </div>
+  <div class="tools-grid">
+    <a href="/net-worth" class="tool-card featured">
+      <div class="tc-cat">Wealth Building</div>
+      <h3>Net Worth Calculator</h3>
+      <p>Track what you own minus what you owe.</p>
+      <span class="tc-link">Open →</span>
+    </a>
+    <a href="/retirement-calculator" class="tool-card featured">
+      <div class="tc-cat">Wealth Building</div>
+      <h3>Retirement Calculator</h3>
+      <p>Are you saving enough to retire well?</p>
+      <span class="tc-link">Open →</span>
+    </a>
+    <a href="/compound-interest" class="tool-card featured">
+      <div class="tc-cat">Wealth Building</div>
+      <h3>Compound Interest</h3>
+      <p>See how your money grows over time.</p>
+      <span class="tc-link">Open →</span>
+    </a>
+    <a href="/savings-goal" class="tool-card featured">
+      <div class="tc-cat">Wealth Building</div>
+      <h3>Savings Goal Calculator</h3>
+      <p>Plan how to reach a savings target.</p>
+      <span class="tc-link">Open →</span>
+    </a>
+  </div>
+</div>
 
-</div></div></div></div><div class="sidebar"><div class="sc"><div class="sc-head">FIRE principles</div><div class="sc-body">
-<div class="tip"><span>→</span><span>FIRE number = 25 × your annual expenses.</span></div>
-<div class="tip"><span>→</span><span>Your savings rate matters more than your income.</span></div>
-<div class="tip"><span>→</span><span>Cutting expenses lowers your FIRE number twice over.</span></div>
-<div class="tip"><span>→</span><span>Low-cost index funds are the classic FIRE vehicle.</span></div>
-</div></div></div></div><div class="section" style="padding-top:0"><div class="section-header"><div class="section-title">Related <span>/</span> Wealth Tools</div></div><div class="tools-grid"><a href="/net-worth" class="tool-card featured"><div class="tc-cat">Wealth Building</div><h3>Net Worth Calculator</h3><p>Track what you own minus what you owe.</p><span class="tc-link">Open →</span></a><a href="/retirement-calculator" class="tool-card featured"><div class="tc-cat">Wealth Building</div><h3>Retirement Calculator</h3><p>Are you saving enough to retire well?</p><span class="tc-link">Open →</span></a><a href="/compound-interest" class="tool-card featured"><div class="tc-cat">Wealth Building</div><h3>Compound Interest</h3><p>See how your money grows over time.</p><span class="tc-link">Open →</span></a><a href="/savings-goal" class="tool-card featured"><div class="tc-cat">Wealth Building</div><h3>Savings Goal Calculator</h3><p>Plan how to reach a savings target.</p><span class="tc-link">Open →</span></a></div></div><div class="section" style="padding-top:0" data-articles="1"><div class="section-header"><div class="section-title">Learn more <span>/</span> Guides</div></div><div class="tools-grid"><a href="/blog-fire-movement-south-africa" class="tool-card featured" style="border-top-color:var(--navy)"><div class="tc-cat">Guide</div><h3>FIRE in South Africa: Financial Independence Explained</h3><span class="tc-link">Read guide →</span></a></div></div>
+<div class="section" style="padding-top:0">
+  <div class="section-header">
+    <div class="section-title">Learn more <span>/</span> Guides</div>
+  </div>
+  <div class="tools-grid">
+    <a href="/blog-fire-movement-south-africa" class="tool-card featured" style="border-top-color:var(--navy)">
+      <div class="tc-cat">Guide</div>
+      <h3>FIRE in South Africa: The Complete Guide</h3>
+      <p>Everything you need to know about financial independence in SA.</p>
+      <span class="tc-link">Read guide →</span>
+    </a>
+    <a href="/blog-retirement-annuity-guide-sa" class="tool-card featured" style="border-top-color:var(--navy)">
+      <div class="tc-cat">Guide</div>
+      <h3>Retirement Annuities Explained</h3>
+      <p>Maximize your 27.5% tax deduction.</p>
+      <span class="tc-link">Read guide →</span>
+    </a>
+    <a href="/blog-tax-free-savings-account-sa" class="tool-card featured" style="border-top-color:var(--navy)">
+      <div class="tc-cat">Guide</div>
+      <h3>Tax-Free Savings Accounts in SA</h3>
+      <p>The R40,000/year opportunity most miss.</p>
+      <span class="tc-link">Read guide →</span>
+    </a>
+  </div>
+</div>
+
+<div class="section" style="padding-top:0">
+  <div style="background:var(--white);border:1px solid var(--line);border-top:3px solid var(--forest)">
+    <div class="article-body">
+
+      <h2>FIRE is a savings rate strategy more than an income strategy</h2>
+      <p>The single most counter-intuitive insight in the FIRE (Financial Independence, Retire Early) movement is that your savings rate — the percentage of income you save, not the absolute amount — determines your timeline more than your salary does. Someone earning R30,000/month who saves 50% will reach financial independence faster than someone earning R80,000/month who saves 15%, because the higher earner needs to accumulate a proportionally larger nest egg to sustain their higher spending.</p>
+
+      <h2>The maths behind the savings rate relationship</h2>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Savings rate</th>
+            <th>Approximate years to FIRE</th>
+            <th>SA example monthly (R50k income)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>10%</td>
+            <td class="td-red">51 years</td>
+            <td>R5,000/month</td>
+          </tr>
+          <tr>
+            <td>25%</td>
+            <td>32 years</td>
+            <td>R12,500/month</td>
+          </tr>
+          <tr>
+            <td>40%</td>
+            <td class="td-green">22 years</td>
+            <td>R20,000/month</td>
+          </tr>
+          <tr>
+            <td>50%</td>
+            <td class="td-green">17 years</td>
+            <td>R25,000/month</td>
+          </tr>
+          <tr>
+            <td>65%</td>
+            <td class="td-green">10.5 years</td>
+            <td>R32,500/month</td>
+          </tr>
+          <tr>
+            <td>75%</td>
+            <td class="td-green">7 years</td>
+            <td>R37,500/month</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>This table illustrates why FIRE practitioners focus so intensely on savings rate optimisation — the relationship is dramatically non-linear. Moving from a 10% to a 25% savings rate roughly cuts your timeline by a third, while moving from 50% to 65% has an even larger proportional effect.</p>
+
+      <h2>The FIRE formula and variations</h2>
+      <p>The standard FIRE formula is simple: your FIRE number equals your annual expenses divided by your safe withdrawal rate. At 4% withdrawal, that's 25× annual expenses. But this basic formula has important variations:</p>
+
+      <h3>Standard FIRE (4% rule)</h3>
+      <p>The traditional approach based on the Trinity Study (1998), which showed a 95%+ success rate over 30-year retirements. Works well for traditional retirees but may be aggressive for early retirees with 40-50 year horizons.</p>
+
+      <h3>Conservative FIRE (3-3.5% rule)</h3>
+      <p>Requires a larger nest egg (29-33× expenses) but provides a much larger safety margin. Recommended for South African early retirees given our currency volatility, higher inflation, and longer retirement horizons.</p>
+
+      <h3>Lean FIRE</h3>
+      <p>Targets a minimal frugal lifestyle — typically R15,000-R25,000/month in South Africa. Requires a smaller nest egg but demands genuine comfort with a simple lifestyle long-term.</p>
+
+      <h3>Fat FIRE</h3>
+      <p>Targets a comfortable or even lavish retirement — R50,000+/month. Requires a substantially larger number but offers more lifestyle flexibility. Common for high earners who don't want to cut spending dramatically.</p>
+
+      <h3>Barista FIRE</h3>
+      <p>Reaching partial independence and continuing part-time or lower-stress work to cover a portion of expenses. Dramatically lowers the FIRE number needed — if you can cover half your expenses through enjoyable part-time work, you only need half the FIRE number.</p>
+
+      <h3>Coast FIRE</h3>
+      <p>Having enough invested that it will grow to your full FIRE number by traditional retirement age without further contributions. Frees you to work purely by choice, often in lower-paying passion-driven careers.</p>
+
+      <h2>South Africa-specific FIRE considerations</h2>
+      <p>FIRE in South Africa has unique characteristics that differ meaningfully from the US-centric FIRE literature. Understanding these helps you plan more accurately.</p>
+
+      <h3>Tax-efficient vehicles accelerate FIRE dramatically</h3>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Vehicle</th>
+            <th>Annual Limit</th>
+            <th>Tax Benefit</th>
+            <th>Best For</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Retirement Annuity (RA)</strong></td>
+            <td>R350,000 or 27.5% of income</td>
+            <td class="td-green">Tax-deductible contributions</td>
+            <td>High earners (36%+ marginal rate)</td>
+          </tr>
+          <tr>
+            <td><strong>Tax-Free Savings (TFSA)</strong></td>
+            <td>R40,000/year, R500k lifetime</td>
+            <td class="td-green">No tax on growth or withdrawals</td>
+            <td>Everyone — max this first</td>
+          </tr>
+          <tr>
+            <td><strong>Pension/Provident Fund</strong></td>
+            <td>Employer-dependent</td>
+            <td class="td-green">Tax-deductible + employer match</td>
+            <td>Employed with good funds</td>
+          </tr>
+          <tr>
+            <td><strong>Direct investment (ETFs)</strong></td>
+            <td>Unlimited</td>
+            <td>CGT on disposal (R40k exclusion)</td>
+            <td>Flexibility, access before 55</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><strong>Critical insight:</strong> For someone in the 36% marginal tax bracket, maxing a R100,000/year RA contribution saves R36,000 in tax annually — effectively a 36% instant return before any market growth. This is the single most powerful accelerator of FIRE in South Africa.</p>
+
+      <h3>Exchange controls and offshore investing</h3>
+      <p>South African residents have two annual foreign investment allowances:</p>
+      <ul>
+        <li><strong>Single Discretionary Allowance:</strong> R10 million per year, no tax clearance needed</li>
+        <li><strong>Foreign Investment Allowance:</strong> R10 million per year, requires SARS tax clearance</li>
+      </ul>
+      <p>Combined, that's R20 million/year you can move offshore — more than enough for most FIRE portfolios. Many SA FIRE practitioners hold 40-60% offshore for rand depreciation protection and global diversification.</p>
+
+      <h3>The rand factor</h3>
+      <p>The rand has historically depreciated 3-5% annually against the USD over long periods. This means:</p>
+      <ul>
+        <li><strong>Offshore investments grow faster</strong> in rand terms — USD returns plus currency gains</li>
+        <li><strong>Imported goods become more expensive</strong> — tech, vehicles, international travel</li>
+        <li><strong>Global diversification is essential</strong> — not just for returns but for purchasing power preservation</li>
+        <li><strong>Emigration optionality</strong> — offshore assets make relocation easier if desired</li>
+      </ul>
+
+      <h3>Medical aid in retirement</h3>
+      <p>Unlike the US, South Africa has universal healthcare through the public system, but most FIRE planners include private medical aid in their expenses. Medical aid costs typically increase 8-12% annually (well above CPI), so your R20,000/month medical aid today could be R40,000/month in 10 years. Plan conservatively here.</p>
+
+      <h2>Low-cost investment vehicles for SA FIRE</h2>
+      <p>The FIRE movement globally is built on low-cost index funds. In South Africa, the ecosystem has matured significantly with excellent options:</p>
+
+      <h3>Local ETFs (JSE-listed)</h3>
+      <ul>
+        <li><strong>Satrix MSCI World:</strong> Global diversification, TER ~0.35%</li>
+        <li><strong>Sygnia Itrix MSCI World:</strong> Similar global exposure, TER ~0.30%</li>
+        <li><strong>CoreShares S&P 500:</strong> US-focused, TER ~0.35%</li>
+        <li><strong>Satrix SA Dividend Plus:</strong> Local dividend focus, TER ~0.35%</li>
+        <li><strong>1nvest SA Bond ETF:</strong> Fixed income allocation, TER ~0.34%</li>
+      </ul>
+
+      <h3>Offshore ETFs (direct access)</h3>
+      <ul>
+        <li><strong>Vanguard Total World (VT):</strong> Maximum diversification, TER ~0.07%</li>
+        <li><strong>Vanguard S&P 500 (VOO):</strong> US market, TER ~0.03%</li>
+        <li><strong>iShares Core MSCI World:</strong> Global, TER ~0.20%</li>
+        <li><strong>ARK Innovation:</strong> Growth/tech focused (higher risk)</li>
+      </ul>
+
+      <p><strong>Target:</strong> Keep your overall portfolio TER (Total Expense Ratio) under 1%. At 1%, a R5 million portfolio costs R50,000/year in fees; at 0.3%, only R15,000 — saving R35,000 annually that compounds over decades.</p>
+
+      <h2>The 4% rule reconsidered for South Africa</h2>
+      <p>The Trinity Study that birthed the 4% rule was based on US historical data and 30-year retirement periods. South African FIRE practitioners should consider several factors that may warrant a more conservative approach:</p>
+
+      <h3>Arguments for 4% or higher</h3>
+      <ul>
+        <li>South African equities have historically delivered strong real returns (7-9% above inflation)</li>
+        <li>Higher bond yields than developed markets provide better fixed-income returns</li>
+        <li>Flexibility to adjust withdrawals in bad years dramatically improves success rates</li>
+      </ul>
+
+      <h3>Arguments for 3-3.5%</h3>
+      <ul>
+        <li>Longer retirement horizons (40-50 years vs 30 years) require more capital</li>
+        <li>Rand volatility introduces currency risk for imported goods and travel</li>
+        <li>Higher local inflation (5-6% vs 2-3% in developed markets) erodes purchasing power faster</li>
+        <li>Sequence of returns risk is amplified over longer timeframes</li>
+      </ul>
+
+      <div class="callout"><strong>Practical approach:</strong> Plan using 3.5% (29× expenses) but aim to flexibly withdraw 4% in good years and 3% in bad years. This flexibility dramatically improves success rates without requiring an impossibly large nest egg.</div>
+
+      <h2>The sequence of returns risk</h2>
+      <p>One of the most underappreciated risks in FIRE is sequence of returns risk — the danger that poor market returns early in retirement (when your portfolio is largest) permanently damage your withdrawal sustainability.</p>
+
+      <p>Example: Two retirees with identical R6 million portfolios withdrawing R240,000/year (4%). Retiree A gets +20% year one, then -20% year two. Retiree B gets -20% year one, then +20% year two. Despite identical average returns, Retiree B's portfolio is significantly smaller because the -20% hit the larger year-one balance.</p>
+
+      <h3>Mitigation strategies</h3>
+      <ul>
+        <li><strong>Cash buffer:</strong> Keep 1-2 years of expenses in cash to avoid selling in downturns</li>
+        <li><strong>Bond tent:</strong> Higher bond allocation early in retirement, increasing equities over time</li>
+        <li><strong>Flexible withdrawals:</strong> Cut spending in bad years, splurge in good years</li>
+        <li><strong>Guardrails:</strong> Pre-set rules to adjust withdrawals based on portfolio performance</li>
+        <li><strong>Part-time income:</strong> Barista FIRE provides income buffer during downturns</li>
+      </ul>
+
+      <h2>From FIRE number to actual plan</h2>
+      <p>Knowing your FIRE number is just the starting point. The real work is translating that number into actionable monthly decisions:</p>
+
+      <h3>The priority stack for SA FIRE practitioners</h3>
+      <ol>
+        <li><strong>Emergency fund:</strong> 3-6 months expenses in accessible account</li>
+        <li><strong>High-interest debt:</strong> Credit cards, store accounts over 18%</li>
+        <li><strong>TFSA max:</strong> R40,000/year in low-cost ETFs (tax-free forever)</li>
+        <li><strong>Employer retirement match:</strong> Free money — always take it</li>
+        <li><strong>RA contributions:</strong> Up to 27.5% of income (max R350k) for tax deduction</li>
+        <li><strong>Direct ETF investments:</strong> For flexibility and pre-55 access</li>
+        <li><strong>Offshore allocation:</strong> Build toward 40-60% offshore over time</li>
+      </ol>
+
+      <h3>The psychological journey</h3>
+      <p>FIRE is as much psychological as mathematical. Key milestones that help sustain motivation:</p>
+      <ul>
+        <li><strong>First R100k invested:</strong> Compound growth becomes visible</li>
+        <li><strong>One year of expenses saved:</strong> Basic safety achieved</li>
+        <li><strong>25% of FIRE number:</strong> Coast FIRE territory approaching</li>
+        <li><strong>50% of FIRE number:</strong> Halfway — compound growth accelerates</li>
+        <li><strong>75% of FIRE number:</strong> End in sight, final push</li>
+        <li><strong>FIRE achieved:</strong> Optionality unlocked</li>
+      </ul>
+
+      <h2>Common FIRE mistakes in South Africa</h2>
+      <ul>
+        <li><strong>Ignoring tax efficiency:</strong> Not using RAs or TFSAs leaves huge tax savings on the table</li>
+        <li><strong>100% JSE exposure:</strong> No offshore diversification leaves you vulnerable to SA-specific risks</li>
+        <li><strong>Too conservative too early:</strong> Young FIRE practitioners with 30+ years should be 80-100% equities</li>
+        <li><strong>Forgetting medical aid inflation:</strong> 8-12% annual increases compound dramatically over decades</li>
+        <li><strong>Underestimating lifestyle creep:</strong> Rising expenses extend FIRE timeline indefinitely</li>
+        <li><strong>No flexibility plan:</strong> Rigid 4% withdrawals without market-awareness leads to failure</li>
+        <li><strong>RA lock-up ignorance:</strong> Money in RAs is inaccessible until 55 — plan access accordingly</li>
+        <li><strong>Single-employer risk:</strong> Pension/provident tied to one employer creates concentration risk</li>
+      </ul>
+
+      <h2>FIRE and the meaning question</h2>
+      <p>Perhaps the most under-discussed aspect of FIRE is what comes after. Many who reach financial independence discover that removing the structure and purpose of work creates an unexpected void. The most successful FIRE practitioners plan not just the financial side but also:</p>
+
+      <ul>
+        <li><strong>Purpose:</strong> What will give your days meaning without work structure?</li>
+        <li><strong>Community:</strong> How will you maintain social connections without workplace relationships?</li>
+        <li><strong>Identity:</strong> Who are you when "what you do for work" no longer defines you?</li>
+        <li><strong>Contribution:</strong> How will you contribute to something larger than yourself?</li>
+        <li><strong>Growth:</strong> How will you continue learning and developing?</li>
+      </ul>
+
+      <p>The happiest FIRE achievers typically transition to meaningful pursuits — volunteering, mentoring, creative work, entrepreneurship, community involvement — rather than pure leisure. Planning this transition before reaching FIRE helps ensure the journey delivers the fulfillment you're seeking.</p>
+
+    </div>
+  </div>
+</div>
+
 <div class="sa-stripe"></div>
-<div class="section"><div style="background:var(--white);border:1px solid var(--line);border-top:3px solid var(--forest)"><div class="article-body"><h2>FIRE is a savings rate strategy more than an income strategy</h2><p>The single most counter-intuitive insight in the FIRE (Financial Independence, Retire Early) movement is that your savings rate — the percentage of income you save, not the absolute amount — determines your timeline more than your salary does. Someone earning R30,000/month who saves 50% will reach financial independence faster than someone earning R80,000/month who saves 15%, because the higher earner needs to accumulate a proportionally larger nest egg to sustain their higher spending.</p><h2>The maths behind the savings rate relationship</h2><table class="data-table"><thead><tr><th>Savings rate</th><th>Approximate years to FIRE</th></tr></thead><tbody><tr><td>10%</td><td>51 years</td></tr><tr><td>25%</td><td>32 years</td></tr><tr><td>50%</td><td>17 years</td></tr><tr><td>65%</td><td>10.5 years</td></tr><tr><td>75%</td><td>7 years</td></tr></tbody></table><p>This table illustrates why FIRE practitioners focus so intensely on savings rate optimisation — the relationship is dramatically non-linear. Moving from a 10% to a 25% savings rate roughly cuts your timeline by a third, while moving from 50% to 65% has an even larger proportional effect.</p><h2>Two ways to reach a higher savings rate</h2><p>There are only two levers: increase income, or decrease spending — but they are not equally powerful. Cutting R2,000/month in expenses has a double effect: it reduces both your monthly spending AND your FIRE number (since your target is based on annual expenses), while earning an extra R2,000/month only affects the savings side.</p><h2>The variations on FIRE worth knowing</h2><ul><li><strong>Lean FIRE:</strong> targeting a minimal, frugal lifestyle in retirement, requiring a smaller nest egg</li><li><strong>Fat FIRE:</strong> targeting a comfortable or even lavish retirement lifestyle, requiring a substantially larger number</li><li><strong>Barista FIRE:</strong> reaching partial independence and continuing part-time or lower-stress work to cover a portion of expenses</li><li><strong>Coast FIRE:</strong> having enough invested that it will grow to your full FIRE number by traditional retirement age without further contributions, freeing you to work purely by choice</li></ul><h2>The risk this calculator does not fully capture</h2><p>Early retirement means a longer withdrawal period than the traditional 30-year retirement horizon the 4% rule was originally studied against. Many in the FIRE community use a more conservative 3-3.5% withdrawal rate specifically because of this extended timeline. It is worth stress-testing your number with a more conservative assumption before treating it as final.</p><h2>From number to plan</h2><p>Once you know your FIRE number, the practical next question is where that money should live. See our <a href="/compound-interest">compound interest calculator</a> to model different contribution levels, and the <a href="/blog-fire-movement-south-africa">FIRE in South Africa guide</a> for how local South Africans structure their investment approach.</p></div></div></div>
 
-<footer><div class="footer-inner">
-  <div class="footer-logo">CalcMy<span>Pay</span></div>
-  <div class="footer-links"><a href="/salary-income">Salary</a><a href="/affordability">Affordability</a><a href="/wealth-building">Wealth</a><a href="/money-tools">Tools</a><a href="/financial-coach">Coach</a><a href="/blog-salary-guide">Guides</a><a href="/about">About</a><a href="/privacy-policy">Privacy</a><a href="/contact">Contact</a></div>
-  <div class="footer-copy">© 2026 CalcMyPay · Understand your salary. Plan your money. Build your future. · For informational purposes only · Not affiliated with SARS · SARS 2027 tax year</div>
-</div></footer>
-<script>let baseInputs=null;
-const fmt=n=>'R\u00a0'+Math.round(Math.abs(n)).toLocaleString('en-ZA');
-function fmtK(n){n=Math.round(n);if(Math.abs(n)>=1e6)return 'R\u00a0'+(n/1e6).toFixed(2)+'m';if(Math.abs(n)>=1e3)return 'R\u00a0'+Math.round(n/1e3).toLocaleString('en-ZA')+'k';return fmt(n);}
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">CalcMy<span>Pay</span></div>
+    <div class="footer-links">
+      <a href="/salary-income">Salary</a>
+      <a href="/affordability">Affordability</a>
+      <a href="/wealth-building">Wealth</a>
+      <a href="/money-tools">Tools</a>
+      <a href="/financial-coach">Coach</a>
+      <a href="/blog-salary-guide">Guides</a>
+      <a href="/about">About</a>
+      <a href="/privacy-policy">Privacy</a>
+      <a href="/contact">Contact</a>
+    </div>
+    <div class="footer-copy">
+      © 2026 CalcMyPay · Understand your salary. Plan your money. Build your future. · For informational purposes only · Consult a registered financial adviser (FSCA) for personalised FIRE planning
+    </div>
+  </div>
+</footer>
 
-function calc(){
- const exp=parseFloat(document.getElementById('exp').value)||0;
- const have=parseFloat(document.getElementById('have').value)||0;
- const monthly=parseFloat(document.getElementById('monthly').value)||0;
- const rate=parseFloat(document.getElementById('rate').value)||10;
- if(exp<=0){alert('Enter your monthly expenses.');return;}
- const annual=exp*12;
- const fireNum=annual*25;
- const r=rate/100/12;
- // months to reach fireNum
- let bal=have, m=0;
- while(bal<fireNum && m<1200){bal=bal*(1+r)+monthly;m++;}
- const years=(m/12);
- document.getElementById('big').textContent=fmtK(fireNum);
- document.getElementById('yrs').textContent=m>=1200?'40+':years.toFixed(1);
- document.getElementById('r-annual').textContent=fmt(annual);
- document.getElementById('r-fire').textContent=fmt(fireNum);
- document.getElementById('r-have').textContent=fmt(have);
- document.getElementById('r-years').textContent=m>=1200?'40+ years':years.toFixed(1)+' years';
- document.getElementById('r-age').textContent=m>=1200?'—':Math.round(30+years)+' years old';
- document.getElementById('r-target').textContent=fmt(fireNum);
- baseInputs = {exp, have, monthly, rate, years};
- document.getElementById('whatif-section').style.display = 'block';
- resetWhatIf();
- renderMoneyStory(fireNum, have, monthly, rate, years);
- document.getElementById('res').classList.add('show');
- document.getElementById('res').scrollIntoView({behavior:'smooth',block:'nearest'});
+<script>
+let baseInputs = null;
+const fmt = n => 'R\u00a0' + Math.round(Math.abs(n)).toLocaleString('en-ZA');
+
+function fmtK(n) {
+  n = Math.round(n);
+  if (Math.abs(n) >= 1e6) return 'R\u00a0' + (n / 1e6).toFixed(2) + 'm';
+  if (Math.abs(n) >= 1e3) return 'R\u00a0' + Math.round(n / 1e3).toLocaleString('en-ZA') + 'k';
+  return fmt(n);
 }
-document.addEventListener('keydown',e=>{if(e.key=='Enter')calc()});
 
-function renderMoneyStory(fireNum, have, monthly, rate, years){
-  // faster with +R2000/month
-  const r=rate/100/12;
-  function payoffTime(m){
-    let bal=have, mo=0;
-    while(bal<fireNum && mo<1200){bal=bal*(1+r)+m;mo++;}
-    return mo/12;
+// FIRE type presets
+function setFIREType(btn, type) {
+  document.querySelectorAll('.fire-pill').forEach(p => p.classList.remove('active'));
+  btn.classList.add('active');
+
+  const withdrawalInput = document.getElementById('withdrawal');
+
+  switch (type) {
+    case 'lean':
+      withdrawalInput.value = 4.5; // 22.2x - slightly aggressive
+      break;
+    case 'standard':
+      withdrawalInput.value = 4.0; // 25x
+      break;
+    case 'conservative':
+      withdrawalInput.value = 3.5; // 28.6x
+      break;
+    case 'fat':
+      withdrawalInput.value = 4.0; // 25x but higher expenses expected
+      break;
   }
+}
+
+// Advanced options toggle
+function toggleAdvanced() {
+  const toggle = document.querySelector('.advanced-toggle');
+  const options = document.getElementById('advanced-options');
+  toggle.classList.toggle('open');
+  options.classList.toggle('show');
+}
+
+// Validation
+function clearErrors() {
+  document.querySelectorAll('.input-error').forEach(el => el.classList.remove('input-error'));
+  document.querySelectorAll('.error-msg').forEach(el => {
+    if (!el.id.includes('-hint')) el.classList.remove('show');
+  });
+}
+
+function showError(inputId, errorId) {
+  document.getElementById(inputId).classList.add('input-error');
+  document.getElementById(errorId).classList.add('show');
+}
+
+function calc() {
+  clearErrors();
+
+  const exp = parseFloat(document.getElementById('exp').value) || 0;
+  const have = parseFloat(document.getElementById('have').value) || 0;
+  const monthly = parseFloat(document.getElementById('monthly').value) || 0;
+  const rate = parseFloat(document.getElementById('rate').value) || 10;
+  const age = parseFloat(document.getElementById('age').value) || 30;
+  const income = parseFloat(document.getElementById('income').value) || 0;
+  const withdrawal = parseFloat(document.getElementById('withdrawal').value) || 4;
+  const inflation = parseFloat(document.getElementById('inflation').value) || 5.5;
+
+  // Validation
+  let valid = true;
+  if (exp <= 0) { showError('exp', 'exp-error'); valid = false; }
+  if (monthly <= 0) { showError('monthly', 'monthly-error'); valid = false; }
+  if (!valid) return;
+
+  const annual = exp * 12;
+  const multiplier = 100 / withdrawal; // e.g., 4% = 25x
+  const fireNum = annual * multiplier;
+
+  // Use REAL return (nominal - inflation) for more accurate projection
+  const realRate = Math.max(0.5, rate - inflation);
+  const r = realRate / 100 / 12;
+
+  // Calculate months to reach FIRE number
+  let bal = have, m = 0;
+  while (bal < fireNum && m < 1200) {
+    bal = bal * (1 + r) + monthly;
+    m++;
+  }
+
+  const years = m / 12;
+  const gap = Math.max(0, fireNum - have);
+  const progress = Math.min(100, (have / fireNum) * 100);
+
+  // Calculate savings rate
+  const savingsRate = income > 0 ? (monthly / income) * 100 : 0;
+  let srGrade = '—';
+  if (income > 0) {
+    if (savingsRate >= 70) srGrade = 'Exceptional';
+    else if (savingsRate >= 50) srGrade = 'FIRE Fast Track';
+    else if (savingsRate >= 35) srGrade = 'Strong';
+    else if (savingsRate >= 20) srGrade = 'On Track';
+    else if (savingsRate >= 10) srGrade = 'Starting';
+    else srGrade = 'Needs Work';
+  }
+
+  // Inflation-adjusted target
+  const yearsToFire = years;
+  const inflationFactor = Math.pow(1 + inflation / 100, yearsToFire);
+  const inflatedTarget = fireNum * inflationFactor;
+
+  // Update main display
+  document.getElementById('big').textContent = fmtK(fireNum);
+  document.getElementById('period').textContent = multiplier.toFixed(1) + '× annual expenses';
+  document.getElementById('yrs').textContent = m >= 1200 ? '40+' : years.toFixed(1);
+
+  // Progress bar
+  document.getElementById('progress-fill').style.width = progress + '%';
+
+  // Breakdown
+  document.getElementById('r-annual').textContent = fmt(annual);
+  document.getElementById('r-multiplier').textContent = multiplier.toFixed(1);
+  document.getElementById('r-fire').textContent = fmt(fireNum);
+  document.getElementById('r-have').textContent = fmt(have);
+  document.getElementById('r-gap').textContent = fmt(gap);
+  document.getElementById('r-target').textContent = fmt(fireNum);
+
+  // Years and age
+  const timeEl = document.getElementById('r-years');
+  const ageEl = document.getElementById('r-age');
+
+  if (have >= fireNum) {
+    // Already FIRE!
+    timeEl.textContent = '✓ Already there!';
+    timeEl.className = 'val pos';
+    ageEl.textContent = age + ' (current age)';
+    document.getElementById('already-fire-note').style.display = 'flex';
+  } else if (m >= 1200) {
+    timeEl.textContent = '40+ years';
+    timeEl.className = 'val neg';
+    ageEl.textContent = '—';
+    document.getElementById('already-fire-note').style.display = 'none';
+  } else {
+    timeEl.textContent = years.toFixed(1) + ' years';
+    timeEl.className = 'val neu';
+    ageEl.textContent = Math.round(age + years) + ' years old';
+    document.getElementById('already-fire-note').style.display = 'none';
+  }
+
+  // Show inflation-adjusted target if meaningful
+  const inflationRow = document.getElementById('inflation-adjusted-row');
+  if (yearsToFire > 5 && yearsToFire < 40) {
+    inflationRow.style.display = 'flex';
+    document.getElementById('r-inflated').textContent = fmtK(inflatedTarget) + ' (nominal)';
+  } else {
+    inflationRow.style.display = 'none';
+  }
+
+  // Savings rate panel
+  const srPanel = document.getElementById('savings-rate-panel');
+  if (income > 0) {
+    srPanel.style.display = 'flex';
+    document.getElementById('savings-rate').textContent = savingsRate.toFixed(0) + '%';
+    document.getElementById('savings-rate-grade').textContent = srGrade;
+    document.getElementById('savings-rate-context').textContent =
+      'Of your ' + fmt(income) + '/month income going to investments';
+  } else {
+    srPanel.style.display = 'none';
+  }
+
+  // Show high expenses note if relevant
+  const highExpNote = document.getElementById('high-expenses-note');
+  highExpNote.style.display = (exp > 20000 && income > 0 && savingsRate < 50) ? 'flex' : 'none';
+
+  // Store base inputs for what-if slider
+  window.baseInputs = {
+    exp, have, monthly, rate, age, income, withdrawal, inflation,
+    years: m >= 1200 ? 40 : years,
+    fireNum
+  };
+
+  // Show all sections
+  document.getElementById('money-story').style.display = 'block';
+  document.getElementById('whatif-section').style.display = 'block';
+  document.getElementById('journey-section').style.display = 'block';
+
+  // Configure what-if slider ranges
+  document.getElementById('wi-extra').max = Math.max(2000, Math.min(10000, Math.round(monthly * 2)));
+  document.getElementById('wi-cut').max = Math.max(2000, Math.min(10000, Math.round(exp * 0.5)));
+  document.getElementById('wi-lump').max = Math.max(100000, Math.min(500000, Math.round(fireNum * 0.2)));
+
+  renderMoneyStory(fireNum, have, monthly, rate, years);
+  resetWhatIf();
+
+  document.getElementById('res').classList.add('show');
+  document.getElementById('res').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+// Enter key triggers calculation
+document.addEventListener('keydown', e => {
+  if (e.key === 'Enter') {
+    const activeEl = document.activeElement;
+    if (activeEl && activeEl.tagName === 'INPUT') {
+      calc();
+    }
+  }
+});
+
+function renderMoneyStory(fireNum, have, monthly, rate, years) {
+  // Faster with +R2000/month
+  function payoffTime(m, monthlyContrib, startBal, target) {
+    const inflation = parseFloat(document.getElementById('inflation').value) || 5.5;
+    const realRate = Math.max(0.5, rate - inflation);
+    const r = realRate / 100 / 12;
+    let bal = startBal, mo = 0;
+    while (bal < target && mo < 1200) {
+      bal = bal * (1 + r) + monthlyContrib;
+      mo++;
+    }
+    return mo / 12;
+  }
+
   const baseYears = years;
-  const fasterYears = payoffTime(monthly+2000);
+  const fasterYears = payoffTime(monthly + 2000, monthly + 2000, have, fireNum);
   const savedYears = baseYears - fasterYears;
   const fasterEl = document.getElementById('ms-faster');
-  if(savedYears > 0.1 && baseYears < 40){
-    fasterEl.textContent = savedYears.toFixed(1)+' years sooner';
+
+  if (savedYears > 0.1 && baseYears < 40) {
+    fasterEl.textContent = savedYears.toFixed(1) + ' years sooner';
   } else {
     fasterEl.textContent = 'Try the retirement calculator';
   }
 
-  document.getElementById('ms-halfway').textContent = fmtK(fireNum/2);
-  document.getElementById('ms-expense-sensitivity').textContent = 'R1,000 less/month = R300k lower target';
+  // Halfway milestone
+  document.getElementById('ms-halfway').textContent = fmtK(fireNum / 2);
+
+  // Expense sensitivity
+  document.getElementById('ms-expense-sensitivity').textContent = 'R300k lower target';
 }
 
-function renderWhatIf(){
-  if(!baseInputs) return;
+function renderWhatIf() {
+  if (!window.baseInputs) return;
+
   const extra = parseFloat(document.getElementById('wi-extra').value);
   const cut = parseFloat(document.getElementById('wi-cut').value);
   const rateDelta = parseFloat(document.getElementById('wi-rate').value);
@@ -537,37 +1331,63 @@ function renderWhatIf(){
 
   document.getElementById('wi-extra-out').textContent = fmt(extra);
   document.getElementById('wi-cut-out').textContent = fmt(cut);
-  document.getElementById('wi-rate-out').textContent = (rateDelta>=0?'+':'')+rateDelta+'%';
+  document.getElementById('wi-rate-out').textContent = (rateDelta >= 0 ? '+' : '') + rateDelta + '%';
   document.getElementById('wi-lump-out').textContent = fmt(lump);
 
-  const newExp = Math.max(0, baseInputs.exp - cut);
-  const newAnnual = newExp*12;
-  const newFireNum = newAnnual*25;
-  const newRate = Math.max(0.5, baseInputs.rate + rateDelta);
-  const newMonthly = baseInputs.monthly + extra;
-  const newHave = baseInputs.have + lump;
+  const newExp = Math.max(0, window.baseInputs.exp - cut);
+  const newAnnual = newExp * 12;
+  const newMultiplier = 100 / window.baseInputs.withdrawal;
+  const newFireNum = newAnnual * newMultiplier;
+  const newRate = Math.max(0.5, window.baseInputs.rate + rateDelta);
+  const newMonthly = window.baseInputs.monthly + extra;
+  const newHave = window.baseInputs.have + lump;
 
-  const r = newRate/100/12;
-  let bal=newHave, m=0;
-  while(bal<newFireNum && m<1200){ bal=bal*(1+r)+newMonthly; m++; }
-  const newYears = m>=1200 ? null : m/12;
+  const realRate = Math.max(0.5, newRate - window.baseInputs.inflation);
+  const r = realRate / 100 / 12;
+  let bal = newHave, m = 0;
+  while (bal < newFireNum && m < 1200) {
+    bal = bal * (1 + r) + newMonthly;
+    m++;
+  }
+
+  const newYears = m >= 1200 ? null : m / 12;
 
   const yearsEl = document.getElementById('wi-years');
-  yearsEl.textContent = newYears===null ? '40+ years' : newYears.toFixed(1)+' years';
+
+  if (newHave >= newFireNum) {
+    yearsEl.textContent = '✓ Already FIRE!';
+  } else if (newYears === null) {
+    yearsEl.textContent = '40+ years';
+  } else {
+    yearsEl.textContent = newYears.toFixed(1) + ' years';
+  }
 
   const deltaEl = document.getElementById('wi-delta');
-  if(newYears===null || baseInputs.years>=40){
-    deltaEl.textContent = '\u2014';
+
+  if (newYears === null || window.baseInputs.years >= 40) {
+    deltaEl.textContent = '—';
     deltaEl.className = 'whatif-delta-val';
   } else {
-    const delta = baseInputs.years - newYears;
-    if(delta >= 0){ deltaEl.textContent = delta.toFixed(1)+' years sooner'; deltaEl.className = 'whatif-delta-val up'; }
-    else { deltaEl.textContent = Math.abs(delta).toFixed(1)+' years later'; deltaEl.className = 'whatif-delta-val down'; }
+    const delta = window.baseInputs.years - newYears;
+    if (delta >= 0.1) {
+      deltaEl.textContent = delta.toFixed(1) + ' years sooner';
+      deltaEl.className = 'whatif-delta-val up';
+    } else if (delta <= -0.1) {
+      deltaEl.textContent = Math.abs(delta).toFixed(1) + ' years later';
+      deltaEl.className = 'whatif-delta-val down';
+    } else {
+      deltaEl.textContent = 'No change';
+      deltaEl.className = 'whatif-delta-val';
+    }
   }
 }
 
-function resetWhatIf(){
-  document.querySelectorAll('#whatif-section input[type=range]').forEach(el=>{ el.value = el.dataset.default||0; });
+function resetWhatIf() {
+  document.querySelectorAll('#whatif-section input[type=range]').forEach(el => {
+    el.value = el.dataset.default || 0;
+  });
   renderWhatIf();
 }
-</script></body></html>
+</script>
+</body>
+</html>
