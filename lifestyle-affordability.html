@@ -2,44 +2,160 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="color-scheme" content="light"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lifestyle Affordability Calculator South Africa 2026 | CalcMyPay</title>
-<meta name="description" content="Does your lifestyle fit your income? Add up your monthly expenses and see if you are living within your means in South Africa.">
+<meta name="description" content="Does your lifestyle fit your income? Free South African lifestyle affordability calculator with 50/30/20 rule, black tax, medical aid, and savings tracking.">
+<meta name="keywords" content="lifestyle affordability calculator south africa, 50 30 20 budget rule SA, living within your means SA, monthly budget calculator south africa, black tax budget, medical aid affordability, SA household budget, savings rate south africa">
+<meta name="author" content="CalcMyPay">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Lifestyle Affordability Calculator South Africa 2026 | CalcMyPay">
+<meta property="og:description" content="Does your lifestyle fit your income? Free calculator with 50/30/20 rule and SA-specific categories.">
+<meta property="og:url" content="https://calcmypay.co.za/lifestyle-affordability">
+<meta property="og:image" content="https://calcmypay.co.za/og-image.jpg">
+<meta property="og:site_name" content="CalcMyPay">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Lifestyle Affordability Calculator South Africa 2026">
+<meta name="twitter:description" content="Does your lifestyle fit your income? Free calculator with SA-specific categories.">
+
 <meta name="google-adsense-account" content="ca-pub-6108324382808705">
 <link rel="canonical" href="https://calcmypay.co.za/lifestyle-affordability">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/icon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/icon-16.png">
+
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap" as="style">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I know if I am living within my means?","acceptedAnswer":{"@type":"Answer","text":"Add up all your monthly expenses and compare to your take-home pay. If you spend less than you earn and save at least 10–15%, you are living within your means."}},{"@type":"Question","name":"How much of my salary should I save?","acceptedAnswer":{"@type":"Answer","text":"A common guideline is to save at least 15% of your income, with a 50/30/20 split: 50% needs, 30% wants, 20% savings and debt repayment."}}]}</script>
-<style>/* CalcMyPay — Editorial "Ink & Marigold" =================================== */
+
+<!-- WebApplication Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Lifestyle Affordability Calculator",
+  "description": "Calculate whether your lifestyle fits your income in South Africa, with 50/30/20 rule analysis and SA-specific categories.",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "All",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "ZAR" },
+  "areaServed": "ZA"
+}
+</script>
+
+<!-- FAQ Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I know if I am living within my means in South Africa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Add up all your monthly expenses and compare to your take-home pay. If you spend less than you earn and save at least 15-20%, you are living within your means. A healthy savings rate combined with no growing debt indicates sustainable spending. Use the 50/30/20 rule as a guide: 50% needs, 30% wants, 20% savings and debt repayment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the 50/30/20 budget rule and does it work in South Africa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The 50/30/20 rule suggests spending 50% of take-home pay on needs (housing, food, transport, utilities), 30% on wants (entertainment, dining out, hobbies), and 20% on savings and debt repayment. In South Africa, many households need to adapt this to 60/20/20 due to higher housing and transport costs, or 50/25/25 if building savings aggressively."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What percentage of my salary should go to housing in South Africa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Financial experts recommend spending no more than 30% of your gross monthly income on housing (bond or rent plus rates, levies, and insurance). On a R30,000 salary, that means housing costs of R9,000 or less. Many South Africans stretch to 35-40% in expensive areas like Cape Town, but this leaves little room for other financial goals."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much should I save each month in South Africa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Aim to save at least 15-20% of your take-home pay. This includes retirement contributions (RA, pension), emergency fund building, and general savings. South Africans saving less than 10% are likely not building adequate long-term security. Those over 40 should target 25%+ to catch up on retirement savings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is black tax and how do I budget for it in South Africa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Black tax refers to financial support provided to extended family — parents, siblings, relatives. It's a real expense for many South African households and should be budgeted explicitly, not treated as discretionary. Treat it as a fixed expense like any other, set clear boundaries on amounts, and include it in your 'needs' category when applying the 50/30/20 rule."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What percentage of income should go to transport in South Africa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Transport typically consumes 10-15% of take-home pay for healthy budgets. This includes car repayments, fuel, insurance, maintenance, and e-tolls. South Africans spending more than 20% on transport are often over-committed on vehicle costs — consider a more affordable car, carpooling, or public transport where viable."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much should I spend on groceries in South Africa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A single person typically spends R2,500-R4,000/month on groceries, a couple R4,000-R6,000, and a family of four R6,000-R10,000 depending on diet and shopping habits. Food (groceries plus eating out) should stay under 15% of take-home pay for a healthy budget. Shopping at Checkers, Pick n Pay, or Woolworths and planning meals reduces costs significantly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's a healthy debt-to-income ratio in South Africa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Your total monthly debt repayments (bond, car, credit cards, personal loans) should not exceed 36% of gross income, with 20% or less being ideal. South African banks use this ratio when assessing bond applications. Above 36% signals over-indebtedness and may trigger the need for debt review under the National Credit Act."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I budget for medical aid in South Africa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Medical aid typically costs 5-10% of take-home pay. A single person on a basic plan pays R1,800-R2,500/month, while comprehensive family cover can cost R6,000-R12,000/month. Budget separately for gap cover (R200-R500/month) and out-of-pocket medical expenses. Medical aid is effectively a non-negotiable need in South Africa given public healthcare limitations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I do if I'm spending more than I earn?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A monthly deficit is the most urgent financial signal to act on. Steps: 1) Identify the biggest expense category (usually housing or transport), 2) Separate needs from wants honestly, 3) Cut discretionary spending immediately, 4) Consider downsizing housing or vehicle if structural, 5) Stop using credit cards to cover the gap, 6) Build a small emergency fund once balanced to prevent future deficits."
+      }
+    }
+  ]
+}
+</script>
+
+<style>/* CalcMyPay — Editorial "Ink & Marigold" */
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap');
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
   --paper:#FFFFFF;--ink:#16201C;--forest:#1B4332;--marigold:#F6B53D;
   --mist:#6B756F;--line:#DEDBD0;--sand:#FFFFFF;--berry:#B23A2E;
   --disp:'Fraunces',Georgia,serif;--body:'Inter',system-ui,sans-serif;
-  /* legacy var aliases so inline styles still resolve */
-  --black:#16201C;--navy:#1B4332;--navy-mid:#1B4332;--accent:#1B4332;--accent-dark:#143026;
-  --white:#fff;--off-white:#FFFFFF;--green:#1B4332;--green-light:#EDF3EE;--accent-light:#EDF3EE;
+  --black:#16201C;--navy:#1B4332;--accent:#1B4332;
+  --white:#fff;--green:#1B4332;--green-light:#EDF3EE;
   --g100:#FFFFFF;--g200:#E4E2D8;--g400:#AEB3AC;--g600:#6B756F;--g800:#C9CcC4;--red:#B23A2E;
-  --fs:'Fraunces',Georgia,serif;--fn:'Inter',system-ui,sans-serif;
 }
 html{color-scheme:light;scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{font-family:var(--body);background:var(--paper);color:var(--ink);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased}
 a{color:var(--forest);text-decoration:none}
-
-/* SA stripe — keep but slimmer & muted */
 .sa-stripe{height:3px;background:linear-gradient(90deg,#1B4332 0 16%,#F6B53D 16% 33%,#FCFBF7 33% 50%,#1B4332 50% 66%,#B23A2E 66% 83%,#16201C 83% 100%);opacity:.9}
-
-/* TOP BAR — editorial dateline */
 .top-bar{background:var(--paper);border-bottom:1px solid var(--line);padding:.5rem 2rem;display:flex;align-items:center;justify-content:space-between}
 .tb-l{font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--mist)}
 .tb-r{font-size:.7rem;color:var(--mist);letter-spacing:.04em}
 .tb-r span{color:var(--forest);font-weight:600}
-
-/* MASTHEAD NAV */
 nav{background:var(--paper);border-bottom:2px solid var(--ink);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:74px;position:sticky;top:0;z-index:100}
 .logo{display:flex;align-items:center;gap:.5rem;text-decoration:none}
 .logo-text{font-family:var(--disp);font-size:1.7rem;font-weight:900;letter-spacing:-.02em;color:var(--ink)}
@@ -55,14 +171,6 @@ nav{background:var(--paper);border-bottom:2px solid var(--ink);padding:0 2rem;di
 .nav-cta::after{display:none}
 .nav-cta:hover{background:var(--forest)!important;color:#fff!important}
 @media(max-width:860px){.nav-links{gap:0;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;max-width:60vw}.nav-links::-webkit-scrollbar{display:none}.nav-links a{white-space:nowrap;padding:.5rem .6rem;font-size:.76rem}.logo-text{font-size:1.4rem}nav{padding:0 1rem}}
-
-/* AD SLOTS — quiet */
-.ad-strip{background:var(--paper);border-bottom:1px solid var(--line);text-align:center;padding:.6rem}
-.ad-ph{display:inline-flex;align-items:center;justify-content:center;background:var(--sand);border:1px solid var(--line);color:var(--g400);font-size:.62rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
-.ad-ph.lb{width:728px;height:90px;max-width:100%}.ad-ph.rect{width:300px;height:250px}
-.ad-lbl{font-size:.6rem;color:var(--g400);text-transform:uppercase;letter-spacing:.12em;margin-bottom:.3rem}
-
-/* PAGE HEADER — kicker / headline / standfirst */
 .ph{background:var(--paper);border-bottom:1px solid var(--line);padding:4rem 2rem 3rem}
 .ph-inner{max-width:1080px;margin:0 auto}
 .bc{font-size:.72rem;color:var(--mist);font-weight:500;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1.4rem}
@@ -73,87 +181,16 @@ nav{background:var(--paper);border-bottom:2px solid var(--ink);padding:0 2rem;di
 .ph p{font-family:var(--body);color:var(--mist);font-size:1.1rem;line-height:1.6;max-width:60ch}
 .ph-meta{display:flex;gap:1.4rem;font-size:.72rem;color:var(--mist);font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-top:1.2rem}
 
-/* SECTIONS */
-.section{max-width:1080px;margin:0 auto;padding:3.5rem 2rem}
-.section-header{margin-bottom:2rem;padding-bottom:1rem;border-bottom:1px solid var(--line);display:flex;align-items:baseline;justify-content:space-between;gap:1rem;flex-wrap:wrap}
-.section-title{font-family:var(--disp);font-size:1.6rem;font-weight:600;letter-spacing:-.01em;color:var(--ink)}
-.section-title span{color:var(--marigold);font-weight:400;margin:0 .3rem}
-.section-more{font-family:var(--body);font-size:.8rem;font-weight:600;color:var(--forest);letter-spacing:.02em}
-.section-more::after{content:' →'}
-
-/* TICKER — editorial stat strip */
-.ticker{background:var(--sand);border-bottom:1px solid var(--line);padding:.7rem 2rem;display:flex;gap:2.5rem;overflow-x:auto;scrollbar-width:none}
-.ticker::-webkit-scrollbar{display:none}
-.tick-item{display:flex;align-items:baseline;gap:.5rem;white-space:nowrap}
-.tick-label{font-size:.68rem;color:var(--mist);font-weight:600;text-transform:uppercase;letter-spacing:.1em}
-.tick-val{font-family:var(--disp);color:var(--forest);font-weight:600;font-size:1rem}
-
-/* TOOLS GRID + CARDS */
-.tools-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.25rem}
-.tool-card{background:var(--paper);border:1px solid var(--line);padding:1.6rem;transition:.2s;display:flex;flex-direction:column;gap:.7rem;text-decoration:none;color:var(--ink);position:relative}
-.tool-card:hover{border-color:var(--ink);transform:translateY(-2px)}
-.tool-card.featured{border-top:3px solid var(--forest)}
-.tc-cat{font-family:var(--body);font-size:.68rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--mist)}
-.tool-card h3{font-family:var(--disp);font-size:1.25rem;font-weight:600;letter-spacing:-.01em;line-height:1.15;color:var(--ink)}
-.tool-card p{font-family:var(--body);font-size:.88rem;color:var(--mist);line-height:1.55;flex:1}
-.tc-link{font-family:var(--body);font-size:.8rem;font-weight:600;color:var(--forest)}
-.tc-badge{font-family:var(--body);font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.25rem .6rem;background:var(--sand);color:var(--forest);border:1px solid var(--line)}
-
-/* BLOG GRID */
-.blog-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:1.25rem}
-.blog-card{background:var(--paper);border:1px solid var(--line);padding:1.6rem;text-decoration:none;color:var(--ink);transition:.2s}
-.blog-card:hover{border-color:var(--ink);transform:translateY(-2px)}
-.blog-card.lead{border-top:3px solid var(--marigold)}
-.bc-cat{font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);margin-bottom:.6rem;display:block}
-.blog-card h3{font-family:var(--disp);font-size:1.2rem;font-weight:600;line-height:1.2;letter-spacing:-.01em;margin-bottom:.5rem}
-.blog-card.lead h3{font-size:1.6rem}
-.blog-card p{font-size:.86rem;color:var(--mist);line-height:1.55;margin-bottom:.6rem}
-.bc-more{font-size:.78rem;font-weight:600;color:var(--forest)}
-.bc-meta{font-size:.7rem;color:var(--g400);font-weight:600;letter-spacing:.04em;text-transform:uppercase}
-
-/* DATA CELLS (homepage figures) */
-.data-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem;margin-bottom:1rem}
-.dc{background:var(--sand);border:1px solid var(--line);padding:1.5rem}
-.dc-label{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--mist);margin-bottom:.5rem}
-.dc-val{font-family:var(--disp);font-size:2rem;font-weight:600;color:var(--ink);letter-spacing:-.02em;line-height:1}
-.dc-val.acc{color:var(--forest)}
-.dc-sub{font-size:.74rem;color:var(--mist);margin-top:.3rem}
-
-/* WHY CARDS */
-.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
-.why-card{background:var(--paper);border:1px solid var(--line);padding:1.8rem;border-top:3px solid var(--forest)}
-.why-num{font-family:var(--disp);font-size:2.4rem;font-weight:900;color:var(--marigold);line-height:1;margin-bottom:1rem}
-.why-card h3{font-family:var(--disp);font-size:1.2rem;font-weight:600;margin-bottom:.5rem}
-.why-card p{font-size:.88rem;color:var(--mist);line-height:1.6}
-
-/* CTA BLOCK */
-.cta-block{background:var(--ink);color:var(--paper);padding:3rem 2rem;text-align:center}
-.cta-block h2,.cta-block h3{font-family:var(--disp);font-weight:600;color:var(--paper);letter-spacing:-.01em;margin-bottom:.6rem}
-.cta-block h2{font-size:clamp(1.5rem,3vw,2.2rem)}
-.cta-block h3{font-size:1.4rem}
-.cta-block p{color:rgba(255,255,255,.7);margin-bottom:1.5rem;font-size:1rem}
-
-/* BUTTONS */
-.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 1.6rem;font-family:var(--body);font-weight:600;font-size:.9rem;cursor:pointer;border:none;transition:.18s;text-decoration:none;letter-spacing:.01em}
-.btn-accent{background:var(--marigold);color:var(--ink)}
-.btn-accent:hover{background:#eaa523}
-.btn-full{width:100%;justify-content:center}
-.btn:not(.btn-accent){background:var(--ink);color:var(--paper)}
-.btn:not(.btn-accent):hover{background:var(--forest);color:#fff}
-
-/* LAYOUT (tool + article) */
 .layout{max-width:1140px;margin:0 auto;padding:2.5rem 2rem;display:grid;grid-template-columns:1fr 320px;gap:2.5rem;align-items:start}
 @media(max-width:920px){.layout{grid-template-columns:1fr;gap:1.5rem}.sidebar{display:none}}
 
-/* CARD (tool input) */
-.card{background:var(--paper);border:1px solid var(--line)}
+.card{background:var(--paper);border:1px solid var(--line);border-top:3px solid var(--navy)}
 .card-head{padding:1.4rem 1.6rem;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:.9rem}
 .card-cat{font-family:var(--body);font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);border-right:1px solid var(--line);padding-right:.9rem}
 .card-head h2{font-family:var(--disp);font-size:1.4rem;font-weight:600;letter-spacing:-.01em}
 .card-head p{font-size:.84rem;color:var(--mist);margin-top:.15rem}
 .card-body{padding:1.6rem}
 
-/* FORM */
 .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem 1.3rem;margin-bottom:1.4rem}
 @media(max-width:500px){.form-grid{grid-template-columns:1fr}}
 .fg{display:flex;flex-direction:column;gap:.4rem}
@@ -165,21 +202,61 @@ label .hint{font-weight:400;color:var(--mist)}
 input,select{width:100%;padding:.8rem 1rem;border:1px solid var(--line);font-family:var(--body);font-size:1rem;font-weight:500;color:var(--ink);background:var(--paper);transition:.15s;appearance:none;border-radius:0}
 input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 0 3px rgba(27,67,50,.1)}
 .has-pre input{padding-left:2rem}.has-suf input{padding-right:2.4rem}
-.sw{position:relative}.sw::after{content:'';position:absolute;right:1.1rem;top:50%;width:7px;height:7px;border-right:2px solid var(--mist);border-bottom:2px solid var(--mist);transform:translateY(-65%) rotate(45deg);pointer-events:none}
 
-/* RESULT PANELS — the editorial figure signature */
+.form-section-title{font-family:var(--disp);font-size:1.05rem;font-weight:600;color:var(--ink);margin:1.2rem 0 .8rem;padding-bottom:.5rem;border-bottom:1px solid var(--line);grid-column:1/-1}
+
+.input-error{border-color:var(--berry)!important;box-shadow:0 0 0 3px rgba(178,58,46,.15)!important}
+.error-msg{color:var(--berry);font-size:.78rem;font-weight:500;margin-top:.2rem;display:none}
+.error-msg.show{display:block}
+
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 1.6rem;font-family:var(--body);font-weight:600;font-size:.9rem;cursor:pointer;border:none;transition:.18s;text-decoration:none;letter-spacing:.01em}
+.btn-accent{background:var(--marigold);color:var(--ink)}
+.btn-accent:hover{background:#eaa523}
+.btn-full{width:100%;justify-content:center}
+.btn:not(.btn-accent){background:var(--ink);color:var(--paper)}
+.btn:not(.btn-accent):hover{background:var(--forest);color:#fff}
+
 .results{margin-top:1.6rem;display:none}
 .results.show{display:block;animation:fadeUp .4s ease}
 @keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
-.th-panel{background:var(--ink);color:var(--paper);padding:2rem;display:flex;justify-content:space-between;align-items:flex-end;gap:1.5rem;margin-bottom:1.4rem}
+.th-panel{background:var(--ink);color:var(--paper);padding:2rem;display:flex;justify-content:space-between;align-items:flex-end;gap:1.5rem;margin-bottom:1.4rem;flex-wrap:wrap}
 .th-label{font-family:var(--body);font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:rgba(255,255,255,.6);margin-bottom:.6rem}
 .th-amount{font-family:var(--disp);font-size:3.4rem;font-weight:600;line-height:.95;letter-spacing:-.03em;color:#fff;border-bottom:3px solid var(--marigold);padding-bottom:.3rem;display:inline-block}
+.th-amount.deficit{color:#ff6b6b;border-bottom-color:var(--berry)}
 .th-period{font-size:.82rem;color:rgba(255,255,255,.6);margin-top:.6rem}
 .eff-block{text-align:right;flex-shrink:0}
 .eff-val{font-family:var(--disp);font-size:2rem;font-weight:600;color:var(--marigold);display:block;letter-spacing:-.02em;line-height:1}
 .eff-lbl{font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:rgba(255,255,255,.6)}
 
-/* breakdown blocks */
+.lifestyle-grade{background:var(--green-light);border:1px solid var(--forest);padding:1.2rem 1.4rem;margin-bottom:1.4rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.lifestyle-grade.deficit{background:#FBF3E0;border-color:var(--berry)}
+.lg-info .lg-label{font-family:var(--body);font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--forest);margin-bottom:.3rem}
+.lifestyle-grade.deficit .lg-label{color:var(--berry)}
+.lg-info .lg-value{font-family:var(--disp);font-size:1.8rem;font-weight:600;color:var(--forest);line-height:1}
+.lifestyle-grade.deficit .lg-value{color:var(--berry)}
+.lg-info .lg-context{font-size:.82rem;color:var(--mist);margin-top:.3rem}
+.lg-grade{padding:.4rem 1rem;font-family:var(--body);font-size:.82rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em}
+.lg-grade.excellent{background:var(--forest);color:#fff}
+.lg-grade.good{background:var(--green);color:#fff}
+.lg-grade.tight{background:var(--marigold);color:var(--ink)}
+.lg-grade.deficit{background:var(--berry);color:#fff}
+
+.progress-bar{height:12px;background:var(--sand);border:1px solid var(--line);border-radius:6px;overflow:hidden;margin-bottom:1rem}
+.progress-fill{height:100%;background:linear-gradient(90deg,var(--forest),var(--marigold));transition:width .6s ease}
+.progress-fill.deficit{background:linear-gradient(90deg,var(--berry),var(--marigold))}
+
+.fifty-thirty-twenty{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem;margin-bottom:1.4rem}
+@media(max-width:600px){.fifty-thirty-twenty{grid-template-columns:1fr}}
+.budget-rule-bar{padding:.8rem;background:var(--sand);border:1px solid var(--line);text-align:center}
+.budget-rule-bar .rule-label{font-family:var(--body);font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--mist);margin-bottom:.3rem}
+.budget-rule-bar .rule-target{font-family:var(--body);font-size:.78rem;color:var(--mist);margin-bottom:.3rem}
+.budget-rule-bar .rule-actual{font-family:var(--disp);font-size:1.2rem;font-weight:600;color:var(--ink)}
+.budget-rule-bar .rule-actual.over{color:var(--berry)}
+.budget-rule-bar .rule-actual.under{color:var(--forest)}
+.budget-rule-bar .rule-status{font-size:.7rem;font-weight:600;margin-top:.3rem}
+.budget-rule-bar .rule-status.over{color:var(--berry)}
+.budget-rule-bar .rule-status.under{color:var(--forest)}
+
 .bb{border:1px solid var(--line);margin-bottom:1rem}
 .bb-title{padding:.7rem 1.1rem;font-family:var(--body);font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.14em;background:var(--sand);border-bottom:1px solid var(--line);color:var(--mist)}
 .br{display:flex;justify-content:space-between;align-items:center;padding:.7rem 1.1rem;font-size:.92rem;border-bottom:1px solid var(--line)}
@@ -187,41 +264,46 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .br .lbl{color:var(--mist)}
 .br .val{font-weight:600;font-variant-numeric:tabular-nums;font-family:var(--body)}
 .val.neg{color:var(--berry)}.val.pos{color:var(--forest)}.val.neu{color:var(--ink)}.val.acc{color:var(--forest)}
+.br .pct{color:var(--mist);font-size:.82rem;margin-left:.5rem}
+.br .warning-badge{background:var(--berry);color:#fff;padding:.15rem .5rem;font-size:.66rem;font-weight:700;border-radius:3px;margin-left:.5rem}
 .total-bar{display:flex;justify-content:space-between;align-items:center;padding:1.1rem 1.3rem;background:var(--sand);border:1px solid var(--forest);margin-bottom:1rem}
+.total-bar.deficit{border-color:var(--berry)}
 .total-bar .lbl{font-family:var(--disp);font-size:1.05rem;font-weight:600;color:var(--forest)}
+.total-bar.deficit .lbl{color:var(--berry)}
 .total-bar .val{font-family:var(--disp);font-size:1.3rem;font-weight:700;color:var(--forest);font-variant-numeric:tabular-nums}
+.total-bar.deficit .val{color:var(--berry)}
 
-/* notes */
 .note{padding:.85rem 1.1rem;font-size:.84rem;line-height:1.6;margin-bottom:.7rem;display:flex;gap:.7rem;border:1px solid var(--line);background:var(--sand)}
 .note.warn{background:#FBF3E0;border-color:#E6D08A;color:#6B5414}
+.note.success{background:var(--green-light);border-color:var(--forest);color:var(--forest)}
 .note a{color:var(--forest);font-weight:600}
 
-/* tabs */
-.type-tabs,.period-tabs{display:flex;gap:.4rem;margin-bottom:1.4rem;background:var(--sand);padding:.3rem;border:1px solid var(--line)}
-.type-tab,.ptab{flex:1;padding:.6rem;border:none;background:transparent;font-family:var(--body);font-weight:600;font-size:.8rem;color:var(--mist);cursor:pointer;transition:.15s;text-align:center}
-.type-tab.active,.ptab.active{background:var(--ink);color:var(--paper)}
-
-/* SIDEBAR */
-.sidebar{display:flex;flex-direction:column;gap:1.5rem}
+.sidebar{display:flex;flex-direction:column;gap:1.5rem;position:sticky;top:90px;align-self:start}
+@media(max-width:920px){.sidebar{position:static}}
 .sc{background:var(--paper);border:1px solid var(--line)}
 .sc-head{padding:.8rem 1.1rem;font-family:var(--body);font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.14em;border-bottom:1px solid var(--line);background:var(--sand);color:var(--mist)}
 .sc-body{padding:1.1rem}
 .tip{display:flex;gap:.7rem;margin-bottom:.85rem;font-size:.84rem;color:var(--mist);line-height:1.55}
 .tip:last-child{margin-bottom:0}
 .tip a{color:var(--forest);font-weight:600}
-.qr{display:flex;justify-content:space-between;font-size:.84rem;padding:.45rem 0;border-bottom:1px solid var(--line);color:var(--mist)}
-.qr:last-child{border-bottom:none}
-.qr strong{color:var(--ink);font-weight:600;font-family:var(--disp)}
 .toc-link{display:block;font-size:.84rem;font-weight:500;color:var(--mist);padding:.4rem 0;border-bottom:1px solid var(--line);transition:color .15s}
 .toc-link:last-child{border-bottom:none}
 .toc-link:hover{color:var(--forest)}
-.related-post{display:block;padding:.75rem 0;border-bottom:1px solid var(--line)}
+.related-post{display:block;padding:.75rem 0;border-bottom:1px solid var(--line);text-decoration:none}
 .related-post:last-child{border-bottom:none}
 .rp-cat{font-size:.62rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--forest);margin-bottom:.25rem}
 .rp-title{font-family:var(--disp);font-size:.92rem;font-weight:500;color:var(--ink);line-height:1.3}
 .related-post:hover .rp-title{color:var(--forest)}
 
-/* DATA TABLE */
+.tools-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.25rem;margin-top:1.5rem}
+.tool-card{background:var(--paper);border:1px solid var(--line);padding:1.6rem;transition:.2s;display:flex;flex-direction:column;gap:.7rem;text-decoration:none;color:var(--ink);position:relative}
+.tool-card:hover{border-color:var(--ink);transform:translateY(-2px)}
+.tool-card.featured{border-top:3px solid var(--forest)}
+.tc-cat{font-family:var(--body);font-size:.68rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--mist)}
+.tool-card h3{font-family:var(--disp);font-size:1.25rem;font-weight:600;letter-spacing:-.01em;line-height:1.15;color:var(--ink)}
+.tool-card p{font-family:var(--body);font-size:.88rem;color:var(--mist);line-height:1.55;flex:1}
+.tc-link{font-family:var(--body);font-size:.8rem;font-weight:600;color:var(--forest)}
+
 .data-table{width:100%;border-collapse:collapse;margin:1.2rem 0 1.6rem;font-size:.9rem;border:1px solid var(--line)}
 .data-table thead tr{background:var(--ink)}
 .data-table th{padding:.75rem 1rem;text-align:left;font-family:var(--body);font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--paper)}
@@ -232,99 +314,44 @@ input:focus,select:focus{outline:none;border-color:var(--forest);box-shadow:0 0 
 .data-table td.td-red{color:var(--berry);font-weight:600}
 .data-table td.td-acc{color:var(--forest);font-weight:600}
 
-/* ARTICLE BODY — magazine measure */
-.article-body{padding:2.5rem}
+.article-body{padding:2.5rem;background:var(--white);border:1px solid var(--line);border-top:3px solid var(--forest)}
 @media(max-width:600px){.article-body{padding:1.5rem}}
 .article-body h2{font-family:var(--disp);font-size:1.7rem;font-weight:600;color:var(--ink);margin:2.4rem 0 .8rem;letter-spacing:-.01em;line-height:1.15;max-width:30ch}
 .article-body h2::before{content:'';display:block;width:36px;height:3px;background:var(--marigold);margin-bottom:1rem}
 .article-body h2:first-child{margin-top:0}
 .article-body h3{font-family:var(--disp);font-size:1.25rem;font-weight:600;margin:1.6rem 0 .5rem}
+.article-body h4{font-family:var(--disp);font-size:1.1rem;font-weight:600;margin:1.2rem 0 .4rem}
 .article-body p{font-family:var(--body);font-size:1.06rem;color:#2C352F;line-height:1.75;margin-bottom:1.1rem;max-width:68ch}
-.article-body ul{margin:.6rem 0 1.3rem 1.3rem;max-width:66ch}
+.article-body ul,.article-body ol{margin:.6rem 0 1.3rem 1.3rem;max-width:66ch}
 .article-body li{font-family:var(--body);font-size:1.04rem;color:#2C352F;line-height:1.7;margin-bottom:.5rem}
 .article-body a{color:var(--forest);font-weight:500;border-bottom:1px solid var(--marigold)}
 .article-body strong{font-weight:600;color:var(--ink)}
-.callout,.callout.navy,.callout.grey,.callout.green{border:none;border-left:3px solid var(--marigold);background:var(--sand);padding:1.2rem 1.4rem;margin:1.6rem 0;font-family:var(--disp);font-size:1.15rem;font-weight:500;line-height:1.5;color:var(--ink);max-width:64ch}
+.callout{border:none;border-left:3px solid var(--marigold);background:var(--sand);padding:1.2rem 1.4rem;margin:1.6rem 0;font-family:var(--disp);font-size:1.15rem;font-weight:500;line-height:1.5;color:var(--ink);max-width:64ch}
+.callout.warn{border-left:3px solid var(--berry);background:#FBF3E0;color:#6B5414}
 .callout strong{color:var(--forest)}
+.callout.warn strong{color:var(--berry)}
 
-/* FOOTER */
-footer{background:var(--ink);color:var(--paper);margin-top:2rem}
-.footer-inner{max-width:1080px;margin:0 auto;padding:2.5rem 2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
-.footer-logo{font-family:var(--disp);font-size:1.5rem;font-weight:900;color:var(--paper)}
-.footer-logo span{color:var(--marigold);font-style:italic;font-weight:600}
-.footer-links{display:flex;gap:1.4rem;flex-wrap:wrap}
-.footer-links a{color:rgba(255,255,255,.7);font-size:.82rem;font-weight:500;transition:color .15s}
-.footer-links a:hover{color:var(--marigold)}
-.footer-copy{color:rgba(255,255,255,.5);font-size:.74rem;width:100%;margin-top:.8rem;padding-top:.9rem;border-top:1px solid rgba(255,255,255,.12)}
-
-/* MISC legacy */
-.scenario-result{background:var(--sand);border:1px solid var(--forest);padding:1.2rem}
-.disclaim,.disclaim-box{font-size:.82rem;color:var(--mist);background:var(--sand);border:1px solid var(--line);padding:.9rem 1.1rem;line-height:1.6}
-.eyebrow{font-family:var(--body);font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);margin-bottom:.5rem}
-
-/* RESPONSIVE */
-@media(max-width:768px){
-  [style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr!important}
-  [style*="grid-template-columns:repeat(3,1fr)"]{grid-template-columns:1fr!important}
-  [style*="grid-template-columns:repeat(4,1fr)"]{grid-template-columns:1fr 1fr!important}
-  [style*="grid-template-columns:2fr 1fr 1fr"]{grid-template-columns:1fr!important}
-  [style*="grid-template-columns:1.1fr 1fr"]{grid-template-columns:1fr!important}
-  [style*="grid-template-columns:1fr 1fr;gap:4rem"]{grid-template-columns:1fr!important;gap:2rem!important}
-  .blog-grid,.data-row,.why-grid{grid-template-columns:1fr!important}
-  .ph{padding:2.5rem 1.25rem 2rem}.section{padding:2.5rem 1.25rem}.layout{padding:1.5rem 1.25rem}
-  .th-panel{flex-direction:column;align-items:flex-start;gap:1rem}.eff-block{text-align:left}
-  .th-amount{font-size:2.6rem}
-  .footer-inner{flex-direction:column;text-align:center}.footer-links{justify-content:center}
-  .top-bar{padding:.4rem 1rem}.tb-r{display:none}
-  .data-table{display:block;overflow-x:auto}
-}
 .story-section{margin-top:1.8rem;border-top:2px solid var(--ink);padding-top:1.8rem}
 .story-kicker{font-family:var(--body);font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);margin-bottom:.4rem;display:flex;align-items:center;gap:.6rem}
 .story-kicker::before{content:'';width:24px;height:2px;background:var(--marigold)}
 .story-title{font-family:var(--disp);font-size:1.6rem;font-weight:600;color:var(--ink);letter-spacing:-.01em;margin-bottom:.4rem}
 .story-sub{font-size:.88rem;color:var(--mist);margin-bottom:1.5rem;max-width:60ch}
-.story-age-row{display:flex;align-items:center;gap:.8rem;margin-bottom:1.6rem;padding:.9rem 1.1rem;background:var(--sand);border:1px solid var(--line)}
-.story-age-row label{font-size:.82rem;font-weight:600;color:var(--ink);white-space:nowrap}
-.story-age-row input{max-width:90px;padding:.5rem .7rem}
-.story-age-row .story-age-note{font-size:.78rem;color:var(--mist)}
 .story-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
 @media(max-width:600px){.story-grid{grid-template-columns:1fr}}
 .story-card{background:#fff;border:1px solid var(--line);padding:0;text-decoration:none;color:var(--ink);display:flex;overflow:hidden;transition:.18s;position:relative}
 .story-card:hover{border-color:var(--ink);box-shadow:0 4px 18px rgba(0,0,0,.07);transform:translateY(-2px)}
 .story-stripe{width:6px;flex-shrink:0}
-.story-stripe.c-housing{background:var(--forest)}
-.story-stripe.c-car{background:var(--marigold)}
 .story-stripe.c-safety{background:#3d7a9e}
 .story-stripe.c-retire{background:#8a5cb8}
-.story-stripe.c-compare{background:var(--berry)}
+.story-stripe.c-car{background:var(--marigold)}
+.story-stripe.c-housing{background:var(--forest)}
 .story-body{padding:1.3rem 1.4rem;flex:1;min-width:0}
 .story-label{font-family:var(--body);font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:var(--mist);margin-bottom:.5rem}
 .story-val{font-family:var(--disp);font-size:1.9rem;font-weight:600;color:var(--ink);letter-spacing:-.02em;line-height:1;margin-bottom:.5rem}
 .story-desc{font-size:.8rem;color:var(--mist);line-height:1.5;margin-bottom:.7rem}
 .story-arrow{font-size:.78rem;font-weight:600;color:var(--forest)}
-.story-compare-card{grid-column:1/-1;background:#fff;border:1px solid var(--line);padding:1.4rem 1.5rem}
-.compare-toggle{display:flex;gap:.4rem;margin-bottom:1.1rem}
-.compare-toggle button{padding:.4rem .9rem;border:1px solid var(--line);background:var(--paper);font-family:var(--body);font-size:.78rem;font-weight:600;color:var(--mist);cursor:pointer;transition:.15s}
-.compare-toggle button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
-.compare-body{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap}
-.compare-vs{display:flex;align-items:center;gap:1rem;flex:1;min-width:240px}
-.compare-side{text-align:center}
-.compare-side .who{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--mist);margin-bottom:.3rem}
-.compare-side .amt{font-family:var(--disp);font-size:1.4rem;font-weight:600;color:var(--ink)}
-.compare-side.you .amt{color:var(--forest)}
-.compare-vsdivider{font-family:var(--disp);font-size:.9rem;color:var(--g400);font-style:italic}
-.compare-result{flex-shrink:0;text-align:right}
-.compare-pct{font-family:var(--disp);font-size:1.6rem;font-weight:600;line-height:1}
-.compare-pct.up{color:var(--forest)}
-.compare-pct.down{color:var(--berry)}
-.compare-select{margin-top:1rem}
-.compare-select select{max-width:280px}
-.journey{margin-top:1.5rem;padding:1.2rem 1.4rem;background:var(--sand);border:1px solid var(--line)}
-.journey-title{font-family:var(--body);font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--mist);margin-bottom:.8rem}
-.journey-path{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;font-size:.85rem}
-.journey-path a{color:var(--forest);font-weight:600;padding:.35rem .7rem;background:#fff;border:1px solid var(--line);transition:.15s}
-.journey-path a:hover{border-color:var(--forest);background:var(--sand)}
-.journey-sep{color:var(--g400)}.whatif-section{margin-top:1.8rem;border-top:2px solid var(--ink);padding-top:1.8rem}
+
+.whatif-section{margin-top:1.8rem;border-top:2px solid var(--ink);padding-top:1.8rem}
 .whatif-kicker{font-family:var(--body);font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);margin-bottom:.4rem;display:flex;align-items:center;gap:.6rem}
 .whatif-kicker::before{content:'';width:24px;height:2px;background:var(--marigold)}
 .whatif-title{font-family:var(--disp);font-size:1.6rem;font-weight:600;color:var(--ink);letter-spacing:-.01em;margin-bottom:.4rem}
@@ -346,162 +373,1161 @@ footer{background:var(--ink);color:var(--paper);margin-top:2rem}
 .whatif-delta-lbl{font-size:.72rem;color:rgba(255,255,255,.6);margin-top:.3rem}
 .whatif-reset{margin-top:1rem;text-align:center}
 .whatif-reset button{background:none;border:1px solid var(--line);padding:.5rem 1.1rem;font-family:var(--body);font-size:.78rem;font-weight:600;color:var(--mist);cursor:pointer;transition:.15s}
-.whatif-reset button:hover{border-color:var(--ink);color:var(--ink)}</style>
+.whatif-reset button:hover{border-color:var(--ink);color:var(--ink)}
+
+.journey{margin-top:1.5rem;padding:1.2rem 1.4rem;background:var(--sand);border:1px solid var(--line)}
+.journey-title{font-family:var(--body);font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--mist);margin-bottom:.8rem}
+.journey-path{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;font-size:.85rem}
+.journey-path a{color:var(--forest);font-weight:600;padding:.35rem .7rem;background:#fff;border:1px solid var(--line);transition:.15s}
+.journey-path a:hover{border-color:var(--forest);background:var(--sand)}
+.journey-sep{color:var(--g400)}
+
+footer{background:var(--ink);color:var(--paper);margin-top:2rem}
+.footer-inner{max-width:1080px;margin:0 auto;padding:2.5rem 2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.footer-logo{font-family:var(--disp);font-size:1.5rem;font-weight:900;color:var(--paper)}
+.footer-logo span{color:var(--marigold);font-style:italic;font-weight:600}
+.footer-links{display:flex;gap:1.4rem;flex-wrap:wrap}
+.footer-links a{color:rgba(255,255,255,.7);font-size:.82rem;font-weight:500;transition:color .15s}
+.footer-links a:hover{color:var(--marigold)}
+.footer-copy{color:rgba(255,255,255,.5);font-size:.74rem;width:100%;margin-top:.8rem;padding-top:.9rem;border-top:1px solid rgba(255,255,255,.12)}
+
+.disclaim{font-size:.82rem;color:var(--mist);background:var(--sand);border:1px solid var(--line);padding:.9rem 1.1rem;line-height:1.6;margin:2rem 2rem 0;max-width:1080px;margin-left:auto;margin-right:auto}
+
+@media(max-width:768px){
+  [style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr!important}
+  [style*="grid-template-columns:repeat(3,1fr)"]{grid-template-columns:1fr!important}
+  [style*="grid-template-columns:repeat(4,1fr)"]{grid-template-columns:1fr 1fr!important}
+  [style*="grid-template-columns:2fr 1fr 1fr"]{grid-template-columns:1fr!important}
+  [style*="grid-template-columns:1.1fr 1fr"]{grid-template-columns:1fr!important}
+  .tools-grid{grid-template-columns:1fr!important}
+  .ph{padding:2.5rem 1.25rem 2rem}.layout{padding:1.5rem 1.25rem}
+  .th-panel{flex-direction:column;align-items:flex-start;gap:1rem}.eff-block{text-align:left}
+  .th-amount{font-size:2.6rem}
+  .footer-inner{flex-direction:column;text-align:center}.footer-links{justify-content:center}
+  .top-bar{padding:.4rem 1rem}.tb-r{display:none}
+  .data-table{display:block;overflow-x:auto}
+}
+</style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6108324382808705" crossorigin="anonymous"></script>
 </head>
-<body><div class="sa-stripe"></div><div class="top-bar"><div class="tb-l">🇿🇦 South Africa · Affordability</div><div class="tb-r">Prime rate <span>~10.5%</span> · Plan before you commit</div></div><nav>
+<body>
+<div class="sa-stripe"></div>
+<div class="top-bar">
+  <div class="tb-l">🇿🇦 South Africa · Affordability</div>
+  <div class="tb-r">Live within your means · <span>Build your future</span></div>
+</div>
+
+<nav>
   <a href="/" class="logo"><div class="logo-text">CalcMy<span>Pay</span></div></a>
   <div class="nav-links">
-    <a href="/salary-income">Salary</a><a href="/affordability" class="active">Affordability</a><a href="/wealth-building">Wealth</a><a href="/career-intelligence">Careers</a><a href="/money-tools">Tools</a><a href="/financial-coach">Coach</a><a href="/blog-salary-guide">Guides</a><a href="/salary-calculator" class="nav-cta">Calculate →</a>
+    <a href="/salary-income">Salary</a>
+    <a href="/affordability" class="active">Affordability</a>
+    <a href="/wealth-building">Wealth</a>
+    <a href="/career-intelligence">Careers</a>
+    <a href="/money-tools">Tools</a>
+    <a href="/financial-coach">Coach</a>
+    <a href="/blog-salary-guide">Guides</a>
+    <a href="/salary-calculator" class="nav-cta">Calculate →</a>
   </div>
-</nav><div class="ph"><div class="ph-inner"><div class="bc"><a href="/">Home</a><span>/</span><a href="/affordability">Affordability</a><span>/</span>Lifestyle Affordability Calculator</div><div class="ph-cat">Affordability</div><h1>Lifestyle Affordability Calculator</h1><p>See if your lifestyle fits your take-home income</p></div></div><div class="layout"><div><div class="card"><div class="card-head"><div class="card-cat">Lifestyle</div><div><h2>Does your lifestyle fit?</h2><p>Add your expenses, see what is left</p></div></div>
-<div class="card-body">
-<div class="form-grid">
-<div class="fg"><label>Monthly Take-Home Pay</label><div class="iw has-pre"><span class="ipre">R</span><input type="number" id="inc" placeholder="25 000" min="0"></div></div>
-<div class="fg"><label>Rent / Bond</label><div class="iw has-pre"><span class="ipre">R</span><input type="number" id="housing" placeholder="7 500" min="0"></div></div>
-<div class="fg"><label>Transport / Car</label><div class="iw has-pre"><span class="ipre">R</span><input type="number" id="transport" placeholder="4 000" min="0"></div></div>
-<div class="fg"><label>Groceries & Food</label><div class="iw has-pre"><span class="ipre">R</span><input type="number" id="food" placeholder="3 500" min="0"></div></div>
-<div class="fg"><label>Debt Repayments</label><div class="iw has-pre"><span class="ipre">R</span><input type="number" id="debt" placeholder="2 000" min="0"></div></div>
-<div class="fg"><label>Everything Else<span class="hint"> (fun, subs, etc)</span></label><div class="iw has-pre"><span class="ipre">R</span><input type="number" id="other" placeholder="4 000" min="0"></div></div>
-</div>
-<button class="btn btn-full btn-accent" onclick="calc()">Check my lifestyle →</button>
-<div class="results" id="res">
-<div class="th-panel"><div><div class="th-label" id="lbl">Left to save each month</div><div class="th-amount" id="big">R0</div><div class="th-period" id="verdict">—</div></div><div class="eff-block"><span class="eff-val" id="rate">0%</span><span class="eff-lbl">Savings rate</span></div></div>
-<div class="bb"><div class="bb-title">Where your money goes</div>
-<div class="br"><span class="lbl">Take-home pay</span><span class="val neu" id="r-inc">R0</span></div>
-<div class="br"><span class="lbl">Total expenses</span><span class="val neg" id="r-exp">-R0</span></div>
-<div class="br"><span class="lbl">Housing % of income</span><span class="val neu" id="r-hpct">0%</span></div>
-</div>
-<div class="total-bar"><span class="lbl" id="tot-lbl">✓ Money left over</span><span class="val" id="r-left">R0</span></div>
-<div class="note warn" id="advice"><span>ℹ</span><span>Aim to keep at least 15% of your income for savings.</span></div>
-<div class="story-section" id="money-story" style="display:none">
-  <div class="story-kicker">Your money story</div>
-  <div class="story-title" id="ms-title">Where to put your surplus</div>
-  <p class="story-sub" id="ms-sub">Based on your savings rate, here's what to prioritise next.</p>
+</nav>
 
-  <div class="story-grid">
-    <a href="/emergency-fund" class="story-card"><div class="story-stripe c-safety"></div><div class="story-body">
-      <div class="story-label">🛟 Emergency fund target</div>
-      <div class="story-val" id="ms-emergency">R0</div>
-      <div class="story-desc">3 months of your income, as a safety net</div>
-      <span class="story-arrow">Build your safety net →</span>
-    </div></a>
-
-    <a href="/savings-goal" class="story-card"><div class="story-stripe c-retire"></div><div class="story-body">
-      <div class="story-label">📈 If you save this every month</div>
-      <div class="story-val" id="ms-yearly">R0</div>
-      <div class="story-desc">Your surplus, saved for a full year</div>
-      <span class="story-arrow">Set a savings goal →</span>
-    </div></a>
-
-    <a href="/debt-repayment" class="story-card" id="ms-debt-card"><div class="story-stripe c-car"></div><div class="story-body">
-      <div class="story-label">⛓️ Have debt? Consider this first</div>
-      <div class="story-val">Compare</div>
-      <div class="story-desc">Clearing debt is often the best "return" available</div>
-      <span class="story-arrow">Build a payoff plan →</span>
-    </div></a>
-
-    <a href="/financial-coach" class="story-card"><div class="story-stripe c-housing"></div><div class="story-body">
-      <div class="story-label">🧭 Get your full financial score</div>
-      <div class="story-val">Free score</div>
-      <div class="story-desc">See how your whole financial picture stacks up</div>
-      <span class="story-arrow">Get your health score →</span>
-    </div></a>
-  </div>
-
-<div class="whatif-section" id="whatif-section" style="display:none">
-  <div class="whatif-kicker">What if?</div>
-  <div class="whatif-title">Test a scenario</div>
-  <p class="whatif-sub">Drag the sliders to see how changes affect your monthly surplus.</p>
-  <div class="whatif-grid">
-    <div class="whatif-control"><div class="whatif-control-head"><label>Income change</label><output id="wi-inc-out">+0%</output></div>
-      <input type="range" id="wi-inc" min="-20" max="30" value="0" step="1" oninput="renderWhatIf()"></div>
-    <div class="whatif-control"><div class="whatif-control-head"><label>Housing cost change</label><output id="wi-house-out">+0%</output></div>
-      <input type="range" id="wi-house" min="-30" max="30" value="0" step="5" oninput="renderWhatIf()"></div>
-  </div>
-  <div class="whatif-result"><div><div class="whatif-result-label">New amount left over</div><div class="whatif-result-val" id="wi-newleft">R0</div></div>
-    <div class="whatif-delta"><div class="whatif-delta-val" id="wi-delta">—</div><div class="whatif-delta-lbl">vs your current surplus</div></div></div>
-  <div class="whatif-reset"><button onclick="resetWhatIf()">Reset scenario</button></div>
-  <div class="note warn" style="margin-top:1rem"><span>⚠</span><span>This assumes your other expenses (transport, food, debt) stay the same — a real change in income often affects several categories at once.</span></div>
-</div>
-
-  <div class="journey">
-    <div class="journey-title">Continue your financial plan</div>
-    <div class="journey-path">
-      <a href="/budget-planner">Budget planner</a><span class="journey-sep">→</span>
-      <a href="/emergency-fund">Emergency fund</a><span class="journey-sep">→</span>
-      <a href="/savings-goal">Savings goal</a><span class="journey-sep">→</span>
-      <a href="/blog-50-30-20-budget-rule-sa">The 50/30/20 rule</a>
+<div class="ph">
+  <div class="ph-inner">
+    <div class="bc"><a href="/">Home</a><span>/</span><a href="/affordability">Affordability</a><span>/</span>Lifestyle Affordability Calculator</div>
+    <div class="ph-cat">Affordability</div>
+    <h1>Lifestyle Affordability Calculator</h1>
+    <p>See if your lifestyle fits your take-home income — with 50/30/20 rule analysis and SA-specific categories like medical aid, black tax, and load shedding costs.</p>
+    <div class="ph-meta">
+      <span>Updated Aug 2026</span>
+      <span>SA-specific categories</span>
+      <span>Free forever</span>
     </div>
   </div>
 </div>
 
-</div></div></div></div><div class="sidebar"><div class="sc"><div class="sc-head">50/30/20 rule</div><div class="sc-body">
-<div class="tip"><span>→</span><span><strong>50%</strong> on needs (housing, food, transport).</span></div>
-<div class="tip"><span>→</span><span><strong>30%</strong> on wants (fun, eating out, subscriptions).</span></div>
-<div class="tip"><span>→</span><span><strong>20%</strong> on savings and paying off debt.</span></div>
-<div class="tip"><span>→</span><span>Build an emergency fund of 3–6 months expenses.</span></div>
-</div></div></div></div><div class="section" style="padding-top:0"><div class="section-header"><div class="section-title">Related <span>/</span> Affordability Tools</div></div><div class="tools-grid"><a href="/home-affordability" class="tool-card featured"><div class="tc-cat">Affordability</div><h3>Home Affordability</h3><p>How much house you can afford on your salary.</p><span class="tc-link">Open →</span></a><a href="/car-affordability" class="tool-card featured"><div class="tc-cat">Affordability</div><h3>Car Affordability</h3><p>What car repayment fits your budget.</p><span class="tc-link">Open →</span></a><a href="/rent-affordability" class="tool-card featured"><div class="tc-cat">Affordability</div><h3>Rent Affordability</h3><p>How much rent you can comfortably pay.</p><span class="tc-link">Open →</span></a></div></div><div class="section" style="padding-top:0" data-articles="1"><div class="section-header"><div class="section-title">Learn more <span>/</span> Guides</div></div><div class="tools-grid"><a href="/blog-living-within-your-means-sa" class="tool-card featured" style="border-top-color:var(--navy)"><div class="tc-cat">Guide</div><h3>How to Live Within Your Means in South Africa</h3><span class="tc-link">Read guide →</span></a></div></div>
-<div class="sa-stripe"></div>
-<div class="section"><div style="background:var(--white);border:1px solid var(--line);border-top:3px solid var(--forest)"><div class="article-body"><h2>Why "living within your means" is harder to judge than it sounds</h2><p>Most people have a rough sense of whether they are overspending, but a rough sense is not the same as knowing. Expenses creep — a subscription here, a bigger grocery basket there — until the gap between income and spending has quietly closed or gone negative. This tool forces the honest tally that intuition often avoids.</p><h2>The categories that matter most</h2><p>Not all spending is equal when it comes to financial health. Housing and transport are typically your two largest, least flexible costs — and the ones worth scrutinising hardest, because a small percentage change in either has an outsized effect on your monthly balance compared to trimming smaller discretionary items.</p><table class="data-table"><thead><tr><th>Category</th><th>Healthy range (% of take-home)</th><th>Watch for</th></tr></thead><tbody><tr><td>Housing</td><td>25-30%</td><td>Above 35% leaves little room for anything else</td></tr><tr><td>Transport</td><td>10-15%</td><td>Car repayments plus fuel and insurance add up fast</td></tr><tr><td>Food</td><td>10-15%</td><td>Groceries plus eating out combined</td></tr><tr><td>Debt repayments</td><td>Under 20%</td><td>Above this signals a debt problem, not just a budget one</td></tr><tr><td>Savings</td><td>15-20%+</td><td>The category most often sacrificed first — protect it</td></tr></tbody></table><h2>What a negative number really means</h2><p>If your calculation shows you are spending more than you earn, this is the single most urgent financial signal to act on — more urgent than optimising investments or comparing interest rates. A structural monthly deficit, if unaddressed, is typically covered by growing debt, which compounds the problem every month it continues.</p><h2>The order of operations when you find a gap</h2><ul><li><strong>1. Identify the biggest lever first</strong> — usually housing or transport, since cutting 10% there beats cutting 50% of a small expense category</li><li><strong>2. Separate needs from wants honestly</strong> — a gym membership and a streaming subscription are wants, however routine they feel</li><li><strong>3. Fix it before investing</strong> — there is no investment return that beats simply not running a deficit</li><li><strong>4. Rebuild your buffer</strong> — once balanced, prioritise an <a href="/emergency-fund">emergency fund</a> before anything else</li></ul><h2>When your numbers look healthy</h2><p>A positive gap is only the first checkpoint, not the finish line. The next question is whether that surplus is actually being saved and invested, or simply accumulating in a low-interest current account. Healthy spending habits combined with passive, unstructured saving still leave money underperforming — pair this result with our <a href="/budget-planner">budget planner</a> to give every rand of that surplus an actual job.</p><h2>A quick sanity check before you commit to any change</h2><p>Whatever change prompted you to run these numbers — a new rental, a car upgrade, a job offer — resist the urge to rely on a rough mental estimate. The categories that feel manageable individually often combine into a total that quietly exceeds what your income can sustainably support. Run the full picture through this tool before signing anything.</p></div></div></div>
+<div class="layout">
+  <div>
+    <div class="card">
+      <div class="card-head">
+        <div class="card-cat">Lifestyle</div>
+        <div>
+          <h2>Does your lifestyle fit?</h2>
+          <p>Add your expenses, see what is left</p>
+        </div>
+      </div>
 
-<footer><div class="footer-inner">
-  <div class="footer-logo">CalcMy<span>Pay</span></div>
-  <div class="footer-links"><a href="/salary-income">Salary</a><a href="/affordability">Affordability</a><a href="/wealth-building">Wealth</a><a href="/money-tools">Tools</a><a href="/financial-coach">Coach</a><a href="/blog-salary-guide">Guides</a><a href="/about">About</a><a href="/privacy-policy">Privacy</a><a href="/contact">Contact</a></div>
-  <div class="footer-copy">© 2026 CalcMyPay · Understand your salary. Plan your money. Build your future. · For informational purposes only · Not affiliated with SARS · SARS 2027 tax year</div>
-</div></footer>
-<script>const fmt=n=>'R\u00a0'+Math.round(Math.abs(n)).toLocaleString('en-ZA');
+      <div class="card-body">
+        <div class="form-grid">
+          <div class="form-section-title">Your Income</div>
 
-function calc(){
- const inc=parseFloat(document.getElementById('inc').value)||0;
- const h=parseFloat(document.getElementById('housing').value)||0;
- const t=parseFloat(document.getElementById('transport').value)||0;
- const f=parseFloat(document.getElementById('food').value)||0;
- const d=parseFloat(document.getElementById('debt').value)||0;
- const o=parseFloat(document.getElementById('other').value)||0;
- if(inc<=0){alert('Please enter your take-home pay.');return;}
- const exp=h+t+f+d+o;
- const left=inc-exp;
- const rate=inc>0?(left/inc*100):0;
- const hpct=inc>0?(h/inc*100):0;
- const big=document.getElementById('big');
- big.textContent=fmt(left);
- big.style.color=left<0?'#ff6b6b':'';
- document.getElementById('lbl').textContent=left<0?'Overspending each month':'Left to save each month';
- document.getElementById('rate').textContent=rate.toFixed(0)+'%';
- let v;
- if(left<0)v='⚠ Spending more than you earn';
- else if(rate<10)v='Tight — little room to save';
- else if(rate<20)v='✓ Healthy balance';
- else v='✓ Excellent — strong saver';
- document.getElementById('verdict').textContent=v;
- document.getElementById('r-inc').textContent=fmt(inc);
- document.getElementById('r-exp').textContent='-'+fmt(exp);
- document.getElementById('r-hpct').textContent=hpct.toFixed(0)+'%'+(hpct>30?' (high)':' (ok)');
- document.getElementById('r-left').textContent=fmt(left);
- const adv=document.getElementById('advice').querySelector('span:last-child');
- if(left<0)adv.innerHTML='You are spending more than you earn. Look at your biggest categories — housing and transport — to cut back.';
- else if(rate<15)adv.innerHTML='Try to free up more for savings. Aim for at least 15% of income.';
- else adv.innerHTML='Great work — you are living within your means. Consider investing your surplus. See our <a href="/wealth-building">wealth tools</a>.';
- baseInputs = {inc, housing:h, otherExp: t+f+d+o, left};
- document.getElementById('whatif-section').style.display = 'block';
- resetWhatIf();
- renderMoneyStory(inc, left, d>0);
- document.getElementById('res').classList.add('show');
- document.getElementById('res').scrollIntoView({behavior:'smooth',block:'nearest'});
+          <div class="fg">
+            <label for="inc">Monthly Take-Home Pay</label>
+            <div class="iw has-pre">
+              <span class="ipre">R</span>
+              <input type="number" id="inc" placeholder="25 000" min="0" step="500" aria-describedby="inc-error">
+            </div>
+            <div class="error-msg" id="inc-error">Enter your monthly take-home pay</div>
+          </div>
+
+          <div class="fg">
+            <label for="household">Household Size</label>
+            <select id="household">
+              <option value="1">Single (1 person)</option>
+              <option value="2" selected>Couple (2 people)</option>
+              <option value="3">Small family (3 people)</option>
+              <option value="4">Family (4 people)</option>
+              <option value="5">Large family (5+ people)</option>
+            </select>
+          </div>
+
+          <div class="form-section-title">Fixed Costs (Needs)</div>
+
+          <div class="fg">
+            <label for="housing">Rent / Bond <span class="hint">(incl. rates, levies)</span></label>
+            <div class="iw has-pre">
+              <span class="ipre">R</span>
+              <input type="number" id="housing" placeholder="7 500" min="0" step="500">
+            </div>
+          </div>
+
+          <div class="fg">
+            <label for="transport">Transport / Car <span class="hint">(payment + fuel + insurance)</span></label>
+            <div class="iw has-pre">
+              <span class="ipre">R</span>
+              <input type="number" id="transport" placeholder="4 000" min="0" step="500">
+            </div>
+          </div>
+
+          <div class="fg">
+            <label for="food">Groceries & Food</label>
+            <div class="iw has-pre">
+              <span class="ipre">R</span>
+              <input type="number" id="food" placeholder="4 500" min="0" step="250">
+            </div>
+          </div>
+
+          <div class="fg">
+            <label for="utilities">Utilities <span class="hint">(electricity, water, internet)</span></label>
+            <div class="iw has-pre">
+              <span class="ipre">R</span>
+              <input type="number" id="utilities" placeholder="2 500" min="0" step="250">
+            </div>
+          </div>
+
+          <div class="fg">
+            <label for="medical">Medical Aid + Gap Cover</label>
+            <div class="iw has-pre">
+              <span class="ipre">R</span>
+              <input type="number" id="medical" placeholder="3 000" min="0" step="250">
+            </div>
+          </div>
+
+          <div class="fg">
+            <label for="insurance">Insurance <span class="hint">(life, disability, car, home)</span></label>
+            <div class="iw has-pre">
+              <span class="ipre">R</span>
+              <input type="number" id="insurance" placeholder="1 500" min="0" step="100">
+            </div>
+          </div>
+
+          <div class="fg">
+            <label for="debt">Debt Repayments <span class="hint">(credit cards, loans)</span></label>
+            <div class="iw has-pre">
+              <span class="ipre">R</span>
+              <input type="number" id="debt" placeholder="2 000" min="0" step="250">
+            </div>
+          </div>
+
+          <div class="fg">
+            <label for="blacktax">Black Tax / Family Support</label>
+            <div class="iw has-pre">
+              <span class="ipre">R</span>
+              <input type="number" id="blacktax" placeholder="1 500" min="0" step="250">
+            </div>
+          </div>
+
+          <div class="fg">
+            <label for="education">Education <span class="hint">(school fees, tuition)</span></label>
+            <div class="iw has-pre">
+              <span class="ipre">R</span>
+              <input type="number" id="education" placeholder="0" min="0" step="250">
+            </div>
+          </div>
+
+          <div class="form-section-title">Lifestyle & Savings</div>
+
+          <div class="fg">
+            <label for="wants">Wants <span class="hint">(entertainment, dining, subscriptions)</span></label>
+            <div class="iw has-pre">
+              <span class="ipre">R</span>
+              <input type="number" id="wants" placeholder="3 000" min="0" step="250">
+            </div>
+          </div>
+
+          <div class="fg">
+            <label for="savings">Savings & Investments <span class="hint">(RA, TFSA, emergency)</span></label>
+            <div class="iw has-pre">
+              <span class="ipre">R</span>
+              <input type="number" id="savings" placeholder="2 000" min="0" step="250">
+            </div>
+          </div>
+
+          <div class="fg">
+            <label for="other">Other Expenses</label>
+            <div class="iw has-pre">
+              <span class="ipre">R</span>
+              <input type="number" id="other" placeholder="1 000" min="0" step="100">
+            </div>
+          </div>
+        </div>
+
+        <button class="btn btn-full btn-accent" onclick="calc()">Check my lifestyle →</button>
+
+        <div class="results" id="res">
+          <div class="th-panel">
+            <div>
+              <div class="th-label" id="lbl">Left to save each month</div>
+              <div class="th-amount" id="big">R0</div>
+              <div class="th-period" id="verdict">—</div>
+            </div>
+            <div class="eff-block">
+              <span class="eff-val" id="rate">0%</span>
+              <span class="eff-lbl">Savings rate</span>
+            </div>
+          </div>
+
+          <!-- Lifestyle Grade -->
+          <div class="lifestyle-grade" id="lifestyle-grade" style="display:none">
+            <div class="lg-info">
+              <div class="lg-label">Your lifestyle grade</div>
+              <div class="lg-value" id="lg-value">—</div>
+              <div class="lg-context" id="lg-context">Overall affordability assessment</div>
+            </div>
+            <div class="lg-grade" id="lg-grade">—</div>
+          </div>
+
+          <div class="progress-bar">
+            <div class="progress-fill" id="progress-fill" style="width:0%"></div>
+          </div>
+
+          <!-- 50/30/20 Analysis -->
+          <div class="fifty-thirty-twenty" id="fifty-thirty-twenty" style="display:none">
+            <div class="budget-rule-bar">
+              <div class="rule-label">50% Needs</div>
+              <div class="rule-target" id="needs-target">Target: R0</div>
+              <div class="rule-actual" id="needs-actual">R0</div>
+              <div class="rule-status" id="needs-status">—</div>
+            </div>
+            <div class="budget-rule-bar">
+              <div class="rule-label">30% Wants</div>
+              <div class="rule-target" id="wants-target">Target: R0</div>
+              <div class="rule-actual" id="wants-actual">R0</div>
+              <div class="rule-status" id="wants-status">—</div>
+            </div>
+            <div class="budget-rule-bar">
+              <div class="rule-label">20% Savings & Debt</div>
+              <div class="rule-target" id="savings-target">Target: R0</div>
+              <div class="rule-actual" id="savings-actual">R0</div>
+              <div class="rule-status" id="savings-status">—</div>
+            </div>
+          </div>
+
+          <div class="bb">
+            <div class="bb-title">Where your money goes</div>
+            <div class="br">
+              <span class="lbl">Take-home pay</span>
+              <span class="val neu" id="r-inc">R0</span>
+            </div>
+            <div class="br">
+              <span class="lbl">Housing</span>
+              <span class="val neu" id="r-housing">R0 <span class="pct" id="r-housing-pct">0%</span></span>
+            </div>
+            <div class="br">
+              <span class="lbl">Transport</span>
+              <span class="val neu" id="r-transport">R0 <span class="pct" id="r-transport-pct">0%</span></span>
+            </div>
+            <div class="br">
+              <span class="lbl">Food & Groceries</span>
+              <span class="val neu" id="r-food">R0 <span class="pct" id="r-food-pct">0%</span></span>
+            </div>
+            <div class="br">
+              <span class="lbl">Utilities</span>
+              <span class="val neu" id="r-utilities">R0 <span class="pct" id="r-utilities-pct">0%</span></span>
+            </div>
+            <div class="br">
+              <span class="lbl">Medical Aid & Insurance</span>
+              <span class="val neu" id="r-medical">R0 <span class="pct" id="r-medical-pct">0%</span></span>
+            </div>
+            <div class="br">
+              <span class="lbl">Debt Repayments</span>
+              <span class="val neu" id="r-debt">R0 <span class="pct" id="r-debt-pct">0%</span></span>
+            </div>
+            <div class="br">
+              <span class="lbl">Black Tax / Family</span>
+              <span class="val neu" id="r-blacktax">R0 <span class="pct" id="r-blacktax-pct">0%</span></span>
+            </div>
+            <div class="br">
+              <span class="lbl">Other (wants, education, etc.)</span>
+              <span class="val neu" id="r-other">R0 <span class="pct" id="r-other-pct">0%</span></span>
+            </div>
+            <div class="br">
+              <span class="lbl">Total Expenses</span>
+              <span class="val neg" id="r-exp">-R0</span>
+            </div>
+          </div>
+
+          <div class="total-bar" id="total-bar">
+            <span class="lbl" id="tot-lbl">✓ Money left over</span>
+            <span class="val" id="r-left">R0</span>
+          </div>
+
+          <!-- Warnings -->
+          <div class="note warn" id="housing-warning" style="display:none">
+            <span>🏠</span>
+            <span><strong>Housing costs are high:</strong> At <span id="housing-pct-warn">0</span>% of income, your housing costs exceed the recommended 30% maximum. Consider downsizing or finding ways to increase income.</span>
+          </div>
+
+          <div class="note warn" id="debt-warning" style="display:none">
+            <span>⛓</span>
+            <span><strong>Debt levels concerning:</strong> Your debt repayments consume <span id="debt-pct-warn">0</span>% of income. Above 36% signals over-indebtedness. Consider the <a href="/debt-repayment">debt repayment calculator</a> to accelerate payoff.</span>
+          </div>
+
+          <div class="note warn" id="deficit-warning" style="display:none">
+            <span>⚠</span>
+            <span><strong>Critical:</strong> You are spending more than you earn each month. This deficit is likely being funded by credit cards or savings depletion. This is unsustainable — see the <a href="#action-plan">action plan</a> below.</span>
+          </div>
+
+          <div class="note success" id="healthy-note" style="display:none">
+            <span>✓</span>
+            <span><strong>Well done!</strong> You're living within your means with a healthy savings rate. Consider directing surplus toward <a href="/emergency-fund">emergency fund</a>, <a href="/retirement-calculator">retirement</a>, or <a href="/wealth-building">wealth building</a>.</span>
+          </div>
+
+          <!-- Money Story -->
+          <div class="story-section" id="money-story" style="display:none">
+            <div class="story-kicker">Your money story</div>
+            <div class="story-title" id="ms-title">Where to put your surplus</div>
+            <p class="story-sub" id="ms-sub">Based on your savings rate, here's what to prioritise next.</p>
+
+            <div class="story-grid">
+              <a href="/emergency-fund" class="story-card">
+                <div class="story-stripe c-safety"></div>
+                <div class="story-body">
+                  <div class="story-label">🛟 Emergency fund target</div>
+                  <div class="story-val" id="ms-emergency">R0</div>
+                  <div class="story-desc">3 months of expenses as a safety net</div>
+                  <span class="story-arrow">Build your safety net →</span>
+                </div>
+              </a>
+
+              <a href="/savings-goal" class="story-card">
+                <div class="story-stripe c-retire"></div>
+                <div class="story-body">
+                  <div class="story-label">📈 Annual savings potential</div>
+                  <div class="story-val" id="ms-yearly">R0</div>
+                  <div class="story-desc">Your surplus saved for a full year</div>
+                  <span class="story-arrow">Set a savings goal →</span>
+                </div>
+              </a>
+
+              <a href="/debt-repayment" class="story-card" id="ms-debt-card">
+                <div class="story-stripe c-car"></div>
+                <div class="story-body">
+                  <div class="story-label">⛓️ Have debt? Consider this first</div>
+                  <div class="story-val">Compare</div>
+                  <div class="story-desc">Clearing debt is often the best "return"</div>
+                  <span class="story-arrow">Build a payoff plan →</span>
+                </div>
+              </a>
+
+              <a href="/financial-coach" class="story-card">
+                <div class="story-stripe c-housing"></div>
+                <div class="story-body">
+                  <div class="story-label">🧭 Get your full financial score</div>
+                  <div class="story-val">Free score</div>
+                  <div class="story-desc">See how your whole picture stacks up</div>
+                  <span class="story-arrow">Get your health score →</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- What-If -->
+          <div class="whatif-section" id="whatif-section" style="display:none">
+            <div class="whatif-kicker">What if?</div>
+            <div class="whatif-title">Test a scenario</div>
+            <p class="whatif-sub">Drag the sliders to see how changes affect your monthly surplus.</p>
+
+            <div class="whatif-grid">
+              <div class="whatif-control">
+                <div class="whatif-control-head">
+                  <label for="wi-inc">Income change</label>
+                  <output id="wi-inc-out">+0%</output>
+                </div>
+                <input type="range" id="wi-inc" min="-20" max="30" value="0" step="1" data-default="0" oninput="renderWhatIf()">
+              </div>
+
+              <div class="whatif-control">
+                <div class="whatif-control-head">
+                  <label for="wi-house">Housing cost change</label>
+                  <output id="wi-house-out">+0%</output>
+                </div>
+                <input type="range" id="wi-house" min="-30" max="30" value="0" step="5" data-default="0" oninput="renderWhatIf()">
+              </div>
+
+              <div class="whatif-control">
+                <div class="whatif-control-head">
+                  <label for="wi-transport">Transport change</label>
+                  <output id="wi-transport-out">+0%</output>
+                </div>
+                <input type="range" id="wi-transport" min="-30" max="30" value="0" step="5" data-default="0" oninput="renderWhatIf()">
+              </div>
+
+              <div class="whatif-control">
+                <div class="whatif-control-head">
+                  <label for="wi-wants">Wants spending change</label>
+                  <output id="wi-wants-out">+0%</output>
+                </div>
+                <input type="range" id="wi-wants" min="-50" max="50" value="0" step="5" data-default="0" oninput="renderWhatIf()">
+              </div>
+            </div>
+
+            <div class="whatif-result">
+              <div>
+                <div class="whatif-result-label">New monthly surplus</div>
+                <div class="whatif-result-val" id="wi-newleft">R0</div>
+              </div>
+              <div class="whatif-delta">
+                <div class="whatif-delta-val" id="wi-delta">—</div>
+                <div class="whatif-delta-lbl">vs your current surplus</div>
+              </div>
+            </div>
+            <div class="whatif-reset"><button onclick="resetWhatIf()">Reset scenario</button></div>
+            <div class="note warn" style="margin-top:1rem">
+              <span>💡</span>
+              <span>Housing and transport changes have the biggest impact — they're typically your largest expenses. Even small percentage changes translate to thousands per month.</span>
+            </div>
+          </div>
+
+          <div class="journey" id="journey-section" style="display:none">
+            <div class="journey-title">Continue your financial plan</div>
+            <div class="journey-path">
+              <a href="/budget-planner">Budget planner</a><span class="journey-sep">→</span>
+              <a href="/emergency-fund">Emergency fund</a><span class="journey-sep">→</span>
+              <a href="/savings-goal">Savings goal</a><span class="journey-sep">→</span>
+              <a href="/blog-50-30-20-budget-rule-sa">The 50/30/20 rule</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar">
+    <div class="sc">
+      <div class="sc-head">50/30/20 Budget Rule</div>
+      <div class="sc-body">
+        <div class="tip"><span>→</span><span><strong>50%</strong> on needs (housing, food, transport, utilities)</span></div>
+        <div class="tip"><span>→</span><span><strong>30%</strong> on wants (entertainment, dining, subscriptions)</span></div>
+        <div class="tip"><span>→</span><span><strong>20%</strong> on savings and debt repayment</span></div>
+        <div class="tip"><span>→</span><span>Build emergency fund of 3-6 months expenses first</span></div>
+      </div>
+    </div>
+
+    <div class="sc">
+      <div class="sc-head">Healthy Spending Ranges</div>
+      <div class="sc-body">
+        <div class="tip"><span>🏠</span><span><strong>Housing:</strong> 25-30% of take-home</span></div>
+        <div class="tip"><span>🚗</span><span><strong>Transport:</strong> 10-15% of take-home</span></div>
+        <div class="tip"><span>🛒</span><span><strong>Food:</strong> 10-15% of take-home</span></div>
+        <div class="tip"><span>⛓</span><span><strong>Debt:</strong> Under 20% of take-home</span></div>
+        <div class="tip"><span>💰</span><span><strong>Savings:</strong> 15-20%+ of take-home</span></div>
+      </div>
+    </div>
+
+    <div class="sc">
+      <div class="sc-head">SA-Specific Categories</div>
+      <div class="sc-body">
+        <div class="tip"><span>🏥</span><span><strong>Medical aid:</strong> 5-10% of income is typical</span></div>
+        <div class="tip"><span>👨‍👩‍👧</span><span><strong>Black tax:</strong> Budget it explicitly, don't treat as discretionary</span></div>
+        <div class="tip"><span>⚡</span><span><strong>Load shedding:</strong> Factor in generator/inverter costs</span></div>
+        <div class="tip"><span>🛡</span><span><strong>Security:</strong> Include armed response, alarms in utilities</span></div>
+      </div>
+    </div>
+
+    <div class="sc">
+      <div class="sc-head">Related Tools</div>
+      <div class="sc-body">
+        <a href="/home-affordability" class="related-post">
+          <div class="rp-cat">Affordability</div>
+          <div class="rp-title">Home Affordability</div>
+        </a>
+        <a href="/car-affordability" class="related-post">
+          <div class="rp-cat">Affordability</div>
+          <div class="rp-title">Car Affordability</div>
+        </a>
+        <a href="/budget-planner" class="related-post">
+          <div class="rp-cat">Money Tools</div>
+          <div class="rp-title">Budget Planner</div>
+        </a>
+        <a href="/emergency-fund" class="related-post">
+          <div class="rp-cat">Money Tools</div>
+          <div class="rp-title">Emergency Fund</div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="disclaim">
+  <strong>Disclaimer:</strong> This calculator provides estimates based on the information you provide. Actual affordability depends on your complete financial situation including assets, debts, and future income changes. Use this as a planning tool, not financial advice. Consult a registered financial adviser (FSCA) for personalised guidance.
+</div>
+
+<div class="section" style="padding-top:0">
+  <div class="section-header">
+    <div class="section-title">Related <span>/</span> Affordability Tools</div>
+  </div>
+  <div class="tools-grid">
+    <a href="/home-affordability" class="tool-card featured">
+      <div class="tc-cat">Affordability</div>
+      <h3>Home Affordability</h3>
+      <p>How much house you can afford on your salary.</p>
+      <span class="tc-link">Open →</span>
+    </a>
+    <a href="/car-affordability" class="tool-card featured">
+      <div class="tc-cat">Affordability</div>
+      <h3>Car Affordability</h3>
+      <p>What car repayment fits your budget.</p>
+      <span class="tc-link">Open →</span>
+    </a>
+    <a href="/rent-affordability" class="tool-card featured">
+      <div class="tc-cat">Affordability</div>
+      <h3>Rent Affordability</h3>
+      <p>How much rent you can comfortably pay.</p>
+      <span class="tc-link">Open →</span>
+    </a>
+  </div>
+</div>
+
+<div class="section" style="padding-top:0">
+  <div class="section-header">
+    <div class="section-title">Learn more <span>/</span> Guides</div>
+  </div>
+  <div class="tools-grid">
+    <a href="/blog-living-within-your-means-sa" class="tool-card featured" style="border-top-color:var(--navy)">
+      <div class="tc-cat">Guide</div>
+      <h3>Living Within Your Means in SA</h3>
+      <p>Complete guide to sustainable spending.</p>
+      <span class="tc-link">Read guide →</span>
+    </a>
+    <a href="/blog-50-30-20-budget-rule-sa" class="tool-card featured" style="border-top-color:var(--navy)">
+      <div class="tc-cat">Guide</div>
+      <h3>The 50/30/20 Budget Rule for SA</h3>
+      <p>How to adapt it for South African realities.</p>
+      <span class="tc-link">Read guide →</span>
+    </a>
+    <a href="/blog-black-tax-budget-sa" class="tool-card featured" style="border-top-color:var(--navy)">
+      <div class="tc-cat">Guide</div>
+      <h3>Budgeting for Black Tax in SA</h3>
+      <p>Honouring family while protecting your finances.</p>
+      <span class="tc-link">Read guide →</span>
+    </a>
+  </div>
+</div>
+
+<div class="section" style="padding-top:0">
+  <div style="background:var(--white);border:1px solid var(--line);border-top:3px solid var(--forest)">
+    <div class="article-body">
+
+      <h2>Why "living within your means" is harder to judge than it sounds</h2>
+      <p>Most people have a rough sense of whether they are overspending, but a rough sense is not the same as knowing. Expenses creep — a subscription here, a bigger grocery basket there — until the gap between income and spending has quietly closed or gone negative. This tool forces the honest tally that intuition often avoids.</p>
+
+      <p>In South Africa specifically, several factors make this judgement harder: black tax obligations that feel obligatory rather than discretionary, medical aid costs that are effectively non-negotiable given public healthcare limitations, and load shedding adding hidden costs through generators, inverters, and spoiled food.</p>
+
+      <h2>The 50/30/20 rule — adapted for South Africa</h2>
+      <p>The classic 50/30/20 budget rule suggests allocating your take-home pay as follows: 50% to needs, 30% to wants, and 20% to savings and debt repayment. This provides a useful framework, but South African realities often require adaptation:</p>
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Classic Rule</th>
+            <th>SA Adaptation</th>
+            <th>Why</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Needs</strong></td>
+            <td>50%</td>
+            <td class="td-acc">50-60%</td>
+            <td>Higher housing, medical aid, security costs</td>
+          </tr>
+          <tr>
+            <td><strong>Wants</strong></td>
+            <td>30%</td>
+            <td class="td-acc">20-30%</td>
+            <td>Reduced to accommodate higher needs</td>
+          </tr>
+          <tr>
+            <td><strong>Savings & Debt</strong></td>
+            <td>20%</td>
+            <td class="td-acc">20-25%</td>
+            <td>Non-negotiable for long-term security</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><strong>The SA-adapted 50/30/20:</strong> Many South African households realistically operate on a 60/20/20 split — 60% needs (including medical aid, security, black tax), 20% wants, and 20% savings and debt. This still builds wealth while acknowledging local cost realities.</p>
+
+      <h2>The categories that matter most</h2>
+      <p>Not all spending is equal when it comes to financial health. Housing and transport are typically your two largest, least flexible costs — and the ones worth scrutinising hardest, because a small percentage change in either has an outsized effect on your monthly balance compared to trimming smaller discretionary items.</p>
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Healthy Range (% of take-home)</th>
+            <th>Watch For</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Housing</strong> (rent/bond + rates + levies)</td>
+            <td class="td-green">25-30%</td>
+            <td>Above 35% leaves little room for anything else</td>
+          </tr>
+          <tr>
+            <td><strong>Transport</strong> (car payment + fuel + insurance)</td>
+            <td class="td-green">10-15%</td>
+            <td>Car repayments plus fuel and insurance add up fast</td>
+          </tr>
+          <tr>
+            <td><strong>Food</strong> (groceries + eating out)</td>
+            <td class="td-green">10-15%</td>
+            <td>Groceries plus eating out combined</td>
+          </tr>
+          <tr>
+            <td><strong>Utilities</strong> (electricity, water, internet)</td>
+            <td class="td-green">5-10%</td>
+            <td>Load shedding increases electricity costs</td>
+          </tr>
+          <tr>
+            <td><strong>Medical aid & insurance</strong></td>
+            <td class="td-green">5-10%</td>
+            <td>Effectively non-negotiable in SA</td>
+          </tr>
+          <tr>
+            <td><strong>Debt repayments</strong></td>
+            <td class="td-green">Under 20%</td>
+            <td>Above 36% signals over-indebtedness</td>
+          </tr>
+          <tr>
+            <td><strong>Savings</strong></td>
+            <td class="td-green">15-20%+</td>
+            <td>The category most often sacrificed — protect it</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Black tax: budgeting for family support</h2>
+      <p>Black tax — financial support provided to extended family — is a reality for many South African households. Rather than treating it as discretionary spending that can be cut when budgets get tight, treat it as a fixed obligation that needs explicit budgeting.</p>
+
+      <h3>How to budget black tax sustainably</h3>
+      <ul>
+        <li><strong>Set a fixed monthly amount:</strong> Decide what you can sustainably afford and communicate this clearly to family</li>
+        <li><strong>Include it in your "needs" category:</strong> It's a real obligation, not discretionary spending</li>
+        <li><strong>Set boundaries:</strong> Emergency requests beyond your budgeted amount should be rare, not routine</li>
+        <li><strong>Be transparent with family:</strong> Share what you can afford so expectations are realistic</li>
+        <li><strong>Review annually:</strong> As your income grows, you can increase support — but only if sustainable</li>
+      </ul>
+
+      <div class="callout"><strong>The sustainability test:</strong> Black tax that forces you into debt or prevents you from building an emergency fund is not sustainable long-term. Honouring family while destroying your own financial security helps no one — you become unable to help in future crises.</div>
+
+      <h2>Medical aid: the non-negotiable South African expense</h2>
+      <p>Unlike many countries, South Africans cannot realistically rely on public healthcare for quality medical treatment. This makes medical aid effectively a non-negotiable expense, not a discretionary one.</p>
+
+      <h3>Medical aid costs by household size (2026)</h3>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Cover Type</th>
+            <th>Basic Plan</th>
+            <th>Comprehensive Plan</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Single person</strong></td>
+            <td>R1,800-R2,500</td>
+            <td>R3,500-R5,000</td>
+            <td>Plus gap cover R200-R400</td>
+          </tr>
+          <tr>
+            <td><strong>Couple</strong></td>
+            <td>R3,200-R4,500</td>
+            <td>R6,000-R9,000</td>
+            <td>Plus gap cover R350-R700</td>
+          </tr>
+          <tr>
+            <td><strong>Family (2 adults + 2 children)</strong></td>
+            <td>R5,000-R7,000</td>
+            <td>R9,000-R15,000</td>
+            <td>Plus gap cover R500-R1,000</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><strong>Critical insight:</strong> Medical aid typically consumes 5-10% of take-home pay. Don't skip it to save money — a single medical emergency without cover can cost hundreds of thousands of rand and lead to long-term debt.</p>
+
+      <h3>Gap cover: the essential add-on</h3>
+      <p>Gap cover pays the difference between what medical aid pays and what specialists charge. Without it, a simple surgery can leave you with a R20,000-R50,000 bill even with comprehensive medical aid. Gap cover costs R200-R1,000/month depending on family size and is effectively essential, not optional.</p>
+
+      <h2>Load shedding: the hidden cost most budgets miss</h2>
+      <p>Load shedding adds significant hidden costs that many South Africans don't explicitly budget for:</p>
+
+      <ul>
+        <li><strong>Generator/Inverter purchase:</strong> R5,000-R50,000 capital cost (amortise over 5-10 years)</li>
+        <li><strong>Generator fuel:</strong> R500-R2,000/month during heavy load shedding</li>
+        <li><strong>Spoiled food:</strong> R200-R500/month from fridge/freezer contents during extended outages</li>
+        <li><strong>Appliance damage:</strong> Power surges damage electronics — budget for UPS/surge protection</li>
+        <li><strong>Higher electricity bills:</strong> Running generators and inefficient appliances costs more</li>
+        <li><strong>Work disruption:</strong> Lost productivity or data costs for mobile internet during outages</li>
+      </ul>
+
+      <p><strong>Budget recommendation:</strong> Add R500-R1,500/month to your utilities budget specifically for load shedding costs. This makes the true cost visible rather than hiding in "unexpected expenses".</p>
+
+      <h2>What a negative number really means</h2>
+      <p>If your calculation shows you are spending more than you earn, this is the single most urgent financial signal to act on — more urgent than optimising investments or comparing interest rates. A structural monthly deficit, if unaddressed, is typically covered by growing debt, which compounds the problem every month it continues.</p>
+
+      <div class="callout warn"><strong>The deficit trap:</strong> A R2,000 monthly deficit funded by a credit card at 22% interest becomes R2,440 the next month, then R2,880, then R3,400. Within a year, that "small" deficit has grown into R40,000+ in debt that takes years to repay. Early action prevents this spiral.</div>
+
+      <h2 id="action-plan">The order of operations when you find a deficit</h2>
+      <p>If your lifestyle calculation shows you're spending more than you earn, follow this action plan:</p>
+
+      <h3>1. Identify the biggest lever first</h3>
+      <p>Usually housing or transport, since cutting 10% there beats cutting 50% of a small expense category. If housing is 40% of income, reducing it to 30% frees up 10% of your entire income — more than eliminating all entertainment spending.</p>
+
+      <h3>2. Separate needs from wants honestly</h3>
+      <p>A gym membership and streaming subscriptions are wants, however routine they feel. Be brutally honest about what's truly necessary versus what's comfortable. This isn't about deprivation — it's about conscious choice.</p>
+
+      <h3>3. Fix it before investing</h3>
+      <p>There is no investment return that beats simply not running a deficit. A 22% credit card interest rate is a guaranteed 22% "return" from paying it off — better than any investment you could make.</p>
+
+      <h3>4. Rebuild your buffer</h3>
+      <p>Once balanced, prioritise an <a href="/emergency-fund">emergency fund</a> before anything else. This prevents future deficits when unexpected expenses arise.</p>
+
+      <h3>5. Address the structural causes</h3>
+      <p>If your deficit is structural (not just a bad month), consider whether you need to increase income rather than just cut expenses. A side hustle, promotion, or job change might be more sustainable than permanent lifestyle cuts.</p>
+
+      <h2>When your numbers look healthy</h2>
+      <p>A positive gap is only the first checkpoint, not the finish line. The next question is whether that surplus is actually being saved and invested, or simply accumulating in a low-interest current account. Healthy spending habits combined with passive, unstructured saving still leave money underperforming — pair this result with our <a href="/budget-planner">budget planner</a> to give every rand of that surplus an actual job.</p>
+
+      <h3>The surplus priority stack</h3>
+      <ol>
+        <li><strong>Emergency fund:</strong> Build to 3-6 months expenses first</li>
+        <li><strong>High-interest debt:</strong> Pay off credit cards and personal loans over 18%</li>
+        <li><strong>Retirement catch-up:</strong> Maximise RA contributions (27.5% tax deduction)</li>
+        <li><strong>Tax-free savings:</strong> R40,000/year maximum</li>
+        <li><strong>Specific goals:</strong> House deposit, education, business capital</li>
+        <li><strong>Discretionary investing:</strong> Shares, ETFs, property for wealth building</li>
+      </ol>
+
+      <h2>South African-specific budgeting challenges</h2>
+      <p>Several factors unique to South Africa make budgeting more complex than in many other countries:</p>
+
+      <h3>High inequality and social pressure</h3>
+      <p>South Africa's extreme inequality creates social pressure to display wealth through cars, clothes, and lifestyle — even when income doesn't support it. "Keeping up" in SA often means going into debt to maintain appearances. Resisting this pressure is essential for financial health.</p>
+
+      <h3>Security costs</h3>
+      <p>Armed response, alarms, electric fences, and security estates add R1,000-R5,000/month to housing costs that don't exist in safer countries. Budget this explicitly as part of housing costs rather than treating it as optional.</p>
+
+      <h3>Education costs</h3>
+      <p>Private school fees (R30,000-R150,000/year per child) and university costs (R60,000-R100,000/year) are significant expenses many South African families face. Budget these explicitly and consider education savings plans from birth.</p>
+
+      <h3>Currency volatility</h3>
+      <p>The rand's volatility means imported goods (electronics, vehicles, international travel) can suddenly become much more expensive. Budget conservatively for these categories and build in a buffer for currency movements.</p>
+
+      <h2>Common budgeting mistakes South Africans make</h2>
+      <ul>
+        <li><strong>Ignoring black tax:</strong> Treating family support as discretionary rather than budgeting it explicitly leads to constant "emergencies"</li>
+        <li><strong>Skipping medical aid:</strong> Saving R3,000/month on medical aid risks R300,000+ medical bills from a single emergency</li>
+        <li><strong>Underestimating transport:</strong> Car payment + fuel + insurance + maintenance + e-tolls often totals 20%+ of income</li>
+        <li><strong>Not budgeting for load shedding:</strong> Hidden costs of generators, spoiled food, and appliance damage add up</li>
+        <li><strong>Treating savings as "what's left":</strong> Savings should be a fixed line item paid first, not what remains after spending</li>
+        <li><strong>Ignoring annual expenses:</strong> Car license, insurance premiums, school fees need monthly sinking funds</li>
+        <li><strong>Lifestyle inflation:</strong> Every raise gets absorbed into higher spending rather than higher savings</li>
+        <li><strong>Not tracking spending:</strong> Mental budgeting misses the small expenses that add up to thousands</li>
+        <li><strong>Confusing gross and net income:</strong> Budgeting based on gross salary rather than take-home pay creates deficits</li>
+        <li><strong>Ignoring debt-to-income ratio:</strong> Above 36% signals over-indebtedness regardless of income level</li>
+      </ul>
+
+      <h2>The psychology of sustainable budgeting</h2>
+      <p>Budgets fail not because the math is wrong but because the psychology is wrong. Three principles make budgeting sustainable:</p>
+
+      <h3>1. Budget for reality, not ideals</h3>
+      <p>If you currently spend R4,000/month on entertainment, budgeting R1,000 "because you should" will fail. Budget R3,500 (a realistic reduction) and succeed, then reduce further once the habit is established.</p>
+
+      <h3>2. Allow for fun</h3>
+      <p>A budget with zero discretionary spending is like a diet with zero treats — it works briefly then collapses. Budget explicitly for enjoyment so you don't rebel against your own plan.</p>
+
+      <h3>3. Automate the important stuff</h3>
+      <p>Savings, debt payments, and fixed expenses should be automated to leave your account immediately after payday. What remains is genuinely yours to spend without guilt or tracking.</p>
+
+      <h2>Tools and techniques for tracking spending</h2>
+      <p>Knowing where your money goes is the foundation of living within your means. Several approaches work:</p>
+
+      <ul>
+        <li><strong>Banking apps:</strong> Most SA banks (FNB, Standard Bank, Discovery, Capitec) offer automatic categorisation</li>
+        <li><strong>Spreadsheet:</strong> Manual tracking forces awareness — export bank statements monthly</li>
+        <li><strong>Envelope system:</strong> Cash in labelled envelopes for each category — when it's gone, it's gone</li>
+        <li><strong>Budgeting apps:</strong> 22seven, MoneyMap, or Expensify for automated tracking</li>
+        <li><strong>Weekly reviews:</strong> 15 minutes each Sunday reviewing the week's spending builds awareness</li>
+      </ul>
+
+      <h2>When to seek professional help</h2>
+      <p>Several situations warrant professional financial advice:</p>
+
+      <ul>
+        <li><strong>Persistent deficits:</strong> If you can't balance your budget despite trying, a financial planner can identify blind spots</li>
+        <li><strong>Debt over 36% of income:</strong> Consider debt review under the National Credit Act</li>
+        <li><strong>Major life changes:</strong> Marriage, children, career changes, inheritance — all warrant professional guidance</li>
+        <li><strong>Approaching retirement:</strong> 10+ years before retirement, get professional retirement planning</li>
+        <li><strong>Complex tax situations:</strong> Multiple income sources, investments, or business ownership</li>
+      </ul>
+
+      <p>Look for a <strong>registered financial adviser</strong> (FSCA-registered) who charges fees rather than commissions — their advice is more likely to be objective.</p>
+
+      <h2>Building the habit: your 90-day plan</h2>
+      <p>Transforming your financial life takes time. Here's a realistic 90-day plan:</p>
+
+      <h3>Month 1: Awareness</h3>
+      <ul>
+        <li>Track every expense for 30 days — no changes, just awareness</li>
+        <li>Calculate your actual spending in each category</li>
+        <li>Compare to the healthy ranges in this guide</li>
+        <li>Identify the 2-3 biggest opportunities for improvement</li>
+      </ul>
+
+      <h3>Month 2: Small changes</h3>
+      <ul>
+        <li>Implement 2-3 specific cuts or changes based on Month 1 findings</li>
+        <li>Automate savings and debt payments</li>
+        <li>Set up a simple tracking system</li>
+        <li>Celebrate small wins to build momentum</li>
+      </ul>
+
+      <h3>Month 3: Refinement</h3>
+      <ul>
+        <li>Review what worked and what didn't</li>
+        <li>Adjust budget based on reality, not ideals</li>
+        <li>Add another improvement if Month 2 changes stuck</li>
+        <li>Set goals for the next quarter</li>
+      </ul>
+
+      <div class="callout"><strong>The compound effect:</strong> Small sustainable changes compound over time. Cutting R1,000/month in expenses and investing it at 10% return creates R200,000 in 10 years, R500,000 in 20 years. Budgeting isn't about deprivation — it's about conscious choices that compound into wealth.</div>
+
+      <h2>Frequently Asked Questions</h2>
+
+      <h3>How do I know if I am living within my means?</h3>
+      <p>Add up all your monthly expenses and compare to your take-home pay. If you spend less than you earn and save at least 15-20%, you are living within your means. A healthy savings rate combined with no growing debt indicates sustainable spending.</p>
+
+      <h3>What is the 50/30/20 budget rule and does it work in South Africa?</h3>
+      <p>The 50/30/20 rule suggests 50% needs, 30% wants, 20% savings/debt. In South Africa, many households need to adapt this to 60/20/20 due to higher housing and transport costs, or 50/25/25 if building savings aggressively. The principle matters more than exact percentages.</p>
+
+      <h3>What percentage of my salary should go to housing?</h3>
+      <p>Financial experts recommend no more than 30% of gross monthly income on housing (bond/rent plus rates, levies, insurance). On a R30,000 salary, that's R9,000 or less. Many South Africans stretch to 35-40% in expensive areas, but this leaves little room for other goals.</p>
+
+      <h3>How much should I save each month?</h3>
+      <p>Aim to save at least 15-20% of take-home pay, including retirement contributions, emergency fund building, and general savings. South Africans saving less than 10% are likely not building adequate long-term security.</p>
+
+      <h3>What is black tax and how do I budget for it?</h3>
+      <p>Black tax is financial support for extended family. Budget it explicitly as a fixed expense, set clear boundaries on amounts, and include it in your "needs" category. Treating it as discretionary leads to constant "emergencies" that derail your budget.</p>
+
+      <h3>What percentage should go to transport?</h3>
+      <p>Transport typically consumes 10-15% of take-home pay including car payments, fuel, insurance, maintenance, and e-tolls. Above 20% signals over-commitment on vehicle costs — consider a more affordable car or alternative transport.</p>
+
+      <h3>How much should I spend on groceries?</h3>
+      <p>Single person R2,500-R4,000, couple R4,000-R6,000, family of four R6,000-R10,000. Food (groceries plus eating out) should stay under 15% of take-home pay. Planning meals and shopping at value retailers reduces costs significantly.</p>
+
+      <h3>What's a healthy debt-to-income ratio?</h3>
+      <p>Total monthly debt repayments should not exceed 36% of gross income, with 20% or less being ideal. Above 36% signals over-indebtedness and may trigger debt review under the National Credit Act.</p>
+
+      <h3>How do I budget for medical aid?</h3>
+      <p>Medical aid typically costs 5-10% of take-home pay. A single person pays R1,800-R2,500 basic or R3,500-R5,000 comprehensive. Add gap cover (R200-R500) as it's effectively essential. Don't skip medical aid — a single emergency can cost hundreds of thousands.</p>
+
+      <h3>What should I do if I'm spending more than I earn?</h3>
+      <p>A monthly deficit is urgent. Steps: identify biggest expense category (usually housing/transport), separate needs from wants, cut discretionary spending immediately, consider downsizing if structural, stop using credit cards to cover the gap, build small emergency fund once balanced.</p>
+
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">CalcMy<span>Pay</span></div>
+    <div class="footer-links">
+      <a href="/salary-income">Salary</a>
+      <a href="/affordability">Affordability</a>
+      <a href="/wealth-building">Wealth</a>
+      <a href="/money-tools">Tools</a>
+      <a href="/financial-coach">Coach</a>
+      <a href="/blog-salary-guide">Guides</a>
+      <a href="/about">About</a>
+      <a href="/privacy-policy">Privacy</a>
+      <a href="/contact">Contact</a>
+    </div>
+    <div class="footer-copy">
+      © 2026 CalcMyPay · Understand your salary. Plan your money. Build your future. · For informational purposes only · Consult a registered financial adviser for personalised guidance
+    </div>
+  </div>
+</footer>
+
+<script>
+let baseInputs = null;
+const fmt = n => 'R\u00a0' + Math.round(Math.abs(n)).toLocaleString('en-ZA');
+
+// Validation
+function clearErrors() {
+  document.querySelectorAll('.input-error').forEach(el => el.classList.remove('input-error'));
+  document.querySelectorAll('.error-msg').forEach(el => el.classList.remove('show'));
 }
-document.addEventListener('keydown',e=>{if(e.key=='Enter')calc()});
 
-function renderMoneyStory(inc, left, hasDebt){
-  document.getElementById('ms-emergency').textContent = fmt(inc*3);
-  document.getElementById('ms-yearly').textContent = fmt(Math.max(0,left)*12);
+function showError(inputId, errorId) {
+  document.getElementById(inputId).classList.add('input-error');
+  document.getElementById(errorId).classList.add('show');
+}
+
+function calc() {
+  clearErrors();
+
+  const inc = parseFloat(document.getElementById('inc').value) || 0;
+  const household = parseInt(document.getElementById('household').value) || 2;
+  const housing = parseFloat(document.getElementById('housing').value) || 0;
+  const transport = parseFloat(document.getElementById('transport').value) || 0;
+  const food = parseFloat(document.getElementById('food').value) || 0;
+  const utilities = parseFloat(document.getElementById('utilities').value) || 0;
+  const medical = parseFloat(document.getElementById('medical').value) || 0;
+  const insurance = parseFloat(document.getElementById('insurance').value) || 0;
+  const debt = parseFloat(document.getElementById('debt').value) || 0;
+  const blacktax = parseFloat(document.getElementById('blacktax').value) || 0;
+  const education = parseFloat(document.getElementById('education').value) || 0;
+  const wants = parseFloat(document.getElementById('wants').value) || 0;
+  const savings = parseFloat(document.getElementById('savings').value) || 0;
+  const other = parseFloat(document.getElementById('other').value) || 0;
+
+  // Validation
+  if (inc <= 0) {
+    showError('inc', 'inc-error');
+    return;
+  }
+
+  const exp = housing + transport + food + utilities + medical + insurance + debt + blacktax + education + wants + savings + other;
+  const left = inc - exp;
+  const rate = inc > 0 ? (savings / inc * 100) : 0; // Savings rate based on explicit savings
+  const effectiveSavingsRate = inc > 0 ? (left / inc * 100) : 0; // What's actually left
+
+  // Percentages
+  const hpct = inc > 0 ? (housing / inc * 100) : 0;
+  const tpct = inc > 0 ? (transport / inc * 100) : 0;
+  const fpct = inc > 0 ? (food / inc * 100) : 0;
+  const upct = inc > 0 ? (utilities / inc * 100) : 0;
+  const mpct = inc > 0 ? ((medical + insurance) / inc * 100) : 0;
+  const dpct = inc > 0 ? (debt / inc * 100) : 0;
+  const bpct = inc > 0 ? (blacktax / inc * 100) : 0;
+  const otherPct = inc > 0 ? ((education + wants + other) / inc * 100) : 0;
+
+  // 50/30/20 calculation
+  const needs = housing + transport + food + utilities + medical + insurance + blacktax + education;
+  const wantsTotal = wants + other;
+  const savingsDebt = savings + debt;
+
+  const needsTarget = inc * 0.5;
+  const wantsTarget = inc * 0.3;
+  const savingsTarget = inc * 0.2;
+
+  // Lifestyle grade
+  let gradeText = '—';
+  let gradeClass = '';
+  let gradeContext = '';
+
+  if (left < 0) {
+    gradeText = 'Deficit';
+    gradeClass = 'deficit';
+    gradeContext = 'Spending more than you earn';
+  } else if (effectiveSavingsRate >= 25) {
+    gradeText = 'Excellent';
+    gradeClass = 'excellent';
+    gradeContext = 'Strong savings rate, well within means';
+  } else if (effectiveSavingsRate >= 15) {
+    gradeText = 'Good';
+    gradeClass = 'good';
+    gradeContext = 'Healthy balance, sustainable spending';
+  } else if (effectiveSavingsRate >= 5) {
+    gradeText = 'Tight';
+    gradeClass = 'tight';
+    gradeContext = 'Living within means but limited flexibility';
+  } else {
+    gradeText = 'Stretched';
+    gradeClass = 'tight';
+    gradeContext = 'Very little room for savings or emergencies';
+  }
+
+  // Update main display
+  const big = document.getElementById('big');
+  big.textContent = fmt(left);
+  if (left < 0) {
+    big.classList.add('deficit');
+  } else {
+    big.classList.remove('deficit');
+  }
+
+  document.getElementById('lbl').textContent = left < 0 ? 'Overspending each month' : 'Left to save each month';
+
+  let verdict;
+  if (left < 0) verdict = '⚠ Spending more than you earn';
+  else if (effectiveSavingsRate < 10) verdict = 'Tight — little room to save';
+  else if (effectiveSavingsRate < 20) verdict = '✓ Healthy balance';
+  else verdict = '✓ Excellent — strong saver';
+  document.getElementById('verdict').textContent = verdict;
+
+  document.getElementById('rate').textContent = effectiveSavingsRate.toFixed(0) + '%';
+
+  // Progress bar
+  const progressFill = document.getElementById('progress-fill');
+  const progressPct = Math.min(100, Math.max(0, (exp / inc) * 100));
+  progressFill.style.width = progressPct + '%';
+  if (left < 0) progressFill.classList.add('deficit');
+  else progressFill.classList.remove('deficit');
+
+  // Lifestyle grade panel
+  const lgPanel = document.getElementById('lifestyle-grade');
+  lgPanel.style.display = 'flex';
+  if (left < 0) lgPanel.classList.add('deficit');
+  else lgPanel.classList.remove('deficit');
+  document.getElementById('lg-value').textContent = effectiveSavingsRate.toFixed(0) + '% savings rate';
+  document.getElementById('lg-context').textContent = gradeContext;
+  const gradeEl = document.getElementById('lg-grade');
+  gradeEl.textContent = gradeText;
+  gradeEl.className = 'lg-grade ' + gradeClass;
+
+  // 50/30/20 analysis
+  const fiftyThirtyTwenty = document.getElementById('fifty-thirty-twenty');
+  fiftyThirtyTwenty.style.display = 'grid';
+
+  document.getElementById('needs-target').textContent = 'Target: ' + fmt(needsTarget);
+  document.getElementById('needs-actual').textContent = fmt(needs);
+  document.getElementById('needs-actual').className = 'rule-actual ' + (needs > needsTarget ? 'over' : 'under');
+  document.getElementById('needs-status').textContent = needs > needsTarget ? 'Over by ' + fmt(needs - needsTarget) : 'Under by ' + fmt(needsTarget - needs);
+  document.getElementById('needs-status').className = 'rule-status ' + (needs > needsTarget ? 'over' : 'under');
+
+  document.getElementById('wants-target').textContent = 'Target: ' + fmt(wantsTarget);
+  document.getElementById('wants-actual').textContent = fmt(wantsTotal);
+  document.getElementById('wants-actual').className = 'rule-actual ' + (wantsTotal > wantsTarget ? 'over' : 'under');
+  document.getElementById('wants-status').textContent = wantsTotal > wantsTarget ? 'Over by ' + fmt(wantsTotal - wantsTarget) : 'Under by ' + fmt(wantsTarget - wantsTotal);
+  document.getElementById('wants-status').className = 'rule-status ' + (wantsTotal > wantsTarget ? 'over' : 'under');
+
+  document.getElementById('savings-target').textContent = 'Target: ' + fmt(savingsTarget);
+  document.getElementById('savings-actual').textContent = fmt(savingsDebt);
+  document.getElementById('savings-actual').className = 'rule-actual ' + (savingsDebt < savingsTarget ? 'over' : 'under'); // Under target is bad for savings
+  document.getElementById('savings-status').textContent = savingsDebt < savingsTarget ? 'Under by ' + fmt(savingsTarget - savingsDebt) : 'Over by ' + fmt(savingsDebt - savingsTarget);
+  document.getElementById('savings-status').className = 'rule-status ' + (savingsDebt < savingsTarget ? 'over' : 'under');
+
+  // Breakdown
+  document.getElementById('r-inc').textContent = fmt(inc);
+  document.getElementById('r-housing').innerHTML = fmt(housing) + ' <span class="pct">' + hpct.toFixed(0) + '%</span>';
+  document.getElementById('r-transport').innerHTML = fmt(transport) + ' <span class="pct">' + tpct.toFixed(0) + '%</span>';
+  document.getElementById('r-food').innerHTML = fmt(food) + ' <span class="pct">' + fpct.toFixed(0) + '%</span>';
+  document.getElementById('r-utilities').innerHTML = fmt(utilities) + ' <span class="pct">' + upct.toFixed(0) + '%</span>';
+  document.getElementById('r-medical').innerHTML = fmt(medical + insurance) + ' <span class="pct">' + mpct.toFixed(0) + '%</span>';
+  document.getElementById('r-debt').innerHTML = fmt(debt) + ' <span class="pct">' + dpct.toFixed(0) + '%</span>';
+  document.getElementById('r-blacktax').innerHTML = fmt(blacktax) + ' <span class="pct">' + bpct.toFixed(0) + '%</span>';
+  document.getElementById('r-other').innerHTML = fmt(education + wants + other) + ' <span class="pct">' + otherPct.toFixed(0) + '%</span>';
+  document.getElementById('r-exp').textContent = '-' + fmt(exp);
+  document.getElementById('r-left').textContent = fmt(left);
+
+  // Total bar styling
+  const totalBar = document.getElementById('total-bar');
+  const totLbl = document.getElementById('tot-lbl');
+  if (left < 0) {
+    totalBar.classList.add('deficit');
+    totLbl.textContent = '⚠ Monthly deficit';
+  } else {
+    totalBar.classList.remove('deficit');
+    totLbl.textContent = '✓ Money left over';
+  }
+
+  // Warnings
+  const housingWarning = document.getElementById('housing-warning');
+  if (hpct > 35) {
+    housingWarning.style.display = 'flex';
+    document.getElementById('housing-pct-warn').textContent = hpct.toFixed(0);
+  } else {
+    housingWarning.style.display = 'none';
+  }
+
+  const debtWarning = document.getElementById('debt-warning');
+  if (dpct > 20) {
+    debtWarning.style.display = 'flex';
+    document.getElementById('debt-pct-warn').textContent = dpct.toFixed(0);
+  } else {
+    debtWarning.style.display = 'none';
+  }
+
+  const deficitWarning = document.getElementById('deficit-warning');
+  deficitWarning.style.display = left < 0 ? 'flex' : 'none';
+
+  const healthyNote = document.getElementById('healthy-note');
+  healthyNote.style.display = (left > 0 && effectiveSavingsRate >= 20) ? 'flex' : 'none';
+
+  // Store base inputs for what-if
+  window.baseInputs = {
+    inc, housing, transport, food, utilities, medical, insurance, debt, blacktax, education, wants, savings, other,
+    exp, left, effectiveSavingsRate
+  };
+
+  // Show all sections
+  document.getElementById('money-story').style.display = 'block';
+  document.getElementById('whatif-section').style.display = 'block';
+  document.getElementById('journey-section').style.display = 'block';
+
+  // Configure what-if slider ranges
+  document.getElementById('wi-inc').max = Math.max(30, Math.round(50));
+  document.getElementById('wi-house').max = Math.max(30, Math.round(50));
+  document.getElementById('wi-transport').max = Math.max(30, Math.round(50));
+  document.getElementById('wi-wants').max = Math.max(50, Math.round(100));
+
+  renderMoneyStory(inc, left, debt > 0);
+  resetWhatIf();
+
+  document.getElementById('res').classList.add('show');
+  document.getElementById('res').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+// Enter key triggers calculation
+document.addEventListener('keydown', e => {
+  if (e.key === 'Enter') {
+    const activeEl = document.activeElement;
+    if (activeEl && activeEl.tagName === 'INPUT') {
+      calc();
+    }
+  }
+});
+
+function renderMoneyStory(inc, left, hasDebt) {
+  // Emergency fund: 3 months of total expenses
+  const monthlyExpenses = window.baseInputs.exp;
+  document.getElementById('ms-emergency').textContent = fmt(monthlyExpenses * 3);
+
+  // Annual savings potential
+  document.getElementById('ms-yearly').textContent = fmt(Math.max(0, left) * 12);
 
   const titleEl = document.getElementById('ms-title');
   const subEl = document.getElementById('ms-sub');
-  if(left < 0){
+  if (left < 0) {
     titleEl.textContent = "First, close the gap";
     subEl.textContent = "You're spending more than you earn — here's where to start.";
-  } else if(hasDebt){
+  } else if (hasDebt) {
     titleEl.textContent = "Debt first, then grow your surplus";
     subEl.textContent = "With debt in the picture, paying it down usually beats saving or investing.";
   } else {
@@ -510,29 +1536,53 @@ function renderMoneyStory(inc, left, hasDebt){
   }
 }
 
-let baseInputs = null;
-function renderWhatIf(){
-  if(!baseInputs) return;
+function renderWhatIf() {
+  if (!window.baseInputs) return;
+
   const incPct = parseFloat(document.getElementById('wi-inc').value);
   const housePct = parseFloat(document.getElementById('wi-house').value);
-  document.getElementById('wi-inc-out').textContent = (incPct>=0?'+':'')+incPct+'%';
-  document.getElementById('wi-house-out').textContent = (housePct>=0?'+':'')+housePct+'%';
+  const transportPct = parseFloat(document.getElementById('wi-transport').value);
+  const wantsPct = parseFloat(document.getElementById('wi-wants').value);
 
-  const newInc = baseInputs.inc * (1+incPct/100);
-  const newHousing = baseInputs.housing * (1+housePct/100);
-  const newExp = newHousing + baseInputs.otherExp;
+  document.getElementById('wi-inc-out').textContent = (incPct >= 0 ? '+' : '') + incPct + '%';
+  document.getElementById('wi-house-out').textContent = (housePct >= 0 ? '+' : '') + housePct + '%';
+  document.getElementById('wi-transport-out').textContent = (transportPct >= 0 ? '+' : '') + transportPct + '%';
+  document.getElementById('wi-wants-out').textContent = (wantsPct >= 0 ? '+' : '') + wantsPct + '%';
+
+  const newInc = window.baseInputs.inc * (1 + incPct / 100);
+  const newHousing = window.baseInputs.housing * (1 + housePct / 100);
+  const newTransport = window.baseInputs.transport * (1 + transportPct / 100);
+  const newWants = window.baseInputs.wants * (1 + wantsPct / 100);
+
+  const newExp = newHousing + newTransport + window.baseInputs.food + window.baseInputs.utilities +
+                 window.baseInputs.medical + window.baseInputs.insurance + window.baseInputs.debt +
+                 window.baseInputs.blacktax + window.baseInputs.education + newWants +
+                 window.baseInputs.savings + window.baseInputs.other;
+
   const newLeft = newInc - newExp;
 
   document.getElementById('wi-newleft').textContent = fmt(newLeft);
-  const delta = newLeft - baseInputs.left;
+
+  const delta = newLeft - window.baseInputs.left;
   const deltaEl = document.getElementById('wi-delta');
-  if(Math.abs(delta)<50){ deltaEl.textContent='No change'; deltaEl.className='whatif-delta-val'; }
-  else if(delta>0){ deltaEl.textContent='+'+fmt(delta); deltaEl.className='whatif-delta-val up'; }
-  else { deltaEl.textContent='-'+fmt(Math.abs(delta)); deltaEl.className='whatif-delta-val down'; }
+  if (Math.abs(delta) < 50) {
+    deltaEl.textContent = 'No change';
+    deltaEl.className = 'whatif-delta-val';
+  } else if (delta > 0) {
+    deltaEl.textContent = '+' + fmt(delta);
+    deltaEl.className = 'whatif-delta-val up';
+  } else {
+    deltaEl.textContent = '-' + fmt(Math.abs(delta));
+    deltaEl.className = 'whatif-delta-val down';
+  }
 }
-function resetWhatIf(){
-  document.getElementById('wi-inc').value=0;
-  document.getElementById('wi-house').value=0;
+
+function resetWhatIf() {
+  document.querySelectorAll('#whatif-section input[type=range]').forEach(el => {
+    el.value = el.dataset.default || 0;
+  });
   renderWhatIf();
 }
-</script></body></html>
+</script>
+</body>
+</html>
