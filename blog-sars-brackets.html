@@ -33,109 +33,109 @@
 <link rel="preload" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap" as="style">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<!-- BlogPosting Schema -->
+<!-- Combined BlogPosting + FAQ Schema (valid JSON-LD) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "SARS Tax Brackets 2026/2027 Explained Simply",
-  "description": "Complete guide to South African tax brackets with detailed examples, manual calculations, and practical explanations.",
-  "datePublished": "2026-05-01",
-  "dateModified": "2026-08-13",
-  "author": { "@type": "Organization", "name": "CalcMyPay" },
-  "publisher": {
-    "@type": "Organization",
-    "name": "CalcMyPay",
-    "logo": { "@type": "ImageObject", "url": "https://calcmypay.co.za/logo.png" }
-  }
-}
-</script>
-
-<!-- FAQ Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "What are the SARS tax brackets for 2026/2027?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "For the 2027 tax year (1 March 2026 - 28 February 2027), the tax brackets are: 18% on income up to R245,100; 26% on R245,101-R383,100; 31% on R383,101-R530,200; 36% on R530,201-R695,800; 39% on R695,801-R887,000; 41% on R887,001-R1,878,600; and 45% on income above R1,878,600. The primary rebate is R17,820."
-      }
+      "@type": "BlogPosting",
+      "headline": "SARS Tax Brackets 2026/2027 Explained Simply",
+      "description": "Complete guide to South African tax brackets with detailed examples, manual calculations, and practical explanations for the 2027 tax year.",
+      "datePublished": "2026-05-01",
+      "dateModified": "2026-09-10",
+      "author": {"@type": "Organization", "name": "CalcMyPay"},
+      "publisher": {
+        "@type": "Organization",
+        "name": "CalcMyPay",
+        "logo": {"@type": "ImageObject", "url": "https://calcmypay.co.za/logo.png"}
+      },
+      "mainEntityOfPage": {"@type": "WebPage", "@id": "https://calcmypay.co.za/blog-sars-brackets"}
     },
     {
-      "@type": "Question",
-      "name": "What is the tax-free threshold in South Africa for 2026/2027?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The tax-free threshold is R99,000 per year (R8,250 per month) for taxpayers under 65. For those aged 65-74, it's R153,250 per year, and for those 75 and older, it's R171,300 per year. If you earn below these amounts, you pay no income tax due to the primary rebate wiping out your tax liability."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How does progressive tax work in South Africa?",
-      "acceptedAnswer": {
-        {"@type": "Answer",
-        "text": "South Africa uses a progressive tax system where different portions of your income are taxed at different rates. You only pay the higher rate on the portion of income that exceeds each bracket threshold, not on your entire income. For example, if you earn R400,000, you pay 18% on the first R245,100, 26% on the next R138,000, and 31% only on the remaining R16,900. This means your effective tax rate is much lower than your marginal rate."}
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the difference between marginal and effective tax rate?",
-      "acceptedAnswer": {
-        {"@type": "Answer",
-        "text": "Your marginal tax rate is the rate applied to your last rand of income (the highest bracket you fall into). Your effective tax rate is the actual percentage of your total income that goes to tax after all brackets, rebates, and credits are applied. For example, someone earning R400,000 has a 31% marginal rate but only about 16.9% effective rate because lower portions of income are taxed at lower rates and rebates reduce the total tax."}
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I calculate my tax manually using the brackets?",
-      "acceptedAnswer": {
-        {"@type": "Answer",
-        "text": "To calculate tax manually: 1) Determine your taxable income, 2) Apply each bracket rate to the portion of income in that bracket, 3) Sum all bracket taxes, 4) Subtract applicable rebates (R17,820 primary, plus R9,765 if 65-74, plus R3,249 if 75+), 5) Subtract medical aid credits (R376/month for you, R376 for first dependant, R254 for each additional dependant). Example: R400,000 income = R44,118 (18% bracket) + R35,880 (26% bracket) + R5,239 (31% bracket) = R85,237 gross tax. Minus R17,820 rebate = R67,417 annual tax."}
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What are tax rebates and how do they work?",
-      "acceptedAnswer": {
-        {"@type": "Answer",
-        "text": "Tax rebates are fixed amounts subtracted directly from your calculated tax (not from your taxable income). For 2027: Primary rebate is R17,820 for all taxpayers, secondary rebate adds R9,765 for ages 65-74, and tertiary rebate adds R3,249 for ages 75+. Unlike deductions that reduce taxable income, rebates reduce your final tax bill rand-for-rand. The primary rebate creates the tax-free threshold of R99,000 (R17,820 ÷ 18%)."}
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do medical aid tax credits work?",
-      "acceptedAnswer": {
-        {"@type": "Answer",
-        "text": "Medical aid tax credits reduce your tax bill directly (not your taxable income). For 2027: R376 per month for the principal member (you), R376 per month for your first adult dependant, and R254 per month for each additional dependant. A family of four gets R1,260/month (R15,120/year) in tax credits. These credits are subtracted after calculating your tax using the brackets and rebates, further reducing your PAYE."}
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do retirement annuity contributions affect which tax bracket I'm in?",
-      "acceptedAnswer": {
-        {"@type": "Answer",
-        "text": "Yes, retirement annuity (RA) contributions reduce your taxable income, potentially moving you into a lower tax bracket. You can deduct up to 27.5% of your income (capped at R430,000) from your taxable income. For example, if you earn R600,000 and contribute R100,000 to an RA, your taxable income becomes R500,000, moving you from the 36% bracket to the 31% bracket. This provides immediate tax savings plus tax-free growth within the RA."}
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is bracket creep and how does it affect me?",
-      "acceptedAnswer": {
-        {"@type": "Answer",
-        "text": "Bracket creep occurs when inflation pushes your nominal salary into a higher tax bracket even though your real purchasing power hasn't increased. If SARS doesn't adjust bracket thresholds for inflation, a salary increase that merely keeps pace with inflation can result in you paying a higher percentage of your income in tax. This is why bracket adjustments in the annual budget speech are important - they prevent you from paying more tax in real terms due to inflation alone."}
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do capital gains fit into the tax brackets?",
-      "acceptedAnswer": {
-        {"@type": "Answer",
-        "text": "Capital gains are taxed differently from regular income. For individuals, only 40% of your net capital gain is included in your taxable income and taxed at your marginal rate. You also get an annual exclusion of R40,000 (R300,000 for primary residence sales). For example, if you have a R100,000 capital gain, only R24,000 (40% of R60,000 after the R40,000 exclusion) is added to your taxable income. The effective maximum capital gains tax rate is therefore 18% (40% × 45%)."}
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are the SARS tax brackets for 2026/2027?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For the 2027 tax year (1 March 2026 - 28 February 2027), the tax brackets are: 18% on income up to R245,100; 26% on R245,101-R383,100; 31% on R383,101-R530,200; 36% on R530,201-R695,800; 39% on R695,801-R887,000; 41% on R887,001-R1,878,600; and 45% on income above R1,878,600. The primary rebate is R17,820."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the tax-free threshold in South Africa for 2026/2027?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The tax-free threshold is R99,000 per year (R8,250 per month) for taxpayers under 65. For those aged 65-74 it is R153,250 per year, and for those 75 and older it is R171,300 per year. If you earn below these amounts, you pay no income tax because the primary rebate wipes out your tax liability."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does progressive tax work in South Africa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "South Africa uses a progressive tax system where different portions of your income are taxed at different rates. You only pay the higher rate on the portion of income that exceeds each bracket threshold, not on your entire income. For example, if you earn R400,000, you pay 18% on the first R245,100, 26% on the next R138,000, and 31% only on the remaining R16,900. This means your effective tax rate is much lower than your marginal rate."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between marginal and effective tax rate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Your marginal tax rate is the rate applied to your last rand of income (the highest bracket you fall into). Your effective tax rate is the actual percentage of your total income that goes to tax after all brackets, rebates and credits are applied. For example, someone earning R400,000 has a 31% marginal rate but only about 16.9% effective rate because lower portions of income are taxed at lower rates and rebates reduce the total tax."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I calculate my tax manually using the brackets?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "To calculate tax manually: 1) Determine your taxable income, 2) Apply each bracket rate to the portion of income in that bracket, 3) Sum all bracket taxes, 4) Subtract applicable rebates (R17,820 primary, plus R9,765 if 65-74, plus R3,249 if 75+), 5) Subtract medical aid credits (R376 per month for you, R376 for first dependant, R254 for each additional dependant). Example: R400,000 income gives R44,118 plus R35,880 plus R5,239 equals R85,237 gross tax. Minus R17,820 rebate equals R67,417 annual tax."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are tax rebates and how do they work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tax rebates are fixed amounts subtracted directly from your calculated tax (not from your taxable income). For 2027 the primary rebate is R17,820 for all taxpayers, the secondary rebate adds R9,765 for ages 65-74, and the tertiary rebate adds R3,249 for ages 75+. Unlike deductions that reduce taxable income, rebates reduce your final tax bill rand-for-rand. The primary rebate creates the tax-free threshold of R99,000 (R17,820 divided by 18%)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do medical aid tax credits work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Medical aid tax credits reduce your tax bill directly (not your taxable income). For 2027 the credits are R376 per month for the principal member, R376 per month for your first adult dependant, and R254 per month for each additional dependant. A family of four gets R1,260 per month (R15,120 per year) in tax credits. These credits are subtracted after calculating your tax using the brackets and rebates, further reducing your PAYE."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do retirement annuity contributions affect which tax bracket I am in?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Retirement annuity contributions reduce your taxable income and can move you into a lower tax bracket. You can deduct up to 27.5% of your income (capped at R350,000) from your taxable income. For example, if you earn R600,000 and contribute R100,000 to an RA, your taxable income becomes R500,000, moving you from the 36% bracket to the 31% bracket. This provides immediate tax savings plus tax-free growth within the RA."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is bracket creep and how does it affect me?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bracket creep occurs when inflation pushes your nominal salary into a higher tax bracket even though your real purchasing power has not increased. If SARS does not adjust bracket thresholds for inflation, a salary increase that merely keeps pace with inflation can result in you paying a higher percentage of your income in tax. This is why bracket adjustments in the annual budget speech are important; they prevent you from paying more tax in real terms due to inflation alone."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do capital gains fit into the tax brackets?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Capital gains are taxed differently from regular income. For individuals, only 40% of your net capital gain is included in your taxable income and taxed at your marginal rate. You also get an annual exclusion of R40,000 (R300,000 for primary residence sales). For example, if you have a R100,000 capital gain, only R24,000 (40% of R60,000 after the R40,000 exclusion) is added to your taxable income. The effective maximum capital gains tax rate is therefore 18% (40% times 45%)."
+          }
+        }
+      ]
     }
   ]
 }
@@ -222,6 +222,9 @@ nav{background:var(--paper);border-bottom:2px solid var(--ink);padding:0 2rem;di
 .cta-block h2,.cta-block h3{font-family:var(--disp);font-weight:600;color:var(--paper);letter-spacing:-.01em;margin-bottom:.6rem}
 .cta-block h3{font-size:1.4rem}
 .cta-block p{color:rgba(255,255,255,.7);margin-bottom:1.5rem;font-size:1rem}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 1.6rem;font-family:var(--body);font-weight:600;font-size:.9rem;cursor:pointer;border:none;transition:.18s;text-decoration:none;letter-spacing:.01em}
+.btn-accent{background:var(--marigold);color:var(--ink)}
+.btn-accent:hover{background:#eaa523}
 footer{background:var(--ink);color:var(--paper);margin-top:2rem}
 .footer-inner{max-width:1080px;margin:0 auto;padding:2.5rem 2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
 .footer-logo{font-family:var(--disp);font-size:1.5rem;font-weight:900;color:var(--paper)}
@@ -664,7 +667,7 @@ footer{background:var(--ink);color:var(--paper);margin-top:2rem}
   <li>Plus: Bonuses, commissions, allowances</li>
   <li>Plus: Investment income (interest, dividends above exemptions)</li>
   <li>Plus: Rental income</li>
-  <li>Minus: Retirement fund contributions (up to 27.5% or R430,000)</li>
+  <li>Minus: Retirement fund contributions (up to 27.5% or R350,000)</li>
   <li>Minus: Other allowable deductions</li>
   <li><strong>= Taxable income</strong></li>
 </ul>
@@ -946,7 +949,7 @@ footer{background:var(--ink);color:var(--paper);margin-top:2rem}
 </ul>
 
 <h3>Maximum RA deduction benefit</h3>
-<p>You can deduct up to 27.5% of your income (capped at R430,000) for retirement fund contributions. For high earners, this can provide substantial tax savings:</p>
+<p>You can deduct up to 27.5% of your income (capped at R350,000) for retirement fund contributions. For high earners, this can provide substantial tax savings:</p>
 
 <table class="data-table">
   <thead>
@@ -978,9 +981,9 @@ footer{background:var(--ink);color:var(--paper);margin-top:2rem}
     </tr>
     <tr>
       <td>R1,600,000</td>
-      <td>R430,000 (cap)</td>
+      <td>R350,000 (cap)</td>
       <td>41%</td>
-      <td class="td-green">R176,300</td>
+      <td class="td-green">R143,500</td>
     </tr>
   </tbody>
 </table>
@@ -1197,7 +1200,7 @@ footer{background:var(--ink);color:var(--paper);margin-top:2rem}
 <p>Understanding how brackets work enables several tax planning strategies.</p>
 
 <h3>Strategy 1: Maximize retirement fund contributions</h3>
-<p>Contributing up to the 27.5% limit (capped at R430,000) provides:</p>
+<p>Contributing up to the 27.5% limit (capped at R350,000) provides:</p>
 <ul>
   <li>Immediate tax savings at your marginal rate</li>
   <li>Potential bracket reduction</li>
@@ -1253,7 +1256,7 @@ footer{background:var(--ink);color:var(--paper);margin-top:2rem}
 <p>Medical aid tax credits reduce your tax bill directly (not your taxable income). For 2027: R376 per month for the principal member (you), R376 per month for your first adult dependant, and R254 per month for each additional dependant. A family of four gets R1,260/month (R15,120/year) in tax credits. These credits are subtracted after calculating your tax using the brackets and rebates, further reducing your PAYE.</p>
 
 <h3>Do retirement annuity contributions affect which tax bracket I'm in?</h3>
-<p>Yes, retirement annuity (RA) contributions reduce your taxable income, potentially moving you into a lower tax bracket. You can deduct up to 27.5% of your income (capped at R430,000) from your taxable income. For example, if you earn R600,000 and contribute R100,000 to an RA, your taxable income becomes R500,000, moving you from the 36% bracket to the 31% bracket. This provides immediate tax savings plus tax-free growth within the RA.</p>
+<p>Yes, retirement annuity (RA) contributions reduce your taxable income, potentially moving you into a lower tax bracket. You can deduct up to 27.5% of your income (capped at R350,000) from your taxable income. For example, if you earn R600,000 and contribute R100,000 to an RA, your taxable income becomes R500,000, moving you from the 36% bracket to the 31% bracket. This provides immediate tax savings plus tax-free growth within the RA.</p>
 
 <h3>What is bracket creep and how does it affect me?</h3>
 <p>Bracket creep occurs when inflation pushes your nominal salary into a higher tax bracket even though your real purchasing power hasn't increased. If SARS doesn't adjust bracket thresholds for inflation, a salary increase that merely keeps pace with inflation can result in you paying a higher percentage of your income in tax. This is why bracket adjustments in the annual budget speech are important - they prevent you from paying more tax in real terms due to inflation alone.</p>
@@ -1295,7 +1298,7 @@ footer{background:var(--ink);color:var(--paper);margin-top:2rem}
       <a href="#faq" class="toc-link">FAQs</a>
     </div>
   </div>
-  
+
   <div class="sc">
     <div class="sc-head">Related Tools</div>
     <div class="sc-body">
@@ -1313,7 +1316,7 @@ footer{background:var(--ink);color:var(--paper);margin-top:2rem}
       </a>
     </div>
   </div>
-  
+
   <div class="sc">
     <div class="sc-head">Related Guides</div>
     <div class="sc-body">
