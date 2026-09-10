@@ -33,109 +33,109 @@
 <link rel="preload" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap" as="style">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<!-- BlogPosting Schema -->
+<!-- Combined BlogPosting + FAQ Schema (valid JSON-LD) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "How to Live Within Your Means in South Africa (2026 Guide)",
-  "description": "Complete guide to stopping overspending, managing lifestyle inflation, and building financial security in South Africa.",
-  "datePublished": "2026-06-01",
-  "dateModified": "2026-08-13",
-  "author": { "@type": "Organization", "name": "CalcMyPay" },
-  "publisher": {
-    "@type": "Organization",
-    "name": "CalcMyPay",
-    "logo": { "@type": "ImageObject", "url": "https://calcmypay.co.za/logo.png" }
-  }
-}
-</script>
-
-<!-- FAQ Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "What does living within your means actually mean?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Living within your means means spending less than you earn consistently, without relying on credit to cover the gap. It's not about extreme frugality or deprivation — it means your total spending (including reasonable enjoyment) stays below your income, leaving room to save and build financial security. The clearest sign is a consistent monthly surplus, however modest, that grows your savings over time."
-      }
+      "@type": "BlogPosting",
+      "headline": "How to Live Within Your Means in South Africa (2026 Guide)",
+      "description": "Complete guide to stopping overspending, managing lifestyle inflation, and building financial security in South Africa.",
+      "datePublished": "2026-06-01",
+      "dateModified": "2026-09-10",
+      "author": {"@type": "Organization", "name": "CalcMyPay"},
+      "publisher": {
+        "@type": "Organization",
+        "name": "CalcMyPay",
+        "logo": {"@type": "ImageObject", "url": "https://calcmypay.co.za/logo.png"}
+      },
+      "mainEntityOfPage": {"@type": "WebPage", "@id": "https://calcmypay.co.za/blog-living-within-your-means-sa"}
     },
     {
-      "@type": "Question",
-      "name": "How do I stop living paycheck to paycheck in South Africa?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Track all spending for one month to see where money actually goes. Attack the big three expenses (housing under 30% of income, transport under 15%, food through meal planning). Automate savings on payday before spending. Build a R5,000-R10,000 emergency fund. Avoid lifestyle inflation when income increases. Stop using credit for daily expenses. Start small — even saving R500/month breaks the paycheck-to-paycheck cycle within 6-12 months."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How much should I spend on housing in South Africa?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Housing should not exceed 30% of your gross monthly income (or 35% of take-home pay). This includes rent/bond, rates, taxes, levies, and home insurance. If you earn R30,000 gross, housing should be under R9,000/month. Many South Africans overspend on housing (40-50% of income), leaving insufficient for other essentials. If housing exceeds 35%, consider downsizing, getting a flatmate, or relocating to a more affordable area."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is lifestyle inflation and how do I avoid it?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Lifestyle inflation (or lifestyle creep) is when your spending increases every time your income does — better car, bigger house, more expensive restaurants — leaving you no better off financially despite earning more. Avoid it by: banking 50%+ of every raise, keeping major expenses (housing, car) stable for 2+ years, setting spending rules before income increases, and tracking spending monthly. The goal is growing the gap between income and spending, not letting them rise together."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I manage black tax while living within my means?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Black tax (supporting extended family) is a reality for many South Africans. Manage it by: setting a fixed monthly amount you can sustainably afford (typically 10-15% of income), communicating boundaries clearly with family, distinguishing between genuine emergencies and ongoing support, and being transparent about your own financial goals. Budget it as a fixed expense rather than ad-hoc requests. Remember: you can't help others if you're financially drowning yourself."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I stop overspending on food and groceries?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Food is often the easiest category to reduce. Strategies: meal plan weekly (saves R1,000-R2,000/month), shop with a list and stick to it, buy store brands (20-30% cheaper), reduce takeaways to once per week max, cook in batches on weekends, use frozen vegetables (cheaper, less waste), avoid shopping when hungry, and pack lunch for work (saves R800-R1,500/month). A family spending R6,000 on food can often reduce to R4,000 with planning."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What percentage of income should I save in South Africa?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Aim for 15-20% of gross income as a target, but start with whatever is realistic. Minimum 10% if possible. On R25,000 gross, that's R2,500-R5,000/month. If you're in debt, start with 5% while paying down debt. The key is consistency — saving R1,000/month religiously beats saving R5,000 sporadically. Automate transfers on payday so savings happen before you can spend. Increase savings rate gradually as income grows."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I handle social pressure to spend money I don't have?",
-      "acceptedAnswer": {
-        {"@type": "Answer",
-        "text": "Social pressure is a major driver of overspending in South Africa. Strategies: set clear boundaries ('I'm saving for a house right now'), suggest free/low-cost alternatives (braai at home vs expensive restaurant), be honest about your financial goals, limit social media exposure that triggers comparison, surround yourself with financially-minded friends, and remember that visible spending doesn't equal financial success. Your future self will thank you for today's discipline."}
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What are warning signs I'm not living within my means?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Clear warning signs: relying on credit cards or store accounts for regular expenses, not knowing where your money goes each month, having zero savings, paying minimums only on debt, borrowing for daily expenses, dreading checking bank balance, spending increases with every raise, no emergency fund, and feeling financially stressed constantly. If 3+ of these apply, you're likely spending beyond your means and need to take action immediately."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I track my spending effectively?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Choose one method and stick with it for at least 3 months: 1) Budgeting apps (22seven, bank app trackers) that auto-categorize transactions, 2) Spreadsheet with manual entry (Google Sheets/Excel), 3) Notebook for simple daily tracking, or 4) Envelope system with cash for variable expenses. Review weekly for first 3 months, then monthly. The best method is one you'll actually use consistently — sophistication matters less than consistency."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What does living within your means actually mean?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Living within your means means spending less than you earn consistently, without relying on credit to cover the gap. It is not about extreme frugality or deprivation — it means your total spending (including reasonable enjoyment) stays below your income, leaving room to save and build financial security. The clearest sign is a consistent monthly surplus, however modest, that grows your savings over time."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I stop living paycheck to paycheck in South Africa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Track all spending for one month to see where money actually goes. Attack the big three expenses (housing under 30% of income, transport under 15%, food through meal planning). Automate savings on payday before spending. Build a R5,000-R10,000 emergency fund. Avoid lifestyle inflation when income increases. Stop using credit for daily expenses. Start small — even saving R500/month breaks the paycheck-to-paycheck cycle within 6-12 months."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much should I spend on housing in South Africa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Housing should not exceed 30% of your gross monthly income (or 35% of take-home pay). This includes rent or bond, rates, taxes, levies, and home insurance. If you earn R30,000 gross, housing should be under R9,000/month. Many South Africans overspend on housing (40-50% of income), leaving insufficient for other essentials. If housing exceeds 35%, consider downsizing, getting a flatmate, or relocating to a more affordable area."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is lifestyle inflation and how do I avoid it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Lifestyle inflation (or lifestyle creep) is when your spending increases every time your income does — better car, bigger house, more expensive restaurants — leaving you no better off financially despite earning more. Avoid it by banking 50% or more of every raise, keeping major expenses (housing, car) stable for 2+ years, setting spending rules before income increases, and tracking spending monthly. The goal is growing the gap between income and spending, not letting them rise together."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I manage black tax while living within my means?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Black tax (supporting extended family) is a reality for many South Africans. Manage it by setting a fixed monthly amount you can sustainably afford (typically 10-15% of income), communicating boundaries clearly with family, distinguishing between genuine emergencies and ongoing support, and being transparent about your own financial goals. Budget it as a fixed expense rather than ad-hoc requests. Remember: you cannot help others if you are financially drowning yourself."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I stop overspending on food and groceries?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Food is often the easiest category to reduce. Strategies: meal plan weekly (saves R1,000-R2,000/month), shop with a list and stick to it, buy store brands (20-30% cheaper), reduce takeaways to once per week max, cook in batches on weekends, use frozen vegetables (cheaper, less waste), avoid shopping when hungry, and pack lunch for work (saves R800-R1,500/month). A family spending R6,000 on food can often reduce to R4,000 with planning."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What percentage of income should I save in South Africa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Aim for 15-20% of gross income as a target, but start with whatever is realistic. Minimum 10% if possible. On R25,000 gross, that is R2,500-R5,000/month. If you are in debt, start with 5% while paying down debt. The key is consistency — saving R1,000/month religiously beats saving R5,000 sporadically. Automate transfers on payday so savings happen before you can spend. Increase savings rate gradually as income grows."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I handle social pressure to spend money I don't have?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Social pressure is a major driver of overspending in South Africa. Strategies: set clear boundaries (I am saving for a house right now), suggest free or low-cost alternatives (braai at home vs expensive restaurant), be honest about your financial goals, limit social media exposure that triggers comparison, surround yourself with financially-minded friends, and remember that visible spending does not equal financial success. Your future self will thank you for today's discipline."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are warning signs I'm not living within my means?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Clear warning signs: relying on credit cards or store accounts for regular expenses, not knowing where your money goes each month, having zero savings, paying minimums only on debt, borrowing for daily expenses, dreading checking bank balance, spending increases with every raise, no emergency fund, and feeling financially stressed constantly. If 3 or more of these apply, you are likely spending beyond your means and need to take action immediately."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I track my spending effectively?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Choose one method and stick with it for at least 3 months: 1) Budgeting apps (22seven, bank app trackers) that auto-categorize transactions, 2) Spreadsheet with manual entry (Google Sheets or Excel), 3) Notebook for simple daily tracking, or 4) Envelope system with cash for variable expenses. Review weekly for first 3 months, then monthly. The best method is one you will actually use consistently — sophistication matters less than consistency."
+          }
+        }
+      ]
     }
   ]
 }
@@ -254,7 +254,7 @@ footer{background:var(--ink);color:var(--paper);margin-top:2rem}
 <body>
 <div class="sa-stripe"></div>
 <div class="top-bar">
-  <div class="tb-l">🇿🇦 South Africa · SARS 2027 Tax Year</div>
+  <div class="tb-l">🇿 South Africa · SARS 2027 Tax Year</div>
   <div class="tb-r">Understand your salary · <span>Build your future</span></div>
 </div>
 
