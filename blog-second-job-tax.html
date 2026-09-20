@@ -33,109 +33,109 @@
 <link rel="preload" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap" as="style">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<!-- BlogPosting Schema -->
+<!-- Combined BlogPosting + FAQ Schema (valid JSON-LD) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Second Job Tax in South Africa 2026: Complete Guide",
-  "description": "Complete guide to second job taxation with detailed calculations, tax directives, and strategies to avoid surprises.",
-  "datePublished": "2026-06-01",
-  "dateModified": "2026-08-13",
-  "author": { "@type": "Organization", "name": "CalcMyPay" },
-  "publisher": {
-    "@type": "Organization",
-    "name": "CalcMyPay",
-    "logo": { "@type": "ImageObject", "url": "https://calcmypay.co.za/logo.png" }
-  }
-}
-</script>
-
-<!-- FAQ Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "How is a second job taxed in South Africa?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Income from a second job is added to your main salary and taxed at your combined marginal rate. However, each employer calculates PAYE independently as if their salary is your only income. This means both employers apply the primary rebate and lower tax brackets separately, resulting in insufficient tax being deducted overall. When you file your tax return, SARS assesses your true combined income, often revealing a shortfall you must pay."
-      }
+      "@type": "BlogPosting",
+      "headline": "Second Job Tax in South Africa 2026: Complete Guide",
+      "description": "Complete guide to second job taxation with detailed calculations, tax directives, and strategies to avoid surprises.",
+      "datePublished": "2026-06-01",
+      "dateModified": "2026-09-20",
+      "author": {"@type": "Organization", "name": "CalcMyPay"},
+      "publisher": {
+        "@type": "Organization",
+        "name": "CalcMyPay",
+        "logo": {"@type": "ImageObject", "url": "https://calcmypay.co.za/logo.png"}
+      },
+      "mainEntityOfPage": {"@type": "WebPage", "@id": "https://calcmypay.co.za/blog-second-job-tax"}
     },
     {
-      "@type": "Question",
-      "name": "Will I owe SARS money if I have two jobs?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Very likely yes, especially if your combined income exceeds R99,000 per year. Each employer deducts tax as if their salary is your only income, applying the full primary rebate and tax brackets. This results in under-withholding. For example, earning R25,000 + R10,000 monthly (R420,000 combined) could result in owing R15,000-R25,000 at year-end. The shortfall increases with higher combined income."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is a SARS tax directive and how do I get one?",
-      "acceptedAnswer": {
-        {"@type": "Answer",
-        "text": "A tax directive is a formal instruction from SARS telling one of your employers to withhold tax at a specific higher rate that accounts for your combined income. Apply via eFiling: log in, go to 'Tax Directives', select 'Application for Tax Directive', provide details of both income sources, and SARS calculates the correct rate. The directive typically applies to your second (smaller) job. This prevents the year-end shortfall by ensuring correct withholding throughout the year."}
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do I need to register as a provisional taxpayer with two jobs?",
-      "acceptedAnswer": {
-        {"@type": "Answer",
-        "text": "Not necessarily. You must register as a provisional taxpayer if your second job is freelance/independent contractor work, you earn rental income, or you have other non-salary income. If both jobs are employment with PAYE deducted, you don't need to register as provisional taxpayer — you simply file your annual return and pay any shortfall. However, if your year-end liability is substantial, voluntarily registering allows you to make payments in August and February rather than one lump sum."}
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How much extra tax will I pay on my second job?",
-      "acceptedAnswer": {
-        {"@type": "Answer",
-        "text": "The extra tax depends on your combined income. Examples: R15,000 + R8,000 monthly (R276,000 combined) might owe R10,000-R15,000 extra. R25,000 + R10,000 monthly (R420,000 combined) might owe R15,000-R25,000 extra. R40,000 + R15,000 monthly (R660,000 combined) might owe R30,000-R45,000 extra. The second income is effectively taxed at your marginal rate (26-45% depending on total income). Use our salary calculator to estimate your specific shortfall."}
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Should I tell my employers about my second job?",
-      "acceptedAnswer": {
-        {"@type": "Answer",
-        "text": "You're not legally required to inform either employer about your second job. However, doing so enables practical solutions: you can request additional voluntary PAYE deductions, or one employer can apply for a tax directive. Not informing them doesn't avoid the tax — SARS will still assess your combined income when you file. The advantage of transparency is avoiding a large year-end surprise bill. The disadvantage is privacy concerns and potential employer reactions."}
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I calculate my second job tax liability?",
-      "acceptedAnswer": {
-        {"@type": "Answer",
-        "text": "Calculate your true tax on combined income, then subtract what both employers actually deducted. Step 1: Add both annual salaries. Step 2: Use SARS tax tables to calculate total tax on combined amount. Step 3: Add up PAYE deducted by both employers (from payslips or IRP5s). Step 4: Subtract total PAYE from total tax = shortfall. Example: Combined R420,000 owes R85,000 tax. Employer 1 deducted R55,000, Employer 2 deducted R8,000. Shortfall = R85,000 - R63,000 = R22,000."}
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What happens if I don't declare my second job on my tax return?",
-      "acceptedAnswer": {
-        {"@type": "Answer",
-        "text": "SARS receives IRP5 certificates from both employers automatically, so they already know about both jobs. If you don't declare the second job: SARS will issue an estimated assessment including it anyway, you'll face administrative penalties for incomplete returns, you may be selected for audit, and you'll pay interest on underpaid tax. It's not a viable strategy — always declare all income sources. SARS data matching makes omission virtually impossible to hide."}
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is a second job worth it after tax?",
-      "acceptedAnswer": {
-        {"@type": "Answer",
-        "text": "Yes, almost always. Despite owing additional tax at year-end, you still keep 55-74% of the second income after tax (depending on your marginal rate). For example, earning R120,000 annually from a second job in the 31% bracket: you owe roughly R37,000 extra tax but keep R83,000 after tax. The key is planning for the tax liability rather than being surprised by it. The additional income significantly outweighs the additional tax."}
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do I pay UIF on my second job?",
-      "acceptedAnswer": {
-        {"@type": "Answer",
-        "text": "Yes, if your second job is employment (not freelance), both you and your second employer must contribute to UIF. The contribution is 1% from you and 1% from employer, but only up to the annual earnings ceiling of R212,544 (2026/2027). If your main job already exceeds this ceiling, no UIF is deducted from your second job. If your main job is below the ceiling, UIF is deducted from both jobs until the combined ceiling is reached. UIF benefits are also limited to the ceiling."}
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How is a second job taxed in South Africa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Income from a second job is added to your main salary and taxed at your combined marginal rate. However, each employer calculates PAYE independently as if their salary is your only income. This means both employers apply the primary rebate and lower tax brackets separately, resulting in insufficient tax being deducted overall. When you file your tax return, SARS assesses your true combined income, often revealing a shortfall you must pay."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will I owe SARS money if I have two jobs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Very likely yes, especially if your combined income exceeds R99,000 per year. Each employer deducts tax as if their salary is your only income, applying the full primary rebate and tax brackets. This results in under-withholding. For example, earning R25,000 + R10,000 monthly (R420,000 combined) could result in owing R15,000-R25,000 at year-end. The shortfall increases with higher combined income."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a SARS tax directive and how do I get one?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A tax directive is a formal instruction from SARS telling one of your employers to withhold tax at a specific higher rate that accounts for your combined income. Apply via eFiling: log in, go to 'Tax Directives', select 'Application for Tax Directive', provide details of both income sources, and SARS calculates the correct rate. The directive typically applies to your second (smaller) job. This prevents the year-end shortfall by ensuring correct withholding throughout the year."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to register as a provisional taxpayer with two jobs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not necessarily. You must register as a provisional taxpayer if your second job is freelance/independent contractor work, you earn rental income, or you have other non-salary income. If both jobs are employment with PAYE deducted, you don't need to register as provisional taxpayer — you simply file your annual return and pay any shortfall. However, if your year-end liability is substantial, voluntarily registering allows you to make payments in August and February rather than one lump sum."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much extra tax will I pay on my second job?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The extra tax depends on your combined income. Examples: R15,000 + R8,000 monthly (R276,000 combined) might owe R10,000-R15,000 extra. R25,000 + R10,000 monthly (R420,000 combined) might owe R15,000-R25,000 extra. R40,000 + R15,000 monthly (R660,000 combined) might owe R30,000-R45,000 extra. The second income is effectively taxed at your marginal rate (26-45% depending on total income). Use our salary calculator to estimate your specific shortfall."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I tell my employers about my second job?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You're not legally required to inform either employer about your second job. However, doing so enables practical solutions: you can request additional voluntary PAYE deductions, or one employer can apply for a tax directive. Not informing them doesn't avoid the tax — SARS will still assess your combined income when you file. The advantage of transparency is avoiding a large year-end surprise bill. The disadvantage is privacy concerns and potential employer reactions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I calculate my second job tax liability?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Calculate your true tax on combined income, then subtract what both employers actually deducted. Step 1: Add both annual salaries. Step 2: Use SARS tax tables to calculate total tax on combined amount. Step 3: Add up PAYE deducted by both employers (from payslips or IRP5s). Step 4: Subtract total PAYE from total tax = shortfall. Example: Combined R420,000 owes R85,000 tax. Employer 1 deducted R55,000, Employer 2 deducted R8,000. Shortfall = R85,000 - R63,000 = R22,000."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens if I don't declare my second job on my tax return?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SARS receives IRP5 certificates from both employers automatically, so they already know about both jobs. If you don't declare the second job: SARS will issue an estimated assessment including it anyway, you'll face administrative penalties for incomplete returns, you may be selected for audit, and you'll pay interest on underpaid tax. It's not a viable strategy — always declare all income sources. SARS data matching makes omission virtually impossible to hide."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is a second job worth it after tax?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, almost always. Despite owing additional tax at year-end, you still keep 55-74% of the second income after tax (depending on your marginal rate). For example, earning R120,000 annually from a second job in the 31% bracket: you owe roughly R37,000 extra tax but keep R83,000 after tax. The key is planning for the tax liability rather than being surprised by it. The additional income significantly outweighs the additional tax."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I pay UIF on my second job?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, if your second job is employment (not freelance), both you and your second employer must contribute to UIF. The contribution is 1% from you and 1% from employer, but only up to the annual earnings ceiling of R212,544 (2026/2027). If your main job already exceeds this ceiling, no UIF is deducted from your second job. If your main job is below the ceiling, UIF is deducted from both jobs until the combined ceiling is reached. UIF benefits are also limited to the ceiling."
+          }
+        }
+      ]
     }
   ]
 }
