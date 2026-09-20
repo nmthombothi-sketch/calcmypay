@@ -33,109 +33,109 @@
 <link rel="preload" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap" as="style">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<!-- BlogPosting Schema -->
+<!-- Combined BlogPosting + FAQ Schema (valid JSON-LD) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "SARS eFiling 2026: Complete Guide to Filing Your Tax Return",
-  "description": "Complete step-by-step guide to filing your tax return on SARS eFiling with auto-assessment, deadlines, and refund information.",
-  "datePublished": "2026-05-01",
-  "dateModified": "2026-08-13",
-  "author": { "@type": "Organization", "name": "CalcMyPay" },
-  "publisher": {
-    "@type": "Organization",
-    "name": "CalcMyPay",
-    "logo": { "@type": "ImageObject", "url": "https://calcmypay.co.za/logo.png" }
-  }
-}
-</script>
-
-<!-- FAQ Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "Who must file a tax return in South Africa in 2026?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You must file a tax return if: you earned more than R500,000 in total, had income from more than one employer, earned additional income (rental, freelance, interest above R23,800 exemption), want to claim deductions (retirement annuity, medical expenses, travel allowance), received a travel allowance or company car benefit, conducted any business or trade, or if SARS specifically requested you to file. If none of these apply and you only earn salary from one employer under R500,000, you may not need to file, but it's often worth doing to claim refunds."
-      }
+      "@type": "BlogPosting",
+      "headline": "SARS eFiling 2026: Complete Guide to Filing Your Tax Return",
+      "description": "Complete step-by-step guide to filing your tax return on SARS eFiling with auto-assessment, deadlines, and refund information.",
+      "datePublished": "2026-05-01",
+      "dateModified": "2026-09-20",
+      "author": {"@type": "Organization", "name": "CalcMyPay"},
+      "publisher": {
+        "@type": "Organization",
+        "name": "CalcMyPay",
+        "logo": {"@type": "ImageObject", "url": "https://calcmypay.co.za/logo.png"}
+      },
+      "mainEntityOfPage": {"@type": "WebPage", "@id": "https://calcmypay.co.za/blog-sars-efiling-guide"}
     },
     {
-      "@type": "Question",
-      "name": "What is SARS auto-assessment and do I need to file if I receive one?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Auto-assessment is when SARS automatically generates your tax return using data they already have (IRP5 from employer, medical aid certificates, investment income). You receive it via SMS or email. You MUST still log into eFiling to review it — check all information is correct and add any missing deductions (RA contributions, medical expenses, travel claims). If everything is correct, simply accept it. If not, edit and submit. Ignoring an auto-assessment can result in penalties or missed refunds."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How long does a SARS tax refund take?",
-      "acceptedAnswer": {
-        {"@type": "Answer",
-        "text": "SARS refunds are typically paid into your verified bank account within 72 hours (3 business days) of a successful assessment, provided: your banking details are verified, you have no outstanding tax returns, you don't owe SARS money from previous years, and your return isn't selected for verification or audit. If selected for verification, expect 21 business days. If audited, it can take 3-6 months. The fastest way to get your refund is to file accurately the first time with all supporting documents ready."}
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What documents do I need to file my tax return?",
-      "acceptedAnswer": {
-        {"@type": "Answer",
-        "text": "Essential documents: IRP5/IT3(a) from your employer, medical aid tax certificate, retirement annuity certificates, IT3(b) interest certificates from banks, IT3(c) dividend certificates, travel logbook (if you have a travel allowance), rental income records, freelance income records. Most of these are pre-loaded on eFiling by SARS, but you should have copies to verify accuracy. Keep all documents for at least 5 years as SARS can request them during verification or audit."}
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What are the tax filing deadlines for 2026?",
-      "acceptedAnswer": {
-        {"@type": "Answer",
-        "text": "For the 2026 filing season (2026 tax year ending 28 February 2026): Auto-assessments typically open in July 2026, non-provisional taxpayers (salary earners) manual filing deadline is usually October 2026, and provisional taxpayers (freelancers, business owners) must file by January 2027. SARS announces exact dates annually. Missing deadlines results in administrative penalties of R250 per month (up to R16,000 per return) plus potential criminal prosecution for repeated non-compliance."}
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the difference between SARS verification and audit?",
-      "acceptedAnswer": {
-        {"@type": "Answer",
-        "text": "Verification is a routine check where SARS asks you to upload supporting documents for claims you made (usually within 21 business days). It's common and doesn't mean you did anything wrong — about 20-30% of returns are verified. An audit is more serious and comprehensive, involving detailed examination of your finances, potentially requesting bank statements, contracts, and extensive documentation. Audits can take 3-6 months and may involve SARS officials contacting third parties. Both can delay your refund until resolved."}
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I object to a SARS assessment I disagree with?",
-      "acceptedAnswer": {
-        {"@type": "Answer",
-        "text": "You can object via eFiling within 30 business days of receiving the assessment (ITA34). Steps: 1) Log into eFiling, 2) Select 'Dispute Resolution', 3) Choose 'Notice of Objection', 4) Provide detailed reasons with supporting evidence, 5) Submit. SARS must respond within 60 business days. If they disallow your objection, you can appeal within 30 days, and if still unsuccessful, take the matter to the Tax Board (for disputes under R1 million) or Tax Court. Always keep copies of all correspondence and evidence."}
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What deductions can I claim on my tax return?",
-      "acceptedAnswer": {
-        {"@type": "Answer",
-        "text": "Common deductions include: Retirement annuity contributions (up to 27.5% of income or R430,000), medical expenses not covered by medical aid (exceeding 7.5% of income), travel expenses against travel allowance (with logbook), home office expenses (if you have a dedicated workspace used more than 50% for work), donations to approved PBOs (up to 10% of income with Section 18A certificates), wear-and-tear on work equipment, and certain business expenses for freelancers. Always keep supporting documentation for 5 years."}
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What triggers a SARS audit or verification?",
-      "acceptedAnswer": {
-        {"@type": "Answer",
-        "text": "Common triggers include: unusually high deductions relative to income, claims for home office expenses (frequently audited), large retirement annuity contributions, travel allowance claims without proper logbooks, rental income declarations, significant capital gains, inconsistencies between your return and third-party data (employer IRP5, bank IT3s), random selection (SARS audits a percentage of all returns), and previous compliance issues. However, verification is routine and doesn't indicate wrongdoing — it's simply SARS confirming your claims."}
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How long must I keep my tax documents?",
-      "acceptedAnswer": {
-        {"@type": "Answer",
-        "text": "SARS requires you to keep all tax-related documents for at least 5 years from the date of submission. This includes IRP5s, medical aid certificates, RA certificates, bank statements, logbooks, receipts for deductions, rental agreements, and any correspondence with SARS. Keep both digital and physical copies. If SARS requests documents during verification or audit and you can't provide them, they may disallow your claims, resulting in additional tax, penalties, and interest. For property sales, keep records for the entire ownership period plus 5 years."}
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Who must file a tax return in South Africa in 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You must file a tax return if: you earned more than R500,000 in total, had income from more than one employer, earned additional income (rental, freelance, interest above R23,800 exemption), want to claim deductions (retirement annuity, medical expenses, travel allowance), received a travel allowance or company car benefit, conducted any business or trade, or if SARS specifically requested you to file. If none of these apply and you only earn salary from one employer under R500,000, you may not need to file, but it's often worth doing to claim refunds."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is SARS auto-assessment and do I need to file if I receive one?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Auto-assessment is when SARS automatically generates your tax return using data they already have (IRP5 from employer, medical aid certificates, investment income). You receive it via SMS or email. You MUST still log into eFiling to review it — check all information is correct and add any missing deductions (RA contributions, medical expenses, travel claims). If everything is correct, simply accept it. If not, edit and submit. Ignoring an auto-assessment can result in penalties or missed refunds."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does a SARS tax refund take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SARS refunds are typically paid into your verified bank account within 72 hours (3 business days) of a successful assessment, provided your banking details are verified, you have no outstanding tax returns, you do not owe SARS money from previous years, and your return is not selected for verification or audit. If selected for verification, expect 21 business days. If audited, it can take 3-6 months. The fastest way to get your refund is to file accurately the first time with all supporting documents ready."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What documents do I need to file my tax return?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Essential documents: IRP5/IT3(a) from your employer, medical aid tax certificate, retirement annuity certificates, IT3(b) interest certificates from banks, IT3(c) dividend certificates, travel logbook (if you have a travel allowance), rental income records, freelance income records. Most of these are pre-loaded on eFiling by SARS, but you should have copies to verify accuracy. Keep all documents for at least 5 years as SARS can request them during verification or audit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the tax filing deadlines for 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For the 2026 filing season (2026 tax year ending 28 February 2026): Auto-assessments typically open in July 2026, non-provisional taxpayers (salary earners) manual filing deadline is usually October 2026, and provisional taxpayers (freelancers, business owners) must file by January 2027. SARS announces exact dates annually. Missing deadlines results in administrative penalties of R250 per month (up to R16,000 per return) plus potential criminal prosecution for repeated non-compliance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between SARS verification and audit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Verification is a routine check where SARS asks you to upload supporting documents for claims you made (usually within 21 business days). It is common and does not mean you did anything wrong — about 20-30% of returns are verified. An audit is more serious and comprehensive, involving detailed examination of your finances, potentially requesting bank statements, contracts, and extensive documentation. Audits can take 3-6 months and may involve SARS officials contacting third parties. Both can delay your refund until resolved."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I object to a SARS assessment I disagree with?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can object via eFiling within 30 business days of receiving the assessment (ITA34). Steps: 1) Log into eFiling, 2) Select 'Dispute Resolution', 3) Choose 'Notice of Objection', 4) Provide detailed reasons with supporting evidence, 5) Submit. SARS must respond within 60 business days. If they disallow your objection, you can appeal within 30 days, and if still unsuccessful, take the matter to the Tax Board (for disputes under R1 million) or Tax Court. Always keep copies of all correspondence and evidence."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What deductions can I claim on my tax return?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Common deductions include: Retirement annuity contributions (up to 27.5% of income or R350,000), medical expenses not covered by medical aid (exceeding 7.5% of income), travel expenses against travel allowance (with logbook), home office expenses (if you have a dedicated workspace used more than 50% for work), donations to approved PBOs (up to 10% of income with Section 18A certificates), wear-and-tear on work equipment, and certain business expenses for freelancers. Always keep supporting documentation for 5 years."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What triggers a SARS audit or verification?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Common triggers include: unusually high deductions relative to income, claims for home office expenses (frequently audited), large retirement annuity contributions, travel allowance claims without proper logbooks, rental income declarations, significant capital gains, inconsistencies between your return and third-party data (employer IRP5, bank IT3s), random selection (SARS audits a percentage of all returns), and previous compliance issues. However, verification is routine and does not indicate wrongdoing — it is simply SARS confirming your claims."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long must I keep my tax documents?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SARS requires you to keep all tax-related documents for at least 5 years from the date of submission. This includes IRP5s, medical aid certificates, RA certificates, bank statements, logbooks, receipts for deductions, rental agreements, and any correspondence with SARS. Keep both digital and physical copies. If SARS requests documents during verification or audit and you cannot provide them, they may disallow your claims, resulting in additional tax, penalties, and interest. For property sales, keep records for the entire ownership period plus 5 years."
+          }
+        }
+      ]
     }
   ]
 }
@@ -618,7 +618,7 @@ footer{background:var(--ink);color:var(--paper);margin-top:2rem}
 <ul>
   <li>Navigate to "Retirement Fund Contributions" section</li>
   <li>Enter RA contributions made privately (not through employer)</li>
-  <li>SARS calculates the deduction (up to 27.5% of income or R430,000)</li>
+  <li>SARS calculates the deduction (up to 27.5% of income or R350,000)</li>
 </ul>
 
 <h4>Donations</h4>
@@ -872,7 +872,7 @@ footer{background:var(--ink);color:var(--paper);margin-top:2rem}
 
 <h3>Retirement annuity contributions</h3>
 <ul>
-  <li><strong>Limit:</strong> Up to 27.5% of taxable income or R430,000 (whichever is lower)</li>
+  <li><strong>Limit:</strong> Up to 27.5% of taxable income or R350,000 (whichever is lower)</li>
   <li><strong>Requirement:</strong> RA certificate from provider</li>
   <li><strong>Common scenario:</strong> Contributions made privately (not through employer)</li>
   <li><strong>Impact:</strong> Significant tax savings, especially for high earners</li>
@@ -1042,7 +1042,7 @@ footer{background:var(--ink);color:var(--paper);margin-top:2rem}
 <p>You can object via eFiling within 30 business days of receiving the assessment (ITA34). Steps: 1) Log into eFiling, 2) Select 'Dispute Resolution', 3) Choose 'Notice of Objection', 4) Provide detailed reasons with supporting evidence, 5) Submit. SARS must respond within 60 business days. If they disallow your objection, you can appeal within 30 days, and if still unsuccessful, take the matter to the Tax Board (for disputes under R1 million) or Tax Court. Always keep copies of all correspondence and evidence.</p>
 
 <h3>What deductions can I claim on my tax return?</h3>
-<p>Common deductions include: Retirement annuity contributions (up to 27.5% of income or R430,000), medical expenses not covered by medical aid (exceeding 7.5% of income), travel expenses against travel allowance (with logbook), home office expenses (if you have a dedicated workspace used more than 50% for work), donations to approved PBOs (up to 10% of income with Section 18A certificates), wear-and-tear on work equipment, and certain business expenses for freelancers. Always keep supporting documentation for 5 years.</p>
+<p>Common deductions include: Retirement annuity contributions (up to 27.5% of income or R350,000), medical expenses not covered by medical aid (exceeding 7.5% of income), travel expenses against travel allowance (with logbook), home office expenses (if you have a dedicated workspace used more than 50% for work), donations to approved PBOs (up to 10% of income with Section 18A certificates), wear-and-tear on work equipment, and certain business expenses for freelancers. Always keep supporting documentation for 5 years.</p>
 
 <h3>What triggers a SARS audit or verification?</h3>
 <p>Common triggers include: unusually high deductions relative to income, claims for home office expenses (frequently audited), large retirement annuity contributions, travel allowance claims without proper logbooks, rental income declarations, significant capital gains, inconsistencies between your return and third-party data (employer IRP5, bank IT3s), random selection (SARS audits a percentage of all returns), and previous compliance issues. However, verification is routine and doesn't indicate wrongdoing — it's simply SARS confirming your claims.</p>
