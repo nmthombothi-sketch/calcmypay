@@ -33,109 +33,109 @@
 <link rel="preload" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap" as="style">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<!-- BlogPosting Schema -->
+<!-- Combined BlogPosting + FAQ Schema (valid JSON-LD) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Retrenchment and Severance Pay Tax in South Africa 2026",
-  "description": "Complete guide to retrenchment and severance pay tax with detailed calculations, UIF claims, and preservation options.",
-  "datePublished": "2026-06-01",
-  "dateModified": "2026-08-13",
-  "author": { "@type": "Organization", "name": "CalcMyPay" },
-  "publisher": {
-    "@type": "Organization",
-    "name": "CalcMyPay",
-    "logo": { "@type": "ImageObject", "url": "https://calcmypay.co.za/logo.png" }
-  }
-}
-</script>
-
-<!-- FAQ Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "Is severance pay taxed in South Africa?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, but with favourable treatment. Qualifying severance lump sums use the retirement lump sum tax table: the first R550,000 is completely tax-free (lifetime cumulative limit), R550,001-R770,000 taxed at 18%, R770,001-R1,155,000 at 27%, and amounts above R1,155,000 at 36%. However, notice pay, accrued leave, and bonuses paid with severance are taxed as normal income at your marginal rate."
-      }
+      "@type": "BlogPosting",
+      "headline": "Retrenchment and Severance Pay Tax in South Africa 2026",
+      "description": "Complete guide to retrenchment and severance pay tax with detailed calculations, UIF claims, and preservation options.",
+      "datePublished": "2026-06-01",
+      "dateModified": "2026-09-20",
+      "author": {"@type": "Organization", "name": "CalcMyPay"},
+      "publisher": {
+        "@type": "Organization",
+        "name": "CalcMyPay",
+        "logo": {"@type": "ImageObject", "url": "https://calcmypay.co.za/logo.png"}
+      },
+      "mainEntityOfPage": {"@type": "WebPage", "@id": "https://calcmypay.co.za/blog-severance-pay-tax"}
     },
     {
-      "@type": "Question",
-      "name": "How much severance pay am I entitled to when retrenched?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Under the Basic Conditions of Employment Act (BCEA), you're entitled to a minimum of one week's remuneration for every completed year of continuous service. This is a floor, not a ceiling — many employers offer more generous packages (2-4 weeks per year is common for senior roles). Your severance is in addition to notice pay, accrued leave, and any pro-rata bonuses owed. Always check your employment contract and company retrenchment policy for enhanced benefits."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I claim UIF if I am retrenched?",
-      "acceptedAnswer": {
-        {"@type": "Answer",
-        "text": "Yes, retrenchment qualifies you for UIF benefits. You must apply within 6 months of retrenchment at ufiling.labour.gov.za or your nearest Labour Centre. Benefits are calculated on a sliding scale: 38% of salary for high earners up to 60% for low earners, based on your credits accumulated (1 day credit for every 6 days worked, maximum 238 days). Benefits are paid for up to 12 months while you search for work. You'll need your ID, UI-19 form from your employer, and retrenchment letter."}
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is the R550,000 tax-free amount per retrenchment or lifetime?",
-      "acceptedAnswer": {
-        {"@type": "Answer",
-        "text": "The R550,000 tax-free exemption is a LIFETIME cumulative limit, shared across all retirement and severance lump sums you receive. This means if you previously received a retirement lump sum (say R300,000 tax-free from a pension withdrawal), only R250,000 of your R550,000 allowance remains for future severance or retirement lump sums. Always check your SARS record or consult a tax practitioner to understand how much of your lifetime exemption remains before assuming the full R550,000 is available."}
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Should I preserve or cash out my retirement fund when retrenched?",
-      "acceptedAnswer": {
-        {"@type": "Answer",
-        "text": "In almost all cases, you should PRESERVE your retirement fund rather than cash out. Cashing out means: 1) You use up part of your R550,000 lifetime tax-free exemption, 2) Amounts above R550,000 are taxed at 18-36%, 3) You lose decades of compound growth, 4) You jeopardize your retirement security. Instead, transfer to a preservation fund or your new employer's fund — no immediate tax, maintains tax-free growth, and preserves your R550,000 exemption for actual retirement. The only exception is genuine financial emergency with no other options."}
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is a tax directive for severance pay?",
-      "acceptedAnswer": {
-        {"@type": "Answer",
-        "text": "A tax directive is a formal instruction from SARS to your employer on how to tax your severance lump sum. Your employer must apply for this directive before paying out your severance. SARS issues the directive specifying the correct tax rate based on your cumulative retirement lump sum history. The process takes about 21 business days. Without a directive, your employer must withhold tax at the default 36% rate on the full amount. Always ensure your employer has obtained the directive before receiving your payout."}
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How are notice pay and accrued leave taxed when retrenched?",
-      "acceptedAnswer": {
-        {"@type": "Answer",
-        "text": "Notice pay and accrued leave are taxed as normal income at your marginal rate, NOT under the favourable severance lump sum table. For example, if you earn R40,000/month (31% marginal rate) and receive R40,000 notice pay plus R20,000 leave pay, this R60,000 is taxed at 31%, leaving you approximately R41,400 after tax. Only the pure severance component qualifies for the retirement lump sum tax table with the R550,000 exemption. This distinction is crucial when evaluating your total retrenchment package."}
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How long does UIF take to pay out after claiming?",
-      "acceptedAnswer": {
-        {"@type": "Answer",
-        "text": "UIF typically processes claims within 4-8 weeks if all documentation is complete and correct. However, delays are common and can extend to 3-6 months in practice. First payment usually arrives 4-6 weeks after approval. To speed up the process: submit complete documentation (UI-2.1, UI-19, ID copy, retrenchment letter), follow up regularly, use the online Ufiling system rather than Labour Centre visits, and ensure your banking details are verified. Keep copies of everything submitted and track your claim reference number."}
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I dispute my retrenchment at the CCMA?",
-      "acceptedAnswer": {
-        {"@type": "Answer",
-        "text": "Yes, you can refer an unfair retrenchment dispute to the CCMA (Commission for Conciliation, Mediation and Arbitration) within 30 days of retrenchment. Common grounds for dispute: procedural unfairness (inadequate consultation), substantive unfairness (no valid operational reason), discrimination, or selection criteria issues. The CCMA process includes conciliation (attempt settlement), then arbitration if unresolved. If successful, you may receive reinstatement, re-employment, or compensation (up to 12 months' salary). Legal representation is allowed at arbitration but not always at conciliation."}
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What should I do with my medical aid when retrenched?",
-      "acceptedAnswer": {
-        {"@type": "Answer",
-        "text": "You have several options: 1) Continue as an individual member (you pay full premium without employer contribution — can be expensive), 2) Downgrade to a cheaper plan to reduce costs while unemployed, 3) Suspend cover temporarily (some schemes allow 3-6 month suspension), 4) Cancel and rejoin later (risky — waiting periods and late-joiner penalties may apply), 5) Join a spouse's medical aid if available. You lose the medical aid tax credits when you stop contributing. Consider gap cover carefully — it requires underlying medical aid. Maintain cover if possible to avoid waiting periods when you find new employment."}
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is severance pay taxed in South Africa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, but with favourable treatment. Qualifying severance lump sums use the retirement lump sum tax table: the first R550,000 is completely tax-free (lifetime cumulative limit), R550,001-R770,000 taxed at 18%, R770,001-R1,155,000 at 27%, and amounts above R1,155,000 at 36%. However, notice pay, accrued leave, and bonuses paid with severance are taxed as normal income at your marginal rate."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much severance pay am I entitled to when retrenched?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Under the Basic Conditions of Employment Act (BCEA), you're entitled to a minimum of one week's remuneration for every completed year of continuous service. This is a floor, not a ceiling — many employers offer more generous packages (2-4 weeks per year is common for senior roles). Your severance is in addition to notice pay, accrued leave, and any pro-rata bonuses owed. Always check your employment contract and company retrenchment policy for enhanced benefits."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I claim UIF if I am retrenched?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, retrenchment qualifies you for UIF benefits. You must apply within 6 months of retrenchment at ufiling.labour.gov.za or your nearest Labour Centre. Benefits are calculated on a sliding scale: 38% of salary for high earners up to 60% for low earners, based on your credits accumulated (1 day credit for every 6 days worked, maximum 238 days). Benefits are paid for up to 12 months while you search for work. You'll need your ID, UI-19 form from your employer, and retrenchment letter."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the R550,000 tax-free amount per retrenchment or lifetime?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The R550,000 tax-free exemption is a LIFETIME cumulative limit, shared across all retirement and severance lump sums you receive. This means if you previously received a retirement lump sum (say R300,000 tax-free from a pension withdrawal), only R250,000 of your R550,000 allowance remains for future severance or retirement lump sums. Always check your SARS record or consult a tax practitioner to understand how much of your lifetime exemption remains before assuming the full R550,000 is available."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I preserve or cash out my retirement fund when retrenched?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In almost all cases, you should PRESERVE your retirement fund rather than cash out. Cashing out means: 1) You use up part of your R550,000 lifetime tax-free exemption, 2) Amounts above R550,000 are taxed at 18-36%, 3) You lose decades of compound growth, 4) You jeopardize your retirement security. Instead, transfer to a preservation fund or your new employer's fund — no immediate tax, maintains tax-free growth, and preserves your R550,000 exemption for actual retirement. The only exception is genuine financial emergency with no other options."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a tax directive for severance pay?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A tax directive is a formal instruction from SARS to your employer on how to tax your severance lump sum. Your employer must apply for this directive before paying out your severance. SARS issues the directive specifying the correct tax rate based on your cumulative retirement lump sum history. The process takes about 21 business days. Without a directive, your employer must withhold tax at the default 36% rate on the full amount. Always ensure your employer has obtained the directive before receiving your payout."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How are notice pay and accrued leave taxed when retrenched?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Notice pay and accrued leave are taxed as normal income at your marginal rate, NOT under the favourable severance lump sum table. For example, if you earn R40,000/month (31% marginal rate) and receive R40,000 notice pay plus R20,000 leave pay, this R60,000 is taxed at 31%, leaving you approximately R41,400 after tax. Only the pure severance component qualifies for the retirement lump sum tax table with the R550,000 exemption. This distinction is crucial when evaluating your total retrenchment package."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does UIF take to pay out after claiming?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "UIF typically processes claims within 4-8 weeks if all documentation is complete and correct. However, delays are common and can extend to 3-6 months in practice. First payment usually arrives 4-6 weeks after approval. To speed up the process: submit complete documentation (UI-2.1, UI-19, ID copy, retrenchment letter), follow up regularly, use the online Ufiling system rather than Labour Centre visits, and ensure your banking details are verified. Keep copies of everything submitted and track your claim reference number."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I dispute my retrenchment at the CCMA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, you can refer an unfair retrenchment dispute to the CCMA (Commission for Conciliation, Mediation and Arbitration) within 30 days of retrenchment. Common grounds for dispute: procedural unfairness (inadequate consultation), substantive unfairness (no valid operational reason), discrimination, or selection criteria issues. The CCMA process includes conciliation (attempt settlement), then arbitration if unresolved. If successful, you may receive reinstatement, re-employment, or compensation (up to 12 months' salary). Legal representation is allowed at arbitration but not always at conciliation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I do with my medical aid when retrenched?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You have several options: 1) Continue as an individual member (you pay full premium without employer contribution — can be expensive), 2) Downgrade to a cheaper plan to reduce costs while unemployed, 3) Suspend cover temporarily (some schemes allow 3-6 month suspension), 4) Cancel and rejoin later (risky — waiting periods and late-joiner penalties may apply), 5) Join a spouse's medical aid if available. You lose the medical aid tax credits when you stop contributing. Consider gap cover carefully — it requires underlying medical aid. Maintain cover if possible to avoid waiting periods when you find new employment."
+          }
+        }
+      ]
     }
   ]
 }
