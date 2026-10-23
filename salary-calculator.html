@@ -1,3 +1,6 @@
+I'll restructure the page to move those two sections to a prominent position alongside the calculator. Here's the updated HTML:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -110,12 +113,26 @@ nav{background:var(--paper);border-bottom:2px solid var(--ink);padding:0 2rem;di
 .example-badge{display:inline-block;background:var(--marigold);color:var(--ink);font-size:.62rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.2rem .5rem;margin-right:.5rem;border-radius:2px}
 .layout{max-width:1140px;margin:0 auto;padding:2.5rem 2rem;display:grid;grid-template-columns:1fr 320px;gap:2.5rem;align-items:start}
 @media(max-width:920px){.layout{grid-template-columns:1fr;gap:1.5rem}.sidebar{display:none}}
+.main-content{display:flex;flex-direction:column;gap:2rem}
+.calc-edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:start}
+@media(max-width:1100px){.calc-edu-grid{grid-template-columns:1fr}}
 .card{background:var(--paper);border:1px solid var(--line)}
 .card-head{padding:1.4rem 1.6rem;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:.9rem}
 .card-cat{font-family:var(--body);font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);border-right:1px solid var(--line);padding-right:.9rem}
 .card-head h2{font-family:var(--disp);font-size:1.4rem;font-weight:600;letter-spacing:-.01em}
 .card-head p{font-size:.84rem;color:var(--mist);margin-top:.15rem}
 .card-body{padding:1.6rem}
+.edu-card{background:var(--paper);border:1px solid var(--line);border-top:3px solid var(--forest)}
+.edu-card h2{font-family:var(--disp);font-size:1.5rem;font-weight:600;color:var(--ink);margin-bottom:1rem;letter-spacing:-.01em;line-height:1.2}
+.edu-card h2::before{content:'';display:block;width:36px;height:3px;background:var(--marigold);margin-bottom:1rem}
+.edu-card h3{font-family:var(--disp);font-size:1.15rem;font-weight:600;margin:1.4rem 0 .5rem;color:var(--ink)}
+.edu-card p{font-family:var(--body);font-size:.95rem;color:#2C352F;line-height:1.7;margin-bottom:1rem}
+.edu-card ul{margin:.6rem 0 1.2rem 1.3rem}
+.edu-card li{font-family:var(--body);font-size:.92rem;color:#2C352F;line-height:1.65;margin-bottom:.4rem}
+.edu-card a{color:var(--forest);font-weight:500;border-bottom:1px solid var(--marigold)}
+.edu-card strong{font-weight:600;color:var(--ink)}
+.callout{border:none;border-left:3px solid var(--marigold);background:var(--sand);padding:1rem 1.2rem;margin:1.2rem 0;font-family:var(--disp);font-size:1rem;font-weight:500;line-height:1.5;color:var(--ink)}
+.callout strong{color:var(--forest)}
 .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem 1.3rem;margin-bottom:1.4rem}
 @media(max-width:500px){.form-grid{grid-template-columns:1fr}}
 .fg{display:flex;flex-direction:column;gap:.4rem}
@@ -328,237 +345,449 @@ footer{background:var(--ink);color:var(--paper);margin-top:2rem}
 </div>
 
 <div class="layout">
-  <div>
-    <div class="card">
-      <div class="card-head">
-        <div class="card-cat">Salary</div>
-        <div>
-          <h2>Calculate your take-home pay</h2>
-          <p>Enter your details — results appear instantly</p>
+  <div class="main-content">
+    <div class="calc-edu-grid">
+      <!-- Calculator Card -->
+      <div class="card">
+        <div class="card-head">
+          <div class="card-cat">Salary</div>
+          <div>
+            <h2>Calculate your take-home pay</h2>
+            <p>Enter your details — results appear instantly</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="form-grid">
+            <div class="fg">
+              <label>Annual Gross Salary (CTC)</label>
+              <div class="iw has-pre"><span class="ipre">R</span><input type="number" id="salary" placeholder="450000" min="0"></div>
+            </div>
+            <div class="fg">
+              <label>Age</label>
+              <div class="sw">
+                <select id="age">
+                  <option value="primary">Under 65</option>
+                  <option value="secondary">65 – 74</option>
+                  <option value="tertiary">75+</option>
+                </select>
+              </div>
+            </div>
+            <div class="fg">
+              <label>Medical Aid Members</label>
+              <div class="sw">
+                <select id="medical">
+                  <option value="0">None</option>
+                  <option value="1">Myself only</option>
+                  <option value="2">Me + 1 dependent</option>
+                  <option value="3">Me + 2 dependents</option>
+                  <option value="4">Me + 3 dependents</option>
+                  <option value="5">Me + 4+ dependents</option>
+                </select>
+              </div>
+            </div>
+            <div class="fg">
+              <label>Display Period</label>
+              <div class="sw">
+                <select id="payperiod">
+                  <option value="annual">Annual</option>
+                  <option value="monthly">Monthly</option>
+                  <option value="weekly">Weekly</option>
+                </select>
+              </div>
+            </div>
+            <div class="fg">
+              <label>Retirement / RA (%)</label>
+              <div class="iw has-suf"><input type="number" id="retirement" placeholder="0" min="0" max="27.5"><span class="isuf">%</span></div>
+            </div>
+            <div class="fg">
+              <label>Travel Allowance (annual)</label>
+              <div class="iw has-pre"><span class="ipre">R</span><input type="number" id="travel" placeholder="0" min="0"></div>
+            </div>
+          </div>
+          <button type="button" class="btn btn-full btn-accent" onclick="calculate()">Calculate take-home pay →</button>
+          <button type="button" class="btn btn-full btn-example" onclick="loadExample()"><span class="example-badge">Example</span>Try R480k salary with medical aid</button>
+
+          <div class="results" id="results">
+            <div class="period-tabs" style="margin-top:1.3rem">
+              <button class="ptab active" onclick="switchPeriod('annual',this)">Annual</button>
+              <button class="ptab" onclick="switchPeriod('monthly',this)">Monthly</button>
+              <button class="ptab" onclick="switchPeriod('weekly',this)">Weekly</button>
+            </div>
+            <div class="th-panel">
+              <div>
+                <div class="th-label">Estimated take-home pay</div>
+                <div class="th-amount" id="th-amount">R0</div>
+                <div class="th-period" id="th-period">per year</div>
+              </div>
+              <div class="eff-block">
+                <span class="eff-val" id="eff-rate">0%</span>
+                <span class="eff-lbl">Effective tax</span>
+              </div>
+            </div>
+            <div class="bb">
+              <div class="bb-title">Income</div>
+              <div class="br"><span class="lbl">Gross salary / CTC</span><span class="val neu" id="br-gross">R0</span></div>
+              <div class="br" id="br-ra-row" style="display:none"><span class="lbl">Less: Retirement contribution</span><span class="val neg" id="br-ra">-R0</span></div>
+              <div class="br" id="br-tv-row" style="display:none"><span class="lbl">Less: Travel allowance (20%)</span><span class="val neg" id="br-tv">-R0</span></div>
+              <div class="br"><span class="lbl">Taxable income</span><span class="val neu" id="br-taxable">R0</span></div>
+            </div>
+            <div class="bb">
+              <div class="bb-title">PAYE</div>
+              <div class="br"><span class="lbl">Tax per SARS tables</span><span class="val neg" id="br-rawtax">-R0</span></div>
+              <div class="br"><span class="lbl">Less: Tax rebate</span><span class="val pos" id="br-rebate">+R0</span></div>
+              <div class="br" id="br-med-row" style="display:none"><span class="lbl">Less: Medical aid credit</span><span class="val pos" id="br-medcredit">+R0</span></div>
+              <div class="br"><span class="lbl">Net PAYE</span><span class="val neg" id="br-paye">-R0</span></div>
+            </div>
+            <div class="bb">
+              <div class="bb-title">Other Deductions</div>
+              <div class="br"><span class="lbl">UIF (1%, max R177.12/month)</span><span class="val neg" id="br-uif">-R0</span></div>
+              <div class="br" id="br-ra2-row" style="display:none"><span class="lbl">Retirement / RA</span><span class="val neg" id="br-ra2">-R0</span></div>
+            </div>
+            <div class="total-bar">
+              <span class="lbl">✓ Take-home pay</span>
+              <span class="val" id="br-takehome">R0</span>
+            </div>
+            <div class="note navy" id="rebate-note">
+              <span>ℹ</span>
+              <span>You qualify for the <strong>primary rebate</strong> of R17,820 — applied directly against your PAYE.</span>
+            </div>
+            <div class="note warn">
+              <span>⚠</span>
+              <span>Estimates only. Based on <a href="https://www.sars.gov.za/tax-rates/income-tax/rates-of-tax-for-individuals/" target="_blank" rel="noopener">SARS 2027 tax year tables</a>. Consult a tax professional for exact figures.</span>
+            </div>
+
+            <div class="story-section" id="money-story" style="display:none">
+              <div class="story-kicker">Your money story</div>
+              <div class="story-title">What this salary means for you</div>
+              <p class="story-sub">Estimates based on your take-home pay. Add your age for a personalised retirement projection.</p>
+              <div class="story-age-row">
+                <label for="ms-age">Your age (optional)</label>
+                <div class="iw" style="max-width:90px"><input type="number" id="ms-age" placeholder="30" min="18" max="70" oninput="renderMoneyStory(lastTakeHome)"></div>
+                <span class="story-age-note">Used only for the retirement projection below</span>
+              </div>
+              <div class="story-grid">
+                <a href="/rent-affordability" class="story-card"><div class="story-stripe c-housing"></div><div class="story-body">
+                  <div class="story-label">✅ Comfortable rent, up to</div>
+                  <div class="story-val" id="ms-rent">R0</div>
+                  <div class="story-desc">Using the 30% of take-home guideline</div>
+                  <span class="story-arrow">Check rent affordability →</span>
+                </div></a>
+                <a href="/home-affordability" class="story-card"><div class="story-stripe c-housing"></div><div class="story-body">
+                  <div class="story-label">🏠 Home price you may qualify for</div>
+                  <div class="story-val" id="ms-home">R0</div>
+                  <div class="story-desc">20-year bond at ~11%, no deposit assumed</div>
+                  <span class="story-arrow">Check home affordability →</span>
+                </div></a>
+                <a href="/car-affordability" class="story-card"><div class="story-stripe c-car"></div><div class="story-body">
+                  <div class="story-label">🚗 Recommended maximum car price</div>
+                  <div class="story-val" id="ms-car">R0</div>
+                  <div class="story-desc">Keeping repayments under 15% of take-home</div>
+                  <span class="story-arrow">Check car affordability →</span>
+                </div></a>
+                <a href="/emergency-fund" class="story-card"><div class="story-stripe c-safety"></div><div class="story-body">
+                  <div class="story-label">💰 Emergency fund target</div>
+                  <div class="story-val" id="ms-emergency">R0</div>
+                  <div class="story-desc" id="ms-emergency-desc">3–6 months of take-home pay</div>
+                  <span class="story-arrow">Build your safety net →</span>
+                </div></a>
+                <a href="/retirement-calculator" class="story-card" style="grid-column:1/-1">
+                  <div class="story-stripe c-retire"></div><div class="story-body">
+                  <div class="story-label">📈 Retirement projection<span id="ms-retire-agenote"></span></div>
+                  <div class="story-val" id="ms-retirement">R0</div>
+                  <div class="story-desc">Saving 15% of take-home, invested at ~10% annual growth</div>
+                  <span class="story-arrow">Plan your retirement in detail →</span>
+                </div></a>
+                <div class="story-compare-card">
+                  <div class="story-label" style="margin-bottom:.9rem">📊 How your take-home compares</div>
+                  <div class="compare-toggle">
+                    <button class="on" id="cmp-tab-avg" onclick="setCompareMode('avg')">National average</button>
+                    <button id="cmp-tab-prof" onclick="setCompareMode('prof')">By profession</button>
+                  </div>
+                  <div id="compare-avg-view">
+                    <div class="compare-body">
+                      <div class="compare-vs">
+                        <div class="compare-side"><div class="who">SA average</div><div class="amt" id="cmp-avg-val">R22,800</div></div>
+                        <div class="compare-vsdivider">vs</div>
+                        <div class="compare-side you"><div class="who">You</div><div class="amt" id="cmp-you-val">R0</div></div>
+                      </div>
+                      <div class="compare-result"><div class="compare-pct" id="cmp-pct">—</div></div>
+                    </div>
+                  </div>
+                  <div id="compare-prof-view" style="display:none">
+                    <div class="compare-select">
+                      <div class="sw"><select id="ms-prof" onchange="renderProfCompare()"></select></div>
+                    </div>
+                    <div class="compare-body" style="margin-top:1rem">
+                      <div class="compare-vs">
+                        <div class="compare-side"><div class="who" id="cmp-prof-name">—</div><div class="amt" id="cmp-prof-val">R0</div></div>
+                        <div class="compare-vsdivider">vs</div>
+                        <div class="compare-side you"><div class="who">You</div><div class="amt" id="cmp-you-val2">R0</div></div>
+                      </div>
+                      <div class="compare-result"><div class="compare-pct" id="cmp-prof-pct">—</div></div>
+                    </div>
+                  </div>
+                  <div style="margin-top:.9rem"><a href="/salary-database" class="story-arrow">Explore the full salary database →</a></div>
+                </div>
+              </div>
+              <div class="journey">
+                <div class="journey-title">Continue your financial plan</div>
+                <div class="journey-path">
+                  <a href="/budget-planner">Budget planner</a><span class="journey-sep">→</span>
+                  <a href="/net-worth">Net worth</a><span class="journey-sep">→</span>
+                  <a href="/savings-goal">Savings goal</a><span class="journey-sep">→</span>
+                  <a href="/financial-coach">Get your health score</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="whatif-section" id="whatif-section" style="display:none">
+              <div class="whatif-kicker">What if?</div>
+              <div class="whatif-title">Test a scenario</div>
+              <p class="whatif-sub">Drag the sliders to see how changes affect your take-home pay, instantly.</p>
+              <div class="whatif-grid">
+                <div class="whatif-control">
+                  <div class="whatif-control-head"><label>Salary change</label><output id="wi-sal-out">+0%</output></div>
+                  <input type="range" id="wi-sal" min="-20" max="30" value="0" step="1" oninput="renderWhatIf()">
+                </div>
+                <div class="whatif-control">
+                  <div class="whatif-control-head"><label>Retirement contribution</label><output id="wi-ra-out">+0%</output></div>
+                  <input type="range" id="wi-ra" min="0" max="27.5" value="0" step="0.5" oninput="renderWhatIf()">
+                </div>
+                <div class="whatif-control">
+                  <div class="whatif-control-head"><label>Medical aid members</label><output id="wi-med-out">Same</output></div>
+                  <input type="range" id="wi-med" min="0" max="5" value="0" step="1" oninput="renderWhatIf()">
+                </div>
+                <div class="whatif-control">
+                  <div class="whatif-control-head"><label>Once-off bonus added</label><output id="wi-bonus-out">R0</output></div>
+                  <input type="range" id="wi-bonus" min="0" max="200000" value="0" step="5000" oninput="renderWhatIf()">
+                </div>
+              </div>
+              <div class="whatif-result">
+                <div>
+                  <div class="whatif-result-label">New take-home pay (annual)</div>
+                  <div class="whatif-result-val" id="wi-newtakehome">R0</div>
+                </div>
+                <div class="whatif-delta">
+                  <div class="whatif-delta-val" id="wi-delta">—</div>
+                  <div class="whatif-delta-lbl">vs your current take-home</div>
+                </div>
+              </div>
+              <div class="whatif-reset"><button onclick="resetWhatIf()">Reset scenario</button></div>
+              <div class="note warn" style="margin-top:1rem">
+                <span>⚠</span>
+                <span>This shows the <strong>tax effect only</strong> of each change. For example, adding a medical aid dependent lowers your tax, but you would also pay a higher monthly premium.</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="card-body">
-        <div class="form-grid">
-          <div class="fg">
-            <label>Annual Gross Salary (CTC)</label>
-            <div class="iw has-pre"><span class="ipre">R</span><input type="number" id="salary" placeholder="450000" min="0"></div>
+
+      <!-- Educational Content Card (Now Next to Calculator) -->
+      <div class="edu-card">
+        <div class="card-body">
+          <h2>Understanding your South African salary after tax</h2>
+          <p>One of the most important financial numbers for any South African employee is their take-home pay — the amount that actually lands in their bank account each month. Yet most people only know their gross salary (CTC) and are surprised by the gap between what they earn and what they receive. This comprehensive calculator breaks down exactly where every rand goes, using the official SARS 2027 tax year tables effective from 1 March 2026 to 28 February 2027.</p>
+
+          <p>South Africa operates a progressive tax system, which means different portions of your income are taxed at different rates. Your employer deducts PAYE (Pay As You Earn) monthly, along with UIF contributions and any retirement annuity or pension fund deductions you've agreed to. Medical aid credits reduce your actual tax bill, not your taxable income. Understanding these components is essential for proper financial planning.</p>
+
+          <h2>How PAYE is calculated step-by-step</h2>
+          <p>The calculation of your monthly PAYE follows a specific sequence defined by SARS. Here's exactly how your employer calculates what to deduct:</p>
+
+          <h3>Step 1: Determine your taxable income</h3>
+          <p>Start with your gross annual salary (CTC), then subtract any allowable deductions:</p>
+          <ul>
+            <li><strong>Retirement annuity contributions:</strong> Up to 27.5% of your income, capped at R430,000 per year for the 2027 tax year.</li>
+            <li><strong>Travel allowance deduction:</strong> Only 80% of a travel allowance is taxable, so 20% is automatically deducted.</li>
+            <li><strong>Employer pension/provident fund contributions:</strong> These are already included in your CTC but reduce taxable income.</li>
+          </ul>
+
+          <h3>Step 2: Apply SARS tax brackets</h3>
+          <p>Your taxable income is then applied against the progressive tax brackets. For the 2027 tax year:</p>
+          <ul>
+            <li>First R245,100: 18%</li>
+            <li>R245,101 – R383,100: 26%</li>
+            <li>R383,101 – R530,200: 31%</li>
+            <li>R530,201 – R695,800: 36%</li>
+            <li>R695,801 – R887,000: 39%</li>
+            <li>R887,001 – R1,878,600: 41%</li>
+            <li>Above R1,878,600: 45%</li>
+          </ul>
+
+          <div class="callout">
+            <strong>Important:</strong> Only the portion of income within each bracket is taxed at that rate. If you earn R400,000, the first R245,100 is taxed at 18%, the next R138,000 at 26%, and only the R16,900 above R383,100 is taxed at 31%.
           </div>
-          <div class="fg">
-            <label>Age</label>
-            <div class="sw">
-              <select id="age">
-                <option value="primary">Under 65</option>
-                <option value="secondary">65 – 74</option>
-                <option value="tertiary">75+</option>
-              </select>
-            </div>
+
+          <h3>Step 3: Subtract rebates</h3>
+          <p>After calculating the raw tax amount, SARS subtracts rebates directly from your tax bill (not your income):</p>
+          <ul>
+            <li><strong>Primary rebate:</strong> R17,820 for all taxpayers under 65.</li>
+            <li><strong>Secondary rebate:</strong> Additional R9,765 for ages 65-74.</li>
+            <li><strong>Tertiary rebate:</strong> Additional R3,249 for ages 75+.</li>
+          </ul>
+
+          <p>The primary rebate of R17,820 creates the tax-free threshold. Since 18% of R99,000 equals R17,820, anyone earning under R99,000 annually pays zero income tax.</p>
+
+          <h3>Step 4: Subtract medical aid credits</h3>
+          <p>If you're on a registered medical aid scheme, SARS provides tax credits that reduce your PAYE directly:</p>
+          <ul>
+            <li>R376 per month for the main member (taxpayer)</li>
+            <li>R376 per month for the first dependent</li>
+            <li>R254 per month for each additional dependent</li>
+          </ul>
+
+          <h3>Step 5: Calculate UIF</h3>
+          <p>Unemployment Insurance Fund contributions are calculated at 1% of your salary, but only up to the monthly earnings ceiling of R17,712. This means the maximum UIF you can pay is R177.12 per month, or R2,125.44 per year.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rest of the article content below -->
+    <div style="background:var(--white);border:1px solid var(--line);border-top:3px solid var(--forest)">
+      <div class="article-body">
+        <div class="worked-example">
+          <div class="worked-example-head">
+            <span class="worked-example-tag">Worked Example</span>
+            <h3>Calculating take-home pay on R480,000 salary</h3>
           </div>
-          <div class="fg">
-            <label>Medical Aid Members</label>
-            <div class="sw">
-              <select id="medical">
-                <option value="0">None</option>
-                <option value="1">Myself only</option>
-                <option value="2">Me + 1 dependent</option>
-                <option value="3">Me + 2 dependents</option>
-                <option value="4">Me + 3 dependents</option>
-                <option value="5">Me + 4+ dependents</option>
-              </select>
-            </div>
+          <p>Let's walk through a realistic scenario: annual salary of R480,000, under 65, with medical aid for yourself and one dependent, and 7.5% retirement annuity contribution.</p>
+          
+          <p><strong>Taxable income calculation:</strong></p>
+          <ul>
+            <li>Gross salary: R480,000</li>
+            <li>Less RA (7.5%): R36,000</li>
+            <li>Taxable income: R444,000</li>
+          </ul>
+
+          <p><strong>Tax calculation:</strong></p>
+          <ul>
+            <li>Tax on R444,000 = R79,998 + 31% of (R444,000 - R383,100) = R79,998 + R18,879 = R98,877</li>
+            <li>Less primary rebate: R17,820</li>
+            <li>Less medical credit (2 members × R376 × 12): R9,024</li>
+            <li>Net PAYE: R72,033 per year = R6,003 per month</li>
+          </ul>
+
+          <p><strong>Take-home pay:</strong></p>
+          <ul>
+            <li>Gross monthly: R40,000</li>
+            <li>Less PAYE: R6,003</li>
+            <li>Less UIF: R177 (capped)</li>
+            <li>Less RA: R3,000</li>
+            <li><strong>Net take-home: R30,820 per month</strong></li>
+          </ul>
+        </div>
+
+        <h2>Six legal strategies to reduce your PAYE</h2>
+        <div class="strategy-grid">
+          <div class="strategy-card">
+            <div class="strategy-num">1</div>
+            <h3>Maximize Retirement Annuity</h3>
+            <p>Contributing up to 27.5% of your income (capped at R430,000/year for 2027) to an RA reduces your taxable income dollar-for-dollar.</p>
+            <div class="strategy-saving">💰 Saves your marginal tax rate (18-45%) on every rand contributed</div>
           </div>
-          <div class="fg">
-            <label>Display Period</label>
-            <div class="sw">
-              <select id="payperiod">
-                <option value="annual">Annual</option>
-                <option value="monthly">Monthly</option>
-                <option value="weekly">Weekly</option>
-              </select>
-            </div>
+          <div class="strategy-card">
+            <div class="strategy-num">2</div>
+            <h3>Join or Upgrade Medical Aid</h3>
+            <p>Each medical aid member qualifies for a R376/month tax credit. For a family of four, this saves R1,360/month directly off your tax bill.</p>
+            <div class="strategy-saving">💰 R376 per member per month, directly reduces PAYE</div>
           </div>
-          <div class="fg">
-            <label>Retirement / RA (%)</label>
-            <div class="iw has-suf"><input type="number" id="retirement" placeholder="0" min="0" max="27.5"><span class="isuf">%</span></div>
+          <div class="strategy-card">
+            <div class="strategy-num">3</div>
+            <h3>Structure Travel Allowance</h3>
+            <p>Only 80% of a travel allowance is automatically taxable. Keep a detailed logbook to claim the full deduction based on actual business kilometers.</p>
+            <div class="strategy-saving">💰 20% of travel allowance automatically excluded from tax</div>
           </div>
-          <div class="fg">
-            <label>Travel Allowance (annual)</label>
-            <div class="iw has-pre"><span class="ipre">R</span><input type="number" id="travel" placeholder="0" min="0"></div>
+          <div class="strategy-card">
+            <div class="strategy-num">4</div>
+            <h3>Time Bonus Payments</h3>
+            <p>If close to a tax bracket threshold, ask your employer to defer your bonus to the next tax year (after 1 March) to stay in a lower bracket.</p>
+            <div class="strategy-saving">💰 Up to 4% savings per bracket level avoided</div>
+          </div>
+          <div class="strategy-card">
+            <div class="strategy-num">5</div>
+            <h3>Claim Allowable Deductions</h3>
+            <p>Claim home office expenses, wear-and-tear on work equipment, professional body fees, and donations to registered PBOs (Section 18A).</p>
+            <div class="strategy-saving">💰 Varies by deduction, but can save thousands annually</div>
+          </div>
+          <div class="strategy-card">
+            <div class="strategy-num">6</div>
+            <h3>File Your Tax Return</h3>
+            <p>Even if PAYE is deducted correctly, you may be owed a refund for medical expenses, travel claims, or overpayment from multiple income sources.</p>
+            <div class="strategy-saving">💰 Average refund ranges from R500 to R15,000+</div>
           </div>
         </div>
-        <button type="button" class="btn btn-full btn-accent" onclick="calculate()">Calculate take-home pay →</button>
-        <button type="button" class="btn btn-full btn-example" onclick="loadExample()"><span class="example-badge">Example</span>Try R480k salary with medical aid</button>
 
-        <div class="results" id="results">
-          <div class="period-tabs" style="margin-top:1.3rem">
-            <button class="ptab active" onclick="switchPeriod('annual',this)">Annual</button>
-            <button class="ptab" onclick="switchPeriod('monthly',this)">Monthly</button>
-            <button class="ptab" onclick="switchPeriod('weekly',this)">Weekly</button>
-          </div>
-          <div class="th-panel">
-            <div>
-              <div class="th-label">Estimated take-home pay</div>
-              <div class="th-amount" id="th-amount">R0</div>
-              <div class="th-period" id="th-period">per year</div>
-            </div>
-            <div class="eff-block">
-              <span class="eff-val" id="eff-rate">0%</span>
-              <span class="eff-lbl">Effective tax</span>
-            </div>
-          </div>
-          <div class="bb">
-            <div class="bb-title">Income</div>
-            <div class="br"><span class="lbl">Gross salary / CTC</span><span class="val neu" id="br-gross">R0</span></div>
-            <div class="br" id="br-ra-row" style="display:none"><span class="lbl">Less: Retirement contribution</span><span class="val neg" id="br-ra">-R0</span></div>
-            <div class="br" id="br-tv-row" style="display:none"><span class="lbl">Less: Travel allowance (20%)</span><span class="val neg" id="br-tv">-R0</span></div>
-            <div class="br"><span class="lbl">Taxable income</span><span class="val neu" id="br-taxable">R0</span></div>
-          </div>
-          <div class="bb">
-            <div class="bb-title">PAYE</div>
-            <div class="br"><span class="lbl">Tax per SARS tables</span><span class="val neg" id="br-rawtax">-R0</span></div>
-            <div class="br"><span class="lbl">Less: Tax rebate</span><span class="val pos" id="br-rebate">+R0</span></div>
-            <div class="br" id="br-med-row" style="display:none"><span class="lbl">Less: Medical aid credit</span><span class="val pos" id="br-medcredit">+R0</span></div>
-            <div class="br"><span class="lbl">Net PAYE</span><span class="val neg" id="br-paye">-R0</span></div>
-          </div>
-          <div class="bb">
-            <div class="bb-title">Other Deductions</div>
-            <div class="br"><span class="lbl">UIF (1%, max R177.12/month)</span><span class="val neg" id="br-uif">-R0</span></div>
-            <div class="br" id="br-ra2-row" style="display:none"><span class="lbl">Retirement / RA</span><span class="val neg" id="br-ra2">-R0</span></div>
-          </div>
-          <div class="total-bar">
-            <span class="lbl">✓ Take-home pay</span>
-            <span class="val" id="br-takehome">R0</span>
-          </div>
-          <div class="note navy" id="rebate-note">
-            <span>ℹ</span>
-            <span>You qualify for the <strong>primary rebate</strong> of R17,820 — applied directly against your PAYE.</span>
-          </div>
-          <div class="note warn">
-            <span>⚠</span>
-            <span>Estimates only. Based on <a href="https://www.sars.gov.za/tax-rates/income-tax/rates-of-tax-for-individuals/" target="_blank" rel="noopener">SARS 2027 tax year tables</a>. Consult a tax professional for exact figures.</span>
-          </div>
+        <h2>Common salary levels after tax (2027 tax year)</h2>
+        <p>The table below shows accurate take-home pay calculations for common salary levels in South Africa. These figures assume no medical aid, no retirement annuity contributions, and no travel allowance.</p>
 
-          <div class="story-section" id="money-story" style="display:none">
-            <div class="story-kicker">Your money story</div>
-            <div class="story-title">What this salary means for you</div>
-            <p class="story-sub">Estimates based on your take-home pay. Add your age for a personalised retirement projection.</p>
-            <div class="story-age-row">
-              <label for="ms-age">Your age (optional)</label>
-              <div class="iw" style="max-width:90px"><input type="number" id="ms-age" placeholder="30" min="18" max="70" oninput="renderMoneyStory(lastTakeHome)"></div>
-              <span class="story-age-note">Used only for the retirement projection below</span>
-            </div>
-            <div class="story-grid">
-              <a href="/rent-affordability" class="story-card"><div class="story-stripe c-housing"></div><div class="story-body">
-                <div class="story-label">✅ Comfortable rent, up to</div>
-                <div class="story-val" id="ms-rent">R0</div>
-                <div class="story-desc">Using the 30% of take-home guideline</div>
-                <span class="story-arrow">Check rent affordability →</span>
-              </div></a>
-              <a href="/home-affordability" class="story-card"><div class="story-stripe c-housing"></div><div class="story-body">
-                <div class="story-label">🏠 Home price you may qualify for</div>
-                <div class="story-val" id="ms-home">R0</div>
-                <div class="story-desc">20-year bond at ~11%, no deposit assumed</div>
-                <span class="story-arrow">Check home affordability →</span>
-              </div></a>
-              <a href="/car-affordability" class="story-card"><div class="story-stripe c-car"></div><div class="story-body">
-                <div class="story-label">🚗 Recommended maximum car price</div>
-                <div class="story-val" id="ms-car">R0</div>
-                <div class="story-desc">Keeping repayments under 15% of take-home</div>
-                <span class="story-arrow">Check car affordability →</span>
-              </div></a>
-              <a href="/emergency-fund" class="story-card"><div class="story-stripe c-safety"></div><div class="story-body">
-                <div class="story-label">💰 Emergency fund target</div>
-                <div class="story-val" id="ms-emergency">R0</div>
-                <div class="story-desc" id="ms-emergency-desc">3–6 months of take-home pay</div>
-                <span class="story-arrow">Build your safety net →</span>
-              </div></a>
-              <a href="/retirement-calculator" class="story-card" style="grid-column:1/-1">
-                <div class="story-stripe c-retire"></div><div class="story-body">
-                <div class="story-label">📈 Retirement projection<span id="ms-retire-agenote"></span></div>
-                <div class="story-val" id="ms-retirement">R0</div>
-                <div class="story-desc">Saving 15% of take-home, invested at ~10% annual growth</div>
-                <span class="story-arrow">Plan your retirement in detail →</span>
-              </div></a>
-              <div class="story-compare-card">
-                <div class="story-label" style="margin-bottom:.9rem">📊 How your take-home compares</div>
-                <div class="compare-toggle">
-                  <button class="on" id="cmp-tab-avg" onclick="setCompareMode('avg')">National average</button>
-                  <button id="cmp-tab-prof" onclick="setCompareMode('prof')">By profession</button>
-                </div>
-                <div id="compare-avg-view">
-                  <div class="compare-body">
-                    <div class="compare-vs">
-                      <div class="compare-side"><div class="who">SA average</div><div class="amt" id="cmp-avg-val">R22,800</div></div>
-                      <div class="compare-vsdivider">vs</div>
-                      <div class="compare-side you"><div class="who">You</div><div class="amt" id="cmp-you-val">R0</div></div>
-                    </div>
-                    <div class="compare-result"><div class="compare-pct" id="cmp-pct">—</div></div>
-                  </div>
-                </div>
-                <div id="compare-prof-view" style="display:none">
-                  <div class="compare-select">
-                    <div class="sw"><select id="ms-prof" onchange="renderProfCompare()"></select></div>
-                  </div>
-                  <div class="compare-body" style="margin-top:1rem">
-                    <div class="compare-vs">
-                      <div class="compare-side"><div class="who" id="cmp-prof-name">—</div><div class="amt" id="cmp-prof-val">R0</div></div>
-                      <div class="compare-vsdivider">vs</div>
-                      <div class="compare-side you"><div class="who">You</div><div class="amt" id="cmp-you-val2">R0</div></div>
-                    </div>
-                    <div class="compare-result"><div class="compare-pct" id="cmp-prof-pct">—</div></div>
-                  </div>
-                </div>
-                <div style="margin-top:.9rem"><a href="/salary-database" class="story-arrow">Explore the full salary database →</a></div>
-              </div>
-            </div>
-            <div class="journey">
-              <div class="journey-title">Continue your financial plan</div>
-              <div class="journey-path">
-                <a href="/budget-planner">Budget planner</a><span class="journey-sep">→</span>
-                <a href="/net-worth">Net worth</a><span class="journey-sep">→</span>
-                <a href="/savings-goal">Savings goal</a><span class="journey-sep">→</span>
-                <a href="/financial-coach">Get your health score</a>
-              </div>
-            </div>
-          </div>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Monthly Gross</th>
+              <th>Annual Gross</th>
+              <th>PAYE/month</th>
+              <th>UIF/month</th>
+              <th>Take-Home/month</th>
+              <th>Effective Rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>R8,250</td><td>R99,000</td><td class="td-green">R0</td><td>R83</td><td class="td-green"><strong>R8,167</strong></td><td>0%</td></tr>
+            <tr><td>R10,000</td><td>R120,000</td><td>R315</td><td>R100</td><td class="td-green"><strong>R9,585</strong></td><td>3.2%</td></tr>
+            <tr><td>R15,000</td><td>R180,000</td><td>R1,215</td><td>R150</td><td class="td-green"><strong>R13,635</strong></td><td>8.1%</td></tr>
+            <tr><td>R20,000</td><td>R240,000</td><td>R2,115</td><td>R177</td><td class="td-green"><strong>R17,708</strong></td><td>10.6%</td></tr>
+            <tr><td>R25,000</td><td>R300,000</td><td>R3,381</td><td>R177</td><td class="td-green"><strong>R21,442</strong></td><td>13.5%</td></tr>
+            <tr><td>R30,000</td><td>R360,000</td><td>R5,182</td><td>R177</td><td class="td-green"><strong>R24,641</strong></td><td>17.3%</td></tr>
+            <tr><td>R40,000</td><td>R480,000</td><td>R4,695</td><td>R177</td><td class="td-green"><strong>R35,128</strong></td><td>11.7%</td></tr>
+            <tr><td>R50,000</td><td>R600,000</td><td>R7,276</td><td>R177</td><td class="td-green"><strong>R42,547</strong></td><td>14.6%</td></tr>
+            <tr><td>R65,000</td><td>R780,000</td><td>R11,718</td><td>R177</td><td class="td-green"><strong>R53,105</strong></td><td>18.0%</td></tr>
+            <tr><td>R85,000</td><td>R1,020,000</td><td>R18,494</td><td>R177</td><td class="td-green"><strong>R66,329</strong></td><td>21.8%</td></tr>
+            <tr><td>R100,000</td><td>R1,200,000</td><td>R23,653</td><td>R177</td><td class="td-green"><strong>R76,170</strong></td><td>23.7%</td></tr>
+          </tbody>
+        </table>
 
-          <div class="whatif-section" id="whatif-section" style="display:none">
-            <div class="whatif-kicker">What if?</div>
-            <div class="whatif-title">Test a scenario</div>
-            <p class="whatif-sub">Drag the sliders to see how changes affect your take-home pay, instantly.</p>
-            <div class="whatif-grid">
-              <div class="whatif-control">
-                <div class="whatif-control-head"><label>Salary change</label><output id="wi-sal-out">+0%</output></div>
-                <input type="range" id="wi-sal" min="-20" max="30" value="0" step="1" oninput="renderWhatIf()">
-              </div>
-              <div class="whatif-control">
-                <div class="whatif-control-head"><label>Retirement contribution</label><output id="wi-ra-out">+0%</output></div>
-                <input type="range" id="wi-ra" min="0" max="27.5" value="0" step="0.5" oninput="renderWhatIf()">
-              </div>
-              <div class="whatif-control">
-                <div class="whatif-control-head"><label>Medical aid members</label><output id="wi-med-out">Same</output></div>
-                <input type="range" id="wi-med" min="0" max="5" value="0" step="1" oninput="renderWhatIf()">
-              </div>
-              <div class="whatif-control">
-                <div class="whatif-control-head"><label>Once-off bonus added</label><output id="wi-bonus-out">R0</output></div>
-                <input type="range" id="wi-bonus" min="0" max="200000" value="0" step="5000" oninput="renderWhatIf()">
-              </div>
-            </div>
-            <div class="whatif-result">
-              <div>
-                <div class="whatif-result-label">New take-home pay (annual)</div>
-                <div class="whatif-result-val" id="wi-newtakehome">R0</div>
-              </div>
-              <div class="whatif-delta">
-                <div class="whatif-delta-val" id="wi-delta">—</div>
-                <div class="whatif-delta-lbl">vs your current take-home</div>
-              </div>
-            </div>
-            <div class="whatif-reset"><button onclick="resetWhatIf()">Reset scenario</button></div>
-            <div class="note warn" style="margin-top:1rem">
-              <span>⚠</span>
-              <span>This shows the <strong>tax effect only</strong> of each change. For example, adding a medical aid dependent lowers your tax, but you would also pay a higher monthly premium.</span>
-            </div>
+        <h2>Glossary: Salary tax terms explained</h2>
+        <div class="glossary-grid">
+          <div class="glossary-item">
+            <div class="glossary-term">PAYE</div>
+            <div class="glossary-def">Pay As You Earn. The monthly tax your employer deducts from your salary and pays to SARS on your behalf.</div>
           </div>
+          <div class="glossary-item">
+            <div class="glossary-term">CTC (Cost to Company)</div>
+            <div class="glossary-def">Your total gross salary package before any deductions, including employer contributions to medical aid or pension.</div>
+          </div>
+          <div class="glossary-item">
+            <div class="glossary-term">Marginal Tax Rate</div>
+            <div class="glossary-def">The rate of tax applied to the next rand of income. Your bonus or raise is taxed at this rate.</div>
+          </div>
+          <div class="glossary-item">
+            <div class="glossary-term">UIF Ceiling</div>
+            <div class="glossary-def">The maximum monthly earnings (R17,712) on which UIF contributions are calculated. Earnings above this do not attract additional UIF.</div>
+          </div>
+          <div class="glossary-item">
+            <div class="glossary-term">Section 11F</div>
+            <div class="glossary-def">The section of the Income Tax Act allowing tax deductions for retirement fund contributions, capped at R430,000 for 2027.</div>
+          </div>
+          <div class="glossary-item">
+            <div class="glossary-term">IRP5</div>
+            <div class="glossary-def">The tax certificate your employer issues at year-end detailing your income and all deductions made.</div>
+          </div>
+        </div>
+
+        <h2>Frequently asked questions</h2>
+        <h3>How is PAYE calculated in South Africa?</h3>
+        <p>PAYE is calculated by applying the SARS tax brackets to your annual taxable income, then subtracting your primary rebate of R17,820 and any medical aid credits. The result is your annual PAYE, divided by 12 for monthly deductions.</p>
+
+        <h3>What is the tax-free threshold in South Africa 2026?</h3>
+        <p>For the SARS 2027 tax year, the tax-free threshold is R99,000 per year for taxpayers under 65. For ages 65-74, it's R153,250 per year, and for ages 75+, it's R171,300 per year.</p>
+
+        <h3>How much UIF do I pay on my salary?</h3>
+        <p>You pay 1% of your salary towards UIF, but only on earnings up to R17,712 per month. The maximum annual UIF contribution is R2,125.44. If you earn more than R212,544 per year, you pay the maximum regardless of your actual salary.</p>
+
+        <h3>Can I reduce my PAYE legally?</h3>
+        <p>Yes. Contributing to a retirement annuity (up to 27.5% of income, max R430,000/year) reduces your taxable income. Joining a medical aid gives you R376/month tax credit per member. Both strategies legally reduce your PAYE.</p>
+
+        <div class="disclaim">
+          <strong>Disclaimer:</strong> This calculator provides estimates based on SARS 2027 tax year rates (1 March 2026 – 28 February 2027). Actual tax liability may vary based on individual circumstances. For personalised tax advice, consult a registered tax practitioner. CalcMyPay is not affiliated with SARS.
         </div>
       </div>
     </div>
@@ -599,211 +828,6 @@ footer{background:var(--ink);color:var(--paper);margin-top:2rem}
         <div class="tip"><span>→</span><a href="/bonus-calculator">Bonus & 13th Cheque</a></div>
         <div class="tip"><span>→</span><a href="/hourly-wage">Hourly Wage Calculator</a></div>
         <div class="tip"><span>→</span><a href="/overtime-calculator">Overtime Pay Calculator</a></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="section">
-  <div style="background:var(--white);border:1px solid var(--line);border-top:3px solid var(--forest)">
-    <div class="article-body">
-      <h2>Understanding your South African salary after tax</h2>
-      <p>One of the most important financial numbers for any South African employee is their take-home pay — the amount that actually lands in their bank account each month. Yet most people only know their gross salary (CTC) and are surprised by the gap between what they earn and what they receive. This comprehensive calculator breaks down exactly where every rand goes, using the official SARS 2027 tax year tables effective from 1 March 2026 to 28 February 2027.</p>
-
-      <p>South Africa operates a progressive tax system, which means different portions of your income are taxed at different rates. Your employer deducts PAYE (Pay As You Earn) monthly, along with UIF contributions and any retirement annuity or pension fund deductions you've agreed to. Medical aid credits reduce your actual tax bill, not your taxable income. Understanding these components is essential for proper financial planning.</p>
-
-      <h2>How PAYE is calculated step-by-step</h2>
-      <p>The calculation of your monthly PAYE follows a specific sequence defined by SARS. Here's exactly how your employer calculates what to deduct:</p>
-
-      <h3>Step 1: Determine your taxable income</h3>
-      <p>Start with your gross annual salary (CTC), then subtract any allowable deductions:</p>
-      <ul>
-        <li><strong>Retirement annuity contributions:</strong> Up to 27.5% of your income, capped at R430,000 per year for the 2027 tax year.</li>
-        <li><strong>Travel allowance deduction:</strong> Only 80% of a travel allowance is taxable, so 20% is automatically deducted.</li>
-        <li><strong>Employer pension/provident fund contributions:</strong> These are already included in your CTC but reduce taxable income.</li>
-      </ul>
-
-      <h3>Step 2: Apply SARS tax brackets</h3>
-      <p>Your taxable income is then applied against the progressive tax brackets. For the 2027 tax year:</p>
-      <ul>
-        <li>First R245,100: 18%</li>
-        <li>R245,101 – R383,100: 26%</li>
-        <li>R383,101 – R530,200: 31%</li>
-        <li>R530,201 – R695,800: 36%</li>
-        <li>R695,801 – R887,000: 39%</li>
-        <li>R887,001 – R1,878,600: 41%</li>
-        <li>Above R1,878,600: 45%</li>
-      </ul>
-
-      <div class="callout">
-        <strong>Important:</strong> Only the portion of income within each bracket is taxed at that rate. If you earn R400,000, the first R245,100 is taxed at 18%, the next R138,000 at 26%, and only the R16,900 above R383,100 is taxed at 31%.
-      </div>
-
-      <h3>Step 3: Subtract rebates</h3>
-      <p>After calculating the raw tax amount, SARS subtracts rebates directly from your tax bill (not your income):</p>
-      <ul>
-        <li><strong>Primary rebate:</strong> R17,820 for all taxpayers under 65.</li>
-        <li><strong>Secondary rebate:</strong> Additional R9,765 for ages 65-74.</li>
-        <li><strong>Tertiary rebate:</strong> Additional R3,249 for ages 75+.</li>
-      </ul>
-
-      <p>The primary rebate of R17,820 creates the tax-free threshold. Since 18% of R99,000 equals R17,820, anyone earning under R99,000 annually pays zero income tax.</p>
-
-      <h3>Step 4: Subtract medical aid credits</h3>
-      <p>If you're on a registered medical aid scheme, SARS provides tax credits that reduce your PAYE directly:</p>
-      <ul>
-        <li>R376 per month for the main member (taxpayer)</li>
-        <li>R376 per month for the first dependent</li>
-        <li>R254 per month for each additional dependent</li>
-      </ul>
-
-      <h3>Step 5: Calculate UIF</h3>
-      <p>Unemployment Insurance Fund contributions are calculated at 1% of your salary, but only up to the monthly earnings ceiling of R17,712. This means the maximum UIF you can pay is R177.12 per month, or R2,125.44 per year.</p>
-
-      <div class="worked-example">
-        <div class="worked-example-head">
-          <span class="worked-example-tag">Worked Example</span>
-          <h3>Calculating take-home pay on R480,000 salary</h3>
-        </div>
-        <p>Let's walk through a realistic scenario: annual salary of R480,000, under 65, with medical aid for yourself and one dependent, and 7.5% retirement annuity contribution.</p>
-        
-        <p><strong>Taxable income calculation:</strong></p>
-        <ul>
-          <li>Gross salary: R480,000</li>
-          <li>Less RA (7.5%): R36,000</li>
-          <li>Taxable income: R444,000</li>
-        </ul>
-
-        <p><strong>Tax calculation:</strong></p>
-        <ul>
-          <li>Tax on R444,000 = R79,998 + 31% of (R444,000 - R383,100) = R79,998 + R18,879 = R98,877</li>
-          <li>Less primary rebate: R17,820</li>
-          <li>Less medical credit (2 members × R376 × 12): R9,024</li>
-          <li>Net PAYE: R72,033 per year = R6,003 per month</li>
-        </ul>
-
-        <p><strong>Take-home pay:</strong></p>
-        <ul>
-          <li>Gross monthly: R40,000</li>
-          <li>Less PAYE: R6,003</li>
-          <li>Less UIF: R177 (capped)</li>
-          <li>Less RA: R3,000</li>
-          <li><strong>Net take-home: R30,820 per month</strong></li>
-        </ul>
-      </div>
-
-      <h2>Six legal strategies to reduce your PAYE</h2>
-      <div class="strategy-grid">
-        <div class="strategy-card">
-          <div class="strategy-num">1</div>
-          <h3>Maximize Retirement Annuity</h3>
-          <p>Contributing up to 27.5% of your income (capped at R430,000/year for 2027) to an RA reduces your taxable income dollar-for-dollar.</p>
-          <div class="strategy-saving">💰 Saves your marginal tax rate (18-45%) on every rand contributed</div>
-        </div>
-        <div class="strategy-card">
-          <div class="strategy-num">2</div>
-          <h3>Join or Upgrade Medical Aid</h3>
-          <p>Each medical aid member qualifies for a R376/month tax credit. For a family of four, this saves R1,360/month directly off your tax bill.</p>
-          <div class="strategy-saving">💰 R376 per member per month, directly reduces PAYE</div>
-        </div>
-        <div class="strategy-card">
-          <div class="strategy-num">3</div>
-          <h3>Structure Travel Allowance</h3>
-          <p>Only 80% of a travel allowance is automatically taxable. Keep a detailed logbook to claim the full deduction based on actual business kilometers.</p>
-          <div class="strategy-saving">💰 20% of travel allowance automatically excluded from tax</div>
-        </div>
-        <div class="strategy-card">
-          <div class="strategy-num">4</div>
-          <h3>Time Bonus Payments</h3>
-          <p>If close to a tax bracket threshold, ask your employer to defer your bonus to the next tax year (after 1 March) to stay in a lower bracket.</p>
-          <div class="strategy-saving">💰 Up to 4% savings per bracket level avoided</div>
-        </div>
-        <div class="strategy-card">
-          <div class="strategy-num">5</div>
-          <h3>Claim Allowable Deductions</h3>
-          <p>Claim home office expenses, wear-and-tear on work equipment, professional body fees, and donations to registered PBOs (Section 18A).</p>
-          <div class="strategy-saving">💰 Varies by deduction, but can save thousands annually</div>
-        </div>
-        <div class="strategy-card">
-          <div class="strategy-num">6</div>
-          <h3>File Your Tax Return</h3>
-          <p>Even if PAYE is deducted correctly, you may be owed a refund for medical expenses, travel claims, or overpayment from multiple income sources.</p>
-          <div class="strategy-saving">💰 Average refund ranges from R500 to R15,000+</div>
-        </div>
-      </div>
-
-      <h2>Common salary levels after tax (2027 tax year)</h2>
-      <p>The table below shows accurate take-home pay calculations for common salary levels in South Africa. These figures assume no medical aid, no retirement annuity contributions, and no travel allowance.</p>
-
-      <table class="data-table">
-        <thead>
-          <tr>
-            <th>Monthly Gross</th>
-            <th>Annual Gross</th>
-            <th>PAYE/month</th>
-            <th>UIF/month</th>
-            <th>Take-Home/month</th>
-            <th>Effective Rate</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>R8,250</td><td>R99,000</td><td class="td-green">R0</td><td>R83</td><td class="td-green"><strong>R8,167</strong></td><td>0%</td></tr>
-          <tr><td>R10,000</td><td>R120,000</td><td>R315</td><td>R100</td><td class="td-green"><strong>R9,585</strong></td><td>3.2%</td></tr>
-          <tr><td>R15,000</td><td>R180,000</td><td>R1,215</td><td>R150</td><td class="td-green"><strong>R13,635</strong></td><td>8.1%</td></tr>
-          <tr><td>R20,000</td><td>R240,000</td><td>R2,115</td><td>R177</td><td class="td-green"><strong>R17,708</strong></td><td>10.6%</td></tr>
-          <tr><td>R25,000</td><td>R300,000</td><td>R3,381</td><td>R177</td><td class="td-green"><strong>R21,442</strong></td><td>13.5%</td></tr>
-          <tr><td>R30,000</td><td>R360,000</td><td>R5,182</td><td>R177</td><td class="td-green"><strong>R24,641</strong></td><td>17.3%</td></tr>
-          <tr><td>R40,000</td><td>R480,000</td><td>R4,695</td><td>R177</td><td class="td-green"><strong>R35,128</strong></td><td>11.7%</td></tr>
-          <tr><td>R50,000</td><td>R600,000</td><td>R7,276</td><td>R177</td><td class="td-green"><strong>R42,547</strong></td><td>14.6%</td></tr>
-          <tr><td>R65,000</td><td>R780,000</td><td>R11,718</td><td>R177</td><td class="td-green"><strong>R53,105</strong></td><td>18.0%</td></tr>
-          <tr><td>R85,000</td><td>R1,020,000</td><td>R18,494</td><td>R177</td><td class="td-green"><strong>R66,329</strong></td><td>21.8%</td></tr>
-          <tr><td>R100,000</td><td>R1,200,000</td><td>R23,653</td><td>R177</td><td class="td-green"><strong>R76,170</strong></td><td>23.7%</td></tr>
-        </tbody>
-      </table>
-
-      <h2>Glossary: Salary tax terms explained</h2>
-      <div class="glossary-grid">
-        <div class="glossary-item">
-          <div class="glossary-term">PAYE</div>
-          <div class="glossary-def">Pay As You Earn. The monthly tax your employer deducts from your salary and pays to SARS on your behalf.</div>
-        </div>
-        <div class="glossary-item">
-          <div class="glossary-term">CTC (Cost to Company)</div>
-          <div class="glossary-def">Your total gross salary package before any deductions, including employer contributions to medical aid or pension.</div>
-        </div>
-        <div class="glossary-item">
-          <div class="glossary-term">Marginal Tax Rate</div>
-          <div class="glossary-def">The rate of tax applied to the next rand of income. Your bonus or raise is taxed at this rate.</div>
-        </div>
-        <div class="glossary-item">
-          <div class="glossary-term">UIF Ceiling</div>
-          <div class="glossary-def">The maximum monthly earnings (R17,712) on which UIF contributions are calculated. Earnings above this do not attract additional UIF.</div>
-        </div>
-        <div class="glossary-item">
-          <div class="glossary-term">Section 11F</div>
-          <div class="glossary-def">The section of the Income Tax Act allowing tax deductions for retirement fund contributions, capped at R430,000 for 2027.</div>
-        </div>
-        <div class="glossary-item">
-          <div class="glossary-term">IRP5</div>
-          <div class="glossary-def">The tax certificate your employer issues at year-end detailing your income and all deductions made.</div>
-        </div>
-      </div>
-
-      <h2>Frequently asked questions</h2>
-      <h3>How is PAYE calculated in South Africa?</h3>
-      <p>PAYE is calculated by applying the SARS tax brackets to your annual taxable income, then subtracting your primary rebate of R17,820 and any medical aid credits. The result is your annual PAYE, divided by 12 for monthly deductions.</p>
-
-      <h3>What is the tax-free threshold in South Africa 2026?</h3>
-      <p>For the SARS 2027 tax year, the tax-free threshold is R99,000 per year for taxpayers under 65. For ages 65-74, it's R153,250 per year, and for ages 75+, it's R171,300 per year.</p>
-
-      <h3>How much UIF do I pay on my salary?</h3>
-      <p>You pay 1% of your salary towards UIF, but only on earnings up to R17,712 per month. The maximum annual UIF contribution is R2,125.44. If you earn more than R212,544 per year, you pay the maximum regardless of your actual salary.</p>
-
-      <h3>Can I reduce my PAYE legally?</h3>
-      <p>Yes. Contributing to a retirement annuity (up to 27.5% of income, max R430,000/year) reduces your taxable income. Joining a medical aid gives you R376/month tax credit per member. Both strategies legally reduce your PAYE.</p>
-
-      <div class="disclaim">
-        <strong>Disclaimer:</strong> This calculator provides estimates based on SARS 2027 tax year rates (1 March 2026 – 28 February 2027). Actual tax liability may vary based on individual circumstances. For personalised tax advice, consult a registered tax practitioner. CalcMyPay is not affiliated with SARS.
       </div>
     </div>
   </div>
@@ -1145,3 +1169,17 @@ window.addEventListener('load', function() {
 
 </body>
 </html>
+```
+
+**What changed:**
+
+1. **Added a new 2-column grid layout** (`.calc-edu-grid`) that places the calculator and educational content side-by-side on larger screens (>1100px), stacking vertically on smaller screens
+
+2. **Created a new educational card** (`.edu-card`) with its own styling that contains:
+   - "Understanding your South African salary after tax" section
+   - "How PAYE is calculated step-by-step" section with all 5 steps
+   - The important callout about progressive tax brackets
+
+3. **Kept all other content** (worked example, strategies, salary table, glossary, FAQ) in the article section below
+
+The educational content now appears prominently next to the calculator, giving users immediate context while they use the tool.
